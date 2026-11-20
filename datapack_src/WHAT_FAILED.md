@@ -65,3 +65,16 @@ skew, dealer gamma) that is not in the price series at all.
    reliably cut drawdown (gamma overlay: −27% vs −51% buy-and-hold) without adding expected return.
 3. Null design is the whole game. Two null bugs in this session would have produced two false passes
    (see PITFALLS #11, #12), and one seemingly perfect result was vol targeting in disguise (#13).
+
+### Same session, second sweep (term structure + carry) — 2 more, both rejected
+| # | Idea | Verdict | One-line reason |
+|---|---|---|---|
+| EXP-0015 | CBOE term structure (VIX/VIX3M, VIX9D/VIX, VVIX) forecasts a vol onset | FAIL (predictable, not tradeable) | Forward-8d onset AUC 0.746 and Brier skill +0.168 — real skill — but the exposure overlay loses to plain vol targeting by −0.28 Sharpe OOS. |
+| EXP-0016 | Treasury curve slope pays duration via carry/roll-down | FAIL | No term clears the 98.75th-percentile bar in both IS and OOS. It does halve the 2022-26 bond drawdown — risk avoidance, not alpha. |
+
+**The taxonomy this produced (use it to frame every future idea):**
+- **Variance IS forecastable.** Term structure predicts a vol onset with AUC 0.75, and vol clustering is
+  the most robust effect in all of finance. Claims about variance need Brier skill / AUC / calibration.
+- **Direction is NOT.** 16 experiments, ~500 sub-tests, zero directional edges that survive a
+  turnover-matched null plus a vol-targeting benchmark. Claims about direction need excess Sharpe over
+  vol targeting, a date split, and a shift null — and nothing else counts.

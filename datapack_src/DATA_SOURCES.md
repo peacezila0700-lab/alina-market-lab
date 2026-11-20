@@ -53,3 +53,11 @@ Re-use the working patterns verbatim; they took many attempts to find.
 - **RBA f11.1** looks like it covers 1983, but the API serves only ~2023 onward.
 - **CBOE CSV URLs** can return HTTP 200 + HTML; always check the first bytes are not `<!DOCTYPE`.
 - **CFTC zip** contains a legacy BIFF `.xls` (OLE2 magic `D0CF11E0`), not CSV — `pd.read_csv` fails.
+
+## Volatility term structure and deep history (added 2026-11-20)
+| endpoint | what it gives | note |
+|---|---|---|
+| `cdn.cboe.com/api/global/us_indices/daily_prices/{VIX,VIX1D,VIX9D,VIX3M,VVIX,SKEW}_History.csv` | VIX curve + vol-of-vol + skew | **requires `curl -sL`** (307 redirect) and a browser UA. CSV layouts differ per file: some rows have no comma between date and value, so parse with a regex, not a CSV reader. VIX3M from 2009-09, VIX9D 2011-01, VIX1D 2022-05. |
+| `home.treasury.gov/.../daily-treasury-rates.csv/{YYYY}/all?type=daily_treasury_yield_curve&field_tdr_date_value={YYYY}&page&_format=csv` | full yield curve for one calendar year | loop 1990..now (37 requests, ~0s each) → 9,228 rows of deep history. The daily collector alone only appends the latest row. |
+| `okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP` | funding settlements | **`-SWAP` suffix is mandatory**; the spot id returns code 51000. Depth capped at ~3 months (280 rows). |
+| `okx.com/api/v5/market/history-candles?instId=BTC-USDT&bar=1H&limit=100&after=<ts>` | hourly candles | paginate with `after`; ~10,000 bars per symbol is the endpoint ceiling. |

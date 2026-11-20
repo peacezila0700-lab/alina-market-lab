@@ -133,6 +133,37 @@ def main() -> None:
         brief["state"]["gex_regime"] = "negative (dealers amplify moves)" if last.gex < 0 else "positive (dealers dampen moves)"
         brief["data_age_days"]["dix_gex"] = age_days(dix.date.tail(1))
 
+    # ---------------- volatility TERM STRUCTURE (VIX / VIX3M / VIX9D / VVIX)
+    # The level of VIX is one point on a curve; the slope is the market's own price of near-term stress.
+    # Measured base rates live in data/facts/VOL_REGIME_BASE_RATES.md — cite them, do not re-derive.
+    vt = rd("data/collect/vol_stress_features.csv")
+    if vt is not None:
+        vt = vt.rename(columns={vt.columns[0]: "date"})
+        vt["date"] = pd.to_datetime(vt["date"], errors="coerce")
+        vt = vt.dropna(subset=["date"]).sort_values("date")
+        last = vt.iloc[-1]
+        def _f(name):
+            try:
+                v = float(last[name])
+                return round(v, 4) if v == v else None
+            except Exception:                                      # noqa: BLE001
+                return None
+        brief["state"]["vix_slope_3m"] = _f("slope_3m")
+        brief["state"]["vix_slope_3m_note"] = ">1 = inverted term structure = stress is NOW, not later"
+        brief["state"]["vix_slope_9d"] = _f("slope_9d")
+        brief["state"]["vix_slope_9d_note"] = ">1 = front-end panic (VIX9D above VIX)"
+        brief["state"]["vvix_percentile"] = _f("vvix_pct")
+        brief["state"]["vvix_note"] = "vol-of-vol >0.9 means even the hedging market is unstable"
+        brief["data_age_days"]["vol_term_structure"] = age_days(vt.date.tail(1))
+        inv = vt["inverted_3m"].fillna(0).astype(int)
+        flips = vt[(inv == 1) & (inv.shift(1) == 0)]
+        brief["state"]["term_inversions_last_252d"] = int(flips.date.tail(0).size or len(flips[flips.date >= vt.date.iloc[-1] - pd.Timedelta(days=365)]))
+        if brief["state"].get("vix_slope_3m") and brief["state"]["vix_slope_3m"] > 1.0:
+            brief["flags"].append(
+                "term structure INVERTED (VIX > VIX3M): measured forward 21d SPY median +3.41%, 71% "
+                "positive, n_eff 15 — historically a recovery rally follows panic, not a short signal; "
+                "use it to expect gap risk and to size down, not to pick direction.")
+
     fsi = rd("data/collect/ofr_fsi.csv", "data/alt/ofr_fsi.csv")
     fsi_val = None
     if fsi is not None:

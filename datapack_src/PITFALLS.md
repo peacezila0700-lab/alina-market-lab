@@ -90,3 +90,27 @@ Across EXP-0013 the six "market state" overlays moved Sharpe only through the se
 drawdown improved (gamma −28.5% vs buy-and-hold) while CAGR barely moved. If a study's claim is
 "better risk-adjusted return", check whether the *mean* return per unit exposure changed at all; if not,
 the finding is a risk-management result and belongs in the sizing layer, not in the signal layer.
+
+## 15. Same-bar weights and coincident labels: the day EXP-0015 printed Sharpe 1.98
+The first run of the onset test read: in-sample Sharpe 1.983, out-of-sample 2.276, both at the 100th
+percentile of the null. Three bugs had to be fixed before the honest answer appeared:
+1. **Weights were applied to the same bar as the features.** The feature set ended with the day-t
+   realised-vol percentile and VIX, and the weight w_t was multiplied by return_t. Set weights at the
+   close, earn the *next* day: `w = w.shift(1)`. This alone is worth ~1.5 Sharpe of imaginary edge.
+2. **The label was coincident, not forward.** `ON1 = VIX>30 and prior VIX<=28` shares the same close
+   as the features, so AUC 0.924 measured autocorrelation, not forecasting. The label must be "an
+   onset occurs within the next H days" (`fwd()` using a reversed rolling max shifted by -1).
+3. **The null only covered the arm, not the mechanism.** Even with a valid label, a variance-based
+   overlay must be compared to vol targeting (PITFALLS #13), which is what finally killed it.
+After the fixes: AUC 0.665/0.746, and Δ vs vol targeting −0.278 out-of-sample → FAIL.
+**Checklist before every timer run:** (a) every weight enters with a lag, (b) every label is measured
+strictly after the decision, (c) the benchmark arm is a mechanism-free equivalent, (d) the null keeps
+the strategy's turnover. Four checks, four fake edges prevented in this repo alone.
+
+## 16. A mean-reverting *price* into a *level* problem: the recovered Sharpe pattern
+In EXP-0015/0016 the honest results share a shape: the state variable forecasts volatility
+(AUC 0.67–0.75) or cuts drawdown (bond carry halves the 2022–26 loss) but does not raise the mean
+return per unit of exposure. That is not a failed project, it is a taxonomy: **variance is
+forecastable, direction is not.** Every future idea should say up front which of the two it claims,
+because they need completely different evidence (Brier/AUC for variance; excess Sharpe vs vol
+targeting and a turnover-matched null for direction).

@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.1.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.2.zip
 """
 from __future__ import annotations
 
@@ -307,6 +307,53 @@ DATASETS = [
                   "These are reference points, not signals: no level rules have beaten a null in this repo yet."],
          use_for=["stop/target placement", "entry gating", "explaining intraday reaction levels"],
          leak_rule="All levels use data up to the prior close."),
+    dict(id="vol_term_structure", src=["data/collect/vol_term_structure.csv",
+                                      "data/collect/vol_stress_features.csv",
+                                      "data/collect/vol_term_status.json",
+                                      "data/facts/VOL_REGIME_BASE_RATES.md",
+                                      "data/facts/vol_regime_base_rates.csv"],
+         kind="volatility", grade="A",
+         title="CBOE volatility term structure + derived stress features + regime base rates",
+         card="VIX, VIX1D, VIX9D, VIX3M, VVIX and SKEW pulled daily from CBOE, with the derived curve "
+              "features that actually carry information: slope_3m = VIX/VIX3M (>1 inverted = stress is "
+              "now), slope_9d = VIX9D/VIX (>1 front-end panic), VVIX percentile (vol-of-vol), and an "
+              "inversion-onset flag. Ships with VOL_REGIME_BASE_RATES.md: forward 5/21/63-day SPY return "
+              "distributions conditioned on each curve state, with n_eff for every cell.",
+         caveats=["VIX3M starts 2009-09, VIX9D 2011-01, VIX1D 2022-05 — the deep history is VIX only.",
+                  "The curve states predict VARIANCE well (EXP-0015: forward-onset AUC 0.746) but an "
+                  "exposure overlay built on them does NOT beat plain volatility targeting (EXP-0015 FAIL).",
+                  "CBOE CSV layouts differ per file (some rows have no comma after the date) — the "
+                  "fetcher parses with a regex on purpose."],
+         use_for=["vol/regime conditioning priors", "gap-risk flagging", "variance forecasting"],
+         leak_rule="VIX closes are stamped same-day; anything traded on them must use the next session."),
+    dict(id="treasury_curve_deep", src=["data/collect/treasury_yield_curve_full.csv"],
+         kind="rates", grade="A",
+         title="US Treasury daily yield curve, 1990 to today (9,228 days, 13 tenors)",
+         card="Backfilled year by year from home.treasury.gov. This is the backbone for every carry, "
+              "roll-down, curve-slope and recession-prior question — the daily collector only appended "
+              "the latest row, so before this backfill the curve had 222 rows and could not support any "
+              "real test.",
+         caveats=["The published series is revised; it is not point-in-time. Do not use it as a "
+                  "vintage-accurate macro feed.",
+                  "Carry measured on ETF prices (TLT/IEF) is price-only — funds distribute monthly, so all "
+                  "levels are pessimistic by roughly the coupon."],
+         use_for=["term spread / carry tests", "recession priors", "bond duration sizing"],
+         leak_rule="Published with a one-day lag; shift by one day before trading."),
+    dict(id="okx_crypto_deep", src=["data/collect/okx_BTCUSDT_1h_deep.csv",
+                                    "data/collect/okx_ETHUSDT_1h_deep.csv",
+                                    "data/collect/okx_BTCUSDT_funding_deep.csv",
+                                    "data/collect/okx_ETHUSDT_funding_deep.csv"],
+         kind="crypto", grade="B",
+         title="OKX perpetual BTC/ETH: 10,000 hourly bars + 280 funding settlements",
+         card="Backfilled hourly candles (2025-09-30 onward) and the funding-rate history, which is the "
+              "cleanest free measure of crypto leverage demand. Funding is the crypto analogue of carry: "
+              "paying 6-7% annualised to be long perps is a crowded-long tax.",
+         caveats=["Funding history depth is capped by the endpoint at ~3 months (280 settlements).",
+                  "The funding endpoint needs the SWAP instrument id (BTC-USDT-SWAP); the spot id returns "
+                  "code 51000. Candles use the spot id.",
+                  "Hourly bars only reach back ~13 months, so no multi-cycle study is possible."],
+         use_for=["crypto carry/leverage-crowding features", "hour-scale execution studies"],
+         leak_rule="Candle ts is the bar OPEN time; funding settles every 8h (00:00/08:00/16:00 UTC)."),
     dict(id="broad_cross_section", src=["data/broad/*.csv"], kind="prices",
          grade="C", title="Broad research panel: 68 ETFs across sectors, countries, credit, commodities",
          card="The wide book: 11 US sectors, 16 country/EM ETFs, 10 credit/rates, 10 commodities, FX proxies, "
@@ -399,7 +446,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.1",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.2",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -445,7 +492,7 @@ def main() -> None:
 
     # ---- results json (all artifacts an AI may want to read quickly)
     for rel in ["research/artifacts/cot_panel.json", "research/artifacts/event_conditional.json",
-                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
                 "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
@@ -501,7 +548,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.1.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.2.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

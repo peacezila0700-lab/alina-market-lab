@@ -1,0 +1,253 @@
+{
+  "experiment": "EXP-0016",
+  "hypothesis": "H19",
+  "design": " (written before the result)\n-------------------------------------------------\nData      : Treasury daily yield curve 1990-2026 (backfilled by scripts/backfill_history.py) and the\n            ETF prices available here: TLT (20y+, from 2002-07-30) and IEF (7-10y, from 2002-07-30).\n            Price-only returns; no dividends (TLT/IEF distribute monthly), so every level is pessimistic\n            by roughly the coupon \u2014 this biases the SIGNAL comparison, not the sign of the result.\nSignals   : S1 = 10Y \u2212 3M (level slope), S2 = 10Y \u2212 2Y (curve slope). Both taken at t-1.\nRule      : w in {0, 1, 2} from terciles of S over the trailing 3 years (756 trading days, causal,\n            expanding seed of 2 years). Mean exposure \u2248 1, so no free leverage.\nCosts     : 2 bp per unit |\u0394w| per day (ETF commission + spread; a tercile rule trades rarely).\nSplit     : 70/30 by date.\nBenchmarks (both must be beaten \u2014 PITFALLS #13 exists because this step is usually skipped):\n            BH  = constant weight equal to the arm's mean exposure\n            VT  = volatility targeting, w = clip(0.10/RV20(t-1), 0, 2) scaled to the same mean\nNull      : circular shifts of the arm's weight series (200), giving the distribution of Sharpe under\n            \"the carry rule carries no timing information but keeps its turnover\".\n\nPASS BAR: the arm's net Sharpe must exceed the 98.75th percentile of the shift null (Bonferroni for\n4 tests) in-sample AND out-of-sample, AND exceed the vol-targeting arm out-of-sample.\nAnything else is FAIL and H19 closes.\n",
+  "bar_percentile": 98.75,
+  "results": {
+    "TLT_10y-3m": {
+      "arm": {
+        "is": {
+          "sharpe": 0.42404132789623783,
+          "cagr": 0.05974112875090509,
+          "maxdd": -0.5134660233945791,
+          "n": 3897,
+          "mean_w": 0.702746690887791,
+          "vol": 0.1714432795435682
+        },
+        "oos": {
+          "sharpe": -0.49320803363916255,
+          "cagr": -0.12770830782890907,
+          "maxdd": -0.6737764563548869,
+          "n": 1671,
+          "mean_w": 1.269066850172421,
+          "vol": 0.2255747530544652
+        }
+      },
+      "buy_hold": {
+        "is": {
+          "sharpe": 0.3792284661653026,
+          "cagr": 0.043522926439632625,
+          "maxdd": -0.2886493098498619,
+          "n": 3897,
+          "mean_w": 1.0,
+          "vol": 0.13713716381840704
+        },
+        "oos": {
+          "sharpe": -0.5848797060747489,
+          "cagr": -0.10184410966480373,
+          "maxdd": -0.5534753355455607,
+          "n": 1671,
+          "mean_w": 1.0,
+          "vol": 0.16137092047803975
+        }
+      },
+      "voltarget": {
+        "is": {
+          "sharpe": 0.4003476150849963,
+          "cagr": 0.02766598891408134,
+          "maxdd": -0.1441471150764646,
+          "n": 3897,
+          "mean_w": 0.6239880028159245,
+          "vol": 0.07523919485597012
+        },
+        "oos": {
+          "sharpe": -0.766821057572991,
+          "cagr": -0.0579522418785442,
+          "maxdd": -0.35726211196848445,
+          "n": 1671,
+          "mean_w": 0.5223422485121602,
+          "vol": 0.0742496925304898
+        }
+      },
+      "pct_is": 92.5,
+      "pct_oos": 52.5,
+      "null_bar_is": 0.4714349619692186,
+      "null_bar_oos": -0.1817783529057379,
+      "verdict": "FAIL"
+    },
+    "TLT_10y-2y": {
+      "arm": {
+        "is": {
+          "sharpe": 0.32536610154391016,
+          "cagr": 0.042270294783410156,
+          "maxdd": -0.5134660233945796,
+          "n": 3897,
+          "mean_w": 0.6996975501836128,
+          "vol": 0.17336886121702863
+        },
+        "oos": {
+          "sharpe": -0.08378351121185773,
+          "cagr": -0.04267847990260076,
+          "maxdd": -0.4224749304062184,
+          "n": 1671,
+          "mean_w": 1.297028908769546,
+          "vol": 0.22353248893010835
+        }
+      },
+      "buy_hold": {
+        "is": {
+          "sharpe": 0.3792284661653026,
+          "cagr": 0.043522926439632625,
+          "maxdd": -0.2886493098498619,
+          "n": 3897,
+          "mean_w": 1.0,
+          "vol": 0.13713716381840704
+        },
+        "oos": {
+          "sharpe": -0.5848797060747489,
+          "cagr": -0.10184410966480373,
+          "maxdd": -0.5534753355455607,
+          "n": 1671,
+          "mean_w": 1.0,
+          "vol": 0.16137092047803975
+        }
+      },
+      "voltarget": {
+        "is": {
+          "sharpe": 0.4003476150849963,
+          "cagr": 0.027556881865542504,
+          "maxdd": -0.1435564375934456,
+          "n": 3897,
+          "mean_w": 0.6212805874086725,
+          "vol": 0.07491274025353706
+        },
+        "oos": {
+          "sharpe": -0.766821057572991,
+          "cagr": -0.05769693721356317,
+          "maxdd": -0.3559805697886641,
+          "n": 1671,
+          "mean_w": 0.5200758628683682,
+          "vol": 0.07392753126996301
+        }
+      },
+      "pct_is": 75.5,
+      "pct_oos": 100.0,
+      "null_bar_is": 0.5396008581518149,
+      "null_bar_oos": -0.16177297865069523,
+      "verdict": "FAIL"
+    },
+    "IEF_10y-3m": {
+      "arm": {
+        "is": {
+          "sharpe": 0.42429736163371184,
+          "cagr": 0.03465521678849037,
+          "maxdd": -0.2354438376340654,
+          "n": 3897,
+          "mean_w": 0.702746690887791,
+          "vol": 0.08977856704420635
+        },
+        "oos": {
+          "sharpe": -0.4913872546240713,
+          "cagr": -0.05235935729999486,
+          "maxdd": -0.3677625832121666,
+          "n": 1671,
+          "mean_w": 1.269066850172421,
+          "vol": 0.09938798725095256
+        }
+      },
+      "buy_hold": {
+        "is": {
+          "sharpe": 0.3759071020157562,
+          "cagr": 0.022617383790994428,
+          "maxdd": -0.12117877684071732,
+          "n": 3897,
+          "mean_w": 1.0,
+          "vol": 0.06514137164863885
+        },
+        "oos": {
+          "sharpe": -0.5217255968136053,
+          "cagr": -0.04028821339429911,
+          "maxdd": -0.278403913338082,
+          "n": 1671,
+          "mean_w": 1.0,
+          "vol": 0.07362373489877765
+        }
+      },
+      "voltarget": {
+        "is": {
+          "sharpe": 0.3514634061514422,
+          "cagr": 0.022297945417196097,
+          "maxdd": -0.15115224661095505,
+          "n": 3897,
+          "mean_w": 1.1735832211311044,
+          "vol": 0.06964726187999248
+        },
+        "oos": {
+          "sharpe": -0.6863374637122446,
+          "cagr": -0.04954650872438526,
+          "maxdd": -0.3169113765569097,
+          "n": 1671,
+          "mean_w": 1.0846496616772314,
+          "vol": 0.07042035834367587
+        }
+      },
+      "pct_is": 96.5,
+      "pct_oos": 43.0,
+      "null_bar_is": 0.44446767156579037,
+      "null_bar_oos": -0.08935832063593764,
+      "verdict": "FAIL"
+    },
+    "IEF_10y-2y": {
+      "arm": {
+        "is": {
+          "sharpe": 0.3671799982493828,
+          "cagr": 0.029957934855619595,
+          "maxdd": -0.23544383763406662,
+          "n": 3897,
+          "mean_w": 0.6996975501836128,
+          "vol": 0.09187022090365345
+        },
+        "oos": {
+          "sharpe": -0.08804665341575049,
+          "cagr": -0.012136785342684808,
+          "maxdd": -0.1746244375380286,
+          "n": 1671,
+          "mean_w": 1.297028908769546,
+          "vol": 0.09135946083174215
+        }
+      },
+      "buy_hold": {
+        "is": {
+          "sharpe": 0.3759071020157562,
+          "cagr": 0.022617383790994428,
+          "maxdd": -0.12117877684071732,
+          "n": 3897,
+          "mean_w": 1.0,
+          "vol": 0.06514137164863885
+        },
+        "oos": {
+          "sharpe": -0.5217255968136053,
+          "cagr": -0.04028821339429911,
+          "maxdd": -0.278403913338082,
+          "n": 1671,
+          "mean_w": 1.0,
+          "vol": 0.07362373489877765
+        }
+      },
+      "voltarget": {
+        "is": {
+          "sharpe": 0.3514634061514423,
+          "cagr": 0.022210840388098507,
+          "maxdd": -0.15053359808890343,
+          "n": 3897,
+          "mean_w": 1.1684911724374696,
+          "vol": 0.06934507006054107
+        },
+        "oos": {
+          "sharpe": -0.6863374637122445,
+          "cagr": -0.04932671778018016,
+          "maxdd": -0.3157353456374554,
+          "n": 1671,
+          "mean_w": 1.079943485929872,
+          "vol": 0.07011481214358312
+        }
+      },
+      "pct_is": 90.0,
+      "pct_oos": 98.0,
+      "null_bar_is": 0.49527058640111976,
+      "null_bar_oos": -0.051005470053756226,
+      "verdict": "FAIL"
+    }
+  },
+  "any_pass": false
+}

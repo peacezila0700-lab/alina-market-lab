@@ -1,4 +1,4 @@
-# Brief 2026-11-20 (generated 2026-11-20T19:20:56Z)
+# Brief 2026-11-20 (generated 2026-11-20T19:34:13Z)
 
 ## State
 | key | value |
@@ -11,6 +11,13 @@
 | dix_percentile | 46.0 |
 | gex_usd_bn | -0.9 |
 | gex_regime | negative (dealers amplify moves) |
+| vix_slope_3m | 1.0522 |
+| vix_slope_3m_note | >1 = inverted term structure = stress is NOW, not later |
+| vix_slope_9d | 1.0288 |
+| vix_slope_9d_note | >1 = front-end panic (VIX9D above VIX) |
+| vvix_percentile | 0.9756 |
+| vvix_note | vol-of-vol >0.9 means even the hedging market is unstable |
+| term_inversions_last_252d | 9 |
 | ofr_fsi | -1.39 |
 | ofr_fsi_4w_chg | 0.59 |
 | btc_funding_8h_pct | 0.00638 |
@@ -88,6 +95,7 @@
 
 ## Flags
 
+- term structure INVERTED (VIX > VIX3M): measured forward 21d SPY median +3.41%, 71% positive, n_eff 15 — historically a recovery rally follows panic, not a short signal; use it to expect gap risk and to size down, not to pick direction.
 - dealer gamma is NEGATIVE: moves get amplified both ways; trend signals are less reliable and stop-hunts are more common
 
 ## Scenario branches (pick one, do not invent)
@@ -98,8 +106,9 @@
 
 ## Data age (days)
 
-- vix: 1.81
-- dix_gex: 1.81
-- ofr_fsi: 2.81
-- cot: 7.81
-- news: 0.81
+- vix: 1.82
+- dix_gex: 1.82
+- vol_term_structure: 1.82
+- ofr_fsi: 2.82
+- cot: 7.82
+- news: 0.82

@@ -1,29 +1,27 @@
-# CURRENT STATE — 2026-11-20 (v2.1, after EXP-0014)
+# CURRENT STATE — 2026-11-20 (v2.2, after EXP-0016)
 
 ## Focus
 Data + code + experiments for a downstream AI. App frozen. Two stacked universes: 24-instrument
-research panel + 5-instrument execution book (EURUSD, EURGBP, EURCHF, GBPUSD, GOLD — cheapest measured
-spreads), plus a 68-ETF cross-section for statistical power.
+research panel + 5-instrument execution book (EURUSD, EURGBP, EURCHF, GBPUSD, GOLD), plus a 68-ETF
+cross-section, a CBOE volatility term structure and a 36-year Treasury curve for conditioning.
 
-## Shipped this session (v2.1)
-- **News** `scripts/fetch_news.py` → 294 headlines / 15 feeds, entity tags, per-day pressure counts.
-- **Levels** `scripts/build_levels.py` → 28 instruments: pivots, prior D/W levels, value areas, ATR.
-- **Broad panel** `scripts/fetch_broad_panel.py` → 68 symbols / 362,836 rows / 38 MB.
-- **Daily brief** `scripts/daily_brief.py` → `briefs/latest.{json,md}` — the entry file for the local
-  AI (~1.5k tokens: state, 7-day calendar, base rates, levels, 48h headlines, flags, scenario branches).
-- **EXP-0010..0014, all FAIL** (event-conditional, auction demand, cross-section, breadth overlay,
-  gamma-vs-vol-targeting). Full text in `research/EXPERIMENT_LOG.csv` + `research/artifacts/`.
-- **`datapack_src/OPERATING_MANUAL.md`** — cron lines, the daily loop, what never to rebuild.
-- **`PITFALLS.md` #11–14** — the four null-design traps found this session (static null, mask copies,
-  shift-null vs vol targeting, sizing vs signal).
-- Pack **v2.1**: 34 datasets / 328 files / 17.5 MB. Upload to Drive pending rate limit at time of
-  writing; v2.0 is live as `1AX6goRuhPCEWu8fPrTJPFQwy1lO2hT-s` until v2.1 replaces it.
+## Drive (live)
+- **v2.2 `1JEWD5dbkYVIISo4JA5ts9oijnwK4GYmk`** — 38 datasets / 355 files / 19.8 MB. Current.
+- v2.1, v2.0, v1.3, v1.2, v1.1 all trashed. Local `pack/` deleted after each upload.
 
-## The two lessons that matter for the next session
-1. **Scheduled events do not move the tape more than a random day** (|move| 1.09x for FOMC, 1.33x for
-   NFP on bonds). Only crisis onset does (1.65–1.75x). Build onset detectors, not calendars.
-2. **State variables move volatility, not expected return.** Overlays cut drawdown (−27% vs −51%) but
-   not CAGR, and the gamma overlay is indistinguishable from plain vol targeting. Use them for size.
+## Shipped this session
+- News (294 headlines/15 feeds), levels (28 instruments), 68-ETF broad panel (38 MB), daily brief.
+- **CBOE term structure**: VIX/VIX1D/VIX9D/VIX3M/VVIX/SKEW + derived slope_3m, slope_9d, vvix_pct,
+  inversion onset flag; `VOL_REGIME_BASE_RATES.md` with n_eff per cell.
+- **Treasury curve backfill 1990–2026** (9,228 days, 37 year-requests) — was 222 rows before.
+- **OKX deep**: 10,000 hourly bars + 280 funding settlements per symbol (endpoint caps both).
+- **EXP-0010..0016, all FAIL.** 16 experiments, 0 validated edges.
+- `OPERATING_MANUAL.md`, `PITFALLS.md` #11–16, `WHAT_FAILED.md` (11 rejects), register H16–H19 rejected.
+
+## The taxonomy to carry forward (2 sentences)
+**Variance is forecastable, direction is not.** Term structure predicts a vol onset (AUC 0.746, Brier
++0.168) yet an overlay built on it loses to free vol targeting by −0.28 Sharpe OOS; state variables cut
+drawdown (gamma −27% vs −51%, bond carry halves 2022-26 losses) but never add mean return per exposure.
 
 ## Measured highlights (do not re-derive)
 - FOMC day |SPY move| is only **1.09×** a random day (TLT 1.15×) — the meeting matters far less

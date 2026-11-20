@@ -1,0 +1,63 @@
+{
+  "experiment": "EXP-0015",
+  "hypothesis": "H18",
+  "design": " (written before the result)\n-------------------------------------------------\nSample      : SPY daily 2011-01-04 .. latest (VIX9D starts 2011; VIX3M 2009; VVIX 2006).\nTargets     : ON1 = VIX closes above 30 having been below 28 the previous day (the crisis-onset label).\n              ON2 = RV20(t) > 1.5 x median RV20 over t-60..t-1 (vol-expansion onset, more frequent).\nFeatures    : every feature is taken at t-1 (or at the same close, only if the label is measured\n              from t+1 onward): vix level percentile (252d), slope_3m = VIX/VIX3M, slope_9d = VIX9D/VIX,\n              vvix percentile, skew percentile, HYG/IEF 20-day return, breadth200 (11 sectors above\n              their 200-day MA), dealer GEX sign, SPY 20-day realised vol percentile.\nModel       : L2 logistic regression on standardised features, WALK-FORWARD: fit on everything up to\n              year Y-1, predict year Y, refit each January. No hyper-parameter search, C fixed at 1.0.\nMetrics     : OOS AUC, Brier skill vs the training base rate, and calibration by predicted-probability\n              decile. Reported for both targets.\nEconomic    : SPY exposure, three arms, mean exposure matched:\n                A  p-based  : w = 0.4 if p(t-1) >= threshold else 1.4   (threshold = in-sample 80th\n                            percentile of p, fixed before OOS)\n                B  voltarget: w = clip(0.15/RV20(t-1),0,2) * k           (k matches mean exposure of A)\n                C  buy&hold : w = 1\n              Statistic: \u0394 = Sharpe(A) \u2212 Sharpe(B); null = circular shifts of A's weight series (200).\n\nPASS BAR (pre-declared)\n  OOS AUC >= 0.65 on at least one target AND \u0394(A\u2212B) > 0 with percentile >= 95 on the OOS slice.\n  A high AUC with no economic increment is a FAIL and is logged as \"predictable but not tradeable\" \u2014\n  which is itself an important, reusable finding (the onset is already in the vol estimate).\n",
+  "sample": [
+    "2011-01-04",
+    "2026-11-20"
+  ],
+  "onsets": {
+    "ON1": 156,
+    "ON2": 535
+  },
+  "auc": {
+    "ON1": 0.6652899201360994,
+    "ON2": 0.7463260191209666
+  },
+  "arms": {
+    "A_probsize": {
+      "is": {
+        "sharpe": 0.679497530972212,
+        "cagr": 0.13445185389073644,
+        "maxdd": -0.45238564477488696,
+        "n": 2212,
+        "mean_w": 1.199728752260398,
+        "vol": 0.2223632724215973
+      },
+      "oos": {
+        "sharpe": 0.5554087742831062,
+        "cagr": 0.061567688637945484,
+        "maxdd": -0.1726994406240695,
+        "n": 950,
+        "mean_w": 0.8694736842105264,
+        "vol": 0.12075297540085146
+      }
+    },
+    "B_voltarget": {
+      "is": {
+        "sharpe": 0.6606744382296589,
+        "cagr": 0.0880621401661228,
+        "maxdd": -0.1846208466341105,
+        "n": 2214,
+        "mean_w": 1.0971425691429593,
+        "vol": 0.1434025471616881
+      },
+      "oos": {
+        "sharpe": 0.8329672092418449,
+        "cagr": 0.11791265202691714,
+        "maxdd": -0.166950671933063,
+        "n": 950,
+        "mean_w": 1.0977314632515456,
+        "vol": 0.146824321377621
+      }
+    }
+  },
+  "threshold": 0.02090549270990207,
+  "vol_scale_k": 0.879834697909325,
+  "delta_is": 0.018823092742553116,
+  "delta_is_pct": 87.0,
+  "delta_oos": -0.27755843495873866,
+  "delta_oos_pct": 10.5,
+  "bar": "AUC>=0.65 on some target AND \u0394(A\u2212B)>0 at >=95th pct OOS",
+  "verdict": "FAIL"
+}

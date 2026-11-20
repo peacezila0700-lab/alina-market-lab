@@ -234,8 +234,8 @@ def c_macro_intraday() -> None:
 def c_downstream() -> None:
     """After the raw sources: refresh the derived layers a local AI actually reads."""
     import subprocess
-    for script in ("scripts/fetch_news.py", "scripts/build_levels.py", "scripts/build_event_db.py",
-                   "scripts/daily_brief.py"):
+    for script in ("scripts/fetch_vol_term.py", "scripts/fetch_news.py", "scripts/build_levels.py",
+                   "scripts/build_event_db.py", "scripts/build_vol_regimes.py", "scripts/daily_brief.py"):
         p = os.path.join(ROOT, script)
         if not os.path.exists(p):
             continue
