@@ -1,0 +1,179 @@
+{
+  "source": "https://publicreporting.cftc.gov/resource/6dca-aqww.json",
+  "dataset": "Legacy Futures Only (6dca-aqww)",
+  "fetched_utc": "2026-11-20T18:48:03Z",
+  "lag_rule": "positions as of Tuesday; public Friday 15:30 ET -> use available_from",
+  "contracts": {
+    "EURO FX": {
+      "rows": 1525,
+      "label": "EURUSD",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "BRITISH POUND": {
+      "rows": 1888,
+      "label": "GBPUSD",
+      "first": "1988-04-29",
+      "last": "2026-11-10"
+    },
+    "JAPANESE YEN": {
+      "rows": 1977,
+      "label": "USDJPY",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "SWISS FRANC": {
+      "rows": 1941,
+      "label": "USDCHF",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "CANADIAN DOLLAR": {
+      "rows": 1943,
+      "label": "USDCAD",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "AUSTRALIAN DOLLAR": {
+      "rows": 1806,
+      "label": "AUDUSD",
+      "first": "1987-01-30",
+      "last": "2026-11-10"
+    },
+    "NZ DOLLAR": {
+      "rows": 1162,
+      "label": "NZDUSD",
+      "first": "1999-01-05",
+      "last": "2026-11-10"
+    },
+    "MEXICAN PESO": {
+      "rows": 1644,
+      "label": "USDMXN",
+      "first": "1995-05-23",
+      "last": "2026-11-10"
+    },
+    "S&P 500 Consolidated": {
+      "rows": 857,
+      "label": "SP500",
+      "first": "2010-06-15",
+      "last": "2026-11-10"
+    },
+    "NASDAQ-100 Consolidated": {
+      "rows": 857,
+      "label": "NASDAQ100",
+      "first": "2010-06-15",
+      "last": "2026-11-10"
+    },
+    "VIX FUTURES": {
+      "rows": 1121,
+      "label": "VIX",
+      "first": "2004-07-27",
+      "last": "2026-11-10"
+    },
+    "GOLD": {
+      "rows": 1952,
+      "label": "GOLD",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "SILVER": {
+      "rows": 1942,
+      "label": "SILVER",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "COPPER- #1": {
+      "rows": 1857,
+      "label": "COPPER",
+      "first": "1989-07-31",
+      "last": "2026-11-10"
+    },
+    "PLATINUM": {
+      "rows": 1955,
+      "label": "PLATINUM",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "CRUDE OIL, LIGHT SWEET-WTI": {
+      "rows": 903,
+      "label": "WTI",
+      "first": "2009-07-28",
+      "last": "2026-11-10"
+    },
+    "WTI FINANCIAL CRUDE OIL": {
+      "rows": 1005,
+      "label": "WTI_FINANCIAL",
+      "first": "2007-02-20",
+      "last": "2026-11-10"
+    },
+    "NAT GAS NYME": {
+      "rows": 1839,
+      "label": "NATGAS",
+      "first": "1990-04-12",
+      "last": "2026-11-10"
+    },
+    "CORN": {
+      "rows": 1628,
+      "label": "CORN",
+      "first": "1986-01-31",
+      "last": "2026-11-10"
+    },
+    "WHEAT-SRW": {
+      "rows": 1506,
+      "label": "WHEAT",
+      "first": "1998-01-06",
+      "last": "2026-11-10"
+    },
+    "UST BOND": {
+      "rows": 1943,
+      "label": "UST_BOND",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "UST 10Y NOTE": {
+      "rows": 1943,
+      "label": "UST_10Y",
+      "first": "1986-01-15",
+      "last": "2026-11-10"
+    },
+    "BITCOIN": {
+      "rows": 449,
+      "label": "BTC",
+      "first": "2018-04-10",
+      "last": "2026-11-10"
+    },
+    "ETHER CASH SETTLED": {
+      "rows": 293,
+      "label": "ETH",
+      "first": "2021-04-06",
+      "last": "2026-11-10"
+    }
+  },
+  "total_rows": 35936,
+  "instruments": [
+    "AUDUSD",
+    "BTC",
+    "COPPER",
+    "CORN",
+    "ETH",
+    "EURUSD",
+    "GBPUSD",
+    "GOLD",
+    "NASDAQ100",
+    "NATGAS",
+    "NZDUSD",
+    "PLATINUM",
+    "SILVER",
+    "SP500",
+    "USDCAD",
+    "USDCHF",
+    "USDJPY",
+    "USDMXN",
+    "UST_10Y",
+    "UST_BOND",
+    "VIX",
+    "WHEAT",
+    "WTI",
+    "WTI_FINANCIAL"
+  ]
+}
