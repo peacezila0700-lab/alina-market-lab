@@ -40,3 +40,15 @@
   Any new script must either import `backtest_engine` or reproduce its lag and pass the
   regression test **before** reporting numbers. Screens are not results until a
   deliberately-wrong benchmark (random null) and a lag test both pass.
+
+## QR-003 — Yahoo FX daily returns are not a proxy for official fixes
+- **Date:** 2026-11-20 · **Component:** every Yahoo-FX-derived research artifact
+- **What happened:** validating the ECB-derived GBPUSD cross (`EURUSD / EURGBP`) against Yahoo GBPUSD
+  gave **level correlation 0.9995** but only **0.52 on daily returns**; ECB vs Yahoo EURUSD directly
+  gave **0.38**. No lag from -2 to +2 repairs it (max 0.52 at lag 0).
+- **Cause:** different daily snapshot times (ECB 14:15 CET fix vs Yahoo session close) -> levels agree,
+  returns decorrelate.
+- **Impact:** no published conclusion changes (Yahoo FX was only used for shape / P2, which failed),
+  but "shape only" was too generous.
+- **Rule:** official fixes (ECB/BoC/SNB/Bundesbank) for FX levels AND returns; crosses computed from
+  official series are acceptable (verified 0.9995 level agreement).

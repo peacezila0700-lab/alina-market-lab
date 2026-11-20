@@ -97,3 +97,14 @@
   (b) forward paper run of locked P1R rule from 2026-11-20; (c) still want the owner MT5 export.
 - Artifacts fixed: `research/artifacts/h09_{assumed,ecn,retail}.json` (an earlier run had overwritten
   the assumed file; recovered from commit 41d541a).
+
+## Update 2026-11-20 (H10 hold-out) — reversion thread CLOSED, zero validated edges
+- PREREG_H10 committed before running: 5 cheapest EUR pairs by 2003-2018 spread, tested 2019-2026 only.
+- Result: retail Sharpe **+0.126** (bar 0.35), 2x cost +0.069, 3y windows positive **16.7%** (1/6),
+  null_pct 93.3 => FAIL A1-A4. Secondary 9-pair +0.202 fails too. EXP-0007 REJECTED.
+- => EXP-0006 "conditionally supported" resolved NEGATIVELY. Cross-sectional reversion closes.
+- QR-003: Yahoo FX daily returns correlate 0.38-0.52 with ECB fixes (levels 0.99) -> never use them.
+- Project tally: 5 pre-registered experiments, 168-test screen, 27y official FX, null on every test,
+  **zero validated edges**; one fake edge found and killed (QR-002).
+- NEXT (per PREREG_H10 escape clause): H11 = volatility risk premium / carry — a mechanism family
+  never tested here; must not reuse reversion data or rules.
