@@ -10,6 +10,12 @@
 - GitHub repo scaffold pushed — commit `adaaced3`
 - Sample decode verified: EURGBP 2024-01-02, 1,440 M1 bars, bid+ask
 
+## Done this session (evidence)
+- T04b QC + manifest: `reports/QC_D1.md`, `data/processed/MANIFEST.json` — both datasets **PASS**
+- Canonical cleaning: `scripts/build_canonical_d1.py` → 2,592 bars each, log `CLEANING_LOG.csv` (720 rows)
+- T07 Descriptive research: `reports/RESEARCH_D1.md`, `reports/zscore_buckets.csv`
+- Decisions D01–D06: `docs/DECISION_LOG.md`
+
 ## In progress / blocked by source
 - Ingest M1 candles: **BLOCKED — Dukascopy returns HTTP 429** (rate limit, source-side, verified 5/5 curl)
 - v1 script had a silent-data-loss bug → fixed as **QR-001** (`docs/INCIDENT_LOG.md`), job now stops instead of faking days
