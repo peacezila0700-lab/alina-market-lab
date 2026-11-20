@@ -1,0 +1,121 @@
+{
+  "EURGBP": {
+    "IS": {
+      "n": 114,
+      "net_exp": -1.66,
+      "total": -189.5,
+      "pf": 0.8,
+      "win": 52.6,
+      "maxdd": 346.5,
+      "sd": 19.2,
+      "ci_lo": -4.57,
+      "ci_hi": 1.28,
+      "reasons": {
+        "day_flat": 56,
+        "ma_cross": 35,
+        "stop_loss": 23
+      },
+      "overnight_trades": 0,
+      "avg_bars": 8.0
+    },
+    "VALIDATION": {
+      "n": 24,
+      "net_exp": 0.97,
+      "total": 23.3,
+      "pf": 1.16,
+      "win": 62.5,
+      "maxdd": 44.1,
+      "sd": 15.6,
+      "ci_lo": -4.72,
+      "ci_hi": 7.58,
+      "reasons": {
+        "day_flat": 9,
+        "stop_loss": 5,
+        "ma_cross": 10
+      },
+      "overnight_trades": 0,
+      "avg_bars": 6.1
+    },
+    "OOS_LOCKED": {
+      "n": 20,
+      "net_exp": 2.88,
+      "total": 57.5,
+      "pf": 1.86,
+      "win": 65.0,
+      "maxdd": 23.7,
+      "sd": 11.7,
+      "ci_lo": -1.78,
+      "ci_hi": 7.61,
+      "reasons": {
+        "ma_cross": 9,
+        "day_flat": 8,
+        "stop_loss": 3
+      },
+      "overnight_trades": 0,
+      "avg_bars": 7.5
+    }
+  },
+  "EURUSD": {
+    "IS": {
+      "n": 99,
+      "net_exp": -4.6,
+      "total": -455.1,
+      "pf": 0.66,
+      "win": 49.5,
+      "maxdd": 644.9,
+      "sd": 30.9,
+      "ci_lo": -9.93,
+      "ci_hi": 0.93,
+      "reasons": {
+        "stop_loss": 19,
+        "day_flat": 61,
+        "ma_cross": 19
+      },
+      "overnight_trades": 0,
+      "avg_bars": 7.5
+    },
+    "VALIDATION": {
+      "n": 22,
+      "net_exp": -9.1,
+      "total": -200.2,
+      "pf": 0.4,
+      "win": 36.4,
+      "maxdd": 263.9,
+      "sd": 24.6,
+      "ci_lo": -18.83,
+      "ci_hi": 0.72,
+      "reasons": {
+        "day_flat": 11,
+        "ma_cross": 5,
+        "stop_loss": 6
+      },
+      "overnight_trades": 0,
+      "avg_bars": 7.8
+    },
+    "OOS_LOCKED": {
+      "n": 21,
+      "net_exp": 5.52,
+      "total": 115.9,
+      "pf": 1.7,
+      "win": 66.7,
+      "maxdd": 110.8,
+      "sd": 24.0,
+      "ci_lo": -5.84,
+      "ci_hi": 17.59,
+      "reasons": {
+        "ma_cross": 8,
+        "day_flat": 9,
+        "stop_loss": 4
+      },
+      "overnight_trades": 0,
+      "avg_bars": 8.6
+    }
+  },
+  "_random_benchmark": {
+    "n_trades": 24,
+    "sims": 2000,
+    "mean": -0.94,
+    "p5": -5.19,
+    "p95": 3.19
+  }
+}
