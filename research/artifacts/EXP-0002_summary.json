@@ -1,0 +1,159 @@
+{
+  "generated": "2026-11-20T15:40:48+00:00",
+  "rule": "frozen H01 (z>=2, MA50, sigma 252d, next-open fill, 20d time stop, 3*ATR stop)",
+  "cost_pips_per_trade": 1.3,
+  "split": {
+    "CLEAN": "< 2016-11-21 (never used before)",
+    "USED": ">= 2016-11-21"
+  },
+  "per_pair": {
+    "EURGBP": {
+      "CLEAN": {
+        "n": 33,
+        "net_exp": -15.3,
+        "total": -505.0,
+        "pf": 0.8,
+        "win": 51.5,
+        "sd": 184.0
+      },
+      "USED": {
+        "n": 14,
+        "net_exp": 61.58,
+        "total": 862.2,
+        "pf": 2.29,
+        "win": 71.4,
+        "sd": 192.9
+      },
+      "bars": 6973,
+      "first": "2000-01-03"
+    },
+    "EURCHF": {
+      "CLEAN": {
+        "n": 16,
+        "net_exp": 79.19,
+        "total": 1267.0,
+        "pf": 3.12,
+        "win": 68.8,
+        "sd": 194.8
+      },
+      "USED": {
+        "n": 12,
+        "net_exp": -0.12,
+        "total": -1.5,
+        "pf": 1.0,
+        "win": 50.0,
+        "sd": 136.1
+      },
+      "bars": 6160,
+      "first": "2003-01-23"
+    },
+    "AUDNZD": {
+      "CLEAN": {
+        "n": 15,
+        "net_exp": -8.2,
+        "total": -122.9,
+        "pf": 0.94,
+        "win": 53.3,
+        "sd": 295.1
+      },
+      "USED": {
+        "n": 17,
+        "net_exp": 28.02,
+        "total": 476.4,
+        "pf": 1.65,
+        "win": 52.9,
+        "sd": 127.8
+      },
+      "bars": 5957,
+      "first": "2003-12-01"
+    },
+    "CADCHF": {
+      "CLEAN": {
+        "n": 14,
+        "net_exp": -50.88,
+        "total": -712.2,
+        "pf": 0.57,
+        "win": 35.7,
+        "sd": 216.4
+      },
+      "USED": {
+        "n": 8,
+        "net_exp": 76.26,
+        "total": 610.0,
+        "pf": 2.85,
+        "win": 62.5,
+        "sd": 173.3
+      },
+      "bars": 5954,
+      "first": "2003-12-01"
+    },
+    "EURUSD": {
+      "CLEAN": {
+        "n": 16,
+        "net_exp": 38.72,
+        "total": 619.5,
+        "pf": 1.27,
+        "win": 43.8,
+        "sd": 417.6
+      },
+      "USED": {
+        "n": 14,
+        "net_exp": -64.05,
+        "total": -896.8,
+        "pf": 0.48,
+        "win": 21.4,
+        "sd": 213.3
+      },
+      "bars": 5934,
+      "first": "2003-12-01"
+    }
+  },
+  "pooled": {
+    "CLEAN": {
+      "n": 94,
+      "net_exp": 5.81,
+      "total": 546.3,
+      "pf": 1.06,
+      "win": 51.1,
+      "sd": 259.5,
+      "ci_lo": -52.55,
+      "ci_hi": 67.66,
+      "months": 57,
+      "pair_means": [
+        -15.3,
+        79.2,
+        -8.2,
+        -50.9,
+        38.7
+      ],
+      "pairs_positive": 2,
+      "avg_concurrent_other_pairs": 0.62
+    },
+    "USED": {
+      "n": 65,
+      "net_exp": 16.16,
+      "total": 1050.4,
+      "pf": 1.25,
+      "win": 50.8,
+      "sd": 172.5,
+      "ci_lo": -23.86,
+      "ci_hi": 53.87,
+      "months": 45,
+      "pair_means": [
+        61.6,
+        -0.1,
+        28.0,
+        76.3,
+        -64.1
+      ],
+      "pairs_positive": 3,
+      "avg_concurrent_other_pairs": 0.48
+    }
+  },
+  "random_benchmark_CLEAN": {
+    "sims": 1000,
+    "mean": 2.79,
+    "p5": -36.04,
+    "p95": 43.77
+  }
+}
