@@ -1,0 +1,68 @@
+{
+  "universe": {
+    "n_assets": 60,
+    "start": "2007-01-03",
+    "end": "2026-11-20",
+    "cost_bp_per_side": 5.0,
+    "permutations": 200,
+    "note": "vol wrappers and cash excluded; quarterly-listed ETFs partially NaN early"
+  },
+  "pass_bar": "beat 95th pct of permutation null in-sample AND positive out-of-sample",
+  "results": {
+    "MOM_12_1": {
+      "n_weeks": 1038,
+      "sharpe_is": 0.063,
+      "sharpe_oos": 0.534,
+      "mean_weekly_bp": 6.78,
+      "cagr_pct": 1.75,
+      "maxdd_pct": -49.74,
+      "null_static_median": -0.187,
+      "null_static_p95": 0.317,
+      "null_dynamic_median": -1.016,
+      "null_median_sharpe": -0.187,
+      "null_p95_sharpe": 0.317,
+      "percentile_vs_null": 78.5,
+      "null_std_sharpe": 0.2789,
+      "z_vs_null": 0.9,
+      "null_note": "the permutation null is TIGHT here: with 13 longs and 13 shorts out of 60+, a random selection produces almost the same portfolio return, so the signal cannot add anything unless it is strongly informative. That is the finding, not a bug.",
+      "verdict": "FAILS"
+    },
+    "REV_1M": {
+      "n_weeks": 1038,
+      "sharpe_is": -0.061,
+      "sharpe_oos": 0.165,
+      "mean_weekly_bp": -0.12,
+      "cagr_pct": -1.78,
+      "maxdd_pct": -63.1,
+      "null_static_median": -0.536,
+      "null_static_p95": 0.014,
+      "null_dynamic_median": -1.058,
+      "null_median_sharpe": -0.536,
+      "null_p95_sharpe": 0.014,
+      "percentile_vs_null": 93.0,
+      "null_std_sharpe": 0.2867,
+      "z_vs_null": 1.66,
+      "null_note": "the permutation null is TIGHT here: with 13 longs and 13 shorts out of 60+, a random selection produces almost the same portfolio return, so the signal cannot add anything unless it is strongly informative. That is the finding, not a bug.",
+      "verdict": "FAILS"
+    },
+    "REV_5D": {
+      "n_weeks": 1038,
+      "sharpe_is": -0.903,
+      "sharpe_oos": -0.518,
+      "mean_weekly_bp": -27.82,
+      "cagr_pct": -14.93,
+      "maxdd_pct": -96.3,
+      "null_static_median": -1.04,
+      "null_static_p95": -0.617,
+      "null_dynamic_median": -1.069,
+      "null_median_sharpe": -1.04,
+      "null_p95_sharpe": -0.617,
+      "percentile_vs_null": 68.0,
+      "null_std_sharpe": 0.2855,
+      "z_vs_null": 0.48,
+      "null_note": "the permutation null is TIGHT here: with 13 longs and 13 shorts out of 60+, a random selection produces almost the same portfolio return, so the signal cannot add anything unless it is strongly informative. That is the finding, not a bug.",
+      "verdict": "FAILS"
+    }
+  },
+  "conclusion": "no cross-sectional factor beats its own permutation null on 60+ ETFs \u2014 the classic factors are arbitraged in the liquid ETF cross-section, which is exactly what theory predicts for the most-watched version of a factor"
+}

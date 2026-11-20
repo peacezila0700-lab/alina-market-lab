@@ -231,10 +231,30 @@ def c_macro_intraday() -> None:
                 upsert(f"okx_{inst.replace('-', '')}_1h", df[["ts", "o", "h", "l", "c", "vol"]], ["ts"]))
 
 
+def c_downstream() -> None:
+    """After the raw sources: refresh the derived layers a local AI actually reads."""
+    import subprocess
+    for script in ("scripts/fetch_news.py", "scripts/build_levels.py", "scripts/build_event_db.py",
+                   "scripts/daily_brief.py"):
+        p = os.path.join(ROOT, script)
+        if not os.path.exists(p):
+            continue
+        try:
+            r = subprocess.run(["python3", p], capture_output=True, text=True, timeout=600)
+            tail = (r.stdout or "").strip().splitlines()[-1:] or ["(no output)"]
+            print(f"  {script:28} {tail[0][:90]}")
+            LOG.append({"source": script, "added_rows": 0 if r.returncode == 0 else -1,
+                        "ts": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")})
+        except Exception as e:                                    # noqa: BLE001
+            print(f"  {script}: {e}")
+            LOG.append({"source": script, "added_rows": -2,
+                        "ts": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")})
+
+
 def main() -> None:
     print(f"collector run {datetime.now(timezone.utc):%Y-%m-%dT%H:%M:%SZ}")
     for fn in (c_dix_gex, c_ofr_fsi, c_vix_skew, c_okx, c_deribit, c_calendar, c_eia, c_epu_gpr,
-               c_treasury, c_macro_intraday):
+               c_treasury, c_macro_intraday, c_downstream):
         try:
             fn()
         except Exception as e:                                    # noqa: BLE001

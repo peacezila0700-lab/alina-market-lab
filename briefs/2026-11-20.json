@@ -1,0 +1,702 @@
+{
+ "generated_utc": "2026-11-20T19:20:56Z",
+ "as_of": "2026-11-20",
+ "state": {
+  "vix": 28.44,
+  "vix_percentile_all_history": 89.9,
+  "skew": 140.86,
+  "skew_note": ">145 = tail protection expensive; <115 = complacent",
+  "dix": 0.4308,
+  "dix_percentile": 46.0,
+  "gex_usd_bn": -0.9,
+  "gex_regime": "negative (dealers amplify moves)",
+  "ofr_fsi": -1.39,
+  "ofr_fsi_4w_chg": 0.59,
+  "btc_funding_8h_pct": 0.00638,
+  "btc_funding_annualised_pct": 6.75,
+  "btc_long_short_ratio": 1.08,
+  "cot_as_of": "2026-11-13",
+  "cot_extremes": [
+   {
+    "instrument": "EURUSD",
+    "noncomm_net_pct_oi_pct156": 0.01,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "NATGAS",
+    "noncomm_net_pct_oi_pct156": 0.0,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "PLATINUM",
+    "noncomm_net_pct_oi_pct156": 0.07,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "SILVER",
+    "noncomm_net_pct_oi_pct156": 0.05,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "USDCHF",
+    "noncomm_net_pct_oi_pct156": 1.0,
+    "side": "crowded_long"
+   },
+   {
+    "instrument": "USDMXN",
+    "noncomm_net_pct_oi_pct156": 0.08,
+    "side": "crowded_short"
+   }
+  ],
+  "news_volume_today": 294
+ },
+ "scheduled_events": [
+  {
+   "date": "2026-11-20",
+   "event": "OPEX",
+   "detail": "3rd Friday",
+   "date_confidence": "high"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "12:01am",
+   "country": "GBP",
+   "title": "GfK Consumer Confidence",
+   "impact": "Low",
+   "forecast": "-22",
+   "previous": "-24"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "1:00am",
+   "country": "CNY",
+   "title": "1-y Loan Prime Rate",
+   "impact": "Low",
+   "forecast": "3.00%",
+   "previous": "3.00%"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "1:00am",
+   "country": "CNY",
+   "title": "5-y Loan Prime Rate",
+   "impact": "Low",
+   "forecast": "3.50%",
+   "previous": "3.50%"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "2:00am",
+   "country": "NZD",
+   "title": "Credit Card Spending y/y",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "6.9%"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "7:00am",
+   "country": "EUR",
+   "title": "German PPI m/m",
+   "impact": "Low",
+   "forecast": "0.9%",
+   "previous": "1.9%"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "7:00am",
+   "country": "GBP",
+   "title": "Retail Sales m/m",
+   "impact": "Medium",
+   "forecast": "0.0%",
+   "previous": "-0.4%"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "7:00am",
+   "country": "GBP",
+   "title": "Public Sector Net Borrowing",
+   "impact": "Low",
+   "forecast": "18.0B",
+   "previous": "24.5B"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "8:15am",
+   "country": "EUR",
+   "title": "ECB President Lagarde Speaks",
+   "impact": "Medium",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-20-2026",
+   "time": "1:00pm",
+   "country": "EUR",
+   "title": "German Buba President Nagel Speaks",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-20-2026",
+   "time": "1:25pm",
+   "country": "USD",
+   "title": "FOMC Member Waller Speaks",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-20-2026",
+   "time": "1:30pm",
+   "country": "CAD",
+   "title": "Core Retail Sales m/m",
+   "impact": "Low",
+   "forecast": "0.7%",
+   "previous": "1.2%"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "1:30pm",
+   "country": "CAD",
+   "title": "Retail Sales m/m",
+   "impact": "Low",
+   "forecast": "0.7%",
+   "previous": "1.2%"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "3:00pm",
+   "country": "EUR",
+   "title": "Consumer Confidence",
+   "impact": "Low",
+   "forecast": "-18",
+   "previous": "-18"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "3:00pm",
+   "country": "USD",
+   "title": "Revised UoM Consumer Sentiment",
+   "impact": "Medium",
+   "forecast": "51.7",
+   "previous": "51.0"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "3:00pm",
+   "country": "USD",
+   "title": "Revised UoM Inflation Expectations",
+   "impact": "Medium",
+   "forecast": NaN,
+   "previous": "4.3%"
+  },
+  {
+   "date": "11-20-2026",
+   "time": "5:00pm",
+   "country": "USD",
+   "title": "President Trump Speaks",
+   "impact": "Medium",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-20-2026",
+   "time": "5:15pm",
+   "country": "USD",
+   "title": "FOMC Member Cook Speaks",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  }
+ ],
+ "base_rates": [
+  {
+   "factor": "VIX",
+   "value": 28.44,
+   "bucket": "25-30",
+   "horizon_days": 21,
+   "n_obs": 648,
+   "n_effective": 30,
+   "median_ret_pct": 2.28,
+   "pct_positive": 64.2,
+   "worst_pct": -24.59
+  },
+  {
+   "factor": "VIX",
+   "value": 28.44,
+   "bucket": "25-30",
+   "horizon_days": 252,
+   "n_obs": 635,
+   "n_effective": 2,
+   "median_ret_pct": 9.97,
+   "pct_positive": 61.1,
+   "worst_pct": -47.51
+  },
+  {
+   "factor": "OFR_FSI",
+   "value": -1.387,
+   "bucket": "<-0.5",
+   "horizon_days": 21,
+   "n_obs": 3903,
+   "n_effective": 185,
+   "median_ret_pct": 1.2,
+   "pct_positive": 65.7,
+   "worst_pct": -33.14
+  },
+  {
+   "factor": "OFR_FSI",
+   "value": -1.387,
+   "bucket": "<-0.5",
+   "horizon_days": 252,
+   "n_obs": 3679,
+   "n_effective": 14,
+   "median_ret_pct": 11.44,
+   "pct_positive": 83.5,
+   "worst_pct": -35.17
+  }
+ ],
+ "levels": [
+  {
+   "instrument": "AUDUSD",
+   "close": 0.664584,
+   "atr14": 0.005251,
+   "pdh": 0.67205,
+   "pdl": 0.66628,
+   "pmh": 0.69302,
+   "pml": 0.67728,
+   "pivot": 0.665725,
+   "pivot_r1": 0.667264,
+   "pivot_s1": 0.663046,
+   "swing_hi": 0.70678,
+   "swing_lo": 0.68954,
+   "vp_poc": 0.701508,
+   "vp_hi": 0.721412,
+   "vp_lo": 0.693546,
+   "y52_hi": 0.727738,
+   "y52_lo": 0.65394
+  },
+  {
+   "instrument": "BTC",
+   "close": 59333.929688,
+   "atr14": 2699.058315,
+   "pdh": 64017.269531,
+   "pdl": 61380.882812,
+   "pmh": 75505.335938,
+   "pml": 62017.882812,
+   "pivot": 60268.341146,
+   "pivot_r1": 61503.283854,
+   "pivot_s1": 58098.98698,
+   "swing_hi": 81079.789062,
+   "swing_lo": 79735.859375,
+   "vp_poc": 84207.015365,
+   "vp_hi": 86559.689844,
+   "vp_lo": 75266.852344,
+   "y52_hi": 87363.757812,
+   "y52_lo": 57747.765625
+  },
+  {
+   "instrument": "DXY",
+   "close": 103.761002,
+   "atr14": 0.512215,
+   "pdh": 103.970001,
+   "pdl": 103.589996,
+   "pmh": 103.440002,
+   "pml": 101.489998,
+   "pivot": 103.765335,
+   "pivot_r1": 103.94867,
+   "pivot_s1": 103.577668,
+   "swing_hi": 102.489998,
+   "swing_lo": 101.099998,
+   "vp_poc": 101.86675,
+   "vp_hi": 103.656751,
+   "vp_lo": 99.360748,
+   "y52_hi": 103.970001,
+   "y52_lo": 95.550003
+  },
+  {
+   "instrument": "EURUSD",
+   "close": 1.09866,
+   "atr14": 0.005983,
+   "pdh": 1.1012,
+   "pdl": 1.095638,
+   "pmh": 1.125062,
+   "pml": 1.102657,
+   "pivot": 1.098341,
+   "pivot_r1": 1.10055,
+   "pivot_s1": 1.09645,
+   "swing_hi": 1.127523,
+   "swing_lo": 1.110951,
+   "vp_poc": 1.1205,
+   "vp_hi": 1.163617,
+   "vp_lo": 1.099525,
+   "y52_hi": 1.202357,
+   "y52_lo": 1.095446
+  },
+  {
+   "instrument": "GBPUSD",
+   "close": 1.310582,
+   "atr14": 0.006857,
+   "pdh": 1.317349,
+   "pdl": 1.310599,
+   "pmh": 1.345859,
+   "pml": 1.320934,
+   "pivot": 1.310487,
+   "pivot_r1": 1.312896,
+   "pivot_s1": 1.308174,
+   "swing_hi": 1.350238,
+   "swing_lo": 1.327316,
+   "vp_poc": 1.322358,
+   "vp_hi": 1.354996,
+   "vp_lo": 1.31991,
+   "y52_hi": 1.384677,
+   "y52_lo": 1.308079
+  },
+  {
+   "instrument": "GOLD",
+   "close": 3542.699951,
+   "atr14": 103.207136,
+   "pdh": 3759.5,
+   "pdl": 3620.600098,
+   "pmh": 4157.700195,
+   "pml": 3856.699951,
+   "pivot": 3565.266683,
+   "pivot_r1": 3615.533366,
+   "pivot_s1": 3492.433268,
+   "swing_hi": 4157.700195,
+   "swing_lo": 3879.300049,
+   "vp_poc": 4169.925,
+   "vp_hi": 4443.625,
+   "vp_lo": 4013.525,
+   "y52_hi": 5586.200195,
+   "y52_lo": 3515.0
+  },
+  {
+   "instrument": "SPY",
+   "close": 732.440002,
+   "atr14": 11.533569,
+   "pdh": 749.820007,
+   "pdl": 738.070007,
+   "pmh": 763.039978,
+   "pml": 741.030029,
+   "pivot": 733.066671,
+   "pivot_r1": 739.133341,
+   "pivot_s1": 726.373332,
+   "swing_hi": 775.640015,
+   "swing_lo": 732.710022,
+   "vp_poc": 766.599496,
+   "vp_hi": 774.792496,
+   "vp_lo": 758.406497,
+   "y52_hi": 781.619995,
+   "y52_lo": 629.280029
+  },
+  {
+   "instrument": "TLT",
+   "close": 81.224998,
+   "atr14": 0.620356,
+   "pdh": 80.449997,
+   "pdl": 79.809998,
+   "pmh": 82.279999,
+   "pml": 79.110001,
+   "pivot": 81.066666,
+   "pivot_r1": 81.448333,
+   "pivot_s1": 80.84333,
+   "swing_hi": 82.419998,
+   "swing_lo": 79.110001,
+   "vp_poc": 81.508749,
+   "vp_hi": 82.464748,
+   "vp_lo": 77.80425,
+   "y52_hi": 90.860001,
+   "y52_lo": 76.43
+  },
+  {
+   "instrument": "USDJPY",
+   "close": 158.727005,
+   "atr14": 0.813141,
+   "pdh": 159.966003,
+   "pdl": 159.279007,
+   "pmh": 160.175995,
+   "pml": 157.845001,
+   "pivot": 159.037338,
+   "pivot_r1": 159.53067,
+   "pivot_s1": 158.233673,
+   "swing_hi": 160.175995,
+   "swing_lo": 156.095993,
+   "vp_poc": 157.825282,
+   "vp_hi": 159.946313,
+   "vp_lo": 156.951916,
+   "y52_hi": 163.979004,
+   "y52_lo": 152.278
+  }
+ ],
+ "news": [
+  {
+   "source": "BBC_Business",
+   "title": "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
+   "entities": "EQUITY",
+   "link": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "'An annoying buzz': The search for stealthier drones",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/ck1exgejq3xvo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Elon Musk says record $446m spending on US midterms was 'pretty foolish'",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cm9q8j2z3gg8o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Mouldy, infested housing for vulnerable people sold as ethical investments abroad",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c6evre8j12vno?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cm1wr029evnqo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/ck053mzy2qqeo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Fish and eggs al desko? The dos and don'ts of lunch at work",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cwp8g4092zglo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Should AI be judging our credit worthiness?",
+   "entities": "BANK",
+   "link": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Airbnb's divisive new house rules come into force",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cmx278n2genyo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "GTA 6 drives spike in download demand, as estimated sales top $2.3bn",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Tens of thousands of UK fridges secured from hackers in secret nationwide operation",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Viagogo may have broken law on hidden fees, watchdog provisionally finds",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cmvg2ex7j30lo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
+   "entities": "EQUITY",
+   "link": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "California targets Nvidia in China AI chip probe",
+   "entities": "CNY",
+   "link": "https://www.bbc.co.uk/news/articles/cqn70vxp5p4no?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "McDonald's sex abuse: 'They were waiting for the younger girls to turn 18'",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c6x2eve321jno?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Crew unaware of risks before Mike Lynch's yacht Bayesian sank, say investigators",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c6e9kn15z9d7o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Gilts v kilts: What is happening with Scottish government bonds?",
+   "entities": "BONDS",
+   "link": "https://www.bbc.co.uk/news/articles/cmwy8pgj2z8vo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Why has Waymo pulled all its driverless cars from US freeways?",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/videos/cmx2ryw97x4go?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "'I live with a ghost' - inside the haunted homes attracting bargain hunters",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cqwy78elyrlzo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Jeff Bezos says he was 'heavily involved' in casting Robert Pattinson as new Bond",
+   "entities": "BONDS",
+   "link": "https://www.bbc.co.uk/news/articles/cm5y1eejk292o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "The Indian workers filming their work to train AI",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/ckvgyml6pdm9o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Typical energy bill forecast to go up by \u00a3443 a year from January as inflation rate rises again",
+   "entities": "RATES",
+   "link": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Anthropic raises $81bn in record-breaking stock market debut",
+   "entities": "EQUITY",
+   "link": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
+   "entities": "RATES",
+   "link": "https://www.bbc.co.uk/news/articles/ckq6eg55n221o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Nvidia says it won't reinstate Huang as it reports soaring sales",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "How important are Nvidia and Jensen Huang to the US economy?",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Government backs welfare shake-up to prevent 'lost generation'",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/ck79210y125xo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "How video game remakes tap the power of nostalgia",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cm9qz428nnljo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Europe plans to catch the next computer chip wave",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cqglwjd450k0o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "How a sex scandal at Nvidia is putting pressure on the White House",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Robot vessels take on the dangerous work of mine hunting",
+   "entities": "WAR",
+   "link": "https://www.bbc.co.uk/news/articles/cj5yn24llxd6o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "The engine parts that 'fight the laws of the universe'",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cwe9lmp1pyyxo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Graduates are managing AI - but are they learning much else?",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c820vz6wyp65o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "The seven Anthropic founders who are about to become multi-billionaires",
+   "entities": "EQUITY",
+   "link": "https://www.bbc.co.uk/news/articles/cmd7159vlr85o?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "The grads ditching the UK for a fresh start abroad",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cmzxj4e8w44vo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_World",
+   "title": "Mysterious Mercury is about to get a visitor - after spacecraft's eight-year epic voyage",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/c39w9l4v1p9ro?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_World",
+   "title": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&at_campaign=rss"
+  },
+  {
+   "source": "BBC_Business",
+   "title": "Indian driver wins $1.3m in life-changing lottery prize",
+   "entities": NaN,
+   "link": "https://www.bbc.co.uk/news/videos/cke89vdn75gyo?at_medium=RSS&at_campaign=rss"
+  }
+ ],
+ "flags": [
+  "dealer gamma is NEGATIVE: moves get amplified both ways; trend signals are less reliable and stop-hunts are more common"
+ ],
+ "data_age_days": {
+  "vix": 1.81,
+  "dix_gex": 1.81,
+  "ofr_fsi": 2.81,
+  "cot": 7.81,
+  "news": 0.81
+ },
+ "scenarios": [
+  {
+   "branch": "VIX stays in 25-30",
+   "measured": "median 21d SPY +2.28%, 64% positive, worst -24.6%, n_eff 30",
+   "action": "size normally"
+  },
+  {
+   "branch": "event surprise larger than expected",
+   "measured": "FOMC day |SPY move| = 1.09x a random day; NFP = 1.33x on TLT",
+   "action": "trade the SECOND move (post-event drift), not the first print \u2014 the first print is where spreads are widest and the edge is thinnest"
+  },
+  {
+   "branch": "nothing scheduled and vol low",
+   "measured": "VIX 12-15 bucket: median 12m SPY +11.9%, 86.7% positive (n_eff small)",
+   "action": "this is a carry/momentum environment, not a mean-reversion one"
+  }
+ ]
+}

@@ -1,0 +1,169 @@
+{
+  "design": {
+    "signal": "bid-to-cover z vs own last 8 auctions (per term)",
+    "controls": "primary-dealer share of the auction, auction term",
+    "horizons_days": [
+      1,
+      5,
+      20
+    ],
+    "targets": [
+      "TLT",
+      "IEF",
+      "SPY"
+    ],
+    "auctions": 770,
+    "coverage": "2010-01-11..2024-12-26"
+  },
+  "pass_bar": "|t|>=2 in-sample AND OOS same sign AND >= half size",
+  "results": {
+    "TLT_1d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": 4e-06,
+        "t": 0.01,
+        "beta_pd_share": -0.003305,
+        "r2": 0.0267
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": -0.000109,
+        "t": -0.15,
+        "beta_pd_share": 0.001269,
+        "r2": 0.0104
+      }
+    },
+    "TLT_5d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": 0.00046,
+        "t": 0.48,
+        "beta_pd_share": 0.003909,
+        "r2": 0.0231
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": -0.000456,
+        "t": -0.29,
+        "beta_pd_share": 0.004082,
+        "r2": 0.0378
+      }
+    },
+    "TLT_20d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": -0.001823,
+        "t": -0.88,
+        "beta_pd_share": 0.002253,
+        "r2": 0.009
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": -0.00574,
+        "t": -1.64,
+        "beta_pd_share": 0.001226,
+        "r2": 0.0212
+      }
+    },
+    "IEF_1d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": 7.1e-05,
+        "t": 0.47,
+        "beta_pd_share": -0.001586,
+        "r2": 0.0306
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": -0.00018,
+        "t": -0.52,
+        "beta_pd_share": -0.000612,
+        "r2": 0.0097
+      }
+    },
+    "IEF_5d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": 0.000186,
+        "t": 0.42,
+        "beta_pd_share": 0.000731,
+        "r2": 0.005
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": -0.000911,
+        "t": -1.23,
+        "beta_pd_share": 0.003379,
+        "r2": 0.0751
+      }
+    },
+    "IEF_20d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": -0.00067,
+        "t": -0.72,
+        "beta_pd_share": -0.000203,
+        "r2": 0.0019
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": -0.003619,
+        "t": -2.09,
+        "beta_pd_share": 0.002212,
+        "r2": 0.0475
+      }
+    },
+    "SPY_1d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": -2.6e-05,
+        "t": -0.06,
+        "beta_pd_share": 0.00232,
+        "r2": 0.0139
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": 0.001517,
+        "t": 1.58,
+        "beta_pd_share": 0.003432,
+        "r2": 0.0137
+      }
+    },
+    "SPY_5d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": -0.000203,
+        "t": -0.19,
+        "beta_pd_share": -0.002655,
+        "r2": 0.0118
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": 0.002479,
+        "t": 1.24,
+        "beta_pd_share": 0.022807,
+        "r2": 0.0238
+      }
+    },
+    "SPY_20d": {
+      "in_sample": {
+        "n": 517,
+        "beta_btc_z": 0.000673,
+        "t": 0.25,
+        "beta_pd_share": 0.006113,
+        "r2": 0.0005
+      },
+      "out_of_sample": {
+        "n": 233,
+        "beta_btc_z": -0.003352,
+        "t": -1.35,
+        "beta_pd_share": 0.021978,
+        "r2": 0.0628
+      }
+    }
+  },
+  "verdict": {
+    "passing": [],
+    "conclusion": "auction demand does NOT predict forward bond/equity returns at the pre-declared bar \u2014 the auction is absorbed, and any signal is already in the day's yield move"
+  }
+}

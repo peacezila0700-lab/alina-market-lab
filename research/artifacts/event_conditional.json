@@ -1,0 +1,97 @@
+{
+  "design": {
+    "horizon_days": 5,
+    "base_rule": "sign(prior 5d return)",
+    "events": [
+      "OPEX",
+      "FOMC",
+      "MONTH_END",
+      "VIX_ONSET30"
+    ],
+    "assets": [
+      "SPY",
+      "TLT",
+      "GLD",
+      "DXY",
+      "EURUSD"
+    ],
+    "n_rows": 33345,
+    "split_date": "2018-07-09",
+    "note": "VIX_ONSET30 is not knowable before that close, so its position starts at the next close; the other three are scheduled and known in advance."
+  },
+  "pass_bar": "|t_clustered|>=2 in-sample AND OOS same sign",
+  "results": {
+    "in_sample": {
+      "OPEX": {
+        "n": 22799,
+        "n_event_days": 800,
+        "beta_rule": -0.00019,
+        "t_rule": -1.24,
+        "beta_interaction": -5e-05,
+        "t_interaction": -0.08
+      },
+      "FOMC": {
+        "n": 22799,
+        "n_event_days": 402,
+        "beta_rule": -0.00023,
+        "t_rule": -1.49,
+        "beta_interaction": 0.00204,
+        "t_interaction": 2.23
+      },
+      "MONTH_END": {
+        "n": 22799,
+        "n_event_days": 796,
+        "beta_rule": -0.00019,
+        "t_rule": -1.19,
+        "beta_interaction": -0.0002,
+        "t_interaction": -0.23
+      },
+      "VIX_ONSET30": {
+        "n": 22799,
+        "n_event_days": 222,
+        "beta_rule": -0.00019,
+        "t_rule": -1.21,
+        "beta_interaction": -0.00083,
+        "t_interaction": -0.4
+      }
+    },
+    "out_of_sample": {
+      "OPEX": {
+        "n": 10546,
+        "n_event_days": 481,
+        "beta_rule": -0.00074,
+        "t_rule": -3.31,
+        "beta_interaction": -4e-05,
+        "t_interaction": -0.04
+      },
+      "FOMC": {
+        "n": 10546,
+        "n_event_days": 358,
+        "beta_rule": -0.0007,
+        "t_rule": -3.2,
+        "beta_interaction": -0.00113,
+        "t_interaction": -0.79
+      },
+      "MONTH_END": {
+        "n": 10546,
+        "n_event_days": 491,
+        "beta_rule": -0.00066,
+        "t_rule": -2.96,
+        "beta_interaction": -0.00174,
+        "t_interaction": -1.7
+      },
+      "VIX_ONSET30": {
+        "n": 10546,
+        "n_event_days": 130,
+        "beta_rule": -0.00068,
+        "t_rule": -3.12,
+        "beta_interaction": -0.00395,
+        "t_interaction": -1.83
+      }
+    }
+  },
+  "verdict": {
+    "events_passing_bar": [],
+    "conclusion": "NO event conditions the 5-day rule at the pre-declared bar \u2014 events change the variance, not the sign, of the payoff (consistent with the earlier finding that FOMC days are only 1.09x a normal day's move)"
+  }
+}

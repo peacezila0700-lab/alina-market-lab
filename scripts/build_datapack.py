@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v1.3.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.1.zip
 """
 from __future__ import annotations
 
@@ -283,6 +283,50 @@ DATASETS = [
                   "Some files are full-history refreshes (mode=replace), others append-only."],
          use_for=["building proprietary history", "live features", "verifying data availability"],
          leak_rule="Real-time snapshots; a snapshot taken intraday must be timestamped as such."),
+    dict(id="news_headlines", src=["data/news/headlines.csv", "data/news/news_pressure.csv",
+                                    "data/news/feed_status.json"],
+         kind="news", grade="A", title="Multi-outlet news headlines with entity tags (append-only)",
+         card="RSS from 15 outlets (BBC, Al Jazeera, WSJ, FT, CNBC, Investing, Seeking Alpha, MarketWatch, "
+              "Fed, ECB, Bangkok Post) de-duplicated by URL hash, each headline tagged with the assets / "
+              "countries / themes it mentions. Plus a daily numeric pressure series (headline counts per "
+              "entity) so a quant layer has a feature without paying for sentiment.",
+         caveats=["Counts are NOT sentiment: more headlines about oil says nothing about direction.",
+                  "RSS gives the last ~20-60 items per outlet, so history starts when collection starts.",
+                  "Entity tagging is regex and will miss synonyms; a local LLM should re-read the titles."],
+         use_for=["narrative context for a local LLM", "attention/pressure features", "event confirmation"],
+         leak_rule="A headline is known only when published; the collector timestamps harvest time."),
+    dict(id="levels_support_resistance", src=["data/levels/levels_latest.csv", "data/levels/levels_history.csv",
+                                              "data/levels/MANIFEST_LEVELS.json"],
+         kind="technical", grade="B", title="Support/resistance and market structure, 28 instruments",
+         card="Every level class turned into a number with a stated rule: prior day/week/month high-low-close, "
+              "fractal swing points, classic floor-trader pivots, Bollinger envelope, ATR, 52-week extremes, "
+              "and a volume/time-profile point of control with value-area edges. Levels are where stops and "
+              "option strikes cluster — i.e. where price reacts.",
+         caveats=["Volume profile is approximated from daily bars (no tick data exists for free); treat POC "
+                  "as ±0.15 ATR.",
+                  "These are reference points, not signals: no level rules have beaten a null in this repo yet."],
+         use_for=["stop/target placement", "entry gating", "explaining intraday reaction levels"],
+         leak_rule="All levels use data up to the prior close."),
+    dict(id="broad_cross_section", src=["data/broad/*.csv"], kind="prices",
+         grade="C", title="Broad research panel: 68 ETFs across sectors, countries, credit, commodities",
+         card="The wide book: 11 US sectors, 16 country/EM ETFs, 10 credit/rates, 10 commodities, FX proxies, "
+              "vol wrappers, crypto proxies and benchmarks — 362k daily rows total. This is where "
+              "cross-sectional questions get statistical power (rank-and-hold tests need 50+ assets, not 5).",
+         caveats=["ETFs inherit tracking/fee/liquidity distortions; they are proxies, not the underlying.",
+                  "Yahoo closes for FX proxies are a different snapshot than official fixes (see PITFALLS).",
+                  "Survivorship: only funds alive today are in the list."],
+         use_for=["cross-sectional factor tests", "rotation studies", "regime breadth measures"],
+         leak_rule="Daily close; use next session for fills."),
+    dict(id="daily_briefs", src=["briefs/latest.md", "briefs/latest.json"], kind="brief",
+         grade="B", title="Daily brief: the compressed state a local AI reads each morning",
+         card="One small file that replaces the whole pack for daily use: current state (VIX percentile, "
+              "SKEW, DIX/GEX regime, OFR stress, funding, COT extremes), the next 7 days of scheduled "
+              "events, base-rate odds for the current state, support/resistance levels, the last 48h of "
+              "entity-tagged headlines, hard flags, and pre-written scenario branches to pick from.",
+         caveats=["It is a compression, not an analysis: it never predicts, it reports state and odds.",
+                  "Regenerate with scripts/daily_brief.py after the collector runs."],
+         use_for=["daily LLM context window", "event playbooks", "risk gating"],
+         leak_rule="Inherits each input's lag; data_age_days states it per series."),
     dict(id="experiments_ledger", src="research/EXPERIMENT_LOG.csv", kind="results",
          grade="B", title="Every experiment run, with verdicts — the project's memory",
          card="8 pre-registered experiments (EXP-0001…0008) with hypothesis, data, cost model, "
@@ -355,7 +399,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "1.3",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.1",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -400,7 +444,8 @@ def main() -> None:
         json.dump(catalog, f, indent=2)
 
     # ---- results json (all artifacts an AI may want to read quickly)
-    for rel in ["research/artifacts/cot_panel.json", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+    for rel in ["research/artifacts/cot_panel.json", "research/artifacts/event_conditional.json",
+                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
                 "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
@@ -425,7 +470,7 @@ def main() -> None:
     # ---- knowledge docs written by hand elsewhere
     for doc in ("README_FOR_AI.md", "DATA_SOURCES.md", "PITFALLS.md", "WHAT_FAILED.md",
                 "IDEAS_TO_TEST.md", "GLOSSARY.md", "HOW_TO_BACKTEST.md",
-                "DECISION_INPUTS_ATLAS.md", "WHAT_THE_BOT_NEEDS.md"):
+                "DECISION_INPUTS_ATLAS.md", "WHAT_THE_BOT_NEEDS.md", "OPERATING_MANUAL.md"):
         s = os.path.join(ROOT, "datapack_src", doc)
         if not os.path.exists(s):
             s = os.path.join(ROOT, "research", doc)          # atlas + plan live in research/
@@ -456,7 +501,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v1.3.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.1.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

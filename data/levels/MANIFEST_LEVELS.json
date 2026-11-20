@@ -1,0 +1,16 @@
+{
+  "built_utc": "2026-11-20T19:19:58Z",
+  "instruments": 28,
+  "level_definitions": {
+    "pdh/pdl": "prior session high/low",
+    "pmh/pml": "prior week high/low",
+    "mmh/mml": "prior month high/low",
+    "swing_hi/lo": "fractal 5-bar pivot",
+    "pivot_*": "classic floor-trader pivots from last bar",
+    "bb_up/dn": "20d \u00b12\u03c3",
+    "vp_poc": "60d volume-profile point of control (approx)",
+    "vp_hi/lo": "70% value area edges (approx)",
+    "y52_*": "52-week extremes"
+  },
+  "caveat": "Volume profile is approximated from daily bars (volume spread across each bar's range). No tick data is available for free; treat POC as \u00b10.15 ATR."
+}

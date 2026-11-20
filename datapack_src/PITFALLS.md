@@ -58,3 +58,18 @@ NIKKEI 0.951 — **5 of 5 wiped**. If a strategy's win rate is >90%, you are lon
 168 screen tests × 14 metrics = thousands of numbers. At 5% you expect ~8 false positives. This
 project's rule: report how many of N instruments beat the null vs how many were expected by chance
 (6 of 144 observed vs 7.2 expected = nothing found).
+
+## 11. A permutation null that changes turnover proves nothing
+First version of EXP-0012 (68-ETF cross-section) shuffled the asset labels **every week**. That makes
+the null portfolio reshuffle constantly, so it pays enormous costs and posts Sharpe ≈ −1.0 while the
+real strategy holds persistent positions and posts ≈ +0.06. The "edge" was pure turnover, not
+information: every factor looked like a pass.
+**Fix:** hold ONE fixed label permutation for the whole sample. Then the null portfolio has the same
+holding persistence (same turnover) as the real strategy, and only the signal→asset link is destroyed.
+With the turnover-matched null, none of the three factors beat their p95 — the honest result.
+
+## 12. Boolean-mask assignment does not mutate numpy arrays
+`row[mask]` returns a COPY. `rng.shuffle(row[mask])` shuffles the copy and silently changes nothing,
+so every "permutation" equals the original and the null has zero dispersion. Use
+`idx = np.where(mask)[0]; arr[idx] = arr[rng.permutation(idx)]`. This bug hid for two runs and made a
+null look impossibly tight.

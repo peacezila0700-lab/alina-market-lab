@@ -1,0 +1,421 @@
+{
+  "built_utc": "2026-11-20T19:21:09Z",
+  "source": "Yahoo chart v8, interval=1d, no key",
+  "symbols": {
+    "XLK": {
+      "group": "sector_tech",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLF": {
+      "group": "sector_fin",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLE": {
+      "group": "sector_energy",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLV": {
+      "group": "sector_health",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLI": {
+      "group": "sector_industrials",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLP": {
+      "group": "sector_staples",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLY": {
+      "group": "sector_discretionary",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLU": {
+      "group": "sector_utilities",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLB": {
+      "group": "sector_materials",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "XLRE": {
+      "group": "sector_reit",
+      "rows": 2797,
+      "first": "2015-10-08",
+      "last": "2026-11-20"
+    },
+    "XLC": {
+      "group": "sector_comms",
+      "rows": 2119,
+      "first": "2018-06-19",
+      "last": "2026-11-20"
+    },
+    "EWJ": {
+      "group": "country_japan",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "EWG": {
+      "group": "country_germany",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "EWU": {
+      "group": "country_uk",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "EWC": {
+      "group": "country_canada",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "EWA": {
+      "group": "country_australia",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "EWZ": {
+      "group": "country_brazil",
+      "rows": 6629,
+      "first": "2000-07-14",
+      "last": "2026-11-20"
+    },
+    "EWT": {
+      "group": "country_taiwan",
+      "rows": 6643,
+      "first": "2000-06-23",
+      "last": "2026-11-20"
+    },
+    "EWY": {
+      "group": "country_korea",
+      "rows": 6672,
+      "first": "2000-05-12",
+      "last": "2026-11-20"
+    },
+    "EWH": {
+      "group": "country_hk",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "INDA": {
+      "group": "country_india",
+      "rows": 3722,
+      "first": "2012-02-03",
+      "last": "2026-11-20"
+    },
+    "FXI": {
+      "group": "country_china",
+      "rows": 5566,
+      "first": "2004-10-08",
+      "last": "2026-11-20"
+    },
+    "EWW": {
+      "group": "country_mexico",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "THD": {
+      "group": "country_thailand",
+      "rows": 4692,
+      "first": "2008-04-01",
+      "last": "2026-11-20"
+    },
+    "EIDO": {
+      "group": "country_indonesia",
+      "rows": 4162,
+      "first": "2010-05-07",
+      "last": "2026-11-20"
+    },
+    "VNM": {
+      "group": "country_vietnam",
+      "rows": 4345,
+      "first": "2009-08-14",
+      "last": "2026-11-20"
+    },
+    "EPU": {
+      "group": "country_peru",
+      "rows": 4383,
+      "first": "2009-06-22",
+      "last": "2026-11-20"
+    },
+    "LQD": {
+      "group": "credit_ig",
+      "rows": 6119,
+      "first": "2002-07-30",
+      "last": "2026-11-20"
+    },
+    "HYG": {
+      "group": "credit_hy",
+      "rows": 4937,
+      "first": "2007-04-11",
+      "last": "2026-11-20"
+    },
+    "JNK": {
+      "group": "credit_hy2",
+      "rows": 4772,
+      "first": "2007-12-04",
+      "last": "2026-11-20"
+    },
+    "SHY": {
+      "group": "rates_1_3y",
+      "rows": 6119,
+      "first": "2002-07-30",
+      "last": "2026-11-20"
+    },
+    "IEF": {
+      "group": "rates_7_10y",
+      "rows": 6119,
+      "first": "2002-07-30",
+      "last": "2026-11-20"
+    },
+    "TLH": {
+      "group": "rates_10_20y",
+      "rows": 4998,
+      "first": "2007-01-11",
+      "last": "2026-11-20"
+    },
+    "TIP": {
+      "group": "rates_tips",
+      "rows": 5777,
+      "first": "2003-12-05",
+      "last": "2026-11-20"
+    },
+    "BIL": {
+      "group": "cash",
+      "rows": 4903,
+      "first": "2007-05-30",
+      "last": "2026-11-20"
+    },
+    "EMB": {
+      "group": "credit_em",
+      "rows": 4761,
+      "first": "2007-12-19",
+      "last": "2026-11-20"
+    },
+    "MBB": {
+      "group": "mbs",
+      "rows": 4954,
+      "first": "2007-03-16",
+      "last": "2026-11-20"
+    },
+    "GLD": {
+      "group": "metal_gold",
+      "rows": 5537,
+      "first": "2004-11-18",
+      "last": "2026-11-20"
+    },
+    "SLV": {
+      "group": "metal_silver",
+      "rows": 5175,
+      "first": "2006-04-28",
+      "last": "2026-11-20"
+    },
+    "CPER": {
+      "group": "metal_copper",
+      "rows": 3776,
+      "first": "2011-11-15",
+      "last": "2026-11-20"
+    },
+    "PPLT": {
+      "group": "metal_platinum",
+      "rows": 4244,
+      "first": "2010-01-08",
+      "last": "2026-11-20"
+    },
+    "USO": {
+      "group": "energy_oil",
+      "rows": 5188,
+      "first": "2006-04-10",
+      "last": "2026-11-20"
+    },
+    "UNG": {
+      "group": "energy_gas",
+      "rows": 4932,
+      "first": "2007-04-18",
+      "last": "2026-11-20"
+    },
+    "DBA": {
+      "group": "agri_basket",
+      "rows": 5002,
+      "first": "2007-01-05",
+      "last": "2026-11-20"
+    },
+    "DBC": {
+      "group": "commodity_basket",
+      "rows": 5232,
+      "first": "2006-02-06",
+      "last": "2026-11-20"
+    },
+    "URA": {
+      "group": "energy_uranium",
+      "rows": 4035,
+      "first": "2010-11-05",
+      "last": "2026-11-20"
+    },
+    "LIT": {
+      "group": "metal_lithium",
+      "rows": 4109,
+      "first": "2010-07-23",
+      "last": "2026-11-20"
+    },
+    "UUP": {
+      "group": "fx_dollar",
+      "rows": 4965,
+      "first": "2007-03-01",
+      "last": "2026-11-20"
+    },
+    "FXE": {
+      "group": "fx_euro",
+      "rows": 5269,
+      "first": "2005-12-12",
+      "last": "2026-11-20"
+    },
+    "FXY": {
+      "group": "fx_yen",
+      "rows": 4976,
+      "first": "2007-02-13",
+      "last": "2026-11-20"
+    },
+    "FXB": {
+      "group": "fx_pound",
+      "rows": 5135,
+      "first": "2006-06-26",
+      "last": "2026-11-20"
+    },
+    "FXA": {
+      "group": "fx_aussie",
+      "rows": 5135,
+      "first": "2006-06-26",
+      "last": "2026-11-20"
+    },
+    "FXF": {
+      "group": "fx_swiss",
+      "rows": 5135,
+      "first": "2006-06-26",
+      "last": "2026-11-20"
+    },
+    "FXM": {
+      "group": "fx_mexico",
+      "rows": 0,
+      "status": "FAILED"
+    },
+    "VIXY": {
+      "group": "vol_short_term",
+      "rows": 3995,
+      "first": "2011-01-04",
+      "last": "2026-11-20"
+    },
+    "VXZ": {
+      "group": "vol_mid_term",
+      "rows": 2219,
+      "first": "2018-01-25",
+      "last": "2026-11-20"
+    },
+    "SVXY": {
+      "group": "vol_inverse",
+      "rows": 3806,
+      "first": "2011-10-04",
+      "last": "2026-11-20"
+    },
+    "IBIT": {
+      "group": "crypto_btc_proxy",
+      "rows": 719,
+      "first": "2024-01-11",
+      "last": "2026-11-20"
+    },
+    "ETHE": {
+      "group": "crypto_eth_proxy",
+      "rows": 1871,
+      "first": "2019-06-14",
+      "last": "2026-11-20"
+    },
+    "MSTR": {
+      "group": "crypto_levered",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "TUR": {
+      "group": "country_turkey",
+      "rows": 4694,
+      "first": "2008-03-28",
+      "last": "2026-11-20"
+    },
+    "EZA": {
+      "group": "country_southafrica",
+      "rows": 5986,
+      "first": "2003-02-07",
+      "last": "2026-11-20"
+    },
+    "ARGT": {
+      "group": "country_argentin",
+      "rows": 3955,
+      "first": "2011-03-03",
+      "last": "2026-11-20"
+    },
+    "SPY": {
+      "group": "benchmark_us",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "QQQ": {
+      "group": "benchmark_nasdaq",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "IWM": {
+      "group": "benchmark_smallcap",
+      "rows": 6662,
+      "first": "2000-05-26",
+      "last": "2026-11-20"
+    },
+    "DIA": {
+      "group": "benchmark_dow",
+      "rows": 6763,
+      "first": "2000-01-03",
+      "last": "2026-11-20"
+    },
+    "ACWI": {
+      "group": "benchmark_world",
+      "rows": 4694,
+      "first": "2008-03-28",
+      "last": "2026-11-20"
+    },
+    "EEM": {
+      "group": "benchmark_em",
+      "rows": 5941,
+      "first": "2003-04-14",
+      "last": "2026-11-20"
+    }
+  },
+  "ok": 68,
+  "total": 69
+}
