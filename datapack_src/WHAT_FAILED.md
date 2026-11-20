@@ -48,3 +48,20 @@ The failure pattern is consistent: **any signal that survives in-sample dies on 
 costs, hold data out, and compare against a turnover-matched random control. The value left is not
 in retesting these; it is in new data sources and in position/flow information (COT, options
 skew, dealer gamma) that is not in the price series at all.
+
+### Session 2026-11-20 (widest panel yet) — 5 more, all rejected
+| # | Idea | Verdict | One-line reason |
+|---|---|---|---|
+| EXP-0010 | Event-conditional direction (FOMC / OPEX / month-end / VIX crossing 30) | FAIL | The interaction is significant in-sample and flips sign out-of-sample. Events change the variance, not the sign (SPY FOMC day = 1.09x a random day). |
+| EXP-0011 | Treasury auction demand (bid-to-cover z, dealer share) -> TLT/IEF/SPY | FAIL | No term passes |t|>=2 in-sample with an OOS confirmation. Information is already in the auction-day yield move. |
+| EXP-0012 | Cross-sectional momentum 12-1, 1M reversal, 5D reversal on 68 ETFs | FAIL | Momentum 78.5th pct, 1M reversal 93rd pct of the turnover-matched null, 5D reversal negative. |
+| EXP-0013 | Market-state exposure overlay (breadth, credit, vol level, dispersion, gamma) | FAIL | Best overlay (gamma) hit the 100th percentile in-sample but only the 90th OOS; nothing cleared the bar. |
+| EXP-0014 | Dealer gamma overlay vs plain volatility targeting | FAIL | The gamma increment is +0.067 Sharpe IS (88.5th pct) and +0.041 OOS (74th pct) — inside the null. Gamma is vol targeting with a label. |
+
+**What this session actually learned (more valuable than the failures):**
+1. The scheduled calendar does not move the tape more than a random day. Only crisis onset does
+   (|move| 1.65–1.75x). Stop building calendar strategies; build onset detectors.
+2. Volatility, not direction, is the exploitable dimension for state variables. Sizing overlays
+   reliably cut drawdown (gamma overlay: −27% vs −51% buy-and-hold) without adding expected return.
+3. Null design is the whole game. Two null bugs in this session would have produced two false passes
+   (see PITFALLS #11, #12), and one seemingly perfect result was vol targeting in disguise (#13).

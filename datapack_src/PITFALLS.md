@@ -73,3 +73,20 @@ With the turnover-matched null, none of the three factors beat their p95 — the
 so every "permutation" equals the original and the null has zero dispersion. Use
 `idx = np.where(mask)[0]; arr[idx] = arr[rng.permutation(idx)]`. This bug hid for two runs and made a
 null look impossibly tight.
+
+## 13. A timing overlay will beat a shift-null for free — compare it to vol targeting
+EXP-0013 shifted each exposure series circularly to build the null. Shifting preserves the *fraction*
+of days at each weight but destroys the alignment with the market's volatility cycle. Any rule that is
+heavier in calm periods and lighter in volatile periods then looks spectacular (the GEX overlay hit the
+100th percentile of 200 shifts in-sample). But volatility targeting, built with no market information at
+all, gets almost the same Sharpe (EXP-0014: 0.70 vs 0.77 IS; 0.63 vs 0.67 OOS; the gamma increment's
+percentile is 88.5 in-sample and 74 out-of-sample — inside the null).
+**Rule:** any test of an exposure/sizing signal must include a *vol-targeting* arm with matched average
+exposure (w = target/realised_vol, look-ahead-free, clipped) as the benchmark, and the statistic must be
+Sharpe(signal) − Sharpe(voltarget). Beating buy-and-hold is not evidence; beating vol targeting might be.
+
+## 14. Sizing overlays change volatility, not expected return — decide which one you are testing
+Across EXP-0013 the six "market state" overlays moved Sharpe only through the second moment. Max
+drawdown improved (gamma −28.5% vs buy-and-hold) while CAGR barely moved. If a study's claim is
+"better risk-adjusted return", check whether the *mean* return per unit exposure changed at all; if not,
+the finding is a risk-management result and belongs in the sizing layer, not in the signal layer.

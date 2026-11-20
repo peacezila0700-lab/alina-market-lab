@@ -1,0 +1,180 @@
+{
+  "experiment": "EXP-0013",
+  "hypothesis": "H16",
+  "design": " (written before the result; do not edit after running)\n------------------------------------------------------------------------------\nTarget      : SPY daily close-to-close return, 2000-01-03 .. latest.\nOverlay     : exposure w_t in [0, 2], mean-normalised to 1 over the sample so the comparison is\n              \"same average exposure, different timing\" \u2014 no free leverage in the comparison.\n              w is computed from data available at the close of day t-1 and applied to day t.\nSignals (6, all lagged, all causal):\n  S1 BREADTH200 : share of the 11 sector SPDRs above their own 200-day MA, mapped linearly\n                  w = clip(0.5 + 1.0*(b - 0.5), 0, 2)   (b = 0 -> 0x, b = 1 -> 1.5x)\n  S2 BREADTH50  : same with 50-day MA\n  S3 VIXLVL     : w = 1.5 if VIX < its own 60-day median else 0.5\n  S4 CREDIT     : w = 1.5 if HYG/IEF ratio above its 60-day MA else 0.5   (risk-on credit)\n  S5 GEXSIGN    : w = 1.5 if dealer GEX > 0 else 0.5                      (2011+ only)\n  S6 DISP       : w = 1.5 if cross-sector 20-day return dispersion is BELOW its 1-year median\n                  else 0.5  (crowded/quiet tape vs. rotating tape)\nAlso: BEST = equal-weight average of the six w series (a single combined signal, not selected\n      after the fact).\n\nCosts       : 2 bp of notional per unit of |\u0394w| (ETF commission + spread, generous).\nSplit       : first 70% of days = in-sample, last 30% = out-of-sample. Nothing is fitted \u2014\n              every parameter above is fixed a priori \u2014 so the split is a stability check, not a\n              fitting device.\n\nNULL (the honest part)\n----------------------\nA timing overlay has the same turnover as its own random circular shift. So the null is: shift the\nweight series by a random offset (1..n-1) and re-run. This preserves the entire autocorrelation,\nvolatility clustering and turnover of the overlay and destroys only its alignment with the market.\n200 shifts. Percentile of the real Sharpe inside that distribution is the test statistic.\n\nPASS BAR (pre-declared, Bonferroni over 6 signals at one-sided 5% -> alpha 0.0083)\n  Sweep: percentile >= 99.2 WITH positive Sharpe in-sample.\n  Then the same signal must also exceed the 99.2nd percentile on the OOS slice alone.\n  Anything less is logged FAIL. No exceptions, no \"close enough\".\n",
+  "n_shift": 200,
+  "bar_percentile": 99.17,
+  "buy_hold": {
+    "is": {
+      "sharpe": 0.2625808315045212,
+      "cagr": 0.03252709060739578,
+      "maxdd": -0.5647366917817165,
+      "vol": 0.19218093820716076,
+      "n": 4733
+    },
+    "oos": {
+      "sharpe": 0.7153106870213789,
+      "cagr": 0.12760161171080098,
+      "maxdd": -0.34104746893243965,
+      "vol": 0.19440985238629868,
+      "n": 2029
+    }
+  },
+  "signals": {
+    "BREADTH200": {
+      "is": {
+        "sharpe": 0.29225971942682893,
+        "cagr": 0.031561105211167284,
+        "maxdd": -0.41569400381904054,
+        "vol": 0.13993216429717978,
+        "n": 4534
+      },
+      "is_pct": 87.0,
+      "is_null_p95": 0.34873251111635656,
+      "is_null_p99": 0.49463472358943544,
+      "oos": {
+        "sharpe": 0.6124065696289255,
+        "cagr": 0.08408943234342114,
+        "maxdd": -0.2477217009633349,
+        "vol": 0.15040206125589106,
+        "n": 2029
+      },
+      "oos_pct": 36.5,
+      "oos_null_p99": 1.4109640190792148,
+      "verdict": "FAIL"
+    },
+    "BREADTH50": {
+      "is": {
+        "sharpe": 0.037778106125366924,
+        "cagr": -0.0060266949241781775,
+        "maxdd": -0.6461863809104484,
+        "vol": 0.1537471514154513,
+        "n": 4684
+      },
+      "is_pct": 3.5000000000000004,
+      "is_null_p95": 0.3420320310827164,
+      "is_null_p99": 0.6866225493033041,
+      "oos": {
+        "sharpe": 0.5810371842050496,
+        "cagr": 0.08035018616359646,
+        "maxdd": -0.2624350508856117,
+        "vol": 0.1534111546082954,
+        "n": 2029
+      },
+      "oos_pct": 41.0,
+      "oos_null_p99": 2.1771804641558172,
+      "verdict": "FAIL"
+    },
+    "VIXLVL": {
+      "is": {
+        "sharpe": 0.20480829958017308,
+        "cagr": 0.020561318037213283,
+        "maxdd": -0.5937399535807051,
+        "vol": 0.17002574426016237,
+        "n": 4674
+      },
+      "is_pct": 43.5,
+      "is_null_p95": 0.3846208383059989,
+      "is_null_p99": 0.4262716454500625,
+      "oos": {
+        "sharpe": 0.9527279975867834,
+        "cagr": 0.15288584173760555,
+        "maxdd": -0.2743267672314951,
+        "vol": 0.16341883173321367,
+        "n": 2029
+      },
+      "oos_pct": 96.5,
+      "oos_null_p99": 1.2607215145314365,
+      "verdict": "FAIL"
+    },
+    "CREDIT": {
+      "is": {
+        "sharpe": 0.2862573195304019,
+        "cagr": 0.03397195137711706,
+        "maxdd": -0.5258735257472558,
+        "vol": 0.16369690758492877,
+        "n": 4733
+      },
+      "is_pct": 73.5,
+      "is_null_p95": 0.3749268748186739,
+      "is_null_p99": 0.42319859743506066,
+      "oos": {
+        "sharpe": 0.7274582735016689,
+        "cagr": 0.13958812499358442,
+        "maxdd": -0.46435491516745075,
+        "vol": 0.21011158358422632,
+        "n": 2029
+      },
+      "oos_pct": 75.0,
+      "oos_null_p99": 1.032834992097008,
+      "verdict": "FAIL"
+    },
+    "DISP": {
+      "is": {
+        "sharpe": 0.3359872445155616,
+        "cagr": 0.045757927048814206,
+        "maxdd": -0.5724395966348628,
+        "vol": 0.183327423614826,
+        "n": 4462
+      },
+      "is_pct": 93.5,
+      "is_null_p95": 0.351261303396101,
+      "is_null_p99": 0.4380112307548391,
+      "oos": {
+        "sharpe": 0.8191039114435115,
+        "cagr": 0.13895519020826663,
+        "maxdd": -0.23695508192559356,
+        "vol": 0.1781109523681374,
+        "n": 2029
+      },
+      "oos_pct": 91.5,
+      "oos_null_p99": 0.989235845600251,
+      "verdict": "FAIL"
+    },
+    "GEXSIGN": {
+      "is": {
+        "sharpe": 0.6759293673072075,
+        "cagr": 0.08586757962731784,
+        "maxdd": -0.20854040785118788,
+        "vol": 0.13551052120683169,
+        "n": 1884
+      },
+      "is_pct": 100.0,
+      "is_null_p95": 0.29375664190981904,
+      "is_null_p99": 0.30986679858605204,
+      "oos": {
+        "sharpe": 0.7899421665978591,
+        "cagr": 0.12018328544266255,
+        "maxdd": -0.22553716273280833,
+        "vol": 0.15994790550503557,
+        "n": 2029
+      },
+      "oos_pct": 90.0,
+      "oos_null_p99": 0.9484092847958641,
+      "verdict": "FAIL"
+    },
+    "BEST": {
+      "is": {
+        "sharpe": 0.2529164359960875,
+        "cagr": 0.02672296244993766,
+        "maxdd": -0.5024457457994761,
+        "vol": 0.14717558671879244,
+        "n": 4733
+      },
+      "is_pct": 64.5,
+      "is_null_p95": 0.33282522962179234,
+      "is_null_p99": 1.0529677227889969,
+      "oos": {
+        "sharpe": 0.8167426768718923,
+        "cagr": 0.12215259175795978,
+        "maxdd": -0.26910644252719473,
+        "vol": 0.1560955019843273,
+        "n": 2029
+      },
+      "oos_pct": 91.0,
+      "oos_null_p99": 1.1737817392423613,
+      "verdict": "FAIL"
+    }
+  },
+  "any_pass": false
+}
