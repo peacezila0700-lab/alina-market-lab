@@ -75,3 +75,12 @@
   Two commits (9a1961c, 609a5a4) are local only. Needs the owner to paste the PAT again.
 - **Next:** pre-registered mean-reversion test (A1) on the FX/FTSE/AUDUSD/GBPUSD cluster with
   walk-forward + null control; then T18 measured spreads.
+
+## Update 2026-11-20 (later) — EXP-0005 / H09 executed and REJECTED (close miss)
+- Pre-registered (f2ce077) → amendment 1 (defective P1 panel) → ran → rejected. EXP-0005 logged.
+- P1R EUR9 (ECB 9 crosses, 1999-2026) weekly tercile reversion: Sharpe +0.343 vs bar 0.35,
+  null_pct 100.0, WF+ 77.3%, 2x-cost +0.181 vs bar 0.20. **Closest miss yet, still a reject.**
+- Sensitivity: passes all four at 0.75x assumed cost. **T18 (measured spreads) now decides everything.**
+- H09b: FTSE +0.336 (A1 fail), AUDUSD +0.981 on 977 bars (not evidence), EURUSD negative.
+- `data/official/EUR{USD,JPY,GBP,CHF,CAD,SEK,NOK,AUD,NZD}_ECB_D.csv` now hold 7,203 rows each (1999+).
+- Push still blocked: 5 commits local (f2ce077, amendment, h09 run, docs). Need PAT.

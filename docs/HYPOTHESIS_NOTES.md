@@ -80,3 +80,18 @@ Owner approves the test order → **T09**: build the backtest engine with unit t
   GOLD 0.043, EURUSD 0.035, SP500 0.035, COPPER −0.021.
 - Beats the realised-vol baseline on MAE in 6/8 assets but not in R² (3/8) and not in portfolio
   Sharpe. Rejected as a signal; retained as a regime/narration layer.
+
+## H09 — cross-sectional + time-series mean reversion (EXP-0005, REJECTED)
+- Pre-registered (`PREREG_H09.md`, commit f2ce077) with A1–A4 thresholds before code ran.
+- First panel was defective (5 of 8 official FX files held only 977 bars, 2023+) → AMENDMENT1
+  replaced it with P1R EUR9 (9 ECB EUR crosses, 7,203 rows each from 1999-01-04).
+- **P1R k=2 weekly tercile, dollar-neutral, 1999–2026:** Sharpe **+0.343** (bar 0.35 → FAIL),
+  CAGR +2.41%, vol 7.84%, maxDD 27.1%, null_pct **100.0**, WF+ **77.3%**, 2× cost **+0.181**
+  (bar 0.20 → FAIL). Closest miss in the project's history.
+- **P2 MULTI12:** +0.152, WF+ 57.1%, 2× cost +0.020 → fails three criteria. Not a cross-asset effect.
+- **H09b z-fade:** FTSE +0.336 (fails A1 only), GBPUSD +0.085, EURUSD −0.161,
+  AUDUSD +0.981 but on **977 bars** → null_pct 99.2 is not evidence at that length.
+- **Cost boundary:** clears all four bars at **0.75×** the assumed 0.013% half-spread. The verdict is
+  a statement about our cost assumption, not about the market → T18 is now the highest-value task.
+- Rolling 5y Sharpe peaked 2009–2016 (+0.5…+0.9), now +0.28–0.35 → same post-2013 decay as every
+  other family tested.
