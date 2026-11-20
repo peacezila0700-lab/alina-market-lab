@@ -1,36 +1,37 @@
-# CURRENT STATE — 2026-11-20 (session: data pack pivot)
+# CURRENT STATE — 2026-11-20 (after B1/B3/B4)
 
 ## Focus
-Data + code + experiments for a DOWNSTREAM AI. App is frozen (not the deliverable).
+Data + code + experiments for a downstream AI. App frozen. Two books: 24-instrument research
+universe + 5-instrument execution universe (EURUSD, EURGBP, EURCHF, GBPUSD, GOLD — the cheapest
+measured spreads). Promotion rule in `configs/universes.json`.
 
-## Just shipped
-- `data/cot/cot_weekly.csv` — CFTC COT legacy futures-only via Socrata (`6dca-aqww`), 24 contracts,
-  35,936 contract-weeks, 1986-01-15 → 2026-11-10. Columns include BOTH `report_date` (Tue as-of) and
-  `available_from` (Fri public) so look-ahead is impossible to do by accident.
-- `data/cot/cot_features.csv` — noncomm/comm net %OI, 156-week z-score + percentile, 4-week change.
-- `data/options/SKEW.csv` — CBOE SKEW 1990 → 2026-11-19 (9,274 rows). Put/call CSVs are DEAD (200 + HTML).
-- `scripts/fetch_cot.py`, `scripts/test_cot_extremity.py`, `scripts/build_datapack.py`.
-- `pack/ALINA_DATAPACK_v1.1.zip` — 6.2 MB, 181 files, 16 datasets. Uploaded to Drive:
-  id `1jW8sRVqFoD1EbH3_N4NZk3XmFuPbXLBe` (v1 older zip trashed). Thai one-pager also on Drive as a Doc.
-- `datapack_src/` — source of the knowledge docs (README_FOR_AI, DATA_SOURCES live/dead map,
-  PITFALLS, WHAT_FAILED, IDEAS_TO_TEST with priors, GLOSSARY, HOW_TO_BACKTEST, README_TH).
+## Shipped this session
+- **B1 event DB** `data/events/event_calendar_full.csv` — 2,028 events, 8 types: FOMC 205,
+  Treasury coupon auctions 770 (with bid-to-cover, 2010–2024), OPEX 264, month-end 264,
+  quarter-end 88, NFP-rule 264, VIX_ONSET30 73, SHOCK_2.5SIG 159. Stats in `event_stats.csv` +
+  `EVENT_STATS.md`.
+- **B3 collector** `scripts/collect_daily.py` — 16/16 free key-less sources, upsert + log.
+  First run: 39,087 rows in `data/collect/`. Run daily; value is the accumulation.
+- **B4 COT panel** `scripts/test_cot_panel.py` → **EXP-0009 FAILS** (β=+0.00047, clustered t=0.16,
+  R²=0.000 in-sample; OOS t=−0.56). Hypothesis H12 closed in BOTH directions.
+- Pack **v1.3** uploaded: 8.2 MB, 232 files, 26 datasets, id `1MQ7ioUcr-yyN67F_yFT_Yw0D7slpUlN8`.
+  v1.2 trashed. Local `pack/` deleted after upload (rebuild with `scripts/build_datapack.py`).
 
-## Result of the new test (H12, exploratory — NOT pre-registered)
-59 tests, non-overlapping sampling: **0** observations match the contrarian COT read with |t|>=2
-(chance ≈3). Three |t|>=2 hits point WITH the crowd (EURUSD net long → +1.06% over 4w, t=2.99;
-GOLD +2.05%/8w, t=1.91). Verdict: no contrarian edge; if anything, positioning momentum.
-Two traps fixed while doing it: overlapping forward windows inflate t by ~sqrt(h) (saw t=30 on a
-0.05% edge), and the pre-derived `*_D.csv` FX crosses only start 2023 (silently truncated the sample).
+## Measured highlights (do not re-derive)
+- FOMC day |SPY move| is only **1.09×** a random day (TLT 1.15×) — the meeting matters far less
+  than the narrative suggests. NFP (rule) hits bonds harder: TLT 1.33×.
+- OPEX day SPY mean −0.170%, only **42.6% positive**; month-end −0.045% / 45.1% positive.
+- Treasury auction days are *calmer* than average (SPY |move| 0.88×).
+- VIX first crossing 30: SPY same-day median +0.60%, forward 5d mean +1.03%.
+- SHOCK (>2.5σ) days: d5 mean −0.02% but median +0.437% — the mean is dragged by 2008/2020.
 
 ## Verified / not verified
-- COT + SKEW + ECB + spreads: pulled and parsed successfully (verified).
-- EA (`ea/AlinaRiskGovernor.mq5`): lint only, **never compiled** — still ยังไม่ได้ทดสอบ.
-- Pack integrity: catalog rows/sha256 generated from the files themselves.
+- Free intraday: OKX 1H/1m crypto candles work with deep history (BTC/ETH to ~2020). Dukascopy
+  **1MIN is now 403** (1HOUR still OK). Yahoo 5m restricted (422). No free real-time feed → an
+  hour-level bot is only realistic on crypto, or on FX with hourly bars and pessimistic latency.
+- EA still never compiled. Governor logic unit-tested 21/21.
 
-## Next actions (in order)
-1. Pre-register + run the pooled panel version of H12 (instrument fixed effects, date-clustered SEs,
-   70/30 date split) — the only way a COT claim can become real.
-2. Add CBOE put/call via an alternative route (put/call CSVs dead; try scraping the ratios page or
-   another free vendor) — options *flow* is the biggest remaining hole.
-3. Dealer gamma / open interest by strike: needs a free options chain source; unresolved.
-4. Regenerate the pack after each data addition (`python3 scripts/build_datapack.py`) and re-upload.
+## Next
+1. Wire the collector to a daily schedule (cron) — the store is the moat.
+2. Event-conditional signal tests (the event DB exists now; nothing has been tested against it).
+3. Auction demand (bid-to-cover z) → forward bond/equity returns; data is in hand.

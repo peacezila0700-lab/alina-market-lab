@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v1.2.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v1.3.zip
 """
 from __future__ import annotations
 
@@ -257,6 +257,32 @@ DATASETS = [
                   "Some documents are milestone snapshots and were later superseded."],
          use_for=["auditing a verdict", "avoiding a repeated mistake"],
          leak_rule="n/a (documentation)"),
+    dict(id="event_reaction_db", src=["data/events/event_calendar_full.csv", "data/events/event_stats.csv",
+                                      "data/events/EVENT_STATS.md"],
+         kind="events", grade="B", title="Event calendar (2,028 events) + measured reaction statistics",
+         card="Every scheduled catalyst with an exact date — FOMC (205), Treasury coupon auctions (770, "
+              "2010-2024, with bid-to-cover), monthly/quarterly option expiry, month-end, quarter-end, "
+              "NFP (first-Friday rule) — plus the data-triggered families people actually fear: VIX first "
+              "crossing 30, and daily moves > 2.5 sigma. For each type x asset x window it reports the "
+              "measured forward distribution and the |move| ratio vs a random day.",
+         caveats=["NFP dates are rule-derived (~90-95% exact). CPI is deliberately absent: BLS blocks this "
+                  "sandbox and a wrong date poisons an event study.",
+                  "VIX_ONSET30 / SHOCK_2.5SIG are only known at that day's close, so their forward window "
+                  "starts the next day — do not trade the shock close in a backtest.",
+                  "Forward returns are unlevered spot moves, no costs, no execution model."],
+         use_for=["pre-writing event scenarios", "event-risk gating", "surprise studies"],
+         leak_rule="Scheduled events are known in advance (safe as forward features); trigger events are not."),
+    dict(id="collector_store", src="data/collect/*.csv", kind="live-store",
+         grade="B", title="Daily collector store — accumulating history since 2026-11-20",
+         card="The output of `scripts/collect_daily.py`: 16 free key-less sources upserted daily "
+              "(DIX/GEX, OFR FSI, VIX, SKEW, OKX funding + long/short, Deribit chain, econ calendar, EIA "
+              "inventories, EPU, GPR, Treasury auctions + yield curve, crypto 1H candles). This is the "
+              "part nobody can Google later — option chains and funding rates only exist going forward.",
+         caveats=["Starts 2026-11-20: short history. Value grows with time, not with more fetches.",
+                  "Collection reliability is logged in collector_log.jsonl — check it before trusting gaps.",
+                  "Some files are full-history refreshes (mode=replace), others append-only."],
+         use_for=["building proprietary history", "live features", "verifying data availability"],
+         leak_rule="Real-time snapshots; a snapshot taken intraday must be timestamped as such."),
     dict(id="experiments_ledger", src="research/EXPERIMENT_LOG.csv", kind="results",
          grade="B", title="Every experiment run, with verdicts — the project's memory",
          card="8 pre-registered experiments (EXP-0001…0008) with hypothesis, data, cost model, "
@@ -329,7 +355,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "1.2",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "1.3",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -374,7 +400,7 @@ def main() -> None:
         json.dump(catalog, f, indent=2)
 
     # ---- results json (all artifacts an AI may want to read quickly)
-    for rel in ["data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+    for rel in ["research/artifacts/cot_panel.json", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
                 "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
@@ -430,7 +456,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v1.2.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v1.3.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:
