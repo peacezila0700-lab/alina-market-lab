@@ -15,6 +15,10 @@
 - Canonical cleaning: `scripts/build_canonical_d1.py` → 2,592 bars each, log `CLEANING_LOG.csv` (720 rows)
 - T07 Descriptive research: `reports/RESEARCH_D1.md`, `reports/zscore_buckets.csv`
 - Decisions D01–D06: `docs/DECISION_LOG.md`
+- T08 Hypothesis register: `research/HYPOTHESIS_REGISTER.csv` (H01–H04 ranked) + pre-registration in `docs/HYPOTHESIS_NOTES.md` + `research/EXPERIMENT_LOG.csv` (EXP-0001 planned)
+
+## Waiting on owner (Gate 5)
+- Approve test order H01 -> H02 -> H03 -> H04 before any backtest is written
 
 ## In progress / blocked by source
 - Ingest M1 candles: **BLOCKED — Dukascopy returns HTTP 429** (rate limit, source-side, verified 5/5 curl)
