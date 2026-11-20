@@ -83,3 +83,16 @@
   แล้วใช้หลักฐานคนละชุด (AUC/Brier สำหรับ variance, ส่วนเกิน Sharpe เหนือ vol targeting สำหรับ direction)
 - **กับดักที่เจอ (PITFALLS #15):** รอบแรกของ EXP-0015 โชว์ Sharpe 1.98/2.28 เพราะใส่น้ำหนักผิดแท่ง
   (same-bar) และ label ทับซ้อนกับ feature — แก้แล้วผลจริงคือล้ม ต้องเช็ค 4 ข้อนี้ทุกครั้งก่อนสรุปผล
+
+### รอบที่ 4 (EXP-0017, EXP-0018) — hourly FX มี bid/ask จริงครบ 23 ปี
+- ดึง **Dukascopy hourly ทั้ง bid และ ask** 6 คู่ (EURUSD, GBPUSD, USDJPY, EURGBP, EURCHF, XAUUSD)
+  ปี 2003–2026 คู่ละ ~145,000 แท่ง พร้อม spread ที่วัดได้จริงทุกแท่ง
+- `HOUR_OF_DAY_PROFILE.md` — ตาราง spread กลาง + range กลาง ของทุกชั่วโมง UTC ต่อคู่
+  (EURUSD: spread 0.40–0.50 pip, ช่วง London–NY overlap ได้ range/spread 50–65 เท่า,
+  ช่วง rollover 21–23Z เหลือ 6–11 เท่า) → ใช้เลือกเวลาเข้าออเดอร์ ไม่ใช่選擇ทิศทาง
+- **EXP-0017 ล้มทั้ง 5 สัญญาณ** (reversal 1h/6h, momentum 12h, session breakout, hour seasonality)
+  pooled net Sharpe −0.4 ถึง −10.8 · จุดสำคัญ: reversal 1 ชั่วโมงมี edge "ก่อนหักต้นทุน" จริง +0.19 bp/ชม.
+  แต่ต้นทุน spread 0.34 bp/ชม. กินหมด
+- **EXP-0018 ล้ม:** กรองให้เทรดน้อยลง (เฉพาะแท่งใหญ่ / เฉพาะช่วง overlap / ทั้งสองอย่าง) ขาดทุนลดลงครึ่ง
+  แต่ไม่พลิกเป็นบวก — ต้องมี spread แคบกว่านี้ 3–30 เท่าถึงจะคุ้ม (ระดับ ECN สถาบัน ไม่ใช่โบรกเกอร์รายย่อย)
+- บทสรุป: **hourly FX ใช้ได้แค่เรื่อง "เวลาเข้า" ไม่ใช่ "ทิศทาง"** — และต้องคิดต้นทุนทุกแท่งด้วย spread ของแท่งนั้น

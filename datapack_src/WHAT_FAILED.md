@@ -78,3 +78,13 @@ skew, dealer gamma) that is not in the price series at all.
 - **Direction is NOT.** 16 experiments, ~500 sub-tests, zero directional edges that survive a
   turnover-matched null plus a vol-targeting benchmark. Claims about direction need excess Sharpe over
   vol targeting, a date split, and a shift null — and nothing else counts.
+### Hour-scale FX, tested properly for the first time — 2 more, both rejected
+| # | Idea | Verdict | One-line reason |
+|---|---|---|---|
+| EXP-0017 | 5 classic hourly rules on 6 pairs with real bid/ask (2003-2026, ~145k bars each) | FAIL | Pooled net Sharpe ranges −0.4 to −10.8. 1-hour reversal has a real GROSS edge of +0.19 bp/hour and pays 0.34 bp/hour in spread. |
+| EXP-0018 | Sparse gating (big moves only / London-NY overlap / both) | FAIL | Gating halves the loss and never flips it. Breakeven cost multiple 0.03-0.29: spreads must be 3-30x tighter than Dukascopy quotes. |
+
+**What the hour-scale data is still good for** (this is the constructive part): `HOUR_OF_DAY_PROFILE.md`
+gives the measured spread and high-low range for every hour of the UTC day, per pair. EURUSD quotes
+0.40-0.50 pips with a 50-65x range/spread ratio in the London-NY overlap and 6-11x at the 21-23 UTC
+rollover. Use it for execution timing, stop placement and instrument choice — not for direction.

@@ -114,3 +114,14 @@ return per unit of exposure. That is not a failed project, it is a taxonomy: **v
 forecastable, direction is not.** Every future idea should say up front which of the two it claims,
 because they need completely different evidence (Brier/AUC for variance; excess Sharpe vs vol
 targeting and a turnover-matched null for direction).
+
+## 17. Always-on intraday rules pay the spread 24 times a day — measure per bar, not on average
+EXP-0017 measured a *positive* gross edge in 1-hour FX reversal (+0.188 bp/hour) and still lost 7.8
+Sharpe net, because an always-on rule round-trips every hour and the spread alone costs 0.342 bp/hour.
+Two rules follow:
+1. **Charge cost on |Δposition| for every bar, using that bar's own measured spread** — never a single
+   average spread, because the rollover hours (21-23 UTC) quote several times wider than the London
+   session and any rule that trades through them is charged more than the average implies.
+2. **Report the breakeven cost multiple** = gross mean return / cost drag. If it is below 1, the idea
+   needs cheaper execution, not a better filter; EXP-0018's gated variants came in at 0.03-0.29 while
+   still looking "less bad", which is exactly how a dead idea keeps a researcher busy for months.

@@ -1,0 +1,124 @@
+{
+  "experiment": "EXP-0017",
+  "hypothesis": "H20",
+  "design": " (written before the result)\n-------------------------------------------------\nUniverse  : EURUSD, GBPUSD, USDJPY, EURGBP, EURCHF, XAUUSD. Bars with zero volume (weekend flat) are\n            dropped. Returns are computed on the BID close (a long is bought at the ask and sold at the\n            bid; the cost accounting below charges the spread explicitly instead of trying to model both\n            books).\nSignals   : S1 REV1     pos = -sign(r_t)                                  (1-hour reversal)\n            S2 REV6     pos = -sign(mean r over t-5..t)                   (6-hour reversal)\n            S3 MOM12    pos = +sign(mean r over t-11..t)                  (12-hour momentum)\n            S4 BREAK    long above the 00-07 UTC range high, short below its low, flat inside,\n                        active only during 07-15 UTC (London session breakout)\n            S5 HOURSEAS pos = sign of the hour-of-day mean return, estimated only from data strictly\n                        before the current day (expanding, minimum 250 days)\nExecution : decision at bar close t, position applies to bar t+1 -> exactly one bar of latency (~60\n            minutes), which is what a REST-snapshot / retail-MT5 setup can honour.\nCosts     : one side of the quoted spread per unit of |\u0394position|, using THAT BAR's measured spread\n            (not an average): cost_t = 0.5 * spread_pips_t * pip_size / price_{t-1} on |\u0394pos|.\n            Quoted Dukascopy spreads are a FLOOR for a retail account \u2014 commission and slippage are not\n            included, so any result here is optimistic.\nSplit     : first 70% of hours = in-sample, last 30% = out-of-sample (per pair, same dates).\nPortfolio : equal-weight average of the 6 pairs' net return series, per signal.\nNull      : circular shifts of the position series (200), which keeps turnover, sign balance and\n            autocorrelation and destroys only the timing. Bar = 99th percentile (Bonferroni over the 5\n            signals on the pooled portfolio). Per-pair numbers are reported descriptively, not tested.\n\nPASS BAR: pooled net Sharpe must be > 0 and above the 99th percentile of its shift null in BOTH halves.\nA signal may pass per-pair and still fail pooled \u2014 pooled is the bar, because that is what a real book is.\n",
+  "bar_percentile": 99.0,
+  "results": {
+    "REV1": {
+      "is": {
+        "sharpe": -7.827378905442816,
+        "mean_bp": -0.7220840664257695
+      },
+      "oos": {
+        "sharpe": -5.812006564406632,
+        "mean_bp": -0.4738970178747723
+      },
+      "is_pct": 42.5,
+      "oos_pct": 7.5,
+      "null_p99_is": -7.827378905442816,
+      "null_p99_oos": -5.812006564406631,
+      "per_pair_is": {
+        "EURUSD": -1.205,
+        "GBPUSD": -2.195,
+        "USDJPY": -2.657,
+        "EURGBP": -4.646,
+        "EURCHF": -3.794,
+        "XAUUSD": -7.207
+      },
+      "verdict": "FAIL"
+    },
+    "REV6": {
+      "is": {
+        "sharpe": -3.018327322156857,
+        "mean_bp": -0.27861785213719226
+      },
+      "oos": {
+        "sharpe": -2.3921772469565723,
+        "mean_bp": -0.19767105192606269
+      },
+      "is_pct": 23.0,
+      "oos_pct": 60.5,
+      "null_p99_is": -3.018327322156857,
+      "null_p99_oos": -2.3921772469565723,
+      "per_pair_is": {
+        "EURUSD": -0.634,
+        "GBPUSD": -0.62,
+        "USDJPY": -0.869,
+        "EURGBP": -1.893,
+        "EURCHF": -1.186,
+        "XAUUSD": -3.038
+      },
+      "verdict": "FAIL"
+    },
+    "MOM12": {
+      "is": {
+        "sharpe": -3.867930241368419,
+        "mean_bp": -0.3637565340506748
+      },
+      "oos": {
+        "sharpe": -2.492349698908577,
+        "mean_bp": -0.20484908430863555
+      },
+      "is_pct": 68.0,
+      "oos_pct": 1.0,
+      "null_p99_is": -3.867930241368419,
+      "null_p99_oos": -2.4923496989085767,
+      "per_pair_is": {
+        "EURUSD": -0.742,
+        "GBPUSD": -1.276,
+        "USDJPY": -0.893,
+        "EURGBP": -3.024,
+        "EURCHF": -3.282,
+        "XAUUSD": -2.83
+      },
+      "verdict": "FAIL"
+    },
+    "BREAK": {
+      "is": {
+        "sharpe": -1.522451083767522,
+        "mean_bp": -0.08689662095698712
+      },
+      "oos": {
+        "sharpe": -0.4433716225029429,
+        "mean_bp": -0.023150242495171593
+      },
+      "is_pct": 0.0,
+      "oos_pct": 20.0,
+      "null_p99_is": -1.5224510837675216,
+      "null_p99_oos": -0.4433716225029427,
+      "per_pair_is": {
+        "EURUSD": -0.319,
+        "GBPUSD": -0.191,
+        "USDJPY": -0.381,
+        "EURGBP": -0.662,
+        "EURCHF": -1.055,
+        "XAUUSD": -1.578
+      },
+      "verdict": "FAIL"
+    },
+    "HOURSEAS": {
+      "is": {
+        "sharpe": -10.825471960354648,
+        "mean_bp": -0.8928256456319648
+      },
+      "oos": {
+        "sharpe": -8.179787735565405,
+        "mean_bp": -0.5979623940944292
+      },
+      "is_pct": 3.5000000000000004,
+      "oos_pct": 13.0,
+      "null_p99_is": -10.825471960354648,
+      "null_p99_oos": -8.179787735565405,
+      "per_pair_is": {
+        "EURUSD": -1.171,
+        "GBPUSD": -2.618,
+        "USDJPY": -2.953,
+        "EURGBP": -5.105,
+        "EURCHF": -8.037,
+        "XAUUSD": -8.659
+      },
+      "verdict": "FAIL"
+    }
+  },
+  "any_pass": false
+}

@@ -1,27 +1,32 @@
-# CURRENT STATE — 2026-11-20 (v2.2, after EXP-0016)
+# CURRENT STATE — 2026-11-20 (v2.3, after EXP-0018)
 
 ## Focus
-Data + code + experiments for a downstream AI. App frozen. Two stacked universes: 24-instrument
-research panel + 5-instrument execution book (EURUSD, EURGBP, EURCHF, GBPUSD, GOLD), plus a 68-ETF
-cross-section, a CBOE volatility term structure and a 36-year Treasury curve for conditioning.
+Data + code + experiments for a downstream AI. App frozen. Stacked universes: 24-instrument research
+panel, 5-instrument execution book, 68-ETF cross-section, CBOE term structure, 36-year Treasury curve,
+and now 23 years of hourly FX with BOTH bid and ask.
 
 ## Drive (live)
-- **v2.2 `1JEWD5dbkYVIISo4JA5ts9oijnwK4GYmk`** — 38 datasets / 355 files / 19.8 MB. Current.
-- v2.1, v2.0, v1.3, v1.2, v1.1 all trashed. Local `pack/` deleted after each upload.
+- **v2.3 `1NYWjvtc8wmTMpLOXUulkTSJwPD7tGDpp`** — 39 datasets / 371 files / 39.7 MB. Current.
+- v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
-## Shipped this session
-- News (294 headlines/15 feeds), levels (28 instruments), 68-ETF broad panel (38 MB), daily brief.
-- **CBOE term structure**: VIX/VIX1D/VIX9D/VIX3M/VVIX/SKEW + derived slope_3m, slope_9d, vvix_pct,
-  inversion onset flag; `VOL_REGIME_BASE_RATES.md` with n_eff per cell.
-- **Treasury curve backfill 1990–2026** (9,228 days, 37 year-requests) — was 222 rows before.
-- **OKX deep**: 10,000 hourly bars + 280 funding settlements per symbol (endpoint caps both).
-- **EXP-0010..0016, all FAIL.** 16 experiments, 0 validated edges.
-- `OPERATING_MANUAL.md`, `PITFALLS.md` #11–16, `WHAT_FAILED.md` (11 rejects), register H16–H19 rejected.
+## Shipped this session (chronological)
+1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
+2. EXP-0010..0012 (events, auctions, cross-section) → all FAIL
+3. EXP-0013/0014 (breadth overlays, gamma vs vol targeting) → FAIL
+4. CBOE term structure + VOL_REGIME_BASE_RATES + Treasury 1990-2026 backfill (9,228 rows) + OKX deep;
+   EXP-0015 (onset: AUC 0.746 but loses to vol targeting) / EXP-0016 (bond carry) → FAIL → v2.2
+5. **Dukascopy hourly bid+ask, 6 pairs, 2003-2026, ~145k bars each** + HOUR_OF_DAY_PROFILE;
+   EXP-0017 (5 hourly rules, net Sharpe −0.4..−10.8) / EXP-0018 (gating, breakeven multiple 0.03-0.29)
+   → FAIL → v2.3
 
-## The taxonomy to carry forward (2 sentences)
-**Variance is forecastable, direction is not.** Term structure predicts a vol onset (AUC 0.746, Brier
-+0.168) yet an overlay built on it loses to free vol targeting by −0.28 Sharpe OOS; state variables cut
-drawdown (gamma −27% vs −51%, bond carry halves 2022-26 losses) but never add mean return per exposure.
+## Tally
+18 experiments, 168 screen, 144 family, 59 COT, 0 validated edges. Every failure is in
+`WHAT_FAILED.md` with the reason; every trap is in `PITFALLS.md` (#1-#17).
+
+## The three sentences that carry the whole project
+**Variance is forecastable, direction is not.** State variables cut drawdown (gamma −27% vs −51%, bond
+carry halves 2022-26 losses) but never add mean return per unit of exposure, and the one real hourly FX
+edge (+0.19 bp/hour gross reversal) is smaller than the 0.34 bp/hour spread it must cross.
 
 ## Measured highlights (do not re-derive)
 - FOMC day |SPY move| is only **1.09×** a random day (TLT 1.15×) — the meeting matters far less

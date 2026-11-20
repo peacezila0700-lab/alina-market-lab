@@ -1,0 +1,49 @@
+{
+  "experiment": "EXP-0018",
+  "hypothesis": "H20b",
+  "design": " (written before the result)\n-------------------------------------------------\nUniverse / data / execution / costs / split / null: identical to EXP-0017 (same bid/ask files, one-bar\nlatency, one side of the *measured* spread per unit of |\u0394position|, 70/30 by date, circular-shift null).\nBase signal: REV1 = -sign(r_t), i.e. the profitable-gross but cost-doomed rule.\n\nGates (each is causal, computed from data strictly before the decision):\n  G1 BIGMOVE : trade only when |r_t| is above its trailing-252-hour 95th percentile\n  G2 OVERLAP : trade only during 12:00-16:00 UTC (London/NY overlap, tightest spreads, most volume)\n  G3 BOTH    : G1 AND G2\nWhen a gate is off, the position is 0 (flat), so turnover and cost fall with it.\n\nTests: 3 gated variants + the ungated baseline, pooled across the 6 pairs. Bar = 98.3rd percentile\n(Bonferroni over 3 new variants) in BOTH halves. Report the breakeven cost multiplier for each (net mean\nreturn / cost drag) so the margin is explicit even on a fail.\n\nWHY THIS ISN'T P-HACKING: the number of variants is fixed at 3 before the run, they were chosen from the\nEXP-0017 diagnostic (turnover and session liquidity are the only two knobs that diagnostic pointed at),\nthe bar is Bonferroni-corrected, and the OOS half must confirm.\n",
+  "bar_percentile": 98.33,
+  "results": {
+    "BASE": {
+      "is_sharpe": -7.827378905442816,
+      "oos_sharpe": -5.812006564406632,
+      "is_pct": 36.0,
+      "oos_pct": 8.5,
+      "verdict": "FAIL",
+      "gross_bp_per_h": 0.2613303918185362,
+      "net_bp_per_h": -0.6476266285843724,
+      "breakeven_cost_multiple": 0.2875057741483724
+    },
+    "G1_BIGMOVE": {
+      "is_sharpe": -2.255543152304358,
+      "oos_sharpe": -1.15006309555504,
+      "is_pct": 41.5,
+      "oos_pct": 74.0,
+      "verdict": "FAIL",
+      "gross_bp_per_h": 0.0104646604616054,
+      "net_bp_per_h": -0.06746333319093596,
+      "breakeven_cost_multiple": 0.1342862811054052
+    },
+    "G2_OVERLAP": {
+      "is_sharpe": -3.40146257838834,
+      "oos_sharpe": -1.930957397016007,
+      "is_pct": 19.0,
+      "oos_pct": 0.0,
+      "verdict": "FAIL",
+      "gross_bp_per_h": 0.0043057885428340655,
+      "net_bp_per_h": -0.14569949545409216,
+      "breakeven_cost_multiple": 0.02870424579791667
+    },
+    "G3_BOTH": {
+      "is_sharpe": -1.9037433356890567,
+      "oos_sharpe": -0.9098345060821221,
+      "is_pct": 55.50000000000001,
+      "oos_pct": 51.5,
+      "verdict": "FAIL",
+      "gross_bp_per_h": -0.003603596896942091,
+      "net_bp_per_h": -0.0341429643143747,
+      "breakeven_cost_multiple": -0.11799841325086094
+    }
+  },
+  "any_pass": false
+}

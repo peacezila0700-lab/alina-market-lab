@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.2.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.3.zip
 """
 from __future__ import annotations
 
@@ -326,6 +326,31 @@ DATASETS = [
                   "fetcher parses with a regex on purpose."],
          use_for=["vol/regime conditioning priors", "gap-risk flagging", "variance forecasting"],
          leak_rule="VIX closes are stamped same-day; anything traded on them must use the next session."),
+    dict(id="intraday_h1_bidask", src=["data/intraday/EURUSD_H1_bidask.csv",
+                                      "data/intraday/EURGBP_H1_bidask.csv",
+                                      "data/intraday/GBPUSD_H1_bidask.csv",
+                                      "data/intraday/EURCHF_H1_bidask.csv",
+                                      "data/intraday/USDJPY_H1_bidask.csv",
+                                      "data/intraday/XAUUSD_H1_bidask.csv",
+                                      "data/intraday/MANIFEST_H1_BIDASK.json",
+                                      "data/facts/HOUR_OF_DAY_PROFILE.md",
+                                      "data/facts/hour_of_day_profile.csv"],
+         kind="intraday", grade="B",
+         title="Hourly FX/metals with BOTH bid and ask, 2003-2026 (6 pairs, ~145k bars each)",
+         card="The only free source of hourly quotes with two sides: Dukascopy chart/json3 fetched once "
+              "per offer_side. Every bar carries its own measured spread, so costs are charged per bar "
+              "instead of assumed. Ships with HOUR_OF_DAY_PROFILE.md — median spread and median high-low "
+              "range for every hour of the UTC day, per pair, and the resulting movement-per-cost ratio.",
+         caveats=["Dukascopy quotes are one broker's feed: a FLOOR, not a retail account. No commission, "
+                  "no slippage.",
+                  "Row layout is [ts, open, high, low, close, volume] — verified empirically; the binary "
+                  "tick feed uses a different order.",
+                  "Zero-volume (weekend flat) bars are dropped.",
+                  "Direction is NOT tradable here: EXP-0017/0018 measured 5 hourly rules and 3 gated "
+                  "variants, all fail at these spreads. Use the data for execution timing."],
+         use_for=["execution timing and cost modelling", "hour-of-day risk profiles",
+                  "intraday level validation", "latency studies"],
+         leak_rule="Bar close is the decision point; fills happen in the next bar. Never fill on the same bar."),
     dict(id="treasury_curve_deep", src=["data/collect/treasury_yield_curve_full.csv"],
          kind="rates", grade="A",
          title="US Treasury daily yield curve, 1990 to today (9,228 days, 13 tenors)",
@@ -446,7 +471,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.2",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.3",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -492,7 +517,7 @@ def main() -> None:
 
     # ---- results json (all artifacts an AI may want to read quickly)
     for rel in ["research/artifacts/cot_panel.json", "research/artifacts/event_conditional.json",
-                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
                 "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
@@ -548,7 +573,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.2.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.3.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:
