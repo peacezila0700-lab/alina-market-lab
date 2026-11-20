@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v1.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v1.1.zip
 """
 from __future__ import annotations
 
@@ -256,7 +256,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "1.0",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "1.1",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -353,7 +353,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v1.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v1.1.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

@@ -1,36 +1,20 @@
-# SESSION HANDOFF
+# SESSION HANDOFF — written at end of the data-pack session (2026-11-20)
 
-- Date/time (UTC): 2026-11-20 ~15:10
-- Agent/session: Alina / Arena Agent Mode
-- Current stage: 1 → 2
-- Workspace verified: Drive ✓ (write+read+trash) · GitHub ✓ (push verified) · Python ✓ · 24/7 runtime ✗
-- Git branch/commit: `main` @ `adaaced3`
+## What changed in this session
+1. GitHub App push path works (`scripts/gh_push.sh`). HEAD was `874c2f0` at handoff; 40 commits.
+2. New data: CFTC COT (1986+, 24 contracts), CBOE SKEW, derived COT features. New code:
+   `fetch_cot.py`, `test_cot_extremity.py`, `build_datapack.py`.
+3. New deliverable: `ALINA_DATAPACK` (built into `pack/`, uploaded to Drive as v1.1, 6.2 MB).
+   Knowledge docs live in `datapack_src/` — edit there, then rebuild, never edit `pack/` by hand.
 
-## Completed
-- Stage 0 audit — `docs/STAGE0_AUDIT.md`
-- Instrument decision EURGBP (+EURUSD control) with measured evidence — `docs/PLAN_v1_INSTRUMENT_DATA.md`
-- Ingest pipeline `scripts/ingest_duka.py` (persistent conn, retries, resumable, spread in pips)
-- Repo pushed: https://github.com/peacezila0700-lab/alina-market-lab
+## How to continue in one line
+`python3 scripts/build_datapack.py` rebuilds the pack; `python3 scripts/fetch_cot.py` refreshes COT.
 
-## Not completed / blocked
-- 1y ingest still running (rate-limited ~0.17 req/s)
-- Broker cost model — waiting on owner (broker name + account type)
+## Traps inherited (read `datapack_src/PITFALLS.md`)
+- Lag positions; measured costs; permutation null; COT available_from vs report_date; never Yahoo FX.
+- Event studies: subsample non-overlapping windows or the t-stats lie.
 
-## Decisions made
-- D01: EURGBP primary — Hurst 0.297, half-life 4.2d, 66% of time within ±2% of 200dMA
-- D02: no H1 scalping — spread/ATR = 15%
-- D03: research dataset D1 10y (Yahoo + ECB cross-check); Dukascopy M1 → spread model + H1 execution
-
-## Experiments run
-- None (data stage). Screening is descriptive, not a strategy test.
-
-## Risks / data quality issues
-- Dukascopy emits flat filler bars outside market hours (observed 2026-11-01) → QC must drop
-- Yahoo H1 has 318 nulls / 145 gaps in 2y — never forward-fill silently
-- Token used for GitHub lives in chat history → owner may rotate at will
-
-## Files changed
-- created: `scripts/ingest_duka.py`, `configs/project.yaml`, `memory/*`, `docs/*`
-
-## Next single action
-- Wait for ingest → run T05 QC report on EURGBP H1 (duplicates, missing hours, flat-bar removal, spread distribution by hour-of-day, ECB cross-check)
+## Open questions for the next session
+- Options flow (put/call dead), dealer gamma, macro-surprise history — all still missing.
+- The COT momentum hint (positioning continues, not reverses) is the single most interesting lead and
+  has NOT been properly tested.
