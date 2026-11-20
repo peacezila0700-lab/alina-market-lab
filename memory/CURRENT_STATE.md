@@ -84,3 +84,16 @@
 - H09b: FTSE +0.336 (A1 fail), AUDUSD +0.981 on 977 bars (not evidence), EURUSD negative.
 - `data/official/EUR{USD,JPY,GBP,CHF,CAD,SEK,NOK,AUD,NZD}_ECB_D.csv` now hold 7,203 rows each (1999+).
 - Push still blocked: 5 commits local (f2ce077, amendment, h09 run, docs). Need PAT.
+
+## Update 2026-11-20 (T18 done) — spreads MEASURED, H09 P1R conditionally supported
+- `scripts/measure_spreads.py`: Dukascopy bid/ask via chart API (URL-encoded!). .bi5 host is 503.
+  10 instruments, 2003-2025 hourly. EURUSD spread 1.0 -> 0.3 pips (the whole decay story).
+- EXP-0005 remains REJECTED (assumed cost). EXP-0006 = same rules, measured cost:
+  P1R ECN Sharpe +0.402 / retail +0.358, all four criteria PASS; P2 fails => H09 not formally accepted.
+- Economics: 97x turnover/yr, gross +3.96%, cost -1.15%, net +2.53%, Sharpe 0.36, maxDD 26%,
+  corr(buy&hold) -0.013. Real by our tests but thin.
+- Per-leg: EURJPY/CAD/CHF carry it; SEK/NOK negative after spread; EURUSD no signal (no retuning!).
+- NEXT: (a) H10 pre-registration with instrument set chosen by a spread rule written in advance;
+  (b) forward paper run of locked P1R rule from 2026-11-20; (c) still want the owner MT5 export.
+- Artifacts fixed: `research/artifacts/h09_{assumed,ecn,retail}.json` (an earlier run had overwritten
+  the assumed file; recovered from commit 41d541a).

@@ -38,6 +38,48 @@ COST = {"EURUSD": 0.013, "EURGBP": 0.013, "EURCHF": 0.013, "EURJPY": 0.013,
         "EURNZD": 0.013,
         "USDJPY": 0.013, "FTSE": 0.02, "DAX": 0.02, "SP500": 0.02, "NIKKEI": 0.02,
         "HSI": 0.02, "GOLD": 0.03, "SILVER": 0.03, "COPPER": 0.03, "TLT": 0.03, "WTI": 0.06}
+# ---- T18: measured costs (Dukascopy bid/ask) replace the assumption -----------------
+MEASURED_JSON = os.path.join(ROOT, "data", "spreads", "MEASURED_COSTS.json")
+SCENARIO = os.environ.get("COST_SCENARIO", "assumed")   # assumed | ecn | retail
+RETAIL_MARKUP_PIPS = 1.0          # typical retail standard-account markup on top of ECN
+
+
+def measured_cost_vector(syms: list[str], scenario: str) -> np.ndarray:
+    """Half-spread in % of notional, per instrument, from measured bid/ask.
+
+    ecn    = measured Dukascopy half-spread
+    retail = measured spread + 1.0 pip markup, then halved (standard retail account)
+    """
+    import json as _json
+    if not os.path.exists(MEASURED_JSON):
+        raise SystemExit("no measured costs: run scripts/measure_spreads.py first")
+    mc = _json.load(open(MEASURED_JSON))["costs"]
+    out = []
+    for s in syms:
+        base = mc.get(s, {}).get("half_spread_pct_of_notional")
+        if base is None:                       # fall back to the assumption, and say so
+            out.append(COST.get(s, 0.03) / 100.0)
+            continue
+        if scenario == "ecn":
+            out.append(base / 100.0)
+        else:                                  # retail: widen the spread, then halve
+            pip = 0.01 if s.endswith("JPY") else 0.0001
+            price = _price_median(s)
+            half = (mc[s]["median_spread_pips_2019plus"] + RETAIL_MARKUP_PIPS) * pip / price / 2
+            out.append(half * 100.0 / 100.0 * 100.0 / 100.0 * 100.0 / 100.0 if False else half)
+    return np.array(out, float)
+
+
+def _price_median(sym: str) -> float:
+    p = os.path.join(ROOT, "data", "spreads", f"{sym}_hourly.csv")
+    if os.path.exists(p):
+        rows = [r for r in csv.DictReader(open(p)) if int(r["year"]) >= 2019]
+        if rows:
+            vals = sorted(float(r["price_median"]) for r in rows)
+            return vals[len(vals) // 2]
+    return 1.0
+
+
 K_PRIMARY = 2
 K_EXPLORATORY = [1, 4, 12]
 N_SIM = 1000
@@ -118,10 +160,16 @@ def xs_weights(R: np.ndarray, k: int) -> np.ndarray:
     return W
 
 
+COST_VEC = None
+
+
 def pnr(R: np.ndarray, W: np.ndarray, cost_mult: float = 1.0) -> np.ndarray:
     """Net weekly returns, costs on lagged turnover (QR-002 discipline)."""
     n, m = R.shape
-    c = np.array([COST.get(s, 0.03) for s in SYMS], float) / 100.0
+    if COST_VEC is not None:
+        c = COST_VEC
+    else:
+        c = np.array([COST.get(s, 0.03) for s in SYMS], float) / 100.0
     pnl = np.full(n, np.nan)
     prev = np.zeros(m)
     for t in range(1, n):
@@ -291,8 +339,9 @@ def daily_test(sym: str, panel: str, n_sim=N_SIM) -> dict:
 
 # ------------------------------------------------------------------ main
 def run_panel(name: str, syms: list[str], panel: str) -> dict:
-    global SYMS
+    global SYMS, COST_VEC
     SYMS = syms
+    COST_VEC = None if SCENARIO == "assumed" else measured_cost_vector(syms, SCENARIO)
     weeks, R = build_panel(syms, panel)
     res = {"panel": name, "instruments": syms, "weeks": len(weeks),
            "first": f"{weeks[0][0]}-W{weeks[0][1]:02d}", "last": f"{weeks[-1][0]}-W{weeks[-1][1]:02d}",

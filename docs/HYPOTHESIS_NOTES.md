@@ -95,3 +95,13 @@ Owner approves the test order → **T09**: build the backtest engine with unit t
   a statement about our cost assumption, not about the market → T18 is now the highest-value task.
 - Rolling 5y Sharpe peaked 2009–2016 (+0.5…+0.9), now +0.28–0.35 → same post-2013 decay as every
   other family tested.
+
+## H09b status update / EXP-0006 — measured costs change the verdict for P1R only
+- T18 produced REAL spreads (Dukascopy bid/ask, 2003-2025). EURUSD 1.0 pip (2003) -> 0.3 pip (2013+).
+- Under measured costs P1R passes A1-A4 (ECN +0.402, retail+1pip +0.358). P2 still fails.
+- Pre-registration demanded both panels -> **H09 not accepted**. P1R = "conditionally supported".
+- Economics: 97x annual turnover, gross +3.96%, cost -1.15%, net +2.53%, Sharpe 0.36, maxDD 26%,
+  corr to buy & hold -0.013. Thin but market-neutral and real by every test we can run in-sample.
+- Per-leg: EURJPY/EURCAD/EURCHF carry it; EURSEK/EURNOK net negative (spreads 44-48 pips);
+  EURUSD has no signal. Acting on that = post-hoc selection -> must be H10 pre-registered first.
+- Only remaining confirmation: forward paper run at the owner's actual broker cost.
