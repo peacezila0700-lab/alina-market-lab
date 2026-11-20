@@ -1,0 +1,5 @@
+compressed bytes: 5242
+decompressed: 26640 -> ticks: 1332
+first: 00:00:00.270000 0.82672/0.82683  last: 00:59:58.654000 0.82703/0.82712
+spread(pips) median=0.90 mean=0.96 p95=1.20
+H1 bar: O=0.82672 H=0.82724 L=0.82663 C=0.82703

@@ -1,0 +1,24 @@
+=== SINGLE INSTRUMENTS (last ~1500 daily bars) ===
+symbol         n  vol%ann   hurst  halflife_d
+AUDCAD=X    2605      7.1   0.427        13.7
+AUDNZD=X    2604      5.1   0.472        21.4
+CADCHF=X    2604      7.5   0.419        14.3
+EURCHF=X    2603      4.9   0.423        15.4
+EURGBP=X    2603      8.1   0.297         4.2
+EURUSD=X    2602      7.1     0.5        21.5
+GBPUSD=X    2602      8.5   0.471        18.9
+GC=F        2516     17.2   0.475        20.1
+NZDCAD=X    2602      7.6   0.442        16.9
+SI=F        2515     35.4   0.462        16.6
+USDJPY=X    2602      8.6   0.512        23.9
+
+=== PAIRS: log(A) - beta*log(B), beta by OLS over full sample ===
+pair                     corr  halflife   ADF t    vol    beta
+EURCHF/EURUSD          0.245     307.0   -1.32    6.2   0.663
+EURGBP/EURUSD          0.104      17.6   -3.55    8.1   0.194
+AUDNZD/AUDCAD          0.236     455.5   -0.84    5.0   0.209
+AUDNZD/NZDCAD         -0.387     336.9   -0.82    5.3  -0.450
+CADCHF/EURCHF          0.545     272.8   -1.29    6.8   1.081
+
+=== GOLD/SILVER RATIO ===
+current=85.1  mean(last1500)=79.9  min=44.2 max=105.4  halflife=12.6d  hurst=0.421

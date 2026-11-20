@@ -1,0 +1,12 @@
+# data & artifacts (never commit raw/processed data or secrets)
+data/raw_tmp/
+data/processed/
+data/state/
+*.bi5
+*.npz
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/

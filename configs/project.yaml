@@ -1,0 +1,17 @@
+project: ALINA MARKET LAB
+version: 0.1.0
+status: research-only          # no live trading, ever, without owner approval
+instrument:
+  primary: EURGBP
+  control: EURUSD
+  timeframe_research: D1
+  timeframe_execution: H1
+data:
+  canonical_source: dukascopy_m1_candles
+  crosscheck_source: [ecb_reference_rate, yahoo_daily]
+  timezone: UTC
+  cost_model: null             # BLOCKED: needs broker contract spec from owner
+safety:
+  live_trading: false
+  paper_only: true
+  ai_may_edit_risk_policy: false

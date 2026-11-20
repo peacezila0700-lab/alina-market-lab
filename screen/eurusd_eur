@@ -1,0 +1,32 @@
+<stdin>:7: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+<stdin>:9: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+
+=== EURGBP daily 2016-2026  n=2603  last=0.83773 ===
+  2017: low=0.8352 high=0.9263 range= 10.9%
+  2018: low=0.8635 high=0.9085 range=  5.2%
+  2019: low=0.8300 high=0.9323 range= 12.3%
+  2020: low=0.8303 high=0.9425 range= 13.5%
+  2021: low=0.8385 high=0.9056 range=  8.0%
+  2022: low=0.8229 high=0.9790 range= 19.0%
+  2023: low=0.8512 high=0.8958 range=  5.2%
+  2024: low=0.8230 high=0.8671 range=  5.4%
+  2025: low=0.8250 high=0.8842 range=  7.2%
+  2026: low=0.8324 high=0.8771 range=  5.4%
+  dev from 200dMA: p10=-2.5% p90=2.6% | share |dev|<2% = 66%
+  dev>+2sd (price high): n=  67 mean fwd20d=-2.15%  win=24%
+  dev<-2sd (price low): n=  41 mean fwd20d=+0.08%  win=46%
+
+=== EURUSD daily 2016-2026  n=2602  last=1.09842 ===
+  2017: low=1.0420 high=1.2029 range= 15.4%
+  2018: low=1.1233 high=1.2510 range= 11.4%
+  2019: low=1.0900 high=1.1555 range=  6.0%
+  2020: low=1.0657 high=1.2300 range= 15.4%
+  2021: low=1.1203 high=1.2341 range= 10.2%
+  2022: low=0.9596 high=1.1457 range= 19.4%
+  2023: low=1.0472 high=1.1238 range=  7.3%
+  2024: low=1.0350 high=1.1191 range=  8.1%
+  2025: low=1.0244 high=1.1871 range= 15.9%
+  2026: low=1.0972 high=1.2018 range=  9.5%
+  dev from 200dMA: p10=-4.1% p90=5.4% | share |dev|<2% = 41%
+  dev>+2sd (price high): n=  95 mean fwd20d=+0.78%  win=66%
+  dev<-2sd (price low): n=  35 mean fwd20d=+0.81%  win=63%
