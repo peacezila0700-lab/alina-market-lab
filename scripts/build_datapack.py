@@ -307,6 +307,7 @@ def main() -> None:
                 "research/artifacts/h09_ecn.json", "research/artifacts/h09_retail.json",
                 "research/artifacts/h10_holdout.json", "research/artifacts/h11_vrp.json",
                 "research/artifacts/free_ea_families_summary.json",
+                "research/artifacts/cot_extremity.json", "reports/COT_EXTREMITY.md",
                 "research/EXPERIMENT_LOG.csv", "research/HYPOTHESIS_REGISTER.csv",
                 "data/cot/MANIFEST_COT.json", "data/events/MANIFEST_EVENTS.json",
                 "data/universe/MANIFEST_UNIVERSE.json", "data/spreads/MEASURED_COSTS.json"]:
