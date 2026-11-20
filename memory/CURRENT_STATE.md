@@ -17,6 +17,13 @@
 - Decisions D01–D06: `docs/DECISION_LOG.md`
 - T08 Hypothesis register: `research/HYPOTHESIS_REGISTER.csv` (H01–H04 ranked) + pre-registration in `docs/HYPOTHESIS_NOTES.md` + `research/EXPERIMENT_LOG.csv` (EXP-0001 planned)
 
+## EXP-0002 result (2026-11-20) — H01 REJECTED
+- Power expansion without changing the rule: 26y history (2000/2003→2026) × 5 pairs.
+- **CLEAN sample (never used before): n=94, +5.81 pips/trade, PF 1.06, CI [−52.55, +67.66], 2/5 pairs positive**
+- Random-entry benchmark mean +2.79 (p95 +43.8) → observed result is indistinguishable from luck
+- Sign instability across periods: EURGBP −15.3 → +61.6; CADCHF −50.9 → +76.3
+- Report: `reports/EXP_0002.md` · H02/H04 deprioritised · H03 not worth a session on a dead base
+
 ## EXP-0001 result (2026-11-20)
 - **H01: NOT SUPPORTED** — 14 trades in 10 years (min 30 required). IS n=10, +68.3 pips/trade,
   PF 2.29, but 95% CI [-7.45, +164.8] includes 0. Random-entry benchmark p95 = +114 → inside noise.
@@ -24,9 +31,11 @@
 - Binding constraint is now **statistical power**, not data quality or cost.
 - Rule was NOT re-tuned (that would burn the only honest test left).
 
-## Waiting on owner
-- Choose how to raise power: (A) MT5 history export to ~2003, (B) cross-sectional basket of
-  5 mean-reverting pairs, (C) H1 frequency, (D) new hypothesis H05 with lower threshold.
+## Waiting on owner — direction decision after H01 rejection
+- Option 1: move to intraday (H1/M15) with NEW data — needs a working feed (MT5 export or Dukascopy)
+- Option 2: new D1 hypothesis family (e.g. volatility-compression breakout), pre-registered
+- Forbidden: retuning H01 on the same data
+- No evidence supports moving toward paper trading.
 
 ## In progress / blocked by source
 - Ingest M1 candles: **BLOCKED — Dukascopy returns HTTP 429** (rate limit, source-side, verified 5/5 curl)

@@ -34,3 +34,14 @@
 ## D06 — Price data from Yahoo is NOT execution-grade
 - open==close in ~39% of bars; Friday session mislabeled Sunday in 294/522 weeks
 - → closes usable for research; OHLC/spread NOT usable for backtest execution assumptions
+
+## D07 — H01 rejected; D1 z-score direction closed
+- **Date:** 2026-11-20 · **Status:** CLOSED (not to be retuned)
+- **Evidence:** EXP-0001 (n=14, CI spans 0, random benchmark p95 = +114 vs observed +68) and
+  EXP-0002 (n=94 clean trades over 26 years × 5 pairs, +5.81 pips/trade, PF 1.06,
+  CI [−52.55, +67.66], 2/5 pairs positive, random mean +2.79)
+- **What stays true:** the descriptive range behaviour (Hurst 0.36, VR60 0.52, 66% within ±2% of MA200)
+- **What is rejected:** that a z ≥ +2σ short with MA-cross/time-stop exits monetises it after costs
+- **Forbidden:** any retune of threshold/horizon/stop on the same data
+- **Consequence:** both the OOS block and the CLEAN block are consumed → any further test needs
+  untouched data (intraday) or a structurally different hypothesis family
