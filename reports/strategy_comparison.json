@@ -3,28 +3,28 @@
     "per_pair": {
       "EURUSD": {
         "full": {
-          "cagr": -1.63,
+          "cagr": -1.41,
           "vol": 9.03,
-          "sharpe": -0.14,
-          "maxdd": 157.1,
+          "sharpe": -0.11,
+          "maxdd": 158.2,
           "trades_per_yr": 1.4,
           "hit": 95.7,
           "turnover_cost_pct": 0.45
         },
         "pre2013": {
-          "cagr": -1.79,
-          "vol": 10.23,
-          "sharpe": -0.13,
-          "maxdd": 99.3,
+          "cagr": -1.17,
+          "vol": 10.22,
+          "sharpe": -0.06,
+          "maxdd": 94.6,
           "trades_per_yr": 2.8,
           "hit": 92.1,
           "turnover_cost_pct": 0.45
         },
         "post2013": {
-          "cagr": -1.46,
+          "cagr": -1.65,
           "vol": 7.65,
-          "sharpe": -0.15,
-          "maxdd": 44.2,
+          "sharpe": -0.18,
+          "maxdd": 44.8,
           "trades_per_yr": 2.9,
           "hit": 99.2,
           "turnover_cost_pct": 0.45
@@ -32,28 +32,28 @@
       },
       "EURGBP": {
         "full": {
-          "cagr": -0.33,
+          "cagr": -0.3,
           "vol": 7.45,
-          "sharpe": -0.01,
-          "maxdd": 44.1,
+          "sharpe": -0.0,
+          "maxdd": 41.3,
           "trades_per_yr": 1.5,
           "hit": 95.6,
           "turnover_cost_pct": 0.7
         },
         "pre2013": {
-          "cagr": -0.43,
+          "cagr": -0.27,
           "vol": 7.79,
-          "sharpe": -0.02,
-          "maxdd": 44.1,
+          "sharpe": 0.0,
+          "maxdd": 41.3,
           "trades_per_yr": 3.0,
           "hit": 91.8,
           "turnover_cost_pct": 0.7
         },
         "post2013": {
-          "cagr": -0.22,
+          "cagr": -0.33,
           "vol": 7.09,
-          "sharpe": 0.0,
-          "maxdd": 27.7,
+          "sharpe": -0.01,
+          "maxdd": 29.8,
           "trades_per_yr": 3.0,
           "hit": 99.5,
           "turnover_cost_pct": 0.7
@@ -61,28 +61,28 @@
       },
       "EURCHF": {
         "full": {
-          "cagr": 1.39,
+          "cagr": 1.64,
           "vol": 6.2,
-          "sharpe": 0.25,
-          "maxdd": 21.9,
+          "sharpe": 0.29,
+          "maxdd": 22.1,
           "trades_per_yr": 1.3,
           "hit": 94.3,
           "turnover_cost_pct": 0.39
         },
         "pre2013": {
-          "cagr": 2.11,
+          "cagr": 2.3,
           "vol": 6.16,
-          "sharpe": 0.37,
+          "sharpe": 0.4,
           "maxdd": 20.5,
           "trades_per_yr": 2.6,
           "hit": 90.8,
           "turnover_cost_pct": 0.39
         },
         "post2013": {
-          "cagr": 0.66,
+          "cagr": 0.98,
           "vol": 6.24,
-          "sharpe": 0.14,
-          "maxdd": 18.4,
+          "sharpe": 0.19,
+          "maxdd": 17.4,
           "trades_per_yr": 2.6,
           "hit": 97.8,
           "turnover_cost_pct": 0.39
@@ -90,28 +90,28 @@
       },
       "GBPUSD": {
         "full": {
-          "cagr": 0.19,
+          "cagr": 0.03,
           "vol": 9.02,
-          "sharpe": 0.07,
-          "maxdd": 84.9,
+          "sharpe": 0.05,
+          "maxdd": 88.5,
           "trades_per_yr": 1.3,
           "hit": 96.4,
           "turnover_cost_pct": 0.34
         },
         "pre2013": {
-          "cagr": 0.9,
+          "cagr": 0.79,
           "vol": 9.27,
-          "sharpe": 0.14,
-          "maxdd": 64.6,
+          "sharpe": 0.13,
+          "maxdd": 65.2,
           "trades_per_yr": 2.6,
           "hit": 92.8,
           "turnover_cost_pct": 0.34
         },
         "post2013": {
-          "cagr": -0.53,
+          "cagr": -0.73,
           "vol": 8.75,
-          "sharpe": -0.02,
-          "maxdd": 38.0,
+          "sharpe": -0.04,
+          "maxdd": 37.7,
           "trades_per_yr": 2.7,
           "hit": 100.0,
           "turnover_cost_pct": 0.34
@@ -119,28 +119,28 @@
       },
       "GBPCHF": {
         "full": {
-          "cagr": -0.92,
+          "cagr": -0.69,
           "vol": 9.23,
-          "sharpe": -0.05,
-          "maxdd": 120.0,
+          "sharpe": -0.03,
+          "maxdd": 125.5,
           "trades_per_yr": 1.5,
           "hit": 96.3,
           "turnover_cost_pct": 0.37
         },
         "pre2013": {
-          "cagr": 1.19,
+          "cagr": 1.71,
           "vol": 9.56,
-          "sharpe": 0.17,
-          "maxdd": 27.6,
+          "sharpe": 0.23,
+          "maxdd": 27.9,
           "trades_per_yr": 3.0,
           "hit": 92.8,
           "turnover_cost_pct": 0.37
         },
         "post2013": {
-          "cagr": -3.01,
+          "cagr": -3.06,
           "vol": 8.88,
           "sharpe": -0.3,
-          "maxdd": 74.7,
+          "maxdd": 78.7,
           "trades_per_yr": 3.0,
           "hit": 100.0,
           "turnover_cost_pct": 0.37
@@ -148,28 +148,28 @@
       },
       "USDCHF": {
         "full": {
-          "cagr": -1.19,
+          "cagr": -1.34,
           "vol": 9.87,
-          "sharpe": -0.07,
-          "maxdd": 131.7,
+          "sharpe": -0.09,
+          "maxdd": 152.6,
           "trades_per_yr": 1.6,
           "hit": 96.3,
           "turnover_cost_pct": 0.59
         },
         "pre2013": {
-          "cagr": -0.53,
+          "cagr": -0.59,
           "vol": 10.94,
-          "sharpe": 0.01,
-          "maxdd": 81.9,
+          "sharpe": 0.0,
+          "maxdd": 88.7,
           "trades_per_yr": 3.3,
           "hit": 92.8,
           "turnover_cost_pct": 0.59
         },
         "post2013": {
-          "cagr": -1.86,
+          "cagr": -2.08,
           "vol": 8.66,
-          "sharpe": -0.17,
-          "maxdd": 61.5,
+          "sharpe": -0.2,
+          "maxdd": 61.4,
           "trades_per_yr": 3.3,
           "hit": 99.9,
           "turnover_cost_pct": 0.59
@@ -178,19 +178,22 @@
     },
     "pooled": {
       "full": {
-        "cagr": -0.18,
-        "sharpe": -0.01,
-        "maxdd": 35.9
+        "cagr": -0.11,
+        "vol": 5.08,
+        "sharpe": 0.0,
+        "maxdd": 37.4
       },
       "pre2013": {
-        "cagr": 0.48,
-        "sharpe": 0.11,
-        "maxdd": 17.3
+        "cagr": 0.7,
+        "vol": 5.8,
+        "sharpe": 0.15,
+        "maxdd": 18.0
       },
       "post2013": {
-        "cagr": -0.85,
-        "sharpe": -0.18,
-        "maxdd": 18.9
+        "cagr": -0.93,
+        "vol": 4.23,
+        "sharpe": -0.2,
+        "maxdd": 18.1
       }
     }
   },
@@ -201,25 +204,25 @@
           "cagr": 2.51,
           "vol": 9.18,
           "sharpe": 0.32,
-          "maxdd": 47.0,
+          "maxdd": 38.5,
           "trades_per_yr": 5.7,
           "hit": 98.7,
           "turnover_cost_pct": 1.79
         },
         "pre2013": {
-          "cagr": 4.8,
+          "cagr": 5.02,
           "vol": 10.47,
-          "sharpe": 0.5,
-          "maxdd": 37.6,
+          "sharpe": 0.52,
+          "maxdd": 31.3,
           "trades_per_yr": 11.3,
           "hit": 98.1,
           "turnover_cost_pct": 1.79
         },
         "post2013": {
-          "cagr": 0.26,
+          "cagr": 0.04,
           "vol": 7.65,
-          "sharpe": 0.07,
-          "maxdd": 28.7,
+          "sharpe": 0.04,
+          "maxdd": 30.2,
           "trades_per_yr": 11.4,
           "hit": 99.2,
           "turnover_cost_pct": 1.79
@@ -227,28 +230,28 @@
       },
       "EURGBP": {
         "full": {
-          "cagr": -1.6,
+          "cagr": -1.01,
           "vol": 7.56,
-          "sharpe": -0.17,
-          "maxdd": 86.8,
+          "sharpe": -0.1,
+          "maxdd": 71.0,
           "trades_per_yr": 5.9,
           "hit": 98.7,
           "turnover_cost_pct": 2.77
         },
         "pre2013": {
-          "cagr": -2.45,
-          "vol": 8.0,
-          "sharpe": -0.27,
-          "maxdd": 68.7,
+          "cagr": -1.18,
+          "vol": 7.99,
+          "sharpe": -0.11,
+          "maxdd": 52.7,
           "trades_per_yr": 11.7,
           "hit": 97.8,
           "turnover_cost_pct": 2.77
         },
         "post2013": {
-          "cagr": -0.72,
+          "cagr": -0.84,
           "vol": 7.09,
-          "sharpe": -0.07,
-          "maxdd": 33.4,
+          "sharpe": -0.08,
+          "maxdd": 31.9,
           "trades_per_yr": 11.8,
           "hit": 99.5,
           "turnover_cost_pct": 2.77
@@ -256,28 +259,28 @@
       },
       "EURCHF": {
         "full": {
-          "cagr": -1.55,
+          "cagr": -1.29,
           "vol": 6.21,
-          "sharpe": -0.22,
-          "maxdd": 60.3,
+          "sharpe": -0.18,
+          "maxdd": 53.0,
           "trades_per_yr": 6.3,
           "hit": 97.3,
           "turnover_cost_pct": 1.87
         },
         "pre2013": {
-          "cagr": -0.89,
+          "cagr": -0.92,
           "vol": 6.19,
-          "sharpe": -0.11,
-          "maxdd": 31.1,
+          "sharpe": -0.12,
+          "maxdd": 37.4,
           "trades_per_yr": 12.5,
           "hit": 96.8,
           "turnover_cost_pct": 1.87
         },
         "post2013": {
-          "cagr": -2.22,
+          "cagr": -1.67,
           "vol": 6.24,
-          "sharpe": -0.33,
-          "maxdd": 45.5,
+          "sharpe": -0.24,
+          "maxdd": 39.6,
           "trades_per_yr": 12.7,
           "hit": 97.8,
           "turnover_cost_pct": 1.87
@@ -285,28 +288,28 @@
       },
       "GBPUSD": {
         "full": {
-          "cagr": -1.51,
+          "cagr": -1.5,
           "vol": 9.09,
           "sharpe": -0.12,
-          "maxdd": 82.4,
+          "maxdd": 84.3,
           "trades_per_yr": 6.6,
           "hit": 99.4,
           "turnover_cost_pct": 1.63
         },
         "pre2013": {
-          "cagr": -2.15,
+          "cagr": -1.94,
           "vol": 9.42,
-          "sharpe": -0.18,
-          "maxdd": 51.7,
+          "sharpe": -0.16,
+          "maxdd": 56.8,
           "trades_per_yr": 13.2,
           "hit": 98.9,
           "turnover_cost_pct": 1.63
         },
         "post2013": {
-          "cagr": -0.87,
+          "cagr": -1.05,
           "vol": 8.75,
-          "sharpe": -0.06,
-          "maxdd": 40.9,
+          "sharpe": -0.08,
+          "maxdd": 31.7,
           "trades_per_yr": 13.3,
           "hit": 100.0,
           "turnover_cost_pct": 1.63
@@ -314,28 +317,28 @@
       },
       "GBPCHF": {
         "full": {
-          "cagr": -1.56,
+          "cagr": -1.35,
           "vol": 9.32,
-          "sharpe": -0.12,
-          "maxdd": 77.5,
+          "sharpe": -0.1,
+          "maxdd": 95.2,
           "trades_per_yr": 5.7,
           "hit": 99.4,
           "turnover_cost_pct": 1.39
         },
         "pre2013": {
-          "cagr": -0.1,
+          "cagr": 0.27,
           "vol": 9.74,
-          "sharpe": 0.04,
-          "maxdd": 32.5,
+          "sharpe": 0.08,
+          "maxdd": 55.2,
           "trades_per_yr": 11.4,
           "hit": 98.9,
           "turnover_cost_pct": 1.39
         },
         "post2013": {
-          "cagr": -3.02,
+          "cagr": -2.96,
           "vol": 8.88,
-          "sharpe": -0.3,
-          "maxdd": 67.7,
+          "sharpe": -0.29,
+          "maxdd": 75.4,
           "trades_per_yr": 11.5,
           "hit": 100.0,
           "turnover_cost_pct": 1.39
@@ -343,28 +346,28 @@
       },
       "USDCHF": {
         "full": {
-          "cagr": 1.33,
+          "cagr": 0.62,
           "vol": 10.01,
-          "sharpe": 0.18,
-          "maxdd": 63.2,
+          "sharpe": 0.11,
+          "maxdd": 73.6,
           "trades_per_yr": 5.7,
           "hit": 99.4,
           "turnover_cost_pct": 2.02
         },
         "pre2013": {
-          "cagr": 1.7,
+          "cagr": 1.35,
           "vol": 11.19,
-          "sharpe": 0.21,
-          "maxdd": 63.2,
+          "sharpe": 0.18,
+          "maxdd": 73.6,
           "trades_per_yr": 11.3,
           "hit": 98.9,
           "turnover_cost_pct": 2.02
         },
         "post2013": {
-          "cagr": 0.96,
+          "cagr": -0.11,
           "vol": 8.66,
-          "sharpe": 0.15,
-          "maxdd": 23.0,
+          "sharpe": 0.03,
+          "maxdd": 30.1,
           "trades_per_yr": 11.5,
           "hit": 99.9,
           "turnover_cost_pct": 2.02
@@ -373,19 +376,22 @@
     },
     "pooled": {
       "full": {
-        "cagr": -0.16,
-        "sharpe": -0.01,
-        "maxdd": 26.6
+        "cagr": -0.1,
+        "vol": 5.08,
+        "sharpe": 0.01,
+        "maxdd": 25.7
       },
       "pre2013": {
-        "cagr": 0.4,
-        "sharpe": 0.1,
-        "maxdd": 12.2
+        "cagr": 0.69,
+        "vol": 5.56,
+        "sharpe": 0.15,
+        "maxdd": 14.2
       },
       "post2013": {
-        "cagr": -0.73,
-        "sharpe": -0.14,
-        "maxdd": 18.9
+        "cagr": -0.89,
+        "vol": 4.55,
+        "sharpe": -0.17,
+        "maxdd": 21.4
       }
     }
   },
@@ -393,28 +399,28 @@
     "per_pair": {
       "EURUSD": {
         "full": {
-          "cagr": 0.66,
+          "cagr": 0.2,
           "vol": 9.07,
-          "sharpe": 0.12,
-          "maxdd": 43.5,
+          "sharpe": 0.07,
+          "maxdd": 45.6,
           "trades_per_yr": 1.6,
           "hit": 96.5,
           "turnover_cost_pct": 0.51
         },
         "pre2013": {
-          "cagr": 0.99,
+          "cagr": 0.68,
           "vol": 10.29,
-          "sharpe": 0.15,
+          "sharpe": 0.12,
           "maxdd": 43.5,
           "trades_per_yr": 3.1,
           "hit": 93.8,
           "turnover_cost_pct": 0.51
         },
         "post2013": {
-          "cagr": 0.33,
+          "cagr": -0.27,
           "vol": 7.65,
-          "sharpe": 0.08,
-          "maxdd": 40.8,
+          "sharpe": 0.0,
+          "maxdd": 45.6,
           "trades_per_yr": 3.2,
           "hit": 99.2,
           "turnover_cost_pct": 0.51
@@ -422,28 +428,28 @@
       },
       "EURGBP": {
         "full": {
-          "cagr": 0.23,
+          "cagr": 0.38,
           "vol": 7.47,
-          "sharpe": 0.07,
-          "maxdd": 45.4,
+          "sharpe": 0.09,
+          "maxdd": 38.9,
           "trades_per_yr": 1.6,
           "hit": 96.4,
           "turnover_cost_pct": 0.74
         },
         "pre2013": {
-          "cagr": -0.05,
+          "cagr": 0.11,
           "vol": 7.83,
-          "sharpe": 0.03,
-          "maxdd": 45.4,
+          "sharpe": 0.05,
+          "maxdd": 38.9,
           "trades_per_yr": 3.1,
           "hit": 93.4,
           "turnover_cost_pct": 0.74
         },
         "post2013": {
-          "cagr": 0.52,
+          "cagr": 0.65,
           "vol": 7.09,
-          "sharpe": 0.11,
-          "maxdd": 36.8,
+          "sharpe": 0.13,
+          "maxdd": 36.3,
           "trades_per_yr": 3.2,
           "hit": 99.5,
           "turnover_cost_pct": 0.74
@@ -451,28 +457,28 @@
       },
       "EURCHF": {
         "full": {
-          "cagr": 1.45,
+          "cagr": 1.53,
           "vol": 6.2,
-          "sharpe": 0.26,
-          "maxdd": 25.5,
+          "sharpe": 0.28,
+          "maxdd": 25.9,
           "trades_per_yr": 1.4,
           "hit": 95.1,
           "turnover_cost_pct": 0.4
         },
         "pre2013": {
-          "cagr": 1.42,
+          "cagr": 1.37,
           "vol": 6.17,
-          "sharpe": 0.26,
-          "maxdd": 25.5,
+          "sharpe": 0.25,
+          "maxdd": 25.9,
           "trades_per_yr": 2.8,
           "hit": 92.5,
           "turnover_cost_pct": 0.4
         },
         "post2013": {
-          "cagr": 1.48,
+          "cagr": 1.69,
           "vol": 6.24,
-          "sharpe": 0.27,
-          "maxdd": 17.7,
+          "sharpe": 0.3,
+          "maxdd": 15.6,
           "trades_per_yr": 2.8,
           "hit": 97.8,
           "turnover_cost_pct": 0.4
@@ -480,28 +486,28 @@
       },
       "GBPUSD": {
         "full": {
-          "cagr": -0.24,
+          "cagr": -0.48,
           "vol": 9.03,
-          "sharpe": 0.02,
-          "maxdd": 55.8,
+          "sharpe": -0.01,
+          "maxdd": 65.4,
           "trades_per_yr": 1.6,
           "hit": 97.2,
           "turnover_cost_pct": 0.41
         },
         "pre2013": {
-          "cagr": 0.51,
+          "cagr": 0.37,
           "vol": 9.3,
-          "sharpe": 0.1,
-          "maxdd": 34.5,
+          "sharpe": 0.09,
+          "maxdd": 35.9,
           "trades_per_yr": 3.2,
           "hit": 94.5,
           "turnover_cost_pct": 0.41
         },
         "post2013": {
-          "cagr": -0.99,
+          "cagr": -1.33,
           "vol": 8.75,
-          "sharpe": -0.07,
-          "maxdd": 42.6,
+          "sharpe": -0.11,
+          "maxdd": 43.0,
           "trades_per_yr": 3.2,
           "hit": 100.0,
           "turnover_cost_pct": 0.41
@@ -509,28 +515,28 @@
       },
       "GBPCHF": {
         "full": {
-          "cagr": -0.4,
+          "cagr": -0.44,
           "vol": 9.24,
-          "sharpe": 0.0,
-          "maxdd": 114.0,
+          "sharpe": -0.0,
+          "maxdd": 113.5,
           "trades_per_yr": 1.5,
           "hit": 97.2,
           "turnover_cost_pct": 0.36
         },
         "pre2013": {
-          "cagr": 2.39,
+          "cagr": 2.33,
           "vol": 9.59,
           "sharpe": 0.29,
-          "maxdd": 30.1,
+          "maxdd": 30.5,
           "trades_per_yr": 3.0,
           "hit": 94.4,
           "turnover_cost_pct": 0.36
         },
         "post2013": {
-          "cagr": -3.15,
+          "cagr": -3.16,
           "vol": 8.88,
           "sharpe": -0.32,
-          "maxdd": 92.2,
+          "maxdd": 89.3,
           "trades_per_yr": 3.0,
           "hit": 100.0,
           "turnover_cost_pct": 0.36
@@ -538,28 +544,28 @@
       },
       "USDCHF": {
         "full": {
-          "cagr": -0.58,
+          "cagr": -0.61,
           "vol": 9.91,
           "sharpe": -0.01,
-          "maxdd": 86.0,
+          "maxdd": 76.1,
           "trades_per_yr": 1.5,
           "hit": 97.2,
           "turnover_cost_pct": 0.53
         },
         "pre2013": {
-          "cagr": 1.77,
+          "cagr": 1.05,
           "vol": 11.01,
-          "sharpe": 0.21,
-          "maxdd": 35.2,
+          "sharpe": 0.15,
+          "maxdd": 38.8,
           "trades_per_yr": 3.0,
           "hit": 94.4,
           "turnover_cost_pct": 0.53
         },
         "post2013": {
-          "cagr": -2.9,
+          "cagr": -2.26,
           "vol": 8.66,
-          "sharpe": -0.3,
-          "maxdd": 86.0,
+          "sharpe": -0.22,
+          "maxdd": 72.6,
           "trades_per_yr": 3.0,
           "hit": 99.9,
           "turnover_cost_pct": 0.53
@@ -568,19 +574,22 @@
     },
     "pooled": {
       "full": {
-        "cagr": 0.42,
-        "sharpe": 0.11,
-        "maxdd": 25.6
+        "cagr": 0.33,
+        "vol": 5.2,
+        "sharpe": 0.09,
+        "maxdd": 26.3
       },
       "pre2013": {
-        "cagr": 1.42,
-        "sharpe": 0.27,
-        "maxdd": 16.0
+        "cagr": 1.23,
+        "vol": 5.85,
+        "sharpe": 0.24,
+        "maxdd": 17.2
       },
       "post2013": {
         "cagr": -0.58,
+        "vol": 4.43,
         "sharpe": -0.11,
-        "maxdd": 24.9
+        "maxdd": 25.5
       }
     }
   },
@@ -588,28 +597,28 @@
     "per_pair": {
       "EURUSD": {
         "full": {
-          "cagr": 2.5,
+          "cagr": 1.87,
           "vol": 9.15,
-          "sharpe": 0.32,
-          "maxdd": 25.5,
+          "sharpe": 0.25,
+          "maxdd": 28.3,
           "trades_per_yr": 3.3,
           "hit": 97.9,
           "turnover_cost_pct": 1.06
         },
         "pre2013": {
-          "cagr": 4.54,
+          "cagr": 3.73,
           "vol": 10.42,
-          "sharpe": 0.48,
-          "maxdd": 25.5,
+          "sharpe": 0.4,
+          "maxdd": 18.6,
           "trades_per_yr": 6.6,
           "hit": 96.5,
           "turnover_cost_pct": 1.06
         },
         "post2013": {
-          "cagr": 0.47,
+          "cagr": 0.04,
           "vol": 7.65,
-          "sharpe": 0.1,
-          "maxdd": 20.7,
+          "sharpe": 0.04,
+          "maxdd": 28.3,
           "trades_per_yr": 6.7,
           "hit": 99.2,
           "turnover_cost_pct": 1.06
@@ -617,28 +626,28 @@
       },
       "EURGBP": {
         "full": {
-          "cagr": -0.16,
+          "cagr": -1.27,
           "vol": 7.53,
-          "sharpe": 0.02,
-          "maxdd": 53.6,
+          "sharpe": -0.13,
+          "maxdd": 76.3,
           "trades_per_yr": 3.3,
           "hit": 97.8,
           "turnover_cost_pct": 1.59
         },
         "pre2013": {
-          "cagr": 0.99,
-          "vol": 7.94,
-          "sharpe": 0.16,
-          "maxdd": 29.2,
+          "cagr": -0.43,
+          "vol": 7.95,
+          "sharpe": -0.01,
+          "maxdd": 44.4,
           "trades_per_yr": 6.6,
           "hit": 96.2,
           "turnover_cost_pct": 1.59
         },
         "post2013": {
-          "cagr": -1.31,
+          "cagr": -2.11,
           "vol": 7.09,
-          "sharpe": -0.15,
-          "maxdd": 53.6,
+          "sharpe": -0.26,
+          "maxdd": 76.3,
           "trades_per_yr": 6.7,
           "hit": 99.5,
           "turnover_cost_pct": 1.59
@@ -646,28 +655,28 @@
       },
       "EURCHF": {
         "full": {
-          "cagr": -0.03,
+          "cagr": -0.26,
           "vol": 6.21,
-          "sharpe": 0.03,
-          "maxdd": 24.8,
+          "sharpe": -0.01,
+          "maxdd": 26.7,
           "trades_per_yr": 3.8,
           "hit": 96.5,
           "turnover_cost_pct": 1.13
         },
         "pre2013": {
-          "cagr": -0.28,
+          "cagr": -0.53,
           "vol": 6.18,
-          "sharpe": -0.01,
-          "maxdd": 20.0,
+          "sharpe": -0.05,
+          "maxdd": 22.9,
           "trades_per_yr": 7.6,
           "hit": 95.2,
           "turnover_cost_pct": 1.13
         },
         "post2013": {
-          "cagr": 0.22,
+          "cagr": 0.0,
           "vol": 6.24,
-          "sharpe": 0.07,
-          "maxdd": 14.4,
+          "sharpe": 0.03,
+          "maxdd": 18.6,
           "trades_per_yr": 7.6,
           "hit": 97.9,
           "turnover_cost_pct": 1.13
@@ -675,28 +684,28 @@
       },
       "GBPUSD": {
         "full": {
-          "cagr": 1.34,
+          "cagr": 0.48,
           "vol": 9.07,
-          "sharpe": 0.19,
-          "maxdd": 31.9,
+          "sharpe": 0.1,
+          "maxdd": 37.0,
           "trades_per_yr": 3.1,
           "hit": 98.6,
           "turnover_cost_pct": 0.75
         },
         "pre2013": {
-          "cagr": 0.97,
+          "cagr": -0.47,
           "vol": 9.38,
-          "sharpe": 0.15,
-          "maxdd": 31.9,
+          "sharpe": -0.0,
+          "maxdd": 37.0,
           "trades_per_yr": 6.1,
           "hit": 97.2,
           "turnover_cost_pct": 0.75
         },
         "post2013": {
-          "cagr": 1.71,
+          "cagr": 1.45,
           "vol": 8.75,
-          "sharpe": 0.24,
-          "maxdd": 18.8,
+          "sharpe": 0.21,
+          "maxdd": 20.8,
           "trades_per_yr": 6.1,
           "hit": 100.0,
           "turnover_cost_pct": 0.75
@@ -704,28 +713,28 @@
       },
       "GBPCHF": {
         "full": {
-          "cagr": -0.24,
+          "cagr": -2.34,
           "vol": 9.3,
-          "sharpe": 0.02,
-          "maxdd": 60.6,
+          "sharpe": -0.21,
+          "maxdd": 163.4,
           "trades_per_yr": 3.9,
           "hit": 98.6,
           "turnover_cost_pct": 0.95
         },
         "pre2013": {
-          "cagr": 1.68,
+          "cagr": 0.94,
           "vol": 9.7,
-          "sharpe": 0.22,
-          "maxdd": 26.1,
+          "sharpe": 0.15,
+          "maxdd": 26.9,
           "trades_per_yr": 7.8,
           "hit": 97.2,
           "turnover_cost_pct": 0.95
         },
         "post2013": {
-          "cagr": -2.14,
-          "vol": 8.88,
-          "sharpe": -0.2,
-          "maxdd": 55.9,
+          "cagr": -5.55,
+          "vol": 8.87,
+          "sharpe": -0.6,
+          "maxdd": 147.6,
           "trades_per_yr": 7.8,
           "hit": 100.0,
           "turnover_cost_pct": 0.95
@@ -733,28 +742,28 @@
       },
       "USDCHF": {
         "full": {
-          "cagr": -1.01,
+          "cagr": -2.11,
           "vol": 9.99,
-          "sharpe": -0.05,
-          "maxdd": 101.9,
+          "sharpe": -0.16,
+          "maxdd": 140.5,
           "trades_per_yr": 3.8,
           "hit": 98.6,
           "turnover_cost_pct": 1.32
         },
         "pre2013": {
-          "cagr": 0.17,
+          "cagr": -0.69,
           "vol": 11.15,
-          "sharpe": 0.07,
-          "maxdd": 47.9,
+          "sharpe": -0.01,
+          "maxdd": 59.7,
           "trades_per_yr": 7.5,
           "hit": 97.2,
           "turnover_cost_pct": 1.32
         },
         "post2013": {
-          "cagr": -2.19,
+          "cagr": -3.53,
           "vol": 8.66,
-          "sharpe": -0.21,
-          "maxdd": 81.3,
+          "sharpe": -0.37,
+          "maxdd": 112.6,
           "trades_per_yr": 7.6,
           "hit": 99.9,
           "turnover_cost_pct": 1.32
@@ -763,19 +772,22 @@
     },
     "pooled": {
       "full": {
-        "cagr": 0.63,
-        "sharpe": 0.15,
-        "maxdd": 21.0
+        "cagr": -0.38,
+        "vol": 5.17,
+        "sharpe": -0.05,
+        "maxdd": 34.0
       },
       "pre2013": {
-        "cagr": 1.6,
-        "sharpe": 0.3,
-        "maxdd": 16.4
+        "cagr": 0.67,
+        "vol": 5.84,
+        "sharpe": 0.14,
+        "maxdd": 19.4
       },
       "post2013": {
-        "cagr": -0.33,
-        "sharpe": -0.05,
-        "maxdd": 21.0
+        "cagr": -1.43,
+        "vol": 4.41,
+        "sharpe": -0.3,
+        "maxdd": 32.1
       }
     }
   },
@@ -783,28 +795,28 @@
     "per_pair": {
       "EURUSD": {
         "full": {
-          "cagr": -1.03,
-          "vol": 3.28,
-          "sharpe": -0.3,
-          "maxdd": 35.4,
+          "cagr": -0.69,
+          "vol": 3.27,
+          "sharpe": -0.2,
+          "maxdd": 25.8,
           "trades_per_yr": 1.2,
           "hit": 9.6,
           "turnover_cost_pct": 0.36
         },
         "pre2013": {
-          "cagr": -1.33,
-          "vol": 3.82,
-          "sharpe": -0.33,
-          "maxdd": 31.9,
+          "cagr": -0.68,
+          "vol": 3.8,
+          "sharpe": -0.16,
+          "maxdd": 25.8,
           "trades_per_yr": 2.3,
           "hit": 11.0,
           "turnover_cost_pct": 0.36
         },
         "post2013": {
-          "cagr": -0.73,
-          "vol": 2.62,
-          "sharpe": -0.27,
-          "maxdd": 16.3,
+          "cagr": -0.7,
+          "vol": 2.63,
+          "sharpe": -0.25,
+          "maxdd": 18.8,
           "trades_per_yr": 2.3,
           "hit": 8.2,
           "turnover_cost_pct": 0.36
@@ -812,28 +824,28 @@
       },
       "EURGBP": {
         "full": {
-          "cagr": -0.37,
+          "cagr": -0.0,
           "vol": 3.27,
-          "sharpe": -0.1,
-          "maxdd": 30.7,
+          "sharpe": 0.02,
+          "maxdd": 23.2,
           "trades_per_yr": 1.3,
           "hit": 10.6,
           "turnover_cost_pct": 0.6
         },
         "pre2013": {
-          "cagr": -0.91,
-          "vol": 3.63,
-          "sharpe": -0.23,
-          "maxdd": 30.7,
+          "cagr": -0.51,
+          "vol": 3.62,
+          "sharpe": -0.12,
+          "maxdd": 23.2,
           "trades_per_yr": 2.5,
           "hit": 11.1,
           "turnover_cost_pct": 0.6
         },
         "post2013": {
-          "cagr": 0.19,
-          "vol": 2.86,
-          "sharpe": 0.08,
-          "maxdd": 11.7,
+          "cagr": 0.52,
+          "vol": 2.88,
+          "sharpe": 0.19,
+          "maxdd": 10.0,
           "trades_per_yr": 2.6,
           "hit": 10.0,
           "turnover_cost_pct": 0.6
@@ -841,28 +853,28 @@
       },
       "EURCHF": {
         "full": {
-          "cagr": -0.15,
-          "vol": 1.46,
-          "sharpe": -0.1,
-          "maxdd": 6.8,
+          "cagr": -0.03,
+          "vol": 1.47,
+          "sharpe": -0.01,
+          "maxdd": 5.9,
           "trades_per_yr": 0.8,
           "hit": 6.9,
           "turnover_cost_pct": 0.24
         },
         "pre2013": {
-          "cagr": -0.31,
-          "vol": 1.32,
-          "sharpe": -0.23,
-          "maxdd": 6.0,
+          "cagr": -0.23,
+          "vol": 1.35,
+          "sharpe": -0.17,
+          "maxdd": 5.9,
           "trades_per_yr": 1.7,
           "hit": 7.4,
           "turnover_cost_pct": 0.24
         },
         "post2013": {
-          "cagr": 0.01,
-          "vol": 1.59,
-          "sharpe": 0.02,
-          "maxdd": 3.2,
+          "cagr": 0.18,
+          "vol": 1.58,
+          "sharpe": 0.12,
+          "maxdd": 3.9,
           "trades_per_yr": 1.7,
           "hit": 6.4,
           "turnover_cost_pct": 0.24
@@ -870,28 +882,28 @@
       },
       "GBPUSD": {
         "full": {
-          "cagr": 0.71,
-          "vol": 2.52,
-          "sharpe": 0.29,
-          "maxdd": 6.2,
+          "cagr": 0.64,
+          "vol": 2.56,
+          "sharpe": 0.26,
+          "maxdd": 7.5,
           "trades_per_yr": 1.0,
           "hit": 8.5,
           "turnover_cost_pct": 0.24
         },
         "pre2013": {
-          "cagr": 0.61,
-          "vol": 2.73,
-          "sharpe": 0.24,
-          "maxdd": 6.2,
+          "cagr": 0.76,
+          "vol": 2.79,
+          "sharpe": 0.29,
+          "maxdd": 7.5,
           "trades_per_yr": 2.0,
           "hit": 9.4,
           "turnover_cost_pct": 0.24
         },
         "post2013": {
-          "cagr": 0.81,
-          "vol": 2.27,
-          "sharpe": 0.37,
-          "maxdd": 5.0,
+          "cagr": 0.52,
+          "vol": 2.31,
+          "sharpe": 0.24,
+          "maxdd": 5.4,
           "trades_per_yr": 2.1,
           "hit": 7.7,
           "turnover_cost_pct": 0.24
@@ -899,28 +911,28 @@
       },
       "GBPCHF": {
         "full": {
-          "cagr": 0.05,
-          "vol": 1.74,
-          "sharpe": 0.04,
-          "maxdd": 7.7,
+          "cagr": -0.0,
+          "vol": 1.73,
+          "sharpe": 0.01,
+          "maxdd": 11.7,
           "trades_per_yr": 0.7,
           "hit": 5.6,
           "turnover_cost_pct": 0.16
         },
         "pre2013": {
-          "cagr": 0.08,
-          "vol": 1.89,
-          "sharpe": 0.05,
-          "maxdd": 6.7,
+          "cagr": 0.14,
+          "vol": 1.93,
+          "sharpe": 0.08,
+          "maxdd": 8.6,
           "trades_per_yr": 1.3,
           "hit": 5.3,
           "turnover_cost_pct": 0.16
         },
         "post2013": {
-          "cagr": 0.02,
-          "vol": 1.58,
-          "sharpe": 0.02,
-          "maxdd": 3.0,
+          "cagr": -0.14,
+          "vol": 1.51,
+          "sharpe": -0.09,
+          "maxdd": 3.4,
           "trades_per_yr": 1.3,
           "hit": 5.9,
           "turnover_cost_pct": 0.16
@@ -928,28 +940,28 @@
       },
       "USDCHF": {
         "full": {
-          "cagr": 0.33,
-          "vol": 3.91,
-          "sharpe": 0.1,
-          "maxdd": 13.0,
+          "cagr": 0.47,
+          "vol": 4.05,
+          "sharpe": 0.13,
+          "maxdd": 14.0,
           "trades_per_yr": 0.8,
           "hit": 6.8,
           "turnover_cost_pct": 0.29
         },
         "pre2013": {
-          "cagr": 0.33,
-          "vol": 3.18,
-          "sharpe": 0.12,
-          "maxdd": 11.8,
+          "cagr": 0.53,
+          "vol": 3.52,
+          "sharpe": 0.17,
+          "maxdd": 14.0,
           "trades_per_yr": 1.6,
           "hit": 5.3,
           "turnover_cost_pct": 0.29
         },
         "post2013": {
-          "cagr": 0.33,
+          "cagr": 0.4,
           "vol": 4.53,
-          "sharpe": 0.09,
-          "maxdd": 10.5,
+          "sharpe": 0.11,
+          "maxdd": 11.4,
           "trades_per_yr": 1.6,
           "hit": 8.3,
           "turnover_cost_pct": 0.29
@@ -958,19 +970,22 @@
     },
     "pooled": {
       "full": {
-        "cagr": -0.05,
-        "sharpe": -0.03,
-        "maxdd": 7.6
+        "cagr": 0.1,
+        "vol": 1.3,
+        "sharpe": 0.08,
+        "maxdd": 5.8
       },
       "pre2013": {
-        "cagr": -0.23,
-        "sharpe": -0.16,
-        "maxdd": 7.6
+        "cagr": 0.03,
+        "vol": 1.36,
+        "sharpe": 0.03,
+        "maxdd": 5.8
       },
       "post2013": {
-        "cagr": 0.13,
-        "sharpe": 0.12,
-        "maxdd": 2.6
+        "cagr": 0.16,
+        "vol": 1.24,
+        "sharpe": 0.13,
+        "maxdd": 2.5
       }
     }
   },
@@ -1154,16 +1169,19 @@
     "pooled": {
       "full": {
         "cagr": -0.81,
+        "vol": 3.62,
         "sharpe": -0.21,
         "maxdd": 41.1
       },
       "pre2013": {
         "cagr": -0.68,
+        "vol": 3.65,
         "sharpe": -0.17,
         "maxdd": 29.0
       },
       "post2013": {
         "cagr": -0.94,
+        "vol": 3.59,
         "sharpe": -0.25,
         "maxdd": 20.1
       }
@@ -1173,28 +1191,28 @@
     "per_pair": {
       "EURUSD": {
         "full": {
-          "cagr": -2.58,
+          "cagr": -2.98,
           "vol": 9.07,
-          "sharpe": -0.24,
-          "maxdd": 174.3,
+          "sharpe": -0.29,
+          "maxdd": 183.2,
           "trades_per_yr": 121.1,
           "hit": 96.8,
           "turnover_cost_pct": 38.41
         },
         "pre2013": {
-          "cagr": -3.4,
+          "cagr": -4.02,
           "vol": 10.29,
-          "sharpe": -0.29,
-          "maxdd": 110.3,
+          "sharpe": -0.35,
+          "maxdd": 110.5,
           "trades_per_yr": 241.1,
           "hit": 94.1,
           "turnover_cost_pct": 38.41
         },
         "post2013": {
-          "cagr": -1.74,
+          "cagr": -1.92,
           "vol": 7.65,
-          "sharpe": -0.19,
-          "maxdd": 34.7,
+          "sharpe": -0.22,
+          "maxdd": 56.4,
           "trades_per_yr": 243.3,
           "hit": 99.5,
           "turnover_cost_pct": 38.41
@@ -1202,28 +1220,28 @@
       },
       "EURGBP": {
         "full": {
-          "cagr": -2.51,
+          "cagr": -3.26,
           "vol": 7.47,
-          "sharpe": -0.3,
-          "maxdd": 159.8,
+          "sharpe": -0.41,
+          "maxdd": 178.9,
           "trades_per_yr": 121.1,
           "hit": 96.9,
           "turnover_cost_pct": 57.48
         },
         "pre2013": {
-          "cagr": -1.78,
+          "cagr": -5.79,
           "vol": 7.82,
-          "sharpe": -0.19,
-          "maxdd": 51.9,
+          "sharpe": -0.72,
+          "maxdd": 145.0,
           "trades_per_yr": 241.1,
           "hit": 94.1,
           "turnover_cost_pct": 57.48
         },
         "post2013": {
-          "cagr": -3.24,
+          "cagr": -0.65,
           "vol": 7.09,
-          "sharpe": -0.43,
-          "maxdd": 85.0,
+          "sharpe": -0.06,
+          "maxdd": 41.1,
           "trades_per_yr": 243.3,
           "hit": 99.7,
           "turnover_cost_pct": 57.48
@@ -1231,28 +1249,28 @@
       },
       "EURCHF": {
         "full": {
-          "cagr": -2.83,
+          "cagr": -0.97,
           "vol": 6.2,
-          "sharpe": -0.43,
-          "maxdd": 128.9,
+          "sharpe": -0.13,
+          "maxdd": 54.2,
           "trades_per_yr": 121.1,
           "hit": 96.0,
           "turnover_cost_pct": 36.34
         },
         "pre2013": {
-          "cagr": -1.74,
+          "cagr": -0.75,
           "vol": 6.17,
-          "sharpe": -0.25,
-          "maxdd": 41.2,
+          "sharpe": -0.09,
+          "maxdd": 32.5,
           "trades_per_yr": 241.1,
           "hit": 93.3,
           "turnover_cost_pct": 36.34
         },
         "post2013": {
-          "cagr": -3.92,
+          "cagr": -1.19,
           "vol": 6.24,
-          "sharpe": -0.61,
-          "maxdd": 85.8,
+          "sharpe": -0.16,
+          "maxdd": 33.0,
           "trades_per_yr": 243.3,
           "hit": 98.8,
           "turnover_cost_pct": 36.34
@@ -1260,28 +1278,28 @@
       },
       "GBPUSD": {
         "full": {
-          "cagr": -2.04,
+          "cagr": -1.67,
           "vol": 9.03,
-          "sharpe": -0.18,
-          "maxdd": 132.6,
+          "sharpe": -0.14,
+          "maxdd": 97.4,
           "trades_per_yr": 121.1,
           "hit": 97.2,
           "turnover_cost_pct": 30.1
         },
         "pre2013": {
-          "cagr": -3.56,
+          "cagr": -0.1,
           "vol": 9.3,
-          "sharpe": -0.34,
-          "maxdd": 98.1,
+          "sharpe": 0.04,
+          "maxdd": 47.7,
           "trades_per_yr": 241.1,
           "hit": 94.4,
           "turnover_cost_pct": 30.1
         },
         "post2013": {
-          "cagr": -0.48,
+          "cagr": -3.23,
           "vol": 8.75,
-          "sharpe": -0.01,
-          "maxdd": 45.2,
+          "sharpe": -0.33,
+          "maxdd": 83.3,
           "trades_per_yr": 243.3,
           "hit": 100.0,
           "turnover_cost_pct": 30.1
@@ -1289,28 +1307,28 @@
       },
       "GBPCHF": {
         "full": {
-          "cagr": -2.58,
+          "cagr": 0.06,
           "vol": 9.24,
-          "sharpe": -0.24,
-          "maxdd": 117.7,
+          "sharpe": 0.05,
+          "maxdd": 75.6,
           "trades_per_yr": 121.1,
           "hit": 97.2,
           "turnover_cost_pct": 29.12
         },
         "pre2013": {
-          "cagr": -2.37,
+          "cagr": 2.82,
           "vol": 9.59,
-          "sharpe": -0.2,
-          "maxdd": 58.5,
+          "sharpe": 0.34,
+          "maxdd": 38.1,
           "trades_per_yr": 241.1,
           "hit": 94.4,
           "turnover_cost_pct": 29.12
         },
         "post2013": {
-          "cagr": -2.79,
+          "cagr": -2.64,
           "vol": 8.88,
-          "sharpe": -0.27,
-          "maxdd": 87.2,
+          "sharpe": -0.26,
+          "maxdd": 75.6,
           "trades_per_yr": 243.3,
           "hit": 100.0,
           "turnover_cost_pct": 29.12
@@ -1318,28 +1336,28 @@
       },
       "USDCHF": {
         "full": {
-          "cagr": -2.53,
+          "cagr": -0.3,
           "vol": 9.91,
-          "sharpe": -0.21,
-          "maxdd": 124.3,
+          "sharpe": 0.02,
+          "maxdd": 75.4,
           "trades_per_yr": 121.1,
           "hit": 97.2,
           "turnover_cost_pct": 42.67
         },
         "pre2013": {
-          "cagr": -0.82,
+          "cagr": 0.81,
           "vol": 11.01,
-          "sharpe": -0.02,
-          "maxdd": 50.7,
+          "sharpe": 0.13,
+          "maxdd": 53.3,
           "trades_per_yr": 241.1,
           "hit": 94.4,
           "turnover_cost_pct": 42.67
         },
         "post2013": {
-          "cagr": -4.22,
+          "cagr": -1.41,
           "vol": 8.66,
-          "sharpe": -0.45,
-          "maxdd": 124.3,
+          "sharpe": -0.12,
+          "maxdd": 40.6,
           "trades_per_yr": 243.3,
           "hit": 99.9,
           "turnover_cost_pct": 42.67
@@ -1348,19 +1366,22 @@
     },
     "pooled": {
       "full": {
-        "cagr": -2.21,
-        "sharpe": -0.6,
-        "maxdd": 90.2
+        "cagr": -1.23,
+        "vol": 3.61,
+        "sharpe": -0.32,
+        "maxdd": 49.1
       },
       "pre2013": {
-        "cagr": -1.94,
-        "sharpe": -0.52,
-        "maxdd": 34.0
+        "cagr": -0.86,
+        "vol": 3.63,
+        "sharpe": -0.22,
+        "maxdd": 24.0
       },
       "post2013": {
-        "cagr": -2.49,
-        "sharpe": -0.69,
-        "maxdd": 45.9
+        "cagr": -1.59,
+        "vol": 3.59,
+        "sharpe": -0.43,
+        "maxdd": 29.2
       }
     }
   }

@@ -58,3 +58,14 @@
 - **Date:** 2026-11-20 · **Status:** ACTIVE
 - Triggered PROJECT REVIEW #1. No further experiments are authorised until the cost model is
   measured (owner MT5 export) or the owner explicitly chooses a different arena.
+
+## D10 — Universe screen invalidated and re-run (QR-002); buy & hold is the bar to beat
+- **Date:** 2026-11-20 · **Status:** ACTIVE
+- The 168-test multi-asset screen was re-run after fixing the same-bar look-ahead (QR-002).
+- Post-fix reality: best Sharfes are **asset betas, not strategies** — BTC buy&hold 0.78,
+  GOLD buy&hold 0.64, ETH buy&hold 0.53. Best live rules: BTC TSMOM_12M 0.81 (96th pct null),
+  GOLD TSMOM_12M 0.55 (100th), NASDAQ100 TSMOM_12M 0.45 (99th).
+- **DONCHIAN_55 no longer "dominates"** — it is mid-pack (BTC 0.52). D09's stop still binds
+  for FX; the multi-asset hunt continues but nothing here is tradeable yet.
+- New standing rule: a candidate must beat the **equal-weight buy & hold portfolio**
+  (CAGR 11.6%, Sharpe 0.70, maxDD 66.9%, 2000–2026) on a cost-charged, lagged basis.

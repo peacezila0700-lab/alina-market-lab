@@ -124,3 +124,16 @@ class TestSplits(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+def test_position_must_be_lagged_no_lookahead():
+    """QR-002 regression: pnl[i] must use pos[i-1]; same-bar position = look-ahead."""
+    import numpy as np
+    from scripts.screen_universe import pnl_of  # noqa
+
+    px = np.array([100.0, 100.0, 110.0, 110.0])
+    pos = np.array([0.0, 1.0, 1.0, 1.0])  # signal fires at bar 1 close
+    r = pnl_of(px, pos, 0.0)
+    # return 100->110 happens on bar 2; only a lagged position may capture it
+    assert abs(r[1]) < 1e-12, "bar 1 must earn nothing: signal not yet held"
+    assert abs(r[2] - 0.10) < 1e-12, "bar 2 must earn the 10% move from lagged pos"
