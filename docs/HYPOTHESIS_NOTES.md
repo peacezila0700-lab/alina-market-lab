@@ -68,3 +68,15 @@ Score = 0.40·value-of-information + 0.30·data feasibility + 0.15·(6 − impl 
 
 Owner approves the test order → **T09**: build the backtest engine with unit tests
 (next-bar execution, spread, swap, stops, time stops, trade ledger), then run EXP-0001.
+
+## H07 — Scheduled macro events raise realised volatility (SUPPORTED, not tradeable directly)
+- FOMC decision windows: mean |move| is higher on all 6 tested assets, Welch t 2.09–2.84 for
+  5 of 6. Consistent with the event-risk literature.
+- Consequence: event risk is real but the *direction* is unpredictable; the usable form is
+  sizing/avoidance around known dates, which needs measured spread (T18) to price.
+
+## H08 — Free public attention predicts next-day volatility (PARTIALLY SUPPORTED, rejected as edge)
+- Spearman(attention z, next-day |ret|): BTC 0.164, ETH 0.141, WTI 0.068, USDJPY 0.066,
+  GOLD 0.043, EURUSD 0.035, SP500 0.035, COPPER −0.021.
+- Beats the realised-vol baseline on MAE in 6/8 assets but not in R² (3/8) and not in portfolio
+  Sharpe. Rejected as a signal; retained as a regime/narration layer.

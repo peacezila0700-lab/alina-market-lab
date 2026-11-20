@@ -1,0 +1,19 @@
+{
+  "fetched_utc": "2026-11-20T16:48:44Z",
+  "sources": {
+    "fomc_dates": {
+      "url": "federalreserve.gov fomccalendars + fomchistorical{year}",
+      "rows": 205
+    },
+    "econ_calendar": {
+      "url": "nfs.faireconomy.media/ff_calendar_thisweek.json",
+      "rows": 0,
+      "caveat": "current week only; archive builds forward from today"
+    },
+    "attention": {
+      "url": "wikimedia.org pageviews API",
+      "series": 8,
+      "caveat": "pageviews = attention, not sentiment"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "generated_utc": "2026-11-20T16:54:55Z",
+  "part_b_forecast": {
+    "GOLD": {
+      "baseline": {
+        "n": 6562,
+        "mae_pct": 0.5405,
+        "r2": 0.0865
+      },
+      "baseline_plus_attention": {
+        "n": 2378,
+        "mae_pct": 0.5171,
+        "r2": 0.1049
+      },
+      "delta_mae_pct": -0.0234,
+      "delta_r2": 0.0184,
+      "spearman_attention_same_day": 0.067,
+      "spearman_attention_next_day": 0.043
+    },
+    "BTC": {
+      "baseline": {
+        "n": 4427,
+        "mae_pct": 1.6725,
+        "r2": 0.0705
+      },
+      "baseline_plus_attention": {
+        "n": 3617,
+        "mae_pct": 1.709,
+        "r2": 0.0685
+      },
+      "delta_mae_pct": 0.0365,
+      "delta_r2": -0.002,
+      "spearman_attention_same_day": 0.214,
+      "spearman_attention_next_day": 0.164
+    },
+    "ETH": {
+      "baseline": {
+        "n": 3278,
+        "mae_pct": 2.1925,
+        "r2": 0.0297
+      },
+      "baseline_plus_attention": {
+        "n": 2939,
+        "mae_pct": 2.0913,
+        "r2": 0.0131
+      },
+      "delta_mae_pct": -0.1012,
+      "delta_r2": -0.0166,
+      "spearman_attention_same_day": 0.191,
+      "spearman_attention_next_day": 0.141
+    },
+    "EURUSD": {
+      "baseline": {
+        "n": 5940,
+        "mae_pct": 0.2889,
+        "r2": 0.0485
+      },
+      "baseline_plus_attention": {
+        "n": 2473,
+        "mae_pct": 0.2164,
+        "r2": 0.0146
+      },
+      "delta_mae_pct": -0.0725,
+      "delta_r2": -0.0339,
+      "spearman_attention_same_day": 0.031,
+      "spearman_attention_next_day": 0.035
+    },
+    "USDJPY": {
+      "baseline": {
+        "n": 6960,
+        "mae_pct": 0.3062,
+        "r2": 0.0401
+      },
+      "baseline_plus_attention": {
+        "n": 2473,
+        "mae_pct": 0.2594,
+        "r2": 0.0517
+      },
+      "delta_mae_pct": -0.0468,
+      "delta_r2": 0.0116,
+      "spearman_attention_same_day": 0.056,
+      "spearman_attention_next_day": 0.066
+    },
+    "SP500": {
+      "baseline": {
+        "n": 6742,
+        "mae_pct": 0.5416,
+        "r2": 0.2141
+      },
+      "baseline_plus_attention": {
+        "n": 2378,
+        "mae_pct": 0.5311,
+        "r2": 0.1296
+      },
+      "delta_mae_pct": -0.0105,
+      "delta_r2": -0.0845,
+      "spearman_attention_same_day": 0.061,
+      "spearman_attention_next_day": 0.035
+    },
+    "WTI": {
+      "baseline": {
+        "n": 6569,
+        "mae_pct": 1.1705,
+        "r2": 0.1522
+      },
+      "baseline_plus_attention": {
+        "n": 2377,
+        "mae_pct": 1.2796,
+        "r2": 0.1775
+      },
+      "delta_mae_pct": 0.1091,
+      "delta_r2": 0.0253,
+      "spearman_attention_same_day": 0.128,
+      "spearman_attention_next_day": 0.068
+    },
+    "COPPER": {
+      "baseline": {
+        "n": 6566,
+        "mae_pct": 0.8053,
+        "r2": 0.1026
+      },
+      "baseline_plus_attention": {
+        "n": 2378,
+        "mae_pct": 0.7449,
+        "r2": -0.0143
+      },
+      "delta_mae_pct": -0.0604,
+      "delta_r2": -0.1169,
+      "spearman_attention_same_day": -0.024,
+      "spearman_attention_next_day": -0.021
+    }
+  },
+  "part_d_portfolio": {
+    "realized_only": {
+      "final_growth": 2.374,
+      "cagr_pct": 2.64,
+      "sharpe": 0.64,
+      "maxdd_pct": 11.2
+    },
+    "realized_plus_attention": {
+      "final_growth": 2.351,
+      "cagr_pct": 2.62,
+      "sharpe": 0.63,
+      "maxdd_pct": 11.2
+    }
+  }
+}

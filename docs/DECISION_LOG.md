@@ -69,3 +69,18 @@
   for FX; the multi-asset hunt continues but nothing here is tradeable yet.
 - New standing rule: a candidate must beat the **equal-weight buy & hold portfolio**
   (CAGR 11.6%, Sharpe 0.70, maxDD 66.9%, 2000–2026) on a cost-charged, lagged basis.
+
+## D11 — Free event layer built: FOMC dates + weekly calendar archive + attention proxy
+- **Date:** 2026-11-20 · **Status:** ACTIVE
+- Sources that actually worked, all free, no signup: **federalreserve.gov** (205 FOMC decision
+  dates 1994-02-04 → 2026-10-28, parsed from file names), **nfs.faireconomy.media** weekly
+  calendar JSON (current week only → our own archive starts 2026-11, 125 events),
+  **wikimedia pageviews API** (8 assets, 3,976 days each, 2016→).
+- Dead: GDELT DOC API (hard HTTP 429 from this IP at 1 req/30s), FRED, BIS, FXCM, Stooq.
+- **Event study result (`reports/EVENT_LAYER.md`):** FOMC days carry larger moves — S&P +17.1bp
+  (Welch t=2.84), GOLD +17.3bp (2.79), EURUSD +6.2bp (2.45), USDJPY +5.9bp (2.25), BTC +40bp (2.09),
+  WTI +13bp (0.94, not significant). The biggest historical shocks (2008-10, 2020-03, 2020-04-21 WTI
+  −45%) are **not** on scheduled days.
+- **Attention is a diagnostic, not a strategy** (`reports/ATTENTION_SIGNAL.md`): it improves next-day
+  |move| MAE on 6/8 assets but R² on only 3/8, and in a vol-targeted portfolio the Sharpe goes
+  0.64 → 0.63. Do not trade it.
