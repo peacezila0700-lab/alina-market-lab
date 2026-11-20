@@ -10,3 +10,4 @@ data/state/
 __pycache__/
 *.pyc
 .venv/
+screen/raw/
