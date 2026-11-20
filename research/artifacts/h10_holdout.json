@@ -1,0 +1,570 @@
+{
+  "prereg": "docs/PREREG_H10.md",
+  "holdout": "2019-01-01 .. 2026-11-20",
+  "primary": {
+    "retail": {
+      "panel": "PRIMARY_LIQUID5",
+      "instruments": [
+        "EURUSD",
+        "GBPUSD",
+        "EURCHF",
+        "EURJPY",
+        "EURGBP"
+      ],
+      "regime": "retail",
+      "weeks_used": 1454,
+      "full": {
+        "weeks": 1454,
+        "sharpe": 0.126,
+        "cagr": 0.4,
+        "vol": 3.73,
+        "maxdd": 27.5,
+        "hit_pct": 14.4
+      },
+      "double_cost": {
+        "weeks": 1454,
+        "sharpe": 0.069,
+        "cagr": 0.19,
+        "vol": 3.73,
+        "maxdd": 30.0,
+        "hit_pct": 14.4
+      },
+      "walk_forward": [
+        {
+          "window": "2000-2002",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2001-2003",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2002-2004",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2003-2005",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2004-2006",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2005-2007",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2006-2008",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2007-2009",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2008-2010",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2009-2011",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2010-2012",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2011-2013",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2012-2014",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2013-2015",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2014-2016",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2015-2017",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2016-2018",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2017-2019",
+          "sharpe": 0.301,
+          "cagr": 1.15,
+          "weeks": 156
+        },
+        {
+          "window": "2018-2020",
+          "sharpe": 0.804,
+          "cagr": 4.98,
+          "weeks": 157
+        },
+        {
+          "window": "2019-2021",
+          "sharpe": 0.811,
+          "cagr": 5.56,
+          "weeks": 157
+        },
+        {
+          "window": "2020-2022",
+          "sharpe": 0.11,
+          "cagr": 0.57,
+          "weeks": 157
+        },
+        {
+          "window": "2021-2023",
+          "sharpe": -0.563,
+          "cagr": -4.34,
+          "weeks": 156
+        },
+        {
+          "window": "2022-2024",
+          "sharpe": -0.395,
+          "cagr": -3.31,
+          "weeks": 156
+        },
+        {
+          "window": "2023-2025",
+          "sharpe": -0.267,
+          "cagr": -1.89,
+          "weeks": 156
+        }
+      ],
+      "wf_positive_pct": 16.7,
+      "null_mean": -0.165,
+      "null_pct": 93.3,
+      "verdict": {
+        "checks": {
+          "A1_net_sharpe_gt_0.35": false,
+          "A2_null_pct_ge_95": false,
+          "A3_wf_positive_ge_60pct": false,
+          "A4_survives_2x_cost": false
+        },
+        "passed": false
+      }
+    },
+    "ecn": {
+      "panel": "PRIMARY_LIQUID5",
+      "instruments": [
+        "EURUSD",
+        "GBPUSD",
+        "EURCHF",
+        "EURJPY",
+        "EURGBP"
+      ],
+      "regime": "ecn",
+      "weeks_used": 1454,
+      "full": {
+        "weeks": 1454,
+        "sharpe": 0.158,
+        "cagr": 0.52,
+        "vol": 3.73,
+        "maxdd": 26.2,
+        "hit_pct": 14.6
+      },
+      "double_cost": {
+        "weeks": 1454,
+        "sharpe": 0.133,
+        "cagr": 0.43,
+        "vol": 3.73,
+        "maxdd": 27.3,
+        "hit_pct": 14.4
+      },
+      "walk_forward": [
+        {
+          "window": "2000-2002",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2001-2003",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2002-2004",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2003-2005",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2004-2006",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2005-2007",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2006-2008",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2007-2009",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2008-2010",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2009-2011",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2010-2012",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2011-2013",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2012-2014",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2013-2015",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2014-2016",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2015-2017",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2016-2018",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2017-2019",
+          "sharpe": 0.336,
+          "cagr": 1.3,
+          "weeks": 156
+        },
+        {
+          "window": "2018-2020",
+          "sharpe": 0.854,
+          "cagr": 5.31,
+          "weeks": 157
+        },
+        {
+          "window": "2019-2021",
+          "sharpe": 0.877,
+          "cagr": 6.05,
+          "weeks": 157
+        },
+        {
+          "window": "2020-2022",
+          "sharpe": 0.167,
+          "cagr": 1.03,
+          "weeks": 157
+        },
+        {
+          "window": "2021-2023",
+          "sharpe": -0.507,
+          "cagr": -3.94,
+          "weeks": 156
+        },
+        {
+          "window": "2022-2024",
+          "sharpe": -0.344,
+          "cagr": -2.93,
+          "weeks": 156
+        },
+        {
+          "window": "2023-2025",
+          "sharpe": -0.206,
+          "cagr": -1.51,
+          "weeks": 156
+        }
+      ],
+      "wf_positive_pct": 16.7,
+      "null_mean": -0.165,
+      "null_pct": 95.7,
+      "verdict": {
+        "checks": {
+          "A1_net_sharpe_gt_0.35": false,
+          "A2_null_pct_ge_95": true,
+          "A3_wf_positive_ge_60pct": false,
+          "A4_survives_2x_cost": false
+        },
+        "passed": false
+      }
+    }
+  },
+  "secondary": {
+    "retail": {
+      "panel": "SECONDARY_EUR9",
+      "instruments": [
+        "EURUSD",
+        "EURJPY",
+        "EURGBP",
+        "EURCHF",
+        "EURCAD",
+        "EURSEK",
+        "EURNOK",
+        "EURAUD",
+        "EURNZD"
+      ],
+      "regime": "retail",
+      "weeks_used": 1454,
+      "full": {
+        "weeks": 1454,
+        "sharpe": 0.202,
+        "cagr": 0.6,
+        "vol": 3.22,
+        "maxdd": 17.3,
+        "hit_pct": 14.0
+      },
+      "double_cost": {
+        "weeks": 1454,
+        "sharpe": 0.1,
+        "cagr": 0.27,
+        "vol": 3.21,
+        "maxdd": 19.9,
+        "hit_pct": 13.8
+      },
+      "walk_forward": [
+        {
+          "window": "2000-2002",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2001-2003",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2002-2004",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2003-2005",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2004-2006",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2005-2007",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2006-2008",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2007-2009",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2008-2010",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2009-2011",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2010-2012",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2011-2013",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2012-2014",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2013-2015",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2014-2016",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2015-2017",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 157
+        },
+        {
+          "window": "2016-2018",
+          "sharpe": NaN,
+          "cagr": 0.0,
+          "weeks": 156
+        },
+        {
+          "window": "2017-2019",
+          "sharpe": 0.546,
+          "cagr": 1.42,
+          "weeks": 156
+        },
+        {
+          "window": "2018-2020",
+          "sharpe": 0.238,
+          "cagr": 1.24,
+          "weeks": 157
+        },
+        {
+          "window": "2019-2021",
+          "sharpe": -0.036,
+          "cagr": -0.44,
+          "weeks": 157
+        },
+        {
+          "window": "2020-2022",
+          "sharpe": -0.202,
+          "cagr": -1.69,
+          "weeks": 157
+        },
+        {
+          "window": "2021-2023",
+          "sharpe": 0.345,
+          "cagr": 1.93,
+          "weeks": 156
+        },
+        {
+          "window": "2022-2024",
+          "sharpe": 0.797,
+          "cagr": 4.87,
+          "weeks": 156
+        },
+        {
+          "window": "2023-2025",
+          "sharpe": 0.877,
+          "cagr": 4.94,
+          "weeks": 156
+        }
+      ],
+      "wf_positive_pct": 20.8,
+      "null_mean": -0.183,
+      "null_pct": 98.7,
+      "verdict": {
+        "checks": {
+          "A1_net_sharpe_gt_0.35": false,
+          "A2_null_pct_ge_95": true,
+          "A3_wf_positive_ge_60pct": false,
+          "A4_survives_2x_cost": false
+        },
+        "passed": false
+      }
+    }
+  }
+}
