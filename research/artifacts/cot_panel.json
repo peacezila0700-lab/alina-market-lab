@@ -1,0 +1,41 @@
+{
+  "design": {
+    "horizon_weeks": 4,
+    "non_overlapping": true,
+    "split_date": "2016-02-23",
+    "n_rows": 8049,
+    "n_instruments": 22,
+    "regressor": "centered 156w percentile of noncomm_net_pct_oi",
+    "target": "sign-adjusted forward 4w return"
+  },
+  "verdict_rule": "|t_clustered|>=2 in-sample AND OOS decile spread same sign & >=half size",
+  "in_sample": {
+    "n": 5088,
+    "beta": 0.00047,
+    "t_clustered": 0.16,
+    "r2": 0.0,
+    "quintile_spread_pct": 0.107,
+    "q_means_pct": [
+      0.683,
+      0.694,
+      0.699,
+      0.63,
+      0.79
+    ]
+  },
+  "out_of_sample": {
+    "n": 2961,
+    "beta": -0.00296,
+    "t_clustered": -0.56,
+    "r2": 0.0001,
+    "quintile_spread_pct": 0.102,
+    "q_means_pct": [
+      -0.107,
+      0.929,
+      0.704,
+      0.247,
+      -0.005
+    ]
+  },
+  "result": "FAILS the pre-declared bar \u2014 close the hypothesis"
+}

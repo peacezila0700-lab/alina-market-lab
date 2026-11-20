@@ -1,0 +1,16 @@
+{"source": "dix_gex", "added_rows": 3913, "ts": "2026-11-20T19:08:02Z"}
+{"source": "ofr_fsi", "added_rows": 6805, "ts": "2026-11-20T19:08:02Z"}
+{"source": "vix", "added_rows": 9320, "ts": "2026-11-20T19:08:03Z"}
+{"source": "skew", "added_rows": 9274, "ts": "2026-11-20T19:08:03Z"}
+{"source": "okx_btc_funding", "added_rows": 100, "ts": "2026-11-20T19:08:03Z"}
+{"source": "okx_btc_lsr", "added_rows": 180, "ts": "2026-11-20T19:08:03Z"}
+{"source": "deribit_btc_chain", "added_rows": 986, "ts": "2026-11-20T19:08:03Z"}
+{"source": "econ_calendar", "added_rows": 126, "ts": "2026-11-20T19:08:03Z"}
+{"source": "eia_crude_stocks_w", "added_rows": 2303, "ts": "2026-11-20T19:08:07Z"}
+{"source": "eia_henryhub_w", "added_rows": 1557, "ts": "2026-11-20T19:08:07Z"}
+{"source": "epu_us_monthly", "added_rows": 1379, "ts": "2026-11-20T19:08:07Z"}
+{"source": "gpr_monthly", "added_rows": 1522, "ts": "2026-11-20T19:08:08Z"}
+{"source": "treasury_auctions", "added_rows": 200, "ts": "2026-11-20T19:08:09Z"}
+{"source": "treasury_yield_curve", "added_rows": 222, "ts": "2026-11-20T19:08:09Z"}
+{"source": "okx_BTCUSDT_1h", "added_rows": 600, "ts": "2026-11-20T19:08:11Z"}
+{"source": "okx_ETHUSDT_1h", "added_rows": 600, "ts": "2026-11-20T19:08:13Z"}

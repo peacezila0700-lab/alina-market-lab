@@ -1,0 +1,39 @@
+{
+  "built_utc": "2026-11-20T19:07:38Z",
+  "events": 2028,
+  "types": {
+    "AUCTION": 711,
+    "NFP_approx": 264,
+    "OPEX": 264,
+    "MONTH_END": 264,
+    "FOMC": 205,
+    "SHOCK_2.5SIG": 159,
+    "QUARTER_END": 88,
+    "VIX_ONSET30": 73
+  },
+  "assets": [
+    "SPY",
+    "TLT",
+    "GLD",
+    "DXY",
+    "BTC",
+    "EURUSD"
+  ],
+  "windows": {
+    "d0": 0,
+    "d1": 1,
+    "d5": 5,
+    "d20": 20
+  },
+  "date_confidence": {
+    "high": "official or exact calendar rule",
+    "med": "rule-derived (first Friday), ~90-95% exact"
+  },
+  "sources": {
+    "FOMC": "federalreserve.gov calendars",
+    "AUCTION": "Treasury Fiscal Data API",
+    "OPEX/MONTH_END/QUARTER_END": "calendar rules",
+    "NFP_approx": "first-Friday rule",
+    "VIX_ONSET30/SHOCK": "derived from VIX/SPY"
+  }
+}

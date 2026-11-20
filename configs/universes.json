@@ -1,0 +1,119 @@
+{
+  "generated_utc": "2026-11-20",
+  "purpose": "Two books running in parallel, deliberately: a WIDE research book for statistical power and a NARROW execution book for realistic costs. Signals are discovered on the wide book and only promoted to the narrow book if they survive measured spreads.",
+  "research_universe": {
+    "n": 26,
+    "symbols": [
+      "AUDUSD",
+      "BTC",
+      "COPPER",
+      "CORN",
+      "DAX",
+      "DXY",
+      "ETH",
+      "EURUSD",
+      "FTSE",
+      "GBPUSD",
+      "GOLD",
+      "HSI",
+      "IEF",
+      "NASDAQ100",
+      "NATGAS",
+      "NIKKEI",
+      "PLATINUM",
+      "SILVER",
+      "SP500",
+      "SPY",
+      "TLT",
+      "USDCAD",
+      "USDJPY",
+      "VIXY",
+      "WHEAT",
+      "WTI"
+    ],
+    "role": "statistical power, cross-sectional pooling, regime discovery",
+    "cost_model": "per-instrument measured where available, else class default"
+  },
+  "execution_universe": {
+    "n": 5,
+    "symbols": [
+      "EURUSD",
+      "EURGBP",
+      "EURCHF",
+      "GBPUSD",
+      "GOLD"
+    ],
+    "role": "the only place a strategy is allowed to be called tradeable",
+    "selection_rule": "lowest measured median spread 2019+ among the 10 measured pairs, plus GOLD (deepest non-FX liquidity in the panel)",
+    "measured_spread_pips": {
+      "EURUSD": 0.3,
+      "EURGBP": 0.9,
+      "EURCHF": 1.0,
+      "GBPUSD": 1.0
+    }
+  },
+  "measured_costs_all": [
+    {
+      "instrument": "EURUSD",
+      "median_spread_pips_2019plus": 0.3,
+      "half_spread_pct": 0.00134,
+      "years": 23
+    },
+    {
+      "instrument": "EURGBP",
+      "median_spread_pips_2019plus": 0.9,
+      "half_spread_pct": 0.00501,
+      "years": 23
+    },
+    {
+      "instrument": "EURCHF",
+      "median_spread_pips_2019plus": 1.0,
+      "half_spread_pct": 0.00527,
+      "years": 23
+    },
+    {
+      "instrument": "GBPUSD",
+      "median_spread_pips_2019plus": 1.0,
+      "half_spread_pct": 0.00386,
+      "years": 23
+    },
+    {
+      "instrument": "EURJPY",
+      "median_spread_pips_2019plus": 1.1,
+      "half_spread_pct": 0.00337,
+      "years": 23
+    },
+    {
+      "instrument": "EURCAD",
+      "median_spread_pips_2019plus": 2.0,
+      "half_spread_pct": 0.00676,
+      "years": 22
+    },
+    {
+      "instrument": "EURAUD",
+      "median_spread_pips_2019plus": 2.4,
+      "half_spread_pct": 0.00731,
+      "years": 21
+    },
+    {
+      "instrument": "EURNZD",
+      "median_spread_pips_2019plus": 3.3,
+      "half_spread_pct": 0.0095,
+      "years": 20
+    },
+    {
+      "instrument": "EURSEK",
+      "median_spread_pips_2019plus": 36.6,
+      "half_spread_pct": 0.01647,
+      "years": 22
+    },
+    {
+      "instrument": "EURNOK",
+      "median_spread_pips_2019plus": 44.1,
+      "half_spread_pct": 0.01889,
+      "years": 17
+    }
+  ],
+  "promotion_rule": "wide->narrow requires: same sign, >=50% of the wide-book effect size, and net expectancy >= 2x the measured round-turn cost on the narrow book",
+  "note": "The 5-instrument book is NOT a different bot: it is the same signals with the cost filter applied. A signal that only works in illiquid instruments is a cost artefact, not an edge."
+}
