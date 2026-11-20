@@ -1,0 +1,90 @@
+{
+  "summary": [
+    {
+      "family": "RSI_FADE",
+      "n": 24,
+      "median_sharpe": 0.01,
+      "best_sharpe": 0.27,
+      "pct_positive": 54.2,
+      "median_null_pct": 53.0,
+      "pass_null95": 0
+    },
+    {
+      "family": "BOLL_FADE",
+      "n": 24,
+      "median_sharpe": 0.04,
+      "best_sharpe": 0.32,
+      "pct_positive": 58.3,
+      "median_null_pct": 60.0,
+      "pass_null95": 1
+    },
+    {
+      "family": "ICHIMOKU",
+      "n": 24,
+      "median_sharpe": 0.04,
+      "best_sharpe": 0.72,
+      "pct_positive": 54.2,
+      "median_null_pct": 62.0,
+      "pass_null95": 2
+    },
+    {
+      "family": "MACD",
+      "n": 24,
+      "median_sharpe": -0.04,
+      "best_sharpe": 0.69,
+      "pct_positive": 45.8,
+      "median_null_pct": 56.0,
+      "pass_null95": 1
+    },
+    {
+      "family": "STOCH_FADE",
+      "n": 24,
+      "median_sharpe": -0.03,
+      "best_sharpe": 0.24,
+      "pct_positive": 37.5,
+      "median_null_pct": 58.0,
+      "pass_null95": 1
+    },
+    {
+      "family": "SUPERTREND",
+      "n": 24,
+      "median_sharpe": -0.61,
+      "best_sharpe": 0.31,
+      "pct_positive": 12.5,
+      "median_null_pct": 9.0,
+      "pass_null95": 0
+    }
+  ],
+  "martingale": [
+    {
+      "instrument": "EURUSD",
+      "final_equity": 0.825,
+      "wiped": true,
+      "wiped_date_index": 5130
+    },
+    {
+      "instrument": "SP500",
+      "final_equity": 0.938,
+      "wiped": true,
+      "wiped_date_index": 2402
+    },
+    {
+      "instrument": "GOLD",
+      "final_equity": 0.938,
+      "wiped": true,
+      "wiped_date_index": 431
+    },
+    {
+      "instrument": "BTC",
+      "final_equity": 0.976,
+      "wiped": true,
+      "wiped_date_index": 120
+    },
+    {
+      "instrument": "NIKKEI",
+      "final_equity": 0.951,
+      "wiped": true,
+      "wiped_date_index": 3284
+    }
+  ]
+}

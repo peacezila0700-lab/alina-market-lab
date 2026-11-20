@@ -1,0 +1,497 @@
+{
+  "generated_utc": "2026-11-20 18:18 UTC",
+  "status": "NO VALIDATED EDGE — research mode only",
+  "snapshot": [
+    {
+      "symbol": "AUDUSD",
+      "class": "FX",
+      "date": "2026-11-20",
+      "close": 0.6646,
+      "vol_ann_pct": 7.0,
+      "mom_12m_pct": 1.4,
+      "z20": -1.99,
+      "signals": "55d breakdown ↓, 12m up",
+      "risk_weight_pct": 7.0
+    },
+    {
+      "symbol": "BTC",
+      "class": "CRYPTO",
+      "date": "2026-11-20",
+      "close": 59333.9297,
+      "vol_ann_pct": 30.2,
+      "mom_12m_pct": -16.4,
+      "z20": -1.83,
+      "signals": "55d breakdown ↓, 12m down",
+      "risk_weight_pct": 1.6
+    },
+    {
+      "symbol": "COPPER",
+      "class": "METAL",
+      "date": "2026-11-20",
+      "close": 5.492,
+      "vol_ann_pct": 24.6,
+      "mom_12m_pct": 9.7,
+      "z20": -2.19,
+      "signals": "55d breakdown ↓, z=-2.2 (fade), 12m up",
+      "risk_weight_pct": 2.0
+    },
+    {
+      "symbol": "CORN",
+      "class": "AG",
+      "date": "2026-11-20",
+      "close": 451.5,
+      "vol_ann_pct": 22.2,
+      "mom_12m_pct": 5.1,
+      "z20": 1.11,
+      "signals": "12m up",
+      "risk_weight_pct": 2.2
+    },
+    {
+      "symbol": "DAX",
+      "class": "INDEX",
+      "date": "2026-11-20",
+      "close": 24839.1504,
+      "vol_ann_pct": 15.8,
+      "mom_12m_pct": 7.6,
+      "z20": -2.35,
+      "signals": "z=-2.3 (fade), 12m up",
+      "risk_weight_pct": 3.1
+    },
+    {
+      "symbol": "DXY",
+      "class": "FX",
+      "date": "2026-11-20",
+      "close": 103.761,
+      "vol_ann_pct": 5.0,
+      "mom_12m_pct": 3.5,
+      "z20": 1.42,
+      "signals": "12m up",
+      "risk_weight_pct": 9.9
+    },
+    {
+      "symbol": "ETH",
+      "class": "CRYPTO",
+      "date": "2026-11-20",
+      "close": 1639.55,
+      "vol_ann_pct": 40.6,
+      "mom_12m_pct": -21.6,
+      "z20": -1.74,
+      "signals": "55d breakdown ↓, 12m down",
+      "risk_weight_pct": 1.2
+    },
+    {
+      "symbol": "EURUSD",
+      "class": "FX",
+      "date": "2026-11-20",
+      "close": 1.0987,
+      "vol_ann_pct": 4.6,
+      "mom_12m_pct": -5.3,
+      "z20": -1.55,
+      "signals": "12m down",
+      "risk_weight_pct": 10.6
+    },
+    {
+      "symbol": "FTSE",
+      "class": "INDEX",
+      "date": "2026-11-20",
+      "close": 10360.6299,
+      "vol_ann_pct": 11.7,
+      "mom_12m_pct": 8.6,
+      "z20": -2.6,
+      "signals": "55d breakdown ↓, z=-2.6 (fade), 12m up",
+      "risk_weight_pct": 4.2
+    },
+    {
+      "symbol": "GBPUSD",
+      "class": "FX",
+      "date": "2026-11-20",
+      "close": 1.3106,
+      "vol_ann_pct": 5.1,
+      "mom_12m_pct": -1.0,
+      "z20": -1.99,
+      "signals": "55d breakdown ↓, 12m down",
+      "risk_weight_pct": 9.7
+    },
+    {
+      "symbol": "GOLD",
+      "class": "METAL",
+      "date": "2026-11-20",
+      "close": 3542.7,
+      "vol_ann_pct": 22.9,
+      "mom_12m_pct": -13.2,
+      "z20": -2.63,
+      "signals": "55d breakdown ↓, z=-2.6 (fade), 12m down",
+      "risk_weight_pct": 2.2
+    },
+    {
+      "symbol": "HSI",
+      "class": "INDEX",
+      "date": "2026-11-19",
+      "close": 22841.6191,
+      "vol_ann_pct": 17.5,
+      "mom_12m_pct": -14.4,
+      "z20": -1.37,
+      "signals": "55d breakdown ↓, 12m down",
+      "risk_weight_pct": 2.8
+    },
+    {
+      "symbol": "IEF",
+      "class": "BOND",
+      "date": "2026-11-20",
+      "close": 91.5,
+      "vol_ann_pct": 6.4,
+      "mom_12m_pct": -5.3,
+      "z20": 0.7,
+      "signals": "12m down",
+      "risk_weight_pct": 7.7
+    },
+    {
+      "symbol": "NASDAQ100",
+      "class": "INDEX",
+      "date": "2026-11-20",
+      "close": 25623.6328,
+      "vol_ann_pct": 25.3,
+      "mom_12m_pct": 4.0,
+      "z20": -2.08,
+      "signals": "55d breakdown ↓, z=-2.1 (fade), 12m up",
+      "risk_weight_pct": 1.9
+    },
+    {
+      "symbol": "NATGAS",
+      "class": "ENERGY",
+      "date": "2026-11-20",
+      "close": 3.663,
+      "vol_ann_pct": 54.3,
+      "mom_12m_pct": -19.5,
+      "z20": 2.26,
+      "signals": "55d breakout ↑, z=+2.3 (fade), 12m down",
+      "risk_weight_pct": 0.9
+    },
+    {
+      "symbol": "NIKKEI",
+      "class": "INDEX",
+      "date": "2026-11-19",
+      "close": 59444.2109,
+      "vol_ann_pct": 26.7,
+      "mom_12m_pct": 18.4,
+      "z20": -0.94,
+      "signals": "12m up",
+      "risk_weight_pct": 1.8
+    },
+    {
+      "symbol": "PLATINUM",
+      "class": "METAL",
+      "date": "2026-11-20",
+      "close": 1297.0,
+      "vol_ann_pct": 34.3,
+      "mom_12m_pct": -16.2,
+      "z20": -2.41,
+      "signals": "55d breakdown ↓, z=-2.4 (fade), 12m down",
+      "risk_weight_pct": 1.4
+    },
+    {
+      "symbol": "SILVER",
+      "class": "METAL",
+      "date": "2026-11-20",
+      "close": 41.31,
+      "vol_ann_pct": 40.0,
+      "mom_12m_pct": -18.7,
+      "z20": -2.49,
+      "signals": "55d breakdown ↓, z=-2.5 (fade), 12m down",
+      "risk_weight_pct": 1.2
+    },
+    {
+      "symbol": "SP500",
+      "class": "INDEX",
+      "date": "2026-11-20",
+      "close": 7049.1499,
+      "vol_ann_pct": 16.1,
+      "mom_12m_pct": 6.1,
+      "z20": -2.43,
+      "signals": "55d breakdown ↓, z=-2.4 (fade), 12m up",
+      "risk_weight_pct": 3.1
+    },
+    {
+      "symbol": "TLT",
+      "class": "BOND",
+      "date": "2026-11-20",
+      "close": 81.225,
+      "vol_ann_pct": 10.9,
+      "mom_12m_pct": -8.6,
+      "z20": 0.27,
+      "signals": "12m down",
+      "risk_weight_pct": 4.5
+    },
+    {
+      "symbol": "USDCAD",
+      "class": "FX",
+      "date": "2026-11-20",
+      "close": 1.4316,
+      "vol_ann_pct": 4.2,
+      "mom_12m_pct": 2.5,
+      "z20": 1.41,
+      "signals": "12m up",
+      "risk_weight_pct": 11.7
+    },
+    {
+      "symbol": "USDJPY",
+      "class": "FX",
+      "date": "2026-11-20",
+      "close": 158.727,
+      "vol_ann_pct": 7.9,
+      "mom_12m_pct": 1.8,
+      "z20": 0.29,
+      "signals": "12m up",
+      "risk_weight_pct": 6.2
+    },
+    {
+      "symbol": "WHEAT",
+      "class": "AG",
+      "date": "2026-11-20",
+      "close": 593.75,
+      "vol_ann_pct": 25.3,
+      "mom_12m_pct": 10.6,
+      "z20": -0.16,
+      "signals": "12m up",
+      "risk_weight_pct": 1.9
+    },
+    {
+      "symbol": "WTI",
+      "class": "ENERGY",
+      "date": "2026-11-20",
+      "close": 81.67,
+      "vol_ann_pct": 45.9,
+      "mom_12m_pct": 37.4,
+      "z20": -1.34,
+      "signals": "55d breakdown ↓, 12m up",
+      "risk_weight_pct": 1.1
+    }
+  ],
+  "free_ea_families": [
+    {
+      "family": "RSI_FADE",
+      "n": 24,
+      "median_sharpe": 0.01,
+      "best_sharpe": 0.27,
+      "pct_positive": 54.2,
+      "median_null_pct": 53.0,
+      "pass_null95": 0
+    },
+    {
+      "family": "BOLL_FADE",
+      "n": 24,
+      "median_sharpe": 0.04,
+      "best_sharpe": 0.32,
+      "pct_positive": 58.3,
+      "median_null_pct": 60.0,
+      "pass_null95": 1
+    },
+    {
+      "family": "ICHIMOKU",
+      "n": 24,
+      "median_sharpe": 0.04,
+      "best_sharpe": 0.72,
+      "pct_positive": 54.2,
+      "median_null_pct": 62.0,
+      "pass_null95": 2
+    },
+    {
+      "family": "MACD",
+      "n": 24,
+      "median_sharpe": -0.04,
+      "best_sharpe": 0.69,
+      "pct_positive": 45.8,
+      "median_null_pct": 56.0,
+      "pass_null95": 1
+    },
+    {
+      "family": "STOCH_FADE",
+      "n": 24,
+      "median_sharpe": -0.03,
+      "best_sharpe": 0.24,
+      "pct_positive": 37.5,
+      "median_null_pct": 58.0,
+      "pass_null95": 1
+    },
+    {
+      "family": "SUPERTREND",
+      "n": 24,
+      "median_sharpe": -0.61,
+      "best_sharpe": 0.31,
+      "pct_positive": 12.5,
+      "median_null_pct": 9.0,
+      "pass_null95": 0
+    }
+  ],
+  "martingale": [
+    {
+      "instrument": "EURUSD",
+      "final_equity": 0.825,
+      "wiped": true,
+      "wiped_date_index": 5130
+    },
+    {
+      "instrument": "SP500",
+      "final_equity": 0.938,
+      "wiped": true,
+      "wiped_date_index": 2402
+    },
+    {
+      "instrument": "GOLD",
+      "final_equity": 0.938,
+      "wiped": true,
+      "wiped_date_index": 431
+    },
+    {
+      "instrument": "BTC",
+      "final_equity": 0.976,
+      "wiped": true,
+      "wiped_date_index": 120
+    },
+    {
+      "instrument": "NIKKEI",
+      "final_equity": 0.951,
+      "wiped": true,
+      "wiped_date_index": 3284
+    }
+  ],
+  "best_screen_tests": [
+    {
+      "instrument": "BTC",
+      "rule": "TSMOM_12M",
+      "sharpe": 0.81,
+      "cagr": 33.47,
+      "null_pct": 96.0
+    },
+    {
+      "instrument": "BTC",
+      "rule": "BUY_HOLD",
+      "sharpe": 0.78,
+      "cagr": 31.74,
+      "null_pct": null
+    },
+    {
+      "instrument": "GOLD",
+      "rule": "BUY_HOLD",
+      "sharpe": 0.64,
+      "cagr": 10.3,
+      "null_pct": null
+    },
+    {
+      "instrument": "BTC",
+      "rule": "MA_20_100",
+      "sharpe": 0.59,
+      "cagr": 18.49,
+      "null_pct": 96.0
+    },
+    {
+      "instrument": "GOLD",
+      "rule": "TSMOM_12M",
+      "sharpe": 0.55,
+      "cagr": 8.61,
+      "null_pct": 100.0
+    },
+    {
+      "instrument": "BTC",
+      "rule": "TSMOM_6M",
+      "sharpe": 0.53,
+      "cagr": 15.43,
+      "null_pct": 96.0
+    },
+    {
+      "instrument": "ETH",
+      "rule": "BUY_HOLD",
+      "sharpe": 0.53,
+      "cagr": 13.27,
+      "null_pct": null
+    },
+    {
+      "instrument": "BTC",
+      "rule": "MA_50_200",
+      "sharpe": 0.52,
+      "cagr": 14.62,
+      "null_pct": 95.0
+    },
+    {
+      "instrument": "BTC",
+      "rule": "DONCHIAN_55",
+      "sharpe": 0.52,
+      "cagr": 14.3,
+      "null_pct": 95.0
+    },
+    {
+      "instrument": "GOLD",
+      "rule": "TSMOM_6M",
+      "sharpe": 0.47,
+      "cagr": 7.11,
+      "null_pct": 99.0
+    }
+  ],
+  "experiments": [
+    {
+      "id": "EXP-0001..0004",
+      "what": "FX trend / intraday fade / breakout",
+      "result": "REJECTED",
+      "detail": "H1 fade IS −1.66 pips; breakout CI [−4.27,−1.54]"
+    },
+    {
+      "id": "EXP-0005",
+      "what": "Cross-sectional FX reversion (assumed cost)",
+      "result": "REJECTED",
+      "detail": "Sharpe 0.343 vs pre-registered bar 0.35"
+    },
+    {
+      "id": "EXP-0006",
+      "what": "Same rule, MEASURED costs",
+      "result": "CONDITIONAL",
+      "detail": "ECN 0.402 / retail 0.358 — passes, but in-sample"
+    },
+    {
+      "id": "EXP-0007",
+      "what": "Same rule, 2019–2026 hold-out",
+      "result": "REJECTED",
+      "detail": "Sharpe 0.126, only 1 of 6 windows positive"
+    },
+    {
+      "id": "EXP-0008",
+      "what": "Variance risk premium (short vol)",
+      "result": "REJECTED",
+      "detail": "Sharpe 0.694 but worst 12m −103.7%, worst day −43.1%"
+    }
+  ],
+  "risk_governor": {
+    "target_vol_ann_pct": 10.0,
+    "max_risk_per_idea_pct": 2.0,
+    "max_daily_loss_pct": 3.0,
+    "max_total_drawdown_pct": 20.0,
+    "never": [
+      "martingale / grid doubling",
+      "no stop loss",
+      "averaging into losers",
+      "increasing size after losses"
+    ]
+  },
+  "h09_retail_p1r": {
+    "weeks": 1454,
+    "sharpe": 0.358,
+    "cagr": 2.53,
+    "vol": 7.84,
+    "maxdd": 26.0,
+    "hit_pct": 51.2
+  },
+  "h10_primary": {
+    "weeks": 1454,
+    "sharpe": 0.126,
+    "cagr": 0.4,
+    "vol": 3.73,
+    "maxdd": 27.5,
+    "hit_pct": 14.4
+  },
+  "h11b": {
+    "months": 190,
+    "sharpe": 0.694,
+    "cagr": NaN,
+    "vol": 63.07,
+    "maxdd": 419.3
+  }
+}

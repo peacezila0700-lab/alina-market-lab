@@ -1,0 +1,333 @@
+source,title,family,url,stars,desc,updated
+mql5,Basket Guard - closes a basket of positions at loss or profit in percent of balance,other,https://www.mql5.com/en/code/79773,,,
+mql5,"Trade-Request Matrix: Regression Testing Invalid Stops, Volume and Close Errors with OrderCheck()",other,https://www.mql5.com/en/code/79830,,,
+mql5,Trailing Stop and Break-Even Manager (points or ATR),other,https://www.mql5.com/en/code/79831,,,
+mql5,Close All at Total Profit or Loss (money),other,https://www.mql5.com/en/code/79808,,,
+mql5,News Straddle EA Economic Calendar,news/time,https://www.mql5.com/en/code/79828,,,
+mql5,Daily Loss and Profit Lock,other,https://www.mql5.com/en/code/79825,,,
+mql5,Opening Range Breakout EA Gold,breakout,https://www.mql5.com/en/code/79822,,,
+mql5,"Trailing Stop Manager - ATR, Chandelier, swing, SAR, MA, break-even with costs",other,https://www.mql5.com/en/code/79803,,,
+mql5,EventTracer,other,https://www.mql5.com/en/code/79802,,,
+mql5,H4 Breakout Retest EA for Gold (XAUUSD),breakout,https://www.mql5.com/en/code/78537,,,
+mql5,Breakeven and R-Trail Manager — break-even at &#x2B;1R and R-multiple trailing for any trade,other,https://www.mql5.com/en/code/79740,,,
+mql5,Gold Trend Breakout Lite — educational XAUUSD trend-following EA,breakout,https://www.mql5.com/en/code/79733,,,
+mql5,News Day Blocker - no new trades on US CPI and FOMC days,news/time,https://www.mql5.com/en/code/79683,,,
+mql5,No Hedge Guard - close the newer side when a buy and a sell are open on one symbol,grid/martingale,https://www.mql5.com/en/code/79682,,,
+mql5,Giano Session Range Breakout EA,breakout,https://www.mql5.com/en/code/79679,,,
+mql5,Smart Break-Even and Partial Close - R-based trade manager,other,https://www.mql5.com/en/code/79579,,,
+mql5,Prop Firm Equity Guard - daily loss and max drawdown protection,other,https://www.mql5.com/en/code/79578,,,
+mql5,Golden Cross Trend Filter (50/200 SMA on daily closes),trend/MA,https://www.mql5.com/en/code/79539,,,
+mql5,Spread and Slippage Tracker,other,https://www.mql5.com/en/code/79555,,,
+mql5,"MZ Smart Trail Manager - Break-even, Stepped Trailing Stop and Profit Lock",other,https://www.mql5.com/en/code/79420,,,
+mql5,Supertrend EA Gold Breakeven,trend/MA,https://www.mql5.com/en/code/79531,,,
+mql5,Daily Drawdown Guard,other,https://www.mql5.com/en/code/79526,,,
+mql5,Risk Lot Calculator,other,https://www.mql5.com/en/code/79522,,,
+mql5,NY Open Candle: The Basics,other,https://www.mql5.com/en/code/78392,,,
+mql5,History Export from the Strategy Tester (Bars and Ticks),scalping,https://www.mql5.com/en/code/79506,,,
+mql5,Trade Pad,other,https://www.mql5.com/en/code/79486,,,
+mql5,Common Folder Copier - copy positions between MT5 terminals on the same PC,other,https://www.mql5.com/en/code/79438,,,
+mql5,"Execution Quality Logger - slippage, fill delay and spread of every deal",other,https://www.mql5.com/en/code/79437,,,
+mql5,Equity Target Closer - close all trades at a profit or loss level,other,https://www.mql5.com/en/code/79432,,,
+mql5,"Prop Firm Guardian - daily loss, max loss and profit target lock",other,https://www.mql5.com/en/code/79430,,,
+mql5,Spread Session Recorder,news/time,https://www.mql5.com/en/code/79460,,,
+mql5,Prop Risk Guard - daily loss and drawdown protection,other,https://www.mql5.com/en/code/79372,,,
+mql5,Repaint Checker - find out whether an indicator repaints,other,https://www.mql5.com/en/code/79443,,,
+mql5,London Breakout EA: simple and transparent/London Breakout Expert Advisor: simple and transparent,breakout,https://www.mql5.com/en/code/78293,,,
+mql5,Risk Lot Size Calculator Panel,other,https://www.mql5.com/en/code/79402,,,
+mql5,"Basket Close Manager - close a group of trades at a money or percent target, loss limit, trailing lock or set time",other,https://www.mql5.com/en/code/79294,,,
+mql5,G7 FVG OB Confluence AutoTrader and Institutional SMC Dashboard,other,https://www.mql5.com/en/code/79285,,,
+mql5,G7 Pro Trade Manager and Prop Firm Equity Protector Auto-BE Trailing Stop 1-Click HUD),other,https://www.mql5.com/en/code/79265,,,
+mql5,Moving Average Crossover EA Gold,trend/MA,https://www.mql5.com/en/code/79234,,,
+mql5,VrDz Bot Scalp and Swing EA with Always ON Secure Layer Pro Panel,scalping,https://www.mql5.com/en/code/79181,,,
+mql5,Tick Scalper Pro - tick chart and one-click trading panel for MetaTrader 5,scalping,https://www.mql5.com/en/code/79151,,,
+mql5,Algo: EMA Trend Cross on Closed Bars — XAUUSD M30,trend/MA,https://www.mql5.com/en/code/78968,,,
+mql5,"Leverage Monitor – Real Leverage, Margin Tiers, Swap, Commission and Spread",other,https://www.mql5.com/en/code/79074,,,
+mql5,Prop-firm Guard - daily loss and max drawdown protection for challenge accounts,other,https://www.mql5.com/en/code/78946,,,
+mql5,Restart-Safe EA Template - no duplicate entries after a restart,other,https://www.mql5.com/en/code/78715,,,
+mql5,Trailing Stop Breakeven Manager,other,https://www.mql5.com/en/code/79064,,,
+mql5,Daily Loss Guard - daily loss and total drawdown limits for funded / prop-firm accounts,other,https://www.mql5.com/en/code/79035,,,
+mql5,"Trade Journal Exporter - closed trades to CSV, one row per position, with MFE/MAE, R multiple and session",news/time,https://www.mql5.com/en/code/79024,,,
+mql5,Xander Grid RSI Gold,grid/martingale,https://www.mql5.com/en/code/79021,,,
+mql5,Trade Manager Utility,other,https://www.mql5.com/en/code/79017,,,
+mql5,Close All Positions Panel,other,https://www.mql5.com/en/code/78991,,,
+mql5,BotWatchdog - phone alerts when your EAs silently stop working,other,https://www.mql5.com/en/code/78982,,,
+mql5,Daily Loss Guard,other,https://www.mql5.com/en/code/78920,,,
+mql5,"Awesome Oscillator Pullback EA for EURUSD, &#x2B;209 Percent in a 2021-2026 Backtest",other,https://www.mql5.com/en/code/78891,,,
+mql5,Tick Scalper Helper - tick chart and one-click trading panel for MetaTrader 5,scalping,https://www.mql5.com/en/code/78842,,,
+mql5,Supertrend Scalper with Breakeven Win Rate Panel,scalping,https://www.mql5.com/en/code/78778,,,
+mql5,Partial Close Multi TP Manager,other,https://www.mql5.com/en/code/78821,,,
+mql5,Basket Pair Closer,other,https://www.mql5.com/en/code/78799,,,
+mql5,"Order Watchdog - alerts on unknown magic, duplicates, no SL, stop outs (read-only)",other,https://www.mql5.com/en/code/78748,,,
+mql5,Live Test Bench: automated checks of an EA on a demo account,other,https://www.mql5.com/en/code/78680,,,
+mql5,PropGuard Lite - daily and max loss guard for prop firm accounts,other,https://www.mql5.com/en/code/78702,,,
+mql5,Spread Monitor,other,https://www.mql5.com/en/code/78689,,,
+mql5,FxCraft Example EA – Range Breakout with pending orders,breakout,https://www.mql5.com/en/code/78688,,,
+mql5,FxCraft Example EA – Bollinger Bands mean reversion,mean-reversion,https://www.mql5.com/en/code/78687,,,
+mql5,FxCraft Example EA – MA Cross,trend/MA,https://www.mql5.com/en/code/78686,,,
+mql5,News Lines Utility – Economic Calendar Lines and Event Panel,news/time,https://www.mql5.com/en/code/78672,,,
+mql5,Pending Panel MT5 — One-Click Pending Orders with OCO,other,https://www.mql5.com/en/code/78307,,,
+mql5,GM Matrix Monitor — read-only risk dashboard for your EA matrix,other,https://www.mql5.com/en/code/78640,,,
+mql5,Prop Firm Guard - daily loss and max drawdown protection,other,https://www.mql5.com/en/code/78579,,,
+mql5,GDS Renko RSI &#x2B; MACD 4-Mode Demo EA,mean-reversion,https://www.mql5.com/en/code/78581,,,
+mql5,MACrossoverEA,other,https://www.mql5.com/en/code/77414,,,
+mql5,"Telegram Trade Notifier - opens, closes, pending orders and daily summary",other,https://www.mql5.com/en/code/78178,,,
+mql5,"Equity Guard - daily loss, max drawdown and profit target lock",other,https://www.mql5.com/en/code/78176,,,
+mql5,"Smart Money Concept Expert Advisor - Market Strucutre, FVG, Pullback",other,https://www.mql5.com/en/code/78454,,,
+mql5,USDX Trader EA - Trade the US Dollar Index even if your broker does not include the USDX among their symbols.,other,https://www.mql5.com/en/code/78411,,,
+mql5,370 Percent from 2022 to 2026 at 10 Percent MaxDD. The GER40 EA That Waits for the Market to Coil,other,https://www.mql5.com/en/code/78380,,,
+mql5,Monday Dip EA- Index Mean Reversion D1,mean-reversion,https://www.mql5.com/en/code/78343,,,
+mql5,GDS Renko Trade Manager — MetaTrader 5,other,https://www.mql5.com/en/code/78327,,,
+mql5,Gold  MT5 Fractal Breakout EA,breakout,https://www.mql5.com/en/code/78308,,,
+mql5,Opening Range Breakout with NR4 / NR7 Contraction Filters,breakout,https://www.mql5.com/en/code/78259,,,
+mql5,APEX VELOCITY,other,https://www.mql5.com/en/code/78275,,,
+mql5,Prop Firm Equity Guard - Daily Loss Limit and Max Drawdown Protection,other,https://www.mql5.com/en/code/78243,,,
+mql5,BotGuard - Terminal Health Heartbeat for VPS Monitoring,other,https://www.mql5.com/en/code/78235,,,
+mql5,"EMA Cross Scalper M15 (XAUUSD, WIB session filter)",scalping,https://www.mql5.com/en/code/77180,,,
+mql5,GridPro Panel — open-source grid trading EA with on-chart control panel,grid/martingale,https://www.mql5.com/en/code/78206,,,
+mql5,Margin Risk Simulator,other,https://www.mql5.com/en/code/78137,,,
+mql5,Portfolio Allocation Planner — budget-to-lots dashboard and CSV,other,https://www.mql5.com/en/code/78141,,,
+mql5,AgentGuard — Independent Risk Guard for AI Agents in MetaTrader 5,ML/AI,https://www.mql5.com/en/code/78138,,,
+mql5,Manual Trade Pad for Strategy Tester,other,https://www.mql5.com/en/code/78134,,,
+mql5,DailyLossGuard — Hard Daily Loss Protection,other,https://www.mql5.com/en/code/78107,,,
+mql5,Broker Clock Auditor,other,https://www.mql5.com/en/code/78123,,,
+mql5,Session Reality Auditor,news/time,https://www.mql5.com/en/code/78079,,,
+mql5,Advanced Prop-firm Trade Panel based on S-R,other,https://www.mql5.com/en/code/78078,,,
+mql5,Newtonian Mechanics,other,https://www.mql5.com/en/code/78046,,,
+mql5,87.8 Percent from 2021 to YTD at 8.5 Percent MaxDD. The Nikkei EA That Only Buys When Volume Is Quiet,other,https://www.mql5.com/en/code/78027,,,
+mql5,Tick Integrity Auditor,scalping,https://www.mql5.com/en/code/78008,,,
+mql5,ORB Risk Managed - Opening Range Breakout with Account Protection,breakout,https://www.mql5.com/en/code/77967,,,
+mql5,Broker Profiler,other,https://www.mql5.com/en/code/76895,,,
+mql5,AN Guard Lite - Trade Journal and Report for any EA,other,https://www.mql5.com/en/code/77951,,,
+mql5,History Integrity Auditor,other,https://www.mql5.com/en/code/77919,,,
+mql5,WaveMaster Pro EA,other,https://www.mql5.com/en/code/77918,,,
+mql5,"Stochastic Daily Breakout for Gold, &#x2B;245 Percent in a 2021-2026 Backtest",breakout,https://www.mql5.com/en/code/77900,,,
+mql5,Alpha Engine: Intrinsic-Time Coastline Trader,other,https://www.mql5.com/en/code/77871,,,
+mql5,Mirror Hedge EA (Same terminal and account only),grid/martingale,https://www.mql5.com/en/code/77845,,,
+mql5,Repaint Inspector,other,https://www.mql5.com/en/code/77842,,,
+mql5,Buy GBPJPY Every Monday. That&#x27;s the Whole Strategy.,other,https://www.mql5.com/en/code/77835,,,
+mql5,RSI Exhaustion Reversal - EURUSD,mean-reversion,https://www.mql5.com/en/code/77738,,,
+mql5,ZoneUS30 — Reversion and Positive Swap on Your Side in US30,mean-reversion,https://www.mql5.com/en/code/77748,,,
+mql5,Stormbreaker ADX - Supertrend and DMI Trend EA,trend/MA,https://www.mql5.com/en/code/77718,,,
+mql5,PropGuard 1.02 - account risk manager for prop firm accounts,other,https://www.mql5.com/en/code/77710,,,
+mql5,NeonDesk - Neon Manual Trading Panel with Multi-Timeframe Bias,other,https://www.mql5.com/en/code/77697,,,
+mql5,Gold Breakout EA for XAUUSD H4 &#x2B;90 Percent in a 2020 to 2026 Backtest,breakout,https://www.mql5.com/en/code/77691,,,
+mql5,Trade Reporter Lite - Telegram trade notifications,other,https://www.mql5.com/en/code/77662,,,
+mql5,EMA Cross Demo EA with ATR Stops,trend/MA,https://www.mql5.com/en/code/77653,,,
+mql5,"PropSpread: time-weighted spread monitor with ATR context, alert and CSV log",other,https://www.mql5.com/en/code/77391,,,
+mql5,SMC Gold: Liquidity Sweep and Order Block EA for XAUUSD M15,scalping,https://www.mql5.com/en/code/77639,,,
+mql5,Prop Firm Daily Drawdown Visualizer,other,https://www.mql5.com/en/code/77627,,,
+mql5,"Safe Risk Manager EA - Daily Loss, Break-Even and Trailing Stop",other,https://www.mql5.com/en/code/76999,,,
+mql5,EA Trend Follower,trend/MA,https://www.mql5.com/en/code/77595,,,
+mql5,PropFirm Risk Guardian MT5 – Account-Wide Risk Protection EA,other,https://www.mql5.com/en/code/77591,,,
+mql5,RiskGuard Lite - Percent-Risk EMA/ATR EA,other,https://www.mql5.com/en/code/77470,,,
+mql5,PropFirm Equity Protector – Institutional Risk Manager (Open Source),other,https://www.mql5.com/en/code/76437,,,
+mql5,"One-Click Trade Manager — risk-based lot size with entry, stop and target in one click",other,https://www.mql5.com/en/code/77538,,,
+mql5,RegimeRouter — trend/range classifier with a per-regime win rate ledger,trend/MA,https://www.mql5.com/en/code/77535,,,
+mql5,"Smart Loss Exit — early exit for losing positions (ATR adverse excursion, time in trade, EMA invalidation, RSI, money ca",mean-reversion,https://www.mql5.com/en/code/77386,,,
+mql5,"Risk Guard — risk-based lot size, daily loss lock, max positions, oversized-trade trim, forced stop-loss",mean-reversion,https://www.mql5.com/en/code/77364,,,
+mql5,Prop-Firm Equity Guard - daily and max drawdown protection (FTMO-style),other,https://www.mql5.com/en/code/77350,,,
+mql5,GDS Renko Bollinger 4-Mode Demo EA,mean-reversion,https://www.mql5.com/en/code/77236,,,
+mql5,GDS Renko ADX Demo EA,trend/MA,https://www.mql5.com/en/code/77234,,,
+mql5,GDS Renko Dual MA Demo EA,other,https://www.mql5.com/en/code/77232,,,
+mql5,ZetaBurst Scalper EA,scalping,https://www.mql5.com/en/code/77220,,,
+mql5,EA AurumNeuro Vanguard,other,https://www.mql5.com/en/code/77206,,,
+mql5,GDS Renko Momentum Demo EA,MACD/momentum,https://www.mql5.com/en/code/77200,,,
+mql5,PulseStrike Scalper - Statistical Burst Detection EA,scalping,https://www.mql5.com/en/code/77167,,,
+mql5,GDS Renko Replay Trainer,other,https://www.mql5.com/en/code/77128,,,
+mql5,SMC Liquidity Sweep Scalper (Order Block EA with Live Win-Rate Tracking),scalping,https://www.mql5.com/en/code/77094,,,
+mql5,"RiskPilot Pro — Drag-to-Trade Risk Panel with Break-Even, Trailing and a Daily Loss Guard",other,https://www.mql5.com/en/code/77090,,,
+mql5,Extract information from the MT5 broker,other,https://www.mql5.com/en/code/75827,,,
+mql5,SessionReopenEA,news/time,https://www.mql5.com/en/code/77060,,,
+mql5,GDS Renko Donchian Demo EA,breakout,https://www.mql5.com/en/code/76813,,,
+mql5,TrueCostReport,other,https://www.mql5.com/en/code/77015,,,
+mql5,SuperTrend TV EA,trend/MA,https://www.mql5.com/en/code/77009,,,
+mql5,GridCapitalCalculator,grid/martingale,https://www.mql5.com/en/code/76972,,,
+mql5,Trade Guardian - stop loss watchdog and drawdown limiter that re-arms,other,https://www.mql5.com/en/code/76947,,,
+mql5,CalendarExport,news/time,https://www.mql5.com/en/code/76951,,,
+mql5,TradeHistoryLogger,other,https://www.mql5.com/en/code/76950,,,
+mql5,"Position Peak Logger - how far your trades actually travelled, in R",other,https://www.mql5.com/en/code/76934,,,
+mql5,Session Range Desk MT5,news/time,https://www.mql5.com/en/code/76927,,,
+mql5,PropFirmGuard,other,https://www.mql5.com/en/code/76767,,,
+mql5,GDS Renko SuperTrend Demo EA,trend/MA,https://www.mql5.com/en/code/76811,,,
+mql5,Trading Tool Assistant v2,other,https://www.mql5.com/en/code/76806,,,
+mql5,GDS Renko Zones Demo EA,other,https://www.mql5.com/en/code/76794,,,
+mql5,GDS Renko Fast Demo EA,other,https://www.mql5.com/en/code/76793,,,
+mql5,Market Replay Tool,other,https://www.mql5.com/en/code/76669,,,
+mql5,Sniper Gold Hybrid Recovery EA,grid/martingale,https://www.mql5.com/en/code/76605,,,
+mql5,Interactive On-Chart Risk Management and Execution Panel,other,https://www.mql5.com/en/code/76534,,,
+mql5,Chaos Theory Lyapunov Exponent EA,other,https://www.mql5.com/en/code/76446,,,
+mql5,Basket Protective Close,other,https://www.mql5.com/en/code/76518,,,
+mql5,HybridMicrostructure EA,other,https://www.mql5.com/en/code/76331,,,
+mql5,AAPL cfd - ORB strategy,other,https://www.mql5.com/en/code/76333,,,
+mql5,Server Clock and Daily Reset Hour,other,https://www.mql5.com/en/code/76288,,,
+mql5,Session Opening Range Breakout EA,breakout,https://www.mql5.com/en/code/76153,,,
+mql5,Quantora Spread Monitor MT5 -  Professional Live Spread Monitoring Tool,other,https://www.mql5.com/en/code/75749,,,
+mql5,Round Trip Cost Reconciler MT5,other,https://www.mql5.com/en/code/76117,,,
+mql5,Trade Transaction Trace Logger MT5,other,https://www.mql5.com/en/code/76106,,,
+mql5,Daily Zone Recovery EA mt5 for GOLD,grid/martingale,https://www.mql5.com/en/code/75922,,,
+mql5,Smart Trade Manager for MT5,other,https://www.mql5.com/en/code/75916,,,
+mql5,Trend Execution Planner - Regime and Risk Panel,trend/MA,https://www.mql5.com/en/code/75877,,,
+mql5,Risk Position Size Calculator,other,https://www.mql5.com/en/code/75686,,,
+mql5,Trade Adjustment Panel,other,https://www.mql5.com/en/code/75818,,,
+mql5,Professional Margin Requirement Calculator for MetaTrader 5,other,https://www.mql5.com/en/code/75747,,,
+mql5,Quantora Risk Calculator MT5 - Professional Trade Risk and Reward Calculator,other,https://www.mql5.com/en/code/75745,,,
+mql5,Quantora Position Size Calculator MT5,other,https://www.mql5.com/en/code/75743,,,
+mql5,Professional Automatic Trailing Stop Utility for MetaTrader 5,other,https://www.mql5.com/en/code/75739,,,
+mql5,Quantora Break Even Manager MT5 - Professional Automatic Break Even Utility,other,https://www.mql5.com/en/code/75735,,,
+mql5,Quantora Trade Manager MT5 - Professional Position Management Utility,other,https://www.mql5.com/en/code/75729,,,
+mql5,Trade Manager Panel Simple Interactive Chart Trading Tool with Risk Management for MT5,other,https://www.mql5.com/en/code/75690,,,
+mql5,GoldScalpBot — Autonomous XAUUSD Scalper with Local App Bridge (IC Markets),scalping,https://www.mql5.com/en/code/75652,,,
+mql5,GoldLondonBreakout,breakout,https://www.mql5.com/en/code/75586,,,
+mql5,Relative Moving Average EA,trend/MA,https://www.mql5.com/en/code/75473,,,
+mql5,Trading Panel EA,other,https://www.mql5.com/en/code/75487,,,
+mql5,SteepMA Steep Moving Average Trend EA,trend/MA,https://www.mql5.com/en/code/74379,,,
+mql5,Nikkei 225 Gap Continuation EA,other,https://www.mql5.com/en/code/75301,,,
+mql5,BlueMoon,other,https://www.mql5.com/en/code/75264,,,
+mql5,EA Money Management,other,https://www.mql5.com/en/code/74208,,,
+mql5,Interactive Supply and Demand Zone Trading Prototype,other,https://www.mql5.com/en/code/75178,,,
+mql5,Trading Performance journal,other,https://www.mql5.com/en/code/75112,,,
+mql5,Aegis Quantum Lite,other,https://www.mql5.com/en/code/75002,,,
+mql5,SuperTrend_Amarnath_Kondiyan_Mohan,trend/MA,https://www.mql5.com/en/code/74894,,,
+mql5,EA KCI N-Matrix engine,other,https://www.mql5.com/en/code/74840,,,
+mql5,Market Miner,other,https://www.mql5.com/en/code/74818,,,
+mql5,MA &#x2B; Envelope Breakouts,breakout,https://www.mql5.com/en/code/74815,,,
+mql5,T5Copier - MT 5 client to client Local trade copier,other,https://www.mql5.com/en/code/74807,,,
+mql5,Stochastic Protector,mean-reversion,https://www.mql5.com/en/code/74661,,,
+mql5,EA KCI Embeded Sniper,other,https://www.mql5.com/en/code/74582,,,
+mql5,Equity Guard — Daily Loss Limit Guardian with Panic Panel,other,https://www.mql5.com/en/code/73870,,,
+mql5,RealCost Spread P95 Logger MT5,other,https://www.mql5.com/en/code/74148,,,
+mql5,003 - Weekly Day Reversal,other,https://www.mql5.com/en/code/74137,,,
+mql5,Simple EMA Cross EA with SL/TP and Magic Number,trend/MA,https://www.mql5.com/en/code/74135,,,
+mql5,V1N1 LONNY MT5,other,https://www.mql5.com/en/code/73210,,,
+mql5,ADX Trend Pullback EA,trend/MA,https://www.mql5.com/en/code/73958,,,
+mql5,002 - Inside Bar,other,https://www.mql5.com/en/code/73884,,,
+mql5,Universal Breakout Study,breakout,https://www.mql5.com/en/code/73711,,,
+mql5,MSNR v5.31Plus AEU EA,other,https://www.mql5.com/en/code/73680,,,
+mql5,001 - Turnaround Tuesday,other,https://www.mql5.com/en/code/73674,,,
+mql5,Long-Only Trend Breakout with Dynamic Risk Management,breakout,https://www.mql5.com/en/code/73638,,,
+mql5,Quantum XAUUSD Silver Trader,other,https://www.mql5.com/en/code/73622,,,
+mql5,"Prime Quantum AI —  TRADE WITH AI (Anthropic Claude, OpenAI GPT, Google Gemini, DeepSeek, xAI Grok).",ML/AI,https://www.mql5.com/en/code/72527,,,
+mql5,Frontend EA : UI cleanup &#x2B; quick-trading layer for MT5,other,https://www.mql5.com/en/code/72316,,,
+mql5,XANDER Gold Recovery,grid/martingale,https://www.mql5.com/en/code/72278,,,
+mql5,Easy Range Breakout EA - MT5,breakout,https://www.mql5.com/en/code/68764,,,
+mql5,Easy Range Breakout EA - MT5,breakout,https://www.mql5.com/en/code/71460,,,
+mql5,XANDER Grid XAUUSD,grid/martingale,https://www.mql5.com/en/code/71776,,,
+mql5,BEC Lockin Dashboard Manager,other,https://www.mql5.com/en/code/71761,,,
+mql5,XPro Trade Panel — Full Trade Management Panel for MT5/MT4,other,https://www.mql5.com/en/code/71728,,,
+mql5,RSI Grid EA Pro,grid/martingale,https://www.mql5.com/en/code/71700,,,
+mql5,BEC Trade Breakeven Trail Manager,other,https://www.mql5.com/en/code/71657,,,
+mql5,Hon Matrix,other,https://www.mql5.com/en/code/71645,,,
+mql5,Hon APS Advanced Pattern Scanner with DOM and  News Integration,news/time,https://www.mql5.com/en/code/71521,,,
+mql5,KSQ CommandCenter Remote Google Sheets Trade Manager,other,https://www.mql5.com/en/code/71591,,,
+mql5,ASQ Command Desk,other,https://www.mql5.com/en/code/71583,,,
+mql5,KSQ Fair Value Gap EA FVG with Regime Detection and Dual SL TP Mode,other,https://www.mql5.com/en/code/71467,,,
+mql5,Dominance EA,other,https://www.mql5.com/en/code/71195,,,
+mql5,ASQ Safe Scalping v1.20,scalping,https://www.mql5.com/en/code/71189,,,
+mql5,ASQ RiskGuard Professional Risk Management EA,other,https://www.mql5.com/en/code/71120,,,
+mql5,ASQ FlowDesk One Click Execution Position Management Panel,other,https://www.mql5.com/en/code/71119,,,
+mql5,Pro MA Crossover EA for MT5,trend/MA,https://www.mql5.com/en/code/70916,,,
+mql5,Liquidity Sweep H4 - M15 (Swing Highs and Lows) / MQL5,scalping,https://www.mql5.com/en/code/68951,,,
+mql5,Stealth Trade Manager (Hidden SL/TP and Spread Protector),other,https://www.mql5.com/en/code/70900,,,
+mql5,PlayDOOM,other,https://www.mql5.com/en/code/70893,,,
+mql5,BGC Grid EA,grid/martingale,https://www.mql5.com/en/code/70764,,,
+mql5,OHLCMTF Scalper EA - Multi-Timeframe Price Action,scalping,https://www.mql5.com/en/code/70796,,,
+mql5,VR Rsi Robot is a multi-timeframe trading strategy,mean-reversion,https://www.mql5.com/en/code/70465,,,
+mql5,ExMachina Telegram Bridge,other,https://www.mql5.com/en/code/70383,,,
+mql5,SilviosEAbest26,other,https://www.mql5.com/en/code/68934,,,
+mql5,ExMachina TradePilot,other,https://www.mql5.com/en/code/70266,,,
+mql5,ExMachina SafeScalping,scalping,https://www.mql5.com/en/code/70052,,,
+mql5,VR Breakdown level - Trading strategy based on a breakout of the previous High or Low,breakout,https://www.mql5.com/en/code/69545,,,
+mql5,MASTER-WINNERFX-Asim,other,https://www.mql5.com/en/code/69712,,,
+mql5,ICE (Impulse Confirmation Engine),other,https://www.mql5.com/en/code/69651,,,
+github,EA31337/EA31337,other,https://github.com/EA31337/EA31337,1370,"🤖📈 EA31337 Lite, Advanced and Rider - Forex multi-strategy trading robot for MT4/MT5 platforms",2026-11-20
+github,TheSnowGuru/PyTrader-python-mt4-mt5-trading-api-connector-drag-n-drop,other,https://github.com/TheSnowGuru/PyTrader-python-mt4-mt5-trading-api-connector-drag-n-drop,1077,Open Source Trading Strategies & End-to-End solution connecting Metatrader4 & Metatrader5 💹 with Python with a simple drag and drop EA. Fully tested bug free & ,2026-11-20
+github,vdemydiuk/mtapi,other,https://github.com/vdemydiuk/mtapi,711,MetaTrader API (terminal bridge),2026-11-18
+github,geraked/metatrader5,other,https://github.com/geraked/metatrader5,702,Implementation of Trading Strategies for Backtesting in MetaTrader 5 (MT5) Using MQL5 Programming Language – Free Open-Source Trading Bots (Expert Advisors) for,2026-11-20
+github,EarnForex/PositionSizer,other,https://github.com/EarnForex/PositionSizer,614,Calculate your position size based on the risk and account size and execute your trades with this free MetaTrader expert advisor. ,2026-11-19
+github,isaiahbjork/Auto-GPT-MetaTrader-Plugin,other,https://github.com/isaiahbjork/Auto-GPT-MetaTrader-Plugin,568,The AutoGPT MetaTrader Plugin is a software tool that enables traders to connect their MetaTrader 4 or 5 trading account to Auto-GPT.,2026-11-15
+github,AminHP/gym-mtsim,ML/AI,https://github.com/AminHP/gym-mtsim,528,"A general-purpose, flexible, and easy-to-use simulator alongside an OpenAI Gym trading environment for MetaTrader 5 trading platform (Approved by OpenAI Gym)",2026-11-11
+github,peterthomet/MetaTrader-5-and-4-Tools,other,https://github.com/peterthomet/MetaTrader-5-and-4-Tools,477,Indicators and EA Snippets for MetaTrader 5,2026-11-16
+github,Voidoiadapter/quant-trading-bot,other,https://github.com/Voidoiadapter/quant-trading-bot,440,"Quant Trading Bot 2026 automated deployment pipeline for enterprise-grade desktop software utility, ensuring seamless pre-configured...",2026-11-20
+github,gmag11/MetaTrader5-Docker,other,https://github.com/gmag11/MetaTrader5-Docker,422,Docker image that runs Metatrader 5 with VNC web server,2026-11-19
+github,yulz008/GOLD_ORB,breakout,https://github.com/yulz008/GOLD_ORB,340,Open Range Breakout Expert Advisor for XAUUSD (GOLD)  ,2026-11-20
+github,khramkov/Backtrader-MQL5-API,other,https://github.com/khramkov/Backtrader-MQL5-API,302,Python Backtrader - Metaquotes MQL5 - API,2026-11-19
+github,francomascareloai/EA_SCALPER_XAUUSD,scalping,https://github.com/francomascareloai/EA_SCALPER_XAUUSD,301,"WIP — XAUUSD (Gold) automated-trading research, in the open. MQL5 (public) + Python/NautilusTrader (private). Studied thousands of bots first. No signals, no pr",2026-11-20
+github,EA31337/EA31337-classes,other,https://github.com/EA31337/EA31337-classes,278,"📦📈 EA31337 framework (MQL library for writing trading Expert Advisors, indicators and scripts)",2026-11-16
+github,MegaJoctan/ML5,ML/AI,https://github.com/MegaJoctan/ML5,278,Machine Learning repository for MQL5 ,2026-11-19
+github,EA31337/EA31337-Libre,other,https://github.com/EA31337/EA31337-Libre,272,🤖📈 EA31337 Libre - free and open source Forex trading robot for MT4/MT5 platforms,2026-11-18
+github,elrizwiraswara/nyao_scalper_mt5,scalping,https://github.com/elrizwiraswara/nyao_scalper_mt5,257,Auto Trading EA Robot with Comprehensive Features for MetaTrader 5,2026-11-20
+github,Joaopeuko/Mql5-Python-Integration,scalping,https://github.com/Joaopeuko/Mql5-Python-Integration,217,"I created this library to streamline the process of developing an Expert Advisor in MQL5. While MQL5 development can be complex, the same task is more straightf",2026-11-09
+github,landim32/LadinoBot,other,https://github.com/landim32/LadinoBot,206,Robô Open Source para MQL5,2026-11-16
+github,EarnForex/MarketProfile,other,https://github.com/EarnForex/MarketProfile,205,"Market Profile indicator for MT4, MT5, and cTrader by EarnForex.com",2026-11-11
+github,ejtraderLabs/Metatrader5-Docker,other,https://github.com/ejtraderLabs/Metatrader5-Docker,168,"Metatrader 5 Docker, wine64 and vnc with openbox gui and slim for Authentication  pyzmq python3",2026-10-04
+github,jimtin/algorithmic_trading_bot,other,https://github.com/jimtin/algorithmic_trading_bot,165,"Python Trading Bot for Algorithmic Trading. Integrates with MetaTrader 5, Binance",2026-11-13
+github,Ichinga-Samuel/aiomql,other,https://github.com/Ichinga-Samuel/aiomql,154,Asynchronous Python Library For MetaTrader 5,2026-10-26
+github,tahsintasnuva/voice-notes-pipeline,MACD/momentum,https://github.com/tahsintasnuva/voice-notes-pipeline,153,Voice Notes Pipeline: Automation Script for Streamlined Note Processing,2026-11-17
+github,devcartel/pymt5,other,https://github.com/devcartel/pymt5,148,Python API for interacting with DevCartel MetaTrader 5 gateway,2026-09-16
+github,kartikmadan11/MetaTraderForecast,other,https://github.com/kartikmadan11/MetaTraderForecast,146,RNN based Forecasting App for Meta Trader and similar trading platforms,2026-11-13
+github,nkanven/MT4-MT5-Trading-EA-Collections,other,https://github.com/nkanven/MT4-MT5-Trading-EA-Collections,144,This repository is about some of my various MT4/MT5 EA you everyone can use for free. I implemented various strategies and scripts you can customize for your pr,2026-11-20
+github,kecoma1/Trading_BOT,breakout,https://github.com/kecoma1/Trading_BOT,141,This is the repository for the trading bot we are building in my youtube channel! ,2026-11-13
+github,sajidmahamud835/grid-master-pro-mt5-ea,grid/martingale,https://github.com/sajidmahamud835/grid-master-pro-mt5-ea,134,A fully functional MetaTrader 5 Expert Advisor implementing a grid trading strategy.,2026-11-13
+github,AbdulWasay13/TradingView-Pipe-Executor,ML/AI,https://github.com/AbdulWasay13/TradingView-Pipe-Executor,132,Automated MT5 Trading Bot with AI Alerts & Webhook Bridge 2026,2026-11-19
+github,ajayprabhuraj/institutional-orderflow-mt5,other,https://github.com/ajayprabhuraj/institutional-orderflow-mt5,131,2026 SMC Trading Toolkit: Real-Time Order Blocks & Fair Value Gaps for MT5,2026-11-20
+github,youcefito/mt5-quiet-automata,other,https://github.com/youcefito/mt5-quiet-automata,128,"Run MT5 as Stealth Windows Service for Automated Trading, 2026",2026-11-12
+github,EarnForex/Account-Protector,other,https://github.com/EarnForex/Account-Protector,126,Automate emergency position closing and autotrading termination using a multi-setting expert advisor.,2026-10-12
+github,youcefbibo53/PropGuard-Trailing-Equity-Armor,other,https://github.com/youcefbibo53/PropGuard-Trailing-Equity-Armor,123,Top Prop Firm Drawdown Protector EA 2026: FTMO & MyForexFunds Risk Manager,2026-11-14
+github,Narfinsel/Candlestick-Pattern-Scanner,scalping,https://github.com/Narfinsel/Candlestick-Pattern-Scanner,122,CandlestickPatternScanner is a utility class that helps Expert Advisors and trading bots to efficiently detect reversal ,2026-11-13
+github,GifariKemal/xaubot-ai,ML/AI,https://github.com/GifariKemal/xaubot-ai,122,"AI-powered XAUUSD (Gold) trading bot with XGBoost ML, Smart Money Concepts (SMC), and HMM regime detection for MetaTrader 5",2026-11-19
+github,Dream-XR/MT5-Post-Trade-Insight-Reporter,other,https://github.com/Dream-XR/MT5-Post-Trade-Insight-Reporter,121,AutoTrade Forex Signals: Telegram to MT5 EA 2026 Strategy,2026-11-12
+github,ejtraderLabs/ejtraderMT,other,https://github.com/ejtraderLabs/ejtraderMT,120,Metatrader 5 API - Trading and history OHLC  Dataframe in Nano Seconds,2026-09-28
+github,Wendy-Bay/PropFirm-Tracker-Elite,other,https://github.com/Wendy-Bay/PropFirm-Tracker-Elite,120,Best Proprietary MT4/MT5 Prop Fund Manager 2026 for Multi-Phase Challenge Tracking,2026-11-14
+github,peridotfoundation/MT5-Directional-Flow-Dashboard,trend/MA,https://github.com/peridotfoundation/MT5-Directional-Flow-Dashboard,119,MT5 Live Trend Direction Signal Hub 2026 – Real-Time Forex & CFD Alerts,2026-11-16
+github,6alaile/MetaTrader5-to-Telegram,breakout,https://github.com/6alaile/MetaTrader5-to-Telegram,110,"An expert advisor to help traders connect their MT5 account, via the terminal with a Telegram Bot to broadcast messages to a user, group or channel.",2026-11-19
+github,9nix6/Median-and-Turbo-Renko-indicator-bundle,other,https://github.com/9nix6/Median-and-Turbo-Renko-indicator-bundle,102,Open-source MetaTrader 5 SDK for Expert Advisors and indicators that run directly on Median & Turbo Renko charts. Works with both the MQL5 Market edition and Ul,2026-11-13
+github,codedpro/mt5-trade-split-manager,ML/AI,https://github.com/codedpro/mt5-trade-split-manager,92,"🤖 AI-Agent Friendly MT5 Expert Advisor with intelligent order splitting, automatic trailing stops, and REST API. Perfect for Gold/Silver trading with Claude AI ",2026-11-20
+github,yanstd888/institutional-smc-scalper-mt5,grid/martingale,https://github.com/yanstd888/institutional-smc-scalper-mt5,72,"Institutional-grade Smart Money Concepts (SMC) & ICT Gold (XAUUSD) Scalping Expert Advisor for MetaTrader 5 (MT5). Non-martingale, verified 6.5-year backtest.",2026-11-20
+github,pipbolt/experts,other,https://github.com/pipbolt/experts,62,Expert Advisors (aka Forex Trading Robots) for Metatrader 5,2026-09-28
+github,EarnForex/News-Trader,news/time,https://github.com/EarnForex/News-Trader,59,News Trader is a customizable expert advisor to trade high-volatility news releases based on the trader's inputs.,2026-11-20
+github,foeed/FvgGold-EA,other,https://github.com/foeed/FvgGold-EA,58,"Free open-source XAUUSD Expert Advisor for MetaTrader 5. Quality-scored Fair Value Gap (FVG) + Order Block strategy. 45% win rate, +48.7% 6-month backtest. MQL5",2026-11-20
+github,rafaelfvcs/Introduction-to-MetaTrader5-and-MQL5---book,other,https://github.com/rafaelfvcs/Introduction-to-MetaTrader5-and-MQL5---book,54, Expert Advisor taught in the book: Introduction to MetaTrader 5 and Programming with MQL5. Create your 1st Investment Robot with MQL5 step by step from ZERO.,2026-11-13
+github,NadirAliOfficial/STAR-EA-v11.20,other,https://github.com/NadirAliOfficial/STAR-EA-v11.20,51,"ICT-based MT5 Expert Advisor with 12-scenario market classification engine — Order Blocks, FVG, OTE, Liquidity, CRT, Judas Swing, Silver Bullet, AMD",2026-11-20
+github,jimtin/build-your-own-mt5-ea,other,https://github.com/jimtin/build-your-own-mt5-ea,44,Learn how to build your own MetaTrader 5 Expert Advisor from Scratch!,2026-11-13
+github,MrOwl1011/Smc_ZOB_CISD,trend/MA,https://github.com/MrOwl1011/Smc_ZOB_CISD,38,"Smart Money Concepts trading bot for MetaTrader 5. Order blocks, CISD confirmation, multi-timeframe trend filter, on-chart panel. Open source MQL5 expert adviso",2026-11-18
+github,PopovMP/FSB_Expert_Advisor_Code,other,https://github.com/PopovMP/FSB_Expert_Advisor_Code,36,MQL Code used by Forex Strategy Builder Professional for exporting Expert Advisors,2026-09-04
+github,EarnForex/Chart-Pattern-Helper,other,https://github.com/EarnForex/Chart-Pattern-Helper,34,Chart Pattern Helper is a utility expert advisor that helps automate trade execution based on trader-defined chart patterns.,2026-10-13
+github,monir71/Meta-Trader-MQL5-MQL4-Programming-Expert-Advisor-Robot,other,https://github.com/monir71/Meta-Trader-MQL5-MQL4-Programming-Expert-Advisor-Robot,32,"In the world of foreign exchange (forex) trading, an expert advisor (EA) is software that tells you when to make trades. You can even program the software to in",2026-11-06
+github,smizxe/mt5-agent-toolkit,ML/AI,https://github.com/smizxe/mt5-agent-toolkit,31,"Turn a written trading strategy into a MetaTrader 5 Expert Advisor with an AI coding agent. Headless MQL5 compile, headless Strategy Tester, and the nine silent",2026-11-18
+github,anthonycdp/scalpflip-ea,scalping,https://github.com/anthonycdp/scalpflip-ea,28,Scalping Expert Advisor for forex trading automation,2026-11-06
+github,n30dyn4m1c/crt-turtlesoup-ea,scalping,https://github.com/n30dyn4m1c/crt-turtlesoup-ea,28,MetaTrader 5 Expert Advisors for Candle Range Theory Turtle Soup alerts across M15–Monthly timeframes,2026-11-19
+github,GeneralTradingSarl/expert-mt5,other,https://github.com/GeneralTradingSarl/expert-mt5,25,"Curated collection of optimized MetaTrader 5 Expert Advisors, with screenshots and documentation.",2026-11-20
+github,EarnForex/Amazing,news/time,https://github.com/EarnForex/Amazing,25,Amazing is a news trading expert advisor that uses two pending orders to capture the elevated volatility around news announcements.,2026-11-15
+github,llihcchill/ICT-Imbalance-Expert-Advisor,news/time,https://github.com/llihcchill/ICT-Imbalance-Expert-Advisor,24,"This is an MQL5 forex trading expert advisor that uses a unique pattern that gets entries early at the start of the two biggest trading sessions, the London ses",2026-11-05
+github,EarnForex/Binario,trend/MA,https://github.com/EarnForex/Binario,22,Binario is an expert advisor that uses a rather unconventional moving average strategy to trade.,2026-10-27
+github,oleg518/forex-mql-ea-mq5,other,https://github.com/oleg518/forex-mql-ea-mq5,19,forex trade robot for MT5,2026-11-19
+github,SiyabongaDlamini/SmartMoney.MQ5,other,https://github.com/SiyabongaDlamini/SmartMoney.MQ5,17,"Advanced Multi-Timeframe Smart Money Concepts (SMC) Expert Advisor for MetaTrader 5. Features precise liquidity sweep entries, Premium/Discount zones, and advan",2026-11-15
+github,EarnForex/Adjustable-MA,trend/MA,https://github.com/EarnForex/Adjustable-MA,15,Adjustable MA is a rather simple MA crossover expert advisor with multiple adjustable parameters.,2026-04-30
+github,EarnForex/RSI-EA,mean-reversion,https://github.com/EarnForex/RSI-EA,14,RSI expert advisor for MT5 - a template-based EA to create and test your own RSI trading system.,2026-06-22
+github,NadirAliOfficial/engulfing-zone-ea,grid/martingale,https://github.com/NadirAliOfficial/engulfing-zone-ea,11,"XAUUSD M5 Expert Advisor for MetaTrader 5 — Pure price-action Engulfing Zone Retest strategy. No indicators, no repainting, no Martingale.",2026-11-16
+github,dinethlive/Triangular-Arbitrage-EA-for-BTC-ETH-USD,other,https://github.com/dinethlive/Triangular-Arbitrage-EA-for-BTC-ETH-USD,11,"This Expert Advisor implements triangular arbitrage for the BTC/USD, ETH/USD, and BTC/ETH triangle on Deriv MT5 or any compatible MetaTrader 5 broker offering t",2026-10-05
+github,NadirAliOfficial/monsterfx-reliable-trader,breakout,https://github.com/NadirAliOfficial/monsterfx-reliable-trader,11,MT5 Expert Advisor + Discord bot for automated Forex trading signals with Gold VIP channel,2026-11-18
+github,cv4ever/FxTT-MT5-Free,other,https://github.com/cv4ever/FxTT-MT5-Free,10,Free Indicators and Expert Advisors for Metatrader 5,2026-10-30
+github,EarnForex/myRandom,other,https://github.com/EarnForex/myRandom,10,myRandom is a basic expert advisor created as a proof of concept for a randomly trading Forex robot.,2026-10-13
+github,EarnForex/Timed-Order,other,https://github.com/EarnForex/Timed-Order,10,Timed Order is an expert advisor to schedule an order to be executed at a specific time.,2025-08-03
+github,Niferu/forex-trading-robots,other,https://github.com/Niferu/forex-trading-robots,9,"Showcase of powerful cutting-edge forex expert advisors, tools, and indicators meticulously crafted in MQL5. These trading marvels have undergone rigorous backt",2026-06-13
+github,Desmath3/MT5-EA-Project,breakout,https://github.com/Desmath3/MT5-EA-Project,6,"Private collection of MetaTrader 5 Expert Advisors and indicators - Bollinger Bands, RSI, MA ribbon, breakout, SFP, VWAP, and the Ighodalo gold/CFD strategy fam",2026-10-31
+github,GeneralTradingSarl/trading-experts,other,https://github.com/GeneralTradingSarl/trading-experts,6,Expert Advisors for MetaTrader 5,2026-10-27
+github,arian01Xx/MACDExpertAdvisor-MQL5,MACD/momentum,https://github.com/arian01Xx/MACDExpertAdvisor-MQL5,5,Using MACD indicator for one a expert advisor strategy in MQL5 metatrader5,2026-05-16
+github,alfatihmm/SimpleEAMT5,other,https://github.com/alfatihmm/SimpleEAMT5,4,Simple Experts Advisor for MetaTrader5,2026-05-16
+github,dharaarpan7/Metatrader5-ExpertAdvisor,other,https://github.com/dharaarpan7/Metatrader5-ExpertAdvisor,4,📈 **MetaTrader 5 Expert Advisor (EA)** — an automated trading bot built for MT5 that executes trades based on predefined strategies and market conditions. ⚙️ In,2026-05-16
+github,myk-francis/expert-advisors-mql5,other,https://github.com/myk-francis/expert-advisors-mql5,4,"This repo contains EA written for MetaTrader5, learning algorithmic trading.",2026-05-16
+github,hungpixi/ex5-backtest,other,https://github.com/hungpixi/ex5-backtest,4,"Headless CLI automation pipeline for compiling, backtesting, and risk-ranking MQL5 Expert Advisors on MetaTrader 5.",2026-09-10
+github,umermhr/MT5-EA-BB-RSI-ADX-PA-MTFA-MC,trend/MA,https://github.com/umermhr/MT5-EA-BB-RSI-ADX-PA-MTFA-MC,4,"The BB RSI ADX PA MTFA MC Expert Advisor is a custom MetaTrader 5 (MT5) trading robot that uses Bollinger Bands, RSI, ADX, and Multi Time Frame Analysis (MTFA) ",2026-01-05
+github,hushamQA/mql5-pro-skill,mean-reversion,https://github.com/hushamQA/mql5-pro-skill,3,"A production-grade Claude Skill for AI-assisted MQL5 development — Expert Advisors, indicators, GUI panels, Pine Script conversion, and Strategy Tester automati",2026-08-21
+github,GaryIgnatius/BTCUSD-Scalping-Robot-MT5,scalping,https://github.com/GaryIgnatius/BTCUSD-Scalping-Robot-MT5,3,Bitcoin USD 1-minute scalping EA for MT5 using Support and Resistance levels,2026-11-08
+github,EarnForex/Adjustable-MA-3G,mean-reversion,https://github.com/EarnForex/Adjustable-MA-3G,3,Adjustable MA 3G is the version of the Adjustable MA EA that works with the 3rd Gen MA custom indicator.,2026-04-17
+github,umermhr/MT5-EA-BB-RSI-Reversal,mean-reversion,https://github.com/umermhr/MT5-EA-BB-RSI-Reversal,1,The BB RSI Reversal Expert Advisor is a custom MetaTrader 5 (MT5) trading robot that uses Bollinger Bands and RSI indicators to identify potential reversal poin,2026-01-05
+github,saeedhooshmand-1993/smartt-ea-sdk,ML/AI,https://github.com/saeedhooshmand-1993/smartt-ea-sdk,1,SmartT AI Traders API is built for developers of intelligent trading bots. It provides access to top AI traders and active trading ideas to be combined with dif,2026-10-03
+github,SenaDev007/A2Sniper,other,https://github.com/SenaDev007/A2Sniper,0,EA MT5 - Robot Trading,2026-07-05
+github,masimbongeprince-crypto/Gold-Sniper-EA,other,https://github.com/masimbongeprince-crypto/Gold-Sniper-EA,0,XM MT5 Gold Trading Robot,2026-11-08
+github,zainiafiq15-art/EA-Robot-Budak-Malas,other,https://github.com/zainiafiq15-art/EA-Robot-Budak-Malas,0,EA Robot Trading MT5 - Budak Malas (Lazy Boy) - Automated Trading Strategy,2026-08-26
+github,botijuluka/MT5-Scalper-EA,scalping,https://github.com/botijuluka/MT5-Scalper-EA,0,Automated scalper trading robot for MT5 that opens/closes trades based on trend direction with automatic lot sizing,2026-08-30
+github,genesisaugustine98-web/GideonEA,mean-reversion,https://github.com/genesisaugustine98-web/GideonEA,0,"GideonEA — self-contained MT5 trading robot by Genesis Koodanga Augustine. RSI mean-reversion, 5 pairs, no cloud, no API keys.",2026-10-09
+github,umermhr/MT5-EA-MACD-RSI-Fuzzy,mean-reversion,https://github.com/umermhr/MT5-EA-MACD-RSI-Fuzzy,0,The MACD RSI Fuzzy Expert Advisor is a custom MetaTrader 5 (MT5) trading robot that uses MACD and RSI indicators along with fuzzy logic to identify potential tr,2025-02-13
+github,Kaa278/EMA-Trend-EA,trend/MA,https://github.com/Kaa278/EMA-Trend-EA,0,EMA Crossover EA adalah Expert Advisor (robot trading otomatis) berbasis strategi Exponential Moving Average (EMA) untuk platform MetaTrader 5 (MT5).,2025-10-17
