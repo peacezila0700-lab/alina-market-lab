@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "VIX": {
+      "description": "CBOE VIX close",
+      "coverage": "1990-01-02..2026-11-19"
+    },
+    "DIX": {
+      "description": "SqueezeMetrics dark-pool index",
+      "coverage": "2011-05-02..2026-11-19"
+    },
+    "GEX_sign": {
+      "description": "dealer gamma sign (SqueezeMetrics model)",
+      "coverage": "2011-05-02..2026-11-19"
+    },
+    "OFR_FSI": {
+      "description": "OFR Financial Stress Index",
+      "coverage": "2000-01-03..2026-11-18"
+    }
+  },
+  "generated_rows": 96,
+  "note": "Forward simple returns in percent. n_eff = non-overlapping count (~n/h): use it, not n, when judging significance."
+}

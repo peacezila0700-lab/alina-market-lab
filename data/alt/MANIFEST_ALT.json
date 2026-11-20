@@ -1,0 +1,105 @@
+{
+  "built_utc": "2026-11-20T18:58:39Z",
+  "sources": {
+    "dix_gex": {
+      "status": "OK",
+      "rows": 3913,
+      "first": "2011-05-02",
+      "last": "2026-11-19",
+      "cols": [
+        "date",
+        "price",
+        "DIX",
+        "GEX"
+      ],
+      "meaning": "DIX = dark-pool buy/sell imbalance (retail-ish demand); GEX = modelled dealer gamma in $bn per 1% move",
+      "caveat": "GEX assumes dealers long calls / short puts from OI only; sign can be wrong in unusual flow. DIX is a share of off-exchange volume, not a dollar flow."
+    },
+    "ofr_fsi": {
+      "status": "OK",
+      "rows": 6805,
+      "first": "2000-01-03",
+      "last": "2026-11-18",
+      "cols": [
+        "Date",
+        "OFR FSI",
+        "Credit",
+        "Equity valuation",
+        "Safe assets",
+        "Funding",
+        "Volatility",
+        "United States",
+        "Other advanced economies",
+        "Emerging markets"
+      ],
+      "meaning": "0 = normal; >0 = above-average stress. Sub-indices separate credit / equity valuation / safe assets / funding / volatility",
+      "caveat": "Weekly-ish publication lag; rescaled so history has zero mean."
+    },
+    "epu_us": {
+      "status": "OK",
+      "rows": 1379,
+      "cols": [
+        "Year",
+        "Month",
+        "News-Based Historical Economic Policy Uncertainty"
+      ],
+      "meaning": "News-based count of articles about policy uncertainty, monthly, 1985\u2192. A text-based risk measure that is genuinely independent of price data",
+      "caveat": "Monthly, published with a lag of days; the index is normalised to 100 = 1985-2009 mean."
+    },
+    "gpr": {
+      "status": "OK",
+      "rows": 1522,
+      "first": "1900-01-01",
+      "last": "2026-10-01",
+      "cols": [
+        "month",
+        "gpr",
+        "gprt",
+        "gpra",
+        "gprh",
+        "gprht",
+        "gprha",
+        "share_gpr",
+        "n10",
+        "share_gprh"
+      ],
+      "meaning": "GPR / GPRC (threats) / GPRA (acts) \u2014 newspaper-based geopolitical risk, 1900\u2192 for some series",
+      "caveat": "Monthly and slow-moving; good as a regime backdrop, not a trading trigger."
+    },
+    "eia_crude_stocks_w": {
+      "status": "OK",
+      "rows": 2303,
+      "first": "1982-08-20",
+      "last": "2026-11-13",
+      "meaning": "Weekly physical inventory / spot price \u2014 the actual supply side behind energy futures",
+      "caveat": "Published Wednesday 10:30 ET for crude; the release is the event, the level is the context."
+    },
+    "eia_henryhub_w": {
+      "status": "OK",
+      "rows": 1557,
+      "first": "1997-01-10",
+      "last": "2026-11-13",
+      "meaning": "Weekly physical inventory / spot price \u2014 the actual supply side behind energy futures",
+      "caveat": "Published Wednesday 10:30 ET for crude; the release is the event, the level is the context."
+    },
+    "okx_btc_funding": {
+      "status": "OK",
+      "rows": 100,
+      "meaning": "8-hourly perpetual funding = the price of leveraged long exposure; positive = longs pay shorts (crowded long). A carry + crowding measure in one number",
+      "caveat": "OKX only (one venue), 100 most recent points per call \u2192 build history by polling."
+    },
+    "okx_btc_lsr": {
+      "status": "OK",
+      "rows": 180,
+      "meaning": "Accounts with net long vs net short positions (retail-leaning). >1 = crowd is long",
+      "caveat": "Account-count ratio, not notional; classic contrarian input with weak standalone power."
+    },
+    "deribit_btc_iv": {
+      "status": "OK",
+      "rows": 986,
+      "spot": 60447.68,
+      "meaning": "Full BTC option chain: mark IV per strike/expiry \u2192 risk reversal (25d put IV \u2212 call IV) is the purest fear gauge in a 24/7 market; term structure inverts in stress",
+      "caveat": "A snapshot, not history. Mark IV is venue-published, not a tradeable quote; OI is per-contract."
+    }
+  }
+}

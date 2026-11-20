@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v1.1.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v1.2.zip
 """
 from __future__ import annotations
 
@@ -85,6 +85,79 @@ DATASETS = [
                   "Percent-of-OI is comparable across time and contracts; raw contract counts are not."],
          use_for=["contrarian positioning studies (idea I01/I02)", "regime filters", "lead-lag features"],
          leak_rule="Use available_from (Friday), never report_date (Tuesday)."),
+    dict(id="dix_gex", src="data/alt/dix_gex.csv", kind="positioning",
+         grade="B", title="Dark-pool index (DIX) + dealer gamma (GEX), daily 2011→2026",
+         card="SqueezeMetrics publishes two things nobody else gives away free: DIX, the share of "
+              "off-exchange volume that looks like retail buying (its complement is institutional "
+              "selling), and GEX, modelled dealer gamma in $ per 1% index move. Positive GEX = dealers "
+              "dampen moves (pinning); negative GEX = dealers amplify (trending, crash-prone).",
+         caveats=["GEX is modelled from open interest under the long-call/short-put assumption — dealer "
+                  "positioning is not observable, the sign can be wrong in unusual flow.",
+                  "DIX is a share of off-exchange volume, not a dollar flow, and its definition is fixed "
+                  "by the vendor.",
+                  "Index-level only (SPX/SPY), no single-name or sector detail."],
+         use_for=["regime/pinning analysis", "vol-of-vol features", "sizing overlays"],
+         leak_rule="Published after the close for the same day; use t+1."),
+    dict(id="ofr_financial_stress", src="data/alt/ofr_fsi.csv", kind="stress",
+         grade="A", title="OFR Financial Stress Index + 5 sub-indices, daily 2000→2026",
+         card="Official US Treasury-office stress gauge. 0 = historical average; positive = above-average "
+              "stress. Sub-indices split credit, equity valuation, safe assets, funding and volatility, so "
+              "you can see WHICH kind of stress is building instead of one blended number.",
+         caveats=["Weekly-ish publication lag on some legs; not intraday.",
+                  "Rescaled so the full history has zero mean — the level is only meaningful relative to "
+                  "that history."],
+         use_for=["early warning", "regime state", "risk gating"],
+         leak_rule="Use the published date, not the observation date."),
+    dict(id="policy_geopolitical_risk", src=["data/alt/epu_us_monthly.csv", "data/alt/gpr_monthly.csv"],
+         kind="macro-risk", grade="A", title="Economic Policy Uncertainty (1900→) + Geopolitical Risk (1900→)",
+         card="The two text-based risk indices most cited in academic macro trading: EPU counts newspaper "
+              "articles about policy uncertainty, GPR counts geopolitical-risk coverage (threats vs acts). "
+              "Both are genuinely independent of price data — the rarest property in a feature.",
+         caveats=["Monthly frequency and published with a lag; use as a backdrop, never as a trigger.",
+                  "Newspaper-count indices are sensitive to the newspaper set; revisions happen."],
+         use_for=["regime backdrop", "tail-risk context", "long-horizon conditioning"],
+         leak_rule="Month M value is only known after month M ends (publication lag of days)."),
+    dict(id="physical_supply_eia", src=["data/alt/eia_crude_stocks_w.csv", "data/alt/eia_henryhub_w.csv"],
+         kind="supply", grade="A", title="EIA weekly crude stocks (1982→) + Henry Hub gas (1997→)",
+         card="The physical layer behind energy futures: weekly commercial crude inventories and the "
+              "Henry Hub spot price. Inventories are the single biggest scheduled driver of crude, and "
+              "they are measured, not derived from prices.",
+         caveats=["Crude stocks release Wednesday 10:30 ET — the release is the event, the level is context.",
+                  "Aggregate US stocks, not Cushing or product-specific; seasonality is strong."],
+         use_for=["energy supply surprises", "inflation nowcast inputs", "seasonality studies"],
+         leak_rule="Weekly, released Wednesday; the prior week's number is known."),
+    dict(id="crypto_positioning_flows", src=["data/alt/okx_btc_funding.csv", "data/alt/okx_btc_long_short_ratio.csv"],
+         kind="positioning", grade="A", title="Crypto perpetual funding + top-trader long/short ratio (OKX)",
+         card="Exchange-published, free: 8-hourly funding rate (the price of leveraged long exposure — "
+              "positive means longs pay shorts, i.e. crowded long) and the account-level long/short ratio. "
+              "A crowding and carry measure in one number, available 24/7 with no reporting lag.",
+         caveats=["Single venue (OKX); Binance blocks this sandbox IP and Bybit is CloudFront-blocked.",
+                  "Only the last 100 funding points per call — history must be accumulated daily.",
+                  "Account-count ratio, not notional exposure."],
+         use_for=["crypto carry", "crowding/contrarian features", "24/7 regime"],
+         leak_rule="Real-time; funding is known in advance for the next 8h window."),
+    dict(id="deribit_btc_options", src=["data/alt/deribit_btc_chain_snapshot.csv",
+                                        "data/alt/deribit_btc_term_structure.csv"],
+         kind="volatility", grade="A", title="Deribit BTC option chain snapshot → IV term structure & skew",
+         card="Full BTC option chain (strike × expiry) with mark IV, open interest and volume, plus the "
+              "derived ATM IV term structure. The 25-delta put-vs-call IV gap in a 24/7 market is the "
+              "purest fear gauge available for free anywhere.",
+         caveats=["A SNAPSHOT, not history — must be collected daily to become a series.",
+                  "Mark IV is venue-published, not a tradeable quote; OI is per-contract.",
+                  "Crypto only in this pack; SPX chains are blocked from this sandbox (see DATA_SOURCES)."],
+         use_for=["crypto tail pricing", "IV term-structure inversion detection", "risk-reversal features"],
+         leak_rule="Real-time snapshot."),
+    dict(id="base_rates_conditional", src="data/facts/base_rates.csv", kind="base-rates",
+         grade="B", title="Conditional forward-return base rates (96 rows), measured in this repo",
+         card="The probability layer: given a VIX bucket / DIX quintile / GEX sign / OFR-FSI bucket today, "
+              "what did SPY do over the next 5/21/63/252 days — median, mean, % positive, p10/p90, worst. "
+              "This is what 'buy fear' actually means numerically, computed from our own official data.",
+         caveats=["Overlapping windows: `n_eff` (~n/horizon) is the honest independent sample; several "
+                  "buckets have n_eff under 30 and are anecdotes (e.g. VIX>=40 at 252d).",
+                  "Conditional distributions of the MARKET, not of a strategy — no costs, no timing.",
+                  "96 rows = multiple looks; treat extremes as hypotheses to hold out, not findings."],
+         use_for=["prior probabilities", "sanity-checking any claimed edge", "sizing by odds"],
+         leak_rule="All buckets are trailing (rolling percentile or fixed level) — usable in real time."),
     dict(id="vix_cboe_daily", src="data/official/VIX_CBOE_D.csv", kind="volatility",
          grade="A", title="CBOE VIX daily close, 1990–2026 (9,320 rows)",
          card="30-day implied volatility of the S&P 500. The reference series for the variance risk "
@@ -256,7 +329,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "1.1",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "1.2",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -301,7 +374,8 @@ def main() -> None:
         json.dump(catalog, f, indent=2)
 
     # ---- results json (all artifacts an AI may want to read quickly)
-    for rel in ["research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
+    for rel in ["data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+                "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
                 "research/artifacts/h09_ecn.json", "research/artifacts/h09_retail.json",
@@ -324,8 +398,11 @@ def main() -> None:
 
     # ---- knowledge docs written by hand elsewhere
     for doc in ("README_FOR_AI.md", "DATA_SOURCES.md", "PITFALLS.md", "WHAT_FAILED.md",
-                "IDEAS_TO_TEST.md", "GLOSSARY.md", "HOW_TO_BACKTEST.md"):
+                "IDEAS_TO_TEST.md", "GLOSSARY.md", "HOW_TO_BACKTEST.md",
+                "DECISION_INPUTS_ATLAS.md", "WHAT_THE_BOT_NEEDS.md"):
         s = os.path.join(ROOT, "datapack_src", doc)
+        if not os.path.exists(s):
+            s = os.path.join(ROOT, "research", doc)          # atlas + plan live in research/
         if os.path.exists(s):
             shutil.copy2(s, os.path.join(PACK, "knowledge", doc))
 
@@ -353,7 +430,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v1.1.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v1.2.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

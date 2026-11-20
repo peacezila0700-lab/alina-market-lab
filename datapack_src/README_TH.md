@@ -17,6 +17,15 @@
 | ความสนใจสาธารณะ | `data/attention_wikipedia_pageviews` | pageviews 8 สินทรัพย์ 2016–2026 |
 | ระบบนิเวศ EA ฟรี | `data/free_ea_catalog` | 332 แหล่ง + ผลทดสอบ 144 แบบ (ไม่มีตัวไหนชนะ null) |
 | ผลทดลองทั้งหมด | `results/experiments.jsonl` | 8 การทดลอง + verdict + ตัวเลข |
+| **DIX/GEX** | `data/dix_gex` | dark-pool flow + dealer gamma รายวัน 2011–2026 |
+| **ความเครียดระบบการเงิน** | `data/ofr_financial_stress` | OFR FSI + 5 sub-index (credit/funding/vol) 2000–2026 |
+| **ความเสี่ยงนโยบาย/ภูมิรัฐศาสตร์** | `data/policy_geopolitical_risk` | EPU + GPR รายเดือน ตั้งแต่ 1900 |
+| **ซัพพลายจริง** | `data/physical_supply_eia` | สต็อกน้ำมันรายสัปดาห์ 1982– / Henry Hub 1997– |
+| **โพซิชันคริปโต** | `data/crypto_positioning_flows` | funding rate + long/short ratio (OKX) |
+| **ราคา options คริปโต** | `data/deribit_btc_options` | IV surface + term structure (Deribit) |
+| **ความน่าจะเป็นพื้นฐาน** | `data/base_rates_conditional` | VIX/DIX/GEX/FSI → ผลตอบแทน SPY 5/21/63/252 วัน (96 แถว) |
+| **แผนที่ปัจจัยตัดสินใจ** | `knowledge/DECISION_INPUTS_ATLAS.md` | 12 ชั้นข้อมูลที่นักวิเคราะห์ใช้ + หลักความน่าจะเป็น |
+| **สิ่งที่บอทยังขาด** | `knowledge/WHAT_THE_BOT_NEEDS.md` | ช่องว่าง 7 ข้อ + backlog จัดอันดับตาม prior |
 | องค์ความรู้ | `knowledge/*.md` | แหล่งข้อมูลที่ยังใช้ได้/ตายแล้ว, กับดัก, สิ่งที่ล้มเหลว, ไอเดียที่ยังไม่ได้ทดสอบพร้อม "ความน่าจะเป็น" |
 | โค้ด | `code/` | สคริปต์ทั้งหมด + EA (AlinaRiskGovernor.mq5) |
 
