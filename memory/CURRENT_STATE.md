@@ -17,6 +17,13 @@
 - Decisions D01–D06: `docs/DECISION_LOG.md`
 - T08 Hypothesis register: `research/HYPOTHESIS_REGISTER.csv` (H01–H04 ranked) + pre-registration in `docs/HYPOTHESIS_NOTES.md` + `research/EXPERIMENT_LOG.csv` (EXP-0001 planned)
 
+## PROJECT REVIEW #1 (2026-11-20) — hard stop at 6 hypotheses
+- EXP-0003 (H1 fade): IS −1.66, VALID +0.97 (CI spans 0), control flips sign → **H05 rejected**
+- EXP-0004 (H1 breakout): IS **−2.93, CI [−4.27, −1.54]** → **H06 rejected (significantly negative)**
+- Both directions lose after cost ⇒ cost + adverse selection dominate, not tuning
+- **Zero validated edges.** Full review: `reports/PROJECT_REVIEW_1.md`
+- Recommendation: get MT5 export (real spread/swap) then re-run, or stop with the negative result
+
 ## EXP-0002 result (2026-11-20) — H01 REJECTED
 - Power expansion without changing the rule: 26y history (2000/2003→2026) × 5 pairs.
 - **CLEAN sample (never used before): n=94, +5.81 pips/trade, PF 1.06, CI [−52.55, +67.66], 2/5 pairs positive**

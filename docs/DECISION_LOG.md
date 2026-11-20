@@ -45,3 +45,16 @@
 - **Forbidden:** any retune of threshold/horizon/stop on the same data
 - **Consequence:** both the OOS block and the CLEAN block are consumed → any further test needs
   untouched data (intraday) or a structurally different hypothesis family
+
+## D08 — Intraday arena chosen for future tests; both mechanism families rejected
+- **Date:** 2026-11-20 · **Status:** ACTIVE
+- Intraday (H1) chosen because financing is zero by construction (see FEASIBILITY_MATH) and
+  it yields ~79 trades/year vs 1.4 for D1 → statistically answerable in weeks.
+- EXP-0003 (fade, H05) rejected: IS −1.66 pips, validation CI spans 0, control flips sign.
+- EXP-0004 (breakout, H06) rejected: IS −2.93 pips, CI [−4.27, −1.54], negative in all blocks.
+- Consequence: no retuning of H05/H06. Any further test requires measured broker costs (T18).
+
+## D09 — Hard stop at 6 of 12 hypotheses
+- **Date:** 2026-11-20 · **Status:** ACTIVE
+- Triggered PROJECT REVIEW #1. No further experiments are authorised until the cost model is
+  measured (owner MT5 export) or the owner explicitly chooses a different arena.

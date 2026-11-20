@@ -15,7 +15,11 @@
 | T09 | Backtest engine + unit tests + EXP-0001 | DONE — H01 not supported | T08 | reports/EXP_0001.md, 13/13 tests |
 | T10 | Walk-forward + OOS validation | NOT RUN — moot: H01 rejected first | T09 | deferred |
 | T13 | EXP-0002 basket replication (26y × 5 pairs) | DONE — H01 rejected | T09 | reports/EXP_0002.md |
-| T14 | Direction decision after rejection (intraday vs new hypothesis family) | WAITING ON OWNER | T13 | decision in DECISION_LOG |
+| T14 | Direction decision after rejection | DONE — chose intraday (zero swap) | T13 | D08 |
+| T15 | EXP-0003 H1 fade (H05, pre-registered) | DONE — rejected | T14 | reports/EXP_0003.md |
+| T16 | EXP-0004 H1 breakout (H06, pre-registered) | DONE — rejected | T15 | reports/EXP_0004.md |
+| T17 | PROJECT REVIEW #1 (hard stop at 6 hypotheses) | DONE | T16 | reports/PROJECT_REVIEW_1.md |
+| T18 | Re-run with measured broker spread/swap | BLOCKED — owner MT5 export | T17 | decision pending |
 | T10 | Walk-forward + OOS holdout (locked 6 months) | TODO | T09 | IS/OOS report |
 | T11 | Broker cost model | BLOCKED | owner: broker + account type | cost spec documented |
 | T12 | MT5 EA (MQL5) | PARKED | T10 pass | demo only, never live |
