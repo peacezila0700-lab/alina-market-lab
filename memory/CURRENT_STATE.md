@@ -60,3 +60,18 @@
 ## Not verified yet
 - Dukascopy throughput over thousands of files (rate limits observed)
 - Validity of Yahoo H1 candle boundaries vs tick source
+
+## Update 2026-11-20 (late) — QR-002 look-ahead found; event layer built
+- **QR-002:** multi-asset screen + portfolio used a same-bar position (`pos[i]*ret[i]`). Fixed to
+  `pos[i-1]`. Previous "Donchian beats everything" result was the bug: DONCH_30 portfolio Sharpe
+  1.72 → **0.37**, vs equal-weight buy & hold **0.70**. Regression test added (14/14 pass).
+  `compare_strategies.py` had the same defect; re-run, conclusion unchanged (FX ≈ 0 net of cost).
+- Corrected screen: best rules are mostly below their own buy & hold; the only repeatable thread is
+  **mean-reversion** (Z_FADE on AUDUSD +0.26, GBPUSD +0.23, FTSE +0.13; MA_20_100 on TLT +0.19, DXY +0.11).
+- Event layer (free): 205 FOMC dates 1994-2026, weekly calendar archive (forward-only),
+  8 assets × 3,976 days of Wikipedia attention. FOMC days move markets more (t up to 2.84);
+  attention is a diagnostic, not an edge (portfolio Sharpe 0.64 → 0.63).
+- **Blocker:** `.git/config` is excluded from workspace snapshots, so the remote+token were wiped.
+  Two commits (9a1961c, 609a5a4) are local only. Needs the owner to paste the PAT again.
+- **Next:** pre-registered mean-reversion test (A1) on the FX/FTSE/AUDUSD/GBPUSD cluster with
+  walk-forward + null control; then T18 measured spreads.
