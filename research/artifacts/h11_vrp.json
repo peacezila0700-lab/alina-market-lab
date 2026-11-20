@@ -1,0 +1,303 @@
+{
+  "generated_utc": "2026-11-20T18:00:26Z",
+  "prereg": "docs/PREREG_H11.md",
+  "h11a": {
+    "quintiles": [
+      {
+        "quintile": 1,
+        "months": 64,
+        "mean_vrp": -4.28,
+        "mean_next_ret_pct": 0.398,
+        "annualised_pct": 4.78,
+        "hit_pct": 57.8
+      },
+      {
+        "quintile": 2,
+        "months": 64,
+        "mean_vrp": 2.08,
+        "mean_next_ret_pct": -0.046,
+        "annualised_pct": -0.55,
+        "hit_pct": 48.4
+      },
+      {
+        "quintile": 3,
+        "months": 64,
+        "mean_vrp": 3.94,
+        "mean_next_ret_pct": 0.796,
+        "annualised_pct": 9.55,
+        "hit_pct": 64.1
+      },
+      {
+        "quintile": 4,
+        "months": 64,
+        "mean_vrp": 5.89,
+        "mean_next_ret_pct": -0.029,
+        "annualised_pct": -0.35,
+        "hit_pct": 51.6
+      },
+      {
+        "quintile": 5,
+        "months": 65,
+        "mean_vrp": 10.1,
+        "mean_next_ret_pct": 0.634,
+        "annualised_pct": 7.61,
+        "hit_pct": 61.5
+      }
+    ],
+    "overlay": {
+      "months": 321,
+      "sharpe": 0.337,
+      "cagr": 1.5,
+      "vol": 4.75,
+      "maxdd": 16.1
+    },
+    "overlay_2x_cost": {
+      "months": 321,
+      "sharpe": 0.314,
+      "cagr": 1.39,
+      "vol": 4.74,
+      "maxdd": 17.1
+    },
+    "buy_hold_panel": {
+      "months": 321,
+      "sharpe": 0.406,
+      "cagr": 3.74,
+      "vol": 10.38,
+      "maxdd": 55.4
+    },
+    "exposure_pct": 17.8,
+    "null_pct": 82.6,
+    "null_mean": 0.15,
+    "walk_forward": {
+      "windows": [
+        {
+          "window": "2001-2005",
+          "sharpe": NaN
+        },
+        {
+          "window": "2002-2006",
+          "sharpe": NaN
+        },
+        {
+          "window": "2003-2007",
+          "sharpe": -0.32
+        },
+        {
+          "window": "2004-2008",
+          "sharpe": -0.44
+        },
+        {
+          "window": "2005-2009",
+          "sharpe": 0.64
+        },
+        {
+          "window": "2006-2010",
+          "sharpe": 0.77
+        },
+        {
+          "window": "2007-2011",
+          "sharpe": 0.96
+        },
+        {
+          "window": "2008-2012",
+          "sharpe": 0.94
+        },
+        {
+          "window": "2009-2013",
+          "sharpe": 1.02
+        },
+        {
+          "window": "2010-2014",
+          "sharpe": 0.63
+        },
+        {
+          "window": "2011-2015",
+          "sharpe": 0.49
+        },
+        {
+          "window": "2012-2016",
+          "sharpe": -0.05
+        },
+        {
+          "window": "2013-2017",
+          "sharpe": -0.34
+        },
+        {
+          "window": "2014-2018",
+          "sharpe": -0.73
+        },
+        {
+          "window": "2015-2019",
+          "sharpe": -0.38
+        },
+        {
+          "window": "2016-2020",
+          "sharpe": -0.24
+        },
+        {
+          "window": "2017-2021",
+          "sharpe": -0.05
+        },
+        {
+          "window": "2018-2022",
+          "sharpe": -0.04
+        },
+        {
+          "window": "2019-2023",
+          "sharpe": 0.12
+        },
+        {
+          "window": "2020-2024",
+          "sharpe": -0.03
+        },
+        {
+          "window": "2021-2025",
+          "sharpe": 0.39
+        }
+      ],
+      "positive_pct": 42.9
+    }
+  },
+  "h11b": {
+    "start": "2011-02-28",
+    "end": "2026-11-17",
+    "months": 190,
+    "short_net": {
+      "months": 190,
+      "sharpe": 0.694,
+      "cagr": NaN,
+      "vol": 63.07,
+      "maxdd": 419.3
+    },
+    "short_2x_cost": {
+      "months": 190,
+      "sharpe": 0.675,
+      "cagr": NaN,
+      "vol": 63.07,
+      "maxdd": 422.2
+    },
+    "buy_hold_vixy": {
+      "months": 190,
+      "sharpe": -0.714,
+      "cagr": -47.43,
+      "vol": 63.07,
+      "maxdd": 5408164.3
+    },
+    "worst_rolling_12m_pct": -103.7,
+    "worst_day_pct": -43.1,
+    "worst_month_pct": -101.3,
+    "null_pct": 99.6,
+    "null_mean": -0.016,
+    "walk_forward": {
+      "windows": [
+        {
+          "window": "2012-2016",
+          "sharpe": 1.21
+        },
+        {
+          "window": "2013-2017",
+          "sharpe": 1.31
+        },
+        {
+          "window": "2014-2018",
+          "sharpe": 0.56
+        },
+        {
+          "window": "2015-2019",
+          "sharpe": 0.8
+        },
+        {
+          "window": "2016-2020",
+          "sharpe": 0.47
+        },
+        {
+          "window": "2017-2021",
+          "sharpe": 0.47
+        },
+        {
+          "window": "2018-2022",
+          "sharpe": 0.19
+        },
+        {
+          "window": "2019-2023",
+          "sharpe": 0.74
+        },
+        {
+          "window": "2020-2024",
+          "sharpe": 0.53
+        },
+        {
+          "window": "2021-2025",
+          "sharpe": 1.21
+        }
+      ],
+      "positive_pct": 100.0
+    },
+    "leverage_scan": [
+      {
+        "exposure_pct": -100.0,
+        "worst_rolling_12m_pct": -103.7,
+        "sharpe": 0.69,
+        "cagr_pct": "RUINED",
+        "maxdd_pct": "RUINED"
+      },
+      {
+        "exposure_pct": -50.0,
+        "worst_rolling_12m_pct": -50.4,
+        "sharpe": 0.69,
+        "cagr_pct": 17.45,
+        "maxdd_pct": 168.7
+      },
+      {
+        "exposure_pct": -35.0,
+        "worst_rolling_12m_pct": -34.4,
+        "sharpe": 0.69,
+        "cagr_pct": 13.45,
+        "maxdd_pct": 86.0
+      },
+      {
+        "exposure_pct": -25.0,
+        "worst_rolling_12m_pct": -24.0,
+        "sharpe": 0.69,
+        "cagr_pct": 10.08,
+        "maxdd_pct": 52.2
+      },
+      {
+        "exposure_pct": -20.0,
+        "worst_rolling_12m_pct": -18.9,
+        "sharpe": 0.69,
+        "cagr_pct": 8.23,
+        "maxdd_pct": 38.8
+      },
+      {
+        "exposure_pct": -10.0,
+        "worst_rolling_12m_pct": -9.2,
+        "sharpe": 0.69,
+        "cagr_pct": 4.26,
+        "maxdd_pct": 16.9
+      }
+    ]
+  },
+  "verdicts": {
+    "H11a": {
+      "checks": {
+        "A1_net_sharpe_gt_0.35": false,
+        "A2_null_pct_ge_95": false,
+        "A3_wf_positive_ge_60pct": false,
+        "A4_survives_2x_cost": true
+      },
+      "passed": false
+    },
+    "H11b": {
+      "checks": {
+        "A1_net_sharpe_gt_0.35": true,
+        "A2_null_pct_ge_95": true,
+        "A3_wf_positive_ge_60pct": true,
+        "A4_survives_2x_cost": true,
+        "A5_worst_12m_better_than_-35pct": false,
+        "A6_no_day_worse_than_-20pct": false
+      },
+      "passed": false
+    }
+  }
+}

@@ -108,3 +108,13 @@
   **zero validated edges**; one fake edge found and killed (QR-002).
 - NEXT (per PREREG_H10 escape clause): H11 = volatility risk premium / carry — a mechanism family
   never tested here; must not reuse reversion data or rules.
+
+## Update 2026-11-20 (H11 VRP) — premium is real, retail trade is not survivable
+- PREREG_H11 committed before code. Data: CBOE VIX 9,320 rows (1990+), SPY/VIXY from Yahoo.
+- H11a (VRP as state variable): non-monotone quintiles, overlay +0.337 vs B&H +0.406, null 82.6 => FAIL.
+- H11b (short VIXY 2011-2026): Sharpe +0.694, null >=95, WF >=60%, survives 2x cost => PASSES A1-A4;
+  FAILS A5/A6 (worst 12m -103.7%, worst day -43.1%). Equity goes negative at -100% notional.
+- Leverage scan: -20% notional = +8.2%/yr, maxDD 38.8%; -10% = +4.3%/yr, maxDD 16.9%.
+- => First mechanism to pass a statistical test in this project; rejected on survivability.
+- NEXT: carry (policy-rate sources verified: ECB 200, BoC valet 200, RBA 200, Norges 200, BoE CSV 200,
+  SNB 200). Dead: OECD SDMX 403, Riksbank SWEA 204, RBNZ 403. CBOE 307->follow with -L.

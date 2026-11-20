@@ -105,3 +105,14 @@ Owner approves the test order → **T09**: build the backtest engine with unit t
 - Per-leg: EURJPY/EURCAD/EURCHF carry it; EURSEK/EURNOK net negative (spreads 44-48 pips);
   EURUSD has no signal. Acting on that = post-hoc selection -> must be H10 pre-registered first.
 - Only remaining confirmation: forward paper run at the owner's actual broker cost.
+
+## H11 — variance risk premium (EXP-0008, REJECTED as a strategy; first mechanism to pass a stats test)
+- VIX (CBOE, 9,320 rows 1990+) minus trailing 21d realised vol = VRP, strictly past-only.
+- **H11a (state variable):** quintile sort of next-month panel returns is NON-monotone
+  (+4.8 / -0.6 / +9.6 / -0.4 / +7.6 %/yr). Overlay Sharpe +0.337 < buy&hold 0.406, null_pct 82.6. FAIL.
+- **H11b (short VIXY, 190 months):** Sharpe +0.694, null_pct >=95, WF >=60%, survives 2x cost
+  => passes A1-A4. **Fails A5/A6:** worst rolling 12m **-103.7%** (equity negative), worst day
+  **-43.1%** (VIXY +43.1% on 2024-08-05). The premium is real; the trade is a ruin coin-flip.
+- Survivable sizing (descriptive): -20% notional -> ~8.2%/yr, maxDD 38.8%, worst 12m -18.9%.
+- Interpretation: unlike trend/reversion (no premium at all), this premium exists and is paid for
+  taking a loss that arrives all at once. Retail conclusion = risk budgeting, not signal.
