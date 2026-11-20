@@ -1,0 +1,64 @@
+{
+  "IS": {
+    "n": 10,
+    "net_exp": 68.33,
+    "gross_exp": 69.63,
+    "pf": 2.29,
+    "maxdd": 304.2,
+    "win": 70.0,
+    "avg_hold": 15.0,
+    "cost": 1.3,
+    "exposure": 8.1,
+    "ci_lo": -7.45,
+    "ci_hi": 164.8,
+    "total": 683.3
+  },
+  "VALIDATION": {
+    "n": 3,
+    "net_exp": 104.93,
+    "gross_exp": 106.23,
+    "pf": Infinity,
+    "maxdd": 0.0,
+    "win": 100.0,
+    "avg_hold": 16.7,
+    "cost": 1.3,
+    "exposure": 13.7,
+    "ci_lo": 104.93,
+    "ci_hi": 104.93,
+    "total": 314.8
+  },
+  "OOS_LOCKED": {
+    "n": 1,
+    "net_exp": -135.89,
+    "gross_exp": -134.59,
+    "pf": 0.0,
+    "maxdd": 0.0,
+    "win": 0.0,
+    "avg_hold": 17.0,
+    "cost": 1.3,
+    "exposure": 4.5,
+    "ci_lo": NaN,
+    "ci_hi": NaN,
+    "total": -135.9
+  },
+  "ALL": {
+    "n": 14,
+    "net_exp": 61.58,
+    "gross_exp": 62.88,
+    "pf": 2.29,
+    "maxdd": 304.2,
+    "win": 71.4,
+    "avg_hold": 15.5,
+    "cost": 1.3,
+    "exposure": 8.4,
+    "ci_lo": -5.36,
+    "ci_hi": 138.4,
+    "total": 862.2
+  },
+  "_random_benchmark": {
+    "sims": 2000,
+    "mean": 2.02,
+    "p5": -111.32,
+    "p95": 114.04
+  }
+}
