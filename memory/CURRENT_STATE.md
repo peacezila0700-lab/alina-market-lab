@@ -17,8 +17,16 @@
 - Decisions D01–D06: `docs/DECISION_LOG.md`
 - T08 Hypothesis register: `research/HYPOTHESIS_REGISTER.csv` (H01–H04 ranked) + pre-registration in `docs/HYPOTHESIS_NOTES.md` + `research/EXPERIMENT_LOG.csv` (EXP-0001 planned)
 
-## Waiting on owner (Gate 5)
-- Approve test order H01 -> H02 -> H03 -> H04 before any backtest is written
+## EXP-0001 result (2026-11-20)
+- **H01: NOT SUPPORTED** — 14 trades in 10 years (min 30 required). IS n=10, +68.3 pips/trade,
+  PF 2.29, but 95% CI [-7.45, +164.8] includes 0. Random-entry benchmark p95 = +114 → inside noise.
+- Validation (n=3) and OOS (n=1) are untestable. Full report: `reports/EXP_0001.md`
+- Binding constraint is now **statistical power**, not data quality or cost.
+- Rule was NOT re-tuned (that would burn the only honest test left).
+
+## Waiting on owner
+- Choose how to raise power: (A) MT5 history export to ~2003, (B) cross-sectional basket of
+  5 mean-reverting pairs, (C) H1 frequency, (D) new hypothesis H05 with lower threshold.
 
 ## In progress / blocked by source
 - Ingest M1 candles: **BLOCKED — Dukascopy returns HTTP 429** (rate limit, source-side, verified 5/5 curl)

@@ -12,7 +12,8 @@
 | T07 | Descriptive stats (D1, 10y) | DONE | T04b | reports/RESEARCH_D1.md (findings with status) |
 | T07b | MT5 history export (EURGBP H1, broker-grade) | TODO — owner action | — | CSV with real spread |
 | T08 | Hypothesis register (3–5 falsifiable) | DONE — awaiting owner approval of order | T07 | research/HYPOTHESIS_REGISTER.csv + docs/HYPOTHESIS_NOTES.md |
-| T09 | Baseline #1 mean-reversion + backtest engine + unit tests (EXP-0001) | READY — needs Gate 5 approval | T08 | trade ledger + net expectancy after cost |
+| T09 | Backtest engine + unit tests + EXP-0001 | DONE — H01 not supported | T08 | reports/EXP_0001.md, 13/13 tests |
+| T10 | Walk-forward + OOS validation | NOT RUN — OOS kept unused (n=1) | T09 | deferred |
 | T10 | Walk-forward + OOS holdout (locked 6 months) | TODO | T09 | IS/OOS report |
 | T11 | Broker cost model | BLOCKED | owner: broker + account type | cost spec documented |
 | T12 | MT5 EA (MQL5) | PARKED | T10 pass | demo only, never live |
