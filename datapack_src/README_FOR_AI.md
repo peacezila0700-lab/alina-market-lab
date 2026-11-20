@@ -1,10 +1,10 @@
-# ALINA DATAPACK v2.3 — read this first (≈900 tokens, saves you thousands)
+# ALINA DATAPACK v2.4 — read this first (≈900 tokens, saves you thousands)
 
 ## What this is
 A self-contained research base built by an agent over ~12 sessions, for an AI trading system to
 consume **without re-searching the internet**. It contains market data, positioning data,
 volatility data, measured trading costs, calendars, an attention proxy, a catalogue of 332 free
-EAs, **39 datasets** including a 68-ETF cross-section, the CBOE volatility term structure with
+EAs, **40 datasets** including a 68-ETF cross-section, the CBOE volatility term structure with
 conditioned base rates, a 36-year Treasury curve, news headlines with entity tags, per-instrument
 support/resistance levels, and a **ready-made daily brief** (`briefs/latest.md`) — plus **every
 experiment run here with its verdict**.
@@ -50,6 +50,12 @@ look-ahead bug in this repo's own code. Treat every number here as *evidence*, n
 5. **Report a null.** Every result needs a turnover-matched random control; otherwise you are
    measuring luck. Random selection loses ~0.3 Sharpe after costs — that is the sanity check.
 6. **Never martingale.** 5 of 5 instruments in the grid/doubling test were wiped.
+
+## New in v2.4 (what to actually use)
+- `event_packs/*.json` — one ~35 KB file per day: calendar, 17-instrument snapshot, levels, VIX-curve
+  state + conditioned base rates, carry, headlines, and the 12 nearest historical states with their
+  realised next-5/21-day outcomes. Build any date with `python3 scripts/event_pack.py YYYY-MM-DD`.
+  **This is the file to feed a local model when the question is about one day or one event.**
 
 ## New in v2.3 (what to actually use)
 - `intraday_h1_bidask` — 23 years of hourly FX with both sides of the quote, and

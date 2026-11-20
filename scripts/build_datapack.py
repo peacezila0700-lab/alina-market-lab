@@ -13,11 +13,12 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.3.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.4.zip
 """
 from __future__ import annotations
 
 import csv
+import gzip
 import hashlib
 import json
 import os
@@ -326,12 +327,12 @@ DATASETS = [
                   "fetcher parses with a regex on purpose."],
          use_for=["vol/regime conditioning priors", "gap-risk flagging", "variance forecasting"],
          leak_rule="VIX closes are stamped same-day; anything traded on them must use the next session."),
-    dict(id="intraday_h1_bidask", src=["data/intraday/EURUSD_H1_bidask.csv",
-                                      "data/intraday/EURGBP_H1_bidask.csv",
-                                      "data/intraday/GBPUSD_H1_bidask.csv",
-                                      "data/intraday/EURCHF_H1_bidask.csv",
-                                      "data/intraday/USDJPY_H1_bidask.csv",
-                                      "data/intraday/XAUUSD_H1_bidask.csv",
+    dict(id="intraday_h1_bidask", src=["data/intraday/EURUSD_H1_bidask.csv.gz",
+                                      "data/intraday/EURGBP_H1_bidask.csv.gz",
+                                      "data/intraday/GBPUSD_H1_bidask.csv.gz",
+                                      "data/intraday/EURCHF_H1_bidask.csv.gz",
+                                      "data/intraday/USDJPY_H1_bidask.csv.gz",
+                                      "data/intraday/XAUUSD_H1_bidask.csv.gz",
                                       "data/intraday/MANIFEST_H1_BIDASK.json",
                                       "data/facts/HOUR_OF_DAY_PROFILE.md",
                                       "data/facts/hour_of_day_profile.csv"],
@@ -389,6 +390,19 @@ DATASETS = [
                   "Survivorship: only funds alive today are in the list."],
          use_for=["cross-sectional factor tests", "rotation studies", "regime breadth measures"],
          leak_rule="Daily close; use next session for fills."),
+    dict(id="event_packs", src=["packs/*.json"], kind="brief", grade="B",
+         title="Per-day event packs: one self-describing JSON per trading day (~35 KB)",
+         card="Built by scripts/event_pack.py. For any date it assembles the calendar, a 17-instrument "
+              "market snapshot (returns, realised vol, ATR, distance to MAs), the measured levels, the "
+              "VIX-curve state with its conditioned base rates, carry (UST slopes, BTC funding), the "
+              "headlines of a +/-N day window, and 'similar_days': the 12 nearest historical states with "
+              "what actually happened over the next 5 and 21 days.",
+         caveats=["similar_days neighbours come only from days strictly before the target date, but n=12 "
+                  "is small: read the min/max spread, not the median.",
+                  "The pack is context, not a signal file: nothing in it is a recommendation.",
+                  "Levels/news only exist from the date collection started for those sources."],
+         use_for=["per-day/per-event analysis by a local model", "replay studies", "explaining a move"],
+         leak_rule="Every field is stamped with its as-of; a decision for date D may use data up to D-1 close."),
     dict(id="daily_briefs", src=["briefs/latest.md", "briefs/latest.json"], kind="brief",
          grade="B", title="Daily brief: the compressed state a local AI reads each morning",
          card="One small file that replaces the whole pack for daily use: current state (VIX percentile, "
@@ -442,7 +456,10 @@ def profile(path) -> dict:
     total_rows, firsts, lasts, cols = 0, [], [], []
     sample = None
     for f in files:
-        with open(f, newline="") as fh:
+        # .gz members must be opened in binary and decompressed: opening them as text raises
+        # UnicodeDecodeError (0x8b is the gzip magic) and killed a pack build once.
+        opener = gzip.open if f.endswith(".gz") else open
+        with opener(f, "rt", newline="") as fh:
             rd = csv.reader(fh)
             try:
                 header = next(rd)
@@ -471,7 +488,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.3",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.4",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -573,7 +590,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.3.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.4.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

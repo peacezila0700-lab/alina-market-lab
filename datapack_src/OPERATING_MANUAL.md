@@ -38,6 +38,16 @@ Only step ①② matter for daily use. Step ② weekly is enough.
 by id from `catalog.json`. The catalog carries row counts, coverage, caveats and a 2-row preview
 precisely so the model can decide *without* loading the file.
 
+## 2b. Analysing ONE day or ONE event (the per-day mode)
+```
+python3 scripts/event_pack.py 2026-11-20            # -> packs/2026-11-20.json (~35 KB)
+python3 scripts/event_pack.py 2024-08-05 --days 5   # wider news window
+```
+That single file is everything needed to reason about one session: calendar, 17-instrument snapshot,
+levels, VIX-curve state with its conditioned base rates, carry, headlines, and the 12 nearest historical
+states with their next 5/21-day outcomes (`similar_days`). Feed it instead of the whole pack when the
+question is "what happened on this day and what did it imply".
+
 ## 3. The daily loop the model should follow
 
 1. Read `briefs/latest.md`.

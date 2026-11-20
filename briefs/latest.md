@@ -1,4 +1,4 @@
-# Brief 2026-11-20 (generated 2026-11-20T19:34:13Z)
+# Brief 2026-11-20 (generated 2026-11-20T19:46:15Z)
 
 ## State
 | key | value |

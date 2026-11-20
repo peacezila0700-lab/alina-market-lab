@@ -54,7 +54,7 @@ def pip_size(sym):
 
 
 def load(sym):
-    df = pd.read_csv(INTRA / f"{sym}_H1_bidask.csv", parse_dates=["ts_utc"])
+    df = pd.read_csv((INTRA / f"{sym}_H1_bidask.csv.gz"), parse_dates=["ts_utc"])
     df = df.sort_values("ts_utc").reset_index(drop=True)
     df = df[df["bid_c"] > 0].copy()
     df["r"] = df["bid_c"].pct_change()

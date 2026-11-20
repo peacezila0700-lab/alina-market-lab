@@ -113,8 +113,8 @@ def main():
         df = pd.DataFrame(recs, columns=["ts_utc", "bid_o", "bid_h", "bid_l", "bid_c",
                                          "ask_o", "ask_h", "ask_l", "ask_c",
                                          "spread_close_pips", "spread_mean_of_bar_pips"])
-        path = OUT / f"{sym}_H1_bidask.csv"
-        df.to_csv(path, index=False)
+        path = OUT / f"{sym}_H1_bidask.csv.gz"          # gzipped: 6 pairs x 145k rows is 79 MB raw
+        df.to_csv(path, index=False, compression="gzip")
         med = float(df["spread_close_pips"].median())
         summary[sym] = {"rows": len(df), "first": df["ts_utc"].iloc[0], "last": df["ts_utc"].iloc[-1],
                         "median_spread_pips": med,

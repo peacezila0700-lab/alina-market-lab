@@ -39,7 +39,7 @@ def main():
           "commission and slippage on top. `range/spread` = median hourly high-low range divided by the "
           "median spread for that hour — how much movement you get per unit of cost.", ""]
     for sym in PAIRS:
-        p = INTRA / f"{sym}_H1_bidask.csv"
+        p = (INTRA / f"{sym}_H1_bidask.csv.gz")
         if not p.exists():
             continue
         df = pd.read_csv(p, parse_dates=["ts_utc"])

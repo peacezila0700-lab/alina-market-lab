@@ -6,8 +6,8 @@ panel, 5-instrument execution book, 68-ETF cross-section, CBOE term structure, 3
 and now 23 years of hourly FX with BOTH bid and ask.
 
 ## Drive (live)
-- **v2.3 `1NYWjvtc8wmTMpLOXUulkTSJwPD7tGDpp`** — 39 datasets / 371 files / 39.7 MB. Current.
-- v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.4 `1nAQU5i-gVPdp8pOPBgOgnukSkD5HjwCb`** — 40 datasets / 374 files / 40 MB. Current.
+- v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
 ## Shipped this session (chronological)
 1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
@@ -18,6 +18,10 @@ and now 23 years of hourly FX with BOTH bid and ask.
 5. **Dukascopy hourly bid+ask, 6 pairs, 2003-2026, ~145k bars each** + HOUR_OF_DAY_PROFILE;
    EXP-0017 (5 hourly rules, net Sharpe −0.4..−10.8) / EXP-0018 (gating, breakeven multiple 0.03-0.29)
    → FAIL → v2.3
+6. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
+   levels, VIX-curve state + conditioned base rates, carry, headlines, 12 nearest historical states with
+   realised next-5/21-day outcomes). This is the file to feed a local model for per-day/per-event work.
+   Intraday CSVs gzipped (79 MB → 21 MB) after confirming they are in the pack on Drive.
 
 ## Tally
 18 experiments, 168 screen, 144 family, 59 COT, 0 validated edges. Every failure is in

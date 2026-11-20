@@ -1,0 +1,942 @@
+{
+ "date": "2026-11-20",
+ "generated_utc": "2026-11-20T19:46:08+00:00",
+ "how_to_read": "units are stated per field; percent values are in percent, prices in quote units",
+ "caveats": [
+  "All market series are daily closes; a decision on this date can only use data up to the prior close (see leak_rule per dataset in catalog.json).",
+  "similar_days uses days strictly BEFORE the target date, so it is not look-ahead, but the neighbour count is small (12) \u2014 read the spread of outcomes, not the average.",
+  "No field here is a recommendation; base rates are priors measured on overlapping windows with the stated n_effective."
+ ],
+ "calendar": {
+  "window_days": 3,
+  "events": [
+   {
+    "date": "2026-11-20 00:00:00",
+    "event": "OPEX",
+    "detail": "3rd Friday",
+    "date_confidence": "high",
+    "known_in_advance": 1.0
+   }
+  ]
+ },
+ "market": {
+  "SPY": {
+   "close": 732.44,
+   "ret_1d_pct": -1.015,
+   "ret_5d_pct": -2.331,
+   "ret_21d_pct": -4.441,
+   "rv20_ann_pct": 23.06,
+   "atr14": 9.175,
+   "vs_ma50_pct": -4.02,
+   "vs_ma200_pct": 0.01
+  },
+  "TLT": {
+   "close": 81.225,
+   "ret_1d_pct": 1.089,
+   "ret_5d_pct": 2.324,
+   "ret_21d_pct": -0.63,
+   "rv20_ann_pct": 10.76,
+   "atr14": 0.4282,
+   "vs_ma50_pct": 1.44,
+   "vs_ma200_pct": -3.45
+  },
+  "IEF": {
+   "close": 91.5,
+   "ret_1d_pct": 0.749,
+   "ret_5d_pct": 1.622,
+   "ret_21d_pct": 0.329,
+   "rv20_ann_pct": 6.72,
+   "atr14": 0.3243,
+   "vs_ma50_pct": 1.14,
+   "vs_ma200_pct": -2.14
+  },
+  "GLD": {
+   "close": 322.12,
+   "ret_1d_pct": -3.896,
+   "ret_5d_pct": -9.377,
+   "ret_21d_pct": -12.705,
+   "rv20_ann_pct": 31.47,
+   "atr14": 6.2236,
+   "vs_ma50_pct": -14.07,
+   "vs_ma200_pct": -20.63
+  },
+  "DXY": {
+   "close": 103.761,
+   "ret_1d_pct": -0.134,
+   "ret_5d_pct": 0.339,
+   "ret_21d_pct": 2.117,
+   "rv20_ann_pct": 5.39,
+   "atr14": 0.3164,
+   "vs_ma50_pct": 1.84,
+   "vs_ma200_pct": 3.75
+  },
+  "EURUSD": {
+   "close": 1.0987,
+   "ret_1d_pct": 0.133,
+   "ret_5d_pct": -0.576,
+   "ret_21d_pct": -2.208,
+   "rv20_ann_pct": 5.65,
+   "atr14": 0.0036,
+   "vs_ma50_pct": -2.29,
+   "vs_ma200_pct": -4.52
+  },
+  "USDJPY": {
+   "close": 158.727,
+   "ret_1d_pct": -0.41,
+   "ret_5d_pct": -0.718,
+   "ret_21d_pct": 0.376,
+   "rv20_ann_pct": 4.92,
+   "atr14": 0.4219,
+   "vs_ma50_pct": 0.56,
+   "vs_ma200_pct": -0.07
+  },
+  "GBPUSD": {
+   "close": 1.3106,
+   "ret_1d_pct": -0.311,
+   "ret_5d_pct": -0.949,
+   "ret_21d_pct": -2.164,
+   "rv20_ann_pct": 5.7,
+   "atr14": 0.0048,
+   "vs_ma50_pct": -1.55,
+   "vs_ma200_pct": -2.22
+  },
+  "WTI": {
+   "close": 81.67,
+   "ret_1d_pct": -1.851,
+   "ret_5d_pct": -7.78,
+   "ret_21d_pct": -17.895,
+   "rv20_ann_pct": 48.2,
+   "atr14": 1.8707,
+   "vs_ma50_pct": -13.21,
+   "vs_ma200_pct": -7.49
+  },
+  "NATGAS": {
+   "close": 3.663,
+   "ret_1d_pct": 12.087,
+   "ret_5d_pct": 13.406,
+   "ret_21d_pct": 31.009,
+   "rv20_ann_pct": 63.73,
+   "atr14": 0.1169,
+   "vs_ma50_pct": 20.14,
+   "vs_ma200_pct": 23.44
+  },
+  "BTC": {
+   "close": 59333.9297,
+   "ret_1d_pct": -4.148,
+   "ret_5d_pct": -9.143,
+   "ret_21d_pct": -23.141,
+   "rv20_ann_pct": 41.01,
+   "atr14": 1472.159,
+   "vs_ma50_pct": -23.57,
+   "vs_ma200_pct": -18.2
+  },
+  "ETH": {
+   "close": 1639.55,
+   "ret_1d_pct": -6.588,
+   "ret_5d_pct": -10.675,
+   "ret_21d_pct": -26.84,
+   "rv20_ann_pct": 58.69,
+   "atr14": 55.0415,
+   "vs_ma50_pct": -28.26,
+   "vs_ma200_pct": -22.99
+  },
+  "NASDAQ100": {
+   "close": 25623.6328,
+   "ret_1d_pct": -3.369,
+   "ret_5d_pct": -8.303,
+   "ret_21d_pct": -11.517,
+   "rv20_ann_pct": 36.13,
+   "atr14": 522.315,
+   "vs_ma50_pct": -12.36,
+   "vs_ma200_pct": -8.74
+  },
+  "SP500": {
+   "close": 7049.1499,
+   "ret_1d_pct": -1.765,
+   "ret_5d_pct": -6.778,
+   "ret_21d_pct": -8.016,
+   "rv20_ann_pct": 23.89,
+   "atr14": 98.2864,
+   "vs_ma50_pct": -7.59,
+   "vs_ma200_pct": -4.08
+  },
+  "VIXY": {
+   "close": 21.01,
+   "ret_1d_pct": 7.413,
+   "ret_5d_pct": 15.694,
+   "ret_21d_pct": 23.516,
+   "rv20_ann_pct": 140.37,
+   "atr14": 1.245,
+   "vs_ma50_pct": 20.79,
+   "vs_ma200_pct": -9.67
+  },
+  "COPPER": {
+   "close": 5.492,
+   "ret_1d_pct": -2.364,
+   "ret_5d_pct": -9.664,
+   "ret_21d_pct": -13.682,
+   "rv20_ann_pct": 27.44,
+   "atr14": 0.1022,
+   "vs_ma50_pct": -14.56,
+   "vs_ma200_pct": -11.76
+  },
+  "SILVER": {
+   "close": 41.31,
+   "ret_1d_pct": -6.787,
+   "ret_5d_pct": -15.747,
+   "ret_21d_pct": -24.567,
+   "rv20_ann_pct": 48.6,
+   "atr14": 1.3421,
+   "vs_ma50_pct": -26.74,
+   "vs_ma200_pct": -38.81
+  }
+ },
+ "levels": {
+  "as_of": "2026-11-20",
+  "rows": [
+   {
+    "instrument": "IEF",
+    "close": 91.5,
+    "pdh": 90.849998,
+    "pdl": 90.410004,
+    "pdc": 90.82,
+    "pmh": 92.019997,
+    "pml": 89.949997,
+    "atr14": 0.3996424285714305
+   },
+   {
+    "instrument": "GBPUSD",
+    "close": 1.310582,
+    "pdh": 1.317349,
+    "pdl": 1.310599,
+    "pdc": 1.314665,
+    "pmh": 1.345859,
+    "pml": 1.320934,
+    "atr14": 0.0068570714285714
+   },
+   {
+    "instrument": "COPPER",
+    "close": 5.492,
+    "pdh": 5.66,
+    "pdl": 5.6225,
+    "pdc": 5.625,
+    "pmh": 6.335,
+    "pml": 6.059,
+    "atr14": 0.0684642857142858
+   },
+   {
+    "instrument": "NASDAQ100",
+    "close": 25623.632812,
+    "pdh": 27749.349609,
+    "pdl": 26481.820312,
+    "pdc": 26517.050781,
+    "pmh": 28593.519531,
+    "pml": 27227.529297,
+    "atr14": 674.2834820714286
+   },
+   {
+    "instrument": "BTC",
+    "close": 59333.929688,
+    "pdh": 64017.269531,
+    "pdl": 61380.882812,
+    "pdc": 61901.820312,
+    "pmh": 75505.335938,
+    "pml": 62017.882812,
+    "atr14": 2699.058314714286
+   },
+   {
+    "instrument": "AUDUSD",
+    "close": 0.664584,
+    "pdh": 0.67205,
+    "pdl": 0.66628,
+    "pdc": 0.67128,
+    "pmh": 0.69302,
+    "pml": 0.67728,
+    "atr14": 0.0052512142857142
+   },
+   {
+    "instrument": "GOLD",
+    "close": 3542.699951,
+    "pdh": 3759.5,
+    "pdl": 3620.600098,
+    "pdc": 3685.5,
+    "pmh": 4157.700195,
+    "pml": 3856.699951,
+    "atr14": 103.2071357142858
+   },
+   {
+    "instrument": "EURUSD",
+    "close": 1.09866,
+    "pdh": 1.1012,
+    "pdl": 1.095638,
+    "pdc": 1.097201,
+    "pmh": 1.125062,
+    "pml": 1.102657,
+    "atr14": 0.0059832857142857
+   },
+   {
+    "instrument": "CORN",
+    "close": 451.5,
+    "pdh": 442.0,
+    "pdl": 432.25,
+    "pdc": 439.0,
+    "pmh": 455.5,
+    "pml": 438.0,
+    "atr14": 8.160714285714286
+   },
+   {
+    "instrument": "ETH",
+    "close": 1639.550049,
+    "pdh": 1814.548706,
+    "pdl": 1734.864868,
+    "pdc": 1755.189819,
+    "pmh": 2157.226807,
+    "pml": 1712.383179,
+    "atr14": 104.28119771428568
+   },
+   {
+    "instrument": "FTSE",
+    "close": 10360.629883,
+    "pdh": 10563.099609,
+    "pdl": 10452.700195,
+    "pdc": 10452.700195,
+    "pmh": 10910.599609,
+    "pml": 10654.299805,
+    "atr14": 137.34500557142852
+   },
+   {
+    "instrument": "DXY",
+    "close": 103.761002,
+    "pdh": 103.970001,
+    "pdl": 103.589996,
+    "pdc": 103.900002,
+    "pmh": 103.440002,
+    "pml": 101.489998,
+    "atr14": 0.5122152142857155
+   },
+   {
+    "instrument": "DAX",
+    "close": 24839.150391,
+    "pdh": 25945.519531,
+    "pdl": 25463.810547,
+    "pdc": 25463.810547,
+    "pmh": 27001.669922,
+    "pml": 25793.060547,
+    "atr14": 375.3992745000004
+   }
+  ]
+ },
+ "vol_regime": {
+  "vix": 28.44,
+  "slope_3m": 1.0522,
+  "slope_9d": 1.0288,
+  "vvix": 127.1,
+  "vvix_pct": 0.9756,
+  "skew": 140.86,
+  "inverted_3m": 1.0,
+  "reading": "inverted curve: stress is now, not later"
+ },
+ "base_rates": {
+  "condition": "VIX/VIX3M slope = 1.052 (1.00-1.10)",
+  "rows": [
+   {
+    "conditioner": "VIX/VIX3M slope",
+    "bucket": "1.00-1.10",
+    "horizon_d": 5.0,
+    "n": 256.0,
+    "n_eff": 51.0,
+    "median_pct": 1.581,
+    "mean_pct": 1.191,
+    "pct_positive": 64.1,
+    "p10_pct": -3.41,
+    "p90_pct": 5.02,
+    "realised_vol_pct": 25.04
+   },
+   {
+    "conditioner": "VIX/VIX3M slope",
+    "bucket": "1.00-1.10",
+    "horizon_d": 21.0,
+    "n": 255.0,
+    "n_eff": 12.0,
+    "median_pct": 3.277,
+    "mean_pct": 3.199,
+    "pct_positive": 71.4,
+    "p10_pct": -3.88,
+    "p90_pct": 10.46,
+    "realised_vol_pct": 22.01
+   },
+   {
+    "conditioner": "VIX/VIX3M slope",
+    "bucket": "1.00-1.10",
+    "horizon_d": 63.0,
+    "n": 255.0,
+    "n_eff": 4.0,
+    "median_pct": 6.407,
+    "mean_pct": 6.716,
+    "pct_positive": 82.0,
+    "p10_pct": -2.49,
+    "p90_pct": 15.65,
+    "realised_vol_pct": 19.93
+   }
+  ]
+ },
+ "carry": {
+  "ust_3m": 4.34,
+  "ust_2y": 4.76,
+  "ust_10y": 5.04,
+  "slope_10y_3m": 0.7,
+  "slope_10y_2y": 0.28,
+  "btc_funding_per_8h_pct": 0.00384,
+  "btc_funding_annualised_pct": 0.92
+ },
+ "news": {
+  "window_days": 3,
+  "count": 294,
+  "headlines": [
+   {
+    "source": "SeekingAlpha",
+    "published": "Fri, 20 Nov 2026 14:16:06 -0500",
+    "title": "Bloom Energy drops 13% amid AI selloff",
+    "hash": "a070bff6bdf98663",
+    "link": "https://seekingalpha.com/news/4675281-bloom-energy-drops-13-amid-ai-selloff?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+   },
+   {
+    "source": "SeekingAlpha",
+    "published": "Fri, 20 Nov 2026 14:14:28 -0500",
+    "title": "Matthews CEO expects material Axian revenue beginning in fiscal 2028 as company targets operating and cash improvements",
+    "hash": "f1d30dbf129f679d",
+    "link": "https://seekingalpha.com/news/4675284-matthews-ceo-expects-material-axian-revenue-beginning-in-fiscal-2028-as-company-targets?utm_source=feed_news_all&utm_medium=referral&feed_item"
+   },
+   {
+    "source": "Investing_Economy",
+    "published": "2026-11-20 16:06:18",
+    "title": "ECB\u2019s Nagel: Will likely need to act in December but price expectations remain anchored",
+    "entities": "EUR",
+    "hash": "44919acc960dcb71",
+    "link": "https://www.investing.com/news/economy-news/ecbs-nagel-will-likely-need-to-act-in-december-but-price-expectations-remain-anchored-5042238"
+   },
+   {
+    "source": "SeekingAlpha",
+    "published": "Fri, 20 Nov 2026 14:08:10 -0500",
+    "title": "Global Payments climbs 11% on takeover report",
+    "hash": "00f0b26bf0a37c3a",
+    "link": "https://seekingalpha.com/news/4675274-global-payments-climbs-11-percent-on-takeover-report?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Fri, 20 Nov 2026 15:00:00 GMT",
+    "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+    "summary": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+    "hash": "62496b2db1339ced",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Wed, 7 Oct 2026 18:00:00 GMT",
+    "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+    "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+    "hash": "eeb8f6b78f019079",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Fri, 2 Oct 2026 20:45:00 GMT",
+    "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+    "summary": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+    "hash": "cadde35138dce92c",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Thu, 19 Nov 2026 16:00:00 GMT",
+    "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+    "summary": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+    "hash": "241d9c35f2a8e1cf",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Wed, 18 Nov 2026 19:00:00 GMT",
+    "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+    "summary": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+    "hash": "dbea10a75a84833c",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Fri, 13 Nov 2026 21:15:00 GMT",
+    "title": "Agencies extend comment period for proposed third-party risk management guidance",
+    "summary": "Agencies extend comment period for proposed third-party risk management guidance",
+    "hash": "4532bcae0da2463f",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Thu, 12 Nov 2026 18:30:00 GMT",
+    "title": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and",
+    "summary": "Federal Reserve Board announces pricing, effective January 1, 2027, for payment services the Federal Reserve Banks provide to banks and credit unions, and changes to streamline and",
+    "entities": "BANK",
+    "hash": "82ba770a292c7512",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20261112a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Thu, 12 Nov 2026 17:45:00 GMT",
+    "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+    "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+    "hash": "b8182560b02548a6",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Thu, 12 Nov 2026 16:00:00 GMT",
+    "title": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+    "summary": "Federal Reserve Board issues enforcement action with former employee of United Community Bank",
+    "entities": "BANK",
+    "hash": "6baae670e70b3489",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261112a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Mon, 9 Nov 2026 21:00:00 GMT",
+    "title": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+    "summary": "Federal Reserve Board announces approval of two applications by Mutual Federal Bancorp, MHC, and MFB Bancorp, Inc.",
+    "hash": "6e4cb5ab08bc01e5",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261109a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Thu, 5 Nov 2026 16:00:00 GMT",
+    "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+    "summary": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+    "hash": "0224349908e0b1c1",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Thu, 29 Oct 2026 20:30:00 GMT",
+    "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+    "summary": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+    "entities": "BANK",
+    "hash": "d5f01f9dd738c00b",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Wed, 28 Oct 2026 18:00:00 GMT",
+    "title": "Federal Reserve issues FOMC statement",
+    "summary": "Federal Reserve issues FOMC statement",
+    "entities": "RATES",
+    "hash": "847a7abc2726921c",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Fri, 16 Oct 2026 15:00:00 GMT",
+    "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+    "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+    "entities": "BANK",
+    "hash": "70363c9b200b07ab",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Tue, 13 Oct 2026 18:00:00 GMT",
+    "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+    "summary": "Minutes of the Board&#39;s discount rate meetings on August 17, September 9, and September 16, 2026",
+    "hash": "d85e5d3609348b27",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Fri, 9 Oct 2026 14:00:00 GMT",
+    "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of Ame",
+    "summary": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of Ame",
+    "hash": "15b4b4b5fa4c87a3",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Thu, 8 Oct 2026 20:30:00 GMT",
+    "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm\u2019s failure to sufficiently detect and report certain sus",
+    "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm\u2019s failure to sufficiently detect and report certain sus",
+    "hash": "e95750d1b74189d7",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm"
+   },
+   {
+    "source": "SeekingAlpha",
+    "published": "Fri, 20 Nov 2026 14:10:57 -0500",
+    "title": "YouTube nears $3B settlement in social media addiction lawsuit brought by school districts -- Bloomberg",
+    "hash": "15488666d8422f02",
+    "link": "https://seekingalpha.com/news/4675267-youtube-nears-3b-settlement-in-social-media-addiction-lawsuit-brought-by-school-districts?utm_source=feed_news_all&utm_medium=referral&feed_it"
+   },
+   {
+    "source": "Investing_Markets",
+    "published": "2026-11-20 18:37:35",
+    "title": "Trump says U.S. wants only older chips sold to China",
+    "entities": "CNY",
+    "hash": "ae932f1b668fc1a8",
+    "link": "https://www.investing.com/news/stock-market-news/trump-says-us-wants-only-older-chips-sold-to-china-5042407"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Mon, 5 Oct 2026 20:30:00 GMT",
+    "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+    "summary": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+    "entities": "BANK",
+    "hash": "a284ee3bb75500d9",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm"
+   },
+   {
+    "source": "FT_Home",
+    "published": "Fri, 20 Nov 2026 16:17:15 GMT",
+    "title": "Trump seeks Ukraine peace deal before January",
+    "summary": "US officials keen to secure agreement between Vladimir Putin and Volodymyr Zelenskyy before Democrats take over Congress",
+    "hash": "65323d48aed5836f",
+    "link": "https://www.ft.com/content/6c1b8a64-35f9-4aba-8605-45a4abdce6b8?syn-25a6b1a6=1"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Fri, 13 Nov 2026 08:20:00 +0100",
+    "title": "Isabel Schnabel: Made in Europe",
+    "hash": "b0a1c9bf225c3bdb",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Fri, 20 Nov 2026 09:30:00 +0100",
+    "title": "Christine Lagarde: Acting in time",
+    "hash": "5a2f925a88ecedd9",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Wed, 18 Nov 2026 10:00:00 +0100",
+    "title": "Boris Vuj\u010di\u0107: Financial Stability Review - November 2026",
+    "hash": "f3082e5740a67342",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Wed, 18 Nov 2026 10:00:00 +0100",
+    "title": "Risks from AI valuations, fiscal imbalances and geoeconomic tensions weigh on financial stability outlook",
+    "hash": "dcfaa3a193e227a3",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Tue, 17 Nov 2026 19:30:00 +0100",
+    "title": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+    "entities": "EUR",
+    "hash": "8481a1d7c53f5178",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Mon, 16 Nov 2026 14:00:00 +0100",
+    "title": "Frank Elderson: Smart supervision for small banks",
+    "hash": "60ad73d5fe2b7312",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261116_1~11dd7f62af.en.html"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 20:25:00 +0700",
+    "title": "Egat and Google team up to advance clean energy",
+    "summary": "The Electricity Generating Authority of Thailand (Egat), has teamed up with Google in a three-pronged strategic partnership focused on digital infrastructure, 24/7 carbon-free ener",
+    "hash": "ee6c4115bdab5759",
+    "link": "https://www.bangkokpost.com/business/general/3358375/egat-and-google-team-up-to-advance-clean-energy"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Mon, 16 Nov 2026 09:30:00 +0100",
+    "title": "Boris Vuj\u010di\u0107: Risks and resilience in the euro area financial system",
+    "entities": "EUR",
+    "hash": "9e0b3a4febf411a2",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261116~db374b56ab.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Mon, 02 Nov 2026 10:30:00 +0100",
+    "title": "Boris Vuj\u010di\u0107: Integrated, open and resilient: Europe\u2019s strengths in a fragmenting world",
+    "hash": "ab4c32c288110538",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Tue, 10 Nov 2026 15:00:00 +0100",
+    "title": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
+    "entities": "EUR",
+    "hash": "53de149036135d09",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Sat, 07 Nov 2026 15:00:00 +0100",
+    "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
+    "hash": "71240352f25b849c",
+    "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Fri, 06 Nov 2026 10:00:00 +0100",
+    "title": "ECB publishes consolidated banking data for end-June 2026",
+    "entities": "EUR|BANK",
+    "hash": "46e9c7984e27c263",
+    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Thu, 05 Nov 2026 09:00:00 +0100",
+    "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
+    "hash": "ae12e9ef0f2f5cc2",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Thu, 05 Nov 2026 08:30:00 +0100",
+    "title": "Piero Cipollone: Shaping the future of money",
+    "hash": "6e6b7cd9500f3532",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html"
+   },
+   {
+    "source": "ECB_Press",
+    "published": "Tue, 10 Nov 2026 17:45:00 +0100",
+    "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+    "entities": "EUR",
+    "hash": "380ce0e2b07203cc",
+    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 18:45:00 +0700",
+    "title": "Stocks slide as Anthropic IPO fails to calm AI fears",
+    "summary": "LONDON - Technology stocks led further market declines in Asia and Europe on Friday after the blockbuster Wall Street IPO for Claude maker Anthropic failed to dispel growing worrie",
+    "entities": "EQUITY",
+    "hash": "be70a203b9f2f7ed",
+    "link": "https://www.bangkokpost.com/business/general/3358379/stocks-slide-as-anthropic-ipo-fails-to-calm-ai-fears"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 18:20:00 +0700",
+    "title": "Yaowarat gold shops crowded as prices plunge",
+    "summary": "Gold shops in Bangkok&rsquo;s Yaowarat area were bustling with customers on Friday after prices opened sharply lower than the day before, with buyers and sellers closely monitoring",
+    "entities": "GOLD",
+    "hash": "0f6b66b87cc00d28",
+    "link": "https://www.bangkokpost.com/business/general/3358356/yaowarat-gold-shops-crowded-as-prices-plunge"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 14:45:00 +0700",
+    "title": "UN General Assembly chief tells Myanmar to 'bring Rohingya home'",
+    "summary": "COX'S BAZAR, Bangladesh - The head of the United Nations General Assembly urged Myanmar on Friday to bring home hundreds of thousands of Rohingya refugees, a day after a landmark g",
+    "hash": "d2b895b235248fef",
+    "link": "https://www.bangkokpost.com/world/3358309/un-general-assembly-chief-tells-myanmar-to-bring-rohingya-home"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Fri, 2 Oct 2026 15:00:00 GMT",
+    "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+    "summary": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+    "hash": "59322cafa4d9f76d",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 16:45:00 +0700",
+    "title": "Lufthansa to cut 1,000 jobs amid slow turnaround, fuel costs",
+    "summary": "FRANKFURT - The German airline Lufthansa plans to cut 1,000 jobs as its turnaround efforts move slower than hoped, with the energy shock from the Iran war adding to headwinds, acco",
+    "entities": "WAR",
+    "hash": "0cdb57bebaba2a6c",
+    "link": "https://www.bangkokpost.com/business/general/3358336/lufthansa-to-cut-1000-jobs-amid-slow-turnaround-fuel-costs"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 15:28:00 +0700",
+    "title": "Honda to launch new hybrid Avancier SUV in Japan after debut in Thailand",
+    "summary": "Honda Motor said on Friday it will launch the new hybrid Avancier sport utility vehicle in Japan in spring 2027 after its debut in Thailand, aiming to drive sales growth with its f",
+    "hash": "b07e9a5ef4975ed1",
+    "link": "https://www.bangkokpost.com/business/general/3358314/honda-to-launch-new-hybrid-avancier-suv-in-japan-after-debut-in-thailand"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 12:35:00 +0700",
+    "title": "FamilyMart to introduce AI-powered drink restocking robots",
+    "summary": "Japanese convenience store operator FamilyMart will begin rolling out robots that automatically restock beverage display shelves in January 2027.",
+    "hash": "38156dd5295112f7",
+    "link": "https://www.bangkokpost.com/business/general/3358261/familymart-to-introduce-aipowered-drink-restocking-robots"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 10:18:00 +0700",
+    "title": "India rice rates hit 19-month peak, Thai prices highest in nearly two years",
+    "summary": "Indian rice export prices climbed to their highest in more than 19 months this week, buoyed by a stronger rupee and robust demand from Africa, while rates for the Thai variety rose",
+    "hash": "a92b37e183656eb2",
+    "link": "https://www.bangkokpost.com/business/general/3358225/india-rice-rates-hit-19month-peak-thai-prices-highest-in-nearly-two-years"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 08:33:00 +0700",
+    "title": "Car rental companies gear up for demand surge",
+    "summary": "Thailand's car rental market is projected to grow by approximately 20% next year, driven largely by surging demand in the tourism sector, according to Thai Rent a Car Corporation.",
+    "hash": "340f8a8f0ab5be9d",
+    "link": "https://www.bangkokpost.com/business/general/3358144/car-rental-companies-gear-up-for-demand-surge"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 07:50:00 +0700",
+    "title": "Nex Point partners with two Chinese automakers",
+    "summary": "Commercial electric vehicle (EV) maker Nex Point Plc has partnered with two Chinese automakers to strengthen sales of commercial vehicles, covering trucks and seven-seat multi-purp",
+    "hash": "bb81f6207cc4e198",
+    "link": "https://www.bangkokpost.com/business/general/3357854/nex-point-partners-with-two-chinese-automakers"
+   },
+   {
+    "source": "BangkokPost_Biz",
+    "published": "Fri, 20 Nov 2026 07:30:00 +0700",
+    "title": "Japan urged to explore tech sector opportunities",
+    "summary": "Thailand has proposed that Japan leverage its established automotive industry base to develop new opportunities in the aerospace and quantum technology sectors, according to Financ",
+    "hash": "70bcc4ba3e302dd2",
+    "link": "https://www.bangkokpost.com/business/general/3358039/japan-urged-to-explore-tech-sector-opportunities"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 21:45:00 +0700",
+    "title": "Clock ticking on \u2018killer robots\u2019 talks",
+    "summary": "GENEVA - A UN conference on &ldquo;killer robots&rdquo; was running out of time Friday after Russia in particular slowed five days of gruelling talks on whether to begin negotiatin",
+    "hash": "07160ab9f1e79a60",
+    "link": "https://www.bangkokpost.com/world/3358399/clock-ticking-on-killer-robots-talks"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 21:45:00 +0700",
+    "title": "\u2018Carbon-negative\u2019 Panama takes on oil powers",
+    "summary": "ANTALYA, Turkey - Denouncing the &ldquo;sins&rdquo; and &ldquo;hypocrisy&rdquo; of oil-producing countries, the environment minister for &ldquo;carbon-negative&rdquo; Panama has em",
+    "entities": "OIL",
+    "hash": "344e586d17538891",
+    "link": "https://www.bangkokpost.com/world/3358394/carbonnegative-panama-takes-on-oil-powers"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 21:45:00 +0700",
+    "title": "Warsaw says Russian missiles hit Poland",
+    "summary": "WARSAW - Poland said two Russian missiles hit its territory on Friday, with the NATO country accusing Moscow of an &ldquo;intentional provocation&rdquo; near to where thousands of ",
+    "hash": "543608cd66540922",
+    "link": "https://www.bangkokpost.com/world/3358389/warsaw-says-russian-missiles-hit-poland"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 20:45:00 +0700",
+    "title": "Black market thrives amid siege in Yemen",
+    "summary": "TAIZ, Yemen - In Yemen&rsquo;s western city of Taiz, men and children line the streets, selling rows of bottles filled with orange liquid, the only petrol available in the city bes",
+    "hash": "934d14def220f327",
+    "link": "https://www.bangkokpost.com/world/3358385/black-market-thrives-amid-siege-in-yemen"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 18:45:00 +0700",
+    "title": "Myanmar says genocide ruling \u2018not fair\u2019",
+    "summary": "NAY PYI TAW - A historic ruling by the top UN court that Myanmar committed genocide against its Rohingya minority was &ldquo;not fair&rdquo;, the country&rsquo;s presidential spoke",
+    "hash": "f3dcf83b76c43af9",
+    "link": "https://www.bangkokpost.com/world/3358351/myanmar-says-genocide-ruling-not-fair"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 16:45:00 +0700",
+    "title": "Xi-Putin-Trump summit: what comes next?",
+    "summary": "SHENZHEN - An unprecedented summit between Chinese, US and Russian leaders this week in Shenzhen was light on substance but immensely symbolic, analysts say.",
+    "hash": "012e641c3b1da14b",
+    "link": "https://www.bangkokpost.com/world/3358341/xiputintrump-summit-what-comes-next"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 16:20:00 +0700",
+    "title": "Malaysia says it will resettle 10,000 Rohingya refugees in Turkey",
+    "summary": "KUALA LUMPUR - \u2060Malaysia \u2060said on Friday that it \u200bwill resettle 10,000 Rohingya refugees in Turkey through a structured \u200bskills training programme, in &zwnj;what would be one of th",
+    "hash": "d4658c965838abdc",
+    "link": "https://www.bangkokpost.com/world/3358325/malaysia-says-it-will-resettle-10000-rohingya-refugees-in-turkey"
+   },
+   {
+    "source": "Fed_Press",
+    "published": "Fri, 2 Oct 2026 20:00:00 GMT",
+    "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+    "summary": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+    "hash": "fe551cc7e923e4e8",
+    "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm"
+   },
+   {
+    "source": "BangkokPost_World",
+    "published": "Fri, 20 Nov 2026 14:45:00 +0700",
+    "title": "Russia pummels Ukraine after Putin vowed 'painful' attack",
+    "summary": "KYIV (UKRAINE) - Russia pummelled Ukraine with a barrage of missiles and drones overnight in a massive attack hours after President Vladimir Putin had vowed a \"painful\" response fo",
+    "entities": "WAR",
+    "hash": "0c41707a171a314e",
+    "link": "https://www.bangkokpost.com/world/3358299/russia-pummels-ukraine-after-putin-vowed-painful-attack"
+   }
+  ]
+ },
+ "similar_days": {
+  "method": "nearest 12 days on z-scored (rv20, slope_3m, vvix_pct, ma50 gap, ma200 gap), drawn only from days before the target",
+  "neighbours": [
+   {
+    "date": "2018-03-27",
+    "distance": 0.41,
+    "fwd5d_pct": 1.14,
+    "fwd21d_pct": 2.19
+   },
+   {
+    "date": "2018-03-28",
+    "distance": 0.45,
+    "fwd5d_pct": 2.24,
+    "fwd21d_pct": 2.59
+   },
+   {
+    "date": "2019-08-14",
+    "distance": 0.51,
+    "fwd5d_pct": 3.01,
+    "fwd21d_pct": 6.05
+   },
+   {
+    "date": "2025-04-02",
+    "distance": 0.52,
+    "fwd5d_pct": -2.82,
+    "fwd21d_pct": 0.4
+   },
+   {
+    "date": "2019-08-15",
+    "distance": 0.54,
+    "fwd5d_pct": 2.71,
+    "fwd21d_pct": 5.45
+   },
+   {
+    "date": "2022-02-28",
+    "distance": 0.56,
+    "fwd5d_pct": -3.94,
+    "fwd21d_pct": 5.71
+   },
+   {
+    "date": "2018-11-14",
+    "distance": 0.57,
+    "fwd5d_pct": -1.92,
+    "fwd21d_pct": -5.49
+   },
+   {
+    "date": "2018-11-12",
+    "distance": 0.58,
+    "fwd5d_pct": -1.27,
+    "fwd21d_pct": -2.64
+   },
+   {
+    "date": "2018-04-02",
+    "distance": 0.61,
+    "fwd5d_pct": 1.37,
+    "fwd21d_pct": 2.92
+   }
+  ],
+  "fwd21_summary": {
+   "median_pct": 2.59,
+   "min_pct": -5.49,
+   "max_pct": 6.05,
+   "pct_positive": 78.0,
+   "n": 9
+  }
+ }
+}
