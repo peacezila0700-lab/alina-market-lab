@@ -84,3 +84,14 @@
 - **Attention is a diagnostic, not a strategy** (`reports/ATTENTION_SIGNAL.md`): it improves next-day
   |move| MAE on 6/8 assets but R² on only 3/8, and in a vol-targeted portfolio the Sharpe goes
   0.64 → 0.63. Do not trade it.
+
+## D12 — Push workflow made snapshot-proof (`scripts/gh_push.sh`)
+- **Date:** 2026-11-20 · **Status:** ACTIVE
+- Root cause of the lost remote: the platform excludes `.git/config`, `.git-credentials` and
+  `.netrc` from workspace snapshots, so any PAT embedded in the remote URL disappears whenever
+  the sandbox is recreated. GitHub never received a request — the token was **not** rejected.
+- Fix: token stored at `~/.alina/git_token` (mode 600, this path **is** snapshotted), and
+  `scripts/gh_push.sh` rebuilds the remote from it on demand. `--save`, `--check` supported;
+  the token is masked out of all output.
+- Trade-off accepted by the owner: the token sits in plaintext inside the private workspace in
+  exchange for not having to re-paste it every session.
