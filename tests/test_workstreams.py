@@ -93,6 +93,7 @@ def test_workstream_d_risk_radar_and_offline_dashboard() -> None:
     assert rr["overall_risk_classification"] in ("LOW", "MODERATE", "ELEVATED", "HIGH")
     assert "calibrated_probabilities" in rr.get("risk_meta_model", {})
     assert "latest_spread_pips" in rr.get("fx_execution_guard", {})
+    assert "btc_close" in rr.get("crypto_trend_overlay", {})
 
     hist_lines = (ROOT / "data" / "risk_radar" / "history.jsonl").read_text().strip().splitlines()
     assert len(hist_lines) >= 1
@@ -102,6 +103,7 @@ def test_workstream_d_risk_radar_and_offline_dashboard() -> None:
     assert "Risk Radar" in html_txt
     assert "Risk Meta-Labeling" in html_txt
     assert "FX Rollover & Liquidity Guard" in html_txt
+    assert "Crypto Trend Regime & VolTarget25%" in html_txt
     assert "<script src=\"http" not in html_txt.lower()
     assert "fetch(" not in html_txt.lower()
 
@@ -202,6 +204,43 @@ def test_exp0034_0035_expanded_survivorship_and_form4_regsho() -> None:
     e35 = json.loads((ROOT / "research" / "artifacts" / "exp0035_form4_regsho_pit.json").read_text())
     assert e35["universe_firms"] >= 380 and e35["delisted_firms"] >= 65
     assert e35["form4_cross_section"]["F4_LOG_NET_USD_63D_21d"]["perm_pct_oos"] < 95.0
+
+
+def test_exp0036_to_0042_exhaustive_research_and_crypto_trend() -> None:
+    df_exp = pd.read_csv(ROOT / "research" / "EXPERIMENT_LOG.csv")
+    assert len(df_exp) >= 42
+    for eid in ("EXP-0036", "EXP-0037", "EXP-0038", "EXP-0039", "EXP-0040", "EXP-0041", "EXP-0042"):
+        assert eid in set(df_exp["exp_id"])
+
+    e36 = json.loads((ROOT / "research" / "artifacts" / "exp0036_sp500_rebalance_drift.json").read_text())
+    assert e36["calendar_portfolio_21d"]["ls_remove_minus_add_21d_net10bp_all"] < 0.0
+
+    e37 = json.loads((ROOT / "research" / "artifacts" / "exp0037_sec_pit_pead_drift.json").read_text())
+    assert e37["total_events"] >= 14000
+    assert all(v["ls_10bp_all"] < 0.0 for v in e37["calendar_21d_rebalance"].values())
+
+    e38 = json.loads((ROOT / "research" / "artifacts" / "exp0038_crypto_6y_funding_dvol_ofi.json").read_text())
+    assert e38["microstructure_1h_ofi_basis"]["BTCUSDT"]["OFI_MOM_1H"]["net4bp_all"] < 0.0
+    assert e38["btc_vol_dvol_overlay_2021_2026"]["3_BTC_VT30_DVOL_Throttle"]["all"]["sharpe"] < e38["btc_vol_dvol_overlay_2021_2026"]["2_BTC_VolTarget30"]["all"]["sharpe"]
+
+    e39 = json.loads((ROOT / "research" / "artifacts" / "exp0039_etf_dix_gex_rotation.json").read_text())
+    assert e39["global_etf_allocation_2009_2026"]["3_Antonacci_GEM"]["shift_pct_oos"] < 95.0
+    assert e39["sector_momentum_2001_2026"]["SPDR_Mom12_1_LS_Top3_Bot3"]["net5bp_all"]["sharpe"] < 0.0
+
+    e40 = json.loads((ROOT / "research" / "artifacts" / "exp0040_treasury_curve_auctions.json").read_text())
+    assert e40["curve_duration_timing"]["1_TLT_BuyHold"]["excess_vs_bil_oos"]["sharpe"] < 0.0
+    assert e40["treasury_auction_10y_30y"]["n_auctions"] >= 400
+
+    e41 = json.loads((ROOT / "research" / "artifacts" / "exp0041_crypto_trend_regime_verification.json").read_text())
+    btc_sma = e41["btc_11_5y"]["SMA50_VT25_1dLag"]
+    assert btc_sma["all_10bp"]["sharpe_ex"] > 1.5
+    assert btc_sma["circ_shift1000_all_pct"] >= 99.5
+    assert btc_sma["cost_stress_sharpe"]["50bp"] > 1.2
+    assert e41["cross_asset_blend_spy_vt12_btc_trend_vt25"]["eras"]["CryptoTrend_15pct"]["All_15_26"]["sharpe_ex"] > 1.1
+
+    e42 = json.loads((ROOT / "research" / "artifacts" / "exp0042_overnight_vs_intraday_cost_wall.json").read_text())
+    assert e42["results"]["SPY"]["Overnight_2bp_side"]["sharpe"] < 0.0
+    assert e42["results"]["SPY"]["Breakeven_bps_per_side"] < 2.0
 
 
 if __name__ == "__main__":

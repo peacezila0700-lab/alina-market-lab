@@ -2,7 +2,7 @@
 
 > **RISK MONITORING TOOL ONLY — Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).**
 
-Generated UTC: `2026-11-21T17:05:00+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `9/9`
+Generated UTC: `2026-11-21T17:31:10+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `9/9`
 
 ## 1. Panel Status, Data Sources, Freshness & Thresholds
 | Panel | Last Updated | Age (d) | Freshness | Risk Class | Key Metrics | Warning |
@@ -26,11 +26,15 @@ Generated UTC: `2026-11-21T17:05:00+00:00` | Overall Risk Classification: **`HIG
 ## 3. FX Intraday Rollover & Cost-Shock Guard (`EXP-0030 Track B`)
 - **`EURGBP H1` Last Bar:** `2026-11-20T18:00:00+00:00` | Spread `0.8 pips` (`z72=-0.16`) | In 6h Rollover Hazard (`16–23 UTC`): `True`
 
-## 4. Active Risk Alerts
+## 4. Crypto Daily Trend Regime & VolTarget25% Monitor (`EXP-0041`, Monitoring Reference)
+- **`BTC-USD` As-Of `2026-11-21`:** Close `$59,958.45` | `SMA(50)=$77,133.24` (`Above=False`) | `TrendEns(20,40,60,90,120)=0.00` | `RV21=51.06%`
+- **Vol-Targeted Reference (`VT25%`):** `TrendEns x VT25 = 0.0%` (`SMA50 x VT25 = 0.0%`) | Cash/EFFR `100.0%`
+
+## 5. Active Risk Alerts
 - **[HIGH] `vol_term_structure`:** VIX/VIX3M inverted at 1.160 (>1.00)
 - **[ELEVATED] `vol_term_structure`:** VVIX percentile elevated at 1.00 (>=0.90)
 - **[ELEVATED] `equity_vol_dd`:** SPY RV20=26.3%, 52w DD=-11.5%
 - **[MODERATE] `equity_short_insider_breadth`:** FINRA RegSHO mkt short ratio=0.461 (z60=-2.02)
 
-## 5. Missing Data / Staleness Warnings
+## 6. Missing Data / Staleness Warnings
 - None.

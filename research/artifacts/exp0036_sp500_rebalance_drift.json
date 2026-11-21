@@ -1,0 +1,100 @@
+{
+  "generated_utc": "2026-11-21T17:23:00.704154+00:00",
+  "experiment": "EXP-0036",
+  "total_sp500_events_since_2015": 558,
+  "matched_events": 123,
+  "event_summary": {
+    "ADD": {
+      "n_total": 98,
+      "n_is": 50,
+      "n_oos": 48,
+      "horizons": {
+        "5d": {
+          "gross_mean_pct": -0.725,
+          "net20bp_mean_pct": -0.925,
+          "net20bp_is_pct": -1.053,
+          "net20bp_oos_pct": -0.791,
+          "win_rate_net_pct": 39.8,
+          "t_stat_net": -1.91,
+          "p_two_sided": 0.066
+        },
+        "10d": {
+          "gross_mean_pct": 0.092,
+          "net20bp_mean_pct": -0.108,
+          "net20bp_is_pct": -0.205,
+          "net20bp_oos_pct": -0.008,
+          "win_rate_net_pct": 48.0,
+          "t_stat_net": -0.16,
+          "p_two_sided": 0.87
+        },
+        "21d": {
+          "gross_mean_pct": 0.481,
+          "net20bp_mean_pct": 0.281,
+          "net20bp_is_pct": 0.503,
+          "net20bp_oos_pct": 0.05,
+          "win_rate_net_pct": 44.9,
+          "t_stat_net": 0.3,
+          "p_two_sided": 0.79
+        },
+        "63d": {
+          "gross_mean_pct": 5.144,
+          "net20bp_mean_pct": 4.944,
+          "net20bp_is_pct": 1.046,
+          "net20bp_oos_pct": 9.006,
+          "win_rate_net_pct": 49.0,
+          "t_stat_net": 1.75,
+          "p_two_sided": 0.092
+        }
+      }
+    },
+    "REMOVE": {
+      "n_total": 25,
+      "n_is": 17,
+      "n_oos": 8,
+      "horizons": {
+        "5d": {
+          "gross_mean_pct": 4.035,
+          "net20bp_mean_pct": 3.835,
+          "net20bp_is_pct": 4.169,
+          "net20bp_oos_pct": 3.127,
+          "win_rate_net_pct": 60.0,
+          "t_stat_net": 0.94,
+          "p_two_sided": 0.378
+        },
+        "10d": {
+          "gross_mean_pct": -0.524,
+          "net20bp_mean_pct": -0.724,
+          "net20bp_is_pct": 3.235,
+          "net20bp_oos_pct": -9.138,
+          "win_rate_net_pct": 56.0,
+          "t_stat_net": -0.12,
+          "p_two_sided": 0.882
+        },
+        "21d": {
+          "gross_mean_pct": 3.179,
+          "net20bp_mean_pct": 2.979,
+          "net20bp_is_pct": 8.535,
+          "net20bp_oos_pct": -8.828,
+          "win_rate_net_pct": 56.0,
+          "t_stat_net": 0.37,
+          "p_two_sided": 0.7
+        },
+        "63d": {
+          "gross_mean_pct": 0.469,
+          "net20bp_mean_pct": 0.269,
+          "net20bp_is_pct": 6.967,
+          "net20bp_oos_pct": -13.965,
+          "win_rate_net_pct": 32.0,
+          "t_stat_net": 0.03,
+          "p_two_sided": 0.986
+        }
+      }
+    }
+  },
+  "calendar_portfolio_21d": {
+    "ls_remove_minus_add_21d_net10bp_is": -0.015,
+    "ls_remove_minus_add_21d_net10bp_oos": -0.235,
+    "ls_remove_minus_add_21d_net10bp_all": -0.139,
+    "active_days_pct": 51.6
+  }
+}

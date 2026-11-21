@@ -1,0 +1,83 @@
+{
+  "generated_utc": "2026-11-21T17:23:07.686187+00:00",
+  "experiment": "EXP-0037",
+  "universe_firms": 388,
+  "delisted_firms": 68,
+  "total_events": 15000,
+  "event_study_20d_excess": {
+    "car_2d": {
+      "n_events": 14978,
+      "spearman_ic_is": 0.0284,
+      "spearman_ic_oos": -0.0089,
+      "q5_q1_20d_spread_is_pct": 0.36,
+      "q5_q1_20d_spread_oos_pct": -0.191
+    },
+    "d_roe": {
+      "n_events": 13845,
+      "spearman_ic_is": 0.0065,
+      "spearman_ic_oos": 0.0237,
+      "q5_q1_20d_spread_is_pct": -0.199,
+      "q5_q1_20d_spread_oos_pct": 1.184
+    },
+    "d_rev": {
+      "n_events": 14278,
+      "spearman_ic_is": 0.0235,
+      "spearman_ic_oos": 0.0033,
+      "q5_q1_20d_spread_is_pct": 0.366,
+      "q5_q1_20d_spread_oos_pct": -0.008
+    },
+    "d_ni": {
+      "n_events": 13037,
+      "spearman_ic_is": 0.0203,
+      "spearman_ic_oos": -0.0012,
+      "q5_q1_20d_spread_is_pct": 0.208,
+      "q5_q1_20d_spread_oos_pct": 0.216
+    }
+  },
+  "calendar_21d_rebalance": {
+    "PEAD_CAR2D": {
+      "is_dir": "neg",
+      "ls_5bp_all": 0.101,
+      "ls_10bp_is": -0.249,
+      "ls_10bp_oos": 0.195,
+      "ls_10bp_all": -0.022,
+      "ls_20bp_all": -0.266,
+      "maxdd_10bp_pct": -18.9,
+      "perm_pct_is": 65.0,
+      "perm_pct_oos": 81.5
+    },
+    "PEAD_DROE": {
+      "is_dir": "neg",
+      "ls_5bp_all": -0.565,
+      "ls_10bp_is": -0.15,
+      "ls_10bp_oos": -1.367,
+      "ls_10bp_all": -0.672,
+      "ls_20bp_all": -0.883,
+      "maxdd_10bp_pct": -44.47,
+      "perm_pct_is": 70.5,
+      "perm_pct_oos": 1.5
+    },
+    "PEAD_DREV": {
+      "is_dir": "pos",
+      "ls_5bp_all": -0.165,
+      "ls_10bp_is": -0.161,
+      "ls_10bp_oos": -0.405,
+      "ls_10bp_all": -0.281,
+      "ls_20bp_all": -0.508,
+      "maxdd_10bp_pct": -21.07,
+      "perm_pct_is": 74.5,
+      "perm_pct_oos": 40.0
+    },
+    "PEAD_DNI": {
+      "is_dir": "neg",
+      "ls_5bp_all": -0.453,
+      "ls_10bp_is": -0.265,
+      "ls_10bp_oos": -1.002,
+      "ls_10bp_all": -0.599,
+      "ls_20bp_all": -0.883,
+      "maxdd_10bp_pct": -32.38,
+      "perm_pct_is": 60.0,
+      "perm_pct_oos": 9.0
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "generated_utc": "2026-11-21T17:28:56.139758+00:00",
+  "experiment": "EXP-0042",
+  "results": {
+    "SPY": {
+      "days": 6762,
+      "start": "2000-01-04",
+      "BuyHold_0bp": {
+        "sharpe": 0.489,
+        "cagr_pct": 7.85,
+        "maxdd_pct": -55.2
+      },
+      "Intraday_0bp": {
+        "sharpe": 0.111,
+        "cagr_pct": 0.53,
+        "maxdd_pct": -57.04
+      },
+      "Overnight_0bp": {
+        "sharpe": 0.686,
+        "cagr_pct": 7.28,
+        "maxdd_pct": -32.8
+      },
+      "Overnight_2bp_side": {
+        "sharpe": -0.217,
+        "cagr_pct": -3.0,
+        "maxdd_pct": -71.09
+      },
+      "Overnight_5bp_side": {
+        "sharpe": -1.573,
+        "cagr_pct": -16.62,
+        "maxdd_pct": -99.28
+      },
+      "Overnight_10bp_side": {
+        "sharpe": -3.831,
+        "cagr_pct": -35.21,
+        "maxdd_pct": -100.0
+      },
+      "Overnight_Gross_Ann_Ret_pct": 7.66,
+      "Breakeven_bps_per_side": 1.52
+    },
+    "QQQ": {
+      "days": 6762,
+      "start": "2000-01-04",
+      "BuyHold_0bp": {
+        "sharpe": 0.416,
+        "cagr_pct": 7.86,
+        "maxdd_pct": -82.97
+      },
+      "Intraday_0bp": {
+        "sharpe": -0.108,
+        "cagr_pct": -4.94,
+        "maxdd_pct": -92.55
+      },
+      "Overnight_0bp": {
+        "sharpe": 0.947,
+        "cagr_pct": 13.46,
+        "maxdd_pct": -30.77
+      },
+      "Overnight_2bp_side": {
+        "sharpe": 0.249,
+        "cagr_pct": 2.59,
+        "maxdd_pct": -41.3
+      },
+      "Overnight_5bp_side": {
+        "sharpe": -0.797,
+        "cagr_pct": -11.81,
+        "maxdd_pct": -97.85
+      },
+      "Overnight_10bp_side": {
+        "sharpe": -2.541,
+        "cagr_pct": -31.47,
+        "maxdd_pct": -100.0
+      },
+      "Overnight_Gross_Ann_Ret_pct": 13.68,
+      "Breakeven_bps_per_side": 2.71
+    },
+    "IWM": {
+      "days": 6661,
+      "start": "2000-05-30",
+      "BuyHold_0bp": {
+        "sharpe": 0.448,
+        "cagr_pct": 8.13,
+        "maxdd_pct": -59.03
+      },
+      "Intraday_0bp": {
+        "sharpe": -0.196,
+        "cagr_pct": -5.77,
+        "maxdd_pct": -82.33
+      },
+      "Overnight_0bp": {
+        "sharpe": 1.105,
+        "cagr_pct": 14.74,
+        "maxdd_pct": -29.52
+      },
+      "Overnight_2bp_side": {
+        "sharpe": 0.344,
+        "cagr_pct": 3.74,
+        "maxdd_pct": -45.05
+      },
+      "Overnight_5bp_side": {
+        "sharpe": -0.798,
+        "cagr_pct": -10.82,
+        "maxdd_pct": -96.18
+      },
+      "Overnight_10bp_side": {
+        "sharpe": -2.702,
+        "cagr_pct": -30.7,
+        "maxdd_pct": -99.99
+      },
+      "Overnight_Gross_Ann_Ret_pct": 14.63,
+      "Breakeven_bps_per_side": 2.9
+    },
+    "TLT": {
+      "days": 6120,
+      "start": "2002-07-29",
+      "BuyHold_0bp": {
+        "sharpe": 0.31,
+        "cagr_pct": 3.47,
+        "maxdd_pct": -48.35
+      },
+      "Intraday_0bp": {
+        "sharpe": 0.347,
+        "cagr_pct": 3.06,
+        "maxdd_pct": -25.52
+      },
+      "Overnight_0bp": {
+        "sharpe": 0.089,
+        "cagr_pct": 0.4,
+        "maxdd_pct": -53.41
+      },
+      "Overnight_2bp_side": {
+        "sharpe": -0.944,
+        "cagr_pct": -9.23,
+        "maxdd_pct": -91.31
+      },
+      "Overnight_5bp_side": {
+        "sharpe": -2.494,
+        "cagr_pct": -21.98,
+        "maxdd_pct": -99.77
+      },
+      "Overnight_10bp_side": {
+        "sharpe": -5.077,
+        "cagr_pct": -39.38,
+        "maxdd_pct": -100.0
+      },
+      "Overnight_Gross_Ann_Ret_pct": 0.87,
+      "Breakeven_bps_per_side": 0.17
+    },
+    "GLD": {
+      "days": 5536,
+      "start": "2004-11-19",
+      "BuyHold_0bp": {
+        "sharpe": 0.585,
+        "cagr_pct": 9.45,
+        "maxdd_pct": -45.56
+      },
+      "Intraday_0bp": {
+        "sharpe": -0.027,
+        "cagr_pct": -1.05,
+        "maxdd_pct": -39.77
+      },
+      "Overnight_0bp": {
+        "sharpe": 0.832,
+        "cagr_pct": 10.62,
+        "maxdd_pct": -38.29
+      },
+      "Overnight_2bp_side": {
+        "sharpe": 0.067,
+        "cagr_pct": 0.01,
+        "maxdd_pct": -65.04
+      },
+      "Overnight_5bp_side": {
+        "sharpe": -1.081,
+        "cagr_pct": -14.03,
+        "maxdd_pct": -96.4
+      },
+      "Overnight_10bp_side": {
+        "sharpe": -2.994,
+        "cagr_pct": -33.2,
+        "maxdd_pct": -99.99
+      },
+      "Overnight_Gross_Ann_Ret_pct": 10.96,
+      "Breakeven_bps_per_side": 2.17
+    }
+  }
+}

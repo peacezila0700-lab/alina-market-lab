@@ -1,0 +1,239 @@
+{
+  "generated_utc": "2026-11-21T17:25:49.557636+00:00",
+  "experiment": "EXP-0040",
+  "curve_duration_timing": {
+    "1_TLT_BuyHold": {
+      "total_all": {
+        "sharpe": 0.227,
+        "cagr_pct": 2.33,
+        "maxdd_pct": -48.35,
+        "calmar": 0.048
+      },
+      "excess_vs_bil_is": {
+        "sharpe": 0.454,
+        "cagr_pct": 6.04,
+        "maxdd_pct": -26.65,
+        "calmar": 0.227
+      },
+      "excess_vs_bil_oos": {
+        "sharpe": -0.16,
+        "cagr_pct": -3.41,
+        "maxdd_pct": -54.3,
+        "calmar": -0.063
+      },
+      "excess_vs_bil_all": {
+        "sharpe": 0.141,
+        "cagr_pct": 0.99,
+        "maxdd_pct": -54.3,
+        "calmar": 0.018
+      },
+      "shift_pct_oos": null,
+      "time_in_bond_pct": 100.0
+    },
+    "2_IEF_BuyHold": {
+      "total_all": {
+        "sharpe": 0.423,
+        "cagr_pct": 2.73,
+        "maxdd_pct": -23.92,
+        "calmar": 0.114
+      },
+      "excess_vs_bil_is": {
+        "sharpe": 0.65,
+        "cagr_pct": 4.56,
+        "maxdd_pct": -10.59,
+        "calmar": 0.43
+      },
+      "excess_vs_bil_oos": {
+        "sharpe": -0.181,
+        "cagr_pct": -1.41,
+        "maxdd_pct": -28.93,
+        "calmar": -0.049
+      },
+      "excess_vs_bil_all": {
+        "sharpe": 0.234,
+        "cagr_pct": 1.39,
+        "maxdd_pct": -28.93,
+        "calmar": 0.048
+      },
+      "shift_pct_oos": null,
+      "time_in_bond_pct": 100.0
+    },
+    "3_BIL_BuyHold": {
+      "total_all": {
+        "sharpe": 2.82,
+        "cagr_pct": 1.32,
+        "maxdd_pct": -0.78,
+        "calmar": 1.695
+      },
+      "excess_vs_bil_is": {
+        "sharpe": 0.0,
+        "cagr_pct": 0.0,
+        "maxdd_pct": 0.0,
+        "calmar": 0.0
+      },
+      "excess_vs_bil_oos": {
+        "sharpe": 0.0,
+        "cagr_pct": 0.0,
+        "maxdd_pct": 0.0,
+        "calmar": 0.0
+      },
+      "excess_vs_bil_all": {
+        "sharpe": 0.0,
+        "cagr_pct": 0.0,
+        "maxdd_pct": 0.0,
+        "calmar": 0.0
+      },
+      "shift_pct_oos": null,
+      "time_in_bond_pct": 0.0
+    },
+    "4_TLT_if_10y3m_Pos_else_BIL": {
+      "total_all": {
+        "sharpe": 0.233,
+        "cagr_pct": 2.3,
+        "maxdd_pct": -44.14,
+        "calmar": 0.052
+      },
+      "excess_vs_bil_is": {
+        "sharpe": 0.454,
+        "cagr_pct": 6.04,
+        "maxdd_pct": -26.65,
+        "calmar": 0.227
+      },
+      "excess_vs_bil_oos": {
+        "sharpe": -0.227,
+        "cagr_pct": -3.45,
+        "maxdd_pct": -46.68,
+        "calmar": -0.074
+      },
+      "excess_vs_bil_all": {
+        "sharpe": 0.139,
+        "cagr_pct": 0.97,
+        "maxdd_pct": -46.68,
+        "calmar": 0.021
+      },
+      "shift_pct_oos": 39.0,
+      "time_in_bond_pct": 86.7
+    },
+    "5_TLT_if_10y2y_Pos_else_BIL": {
+      "total_all": {
+        "sharpe": 0.306,
+        "cagr_pct": 3.35,
+        "maxdd_pct": -32.93,
+        "calmar": 0.102
+      },
+      "excess_vs_bil_is": {
+        "sharpe": 0.454,
+        "cagr_pct": 6.04,
+        "maxdd_pct": -26.65,
+        "calmar": 0.227
+      },
+      "excess_vs_bil_oos": {
+        "sharpe": -0.067,
+        "cagr_pct": -1.54,
+        "maxdd_pct": -43.84,
+        "calmar": -0.035
+      },
+      "excess_vs_bil_all": {
+        "sharpe": 0.212,
+        "cagr_pct": 2.01,
+        "maxdd_pct": -43.84,
+        "calmar": 0.046
+      },
+      "shift_pct_oos": 76.5,
+      "time_in_bond_pct": 88.4
+    },
+    "6_TLT_if_SMA126_else_BIL": {
+      "total_all": {
+        "sharpe": 0.184,
+        "cagr_pct": 1.48,
+        "maxdd_pct": -37.3,
+        "calmar": 0.04
+      },
+      "excess_vs_bil_is": {
+        "sharpe": 0.434,
+        "cagr_pct": 4.81,
+        "maxdd_pct": -28.54,
+        "calmar": 0.169
+      },
+      "excess_vs_bil_oos": {
+        "sharpe": -0.327,
+        "cagr_pct": -3.92,
+        "maxdd_pct": -47.65,
+        "calmar": -0.082
+      },
+      "excess_vs_bil_all": {
+        "sharpe": 0.071,
+        "cagr_pct": 0.15,
+        "maxdd_pct": -47.65,
+        "calmar": 0.003
+      },
+      "shift_pct_oos": 51.5,
+      "time_in_bond_pct": 55.3
+    },
+    "7_TLT_Slope10y3m_AND_SMA126": {
+      "total_all": {
+        "sharpe": 0.274,
+        "cagr_pct": 2.39,
+        "maxdd_pct": -28.47,
+        "calmar": 0.084
+      },
+      "excess_vs_bil_is": {
+        "sharpe": 0.434,
+        "cagr_pct": 4.81,
+        "maxdd_pct": -28.54,
+        "calmar": 0.169
+      },
+      "excess_vs_bil_oos": {
+        "sharpe": -0.224,
+        "cagr_pct": -2.25,
+        "maxdd_pct": -27.32,
+        "calmar": -0.082
+      },
+      "excess_vs_bil_all": {
+        "sharpe": 0.152,
+        "cagr_pct": 1.06,
+        "maxdd_pct": -28.54,
+        "calmar": 0.037
+      },
+      "shift_pct_oos": 64.5,
+      "time_in_bond_pct": 47.6
+    },
+    "8_IEF_Slope10y3m_AND_SMA126": {
+      "total_all": {
+        "sharpe": 0.412,
+        "cagr_pct": 1.92,
+        "maxdd_pct": -13.12,
+        "calmar": 0.147
+      },
+      "excess_vs_bil_is": {
+        "sharpe": 0.358,
+        "cagr_pct": 2.03,
+        "maxdd_pct": -13.03,
+        "calmar": 0.155
+      },
+      "excess_vs_bil_oos": {
+        "sharpe": -0.188,
+        "cagr_pct": -0.69,
+        "maxdd_pct": -11.4,
+        "calmar": -0.061
+      },
+      "excess_vs_bil_all": {
+        "sharpe": 0.145,
+        "cagr_pct": 0.59,
+        "maxdd_pct": -13.29,
+        "calmar": 0.045
+      },
+      "shift_pct_oos": 80.0,
+      "time_in_bond_pct": 53.0
+    }
+  },
+  "treasury_auction_10y_30y": {
+    "n_auctions": 408,
+    "corr_btc_ex5d": -0.0075,
+    "corr_btc_ex21d": -0.0427,
+    "hi_btc_ex21d_pct": -0.306,
+    "lo_btc_ex21d_pct": 0.255,
+    "n_with_tail": 408,
+    "corr_tail_ex5d": -0.0376
+  }
+}

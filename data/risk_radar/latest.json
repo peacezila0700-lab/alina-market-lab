@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-21T17:05:00+00:00",
+  "generated_utc": "2026-11-21T17:31:10+00:00",
   "run_date": "2026-11-21",
   "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).",
   "overall_risk_classification": "HIGH",
@@ -257,5 +257,18 @@
     "rollover_hazard_window_utc": "16:00-23:00 UTC (6h horizon touches 21-22 UTC rollover)",
     "last_bar_in_rollover_hazard": true,
     "exp0030_gate_benchmark": "70pct VALID MetaGate cuts 6h shock 34.9% -> 16.1% & drag 2.21p -> 1.85p (net stays -2.10p < 0; Phase C locked)."
+  },
+  "crypto_trend_overlay": {
+    "as_of_date": "2026-11-21",
+    "btc_close": 59958.45,
+    "btc_sma50": 77133.24,
+    "above_sma50": false,
+    "trend_ens_vote_20_40_60_90_120": 0.0,
+    "rv21_ann_pct": 51.06,
+    "vt25_scalar": 0.49,
+    "suggested_btc_ens_vt25_pct": 0.0,
+    "suggested_btc_sma50_vt25_pct": 0.0,
+    "suggested_cash_pct": 100.0,
+    "exp0041_note": "EXP-0041 (2015-2026 BTC 11.5y EFFR excess): SMA50_VT25 Sh +1.665 DD -33.5% (Shift=99.9%); TrendEns_VT25 Sh +1.590 DD -27.8% (Shift=99.9%). Monitoring/defense reference only."
   }
 }

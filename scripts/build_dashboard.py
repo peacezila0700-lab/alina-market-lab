@@ -254,6 +254,14 @@ def main():
             h.append(kv("6h Rollover Hazard (16-23 UTC)", "YES — elevated spread risk" if fxg["last_bar_in_rollover_hazard"] else "NO — liquid window"))
             h.append(f"<div class='sub'>{esc(fxg['exp0030_gate_benchmark'])}</div></div>")
 
+        cto = rr.get("crypto_trend_overlay", {})
+        if "btc_close" in cto:
+            h.append("<h2>Crypto Trend Regime & VolTarget25% (EXP-0041 · Monitor Only)</h2><div class='card'>")
+            h.append(kv(f"BTC Close ({cto['as_of_date']}) / SMA50", f"${cto['btc_close']:,.0f} / ${cto['btc_sma50']:,.0f} ({'ABOVE' if cto['above_sma50'] else 'BELOW'})"))
+            h.append(kv("TrendEns(20..120) Vote / RV21", f"{cto['trend_ens_vote_20_40_60_90_120']:.2f} / {cto['rv21_ann_pct']:.1f}% ann"))
+            h.append(kv("Ref Sizing (Ens×VT25 / Cash)", f"BTC {cto['suggested_btc_ens_vt25_pct']:.1f}% / Cash {cto['suggested_cash_pct']:.1f}%"))
+            h.append(f"<div class='sub'>{esc(cto['exp0041_note'])}</div></div>")
+
     exp_n, exp_pass = 0, 0
     exp_csv = ROOT / "research" / "EXPERIMENT_LOG.csv"
     if exp_csv.exists():

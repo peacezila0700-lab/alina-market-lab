@@ -283,6 +283,39 @@ def _rank_risk(val: float | None, elev: float, high: float, reverse: bool = Fals
         return "LOW"
 
 
+def compute_crypto_trend_overlay() -> dict:
+    """
+    EXP-0041: Strictly causal Daily Crypto Trend Regime + VolTarget 25% Monitor (BTC-USD).
+    Long-only trend-regime defense / sizing overlay (not market-neutral alpha).
+    """
+    btc = pd.read_csv(ROOT / "data" / "universe" / "BTC.csv")
+    btc["date"] = pd.to_datetime(btc["date"], errors="coerce")
+    btc = btc.dropna(subset=["date", "close"]).drop_duplicates("date").sort_values("date").set_index("date")
+    c = pd.to_numeric(btc["close"], errors="coerce").dropna()
+    r = c.pct_change().fillna(0.0)
+    sma50 = float(c.rolling(50).mean().iloc[-1])
+    last_c = float(c.iloc[-1])
+    votes = [float(last_c > float(c.rolling(lb).mean().iloc[-1])) for lb in (20, 40, 60, 90, 120)]
+    trend_ens = float(sum(votes) / 5.0)
+    rv21 = max(0.15, float(r.rolling(21).std().iloc[-1] * math.sqrt(365.0)))
+    vt25_scalar = min(1.0, 0.25 / rv21)
+    target_w_ens = round(trend_ens * vt25_scalar * 100.0, 1)
+    target_w_sma50 = round((1.0 if last_c > sma50 else 0.0) * vt25_scalar * 100.0, 1)
+    return {
+        "as_of_date": c.index[-1].strftime("%Y-%m-%d"),
+        "btc_close": round(last_c, 2),
+        "btc_sma50": round(sma50, 2),
+        "above_sma50": bool(last_c > sma50),
+        "trend_ens_vote_20_40_60_90_120": round(trend_ens, 2),
+        "rv21_ann_pct": round(rv21 * 100.0, 2),
+        "vt25_scalar": round(vt25_scalar, 3),
+        "suggested_btc_ens_vt25_pct": target_w_ens,
+        "suggested_btc_sma50_vt25_pct": target_w_sma50,
+        "suggested_cash_pct": round(100.0 - target_w_ens, 1),
+        "exp0041_note": "EXP-0041 (2015-2026 BTC 11.5y EFFR excess): SMA50_VT25 Sh +1.665 DD -33.5% (Shift=99.9%); TrendEns_VT25 Sh +1.590 DD -27.8% (Shift=99.9%). Monitoring/defense reference only.",
+    }
+
+
 def build_risk_radar() -> dict:
     now = datetime.now(timezone.utc)
     run_date = now.strftime("%Y-%m-%d")
@@ -590,6 +623,12 @@ def build_risk_radar() -> dict:
         fx_guard = {"error": str(e)}
         missing_warnings.append(f"fx_execution_guard error: {e}")
 
+    try:
+        crypto_overlay = compute_crypto_trend_overlay()
+    except Exception as e:
+        crypto_overlay = {"error": str(e)}
+        missing_warnings.append(f"crypto_trend_overlay error: {e}")
+
     payload = {
         "generated_utc": now.isoformat(timespec="seconds"),
         "run_date": run_date,
@@ -603,6 +642,7 @@ def build_risk_radar() -> dict:
         "panels": panels,
         "risk_meta_model": risk_meta,
         "fx_execution_guard": fx_guard,
+        "crypto_trend_overlay": crypto_overlay,
     }
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -674,13 +714,20 @@ def build_risk_radar() -> dict:
             "## 3. FX Intraday Rollover & Cost-Shock Guard (`EXP-0030 Track B`)",
             f"- **`EURGBP H1` Last Bar:** `{fx_guard['last_bar_utc']}` | Spread `{fx_guard['latest_spread_pips']} pips` (`z72={fx_guard['spread_z72']}`) | In 6h Rollover Hazard (`16–23 UTC`): `{fx_guard['last_bar_in_rollover_hazard']}`",
         ]
-    lines += ["", "## 4. Active Risk Alerts"]
+    if "btc_close" in crypto_overlay:
+        lines += [
+            "",
+            "## 4. Crypto Daily Trend Regime & VolTarget25% Monitor (`EXP-0041`, Monitoring Reference)",
+            f"- **`BTC-USD` As-Of `{crypto_overlay['as_of_date']}`:** Close `${crypto_overlay['btc_close']:,.2f}` | `SMA(50)=${crypto_overlay['btc_sma50']:,.2f}` (`Above={crypto_overlay['above_sma50']}`) | `TrendEns(20,40,60,90,120)={crypto_overlay['trend_ens_vote_20_40_60_90_120']:.2f}` | `RV21={crypto_overlay['rv21_ann_pct']}%`",
+            f"- **Vol-Targeted Reference (`VT25%`):** `TrendEns x VT25 = {crypto_overlay['suggested_btc_ens_vt25_pct']}%` (`SMA50 x VT25 = {crypto_overlay['suggested_btc_sma50_vt25_pct']}%`) | Cash/EFFR `{crypto_overlay['suggested_cash_pct']}%`",
+        ]
+    lines += ["", "## 5. Active Risk Alerts"]
     if alerts:
         for a in alerts:
             lines.append(f"- **[{a['severity']}] `{a['panel']}`:** {a['msg']}")
     else:
         lines.append("- None triggered.")
-    lines += ["", "## 5. Missing Data / Staleness Warnings"]
+    lines += ["", "## 6. Missing Data / Staleness Warnings"]
     if payload["missing_data_warnings"]:
         for w in payload["missing_data_warnings"]:
             lines.append(f"- {w}")
