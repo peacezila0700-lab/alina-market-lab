@@ -1,0 +1,3317 @@
+{
+  "summary": {
+    "generated_utc": "2026-11-21T08:31:01Z",
+    "gitlab_14_retry": {
+      "Blocked": 14
+    },
+    "github_queue_picked": 250,
+    "github_queue_downloaded": 195,
+    "github_queue_failed": 55,
+    "github_curated_extra_downloaded": 119,
+    "ff_ex5_threads_checked": {
+      "https://www.forexfactory.com/thread/1379620-only-mq5-and-python-eas-and-indicators-for?page=6": 200,
+      "https://www.forexfactory.com/thread/864355-lrsf-tms-expert-advisor-mt5": 200
+    }
+  },
+  "gitlab_14_retry": [
+    {
+      "task_id": "Q-1731",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Notification/Telegram/CustomMessage.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1732",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Notification/TelegramDLL/CustomChat.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1733",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Common/CandleSticks/CandleSticksInfo.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1734",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Notification/TelegramDLL/CustomMessage.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1735",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Notification/Telegram/NotifyTelegramChannel.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1736",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Notification/TelegramDLL/NotifyTelegramChannel.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1737",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Notification/TelegramDLL/NotifyTelegramChannelV2.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1738",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/Roffild/RoffildLibrary/-/raw/master/Include/Roffild/OrderSql.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1739",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/Roffild/RoffildLibrary/-/raw/master/Include/Roffild/ArrayList.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1740",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/Roffild/RoffildLibrary/-/raw/master/Include/Roffild/OrderData.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1744",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/Roffild/RoffildLibrary/-/raw/master/Include/Roffild/ArrayListClass.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1745",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/Roffild/RoffildLibrary/-/raw/master/Include/Roffild/Log4MQL_tofile.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1746",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/Roffild/RoffildLibrary/-/raw/master/Include/Roffild/ArrayList_macros.mqh",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    },
+    {
+      "task_id": "Q-1748",
+      "status": "Blocked",
+      "resolved_url": "https://gitlab.com/Roffild/RoffildLibrary/-/raw/master/Experts/Roffild/Examples/PythonDLL_Example.py",
+      "http_status": 429,
+      "error": "HTTP 429: Too Many Requests"
+    }
+  ],
+  "github_queue_downloads": [
+    {
+      "task_id": "Q-0531",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337/master/src/include/common/advanced/inputs.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337/src__include__common__advanced__inputs.mqh",
+      "sha256": "831ff5c8a56aea245b6e747e147bca7641599f632964f8af6a02c7abe233116f",
+      "bytes": 5736
+    },
+    {
+      "task_id": "Q-1563",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Array.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Array.mqh",
+      "sha256": "1962965f1435e6df5134932174e2b7738e235d4533789e07ae69f92a6006a81b",
+      "bytes": 19602
+    },
+    {
+      "task_id": "Q-0591",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/HorizontalRadioGroup.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/HorizontalRadioGroup.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1688",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Matplotlib/axis.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Matplotlib__axis.mqh",
+      "sha256": "c553e855d56785459c0753f52a7873e161e5bba57da8a6ccdc5709105683bcf4",
+      "bytes": 19123
+    },
+    {
+      "task_id": "Q-0394",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/CorrelationEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__CorrelationEngine.mqh",
+      "sha256": "a8168d7b60a32a2bdb0c97f949ca67f349ffa08d7c91e5cdc1454cbea66a9782",
+      "bytes": 2832
+    },
+    {
+      "task_id": "Q-0517",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_CISD_Engine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_CISD_Engine.mqh",
+      "sha256": "c308a3034d226182da9063ebeeeeb09291945b30a476473761b0ac095705e352",
+      "bytes": 32723
+    },
+    {
+      "task_id": "Q-0775",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/DOCS/06_REFERENCE/MQL5/Bots thirds/RTX_BARBAR_V31_Trial December.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/francomascareloai/EA_SCALPER_XAUUSD/main/DOCS/06_REFERENCE/MQL5/Bots thirds/RTX_BARBAR_V31_Trial December.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0535",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/2MAAOS.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__2MAAOS.mq5",
+      "sha256": "6be9d4196feebe94e7240ddfeb079ed677722735bea4a4c528a05ff17c341d77",
+      "bytes": 8135
+    },
+    {
+      "task_id": "Q-0636",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout1.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout1.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0534",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/vdemydiuk/mtapi/master/mq4/mql4-auth.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/vdemydiuk__mtapi/mq4__mql4-auth.mqh",
+      "sha256": "9b624bc8cc43bf0f61f15804d44783ef01a216955f9a9b1a7866668463645894",
+      "bytes": 4775
+    },
+    {
+      "task_id": "Q-0329",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Experts/SMC_Sample_EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Experts__SMC_Sample_EA.mq5",
+      "sha256": "6492ff86ca139424e789a8fe7b8467811736064348d801bc4f1754eb7e109a0e",
+      "bytes": 16567
+    },
+    {
+      "task_id": "Q-0722",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/errordescription.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__errordescription.mqh",
+      "sha256": "986c77f38f1ac3ab9f9f135f67d15171d18d9101549376a7b38d3f6a20de3977",
+      "bytes": 15613
+    },
+    {
+      "task_id": "Q-0402",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/ai/btcusd1min/BTCUSD_M1_EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/ai__btcusd1min__BTCUSD_M1_EA.mq5",
+      "sha256": "62483c11b27479170bc7a210e9da8597351348ecb0c360f68761f5171c89e621",
+      "bytes": 23213
+    },
+    {
+      "task_id": "Q-0530",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337/master/src/include/common/rider/inputs.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337/src__include__common__rider__inputs.mqh",
+      "sha256": "e826454b11b3e796b8827e614a106b3c835a4e53fa2c905ff4d3afdb3876dca4",
+      "bytes": 4882
+    },
+    {
+      "task_id": "Q-1596",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/BasicTrade.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/BasicTrade.mqh",
+      "sha256": "b426fce70cc4775416e7033b1fe9bfd3a91a7107c1c28018910eecd9ac46698b",
+      "bytes": 15237
+    },
+    {
+      "task_id": "Q-0586",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/PortfolioMargin.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/PortfolioMargin.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1692",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Matplotlib/figure.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Matplotlib__figure.mqh",
+      "sha256": "0814a80026a22c53d3c7d18be2c4c69bd92db70386b0d93206347f9ed4a31124",
+      "bytes": 10645
+    },
+    {
+      "task_id": "Q-0395",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/DisplacementEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__DisplacementEngine.mqh",
+      "sha256": "a324a90d5d624cac3fceaa810e3242167d2e75fd91195a3ffbf25e3513c4100d",
+      "bytes": 4016
+    },
+    {
+      "task_id": "Q-0522",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_CISD_SelfTest.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_CISD_SelfTest.mqh",
+      "sha256": "8e47af46e26a97fae0d38699897abd28aea3625ab5ea8161295b1a55927b3bea",
+      "bytes": 23864
+    },
+    {
+      "task_id": "Q-0772",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Experts/EA_AGGRESSIVE_SCALPER.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Experts__EA_AGGRESSIVE_SCALPER.mq5",
+      "sha256": "90a12fbecc0d55660c6a214a01b5f37fbafe8e22825a9a57947fcc71fee26db5",
+      "bytes": 112556
+    },
+    {
+      "task_id": "Q-0543",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/2MACDSTO.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__2MACDSTO.mq5",
+      "sha256": "b2e3a95fde70c88b46fcab0c635b2b31132e1fe0969c22aeaa76a6b008e60105",
+      "bytes": 7390
+    },
+    {
+      "task_id": "Q-0643",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout2-2.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout2-2.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0532",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/vdemydiuk/mtapi/master/mq5/hash.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/vdemydiuk__mtapi/mq5__hash.mqh",
+      "sha256": "d5cc395cf478260a159433e0bf4795b6eea4b88d0ebc1a94b27064b70a2fe737",
+      "bytes": 21207
+    },
+    {
+      "task_id": "Q-0342",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Experts/SMC_Snapshot_Export.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Experts__SMC_Snapshot_Export.mq5",
+      "sha256": "220195860bed62fd61bd670b6087bb10db1480f5ec0566f1d37f536390184854",
+      "bytes": 5054
+    },
+    {
+      "task_id": "Q-0743",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/alglibmisc.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__alglibmisc.mqh",
+      "sha256": "81f3016d14f682dba24d4afd712df1e381d3eeda2303b0a9ddcfebe7565859f9",
+      "bytes": 61677
+    },
+    {
+      "task_id": "Q-0405",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/ai/eurusd1h/EURUSD_H1_ActionEA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/ai__eurusd1h__EURUSD_H1_ActionEA.mq5",
+      "sha256": "928eb12ae88db6535f5019cbc2357f0c7bcba49ee06e3387cda42153a6931603",
+      "bytes": 22206
+    },
+    {
+      "task_id": "Q-1571",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Buffer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Buffer.mqh",
+      "sha256": "5cdc037801fb6b66e32bd190179d3fa9993709b71137ce97307087ee7a44c5dd",
+      "bytes": 2627
+    },
+    {
+      "task_id": "Q-0582",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/PortfolioRisk.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/PortfolioRisk.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1690",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Matplotlib/JAson.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Matplotlib__JAson.mqh",
+      "sha256": "8895e7c18f12abe8df095759103cef4c79fc9f4c4a42580d140234ede8e1465c",
+      "bytes": 31322
+    },
+    {
+      "task_id": "Q-0384",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/FVGEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__FVGEngine.mqh",
+      "sha256": "8431f39fbb5849eec7d8f5ed6d4ac43ca54a54374093f33175a0facbb90c2760",
+      "bytes": 2927
+    },
+    {
+      "task_id": "Q-0518",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_CISD_Visual.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_CISD_Visual.mqh",
+      "sha256": "2d923f148ba639c2c9bef91c2dafbe48545d04e78f53d55718c66aeaa396278b",
+      "bytes": 20883
+    },
+    {
+      "task_id": "Q-0765",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Experts/EA_SCALPER_XAUUSD.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Experts__EA_SCALPER_XAUUSD.mq5",
+      "sha256": "24e2da50ff829ea09877385b55109b3416ff3db95173625f1f37b03b391494b6",
+      "bytes": 75888
+    },
+    {
+      "task_id": "Q-0538",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/2MOMEMA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__2MOMEMA.mq5",
+      "sha256": "12b43ba89e09e061ec89c51d0f992c574301b40f41e0e2499502165a07532d27",
+      "bytes": 6767
+    },
+    {
+      "task_id": "Q-0637",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout2.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout2.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0533",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/vdemydiuk/mtapi/master/mq5/json.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/vdemydiuk__mtapi/mq5__json.mqh",
+      "sha256": "b4cfcc613c61ae8c075174b1eeee59bde0d1061919972089ba487687c42718bb",
+      "bytes": 29201
+    },
+    {
+      "task_id": "Q-0383",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/Analysis/CurrencyStrength.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__Analysis__CurrencyStrength.mqh",
+      "sha256": "321ae3cabacdf4c9bc7123ed80527794dc4fd66cda438a3b1ac15857b30051f1",
+      "bytes": 17020
+    },
+    {
+      "task_id": "Q-0714",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/ap.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__ap.mqh",
+      "sha256": "7a433bb8dff077a32d342bb1844733ab972c75c1425dee390966d158feb52544",
+      "bytes": 77603
+    },
+    {
+      "task_id": "Q-0403",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/ai/eurusd1min/EURUSD_M15_EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/ai__eurusd1min__EURUSD_M15_EA.mq5",
+      "sha256": "51eebba2011c04cd3ea1708e154c8ef210a027b14af2ae96a27521a117bb7748",
+      "bytes": 25949
+    },
+    {
+      "task_id": "Q-1594",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/BufferFXT.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/BufferFXT.mqh",
+      "sha256": "155bca1d8053e6cafbc6f0729963e48c4b6fe8f9e62d5cd2d36a55ab1c6df205",
+      "bytes": 12408
+    },
+    {
+      "task_id": "Q-0603",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Position Sizer Trading.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Position Sizer Trading.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1693",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Matplotlib/pyplot.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Matplotlib__pyplot.mqh",
+      "sha256": "5fa134fc12c4577dbffa8f93f307777f67ddc76607047ba43da04513882c2ab5",
+      "bytes": 16033
+    },
+    {
+      "task_id": "Q-0390",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/LiquidityEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__LiquidityEngine.mqh",
+      "sha256": "db9e47ad2ddf7a58fdb6e9836715659fd7bf2c9ea7970a32eacf2fa8ff2b64cf",
+      "bytes": 11278
+    },
+    {
+      "task_id": "Q-0526",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_Connect_Engine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_Connect_Engine.mqh",
+      "sha256": "57ccb425107632498e4f0ca105ce86a25d8e396e9b0447e0957c2f8985b0e129",
+      "bytes": 51248
+    },
+    {
+      "task_id": "Q-0767",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Experts/EA_ULTRA_AGGRESSIVE.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Experts__EA_ULTRA_AGGRESSIVE.mq5",
+      "sha256": "6e14f0d17c3b2f61379bab3e7b14b68290f271c2592b0cce657afa836b006f98",
+      "bytes": 17919
+    },
+    {
+      "task_id": "Q-0539",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/AFAOSMD.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__AFAOSMD.mq5",
+      "sha256": "c1ba3345fd490c55d37188748dc36fcb0cc23f0bfbc7d5be7fb540ad7b23eade",
+      "bytes": 7917
+    },
+    {
+      "task_id": "Q-0638",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout3.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout3.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0377",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/Analysis/VIXCalculator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__Analysis__VIXCalculator.mqh",
+      "sha256": "554f7d6babf69f1c82732ea26d923b93f5df5efc2734d808c42b7d123ee2ee10",
+      "bytes": 11400
+    },
+    {
+      "task_id": "Q-0745",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/arrayresize.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__arrayresize.mqh",
+      "sha256": "b3b20734cd2a730665502d5bb13e8b100b9b2a288d3c2aef54131bc7fc13cf3b",
+      "bytes": 6749
+    },
+    {
+      "task_id": "Q-0412",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/ai/rsi-divergence/RSIDivergence_EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/ai__rsi-divergence__RSIDivergence_EA.mq5",
+      "sha256": "8735701a388b33e4887e0fa118089009dd446bfd722b856a793d335e1f7e5b3a",
+      "bytes": 19161
+    },
+    {
+      "task_id": "Q-1601",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/BufferStruct.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/BufferStruct.mqh",
+      "sha256": "ac7fa23697dc23a7c4dd8abf05de7e0d0c828b2bef0cbf253a217868745d00a0",
+      "bytes": 3017
+    },
+    {
+      "task_id": "Q-0583",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/TesterSupport.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/TesterSupport.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1695",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Matplotlib/requests.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Matplotlib__requests.mqh",
+      "sha256": "7ebcd78e4ba15bf0da8ff34a53b683fc90d1e64d747faeffaf7f4fbb71fc3dab",
+      "bytes": 26084
+    },
+    {
+      "task_id": "Q-0396",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/MarketRegimeEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__MarketRegimeEngine.mqh",
+      "sha256": "b7837d4cdeea6c082bd0ec84141b54ac30086ca1c7457a57f415d7f1e702c2e4",
+      "bytes": 3631
+    },
+    {
+      "task_id": "Q-0529",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_Connect_SelfTest.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_Connect_SelfTest.mqh",
+      "sha256": "da3160606bbf86a957221310a6130e527cdf3f6978aa732d04f07c93afd54336",
+      "bytes": 28376
+    },
+    {
+      "task_id": "Q-0769",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Experts/SmartPropAI_Template.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Experts__SmartPropAI_Template.mq5",
+      "sha256": "9ad23afdc8f919b7f7f773a0449cdafba16b9ab457cd54acb7dad2a21025807c",
+      "bytes": 25295
+    },
+    {
+      "task_id": "Q-0540",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/CEZLSMA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__CEZLSMA.mq5",
+      "sha256": "af2d1745aafc868b8d54c20c5d34005cc0570e75400f69d6768c54a4da40f09f",
+      "bytes": 7605
+    },
+    {
+      "task_id": "Q-0639",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout4.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout4.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0349",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/BreakerBlock.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__BreakerBlock.mqh",
+      "sha256": "5eb99427b565910c505ee72379114f18a6c0f41cb0798433fdb81dc95587fd27",
+      "bytes": 12823
+    },
+    {
+      "task_id": "Q-0744",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/bitconvert.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__bitconvert.mqh",
+      "sha256": "4c5bd4ab3c7e23eecd0bf929128e51b7bbd477ec7b9ebc0d97c3e0c1b20ebe81",
+      "bytes": 17664
+    },
+    {
+      "task_id": "Q-0406",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/ai/xauusd_h1/XAUUSD_H1_ActionEA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/ai__xauusd_h1__XAUUSD_H1_ActionEA.mq5",
+      "sha256": "7d1ab7e579a5d041b328ae91303f9e581ce52cd733f09d10c2cde4d0b61fa8a3",
+      "bytes": 11747
+    },
+    {
+      "task_id": "Q-1564",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Chart.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Chart.mqh",
+      "sha256": "f6ea242d29b6e38a637d2163cf710d146a2adece71dbd17d3fe146b8b00518e8",
+      "bytes": 28976
+    },
+    {
+      "task_id": "Q-0589",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Arabic.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Arabic.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1691",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Matplotlib/style.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Matplotlib__style.mqh",
+      "sha256": "bdc9d7523b2906a0c4e56f3fd2ba2a93fe0c3dca1241dc9c0c6f7faa3fabc20a",
+      "bytes": 3678
+    },
+    {
+      "task_id": "Q-0399",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/MarketStructureEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__MarketStructureEngine.mqh",
+      "sha256": "e20c050c883399a1da1f9eef0476c7e3a45ef7bb02ce30b8391459a3f6390e4e",
+      "bytes": 3740
+    },
+    {
+      "task_id": "Q-0527",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_Connect_Visual.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_Connect_Visual.mqh",
+      "sha256": "9200bfa74013ffd9f9bfff6e6e6edcad17a0a06f885c656191905ad0badc186b",
+      "bytes": 19221
+    },
+    {
+      "task_id": "Q-0981",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/Array.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__Array.mqh",
+      "sha256": "15a848ac643ba49ff06496edb1976904998624868829fd7e893322404d55a4ad",
+      "bytes": 6965
+    },
+    {
+      "task_id": "Q-0536",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/DHLAOS.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__DHLAOS.mq5",
+      "sha256": "7a04210ed39f8384fc3e0283f1e8da8ab81fa2efe249b391faf378d901d260d3",
+      "bytes": 8869
+    },
+    {
+      "task_id": "Q-0648",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout5-2-2.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout5-2-2.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0372",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ConfluenceDetector.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ConfluenceDetector.mqh",
+      "sha256": "4fa0f0daf18e9daae7d5b80c0e8007bfb6b46516cef3c23ae6fd6307386836eb",
+      "bytes": 14396
+    },
+    {
+      "task_id": "Q-0730",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/complex.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__complex.mqh",
+      "sha256": "c8306df4a8c0e85cdf03cc3ec0046854b65bb9aa1074334924885f29a2723f54",
+      "bytes": 15134
+    },
+    {
+      "task_id": "Q-0410",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/ai/xauusd_m15/XAUUSD_M15_ActionEA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/ai__xauusd_m15__XAUUSD_M15_ActionEA.mq5",
+      "sha256": "70b5a052636f60de46dc47d50ac03600031191ad25f44737e8bd0c892a18f133",
+      "bytes": 12334
+    },
+    {
+      "task_id": "Q-1572",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Config.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Config.mqh",
+      "sha256": "7bef20148aacd446efc65cc402450fd2669ee415b27e2612fdf0a8f54870ccee",
+      "bytes": 7494
+    },
+    {
+      "task_id": "Q-0592",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Chinese.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Chinese.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1697",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Pandas/Incremental LE.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/MegaJoctan/ML5/main/Pandas/Incremental LE.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0393",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/OrderBlockEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__OrderBlockEngine.mqh",
+      "sha256": "955e0139b18c8c5f0433374aedae86fad2d16f13c125f1824a23ccb8035bbf17",
+      "bytes": 2871
+    },
+    {
+      "task_id": "Q-0523",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_Confidence.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_Confidence.mqh",
+      "sha256": "2537db10ba54e94530d635a766c5f44c1a7d74f39e2e98fc50c877237354b26d",
+      "bytes": 10088
+    },
+    {
+      "task_id": "Q-1067",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayChar.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayChar.mqh",
+      "sha256": "60dc1226a84f4dc1dcd2ef3f128465fb0a79a7eab51c34397dc229bf5d760e70",
+      "bytes": 24826
+    },
+    {
+      "task_id": "Q-0549",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/EATemplate.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__EATemplate.mq5",
+      "sha256": "57d003abf2fb7b472ea8074e95556105a56ffb6b02c057976bc9a11abe309b07",
+      "bytes": 6301
+    },
+    {
+      "task_id": "Q-0644",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout5-2.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout5-2.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0355",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/Core/IctEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__Core__IctEngine.mqh",
+      "sha256": "d03b32abb44a3731b5ce20fa083dd38d90449cf9eca1d6268be320f3cd1826dc",
+      "bytes": 9108
+    },
+    {
+      "task_id": "Q-0757",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/delegatefunctions.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__delegatefunctions.mqh",
+      "sha256": "234e4f338b958464e61c42b0b937ac585f9739ac498cea15e0e2bc95206aff85",
+      "bytes": 18102
+    },
+    {
+      "task_id": "Q-0460",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/archive/RSIConsolidationXAUUSD/RSIConsolidation.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__archive__RSIConsolidationXAUUSD__RSIConsolidation.mq5",
+      "sha256": "ad4860896bafde94078a81e6a59ce3fae425ac2c73bbdda0977b39e59ca93004",
+      "bytes": 9766
+    },
+    {
+      "task_id": "Q-1582",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Convert.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Convert.mqh",
+      "sha256": "3e7b3725aa930b9a4d9ef90fe685b08b5990d98a4f331d1276785d4d2ed97b2e",
+      "bytes": 15124
+    },
+    {
+      "task_id": "Q-0609",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/ChineseTraditional.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/ChineseTraditional.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1696",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Cluster/base.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Cluster__base.mqh",
+      "sha256": "550c12342334df325fb40d60fd3f668998d7faf23709fbaa6d21203dedd95a90",
+      "bytes": 2442
+    },
+    {
+      "task_id": "Q-0400",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/PremiumDiscountEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__PremiumDiscountEngine.mqh",
+      "sha256": "61d1bbfc5a060bd9c082aba6bb68f73137139b776753d818656a86e603d1f922",
+      "bytes": 1906
+    },
+    {
+      "task_id": "Q-0528",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_Displacement.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_Displacement.mqh",
+      "sha256": "2f40852ace5775a05496f4a2cb7f4f2a7b34e32e4f1136cdcd4fbc5cf6f0ef54",
+      "bytes": 4449
+    },
+    {
+      "task_id": "Q-1091",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayColor.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayColor.mqh",
+      "sha256": "85554ff606b1568c55eb74f75182f55f577d3d9935194fba7b522edc67981b00",
+      "bytes": 24841
+    },
+    {
+      "task_id": "Q-0552",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/EATemplate2.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__EATemplate2.mq5",
+      "sha256": "4b5ac6cfe32d69b3620c7094cdceeb7a3163af6096ab6c55c326c3941d6d4b96",
+      "bytes": 6748
+    },
+    {
+      "task_id": "Q-0640",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout5.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/Breakout5.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0350",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/Core/SmcBase.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__Core__SmcBase.mqh",
+      "sha256": "3404c602e6297ca1484698947f3e66f22fb6199f981adbdc507b30a6863acccb",
+      "bytes": 16551
+    },
+    {
+      "task_id": "Q-0750",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/diffequations.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__diffequations.mqh",
+      "sha256": "a83fe612429dcf5c080b8c662db8a46e5591a02ac6cdafc0bcec8681b45a37f5",
+      "bytes": 36515
+    },
+    {
+      "task_id": "Q-0461",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/archive/RSIFollowReverseEMACrossOverBTCUSD/main.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__archive__RSIFollowReverseEMACrossOverBTCUSD__main.mq5",
+      "sha256": "e97dd8ad3865d6569dadcba5f946270fea88dc0acf02169880cf6aeb2e2af7b4",
+      "bytes": 20796
+    },
+    {
+      "task_id": "Q-1586",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Database.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Database.mqh",
+      "sha256": "ebebe7fcbff31a57731a740ffb56d8c3cd3cce6a6558e32f7bc2b8eb2be11598",
+      "bytes": 8797
+    },
+    {
+      "task_id": "Q-0593",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/English.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/English.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1699",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Cluster/DBSCAN.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Cluster__DBSCAN.mqh",
+      "sha256": "a0ce33e6aa1f69f69d4008f74f38fa9dba5242c513e79a6d48419f8c7224608f",
+      "bytes": 4924
+    },
+    {
+      "task_id": "Q-0387",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/ScoringEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__ScoringEngine.mqh",
+      "sha256": "90f5d57ff63e5494165347735823f654893995dd7d366334559e9c34e2f1eba2",
+      "bytes": 3407
+    },
+    {
+      "task_id": "Q-0514",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_Engine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_Engine.mqh",
+      "sha256": "62b4d239acfd58c490c43e0f21ff2bd59747ee8040695b418d4c9724d87aba76",
+      "bytes": 31717
+    },
+    {
+      "task_id": "Q-1162",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayDatetime.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayDatetime.mqh",
+      "sha256": "72c8c976d523c9939435750eac684718966d9cf62037f0c20ce9e714462b1cf7",
+      "bytes": 25106
+    },
+    {
+      "task_id": "Q-0541",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/LRCMACD.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__LRCMACD.mq5",
+      "sha256": "822b0b48592f50ee99fd2327b0f76f1fa6d2f24b74e2885dd29421ea1169fc3e",
+      "bytes": 10835
+    },
+    {
+      "task_id": "Q-0654",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/breakoutbarstrend_ea.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/breakoutbarstrend_ea.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0357",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/Core/SmcDrawing.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__Core__SmcDrawing.mqh",
+      "sha256": "09aef850d5f130eb1539d12f63277c0de12e0811b6620a99fea5ef83f2ddac1a",
+      "bytes": 15184
+    },
+    {
+      "task_id": "Q-0752",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/fasttransforms.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__fasttransforms.mqh",
+      "sha256": "c116d9325bdc4fdf4654c6b08c78ad016097204ecf9c4b4a27887a063e5c6d0d",
+      "bytes": 87669
+    },
+    {
+      "task_id": "Q-0423",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/archive/RSIScalpingMSFT/main.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__archive__RSIScalpingMSFT__main.mq5",
+      "sha256": "7502cc8496fe3f58cab640773cbd347bf4e9dfcb96d93ea7d1f6a1732941d178",
+      "bytes": 10376
+    },
+    {
+      "task_id": "Q-1587",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/DateTime.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/DateTime.mqh",
+      "sha256": "d3cd6ebfd0f331b2571665c871e48c7d82aafb63cf0888eccf75be68199f3bfd",
+      "bytes": 7179
+    },
+    {
+      "task_id": "Q-0601",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Japanese.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Japanese.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1710",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Cluster/Hierachical Clustering.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/MegaJoctan/ML5/main/Sklearn/Cluster/Hierachical Clustering.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0397",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Engines/SMTDetectionEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Engines__SMTDetectionEngine.mqh",
+      "sha256": "34826cd8e0af4b1a72676e6e9543cca1558b69730b8ea9d6870655342299ce76",
+      "bytes": 6974
+    },
+    {
+      "task_id": "Q-0515",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_Guards.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_Guards.mqh",
+      "sha256": "1a43255bf16cc44b362b3bf63bc6440818819c1859af6bb2eccfba2e3b65c37b",
+      "bytes": 16274
+    },
+    {
+      "task_id": "Q-1120",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayDouble.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayDouble.mqh",
+      "sha256": "b57c314ba7771f1f022c3feedbac5d1fc1423af314e754c0d8116d8b772c3072",
+      "bytes": 25433
+    },
+    {
+      "task_id": "Q-0537",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/LRCUTB.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__LRCUTB.mq5",
+      "sha256": "0744445cc9efce6919994934c7a419901cc2588b930c6cda1b328bf2f51811f4",
+      "bytes": 8329
+    },
+    {
+      "task_id": "Q-0642",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/LondonOpen.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/LondonOpen.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0363",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/Core/SmcSnapshot.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__Core__SmcSnapshot.mqh",
+      "sha256": "6bf2a8efa45f10104a4b249808623d0f9af2d404c935323975f58d9da7614220",
+      "bytes": 12308
+    },
+    {
+      "task_id": "Q-0746",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/integration.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__integration.mqh",
+      "sha256": "e29f448b63a3c54a43fc535a9fdd5a8b4c9ba874abee6d1b60b3674c7b5f33b9",
+      "bytes": 249418
+    },
+    {
+      "task_id": "Q-0424",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/archive/RSIScalpingXAGUSD/main.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__archive__RSIScalpingXAGUSD__main.mq5",
+      "sha256": "6e836b486b730886ea0a673dc94ff6da4c5f087385016aed0af5f2bc1c4ae6fd",
+      "bytes": 8591
+    },
+    {
+      "task_id": "Q-1554",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Dict.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Dict.mqh",
+      "sha256": "9ccbeb6d40a08e24f4224da933a5c4b0cb3a25a47f07d6cea1134be75c9f21ed",
+      "bytes": 12651
+    },
+    {
+      "task_id": "Q-0607",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Portuguese.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Portuguese.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1700",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Cluster/KMeans.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Cluster__KMeans.mqh",
+      "sha256": "cf30d1f5bc7674dd5aadcda4abb4da88551d3f1859fdabc776268f3ce9de7ffb",
+      "bytes": 9925
+    },
+    {
+      "task_id": "Q-0391",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Managers/LoggingManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Managers__LoggingManager.mqh",
+      "sha256": "28cc9727137f0ea444c236ae633e14a097151082be4d2aa5d812d4a7580310dc",
+      "bytes": 2658
+    },
+    {
+      "task_id": "Q-0524",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_MarketData.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_MarketData.mqh",
+      "sha256": "d84a3b8e19cff65e63ad973f71dd9e4f42a17bc241a90445e4cfb9613f505d01",
+      "bytes": 2257
+    },
+    {
+      "task_id": "Q-1092",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayFloat.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayFloat.mqh",
+      "sha256": "c37b40e3f87a4c2ef5879a46b74f4522b2361e7a10caf258438c394f0fbb240c",
+      "bytes": 25358
+    },
+    {
+      "task_id": "Q-0548",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Experts/NWERSIASF.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Experts__NWERSIASF.mq5",
+      "sha256": "2fc09823f7752700883095e2777217184a46c46f2cfec8412810661f562612f0",
+      "bytes": 8287
+    },
+    {
+      "task_id": "Q-0645",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/LondonOpen2.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Breakout/LondonOpen2.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0353",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/Core/SmcTypes.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__Core__SmcTypes.mqh",
+      "sha256": "88286877dba0cb75e1cf11cc1faf55fdc21bc3b06a6f7685941e760a2763c259",
+      "bytes": 17557
+    },
+    {
+      "task_id": "Q-0727",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/matrix.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__matrix.mqh",
+      "sha256": "ebb6c9883a26c1c961c92ac121f2bfa3895e217aa514d939145278ee54a1bc0d",
+      "bytes": 24416
+    },
+    {
+      "task_id": "Q-0425",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/archive/RSIScalpingXAUUSD/main.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__archive__RSIScalpingXAUUSD__main.mq5",
+      "sha256": "c98e305949b0bf1c9194cf70cb1f8835fd1890d77d21ec842db484e7bdfedae8",
+      "bytes": 14026
+    },
+    {
+      "task_id": "Q-1588",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/DictBase.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/DictBase.mqh",
+      "sha256": "acff8ee653b6bb86c538142c5f7a08c8f1a0e78a8a8f80fa2dee0da0a54f314b",
+      "bytes": 10975
+    },
+    {
+      "task_id": "Q-0594",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Russian.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Russian.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1705",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Decomposition/base.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Decomposition__base.mqh",
+      "sha256": "000da1b71ca6d81bedea6c70cc09302024ea18f65332c845f70a2a6dcd47e5f7",
+      "bytes": 5126
+    },
+    {
+      "task_id": "Q-0385",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Managers/NewsFilter.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Managers__NewsFilter.mqh",
+      "sha256": "df0c5724f52a15dff56bf3b33a55300000427605b13426b8ab4f92ad4bde9eec",
+      "bytes": 4273
+    },
+    {
+      "task_id": "Q-0512",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_Panel.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_Panel.mqh",
+      "sha256": "d0c2ab483584e0b16bd724922eedfc1a68a5a951ac93e339169dadab7d4e4d7e",
+      "bytes": 46639
+    },
+    {
+      "task_id": "Q-1046",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayInt.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayInt.mqh",
+      "sha256": "fee35de2b31b9649d21076d538e405949cf45e125ab300ce4d4f5c7393ed7b72",
+      "bytes": 24704
+    },
+    {
+      "task_id": "Q-0574",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Include/EAUtils.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Include__EAUtils.mqh",
+      "sha256": "50b37b1c4b335e11462df9de6789e5f46ab4b1f47052dd1adf339d50335807fa",
+      "bytes": 83051
+    },
+    {
+      "task_id": "Q-0653",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Buttons/ButtonCloseBuySell.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Buttons/ButtonCloseBuySell.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0351",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/FairValueGap.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__FairValueGap.mqh",
+      "sha256": "5cc708ec7b6eb925cc7ce49b7a739d6f0ace32186cdd17c2ef5a24ae9a84354e",
+      "bytes": 15643
+    },
+    {
+      "task_id": "Q-0731",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/solvers.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__solvers.mqh",
+      "sha256": "b20b4906efc746001394233bcf56086359d783c98c28b12228405d67b9f421a6",
+      "bytes": 153013
+    },
+    {
+      "task_id": "Q-0454",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/archive/SimpleTrendlineGER40/SimpleTrendline.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__archive__SimpleTrendlineGER40__SimpleTrendline.mq5",
+      "sha256": "aa5eeaf069ad784f6b1f77753fc14db29f2c78b09cc7dc25601e29baa95197e2",
+      "bytes": 7398
+    },
+    {
+      "task_id": "Q-1610",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/DictIteratorBase.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/DictIteratorBase.mqh",
+      "sha256": "ad9f366cfd1a8af4db59456ec44dec320ca2b8263812c8ba770c832e38cf594a",
+      "bytes": 3878
+    },
+    {
+      "task_id": "Q-0595",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Spanish.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Spanish.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1701",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Decomposition/LDA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Decomposition__LDA.mqh",
+      "sha256": "796ce4cfcc08c03d78a47b24b0bdc9c1556cbf31ed28711e642e822b87eb8f41",
+      "bytes": 10156
+    },
+    {
+      "task_id": "Q-0386",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Managers/RiskManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Managers__RiskManager.mqh",
+      "sha256": "07bb4762430ad1356986367d7e47f41c41949019cc0f4526d014fd66a1cbb68f",
+      "bytes": 9410
+    },
+    {
+      "task_id": "Q-0520",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_PanelTest.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_PanelTest.mqh",
+      "sha256": "f5c8e41dbc2b8cf037088b3bfadcdbd9104d7655ecc8874fb1d2e6b35ce8d581",
+      "bytes": 15653
+    },
+    {
+      "task_id": "Q-1068",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayLong.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayLong.mqh",
+      "sha256": "146044f74c65fe96400f437e058f3e5cfe2302de18ea820569b283b76b257291",
+      "bytes": 24776
+    },
+    {
+      "task_id": "Q-0544",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/UTBot.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__UTBot.mq5",
+      "sha256": "efe5bbdeb8f0fe2dde47c29a1c933bc181bd64cb990cb1f9fa725e3595d85594",
+      "bytes": 3864
+    },
+    {
+      "task_id": "Q-0655",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Buttons/ButtonCloseBuySellGBP.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Buttons/ButtonCloseBuySellGBP.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0378",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/BalancedPriceRange.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__BalancedPriceRange.mqh",
+      "sha256": "4e18e8d92275888847d183c5e324d782e0520d8c4d14de4d00ca0ec26a48d6ff",
+      "bytes": 2873
+    },
+    {
+      "task_id": "Q-0755",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Alglib/specialfunctions.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Alglib__specialfunctions.mqh",
+      "sha256": "2d7d52d352d065f5099cfb9e05f3745cce98cb11dce69aca7b4124c7aa8402c3",
+      "bytes": 239984
+    },
+    {
+      "task_id": "Q-0455",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/archive/SimpleTrendlineXAUUSD/SimpleTrendline.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__archive__SimpleTrendlineXAUUSD__SimpleTrendline.mq5",
+      "sha256": "9fece469c31c8d0903e4d3dacf57478e410135bc7acd090b7fa5ba4bbaef6957",
+      "bytes": 10311
+    },
+    {
+      "task_id": "Q-1597",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/DictObject.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/DictObject.mqh",
+      "sha256": "9f71ff3d5260ccb161ace8bace75b69e6157c97f1c6c1cabf96c76193bebe65a",
+      "bytes": 14341
+    },
+    {
+      "task_id": "Q-0604",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Ukrainian.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL4/Experts/Position Sizer/Translations/Ukrainian.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1702",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Decomposition/NMF.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Decomposition__NMF.mqh",
+      "sha256": "a1f6a76d80a364c9dbb218b664caf3813efa7953f70d9ec6e06fbb4550230bb5",
+      "bytes": 5958
+    },
+    {
+      "task_id": "Q-0392",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Managers/SessionManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Managers__SessionManager.mqh",
+      "sha256": "e3dffef0a46430bf09786446f99b00595a8b2a844465f714ed0209754cad947b",
+      "bytes": 2580
+    },
+    {
+      "task_id": "Q-0519",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_SelfTest.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_SelfTest.mqh",
+      "sha256": "6bbf5059bfa2a00293e627d7957bf0c45c418c2055a458d0afdff6fc33650ba6",
+      "bytes": 34613
+    },
+    {
+      "task_id": "Q-1047",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayObj.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayObj.mqh",
+      "sha256": "62eb5926f3cbb301f3f0637d9683dae2e759f28d7d39e67727a37dc0ad109c3a",
+      "bytes": 25319
+    },
+    {
+      "task_id": "Q-0564",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/AndeanOscillator.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__AndeanOscillator.mq5",
+      "sha256": "788543aace3a3c54ae68b45d1985363bdcf48178a7fe4e7208dba79a677865e3",
+      "bytes": 4529
+    },
+    {
+      "task_id": "Q-0656",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrength1.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrength1.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0364",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/Displacement.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__Displacement.mqh",
+      "sha256": "73e5343a8f636dfe9ed6bf6a1b00b49197cfe36a1980bca1c390da2e9ef5c5d6",
+      "bytes": 5660
+    },
+    {
+      "task_id": "Q-0738",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/dictionary.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__dictionary.mqh",
+      "sha256": "d8b3816c270d373fa2e4bda5a07e5bca729812b457b715c1e94302dd83d6ecd3",
+      "bytes": 9060
+    },
+    {
+      "task_id": "Q-0419",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/archive/SuperEMAXAUUSD/main.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__archive__SuperEMAXAUUSD__main.mq5",
+      "sha256": "1cf34d21fe2af22dcfa21c34b4b4039fe6b7217552dcabc751a307792b23352e",
+      "bytes": 13408
+    },
+    {
+      "task_id": "Q-1589",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/DictSlot.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/DictSlot.mqh",
+      "sha256": "83ee94e373ebebd5cc4edcd63bdf0c962a96ce37c4a7e5fbbe7bdcf7d5409968",
+      "bytes": 1993
+    },
+    {
+      "task_id": "Q-0579",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Chinese.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Chinese.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1703",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Decomposition/PCA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Decomposition__PCA.mqh",
+      "sha256": "73a4b2560d13529fb6451eb4f19169ce7e5cd645d92f33084c6a6795678f5d3f",
+      "bytes": 10472
+    },
+    {
+      "task_id": "Q-0398",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Managers/StatisticsManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Managers__StatisticsManager.mqh",
+      "sha256": "8dd5c2ea73ba90ec3a43c425e05555c3fb346b1814255b3ac1a4c661698e27b7",
+      "bytes": 4257
+    },
+    {
+      "task_id": "Q-0521",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_Structure.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_Structure.mqh",
+      "sha256": "7989b550704d73d4248b05a6629b5acc13f1f1fc26e2f75090ad61f9675121ee",
+      "bytes": 8843
+    },
+    {
+      "task_id": "Q-1093",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayShort.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayShort.mqh",
+      "sha256": "09b8040d0e4ff4607941b5e888b56c2df0fcf1c1f268acbd0f72fd9cdecea885",
+      "bytes": 24921
+    },
+    {
+      "task_id": "Q-0562",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/ATR_HeikenAshi.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__ATR_HeikenAshi.mq5",
+      "sha256": "4d578569ba6fd1a38a33d77dd6e66e277432b5319a544acdc803f30f3aa239c6",
+      "bytes": 5669
+    },
+    {
+      "task_id": "Q-0657",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrengthMath1.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrengthMath1.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0354",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/FvgReplay.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__FvgReplay.mqh",
+      "sha256": "ef3434586b0ffa57425293b929a90f35e24640e8a71cc08c445349453ddea34d",
+      "bytes": 4914
+    },
+    {
+      "task_id": "Q-0735",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/fuzzyrule.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__fuzzyrule.mqh",
+      "sha256": "11ed601d3ab546841590daa83afc4b4c5cf5f6744274c6c55d1ec3bff30165e1",
+      "bytes": 18196
+    },
+    {
+      "task_id": "Q-0439",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/experimental/self-optimizing-strategy.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__experimental__self-optimizing-strategy.mq5",
+      "sha256": "85c72e5f41f717e9005a397746655ec94a80d5aa41c1c8f6ee3adec5806698fc",
+      "bytes": 88959
+    },
+    {
+      "task_id": "Q-1598",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/DictStruct.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/DictStruct.mqh",
+      "sha256": "75b487540062011590877ad0d9265ba3c73edb1c8bb0410c7aa985c0b1025046",
+      "bytes": 15676
+    },
+    {
+      "task_id": "Q-0580",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Defines.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Defines.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1709",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Decomposition/TruncatedSVD.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Decomposition__TruncatedSVD.mqh",
+      "sha256": "e5ab80aff6f7ddbf55d812e661c95f7c13aed88e0bcf6bdeb6b3f8c896ac5cf4",
+      "bytes": 5734
+    },
+    {
+      "task_id": "Q-0389",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Managers/SymbolManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Managers__SymbolManager.mqh",
+      "sha256": "90a5db58f7a48b3a3791be6f98ba46ddc9a3340ea90cf3199217be44cbeab1f2",
+      "bytes": 3020
+    },
+    {
+      "task_id": "Q-0525",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_TradeHooks.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_TradeHooks.mqh",
+      "sha256": "b1bbe17624a84ac27e7968b3d10dddc8ab17b3e177fa1b5da6b48a259374d88b",
+      "bytes": 31850
+    },
+    {
+      "task_id": "Q-1121",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayString.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayString.mqh",
+      "sha256": "6ddaee07c4f1fbbe73dc4e3ecdd18f0da27879744fd78884c4bce1b96e69dda6",
+      "bytes": 25106
+    },
+    {
+      "task_id": "Q-0558",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/AtrSlFinder.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__AtrSlFinder.mq5",
+      "sha256": "2569c5baffb3690d9402f3ae10668a9fb11d136149e83e279059e742ea553430",
+      "bytes": 3030
+    },
+    {
+      "task_id": "Q-0658",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrengthWrite.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrengthWrite.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0356",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/InverseFVG.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__InverseFVG.mqh",
+      "sha256": "95d36bfde2f4b350d881584e0396fbcbd3eaf10d82c4c1c93d76e1d23cad1ebb",
+      "bytes": 2658
+    },
+    {
+      "task_id": "Q-0736",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/fuzzyterm.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__fuzzyterm.mqh",
+      "sha256": "4d2cfd7637afc1e13ee50532f4f3b445dbcdb0b1b483e78d863358ad2396c034",
+      "bytes": 3819
+    },
+    {
+      "task_id": "Q-0429",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/experimental/simple-rsi-reversal.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__experimental__simple-rsi-reversal.mq5",
+      "sha256": "b9dd05050c4860442c526a46dcff34928720a07422d2105a67ab1f08dcad93bc",
+      "bytes": 39072
+    },
+    {
+      "task_id": "Q-1555",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Draw.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Draw.mqh",
+      "sha256": "e23d7fe4e7acc6b1f444d5d3f50be27548f418f9b9e9deb86ece26e8e2aadc0f",
+      "bytes": 12349
+    },
+    {
+      "task_id": "Q-0588",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/errordescription.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/errordescription.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1704",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Ensemble/AdaBoost.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Ensemble__AdaBoost.mqh",
+      "sha256": "14c2cd9129acd58f5d14cd7209d0f6d0bc5a70631a5bc38eac207bbd1d56efdd",
+      "bytes": 11785
+    },
+    {
+      "task_id": "Q-0388",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Managers/TradeManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Managers__TradeManager.mqh",
+      "sha256": "ca121d4ba6e24710b2ac8f9af1533b00e57a66e7059a9207372d6b11551121bd",
+      "bytes": 10546
+    },
+    {
+      "task_id": "Q-0513",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_Types.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_Types.mqh",
+      "sha256": "fadf1e236a5c45ac8eb30d13277358565cb9f6a4debffed642cd6d7df4d34ce0",
+      "bytes": 16176
+    },
+    {
+      "task_id": "Q-1094",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayUChar.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayUChar.mqh",
+      "sha256": "d637c94f89e686e22ba5aa363d031c8e9589ee55f5777c0f8699e2ca47eb22f9",
+      "bytes": 24915
+    },
+    {
+      "task_id": "Q-0560",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/AverageForce.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__AverageForce.mq5",
+      "sha256": "805f87b59815f6034f49e596fdfebdcc3fe0dd9b5a447b27e9447d0ed6cd0186",
+      "bytes": 2946
+    },
+    {
+      "task_id": "Q-0659",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrengthWrite2.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrengthWrite2.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0382",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/MarketStructureShift.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__MarketStructureShift.mqh",
+      "sha256": "2c705a9dd4e9882dab34acc94a93bd156cef6e78883abc26c9811b88d0693dbb",
+      "bytes": 5658
+    },
+    {
+      "task_id": "Q-0747",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/fuzzyvariable.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__fuzzyvariable.mqh",
+      "sha256": "8be453bda23d208072c85b539424958a19d83a4bf369e163c8c71965e2860428",
+      "bytes": 5586
+    },
+    {
+      "task_id": "Q-0436",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/back-pedal/experimental/tick-momentum-catcher.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/back-pedal__experimental__tick-momentum-catcher.mq5",
+      "sha256": "6d49c1073c2c748a8cc25618d719cdb9376c451afb22247e9da18456f4768a70",
+      "bytes": 21710
+    },
+    {
+      "task_id": "Q-1602",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/DrawIndicator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/DrawIndicator.mqh",
+      "sha256": "791b41451053e105f30077762b9a9f230c097a3a265c93f50e45470c86334031",
+      "bytes": 3089
+    },
+    {
+      "task_id": "Q-0596",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/HorizontalRadioGroup.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/HorizontalRadioGroup.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1707",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Ensemble/Random Forest.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/MegaJoctan/ML5/main/Sklearn/Ensemble/Random Forest.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0401",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/Moenabiel/memo-smt-ea/main/MQL5/Include/MEMO/Managers/VisualizationManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Moenabiel__memo-smt-ea/MQL5__Include__MEMO__Managers__VisualizationManager.mqh",
+      "sha256": "99c629be2587d13a092858d16ba8277ddcbc24488083c8426a5b0028ab306c6e",
+      "bytes": 5348
+    },
+    {
+      "task_id": "Q-0516",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MrOwl1011/Smc_ZOB_CISD/main/SMC_OB_Visual.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MrOwl1011__Smc_ZOB_CISD/SMC_OB_Visual.mqh",
+      "sha256": "1fc517d92b834f505978010f475342a0c595bf5eeec53b1dd030c7628a695000",
+      "bytes": 22757
+    },
+    {
+      "task_id": "Q-1069",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayUInt.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayUInt.mqh",
+      "sha256": "4c634a60a3b1073e45bc6670c53739a27f63b215ff87357a5c031a93dda3c0ce",
+      "bytes": 24792
+    },
+    {
+      "task_id": "Q-0550",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/Boxline.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__Boxline.mq5",
+      "sha256": "ea05e380616a06bec23b8edcabda1cda670d644de220347dfb60f22a42e63d95",
+      "bytes": 4935
+    },
+    {
+      "task_id": "Q-0660",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrengthWrite3.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/CurrencyStrength/CurrencyStrengthWrite3.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0358",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/OpeningGaps.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__OpeningGaps.mqh",
+      "sha256": "7b5ae40a9c0dcf8d13d8673fed5ed142778f1228853ff28d7340162e9b130604",
+      "bytes": 11147
+    },
+    {
+      "task_id": "Q-0758",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/genericfuzzysystem.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__genericfuzzysystem.mqh",
+      "sha256": "c1e915387e54dda73a0e41b898594138dd0dbf3c5eb28069dee04e671348d091",
+      "bytes": 12162
+    },
+    {
+      "task_id": "Q-0475",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/frontline/cluster-latest/GapGuard.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/frontline__cluster-latest__GapGuard.mqh",
+      "sha256": "598940df0c4af6103486c4f9918341823e25054bcf765761f52abad1b2ad55df",
+      "bytes": 9885
+    },
+    {
+      "task_id": "Q-1548",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/EA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/EA.mqh",
+      "sha256": "ccbb520000ba7db0f6e5c8a40589fadfe9d53fb14b46b2a3f73475982a6548b9",
+      "bytes": 47372
+    },
+    {
+      "task_id": "Q-0587",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/PortfolioMargin.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/PortfolioMargin.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1711",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Linear Models/Linear Regression.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/MegaJoctan/ML5/main/Sklearn/Linear Models/Linear Regression.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1095",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayULong.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayULong.mqh",
+      "sha256": "97b3fe96ae3e5be6660d7aa12d5c4971d0864b4c4a052db2c91b018421bdaf2f",
+      "bytes": 24865
+    },
+    {
+      "task_id": "Q-0563",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/ChandelierExit.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__ChandelierExit.mq5",
+      "sha256": "95a9da5dd0bc4f2faf62f07ad0373b54202d2a313b270129ebbe5b528d99dba8",
+      "bytes": 4545
+    },
+    {
+      "task_id": "Q-0629",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Pivots/Pivots1.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Pivots/Pivots1.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0365",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/PowerOfThree.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__PowerOfThree.mqh",
+      "sha256": "37ac62be3067c99fa779583e061942fcf62289c1923021edcd4f12d872a298c5",
+      "bytes": 8075
+    },
+    {
+      "task_id": "Q-0723",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/helper.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__helper.mqh",
+      "sha256": "af01e1b8ff8ff71fd2db826d610db7aedb7f078cad256b7448c1f6230d5c0d5f",
+      "bytes": 7352
+    },
+    {
+      "task_id": "Q-0477",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/frontline/cluster-latest/MagicNumberHelpers.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/frontline__cluster-latest__MagicNumberHelpers.mqh",
+      "sha256": "c7feaddc016f61866057c174e5719781adad7a5a399bb1930f5a947dc278db32",
+      "bytes": 8029
+    },
+    {
+      "task_id": "Q-1556",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/File.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/File.mqh",
+      "sha256": "e06dd922f8434fe4169341ba704296e82660d81b433c8234f77828ffe9ea65f6",
+      "bytes": 4744
+    },
+    {
+      "task_id": "Q-0584",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/PortfolioRisk.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/PortfolioRisk.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1713",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Linear Models/Logistic Regression.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/MegaJoctan/ML5/main/Sklearn/Linear Models/Logistic Regression.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1122",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/ArrayUShort.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__ArrayUShort.mqh",
+      "sha256": "a0e35d262fdfc87021619d89b0d73d83b7ce870dab4b132e0c976c7f096aeab9",
+      "bytes": 25009
+    },
+    {
+      "task_id": "Q-0561",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/DailyHighLow.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__DailyHighLow.mq5",
+      "sha256": "cbc4ae98f92cdd9f6d9cf4aec912eddd478f081ad2a583c3b08c633ccc62742b",
+      "bytes": 4458
+    },
+    {
+      "task_id": "Q-0647",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Reversal/2BarReversal.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/EA Snippets/Reversal/2BarReversal.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0375",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/ReferenceLevels.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__ReferenceLevels.mqh",
+      "sha256": "e8a92aa37ee7d5644cf0001a8040c5ebd6c9d7f4b2b16d8b0a77d46f5101fd00",
+      "bytes": 7197
+    },
+    {
+      "task_id": "Q-0753",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/inferencemethod.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__inferencemethod.mqh",
+      "sha256": "e44f3bb13a3db4ee05430a72eda0467fedb8f95a0d6578ac38ac764c34f2d425",
+      "bytes": 7234
+    },
+    {
+      "task_id": "Q-0404",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/frontline/cluster-latest/main.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/frontline__cluster-latest__main.mq5",
+      "sha256": "f63a6f358c5fbf6920d41fe6c3890b7f991b991d4e00a0c226fa0691aa3ef88c",
+      "bytes": 101344
+    },
+    {
+      "task_id": "Q-1595",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicator.mqh",
+      "sha256": "e680608f65bcae90401ba54f5edda87e04a0df278483089277ba78e7e9c0410e",
+      "bytes": 26322
+    },
+    {
+      "task_id": "Q-0605",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Position Sizer Trading.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Position Sizer Trading.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1706",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Linear Models/Ridge.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/MegaJoctan/ML5/main/Sklearn/Linear Models/Ridge.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0972",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/List.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__List.mqh",
+      "sha256": "9d1f9e598e863c5cfdf11ffbfab96c58b1c2ce05a444351daf8c5f5bd2921115",
+      "bytes": 21080
+    },
+    {
+      "task_id": "Q-0559",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/DarvasBoxes.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__DarvasBoxes.mq5",
+      "sha256": "66069ec3f07cbaea62279c9e677ca4e86c10f07605cab76239b56a7928fd2c1b",
+      "bytes": 16764
+    },
+    {
+      "task_id": "Q-0635",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/Auto Trendlines/autotrendlines.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/Auto Trendlines/autotrendlines.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0369",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/SessionRanges.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__SessionRanges.mqh",
+      "sha256": "cfe54dd1d0b60cd5184b4725d4c4e927f7e1736248ab2fcfbdcaae2c6feae98e",
+      "bytes": 7241
+    },
+    {
+      "task_id": "Q-0759",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/mamdanifuzzysystem.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__mamdanifuzzysystem.mqh",
+      "sha256": "e059a50f60d7eeb5084ee950893ad72b539fec1d9a3c80881921aca44e05d80e",
+      "bytes": 21338
+    },
+    {
+      "task_id": "Q-0445",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/frontline/cluster-latest/RSIScalpingADBE-trailing/main.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/frontline__cluster-latest__RSIScalpingADBE-trailing__main.mq5",
+      "sha256": "a189fc81a400a097e13d7e54a93a2faffff6e475b5a954443a60a547cbe211a3",
+      "bytes": 13532
+    },
+    {
+      "task_id": "Q-1603",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/IndicatorData.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/IndicatorData.mqh",
+      "sha256": "c81a9d22089d1cf8f2aa5da47e5a578c9ca3ca30c0935e8ce07aed733c53ae86",
+      "bytes": 29995
+    },
+    {
+      "task_id": "Q-0581",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Spanish.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Spanish.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1689",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/metrics.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__metrics.mqh",
+      "sha256": "3699a3b5752d5b7bcb62a9bad5abfb576b8da6c33f025ed82cd491a93108596e",
+      "bytes": 14576
+    },
+    {
+      "task_id": "Q-0973",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/Tree.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__Tree.mqh",
+      "sha256": "2c1c28c919831bcbd10094acbdc0e5d3e46e4f49f929d9bdba6aa004bbe682a1",
+      "bytes": 14241
+    },
+    {
+      "task_id": "Q-0566",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/Examples/Heiken_Ashi.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__Examples__Heiken_Ashi.mq5",
+      "sha256": "1d260a00c753bed5d5331bfdad340869a0513571dd11029b2cb0908cb750a29b",
+      "bytes": 3278
+    },
+    {
+      "task_id": "Q-0663",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/Candle Time/candletime.mq4",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/Candle Time/candletime.mq4' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0368",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/ICT/SMTDivergence.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__ICT__SMTDivergence.mqh",
+      "sha256": "c7bc855c7e956cb3e96c77e8e78328536e0d4c4d51b6ce524adbb87fbdb8ab74",
+      "bytes": 10559
+    },
+    {
+      "task_id": "Q-0760",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/membershipfunction.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__membershipfunction.mqh",
+      "sha256": "900a09b65e0de9498dd6d12ff80ab264061e985b652a17487174d9c9314ae1b5",
+      "bytes": 44306
+    },
+    {
+      "task_id": "Q-0430",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/frontline/cluster-latest/RSIScalpingMU/main.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/frontline__cluster-latest__RSIScalpingMU__main.mq5",
+      "sha256": "8c8e22bc7a09358f35b0991ecf29ca28e405b8a1bad7b684c0cf4d387b8fa855",
+      "bytes": 10427
+    },
+    {
+      "task_id": "Q-1679",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Bitwise/Indi_Candle.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Bitwise__Indi_Candle.mqh",
+      "sha256": "07f2ec12708ec6e117da1b117a7be424342e88e506f7d9574f9962a892bab017",
+      "bytes": 4563
+    },
+    {
+      "task_id": "Q-0585",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/TesterSupport.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/TesterSupport.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1708",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Naive Bayes/Naive Bayes.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/MegaJoctan/ML5/main/Sklearn/Naive Bayes/Naive Bayes.mqh' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-1048",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Arrays/TreeNode.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Arrays__TreeNode.mqh",
+      "sha256": "211a2471162869f79a5554f05d83d819f462dca29407441fe61b077053a693d9",
+      "bytes": 6801
+    },
+    {
+      "task_id": "Q-0542",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/Grid.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__Grid.mq5",
+      "sha256": "9dc6fa5bc04571b5aa9dac369e0817c3d790c39b884fc4559859c28ddefd76b7",
+      "bytes": 3077
+    },
+    {
+      "task_id": "Q-0620",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/peterthomet/MetaTrader-5-and-4-Tools/master/Candle Time/candletime.mq5",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/peterthomet/MetaTrader-5-and-4-Tools/master/Candle Time/candletime.mq5' (found at least ' ')"
+    },
+    {
+      "task_id": "Q-0380",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/xxvw/ICT_Library_MQ5/main/Include/SMC/Internal/HistoryContext.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/xxvw__ICT_Library_MQ5/Include__SMC__Internal__HistoryContext.mqh",
+      "sha256": "bb91aa1aeb31d3a79a54b965b4a899bd722850f39de4ec7846d145f73b771f4b",
+      "bytes": 4126
+    },
+    {
+      "task_id": "Q-0739",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/yulz008/GOLD_ORB/main/GOLD_ORB/Include/Math/Fuzzy/ruleparser.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yulz008__GOLD_ORB/GOLD_ORB__Include__Math__Fuzzy__ruleparser.mqh",
+      "sha256": "c64735610dd2f1ec3e04a5f141b97e8706ecaad2066889623a1c2e74bb6c162e",
+      "bytes": 37389
+    },
+    {
+      "task_id": "Q-0420",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/zhutoutoutousan/profitable-expert-advisor/master/frontline/cluster-latest/self-evaluate.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/zhutoutoutousan__profitable-expert-advisor/frontline__cluster-latest__self-evaluate.mq5",
+      "sha256": "54c101340a4366d630ff738f61d529b5a231a4f8c998991c0387b89e4c0d5e66",
+      "bytes": 26732
+    },
+    {
+      "task_id": "Q-1682",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Bitwise/Indi_Pattern.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Bitwise__Indi_Pattern.mqh",
+      "sha256": "05224e400681bf847cfda80517372a4a734fd1fb883dd0c385b0291320f77a80",
+      "bytes": 4971
+    },
+    {
+      "task_id": "Q-0590",
+      "status": "Deferred",
+      "url": "https://raw.githubusercontent.com/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Translations/Arabic.mqh",
+      "http_status": 0,
+      "error": "InvalidURL: URL can't contain control characters. '/EarnForex/PositionSizer/master/MQL5/Experts/Position Sizer/Translations/Arabic.mqh' (found at least ' ')"
+    }
+  ],
+  "github_curated_extra_downloads": [
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Experts/LadinoBot.mq5",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Experts/LadinoBot.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Experts__LadinoBot.mq5",
+      "sha256": "562a49ec758bcf702be825ce382a95561ee5a4f742e1f50a2e325460f4017db1",
+      "bytes": 19998,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Experts/LadinoBotTest.mq5",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Experts/LadinoBotTest.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Experts__LadinoBotTest.mq5",
+      "sha256": "02cecf9f90473b6dbd3be8100ad363297b2b9ecd4b8c0dc6865c297f79466d8c",
+      "bytes": 9421,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/LadinoBase.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/LadinoBase.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__LadinoBase.mqh",
+      "sha256": "cae16a6bfba7c161a86fad20d046a8bb20fab8738a1f01aaf94698a1b0b932ce",
+      "bytes": 21288,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/LadinoBot.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/LadinoBot.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__LadinoBot.mqh",
+      "sha256": "02b833ea4f2457bd05d6c8aef2c579bb5a8817f0570e4a730c3211c5722b6c08",
+      "bytes": 1536,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/LadinoCore.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/LadinoCore.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__LadinoCore.mqh",
+      "sha256": "995015d4de41571b04c9d8389b7c4780859f3904788b3bc1c3373cdcb1b16116",
+      "bytes": 39886,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Languages/en.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Languages/en.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Languages__en.mqh",
+      "sha256": "b7fdb5abe4c641bc3524356d3cdcc2e5e7513bc796f75e34e66b950758e25d1f",
+      "bytes": 5712,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Languages/ptBR.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Languages/ptBR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Languages__ptBR.mqh",
+      "sha256": "b5e06765fa3fdef58c8dcc176bdc025cc033b28cdf2ca9c4237d46e076f71a18",
+      "bytes": 4554,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Strategies/AutoTrend.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Strategies/AutoTrend.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Strategies__AutoTrend.mqh",
+      "sha256": "14326027f2222660ebbf42a405ae4b20deabdb308f4223396ebd3c991a42e03a",
+      "bytes": 8073,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Strategies/Candlestick.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Strategies/Candlestick.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Strategies__Candlestick.mqh",
+      "sha256": "98d2e070c93eed1c4af0a673ea9dc376a28d250cbc6568fa26948b596692ffae",
+      "bytes": 13348,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Strategies/HiLo.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Strategies/HiLo.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Strategies__HiLo.mqh",
+      "sha256": "9282bb67fce586c6d6dc2a4a4b58e39f967d9d9dba0900645fc5483367663b66",
+      "bytes": 2331,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Strategies/SR.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Strategies/SR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Strategies__SR.mqh",
+      "sha256": "254df602c6868d9b6d1a47d75080c5ebe65693e259ec5cba5c1fdf1f482be4e3",
+      "bytes": 12328,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Trade/LTrade.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Trade/LTrade.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Trade__LTrade.mqh",
+      "sha256": "f25028b01c943633b414f86747768d9ade526942aa3b6e63f6e8b72a80ce24db",
+      "bytes": 93674,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Trade/TradeIn.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Trade/TradeIn.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Trade__TradeIn.mqh",
+      "sha256": "679b9decdc4c2d023e9a0cd8403227be9d9da3ec9398730f97962c74479583ad",
+      "bytes": 42466,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Trade/TradeOut.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Trade/TradeOut.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Trade__TradeOut.mqh",
+      "sha256": "090ee06c921020ff97a0b9f95a78a768cc271b6aa500d25b405f791b52ba1348",
+      "bytes": 17311,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Utils.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Utils.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Utils.mqh",
+      "sha256": "7858a0c9100228daae2ba54d4a901cabaa5309be57e0c8c13ea6c444cf6fff57",
+      "bytes": 14826,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Views/LadinoView.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Views/LadinoView.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Views__LadinoView.mqh",
+      "sha256": "7601c1ca3ab035d7cd339a5559df9b67553ab08c84d14d621bb7819cb1bda6be",
+      "bytes": 10813,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Include/LadinoBot/Views/LogPanel.mqh",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Include/LadinoBot/Views/LogPanel.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Include__LadinoBot__Views__LogPanel.mqh",
+      "sha256": "83f4a099b5d3ed0a5e3b5205c3c80704af4628111036dc46ebd2040af2fce56c",
+      "bytes": 2569,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0249",
+      "repo": "landim32/LadinoBot",
+      "path": "Indicators/gann_hi_lo_activator_ssl.mq5",
+      "url": "https://raw.githubusercontent.com/landim32/LadinoBot/master/Indicators/gann_hi_lo_activator_ssl.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/landim32__LadinoBot/Indicators__gann_hi_lo_activator_ssl.mq5",
+      "sha256": "c251dbf9bfd663c2ac1675fe0e706e6c5acb65eec36b8df8d873fa9faebd20ef",
+      "bytes": 4614,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "LotCal - Copy.mq4",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/LotCal%20-%20Copy.mq4",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/LotCal - Copy.mq4",
+      "sha256": "d01ea90f0193aaa98f25a9cba72bdcf41ef3928628b7e1dc1830edd4b2fd0555",
+      "bytes": 7065,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL4/Experts/Nkanven/LotCalTrader.mq4",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL4/Experts/Nkanven/LotCalTrader.mq4",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL4__Experts__Nkanven__LotCalTrader.mq4",
+      "sha256": "bb857007d994218a5dca7887d935d9c731d0fabc2b68cb4b9379f2fdfe234023",
+      "bytes": 9938,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL4/Experts/Nkanven/MuzzlingAlligatorWatcher.mq4",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL4/Experts/Nkanven/MuzzlingAlligatorWatcher.mq4",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL4__Experts__Nkanven__MuzzlingAlligatorWatcher.mq4",
+      "sha256": "fe78b0e86f07d497dcf997cb0922371544219f6702cdf87edc4c2ad159a2f0ae",
+      "bytes": 5438,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL4/Experts/Nkanven/NewCandleAlert.mq4",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL4/Experts/Nkanven/NewCandleAlert.mq4",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL4__Experts__Nkanven__NewCandleAlert.mq4",
+      "sha256": "db3457086f224df6a31f08e91b99e5beb01c0d4e37910aca3b1a4e9a4a171e09",
+      "bytes": 1662,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL4/Experts/Nkanven/Telegram2MT4.mq4",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL4/Experts/Nkanven/Telegram2MT4.mq4",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL4__Experts__Nkanven__Telegram2MT4.mq4",
+      "sha256": "6928a940498f40c2eb40fa9635484c43f4288ec515d45381b21d9fe8efe10109",
+      "bytes": 8629,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL4/Include/Nkanven/Lib/Navlib.mqh",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL4/Include/Nkanven/Lib/Navlib.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL4__Include__Nkanven__Lib__Navlib.mqh",
+      "sha256": "59ce5b5803110ff7b00201cec5ea4c0285023ab0b9ef53e7e6d1e8272e8c5e91",
+      "bytes": 2323,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL5/Experts/Nkanven/AreaBreaker.mq5",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL5/Experts/Nkanven/AreaBreaker.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL5__Experts__Nkanven__AreaBreaker.mq5",
+      "sha256": "396f5e8741e945c7b213b86336e1b0a4e70ad5e7d15723a813f332b0ec9c19a1",
+      "bytes": 8111,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL5/Experts/Nkanven/AsianBreak.mq5",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL5/Experts/Nkanven/AsianBreak.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL5__Experts__Nkanven__AsianBreak.mq5",
+      "sha256": "de1d32d1ab71cabaf65cc8449b8eb0d5ee140fba48bb99ce1379e3e5688fcf62",
+      "bytes": 13528,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL5/Experts/Nkanven/CandleCount.mq5",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL5/Experts/Nkanven/CandleCount.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL5__Experts__Nkanven__CandleCount.mq5",
+      "sha256": "67bdb5158ddb2af4af4d3b3f8d5747068f865cc10b4392c285f0ed1bbc0c9989",
+      "bytes": 2477,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL5/Experts/Nkanven/Dam Launch.mq5",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL5/Experts/Nkanven/Dam%20Launch.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL5__Experts__Nkanven__Dam Launch.mq5",
+      "sha256": "66035fed44820fdc18bfcb61e6ed51d5fc6508bb5fbbb9db773e2de63b110c95",
+      "bytes": 13432,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL5/Experts/Nkanven/EA Framework/EA_Template_1.0/EA_Template_1.0.mq5",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL5/Experts/Nkanven/EA%20Framework/EA_Template_1.0/EA_Template_1.0.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL5__Experts__Nkanven__EA Framework__EA_Template_1.0__EA_Template_1.0.mq5",
+      "sha256": "f317984482f6d9dcfac23b719e01c1c4bd00e7599ee6581a760e18ea113843cd",
+      "bytes": 4865,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL5/Experts/Nkanven/EA_Template_1.0.mq5",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL5/Experts/Nkanven/EA_Template_1.0.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL5__Experts__Nkanven__EA_Template_1.0.mq5",
+      "sha256": "7aef91c93c34c0508789ac063982043f11de5c31e4ce07a37b58608e8ae525dd",
+      "bytes": 3842,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL5/Experts/Nkanven/Equilibrium.mq5",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL5/Experts/Nkanven/Equilibrium.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL5__Experts__Nkanven__Equilibrium.mq5",
+      "sha256": "cff7b9af14701c0658e401274a9c071c76e9c98ef8e0c6a5bda249ad70f4871b",
+      "bytes": 4330,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0257",
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "path": "MQL5/Experts/Nkanven/Framework EA/EA_Template.mq4",
+      "url": "https://raw.githubusercontent.com/nkanven/MT4-MT5-Trading-EA-Collections/master/MQL5/Experts/Nkanven/Framework%20EA/EA_Template.mq4",
+      "local_path": "data/ea_kb/sources_batch2/github/nkanven__MT4-MT5-Trading-EA-Collections/MQL5__Experts__Nkanven__Framework EA__EA_Template.mq4",
+      "sha256": "970d3cb5ac67f36c461ab49e1077f448928a52d01342a45847435cc246dfd574",
+      "bytes": 428,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0263",
+      "repo": "EarnForex/Account-Protector",
+      "path": "MQL4/Experts/Account Protector/Account Protector.mq4",
+      "url": "https://raw.githubusercontent.com/EarnForex/Account-Protector/master/MQL4/Experts/Account%20Protector/Account%20Protector.mq4",
+      "local_path": "data/ea_kb/sources_batch2/github/EarnForex__Account-Protector/MQL4__Experts__Account Protector__Account Protector.mq4",
+      "sha256": "6fc38308b455bf2516f6d79b6d2569cb0d837c49870228552c04daaebb1354ef",
+      "bytes": 25906,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0263",
+      "repo": "EarnForex/Account-Protector",
+      "path": "MQL4/Experts/Account Protector/Account Protector.mqh",
+      "url": "https://raw.githubusercontent.com/EarnForex/Account-Protector/master/MQL4/Experts/Account%20Protector/Account%20Protector.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EarnForex__Account-Protector/MQL4__Experts__Account Protector__Account Protector.mqh",
+      "sha256": "1c2bfc5ebc5e52e1521ae127551d09ba22c388d47090c2bc085fbc60b9795d83",
+      "bytes": 313538,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0263",
+      "repo": "EarnForex/Account-Protector",
+      "path": "MQL4/Experts/Account Protector/Defines.mqh",
+      "url": "https://raw.githubusercontent.com/EarnForex/Account-Protector/master/MQL4/Experts/Account%20Protector/Defines.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EarnForex__Account-Protector/MQL4__Experts__Account Protector__Defines.mqh",
+      "sha256": "301189263be4a1f869c00da1b95e2c733a98009babbe44fecbb013c7411c2591",
+      "bytes": 9047,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0263",
+      "repo": "EarnForex/Account-Protector",
+      "path": "MQL5/Experts/Account Protector/Account Protector.mq5",
+      "url": "https://raw.githubusercontent.com/EarnForex/Account-Protector/master/MQL5/Experts/Account%20Protector/Account%20Protector.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/EarnForex__Account-Protector/MQL5__Experts__Account Protector__Account Protector.mq5",
+      "sha256": "ce4e9e88435af0cdd2a158c74097d01b203c86482537f0cf5b06b6c03ba38836",
+      "bytes": 27017,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0263",
+      "repo": "EarnForex/Account-Protector",
+      "path": "MQL5/Experts/Account Protector/Account Protector.mqh",
+      "url": "https://raw.githubusercontent.com/EarnForex/Account-Protector/master/MQL5/Experts/Account%20Protector/Account%20Protector.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EarnForex__Account-Protector/MQL5__Experts__Account Protector__Account Protector.mqh",
+      "sha256": "e5ee0cdd7d450e406a6760800d116cd2bf1ab617ea3e6c44231ce29a16460864",
+      "bytes": 331787,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0263",
+      "repo": "EarnForex/Account-Protector",
+      "path": "MQL5/Experts/Account Protector/Defines.mqh",
+      "url": "https://raw.githubusercontent.com/EarnForex/Account-Protector/master/MQL5/Experts/Account%20Protector/Defines.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EarnForex__Account-Protector/MQL5__Experts__Account Protector__Defines.mqh",
+      "sha256": "5794d93aae32adba9a6344129a33eaeed90a89e585b2cc928d506a3222a68fd1",
+      "bytes": 9049,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0263",
+      "repo": "EarnForex/Account-Protector",
+      "path": "MQL5/Experts/Account Protector/WinUser32.mqh",
+      "url": "https://raw.githubusercontent.com/EarnForex/Account-Protector/master/MQL5/Experts/Account%20Protector/WinUser32.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EarnForex__Account-Protector/MQL5__Experts__Account Protector__WinUser32.mqh",
+      "sha256": "5e1c0bd0f3f1da041e736fd6006c34ef615fcc479462ff600732e8d10bce2c6d",
+      "bytes": 18398,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0265",
+      "repo": "Narfinsel/Candlestick-Pattern-Scanner",
+      "path": "CandlestickPatternScanner.mqh",
+      "url": "https://raw.githubusercontent.com/Narfinsel/Candlestick-Pattern-Scanner/main/CandlestickPatternScanner.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Narfinsel__Candlestick-Pattern-Scanner/CandlestickPatternScanner.mqh",
+      "sha256": "e78f42481e20abf0c906c14499b215895e503fd9ca33c9fc1b64f8fa5b6c0533",
+      "bytes": 34068,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0265",
+      "repo": "Narfinsel/Candlestick-Pattern-Scanner",
+      "path": "Helpers/GeneralDrawer.mqh",
+      "url": "https://raw.githubusercontent.com/Narfinsel/Candlestick-Pattern-Scanner/main/Helpers/GeneralDrawer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Narfinsel__Candlestick-Pattern-Scanner/Helpers__GeneralDrawer.mqh",
+      "sha256": "1f03cbbfc1be4c7af066b521bef2ff26ff21085876304d03775795c29cffe323",
+      "bytes": 11423,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0265",
+      "repo": "Narfinsel/Candlestick-Pattern-Scanner",
+      "path": "Helpers/GeneralHelper.mqh",
+      "url": "https://raw.githubusercontent.com/Narfinsel/Candlestick-Pattern-Scanner/main/Helpers/GeneralHelper.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Narfinsel__Candlestick-Pattern-Scanner/Helpers__GeneralHelper.mqh",
+      "sha256": "24c44eaa257c5d71bfdefcacff9428d7024a4e55d6a092f91d20d5e640dce6da",
+      "bytes": 14631,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0265",
+      "repo": "Narfinsel/Candlestick-Pattern-Scanner",
+      "path": "Patterns/CandlestickPattern.mqh",
+      "url": "https://raw.githubusercontent.com/Narfinsel/Candlestick-Pattern-Scanner/main/Patterns/CandlestickPattern.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Narfinsel__Candlestick-Pattern-Scanner/Patterns__CandlestickPattern.mqh",
+      "sha256": "14bb6c4a8421ae5aa57fbb8637521b28a93bd9846c50f059202b3e228e559bdc",
+      "bytes": 9231,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0265",
+      "repo": "Narfinsel/Candlestick-Pattern-Scanner",
+      "path": "Patterns/ConsolidationPattern.mqh",
+      "url": "https://raw.githubusercontent.com/Narfinsel/Candlestick-Pattern-Scanner/main/Patterns/ConsolidationPattern.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Narfinsel__Candlestick-Pattern-Scanner/Patterns__ConsolidationPattern.mqh",
+      "sha256": "9cff4ad18413c889926f77f440017dec17e9c6e72d4b258f356a3e5473e4fe79",
+      "bytes": 1301,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0265",
+      "repo": "Narfinsel/Candlestick-Pattern-Scanner",
+      "path": "Patterns/EngulfingPattern.mqh",
+      "url": "https://raw.githubusercontent.com/Narfinsel/Candlestick-Pattern-Scanner/main/Patterns/EngulfingPattern.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Narfinsel__Candlestick-Pattern-Scanner/Patterns__EngulfingPattern.mqh",
+      "sha256": "1b0e3e7ad909c118e21dbde1ffa5ae38102a9291ac5d079d3aaba48e02cd5c37",
+      "bytes": 1273,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0265",
+      "repo": "Narfinsel/Candlestick-Pattern-Scanner",
+      "path": "Patterns/StarPattern.mqh",
+      "url": "https://raw.githubusercontent.com/Narfinsel/Candlestick-Pattern-Scanner/main/Patterns/StarPattern.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/Narfinsel__Candlestick-Pattern-Scanner/Patterns__StarPattern.mqh",
+      "sha256": "8dc89a9f81ffc479de7209b86bb7237bdec8ec26c0d776befe64cb3d43d4bfd9",
+      "bytes": 1237,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Experts/XAUBot_Pro.mq5",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Experts/XAUBot_Pro.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Experts__XAUBot_Pro.mq5",
+      "sha256": "e372c1d8e3b133f23f4c2c2e69c731f0530a28faed9f6d2e6a75c57eb4bb3874",
+      "bytes": 18565,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Experts/XAUBot_Pro_Lite.mq5",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Experts/XAUBot_Pro_Lite.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Experts__XAUBot_Pro_Lite.mq5",
+      "sha256": "d9f7146d09c6d2ce5297d0f493cc5cee2f91c374106993a294cec1693a76a17e",
+      "bytes": 47221,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Experts/XAUBot_Pro_Lite_backup.mq5",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Experts/XAUBot_Pro_Lite_backup.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Experts__XAUBot_Pro_Lite_backup.mq5",
+      "sha256": "d9f7146d09c6d2ce5297d0f493cc5cee2f91c374106993a294cec1693a76a17e",
+      "bytes": 47221,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Experts/XAUBot_Pro_Lite_v2.mq5",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Experts/XAUBot_Pro_Lite_v2.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Experts__XAUBot_Pro_Lite_v2.mq5",
+      "sha256": "83477e9ae2f334c2dd5d8da1f377d67dd32c9b5fc8e2dbe8abc13b2dc3ce416e",
+      "bytes": 21148,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Experts/XAUBot_Pro_V3.mq5",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Experts/XAUBot_Pro_V3.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Experts__XAUBot_Pro_V3.mq5",
+      "sha256": "1bb2920d09399647fdfc0775cc631b70cbdd7487361b90be6b0f9a93c9663aab",
+      "bytes": 43048,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Experts/XAUBot_Pro_v2.mq5",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Experts/XAUBot_Pro_v2.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Experts__XAUBot_Pro_v2.mq5",
+      "sha256": "479a5d912d1c67088a17c864451b0ef11b9a9f4d3fc896fa91f8a5dda339e949",
+      "bytes": 21004,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Experts/XAUBot_Test_Simple.mq5",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Experts/XAUBot_Test_Simple.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Experts__XAUBot_Test_Simple.mq5",
+      "sha256": "eb289d0e9f9089d26c61449f36e5f521d5ccd08dbb33cd38b2addfebf30248c3",
+      "bytes": 900,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Experts/test.mq5",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Experts/test.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Experts__test.mq5",
+      "sha256": "21e504f56ecc2d5d593e04e4ff1f2e1fde93c58900bc3a6c7c5d8b0360f4cabb",
+      "bytes": 33484,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Include/XAUBot_Config.mqh",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Include/XAUBot_Config.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Include__XAUBot_Config.mqh",
+      "sha256": "d0b3955ce6ed90f9cd803dd3f6e3e4b2ddaae76dc7c59e9263e56df00e8ccd99",
+      "bytes": 9060,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Include/XAUBot_EmergencyStop.mqh",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Include/XAUBot_EmergencyStop.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Include__XAUBot_EmergencyStop.mqh",
+      "sha256": "e2bea9a86199dcd706e3d969845a88b5ec683f8c3efc5e4c0acfd0b081d8bd62",
+      "bytes": 10446,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Include/XAUBot_MacroFeatures.mqh",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Include/XAUBot_MacroFeatures.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Include__XAUBot_MacroFeatures.mqh",
+      "sha256": "00def741f5496721421c8bf089be36a6eb708f5e515eeb295ad2865f2898c542",
+      "bytes": 12775,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Include/XAUBot_PositionManager.mqh",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Include/XAUBot_PositionManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Include__XAUBot_PositionManager.mqh",
+      "sha256": "9fe06e9d921a4894da70d51be7182dd3dab5b288bc0af413d15fde774eeed5e4",
+      "bytes": 15526,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Include/XAUBot_SMC.mqh",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Include/XAUBot_SMC.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Include__XAUBot_SMC.mqh",
+      "sha256": "017c8e38efa25b71357d589901d5c06b7066bf0be3ff2d2d957649713115c843",
+      "bytes": 15347,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0266",
+      "repo": "GifariKemal/xaubot-ai",
+      "path": "ea-research/xaubot-mq5/Include/XAUBot_TrendFilter.mqh",
+      "url": "https://raw.githubusercontent.com/GifariKemal/xaubot-ai/main/ea-research/xaubot-mq5/Include/XAUBot_TrendFilter.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/GifariKemal__xaubot-ai/ea-research__xaubot-mq5__Include__XAUBot_TrendFilter.mqh",
+      "sha256": "e6c8b25ee8cc88b294275a33e1123aed225b251c30971332c5af80cadf0bfc25",
+      "bytes": 8872,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0271",
+      "repo": "6alaile/MetaTrader5-to-Telegram",
+      "path": "MT5 to Telegram.mq5",
+      "url": "https://raw.githubusercontent.com/6alaile/MetaTrader5-to-Telegram/main/MT5%20to%20Telegram.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/6alaile__MetaTrader5-to-Telegram/MT5 to Telegram.mq5",
+      "sha256": "d1f2f16c6d68f3a419d35de1efb728a8e94dd14bf6ac1450b6ace862f036e734",
+      "bytes": 21706,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0271",
+      "repo": "6alaile/MetaTrader5-to-Telegram",
+      "path": "include/Comment.mqh",
+      "url": "https://raw.githubusercontent.com/6alaile/MetaTrader5-to-Telegram/main/include/Comment.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/6alaile__MetaTrader5-to-Telegram/include__Comment.mqh",
+      "sha256": "dfab52f0d45230919961da775535bdc94db2cafbbda9ce27df2f5aa694ab3aac",
+      "bytes": 12904,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0271",
+      "repo": "6alaile/MetaTrader5-to-Telegram",
+      "path": "include/Common.mqh",
+      "url": "https://raw.githubusercontent.com/6alaile/MetaTrader5-to-Telegram/main/include/Common.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/6alaile__MetaTrader5-to-Telegram/include__Common.mqh",
+      "sha256": "6043c066de303c188a1675ec3cac9694bf6ab7af9db4d5e0aaa1736e7bba2eb2",
+      "bytes": 57692,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0271",
+      "repo": "6alaile/MetaTrader5-to-Telegram",
+      "path": "include/Telegram.mqh",
+      "url": "https://raw.githubusercontent.com/6alaile/MetaTrader5-to-Telegram/main/include/Telegram.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/6alaile__MetaTrader5-to-Telegram/include__Telegram.mqh",
+      "sha256": "2ad8f04ccc2b5d72a6db50a041f3642798ac13470b549195a82df60b2827e44d",
+      "bytes": 65540,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0271",
+      "repo": "6alaile/MetaTrader5-to-Telegram",
+      "path": "include/jason.mqh",
+      "url": "https://raw.githubusercontent.com/6alaile/MetaTrader5-to-Telegram/main/include/jason.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/6alaile__MetaTrader5-to-Telegram/include__jason.mqh",
+      "sha256": "0f57f67d15ec33e6e17cd2d918a5f58642c848ea7b5d0a6cd0a9c0d603e71b29",
+      "bytes": 43822,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "GUI/ControlPanel.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/GUI/ControlPanel.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/GUI__ControlPanel.mqh",
+      "sha256": "d6bef66bd225839a0a4b60ce7036a0c76ad1299478c4b12ca722dbe09f3f52a5",
+      "bytes": 2086,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "GUI/StatsDashboard.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/GUI/StatsDashboard.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/GUI__StatsDashboard.mqh",
+      "sha256": "2e08b38981aa850402f963eda67e36f70e51becaa1468f1f9642a46ddc0c4007",
+      "bytes": 82010,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/Defines.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/Defines.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__Defines.mqh",
+      "sha256": "92403a297b3ac95480483ea35fe0c5360f61ee91f5a5135f0c495417789abb06",
+      "bytes": 79606,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/FVGValidator.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/FVGValidator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__FVGValidator.mqh",
+      "sha256": "4a55f8ff87ed9f568d30ae11f3c1ec9b13cbe8dbc06dc311f0f560c5d5bb904e",
+      "bytes": 14321,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/MSNREngine.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/MSNREngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__MSNREngine.mqh",
+      "sha256": "6b84666e772dc0650031ebb627b6b39a00e40ba226eb525e5715734fda709353",
+      "bytes": 48994,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/MTFTrendMeter.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/MTFTrendMeter.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__MTFTrendMeter.mqh",
+      "sha256": "a5a991ef6bc7e21e7eef9823a42d182071a5c3db065fb147c3485b845cc70ae9",
+      "bytes": 5366,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/NewsFilter.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/NewsFilter.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__NewsFilter.mqh",
+      "sha256": "c1b85e0453131bd78d7ec9247e36faab586c3911c0cf685a003857a7ee6e92cd",
+      "bytes": 20180,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/OrderManager.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/OrderManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__OrderManager.mqh",
+      "sha256": "fecc294615d04bf09921d52df6e417685a59b030c0fc367dcc24d4786726389e",
+      "bytes": 90739,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/PartialClose.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/PartialClose.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__PartialClose.mqh",
+      "sha256": "b865ef1b67391989a120682d18237d5c345528515886c4346dba2e6abd3e6f9b",
+      "bytes": 11995,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/RiskCalculator.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/RiskCalculator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__RiskCalculator.mqh",
+      "sha256": "0cf9e18cbfde0bdaa1c18afb770648b0184ea4e2d12a542068c3aa6696230f21",
+      "bytes": 5670,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/SMCLayerM15.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/SMCLayerM15.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__SMCLayerM15.mqh",
+      "sha256": "1c0e25d8f372be58084828ac97802afb94b2759d839df1f9de16802d934da14e",
+      "bytes": 19826,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/SessionManager.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/SessionManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__SessionManager.mqh",
+      "sha256": "451ce59c9d6bcff07276c3c65f7491ca667ae9c64136a018cd519adb525339ff",
+      "bytes": 6923,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/SignalDiagnostics.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/SignalDiagnostics.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__SignalDiagnostics.mqh",
+      "sha256": "da30a4d37c158570e13f3a3532c9af1dc5a0aca8b23797a245fe40225bbf5424",
+      "bytes": 29612,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/SignalEngine.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/SignalEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__SignalEngine.mqh",
+      "sha256": "bf0b202ff11bc4f1f62acedeb966f7a2776fc0fd7a0efdb255f74797912cf994",
+      "bytes": 115522,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/SmartBrain.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/SmartBrain.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__SmartBrain.mqh",
+      "sha256": "ddd44b2244391adaf6cef3745e974c4cf4eb86581011c4b25c2ab598bebc9888",
+      "bytes": 82110,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/SpreadMonitor.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/SpreadMonitor.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__SpreadMonitor.mqh",
+      "sha256": "83f8d1b016032dc178e8d1ab12368707ec78fbfdce026e44dd236da842605ba9",
+      "bytes": 3267,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/TrailingStop.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/TrailingStop.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__TrailingStop.mqh",
+      "sha256": "2a03fc98893533734c9e35758bacc17877ea6c388a6b60ef8fcdf7e7fe76c0ac",
+      "bytes": 6016,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Modules/ZigZagEngine.mqh",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Modules/ZigZagEngine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Modules__ZigZagEngine.mqh",
+      "sha256": "5c1a504a928ea42fdd61ee53ba15aa2b0565b02bf397f45793a269c8b4e04aa5",
+      "bytes": 4805,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Tests/RunUnitTests.mq5",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Tests/RunUnitTests.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Tests__RunUnitTests.mq5",
+      "sha256": "f45b57a1328fbfcaf0ed5d70d446e3e250d23f6a76a3e5c8fdb3003e0fa7e078",
+      "bytes": 8857,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "Tests/Test_SetupGradeLotMultiplier.mq5",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/Tests/Test_SetupGradeLotMultiplier.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/Tests__Test_SetupGradeLotMultiplier.mq5",
+      "sha256": "0c8af14aec73a0786c4a613403c24fa727756717d0858290fc06048b8d417d1c",
+      "bytes": 4856,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0274",
+      "repo": "yanstd888/institutional-smc-scalper-mt5",
+      "path": "YANSTD.mq5",
+      "url": "https://raw.githubusercontent.com/yanstd888/institutional-smc-scalper-mt5/main/YANSTD.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/yanstd888__institutional-smc-scalper-mt5/YANSTD.mq5",
+      "sha256": "f61ce56d3976ca715f7ec7d9d5af0b8f892a0e82e3449caef45fc38c35a6743d",
+      "bytes": 252140,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0275",
+      "repo": "pipbolt/experts",
+      "path": "experts/Bollinger-Bands-EA.mq5",
+      "url": "https://raw.githubusercontent.com/pipbolt/experts/master/experts/Bollinger-Bands-EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/pipbolt__experts/experts__Bollinger-Bands-EA.mq5",
+      "sha256": "bc606361870100261cffe812a5abee13e7023f1dd2e1b5e7f6270edc5171a630",
+      "bytes": 1857,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0275",
+      "repo": "pipbolt/experts",
+      "path": "experts/Ichimoku-Kinko-Hyo-EA.mq5",
+      "url": "https://raw.githubusercontent.com/pipbolt/experts/master/experts/Ichimoku-Kinko-Hyo-EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/pipbolt__experts/experts__Ichimoku-Kinko-Hyo-EA.mq5",
+      "sha256": "d5d7c0d502618e0e2ba4ff347932f02a7b404b0d109a6bc7631421df26db6f8d",
+      "bytes": 1873,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0275",
+      "repo": "pipbolt/experts",
+      "path": "experts/MACD-EA.mq5",
+      "url": "https://raw.githubusercontent.com/pipbolt/experts/master/experts/MACD-EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/pipbolt__experts/experts__MACD-EA.mq5",
+      "sha256": "df4b61cc73a165cb7660ffd2df0415a7192dcea7732bd854373a114d1531b6d2",
+      "bytes": 2511,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0275",
+      "repo": "pipbolt/experts",
+      "path": "experts/Moving-Average-Cross-EA.mq5",
+      "url": "https://raw.githubusercontent.com/pipbolt/experts/master/experts/Moving-Average-Cross-EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/pipbolt__experts/experts__Moving-Average-Cross-EA.mq5",
+      "sha256": "25a987285f0ed885fe413b6d6e8dc275547c0da754eee400c1685585be8c4c6b",
+      "bytes": 2436,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0275",
+      "repo": "pipbolt/experts",
+      "path": "experts/Moving-Average-EA.mq5",
+      "url": "https://raw.githubusercontent.com/pipbolt/experts/master/experts/Moving-Average-EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/pipbolt__experts/experts__Moving-Average-EA.mq5",
+      "sha256": "4bb9195971e8952468d51ef38168c611a255138bcf5339c5a028fe04bba26e68",
+      "bytes": 1901,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0275",
+      "repo": "pipbolt/experts",
+      "path": "experts/Parabolic-SAR-EA.mq5",
+      "url": "https://raw.githubusercontent.com/pipbolt/experts/master/experts/Parabolic-SAR-EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/pipbolt__experts/experts__Parabolic-SAR-EA.mq5",
+      "sha256": "c8ec40ce39b52e943692b4f9376089939f501b6a12b53ef7aa42dc934089a986",
+      "bytes": 1930,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0275",
+      "repo": "pipbolt/experts",
+      "path": "experts/RSI-EA.mq5",
+      "url": "https://raw.githubusercontent.com/pipbolt/experts/master/experts/RSI-EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/pipbolt__experts/experts__RSI-EA.mq5",
+      "sha256": "727fb7972b35c0e71e9ab43a6f5dac7a6977fc3361cb21268b336264cb660c91",
+      "bytes": 2264,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0275",
+      "repo": "pipbolt/experts",
+      "path": "experts/Stochastic-Oscillator-EA.mq5",
+      "url": "https://raw.githubusercontent.com/pipbolt/experts/master/experts/Stochastic-Oscillator-EA.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/pipbolt__experts/experts__Stochastic-Oscillator-EA.mq5",
+      "sha256": "93026ebaef8ea64decd51c97843993603f9a7da9bf2a261b66a69bc5eb0b3d15",
+      "bytes": 2221,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "helper_functions/new_candle_detector.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/helper_functions/new_candle_detector.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/helper_functions__new_candle_detector.mq5",
+      "sha256": "7da5006a61dbe26e64b57c4ae650da79431c23053e9cbd6685e040cbc57776ca",
+      "bytes": 2026,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/bearish_engulfing_candle_detector.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/bearish_engulfing_candle_detector.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__bearish_engulfing_candle_detector.mq5",
+      "sha256": "5a8c10b1cd3b53723ceda5348e42eb8fd9129e5876e1de0973b9fa93cd631ab2",
+      "bytes": 3179,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/bearish_engulfing_candle_turaround_detector.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/bearish_engulfing_candle_turaround_detector.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__bearish_engulfing_candle_turaround_detector.mq5",
+      "sha256": "18908d4f000d7b88116c5e95dca3596aa43059fb14f1bc229bfb89f5df8afad8",
+      "bytes": 4078,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/bollinger_bands.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/bollinger_bands.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__bollinger_bands.mq5",
+      "sha256": "3a18fa8548f65155634323a278768d9b55e46834e993f2abdf07f2eede696201",
+      "bytes": 3539,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/bollinger_bands_distance_calculator.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/bollinger_bands_distance_calculator.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__bollinger_bands_distance_calculator.mq5",
+      "sha256": "e026f3165112f89a4219bf7c529e2c8dbe5db163dde7b62dba84f34c00069409",
+      "bytes": 4918,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/bullish_engulfing_candle_detector.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/bullish_engulfing_candle_detector.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__bullish_engulfing_candle_detector.mq5",
+      "sha256": "58a2fe742920842d11d0c8405ab63456e1b101501309db58153830c1931ed7d6",
+      "bytes": 3181,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/bullish_engulfing_turnaround_detector.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/bullish_engulfing_turnaround_detector.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__bullish_engulfing_turnaround_detector.mq5",
+      "sha256": "96a5d48a4972707c450e4616d7b233ac5179834a78d272c33f195f56d55a1ba9",
+      "bytes": 4031,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/classic_doji_star_detector_mql5.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/classic_doji_star_detector_mql5.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__classic_doji_star_detector_mql5.mq5",
+      "sha256": "c3650c21be50d46d6fdcf532783e34e63c408bd62d17189eee7cc18008633096",
+      "bytes": 3637,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/doji_super_detector.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/doji_super_detector.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__doji_super_detector.mq5",
+      "sha256": "862d39fc5494dc238f750471eff2d457f6f8c3a91329828085be918589657eb0",
+      "bytes": 11422,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/dragonfly_doji_detector.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/dragonfly_doji_detector.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__dragonfly_doji_detector.mq5",
+      "sha256": "22f526ff5d04c7d56de3e9e10336450f67a0bff65c33e44ec297c2f5e84fed3b",
+      "bytes": 1582,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/envelopes_indicator.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/envelopes_indicator.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__envelopes_indicator.mq5",
+      "sha256": "5ad4c85bab8e7834b96ef64ec1a19293990e7b680cca3fe742bbf2867f604527",
+      "bytes": 3313,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/exponential_moving_average.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/exponential_moving_average.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__exponential_moving_average.mq5",
+      "sha256": "c25117b21cb6677ad2c157fbc543671a1eb967f34d10742df18db7ad0b972d3b",
+      "bytes": 2507,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/gravestone_doji_detector_mql5.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/gravestone_doji_detector_mql5.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__gravestone_doji_detector_mql5.mq5",
+      "sha256": "a0b402e9305ab81d2f10986030aca329e1a9e4bbd8159bcab6330a0b23b9676d",
+      "bytes": 1634,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/long_legged_doji_detector_mql5.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/long_legged_doji_detector_mql5.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__long_legged_doji_detector_mql5.mq5",
+      "sha256": "19cd3a0f378d03672552522b4d48c718070886e80a2be41e361855102b265bc2",
+      "bytes": 1916,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/macd_histogram.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/macd_histogram.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__macd_histogram.mq5",
+      "sha256": "e88e0ede865385323bdb18b76435b0a01dfe31b6fc5838df61f530fbfcaff0e5",
+      "bytes": 3213,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/macd_histogram_zero_cross.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/macd_histogram_zero_cross.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__macd_histogram_zero_cross.mq5",
+      "sha256": "005a8f1409c2b906e072ac03fa60c82bcfeb0b166f67065c1e95b912454bff51",
+      "bytes": 3424,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/macd_signal.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/macd_signal.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__macd_signal.mq5",
+      "sha256": "8cff27c1595ae3193c75139635302a137439222d1b71cb5f110daec46332a9ff",
+      "bytes": 3210,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/macd_signal_zero_cross.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/macd_signal_zero_cross.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__macd_signal_zero_cross.mq5",
+      "sha256": "5ac8b498416838d3ba8b88f6b2020544f4c3f2acbd2bf5dbba8bf600df6a3fbc",
+      "bytes": 3418,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/money_flow_index_indicator.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/money_flow_index_indicator.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__money_flow_index_indicator.mq5",
+      "sha256": "a0e7eb3a5a86c44bc4f3e4d3b6e91f293f62bd589c3460cb623dda0afea64bdc",
+      "bytes": 2582,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "indicators/rsi_indicator_mql5.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/indicators/rsi_indicator_mql5.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/indicators__rsi_indicator_mql5.mq5",
+      "sha256": "23bb4fc014515a096b280f0221241f622b72307e00ac9f94924f475519cd19c6",
+      "bytes": 1163,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0280",
+      "repo": "jimtin/build-your-own-mt5-ea",
+      "path": "rsi_trading_bot_tutorial.mq5",
+      "url": "https://raw.githubusercontent.com/jimtin/build-your-own-mt5-ea/main/rsi_trading_bot_tutorial.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/jimtin__build-your-own-mt5-ea/rsi_trading_bot_tutorial.mq5",
+      "sha256": "e828331055259b03eca8b2109fc671d21050a09a0f736de0775dd45fa5237b60",
+      "bytes": 5988,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0281",
+      "repo": "PopovMP/FSB_Expert_Advisor_Code",
+      "path": "FSB_Expert_MT4.mq4",
+      "url": "https://raw.githubusercontent.com/PopovMP/FSB_Expert_Advisor_Code/master/FSB_Expert_MT4.mq4",
+      "local_path": "data/ea_kb/sources_batch2/github/PopovMP__FSB_Expert_Advisor_Code/FSB_Expert_MT4.mq4",
+      "sha256": "a39ec1e39f345834cdef98466e0f90532dc3b07db6a8ed4efd17dade8a547fcd",
+      "bytes": 8226,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0281",
+      "repo": "PopovMP/FSB_Expert_Advisor_Code",
+      "path": "FSB_Expert_MT5.mq5",
+      "url": "https://raw.githubusercontent.com/PopovMP/FSB_Expert_Advisor_Code/master/FSB_Expert_MT5.mq5",
+      "local_path": "data/ea_kb/sources_batch2/github/PopovMP__FSB_Expert_Advisor_Code/FSB_Expert_MT5.mq5",
+      "sha256": "8561fbf262933f3a0164d1b25a2eda5b7b502000132272eeb9f9d1c6187a2a11",
+      "bytes": 7885,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0281",
+      "repo": "PopovMP/FSB_Expert_Advisor_Code",
+      "path": "Forexsb.com/ActionTrade4.mqh",
+      "url": "https://raw.githubusercontent.com/PopovMP/FSB_Expert_Advisor_Code/master/Forexsb.com/ActionTrade4.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/PopovMP__FSB_Expert_Advisor_Code/Forexsb.com__ActionTrade4.mqh",
+      "sha256": "dc388de2422dbbb4263983bcf4ca0f6b76f7cc9c6d3d88de88bbe228f867c946",
+      "bytes": 63533,
+      "status": "Completed"
+    },
+    {
+      "from_repo_task": "Q-0281",
+      "repo": "PopovMP/FSB_Expert_Advisor_Code",
+      "path": "Forexsb.com/ActionTrade5.mqh",
+      "url": "https://raw.githubusercontent.com/PopovMP/FSB_Expert_Advisor_Code/master/Forexsb.com/ActionTrade5.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/PopovMP__FSB_Expert_Advisor_Code/Forexsb.com__ActionTrade5.mqh",
+      "sha256": "8fa16bbf1d68f75980c30fd4e1a5e12ede67a13cf8177bcd338b720a75de219b",
+      "bytes": 50863,
+      "status": "Completed"
+    }
+  ],
+  "ff_ex5_metadata": {
+    "https://www.forexfactory.com/thread/1379620-only-mq5-and-python-eas-and-indicators-for?page=6": {
+      "http_status": 200,
+      "title": "Only MQ5 and Python: EAs and indicators for everyone | Page 6 | Forex Factory",
+      "attachments_context": {
+        "Q-1749": {
+          "attachment_id": "5186339",
+          "context": "ides real-time logs of your most recent trades at the bottom of the display. With the new v1.06 update, a multi-language support feature has been integrated, allowing you to toggle the interface between Turk\ufffde and English with just one click. One of the standout highlights of this version is the interactive Note Section ; by simply double-clicking the panel, you can write down your current market thoughts, strategy reminders, or support/resistance targets directly onto the chart. If you want to "
+        },
+        "Q-1750": {
+          "attachment_id": "5187431",
+          "context": "t_message_15665430\"> TradingInfo Panel indicator Attached Image (click to enlarge) I've fixed a minor bug in the trading info panel and updated it to show weekly and monthly earnings levels and DD data. Attached File(s) TradingInfo_v1.07.ex5 &nbsp; 53 KB | 181 downloads <div"
+        },
+        "Q-1751": {
+          "attachment_id": "5189860",
+          "context": "e your overall break-even point at a glance. Attached Image (click to enlarge) Attached File(s) VirtualTradeLevels_2.ex5 &nbsp; 23 KB | 190 downloads The unique &quot;Sekanas&quot; feature calculates the proportional difference between two price levels using a specific formula and displays it between lines for precise distance tracking. <img data-emoji=\"straight_ruler\" alt=\"\" width=\"18\" height=\"18\" loading=\"lazy\" class=\"emoji\" src=\"https://resources.faireconomy.media/images/emojis/64/1"
+        },
+        "Q-1752": {
+          "attachment_id": "5196744",
+          "context": "iew Quoted Post\" href=\"/thread/post/15683398#post15683398\" data-quote-anchor-id=\"15683398\" rel=\"nofollow\"> Quoting Teshows Disliked Can you share the GridOracle_V4.12? Ignored Of course, I'm attaching all the working files. If you encounter any errors, installing the relevant Python files and version should make it work. Attached File(s) GridOracle_V4.12.ex5 &nbsp; 43 KB | 188 downloads GridOracle_V4.12.mq5 &nbsp; 37 KB <span class=\"seperator flexposts__attachme"
+        },
+        "Q-1753": {
+          "attachment_id": "5213802",
+          "context": "> Attached Image (click to enlarge) I was recently working with similar SNR levels, you can try this one too. Attached File(s) SNR_AV_v5.ex5 &nbsp; 28 KB | 117 downloads SNR_AV_v5.mq5 &nbsp; 28 KB <span class=\"seperator flexposts__attachments-seperator\""
+        },
+        "Q-1754": {
+          "attachment_id": "5213821",
+          "context": "t into an indicator using SD and SNR levels. I'm sharing it with you right away. I've shared it as open source code for those who want to develop it further. Attached Image (click to enlarge) Attached File(s) Sekanas_AV_Supply_Demand_v2.ex5 &nbsp; 34 KB | 124 downloads Sekanas_AV_Supply_Demand_v2.mq5 &nbsp; 42 KB <span class=\"seperat"
+        }
+      }
+    },
+    "https://www.forexfactory.com/thread/864355-lrsf-tms-expert-advisor-mt5": {
+      "http_status": 200,
+      "title": "LRSF - TMS Expert Advisor - MT5 | Forex Factory",
+      "attachments_context": {
+        "Q-1755": {
+          "attachment_id": "3721096",
+          "context": "or. My perspective is the development process. This EA follows the well known &quot;Trading Made Simple&quot; strategy. So we do not have to discuss that in this thread. Here we just try to automate that strategy as best as possible. I will post every version here and you can download it for testing purposes. The EA will work on real accounts but with some security measures. First, as a test-version it is time limited, and second, on a real account it will only trade one position at any time. On"
+        },
+        "Q-1756": {
+          "attachment_id": "3730475",
+          "context": "iv class=\"frame flexposts__attachments-frame\"> Attached File(s) LRSF_307_wip.ex5 &nbsp; 360 KB | 885 downloads | Uploaded Aug 20, 2020 10:02am Version 3.08 Attached File(s) LRSF_308_wip.ex5 &nbsp; 363 KB | 697 downloads | Uploaded Sep 1, 2020 1:58pm Version 3.09 Attached File(s) <div class=\"attachinfo flexp"
+        },
+        "Q-1757": {
+          "attachment_id": "3749537",
+          "context": "Attached File(s) LRSF_308_wip.ex5 &nbsp; 363 KB | 697 downloads | Uploaded Sep 1, 2020 1:58pm Version 3.09 Attached File(s) LRSF_309_wip.ex5 &nbsp; 369 KB | 1,415 downloads | Uploaded Sep 24, 2020 1:52pm Goodies: Scripts for manual trading: Post #4 Post #5 TDI Indicator: Post #11 and #12 <di"
+        },
+        "Q-1758": {
+          "attachment_id": "3149542",
+          "context": "rea-hidden visible-tv visible-dv\"> Joined Apr 2016 | Status: Trader | 711 Posts Scripts for manual trading The following scripts can be used to manually create orders with the correct MagicNumber. Script for opening a BUY order Attached File(s) LRSF - Manual BUY Order.ex5 &nbsp; 26 KB | 961 downloads Script for opening a SELL order Attached File(s) <img src=\"https://assets.fairecono"
+        },
+        "Q-1759": {
+          "attachment_id": "3149545",
+          "context": "\"list-style-type: disc\"> Script for opening a BUY order Attached File(s) LRSF - Manual BUY Order.ex5 &nbsp; 26 KB | 961 downloads Script for opening a SELL order Attached File(s) LRSF - Manual SELL Order.ex5 &nbsp; 26 KB | 905 downloads Once these orders are opened the LRSF EA can be used for further management. Why use manual trades? The LRSF EA/TM is an Expert Advisor / Trade Manager. That means it can trade autonomously. Trading has two aspects - The ENTRY- and the EXIT condition. To open tra"
+        },
+        "Q-1760": {
+          "attachment_id": "3246716",
+          "context": "st-header__userbit threadpost-header__userbit--userinfo\"> Joined Apr 2016 | Status: Trader | 711 Posts Scripts for manual trading updated versions. Attached File(s) LRSF - Manual BUY Order.ex5 &nbsp; 26 KB | 916 downloads Attached File(s) <img src=\"https://assets.faireconomy.media/images/attach/ex5.gif\" alt=\"File"
+        }
+      }
+    }
+  }
+}

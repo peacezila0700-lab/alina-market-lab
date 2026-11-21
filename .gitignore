@@ -12,4 +12,5 @@ __pycache__/
 .venv/
 screen/raw/
 data/universe/
+data/ea_kb_backup_v2.12/
 pack/

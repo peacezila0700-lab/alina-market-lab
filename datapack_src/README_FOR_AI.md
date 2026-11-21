@@ -1,10 +1,10 @@
-# ALINA DATAPACK v2.12 — read this first (≈900 tokens, saves you thousands)
+# ALINA DATAPACK v2.13 — read this first (≈900 tokens, saves you thousands)
 
 ## What this is
-A self-contained research base built by an agent over ~16 sessions, for an AI trading system to
+A self-contained research base built by an agent over ~17 sessions, for an AI trading system to
 consume **without re-searching the internet**. It contains market data, positioning data,
 volatility data, measured trading costs, calendars, an attention proxy, a catalogue of 332 free
-EAs, the **Global EA Intelligence Knowledge Base (Batch 1: 217 statically reverse-engineered `.mq5/.mq4/.mqh` source files, SQLite+FTS5 DB `alina_ea_kb.sqlite`, 725 KG edges, 230 RAG chunks, Wingdings/Visual Symbol library, Duplicate/Fork graph, and 1,924-task Research Queue)**, **56 datasets** including a 68-ETF cross-section, 115 US stocks, 64 Thai SET stocks,
+EAs, the **Global EA Intelligence Knowledge Base (Batch 2: 1,718 statically reverse-engineered `.mq5/.mq4/.mqh/.h/.pine` source files, SQLite+FTS5 DB `alina_ea_kb.sqlite`, 493 EAs, 223 Indicators, 325 Visual/Wingdings records, 1,289 duplicate/fork pairs, 4,726 KG edges, 2,021 FTS5 RAG chunks, 100% of 205 unique queued MQL5 CodeBase pages + 27 profiles + ForexPeaceArmy Q-1761, and 1,924/1,924 Batch 2 queue tasks reconciled with 0 pending)**, **56 datasets** including a 68-ETF cross-section, 115 US stocks, 64 Thai SET stocks,
 point-in-time SEC fundamentals (`pit_fundamentals.csv`), the CBOE volatility term structure with
 conditioned base rates, a 36-year Treasury curve, news headlines with entity tags, per-instrument
 support/resistance levels, and a **ready-made daily brief** (`briefs/latest.md`) — plus **every
@@ -49,6 +49,15 @@ traced to a look-ahead bug in this repo's own code. Treat every number here as *
 5. **Report a null.** Every result needs a turnover-matched random control; otherwise you are
    measuring luck. Random selection loses ~0.3 Sharpe after costs — that is the sanity check.
 6. **Never martingale.** 5 of 5 instruments in the grid/doubling test were wiped.
+
+## New in v2.13 (Batch 2 — Global EA Intelligence KB Complete)
+- `ea_intelligence_kb` + `code/ea_sources_batch2/` — Scaled from 217 to **1,718 static source files (`35.16 MB`)**
+  across MQL5, GitHub (`75` full repo tree audits), GitLab, and ForexFactory (`+1,501` Batch 2 files, `.h` C/MQL
+  header parser support added). **100%** of `205` unique queued MQL5 CodeBase pages (`89` refreshed verbatim),
+  `27` developer profiles, and `Q-1761` ForexPeaceArmy EA scam benchmarks persisted; **100%** 15-field schema
+  completeness across `493` EAs/Utilities and `223` Indicators; **1,289** SHA-256 + 5-gram shingle duplicate/fork
+  pairs retained; **4,726** KG edges; **2,021** FTS5 RAG chunks; **1,924/1,924** Batch 2 queue reconciled (`0` pending),
+  with `951` Batch 3 archive/dependency follow-ups staged in `research_queue_batch3.jsonl`.
 
 ## New in v2.11 (what to actually use)
 - `pit_and_crypto_experiments` — **EXP-0022 (Sloan accruals & quality on PIT SEC 62 firms, 63d)** &

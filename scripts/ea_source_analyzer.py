@@ -207,6 +207,8 @@ def analyze_source_file(path: str | Path) -> dict[str, Any]:
         platform = "MT5"
     elif ext == ".mqh":
         platform = "MQL_Include"
+    elif ext == ".h":
+        platform = "MQL_C_Header"
     elif ext == ".py":
         platform = "Python_Bridge"
     else:
@@ -229,6 +231,8 @@ def analyze_source_file(path: str | Path) -> dict[str, Any]:
 
     if ext == ".mqh":
         role = "Library / Header (.mqh)"
+    elif ext == ".h":
+        role = "Library / Header (.h)"
     elif is_indicator and not has_trade_exec:
         role = "Indicator"
     elif has_trade_exec:

@@ -1,5 +1,10 @@
 {
   "dataset_path": "data/events/event_calendar_full.csv",
   "event_rows": 2028,
-  "related_mql5_bridge": "https://www.mql5.com/en/code/55630 (NewsBacktest.mq5 / CalendarFile.mqh)"
+  "related_mql5_bridges": [
+    "https://www.mql5.com/en/code/55630",
+    "https://www.mql5.com/en/code/53393",
+    "https://www.mql5.com/en/code/78672",
+    "https://www.mql5.com/en/code/79162"
+  ]
 }

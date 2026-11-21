@@ -1,13 +1,19 @@
-# CURRENT STATE — 2026-11-21 (v2.12: Global EA Intelligence KB Batch 1 + v2.11 features)
+# CURRENT STATE — 2026-11-21 (v2.13: Global EA Intelligence KB Batch 2 Complete + v2.12 baseline)
 
 ## Focus
-Global Research Agent + Persistent AI/RAG-ready **Private AI Trading Knowledge Base** under `alina_lab/data/ea_kb/` (Batch 1 complete: static reverse-engineering of **217 downloaded `.mq5/.mq4/.mqh/.py/.pine` files**, SQLite+FTS5 DB, Knowledge Graph, Duplicate/Fork matrix, Visual/Wingdings dictionary, Evidence Grading 1–7, 1,924-task Research Queue). App frozen.
+Global Research Agent + Persistent AI/RAG-ready **Private AI Trading Knowledge Base** under `alina_lab/data/ea_kb/` (**Batch 2 complete**: static reverse-engineering of **1,718 downloaded `.mq5/.mq4/.mqh/.h/.pine` files (`35.16 MB`)**, 100% of 205 unique queued MQL5 CodeBase pages + 27 developer profiles + ForexPeaceArmy `Q-1761` + 75 GitHub repo audits + ForexFactory `.ex5` metadata, SQLite+FTS5 DB, 4,726 KG edges, 1,289 duplicate/fork pairs retained, 100% 15-field schema completeness, and `1,924/1,924` Batch 2 queue reconciled with `0` pending). App frozen.
 
 ## Drive (live)
-- **v2.12 `1iFzwkn17hDD6O8lJeXpqPkHyjxCJcTYG`** — 56 datasets / 890 files / 73.4 MB (`ea_intelligence_kb` + all 217 raw EA/indicator/library source files in `code/ea_sources/`). Current.
-- v2.11 (`1biZ1JbdXYH5p3f8NFGIxQ_u2RuPVOVi3`), v2.10, v2.9, v2.8, v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.13 `1sXRKNIXvL5Pxuts2y8-qVG0q0XXjYCGw`** — 56 datasets / 2,410 files / 81.05 MB (`81,050,728` B, MD5 `a36fe8427c3c3cfa04c61daa67c42e26`). **Current.**
+- **v2.12 `1iFzwkn17hDD6O8lJeXpqPkHyjxCJcTYG`** — 56 datasets / 890 files / 73.4 MB (`73,418,168` B, preserved untouched alongside v2.13).
+- v2.11 (`1biZ1JbdXYH5p3f8NFGIxQ_u2RuPVOVi3`) and older trashed prior to v2.12. Local temp build dirs cleaned after upload.
 
 ## Shipped this session (chronological)
+15. **Global EA Intelligence Knowledge Base — Batch 2 (`scripts/ea_kb_batch2_*.py`, updated `ea_source_analyzer.py` + `.h` support → `data/ea_kb/`) → v2.13:**
+    - Resolved `1,924/1,924` Batch 2 research queue tasks (`0` pending: `1,635` completed, `12` completed metadata-only `.ex5`, `262` deferred, `15` blocked HTTP-429/withdrawn) and staged `951` Batch 3 follow-up tasks (`research_queue_batch3.jsonl`).
+    - Staged `1,501` new Batch 2 files (`30.15 MB`) under `sources_batch2/` (`1,368` GitHub, `112` P1 deps, `21` GitLab) + persisted `212` MQL5 CodeBase pages (`100%` of 205 queued IDs, `89` refreshed verbatim), `27` MQL5 developer profiles, and `Q-1761` ForexPeaceArmy scams guide.
+    - Analyzed all **1,718** local files statically, built **1,289** SHA-256 + 5-gram shingle duplicate/fork pairs (all retained), populated **100%** of 15 unified fields across **493 EAs** and **223 Indicators**, **325 Visual Symbols**, **197 Developers**, **75 GitHub Repo Audits**, **4,726 Knowledge Graph edges**, and **2,021 FTS5 RAG chunks** (`alina_ea_kb.sqlite` `5.99 MB`).
+    - Documented full verified audit in `data/ea_kb/DATA_DICTIONARY.md` and `data/ea_kb/PROOF_OF_WORK_BATCH2.md`.
 14. **Global EA Intelligence Knowledge Base — Batch 1 (`scripts/ea_source_analyzer.py`, `ea_kb_crawler.py`, `ea_kb_build.py`, `ea_kb_report.py` → `data/ea_kb/`) → v2.12:**
     - Downloaded & statically reverse-engineered **217 verbatim source files (`5.01 MB`)** across MQL5 CodeBase, GitHub, GitLab (`fxce/mt5-libs` `develop`, `RoffildLibrary`), ForexFactory attachments, and local `AlinaRiskGovernor.mq5`.
     - Built **SQLite+FTS5 (`alina_ea_kb.sqlite`)** + JSONL/CSV layers: **96 EAs** (`90` Level 1 source-verified, `1` Level 2 doc-inspected `NewsBacktest`, `5` Level 5–6 commercial/unverified `.ex5` claims never guessed), **63 Indicators**, **204 Visual Symbol / Wingdings records**, **69 Developers**, **90 Decomposed Strategies**, **10 Exact/Fork/Shared-Code Duplicates** (all preserved), **28 Unclassified/Unknown records**, **725 Knowledge Graph edges**, **230 FTS5 RAG chunks**, and **1,924 persistent `research_queue.jsonl` tasks** for Batch 2+.

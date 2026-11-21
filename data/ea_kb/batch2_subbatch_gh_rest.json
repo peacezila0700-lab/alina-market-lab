@@ -1,0 +1,2314 @@
+{
+  "generated_utc": "2026-11-21T08:35:35Z",
+  "downloaded": 288,
+  "deferred": 0,
+  "failed": 0,
+  "total_sources_batch2_files": 1501,
+  "total_sources_batch2_bytes": 30152933,
+  "results": [
+    {
+      "task_id": "Q-1126",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/FlameCanvas.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__FlameCanvas.mqh",
+      "sha256": "006c6b3c66f78c7f78f7608372762b154d6a75bbf271bc75599471d294056d96",
+      "bytes": 27042
+    },
+    {
+      "task_id": "Q-1127",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Controls/BmpButton.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Controls__BmpButton.mqh",
+      "sha256": "c552c75d871db49cacc158e8632b1bd680fac4587217c629caa3858fd70afb74",
+      "bytes": 11453
+    },
+    {
+      "task_id": "Q-1128",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Controls/WndClient.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Controls__WndClient.mqh",
+      "sha256": "82bbf28d0de07413009d02cac64fbde16826c56c8dff1dbc6fa83968f648b949",
+      "bytes": 12237
+    },
+    {
+      "task_id": "Q-1129",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/ExpertMoney.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__ExpertMoney.mqh",
+      "sha256": "c7d5079acf6131b61f80a843fdfd1c3b9a8afd89a6fcdbab66761bc1d5171b8b",
+      "bytes": 4963
+    },
+    {
+      "task_id": "Q-1130",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/ExpertTrade.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__ExpertTrade.mqh",
+      "sha256": "0f90744fcb47d526e63f40833e7ea71d9ab41a587b5931143905939baa4a73ab",
+      "bytes": 6502
+    },
+    {
+      "task_id": "Q-1131",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/LinkedList.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__LinkedList.mqh",
+      "sha256": "f9ef0e5d0f9a6d5748ba2537191c6a6ce1d639400815e09ae82a1d4a8888032a",
+      "bytes": 21261
+    },
+    {
+      "task_id": "Q-1132",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Indicators/Volumes.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Indicators__Volumes.mqh",
+      "sha256": "475b8142e4cd6861bb4d9762e62122120fef780a0e2c48508c012da623015184",
+      "bytes": 17740
+    },
+    {
+      "task_id": "Q-1133",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/matrix.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__matrix.mqh",
+      "sha256": "43204698c1a624624f82b997a2c9fa4d1b43fb4c5be2b2bb3a624daf20a207e2",
+      "bytes": 46475
+    },
+    {
+      "task_id": "Q-1134",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/Binomial.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__Binomial.mqh",
+      "sha256": "e8a872cb43d7115c886f27541d699006e1079791a6ad203ab9c01a9e2e5bf6ca",
+      "bytes": 35728
+    },
+    {
+      "task_id": "Q-1135",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/Logistic.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__Logistic.mqh",
+      "sha256": "7fada2be5d6362c9720d135a7d9a1db2608f4d2580eb907e5982437b4db768c6",
+      "bytes": 27860
+    },
+    {
+      "task_id": "Q-1136",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Trade/PositionInfo.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Trade__PositionInfo.mqh",
+      "sha256": "6ce6319dd33b689b11381a5edc252f2faf95acc483237517c02ac59e3784fa2c",
+      "bytes": 15820
+    },
+    {
+      "task_id": "Q-1137",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Trade/TerminalInfo.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Trade__TerminalInfo.mqh",
+      "sha256": "e14487b1cfbea556c81444fa3875ba767ca6af21601da893fe4d0b31baf7c79b",
+      "bytes": 10730
+    },
+    {
+      "task_id": "Q-1138",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/CSessionFilter.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__CSessionFilter.mqh",
+      "sha256": "c223d5538e85bd18381901ca7d00d691197ce7d4abda564efa5b0e0819bae90d",
+      "bytes": 21227
+    },
+    {
+      "task_id": "Q-1139",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Execution/CTradeManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Execution__CTradeManager.mqh",
+      "sha256": "385a6834cd7b1c184df134053bcbfb8d762cf45b969325c58320be9be1f74198",
+      "bytes": 97516
+    },
+    {
+      "task_id": "Q-1140",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Execution/TradeExecutor.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Execution__TradeExecutor.mqh",
+      "sha256": "033e21cc37384f32efecceb2e53040e87ea6563d88065c8d5acf103f8ea75c0d",
+      "bytes": 12369
+    },
+    {
+      "task_id": "Q-1141",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Risk/CUnifiedRiskPolicy.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Risk__CUnifiedRiskPolicy.mqh",
+      "sha256": "83b9f88f65d44e1de9e7bf208900ee987535d0fc553804efc65183bc1251c819",
+      "bytes": 37613
+    },
+    {
+      "task_id": "Q-1142",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Risk/CWallClockEnforcer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Risk__CWallClockEnforcer.mqh",
+      "sha256": "1ed68a1ba387da815e45dcbea3d0f82ec5107941f8e3b9d868b470eb341b585f",
+      "bytes": 22162
+    },
+    {
+      "task_id": "Q-1143",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/DX/DXBuffers.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__DX__DXBuffers.mqh",
+      "sha256": "978eb7c9df96485bb9d12a94584b4cc8b1b8e83cbbce2b99f0056efc853240f9",
+      "bytes": 4354
+    },
+    {
+      "task_id": "Q-1144",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/DX/DXSurface.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__DX__DXSurface.mqh",
+      "sha256": "8d4bfad2b740665a939e37e3c572ee1881d68522b4a7b2bf63e9d36a066376a0",
+      "bytes": 6405
+    },
+    {
+      "task_id": "Q-1145",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/DX/DXTexture.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__DX__DXTexture.mqh",
+      "sha256": "2093a41146ee2a03e471c35bba9b946590ce6ba394cc3d369cd2f532360be5d6",
+      "bytes": 6890
+    },
+    {
+      "task_id": "Q-1146",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Controls/CheckGroup.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Controls__CheckGroup.mqh",
+      "sha256": "0e3a6535af76e9b5d67db318bf9079689a9db52474d3e4d45bd0d2851b86e5f7",
+      "bytes": 14144
+    },
+    {
+      "task_id": "Q-1147",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Controls/DatePicker.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Controls__DatePicker.mqh",
+      "sha256": "c4080eecdba7b9a67abff48778f51e24616bf03064084a71624498391007319b",
+      "bytes": 10702
+    },
+    {
+      "task_id": "Q-1148",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Controls/RadioGroup.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Controls__RadioGroup.mqh",
+      "sha256": "3f63ee5c0e400dd5452b730d3d3fd342ced6b4177b6c23c15ff50adb5e91691e",
+      "bytes": 13558
+    },
+    {
+      "task_id": "Q-1149",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/ExpertSignal.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__ExpertSignal.mqh",
+      "sha256": "b7d54b935fedb7169f5b0d983b0e09d3fce800a19b2d76286be24a3d36bef2e4",
+      "bytes": 20246
+    },
+    {
+      "task_id": "Q-1150",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/ChiSquare.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__ChiSquare.mqh",
+      "sha256": "dfd061e82c538eaaf57d8b9356fe1ffb2b01cb6bc5fcb43d0538115a3996aae5",
+      "bytes": 24891
+    },
+    {
+      "task_id": "Q-1151",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/Geometric.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__Geometric.mqh",
+      "sha256": "7b8a8ba569c12a6929a0286c68e3750e02b2cc6f953a182030d18bf9306ac176",
+      "bytes": 25490
+    },
+    {
+      "task_id": "Q-1152",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/Lognormal.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__Lognormal.mqh",
+      "sha256": "930649eeef0c11ff0aebc2641395b6edbfb455462b16e2ab0cbbfcc96ea46246",
+      "bytes": 29245
+    },
+    {
+      "task_id": "Q-1153",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/WinAPI/libloaderapi.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__WinAPI__libloaderapi.mqh",
+      "sha256": "16a83c7e2c9a6ae311275e63818d76456afe66f0f7dab9b09828199b7823cd90",
+      "bytes": 2952
+    },
+    {
+      "task_id": "Q-1154",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/CEntryOptimizer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__CEntryOptimizer.mqh",
+      "sha256": "be241ff08eb0f6b26d43ceda53e53c3ec0d64d135c6eba033988244021c6b5cc",
+      "bytes": 25335
+    },
+    {
+      "task_id": "Q-1155",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/CRegimeDetector.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__CRegimeDetector.mqh",
+      "sha256": "85afeb8eacec46db3eab414bb4d2a3363033496dfa63198db814008964328779",
+      "bytes": 44232
+    },
+    {
+      "task_id": "Q-1156",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/EliteOrderBlock.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__EliteOrderBlock.mqh",
+      "sha256": "0a6bb8addbef24a635b046ab1f7ad0b8edebd049580bc19d6ae9d4a2b50bbc21",
+      "bytes": 26715
+    },
+    {
+      "task_id": "Q-1157",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Context/CHolidayDetector.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Context__CHolidayDetector.mqh",
+      "sha256": "7ab41328881f329bc45b3ebf5f743d89aa2b2e10999cb7c8a254575cfb527941",
+      "bytes": 20230
+    },
+    {
+      "task_id": "Q-1158",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Risk/CDynamicRiskManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Risk__CDynamicRiskManager.mqh",
+      "sha256": "0cb284eeb06803b4383eb6f49539b01abdb4ca961811253c96e668342cfe829a",
+      "bytes": 15838
+    },
+    {
+      "task_id": "Q-1159",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Risk/CRiskProfileManager.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Risk__CRiskProfileManager.mqh",
+      "sha256": "7ebb7954254d1b6d831200fa6c601b55423a9b621ae209a53525402f3e77c940",
+      "bytes": 12477
+    },
+    {
+      "task_id": "Q-1160",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Signal/CConfluenceScorer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Signal__CConfluenceScorer.mqh",
+      "sha256": "02137d96747dfc1df916b5253f662331c9f9de870093c2bef6943206667f83a9",
+      "bytes": 94897
+    },
+    {
+      "task_id": "Q-1161",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Strategy/CAdaptiveRouter.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Strategy__CAdaptiveRouter.mqh",
+      "sha256": "2acdb744c5c2ad99f0c835e54676437ab81f2394ab9e5172eee2fd48566a6462",
+      "bytes": 13147
+    },
+    {
+      "task_id": "Q-1163",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Controls/RadioButton.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Controls__RadioButton.mqh",
+      "sha256": "6b9b90f93fe74ff9e19ed0b78349f8a19adb84436f5410541cbf3b03cd691b6e",
+      "bytes": 6989
+    },
+    {
+      "task_id": "Q-1164",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/RedBlackTree.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__RedBlackTree.mqh",
+      "sha256": "c86e15913b1683f707c465f704a51c448c0086717d69305cf41e5c2bebf6050d",
+      "bytes": 74814
+    },
+    {
+      "task_id": "Q-1165",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Indicators/Indicator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Indicators__Indicator.mqh",
+      "sha256": "26d81f60d5c427f1bd52506328a1e5bcb2106ceb330c6c3dad9413867f484550",
+      "bytes": 19825
+    },
+    {
+      "task_id": "Q-1166",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/fuzzyrule.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__fuzzyrule.mqh",
+      "sha256": "78804ebf1e0dece28f58443d7aafa8775b171f74bff7ce1d52583160251f037a",
+      "bytes": 18196
+    },
+    {
+      "task_id": "Q-1167",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/fuzzyterm.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__fuzzyterm.mqh",
+      "sha256": "51df46ab355cd35daaa2bea381635112eb5f9d61adb317548fe872aaf0d01477",
+      "bytes": 3819
+    },
+    {
+      "task_id": "Q-1168",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/ChartObjects/ChartObjectsBmpControls.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__ChartObjects__ChartObjectsBmpControls.mqh",
+      "sha256": "f4fadcca1e440729d11f08b6d64a1831de2ff2c414eb943dae690d0de12f5277",
+      "bytes": 21277
+    },
+    {
+      "task_id": "Q-1169",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/ChartObjects/ChartObjectsTxtControls.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__ChartObjects__ChartObjectsTxtControls.mqh",
+      "sha256": "b81d07a8e0a9a14bef1e6406c674d77187fa044e97688ccf468425bc3bd17e11",
+      "bytes": 38305
+    },
+    {
+      "task_id": "Q-1170",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/CAMDCycleTracker.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__CAMDCycleTracker.mqh",
+      "sha256": "6fef64ebe8d0b6ebdc05aff587881b9f2acde6f8639ad2c10f45b14d6c2b5017",
+      "bytes": 31815
+    },
+    {
+      "task_id": "Q-1171",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/OrderFlowExample.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__OrderFlowExample.mqh",
+      "sha256": "a5c84b802cacd496770d979159cee939413a525c173d64327903cc2988c48382",
+      "bytes": 5591
+    },
+    {
+      "task_id": "Q-1172",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Backtest/CBacktestRealism.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Backtest__CBacktestRealism.mqh",
+      "sha256": "a7077e7e68dd3d16e06ae25b343edefe30a7cfc742edfd8b61ace32246edb556",
+      "bytes": 21935
+    },
+    {
+      "task_id": "Q-1173",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/Expert/Trailing/TrailingParabolicSAR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__Expert__Trailing__TrailingParabolicSAR.mqh",
+      "sha256": "c0c0058a1bf99b38428614e30e0d4f299e2c8c27781e42834dc5a6e978c59e6a",
+      "bytes": 5527
+    },
+    {
+      "task_id": "Q-1174",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/Generic/Interfaces/IEqualityComparer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__Generic__Interfaces__IEqualityComparer.mqh",
+      "sha256": "1de5e9a349fad7853213a6513f9af5c49baa88fe77a521e068731691d57603de",
+      "bytes": 1027
+    },
+    {
+      "task_id": "Q-1175",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Controls/DateDropList.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Controls__DateDropList.mqh",
+      "sha256": "c8ea8ede2822cd89ea146b1157f9b5ff669a1737d789bb827585d1629e8c58b7",
+      "bytes": 15174
+    },
+    {
+      "task_id": "Q-1176",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Controls/WndContainer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Controls__WndContainer.mqh",
+      "sha256": "e0cccb207be61fcbe319682e58c97045fb3ce2dea5329ce95c9c0879a4d19abf",
+      "bytes": 16382
+    },
+    {
+      "task_id": "Q-1177",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/ExpertTrailing.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__ExpertTrailing.mqh",
+      "sha256": "da8c5259ffff8d06f34d9eda727e1a63d3ef60fc816c225fb5256abe2215146d",
+      "bytes": 1738
+    },
+    {
+      "task_id": "Q-1178",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Indicators/Indicators.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Indicators__Indicators.mqh",
+      "sha256": "dc2c5fb6632ec6e2dd5626f2dec1583e858f78e00ca1a03fa9e66560f5743e2d",
+      "bytes": 12252
+    },
+    {
+      "task_id": "Q-1179",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Indicators/Oscilators.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Indicators__Oscilators.mqh",
+      "sha256": "e9515de237796de6f1c71eb82a124bffef65f9f862f95d314327bc52f0c14bcc",
+      "bytes": 73859
+    },
+    {
+      "task_id": "Q-1180",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Indicators/TimeSeries.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Indicators__TimeSeries.mqh",
+      "sha256": "528252b76b87734c4eacb27eebe45a25eec9895dabe0065f1665300180052495",
+      "bytes": 63360
+    },
+    {
+      "task_id": "Q-1181",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/dictionary.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__dictionary.mqh",
+      "sha256": "1db7f016dd9cc41cce9048810d3ce4b6d45ac2c90b82c0ff6ccfab9c6cfc37d3",
+      "bytes": 9060
+    },
+    {
+      "task_id": "Q-1182",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/ruleparser.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__ruleparser.mqh",
+      "sha256": "be790051d2994c205c73c5623cbadc3a6a67621a14f6a99043e9d7c22e858d69",
+      "bytes": 37389
+    },
+    {
+      "task_id": "Q-1183",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/Exponential.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__Exponential.mqh",
+      "sha256": "53788ec2d04cd5cd30137b7b31eb6a085414825765eaf7da892485c472056ded",
+      "bytes": 24774
+    },
+    {
+      "task_id": "Q-1184",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/NoncentralF.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__NoncentralF.mqh",
+      "sha256": "392a70aa6fe37dc7c7a66e7de50fb151c93f4eeadd3ccb907cb98ab85a2202a3",
+      "bytes": 35826
+    },
+    {
+      "task_id": "Q-1185",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/NoncentralT.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__NoncentralT.mqh",
+      "sha256": "a213d05c9016506c36a00ea39b648cee19b09991604d0f38977ed92d6e54799a",
+      "bytes": 47734
+    },
+    {
+      "task_id": "Q-1186",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/WinAPI/errhandlingapi.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__WinAPI__errhandlingapi.mqh",
+      "sha256": "4dfb672f3e38f82e879660451a64680e6206640743defdc3774f11bac7165591",
+      "bytes": 1933
+    },
+    {
+      "task_id": "Q-1187",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/OrderFlowAnalyzer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__OrderFlowAnalyzer.mqh",
+      "sha256": "c89eb0cc8315cf5a6ad191356aaf2a7a549618873f4fcdfb69ada3768b6448f8",
+      "bytes": 18673
+    },
+    {
+      "task_id": "Q-1188",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Bridge/CFundamentalsBridge.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Bridge__CFundamentalsBridge.mqh",
+      "sha256": "ca99fdfd21f25059507a3c1998ec218deb6fd4d6cc0f54fbf19d6d924f5e6228",
+      "bytes": 14449
+    },
+    {
+      "task_id": "Q-1189",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Signal/SignalScoringModule.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Signal__SignalScoringModule.mqh",
+      "sha256": "d6dee5d48c05bb4bc55b767f9ec8c92c70657a5dc97bbeaa070f4c57b01434f6",
+      "bytes": 9268
+    },
+    {
+      "task_id": "Q-1190",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Strategy/CStrategySelector.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Strategy__CStrategySelector.mqh",
+      "sha256": "28cb950470818572cb73948f32c454ba02557c352f16823bcedb36b744830a66",
+      "bytes": 24623
+    },
+    {
+      "task_id": "Q-1191",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/Charts/PieChart.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__Charts__PieChart.mqh",
+      "sha256": "f28db7810ae8b7c6a401a6d50716cbe708073fd0b614385686c53e3c2f110c58",
+      "bytes": 13713
+    },
+    {
+      "task_id": "Q-1192",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/DX/DXDispatcher.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__DX__DXDispatcher.mqh",
+      "sha256": "b6fd648f8a486d612c5ed92dca2954f30b978e7357f84027cd4f90e169c578ef",
+      "bytes": 13160
+    },
+    {
+      "task_id": "Q-1193",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/DX/DXObjectBase.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__DX__DXObjectBase.mqh",
+      "sha256": "3dee77401ffe2a287f4da07dca7b8ec296dae5eaac720d0f6cf9380f560917c5",
+      "bytes": 2106
+    },
+    {
+      "task_id": "Q-1194",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Money/MoneyNone.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Money__MoneyNone.mqh",
+      "sha256": "b42b8bd80494b39b3c9fc2ba13e13077f90283e754ac1455745c46b9aece15ba",
+      "bytes": 3356
+    },
+    {
+      "task_id": "Q-1195",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalAC.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalAC.mqh",
+      "sha256": "3b2ff939e9cdc14c8affc094a258ae020027904a4e7a5e54e9092689c08d37ac",
+      "bytes": 7678
+    },
+    {
+      "task_id": "Q-1196",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalAO.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalAO.mqh",
+      "sha256": "2e984c4a265a30289c4a0daa164e3112c3d20097af690f3153c8f940fd215543",
+      "bytes": 13681
+    },
+    {
+      "task_id": "Q-1197",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalMA.mqh",
+      "sha256": "9cd6c2ab5fda5f141ad5a6dade7a824bde1b5288faadf8d107cd2d49add70d93",
+      "bytes": 12007
+    },
+    {
+      "task_id": "Q-1198",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/alglibmisc.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__alglibmisc.mqh",
+      "sha256": "0f919dac3e47d585da0ef7ec487c57f8cbef2419aa5715beea0252eec3ea597e",
+      "bytes": 122283
+    },
+    {
+      "task_id": "Q-1199",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/bitconvert.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__bitconvert.mqh",
+      "sha256": "61a678269f51984066b1b5b5c812f160282551f9aeaad53e50617324ca537efd",
+      "bytes": 13809
+    },
+    {
+      "task_id": "Q-1200",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Trade/HistoryOrderInfo.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Trade__HistoryOrderInfo.mqh",
+      "sha256": "2a515c971ed240e0b65bb513126ec1c6faa73d489384101b9e36872b92f4dd28",
+      "bytes": 20018
+    },
+    {
+      "task_id": "Q-1201",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/WinAPI/securitybaseapi.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__WinAPI__securitybaseapi.mqh",
+      "sha256": "50e55b97ddd5df5478b6bfdfe4ef87f981891f0abf1ca182f4c6809aad770581",
+      "bytes": 16588
+    },
+    {
+      "task_id": "Q-1202",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/CFootprintAnalyzer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__CFootprintAnalyzer.mqh",
+      "sha256": "ed85f84d2220c8ca950050d6e1b61296f1c9c9a285f7100cbe75b1601efbc2f6",
+      "bytes": 76317
+    },
+    {
+      "task_id": "Q-1203",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/CStructureAnalyzer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__CStructureAnalyzer.mqh",
+      "sha256": "56f92dda99e61332e0bc9ace46ce227eb0d53b93407631c8504ee6db5277ed14",
+      "bytes": 43325
+    },
+    {
+      "task_id": "Q-1204",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Context/CNewsWindowDetector.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Context__CNewsWindowDetector.mqh",
+      "sha256": "9502f75672a2c3cb9aec26cde616d90dc849b41a627185b5ac2e3ca6b9b5579f",
+      "bytes": 29529
+    },
+    {
+      "task_id": "Q-1205",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/Generic/Interfaces/IEqualityComparable.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__Generic__Interfaces__IEqualityComparable.mqh",
+      "sha256": "fc658200ab73024356c6114330b0da88f3619828a4da289a317c6cb5bdd3247a",
+      "bytes": 1012
+    },
+    {
+      "task_id": "Q-1206",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/Charts/LineChart.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__Charts__LineChart.mqh",
+      "sha256": "3d40e13cb05a38276bbeda48742e8829df5982160b8fee3064149e1fa113d600",
+      "bytes": 12605
+    },
+    {
+      "task_id": "Q-1207",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalAMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalAMA.mqh",
+      "sha256": "cb5dcf8331c17c8519449e496a9f8488882bfdb3592a17c8c55f2bae853d944a",
+      "bytes": 12351
+    },
+    {
+      "task_id": "Q-1208",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalCCI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalCCI.mqh",
+      "sha256": "098484988f45e4581e684de5b90fab553d7a13c2edc06f45d6b79bc3bc563fa0",
+      "bytes": 17541
+    },
+    {
+      "task_id": "Q-1209",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalITF.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalITF.mqh",
+      "sha256": "8c211618b1a3a26670de7b396e7505a3e8043510ff4084530e986dd9eef8a479",
+      "bytes": 4646
+    },
+    {
+      "task_id": "Q-1210",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalRSI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalRSI.mqh",
+      "sha256": "4c4b100124d8499f0558088f33ee7aa39a399cd34fff09bf208f466aa9ee8325",
+      "bytes": 18757
+    },
+    {
+      "task_id": "Q-1211",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalRVI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalRVI.mqh",
+      "sha256": "304cb90b73a83d0cfa887046256f3c5bb4438c15c00ff77f15c559ad50f4a4f7",
+      "bytes": 8156
+    },
+    {
+      "task_id": "Q-1212",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalSAR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalSAR.mqh",
+      "sha256": "6a31b39f49c3fc55aec675c6adcc3cb81be02e8e0fb8901338bf9f8740e6400a",
+      "bytes": 7834
+    },
+    {
+      "task_id": "Q-1213",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalWPR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalWPR.mqh",
+      "sha256": "55b829944e6a3a83522d3fb312b77d76fdbc7e9894c210740b4c32d8673a92e8",
+      "bytes": 16579
+    },
+    {
+      "task_id": "Q-1214",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Interfaces/IMap.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Interfaces__IMap.mqh",
+      "sha256": "cb42e154fe2976ec6679ac879cdd6b069250016abe2091b96fba06ec6d5f489f",
+      "bytes": 1391
+    },
+    {
+      "task_id": "Q-1215",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Interfaces/ISet.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Interfaces__ISet.mqh",
+      "sha256": "22fae29a86d8389f34f191dc45e3806fc888a6310de92108d04e9d5b502bce62",
+      "bytes": 2031
+    },
+    {
+      "task_id": "Q-1216",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Graphics/ColorGenerator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Graphics__ColorGenerator.mqh",
+      "sha256": "d1ed6e0da4ddd7a43433c79c29c69610066c5c24d79e036c60a94d07820032b3",
+      "bytes": 3120
+    },
+    {
+      "task_id": "Q-1217",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Indicators/BillWilliams.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Indicators__BillWilliams.mqh",
+      "sha256": "deeb668d8c7e54e4ae3e2fae008606fa95626e5d0f2ed7fa83d75da82386ddce",
+      "bytes": 33009
+    },
+    {
+      "task_id": "Q-1218",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/arrayresize.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__arrayresize.mqh",
+      "sha256": "d5d3a65cd7dda7d67e627d39ef383e56b63221a327097b74e224927b744c224b",
+      "bytes": 4080
+    },
+    {
+      "task_id": "Q-1219",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/integration.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__integration.mqh",
+      "sha256": "3b2cde4a375d426e7374f6c23c2fa37c422b7e9a65c4e46fe53cef08b872139a",
+      "bytes": 119413
+    },
+    {
+      "task_id": "Q-1220",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/CNewsCalendarNative.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__CNewsCalendarNative.mqh",
+      "sha256": "7cfc8606f7e851a69df479caae34d4de515144a1dd3b34a4a7b6d8e07e9d81d7",
+      "bytes": 28001
+    },
+    {
+      "task_id": "Q-1221",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObject.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObject.mqh",
+      "sha256": "a64a2774f1d1c2949e4a6ac538a58f207b87abea9147d366c43a2d0dcce59987",
+      "bytes": 41365
+    },
+    {
+      "task_id": "Q-1222",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalDEMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalDEMA.mqh",
+      "sha256": "049fe4de48993f01f467a1da192e76f5b57fe6fe953fcfd2733f8ddd67d7c076",
+      "bytes": 11738
+    },
+    {
+      "task_id": "Q-1223",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalMACD.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalMACD.mqh",
+      "sha256": "2a7aa1b5e2940a16882ab69239be5d2605e426d508121eab4c4ef30e713c977e",
+      "bytes": 19863
+    },
+    {
+      "task_id": "Q-1224",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalTEMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalTEMA.mqh",
+      "sha256": "21389984efbbed10f0ee0c16c078ed09152258a395f3dc868cc5ab715f8623d9",
+      "bytes": 11732
+    },
+    {
+      "task_id": "Q-1225",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalTRIX.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalTRIX.mqh",
+      "sha256": "05a35e9f133b8e9a491ab7c21113bbaf3dde84c9d155fb3bedb7b4711819d998",
+      "bytes": 18103
+    },
+    {
+      "task_id": "Q-1226",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Interfaces/IList.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Interfaces__IList.mqh",
+      "sha256": "dbf9e92cdcc6bee41e0b9ec908c0a7143bd9759582774a73658917499e37181d",
+      "bytes": 1352
+    },
+    {
+      "task_id": "Q-1227",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/fuzzyvariable.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__fuzzyvariable.mqh",
+      "sha256": "11f7f503b8ada453c0661de50a623af45c7a9d77f9ffe61456462bd8b8753bea",
+      "bytes": 5586
+    },
+    {
+      "task_id": "Q-1228",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/Hypergeometric.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__Hypergeometric.mqh",
+      "sha256": "b85455296b707db1a88e59fab35a7118a2f57ff96c58fcd6139751915ddf8c75",
+      "bytes": 35334
+    },
+    {
+      "task_id": "Q-1229",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/NoncentralBeta.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__NoncentralBeta.mqh",
+      "sha256": "697a4d175d14fd6c8b367dfa33c52c5842eb22aec51fc3c7883b17204216005b",
+      "bytes": 41195
+    },
+    {
+      "task_id": "Q-1230",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/WinAPI/processthreadsapi.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__WinAPI__processthreadsapi.mqh",
+      "sha256": "11da4f900db6b67a6ed2a032c11c272a73a2bf4b35f5690e156f659ad6acd564",
+      "bytes": 10250
+    },
+    {
+      "task_id": "Q-1231",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/OrderFlowAnalyzer_v2.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__OrderFlowAnalyzer_v2.mqh",
+      "sha256": "8e339355e4b13b05d2cfd8c1fb810490717e2af936546f51ec803534a41de381",
+      "bytes": 35890
+    },
+    {
+      "task_id": "Q-1232",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Strategy/CTrendFollowStrategy.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Strategy__CTrendFollowStrategy.mqh",
+      "sha256": "9a7f67c01973bf8e6a0e49e41c5828353ce7aabf9b28a971d48121370f033fe3",
+      "bytes": 21774
+    },
+    {
+      "task_id": "Q-1233",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/Generic/Internal/DefaultEqualityComparer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__Generic__Internal__DefaultEqualityComparer.mqh",
+      "sha256": "307a62433905896e1908c1eb661c3d5842246064c93369491a8bda52590c2302",
+      "bytes": 1457
+    },
+    {
+      "task_id": "Q-1234",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/Charts/ChartCanvas.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__Charts__ChartCanvas.mqh",
+      "sha256": "ffea8fd995304f6481ffdce33c07b065e8699f80a56960dad5d37ca50e58c705",
+      "bytes": 36139
+    },
+    {
+      "task_id": "Q-1235",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalFrAMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalFrAMA.mqh",
+      "sha256": "7ab64e9863cac81e760deb5a1d35d91be6b5c931feb62b38b4be1fcac181bc5e",
+      "bytes": 11764
+    },
+    {
+      "task_id": "Q-1236",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalStoch.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalStoch.mqh",
+      "sha256": "a283a6999f088009087774c034cc4d4cd66ec61182b405d6e39888f41910e042",
+      "bytes": 20197
+    },
+    {
+      "task_id": "Q-1237",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/diffequations.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__diffequations.mqh",
+      "sha256": "edcc9e0f2cd61e57a47673ec455ca6aec2751c2708c45a6df918ab5136968eb2",
+      "bytes": 33183
+    },
+    {
+      "task_id": "Q-1238",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/sugenovariable.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__sugenovariable.mqh",
+      "sha256": "78d7a8ee0fb26afeb78e8bf7a4972e519c1bc80005b62d7755d93d0cde6440ca",
+      "bytes": 11248
+    },
+    {
+      "task_id": "Q-1239",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Signal/CFundamentalsIntegrator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Signal__CFundamentalsIntegrator.mqh",
+      "sha256": "3b46a1b450b29a3366903f846d17362b6f27ce41769c7d90ca8cd1d27b3418f3",
+      "bytes": 16012
+    },
+    {
+      "task_id": "Q-1240",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Money/MoneyFixedLot.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Money__MoneyFixedLot.mqh",
+      "sha256": "9df5719c0b80b80befa5abb64d616a9da790f2fcede8fc72753446e0c1268650",
+      "bytes": 3531
+    },
+    {
+      "task_id": "Q-1241",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Trailing/TrailingMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Trailing__TrailingMA.mqh",
+      "sha256": "8103f827af7cec36d57b3d769ecea2156d71232176a9be3b0e62fefcf6e13f32",
+      "bytes": 6725
+    },
+    {
+      "task_id": "Q-1242",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Internal/Introsort.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Internal__Introsort.mqh",
+      "sha256": "fc2ec4b820d365ae6fffc172a0bb2c562a65dd147d1a9401f3f39bfc8163e72b",
+      "bytes": 8348
+    },
+    {
+      "task_id": "Q-1243",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/fasttransforms.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__fasttransforms.mqh",
+      "sha256": "0a015f6d2cbe905633900da129ac8d5b2a2f54694e56bea20ce75cdb3155ce54",
+      "bytes": 94444
+    },
+    {
+      "task_id": "Q-1244",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/inferencemethod.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__inferencemethod.mqh",
+      "sha256": "97282f1e8e5a037637ff65ed8e576e9b51dc11d362694341bd7d06a58dfe8312",
+      "bytes": 7238
+    },
+    {
+      "task_id": "Q-1245",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/NegativeBinomial.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__NegativeBinomial.mqh",
+      "sha256": "7b5d609d406cb72dc8733fd78684192e4c67ce06753d3eff2eacf730843bea0d",
+      "bytes": 29634
+    },
+    {
+      "task_id": "Q-1246",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/InstitutionalLiquidity.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__InstitutionalLiquidity.mqh",
+      "sha256": "a25e18515cdfb906af4fffc03740b2d8852b16e71009252974513f7bd587d270",
+      "bytes": 10555
+    },
+    {
+      "task_id": "Q-1247",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Money/MoneyFixedRisk.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Money__MoneyFixedRisk.mqh",
+      "sha256": "cb8f68e69227f16899ee61eea42f821f7fbb7868f0b9a09f91744a42fa54cc57",
+      "bytes": 4454
+    },
+    {
+      "task_id": "Q-1248",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/EA_SCALPER/Analysis/CLiquiditySweepDetector.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include__EA_SCALPER__Analysis__CLiquiditySweepDetector.mqh",
+      "sha256": "2067b12803eba15129dbe4bbd51c88dc0af20d11b6188389c7fee5b6bc0a0652",
+      "bytes": 33583
+    },
+    {
+      "task_id": "Q-1249",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Canvas/Charts/HistogramChart.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Canvas__Charts__HistogramChart.mqh",
+      "sha256": "15d7c072003ee0d6f2d1cb653c0e2a5cf927b911212e755cb42cc28ae1b39d2f",
+      "bytes": 11932
+    },
+    {
+      "task_id": "Q-1250",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalDeMarker.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalDeMarker.mqh",
+      "sha256": "4bb62e865fea085daf9f05278e464eecc0d02863494cc987c0917ec4c9f91c55",
+      "bytes": 17303
+    },
+    {
+      "task_id": "Q-1251",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Trailing/TrailingNone.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Trailing__TrailingNone.mqh",
+      "sha256": "3ce8cc3a5e9c3262a33c7f884ab0f3eec850a18541fcfcc6c81ee0ad73895ac8",
+      "bytes": 2139
+    },
+    {
+      "task_id": "Q-1252",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Interfaces/IComparer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Interfaces__IComparer.mqh",
+      "sha256": "b9ade43efe16a21a348bc7e18cd91a2464226e108aa871560b3a7ff2713e4fa0",
+      "bytes": 998
+    },
+    {
+      "task_id": "Q-1253",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/specialfunctions.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__specialfunctions.mqh",
+      "sha256": "d761737b984e4b3f04eebb9420128f34edadbec174f172197dec633ecbbcbe06",
+      "bytes": 241208
+    },
+    {
+      "task_id": "Q-1254",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/sugenofuzzysystem.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__sugenofuzzysystem.mqh",
+      "sha256": "36c4bd192bb65d3cf9b02b8bbe0b7ec9f50e08ee302060351d5c3d44c1b7bc58",
+      "bytes": 13323
+    },
+    {
+      "task_id": "Q-1255",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectPanel.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectPanel.mqh",
+      "sha256": "f122ed6f5a4a3afa7a00bf04e1f5fa2f7e06452bfedea29a4902d26c449584b0",
+      "bytes": 8273
+    },
+    {
+      "task_id": "Q-1256",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsFibo.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsFibo.mqh",
+      "sha256": "0cdef85eb9757e62b84593d7a5fabacd12d08fd3e785e82d992b37c7d1290540",
+      "bytes": 17506
+    },
+    {
+      "task_id": "Q-1257",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsGann.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsGann.mqh",
+      "sha256": "5952031d4bd96683778e85f44f96e4802fcbfdf76c14769db3cb80cb8605382c",
+      "bytes": 17095
+    },
+    {
+      "task_id": "Q-1258",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Money/MoneyFixedMargin.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Money__MoneyFixedMargin.mqh",
+      "sha256": "eba57cec6c8192e54502ec02663d60d6124afa9ea2b0ade148002a073e7777c2",
+      "bytes": 3619
+    },
+    {
+      "task_id": "Q-1259",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalEnvelopes.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalEnvelopes.mqh",
+      "sha256": "32cd656c2ac573a7606cc6fca6962e29efdc895e8988acc25ab8a5435d39560f",
+      "bytes": 9652
+    },
+    {
+      "task_id": "Q-1260",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Internal/HashFunction.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Internal__HashFunction.mqh",
+      "sha256": "973cabe099e259a5ac665f7ca38ffadd59b37c3775099d59b754111b4dae4ce5",
+      "bytes": 7249
+    },
+    {
+      "task_id": "Q-1261",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Alglib/delegatefunctions.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Alglib__delegatefunctions.mqh",
+      "sha256": "8e96e4f21dc61c606103d8a6b0e03c8af3671beab7c522825b356d75f3bcc208",
+      "bytes": 21765
+    },
+    {
+      "task_id": "Q-1262",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/genericfuzzysystem.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__genericfuzzysystem.mqh",
+      "sha256": "f43b81cecf13eec8c202f4a7453f4bfcf712c568a75b97323c8b0947cbe73bd8",
+      "bytes": 12170
+    },
+    {
+      "task_id": "Q-1263",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/mamdanifuzzysystem.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__mamdanifuzzysystem.mqh",
+      "sha256": "7380f13a5a4b1179fd0b58d10371d0f98002e5d856cc66f968802fc9bf5aa6e8",
+      "bytes": 23075
+    },
+    {
+      "task_id": "Q-1264",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Fuzzy/membershipfunction.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Fuzzy__membershipfunction.mqh",
+      "sha256": "53ae6f99a63d063134e8bcf76c04759789bfa54de8e09a74b6e8fca11c19f346",
+      "bytes": 44306
+    },
+    {
+      "task_id": "Q-1265",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Math/Stat/NoncentralChiSquare.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Math__Stat__NoncentralChiSquare.mqh",
+      "sha256": "a5e6c71a417722c0f7759bd71f5b5c4c9fed0436bdf1c9f4490d2927f70a00e2",
+      "bytes": 37497
+    },
+    {
+      "task_id": "Q-1266",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsLines.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsLines.mqh",
+      "sha256": "6fbf3dfb0c5d68fef7b983ac1c88e8cdc5ba63c8a680bf14d96028bcb6ce5dde",
+      "bytes": 15506
+    },
+    {
+      "task_id": "Q-1267",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalBearsPower.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalBearsPower.mqh",
+      "sha256": "436d32f48f923b9ff7b976ba6654514922d86f4ee69dd4e7a9fab48108e0185c",
+      "bytes": 11971
+    },
+    {
+      "task_id": "Q-1268",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Signal/SignalBullsPower.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Signal__SignalBullsPower.mqh",
+      "sha256": "e1dd275ea6932456f827ebd79a1a561c9bfc5e3f237843542b8be03b74561fd8",
+      "bytes": 11979
+    },
+    {
+      "task_id": "Q-1269",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Interfaces/ICollection.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Interfaces__ICollection.mqh",
+      "sha256": "1c1143cd876b8f80ef2098a4a5bd8485c6358ff32d9316d00839dff204b000fd",
+      "bytes": 1142
+    },
+    {
+      "task_id": "Q-1270",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Interfaces/IComparable.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Interfaces__IComparable.mqh",
+      "sha256": "3de1aa767ed026a2c2103b0caaaa5e10b7e97065787031ef61bfe02b6999ef48",
+      "bytes": 1057
+    },
+    {
+      "task_id": "Q-1271",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Internal/ArrayFunction.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Internal__ArrayFunction.mqh",
+      "sha256": "6842e0d3d450e411757c674b56a1082f3ae81a02145fb34109d252efebde8e91",
+      "bytes": 4695
+    },
+    {
+      "task_id": "Q-1272",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Internal/EqualFunction.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Internal__EqualFunction.mqh",
+      "sha256": "9428396d6b69060d367ad5d43fb06ad6be536b8b74ed3ffec608ed66158a813d",
+      "bytes": 1103
+    },
+    {
+      "task_id": "Q-1273",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsArrows.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsArrows.mqh",
+      "sha256": "8d84983df64d556698d17490de191fac7e16f26cb16f5aad25f67cc4d67b2c1d",
+      "bytes": 23807
+    },
+    {
+      "task_id": "Q-1274",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsShapes.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsShapes.mqh",
+      "sha256": "ce4e7fd9d1913907ab0241647d5fe27c5dc4b0de111f116b748c15e95c6d202e",
+      "bytes": 7288
+    },
+    {
+      "task_id": "Q-1275",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Money/MoneySizeOptimized.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Money__MoneySizeOptimized.mqh",
+      "sha256": "46579b5b59dc1dd8513922b19bded48ead3b7e430c0f5573f3c5ed5d7ead9889",
+      "bytes": 6231
+    },
+    {
+      "task_id": "Q-1276",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Internal/PrimeGenerator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Internal__PrimeGenerator.mqh",
+      "sha256": "7c95d12a3c0554a94239ed1bc76847e547b7111ed7ea3d09ecd475436969ad0c",
+      "bytes": 3601
+    },
+    {
+      "task_id": "Q-1277",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectSubChart.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectSubChart.mqh",
+      "sha256": "be4f98e64400fb826ed4a7ccaa24632867b90b25a12129631884c74c3645c7de",
+      "bytes": 17330
+    },
+    {
+      "task_id": "Q-1278",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsElliott.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsElliott.mqh",
+      "sha256": "a7fb925ee5054d2fb85e08f55a46909b2edba471afa759a925510e86995b1276",
+      "bytes": 9567
+    },
+    {
+      "task_id": "Q-1279",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Internal/CompareFunction.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Internal__CompareFunction.mqh",
+      "sha256": "b20fc4b1a821d6eb08dc4445ddcba9c6962958833544d4aedc402287fdf5d905",
+      "bytes": 7190
+    },
+    {
+      "task_id": "Q-1280",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Internal/DefaultComparer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Internal__DefaultComparer.mqh",
+      "sha256": "6d0f62d4caa0f199876223db68eceaa36c8eb7504ee31ec21c8279b45e6a276d",
+      "bytes": 1253
+    },
+    {
+      "task_id": "Q-1281",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsChannels.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsChannels.mqh",
+      "sha256": "02146bd841e24505001685a5295ac4dfc13650e05c8c325fc18c712737d585e2",
+      "bytes": 11883
+    },
+    {
+      "task_id": "Q-1282",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Trailing/TrailingFixedPips.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Trailing__TrailingFixedPips.mqh",
+      "sha256": "43c4835f2c48b52095826b2af8b6d910e2cf98be68c2c940529a5ac912b1fb47",
+      "bytes": 5639
+    },
+    {
+      "task_id": "Q-1283",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsBmpControls.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsBmpControls.mqh",
+      "sha256": "f4fadcca1e440729d11f08b6d64a1831de2ff2c414eb943dae690d0de12f5277",
+      "bytes": 21277
+    },
+    {
+      "task_id": "Q-1284",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/ChartObjects/ChartObjectsTxtControls.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__ChartObjects__ChartObjectsTxtControls.mqh",
+      "sha256": "b81d07a8e0a9a14bef1e6406c674d77187fa044e97688ccf468425bc3bd17e11",
+      "bytes": 38305
+    },
+    {
+      "task_id": "Q-1285",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Expert/Trailing/TrailingParabolicSAR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Expert__Trailing__TrailingParabolicSAR.mqh",
+      "sha256": "c0c0058a1bf99b38428614e30e0d4f299e2c8c27781e42834dc5a6e978c59e6a",
+      "bytes": 5527
+    },
+    {
+      "task_id": "Q-1286",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Interfaces/IEqualityComparer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Interfaces__IEqualityComparer.mqh",
+      "sha256": "1de5e9a349fad7853213a6513f9af5c49baa88fe77a521e068731691d57603de",
+      "bytes": 1027
+    },
+    {
+      "task_id": "Q-1287",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Interfaces/IEqualityComparable.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Interfaces__IEqualityComparable.mqh",
+      "sha256": "fc658200ab73024356c6114330b0da88f3619828a4da289a317c6cb5bdd3247a",
+      "bytes": 1012
+    },
+    {
+      "task_id": "Q-1288",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/francomascareloai/EA_SCALPER_XAUUSD/main/MQL5/Include/_stdlib_backup/Generic/Internal/DefaultEqualityComparer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/francomascareloai__EA_SCALPER_XAUUSD/MQL5__Include___stdlib_backup__Generic__Internal__DefaultEqualityComparer.mqh",
+      "sha256": "307a62433905896e1908c1eb661c3d5842246064c93369491a8bda52590c2302",
+      "bytes": 1457
+    },
+    {
+      "task_id": "Q-1549",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Log.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Log.mqh",
+      "sha256": "dedf7e2042add2ab769647f090df4e92b650a616cbc564503ca43fc7e3743ae8",
+      "bytes": 9541
+    },
+    {
+      "task_id": "Q-1550",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/MD5.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/MD5.mqh",
+      "sha256": "9064ba2b129c0ab577fe9c846c1231f682db9ab4186350dd61d41b561dc775de",
+      "bytes": 9258
+    },
+    {
+      "task_id": "Q-1551",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Msg.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Msg.mqh",
+      "sha256": "fd32f845110747671d143141629d634e17c6d0c0378c4b93cfd3d7fc1a313d6b",
+      "bytes": 2729
+    },
+    {
+      "task_id": "Q-1552",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SVG.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SVG.mqh",
+      "sha256": "d48ca386718c5be7970ce6ac48f1e0958d271ac5c289a7fe43f8ec6def0288ae",
+      "bytes": 1946
+    },
+    {
+      "task_id": "Q-1553",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Web.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Web.mqh",
+      "sha256": "75d53980973f4bc2ad9f2b0219dd5160225565a6968ba0e3aa76ecf86ddeef3f",
+      "bytes": 2723
+    },
+    {
+      "task_id": "Q-1557",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Inet.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Inet.mqh",
+      "sha256": "079ae1b2af6a63ece0d394a03e9fb1ad0be31fd920de2ff0422e7fe5e043d8d8",
+      "bytes": 2555
+    },
+    {
+      "task_id": "Q-1558",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/MQL4.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/MQL4.mqh",
+      "sha256": "27650344b0984eb1d6d93aa7d541a3f54de6ac4cf186be53413626496c213841",
+      "bytes": 35557
+    },
+    {
+      "task_id": "Q-1559",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/MQL5.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/MQL5.mqh",
+      "sha256": "5de0fb656a42d2dd293bceab65a2d95d511b1794c3aa8fd36b67a0bd2de64b45",
+      "bytes": 21380
+    },
+    {
+      "task_id": "Q-1560",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Mail.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Mail.mqh",
+      "sha256": "5f4f18c3c7f0f6f003d328dccaaad670cfbfb1c0b31fbec2294f701d3cf8c836",
+      "bytes": 4539
+    },
+    {
+      "task_id": "Q-1561",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Refs.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Refs.mqh",
+      "sha256": "55819b11801227896d1c85df8d19c9250d8a20880c869151eda9f4ba89a23500",
+      "bytes": 3867
+    },
+    {
+      "task_id": "Q-1562",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Test.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Test.mqh",
+      "sha256": "c37f2ce190ecb2bebaf1fb7081d69a5693101edf188779a68819899f334e4b06",
+      "bytes": 4180
+    },
+    {
+      "task_id": "Q-1565",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Order.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Order.mqh",
+      "sha256": "2a20732cecb9cd7251a2cd0f4831a57edf625414242b19d126c456618ca4d1e7",
+      "bytes": 100820
+    },
+    {
+      "task_id": "Q-1566",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Redis.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Redis.mqh",
+      "sha256": "f9a46da1a2982a10c4f22732b236ba95a4ea9838a8b4ddf5a2a561174b6af13f",
+      "bytes": 9470
+    },
+    {
+      "task_id": "Q-1567",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Stats.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Stats.mqh",
+      "sha256": "9d234e0315e9b9c5011c36ecd5f99d119e5af61fdfa598dd4b0a4c1e518fb6ee",
+      "bytes": 2570
+    },
+    {
+      "task_id": "Q-1568",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Tests.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Tests.mqh",
+      "sha256": "940764d44c1deee984a9e1fd397d8b01bf66acaf25f0b8b1d072f529781e2d44",
+      "bytes": 3169
+    },
+    {
+      "task_id": "Q-1569",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Timer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Timer.mqh",
+      "sha256": "8dbcefeefc87f3ce3c13fb47d160b37ed74af24ec69f97653a08b5a65d7dffef",
+      "bytes": 3764
+    },
+    {
+      "task_id": "Q-1570",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Trade.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Trade.mqh",
+      "sha256": "ea97b3171a8149b6642afa81b92d5f741701cb8f76edea0d7e3e3ad0eccb1153",
+      "bytes": 79476
+    },
+    {
+      "task_id": "Q-1573",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Market.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Market.mqh",
+      "sha256": "5fe4b7ff6020e9e294c2312d6c34b734b288416a637f0b06b1f826b5223d870e",
+      "bytes": 10461
+    },
+    {
+      "task_id": "Q-1574",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Matrix.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Matrix.mqh",
+      "sha256": "2d9a869960170c5dbeff89185a95559d875c149fea2b64fac8d34f84a3e0f06b",
+      "bytes": 68581
+    },
+    {
+      "task_id": "Q-1575",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Object.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Object.mqh",
+      "sha256": "9d4a90ba49ee6fcf3cf31d6b151c5c949aa9f12920d0f64174d4941c49ab9b61",
+      "bytes": 3543
+    },
+    {
+      "task_id": "Q-1576",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Orders.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Orders.mqh",
+      "sha256": "2977de2d300d6ec0bd96e21168a2eccd92acbd262df4bc3c6a4f652e105ee522",
+      "bytes": 17253
+    },
+    {
+      "task_id": "Q-1577",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Report.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Report.mqh",
+      "sha256": "ac3e99871fdd7574e753a65f6578cb5aadfa49f134ba3233fcd010a8e5168319",
+      "bytes": 1841
+    },
+    {
+      "task_id": "Q-1578",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Socket.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Socket.mqh",
+      "sha256": "122f1259b47db34f27a583c98684f9c7b43c19ab4520208466f6f363cf2ca76a",
+      "bytes": 5794
+    },
+    {
+      "task_id": "Q-1579",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/String.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/String.mqh",
+      "sha256": "413babe20a7e6e3114a9110107922d223ad3d53460ea0f7fb0d82d5115cd7777",
+      "bytes": 3336
+    },
+    {
+      "task_id": "Q-1580",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Tester.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Tester.mqh",
+      "sha256": "68aa5efbd0e0759a91fd6a63e5e771b593e6edee471a8add4c702182ca37c4c9",
+      "bytes": 3279
+    },
+    {
+      "task_id": "Q-1581",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Ticker.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Ticker.mqh",
+      "sha256": "330815b7bf3a78c328c8f3a3ce1988f0d44f6ab3ceae65f72f1de53710fe0527",
+      "bytes": 5666
+    },
+    {
+      "task_id": "Q-1583",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Pattern.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Pattern.mqh",
+      "sha256": "4ad0976f0ea500d2b9a7865755ebd0e560cffdc6c0281ac540e894b56b1f839c",
+      "bytes": 1267
+    },
+    {
+      "task_id": "Q-1584",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Session.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Session.mqh",
+      "sha256": "374a43cdd542129c356d2686bd3fdca497e0e5fcd368b6ec73cfdb3fcb16250d",
+      "bytes": 5174
+    },
+    {
+      "task_id": "Q-1585",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SetFile.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SetFile.mqh",
+      "sha256": "89b08519906d34b526bf5ecb2f2e0e1911d2d7b0546361ff6d1976c211f233f0",
+      "bytes": 5001
+    },
+    {
+      "task_id": "Q-1590",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Profiler.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Profiler.mqh",
+      "sha256": "7f5859433cffac3e83a38ce295e0bd16c7d88f07fbb42c79d1e4558670375dd1",
+      "bytes": 2181
+    },
+    {
+      "task_id": "Q-1591",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Registry.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Registry.mqh",
+      "sha256": "97371d4477cf2fd4c9216bd56b13889f34deccccf5a9667011ad954df80e700a",
+      "bytes": 5139
+    },
+    {
+      "task_id": "Q-1592",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Strategy.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Strategy.mqh",
+      "sha256": "a09fa08a766b4ff06660964925f5c121de59abebfa31a363b3f67bd14dc63cc8",
+      "bytes": 36516
+    },
+    {
+      "task_id": "Q-1593",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Terminal.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Terminal.mqh",
+      "sha256": "21011e81c6ddc4bde97e3e9d7d68f62d4d6a90e0aff631d52e4ff9e2e3939615",
+      "bytes": 35682
+    },
+    {
+      "task_id": "Q-1599",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Serializer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Serializer.mqh",
+      "sha256": "b38cbe6e2b95e9c55dd929693a8b0b21de89f3a0d265502cbc3da0bcf368fa86",
+      "bytes": 15454
+    },
+    {
+      "task_id": "Q-1600",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SymbolInfo.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SymbolInfo.mqh",
+      "sha256": "d12305bddb67bf15fa3ebe7eec824b08ff228a8397cbe92ef6e0a9a411d83ce9",
+      "bytes": 18442
+    },
+    {
+      "task_id": "Q-1604",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerCsv.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerCsv.mqh",
+      "sha256": "969d7cb0b4afacc239a4108043c08c1a14cef91d87ddffb7a4aa4c47259b905f",
+      "bytes": 10504
+    },
+    {
+      "task_id": "Q-1605",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SummaryReport.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SummaryReport.mqh",
+      "sha256": "10e10f57509b44139977efb66891795fd4b11f106c821db2071f26a59dd006a6",
+      "bytes": 13426
+    },
+    {
+      "task_id": "Q-1606",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/RegistryBinary.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/RegistryBinary.mqh",
+      "sha256": "dae965c7e6252549ed69525a7ec7dcbf6d46a54b334219e18d29c79cb2e4aea9",
+      "bytes": 8331
+    },
+    {
+      "task_id": "Q-1607",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerDict.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerDict.mqh",
+      "sha256": "bfc7cbe7c03ddb2e37271a521e4e95ae6a70031b299aac09d110f454623546f5",
+      "bytes": 1817
+    },
+    {
+      "task_id": "Q-1608",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerJson.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerJson.mqh",
+      "sha256": "08d860515a5cbe084f5d6f506e80df5f0be6ba5df314b1a8344ef4c08a992bd6",
+      "bytes": 12840
+    },
+    {
+      "task_id": "Q-1609",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerNode.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerNode.mqh",
+      "sha256": "403572a7cf39ae107cda6d8479d28e2dfbab77a24916bd4142b0bb3567f1d8d2",
+      "bytes": 10241
+    },
+    {
+      "task_id": "Q-1611",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerBinary.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerBinary.mqh",
+      "sha256": "fe9b582d7c6f1bb72d17215e9d547048d4b42bc5a41fdcb31c83fe977599c7b2",
+      "bytes": 4157
+    },
+    {
+      "task_id": "Q-1612",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerObject.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerObject.mqh",
+      "sha256": "c493d52b503e7b28f0b4b67c83e15c0793f5cb18b5770b162090c3216915d97b",
+      "bytes": 1427
+    },
+    {
+      "task_id": "Q-1613",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerSqlite.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerSqlite.mqh",
+      "sha256": "05f34157361eb22e8e5f7e57c620e1c64fee0e16e963807035a7a207f47e48e6",
+      "bytes": 3254
+    },
+    {
+      "task_id": "Q-1614",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_AC.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_AC.mqh",
+      "sha256": "2c66277ea6a17149b028afc94c06122d2f128f6cc3ed91afaefd96858e0a56f6",
+      "bytes": 5020
+    },
+    {
+      "task_id": "Q-1615",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_AD.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_AD.mqh",
+      "sha256": "d60dac08c567a3ce941a9989695fcf52752b0b1d1359fad32c4fc36fb81f8221",
+      "bytes": 4428
+    },
+    {
+      "task_id": "Q-1616",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_AO.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_AO.mqh",
+      "sha256": "512c5491d96700b0fd0f5244afebe47142910c0df15262a3dd7e4b95345d3d3a",
+      "bytes": 5153
+    },
+    {
+      "task_id": "Q-1617",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_MA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_MA.mqh",
+      "sha256": "9dcf4aa3fed8f2e9f8fd0b6e706e5dd45871abe2f290d5798d59d9f67ddba279",
+      "bytes": 27154
+    },
+    {
+      "task_id": "Q-1618",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_RS.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_RS.mqh",
+      "sha256": "ecea95998f5696f09e5b9127c28c9fccf1c24bf558835c8f18b5428cbe60ce0b",
+      "bytes": 4111
+    },
+    {
+      "task_id": "Q-1619",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Storage/Collection.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Storage__Collection.mqh",
+      "sha256": "1c87debeba2fdb916f6c6df25db7a7e7b3716f820f8bd3c6290626cb9072357e",
+      "bytes": 4997
+    },
+    {
+      "task_id": "Q-1620",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ADX.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ADX.mqh",
+      "sha256": "dd125af664663f38f1506ef83ebafdda20a06812cfe76304df8fa8bb811393be",
+      "bytes": 6222
+    },
+    {
+      "task_id": "Q-1621",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_AMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_AMA.mqh",
+      "sha256": "5b9001a0eb8e4a41932bdd4af88f66524aa7bdca115e30bc5de3b276dc0e9c8e",
+      "bytes": 11791
+    },
+    {
+      "task_id": "Q-1622",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ASI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ASI.mqh",
+      "sha256": "4aa580b9cad353f1e86da17369dedae76ddc00b739b73869f7798a25c6d6aa26",
+      "bytes": 8186
+    },
+    {
+      "task_id": "Q-1623",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ATR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ATR.mqh",
+      "sha256": "64ce77dfaea59028451edb06daf2d0c7e8ab7993971a92c3047379569d8536ef",
+      "bytes": 5185
+    },
+    {
+      "task_id": "Q-1624",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_CCI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_CCI.mqh",
+      "sha256": "7ebd1b3735467528f26b10f8728ef6ad706f15720d1689de3911ac3a668b37ce",
+      "bytes": 6823
+    },
+    {
+      "task_id": "Q-1625",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_CHO.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_CHO.mqh",
+      "sha256": "bb0d5f18a2981909205dc0f47a661a7d39273bb3f21994f256284ea69355d3ca",
+      "bytes": 10140
+    },
+    {
+      "task_id": "Q-1626",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_CHV.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_CHV.mqh",
+      "sha256": "870d1b54ef7523ab628899b2824bb28712547fcbd98d8608d10f22098b9b9c72",
+      "bytes": 9512
+    },
+    {
+      "task_id": "Q-1627",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_MFI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_MFI.mqh",
+      "sha256": "e1070c8024261783d4920a722a1e3bc5abc92de3c3815f56773f60b3c8bfdc41",
+      "bytes": 6053
+    },
+    {
+      "task_id": "Q-1628",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_OBV.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_OBV.mqh",
+      "sha256": "ef1f9f3f3e34cb7dd8075e780a8b3d17a27d2172c42b73aa0b50198c5a7bd57f",
+      "bytes": 6197
+    },
+    {
+      "task_id": "Q-1629",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_RSI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_RSI.mqh",
+      "sha256": "4e9cdb67e753ea077c00abb10debde804fbcc3a1e9275617da51ad3800611765",
+      "bytes": 11858
+    },
+    {
+      "task_id": "Q-1630",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_RVI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_RVI.mqh",
+      "sha256": "d6f7ca7bc7e5ff7c9ceb2f58528f86e12bac8f2e04a4aedeca479671a327d3e8",
+      "bytes": 5295
+    },
+    {
+      "task_id": "Q-1631",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_SAR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_SAR.mqh",
+      "sha256": "626d758a634665b2a350a2109c33dd477616605efc943bd5313639585cc69785",
+      "bytes": 5074
+    },
+    {
+      "task_id": "Q-1632",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_WPR.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_WPR.mqh",
+      "sha256": "33fefc2df4f7aa8b2b80f867f089f40757ce34e57f51ba0db3fe68c554e0cb46",
+      "bytes": 4800
+    },
+    {
+      "task_id": "Q-1633",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerConverter.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerConverter.mqh",
+      "sha256": "83e6e799e67225b3ec0c8659a85b3c36403b0b98ac3d141ba10187704696c466",
+      "bytes": 7771
+    },
+    {
+      "task_id": "Q-1634",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerNodeParam.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerNodeParam.mqh",
+      "sha256": "a3b20283d739006fd82e7fb696a890b7b52c1af13e2e72d4af4c4993f78bdfcd",
+      "bytes": 10285
+    },
+    {
+      "task_id": "Q-1635",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ADXW.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ADXW.mqh",
+      "sha256": "49c877850dccef4a5c79ebc8d6dc09a07198df0bd9af8a3af3c534f0d8f43552",
+      "bytes": 10176
+    },
+    {
+      "task_id": "Q-1636",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_BWZT.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_BWZT.mqh",
+      "sha256": "358c503825be61cdd3b559a6d3e03ce8b48f6a23f73395d452626901c14ded30",
+      "bytes": 9013
+    },
+    {
+      "task_id": "Q-1637",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_DEMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_DEMA.mqh",
+      "sha256": "387345641dd1d4d2faeee16b424426765b959fce63090572ab9f17c2160c507f",
+      "bytes": 9773
+    },
+    {
+      "task_id": "Q-1638",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Demo.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Demo.mqh",
+      "sha256": "725fbd47cb782f42c275ae5880d4141cf1ee9dd45c5b6ee96e255a67a6d643b3",
+      "bytes": 2811
+    },
+    {
+      "task_id": "Q-1639",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_MACD.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_MACD.mqh",
+      "sha256": "76cae1d3a9471472c4ac6b8e5a0bcc187abfd2f1c1439e5d3efe99ab85c5eead",
+      "bytes": 7749
+    },
+    {
+      "task_id": "Q-1640",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_OsMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_OsMA.mqh",
+      "sha256": "7e4cc80bfc36264ebfbddd9b8fcdb1eef137d51a758153264ed316c5ba9e7913",
+      "bytes": 7104
+    },
+    {
+      "task_id": "Q-1641",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_TEMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_TEMA.mqh",
+      "sha256": "c4113c83600b3444b002f76ed87d0b604c60384738f7392343d13864e8b48353",
+      "bytes": 7992
+    },
+    {
+      "task_id": "Q-1642",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_TRIX.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_TRIX.mqh",
+      "sha256": "2f9d7ef18b9c2c081c57a85a9fcd4d422b9d12ec58eb29bd6f2a28ceae50a4cd",
+      "bytes": 7322
+    },
+    {
+      "task_id": "Q-1643",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_VROC.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_VROC.mqh",
+      "sha256": "2eb7b5d9322a4d91f6925c2a5f3a0daf2f7c5d0356652013b3459a1ce5799579",
+      "bytes": 7306
+    },
+    {
+      "task_id": "Q-1644",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_BWMFI.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_BWMFI.mqh",
+      "sha256": "2d717cbdfb7392e8a6066792a4994733148f309b51df702705421960b51cfb6e",
+      "bytes": 6991
+    },
+    {
+      "task_id": "Q-1645",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Bands.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Bands.mqh",
+      "sha256": "11120cb5217b773430c086cb73e8c2ecd69f4426cc0c1e01132b74dca7beb745",
+      "bytes": 12560
+    },
+    {
+      "task_id": "Q-1646",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Force.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Force.mqh",
+      "sha256": "96b0069b0b8d87f54d950c3bfa964da1f200cc92620f4d76580763f843309e56",
+      "bytes": 6103
+    },
+    {
+      "task_id": "Q-1647",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Gator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Gator.mqh",
+      "sha256": "b9d368de17bf1a6d163e17dbe31feabdc8ae96c19889b49da70712b3783cd35d",
+      "bytes": 11356
+    },
+    {
+      "task_id": "Q-1648",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Pivot.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Pivot.mqh",
+      "sha256": "175296190666963ee4e7848813ecffc402b0e7f17b64a83988c720499ab5f4d9",
+      "bytes": 6665
+    },
+    {
+      "task_id": "Q-1649",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_VIDYA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_VIDYA.mqh",
+      "sha256": "81200c79dd55821e60ea86df518f29bb418f6307d2b21f5348bd4f23eecf23e2",
+      "bytes": 8660
+    },
+    {
+      "task_id": "Q-1650",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Drawer.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Drawer.mqh",
+      "sha256": "b7c163800eed90cd4beab3d559dd14edfa26c5c9a60d5d1d748f0b1cedc07a23",
+      "bytes": 6815
+    },
+    {
+      "task_id": "Q-1651",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_StdDev.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_StdDev.mqh",
+      "sha256": "af04d54a79cc35001f3a301a39ea46f2e0bc1b9f4c76775337a82a48f14b41fb",
+      "bytes": 11093
+    },
+    {
+      "task_id": "Q-1652",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ZigZag.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ZigZag.mqh",
+      "sha256": "a45a70b0d0fd660aec557e9fb287c613dfd16606f258679bdc7fffef1027b73b",
+      "bytes": 14612
+    },
+    {
+      "task_id": "Q-1653",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/SerializerNodeIterator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/SerializerNodeIterator.mqh",
+      "sha256": "2f4ff544d2437133db79772a2d9e774329f19ae86ed4bf773243fd14c5333e18",
+      "bytes": 3186
+    },
+    {
+      "task_id": "Q-1654",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Volumes.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Volumes.mqh",
+      "sha256": "8833cb7cfb453a4a13df60e6d0e9f29fb333d6e78e2c886ba4a225c265ec12f4",
+      "bytes": 6739
+    },
+    {
+      "task_id": "Q-1655",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_DeMarker.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_DeMarker.mqh",
+      "sha256": "cc88cc24b4068f5a35d9decdba0571b204c8382e9140076ddbd59dc8a9a8cb97",
+      "bytes": 4819
+    },
+    {
+      "task_id": "Q-1656",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Fractals.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Fractals.mqh",
+      "sha256": "e219026b8ca2bf7cff97418f78444536a87dafd3384fa6ede063c0368001417e",
+      "bytes": 5692
+    },
+    {
+      "task_id": "Q-1657",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Ichimoku.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Ichimoku.mqh",
+      "sha256": "0571ed2046354a6a45eb6a5b75ff8bc949c5ff44002d3d50206854d91562651c",
+      "bytes": 8575
+    },
+    {
+      "task_id": "Q-1658",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Momentum.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Momentum.mqh",
+      "sha256": "8784476a9be4b7a41fa607e42dc280869a97ade3c4db4a0c809809cd69aac00b",
+      "bytes": 7700
+    },
+    {
+      "task_id": "Q-1659",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Alligator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Alligator.mqh",
+      "sha256": "f6ece19627e74e0f4474e112ab662acd21fdf3054934ba4be344a175852de813",
+      "bytes": 10443
+    },
+    {
+      "task_id": "Q-1660",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ColorBars.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ColorBars.mqh",
+      "sha256": "158deb7ce0e35740c01ccda56735a9a79e84774a9f879a1389848a2958cc86df",
+      "bytes": 5891
+    },
+    {
+      "task_id": "Q-1661",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ColorLine.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ColorLine.mqh",
+      "sha256": "d504e3619068c9610047d94baf04bae6e9e26aff69b5007022715bcfff7870b4",
+      "bytes": 8417
+    },
+    {
+      "task_id": "Q-1662",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Envelopes.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Envelopes.mqh",
+      "sha256": "fb6155c94d7d392393e24ee33eeb7f11fb46a0fff3055241d8590d666a088278",
+      "bytes": 11621
+    },
+    {
+      "task_id": "Q-1663",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Killzones.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Killzones.mqh",
+      "sha256": "18d595402cf0cede3fd0e3eed85dfaa6dff680eda60d02b32897c74999a35acf",
+      "bytes": 5648
+    },
+    {
+      "task_id": "Q-1664",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_MassIndex.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_MassIndex.mqh",
+      "sha256": "5d99eeeac38d619b100c8aeef2474973494d5603bb8f273c27f927919fb57ca6",
+      "bytes": 8675
+    },
+    {
+      "task_id": "Q-1665",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/OHLC/Indi_OHLC.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__OHLC__Indi_OHLC.mqh",
+      "sha256": "b6b6d0a1feba609103b54fecc8babceb63da2d7e7d5e2b057313809a44c97647",
+      "bytes": 3557
+    },
+    {
+      "task_id": "Q-1666",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_BearsPower.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_BearsPower.mqh",
+      "sha256": "198adbc5c247d684e0d0d7de9249b3e37865706e03dd6aace18dc9142913c856",
+      "bytes": 5457
+    },
+    {
+      "task_id": "Q-1667",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_BullsPower.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_BullsPower.mqh",
+      "sha256": "af7db73ddc84fc52543f7967e9aeecfa6592b7dfa476b97a2cccac89d24672bd",
+      "bytes": 5465
+    },
+    {
+      "task_id": "Q-1668",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_HeikenAshi.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_HeikenAshi.mqh",
+      "sha256": "0c4c77abf325c1df0b2b05dece04ef17baabe0ad0f75511fa690849418ba7cc4",
+      "bytes": 9725
+    },
+    {
+      "task_id": "Q-1669",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_Stochastic.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_Stochastic.mqh",
+      "sha256": "f82e34f47728b842da9f0bc7fd31a6dafe0ae4f70f48039cff38329865a9c8a8",
+      "bytes": 7402
+    },
+    {
+      "task_id": "Q-1670",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_WilliamsAD.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_WilliamsAD.mqh",
+      "sha256": "753e29c80c0b5602b7ca1b9473437083bcf9b7f2e50345e7b03b8ae1ab192b3e",
+      "bytes": 5856
+    },
+    {
+      "task_id": "Q-1671",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_PriceFeeder.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_PriceFeeder.mqh",
+      "sha256": "c3aa8f9bdc257ce60c56020bb4b277e4f6efd6f767f1ac15868fbf49071f01d6",
+      "bytes": 3715
+    },
+    {
+      "task_id": "Q-1672",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ZigZagColor.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ZigZagColor.mqh",
+      "sha256": "0c8499e5072aa2c1e1a9293cfed26629d336274a951df791217421f21510a6a9",
+      "bytes": 12742
+    },
+    {
+      "task_id": "Q-1673",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Price/Indi_Price.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Price__Indi_Price.mqh",
+      "sha256": "090f464b8c817e1fa8b2d61c5278d0e0984043603b5224c937aac14bf48a4551",
+      "bytes": 5830
+    },
+    {
+      "task_id": "Q-1674",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Tick/Indi_TickMt.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Tick__Indi_TickMt.mqh",
+      "sha256": "b05feb2962d7c8bb1bf3547a57b391e76cf788bb5b206fded6a81613325bf9c4",
+      "bytes": 3194
+    },
+    {
+      "task_id": "Q-1675",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_AppliedPrice.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_AppliedPrice.mqh",
+      "sha256": "626cc9336366bfd69c399fa5bc3786496595b1ea4f7589311aa96848d0b25728",
+      "bytes": 4569
+    },
+    {
+      "task_id": "Q-1676",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_PriceChannel.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_PriceChannel.mqh",
+      "sha256": "2ecd15248c0993d5020ff628deff0a7a4703989d79935dec23f79c52b687152f",
+      "bytes": 6170
+    },
+    {
+      "task_id": "Q-1677",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_RateOfChange.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_RateOfChange.mqh",
+      "sha256": "8b81c1e7009b8e353c4ffafb6653e9e09cf2560864afa45d43b76be9baaecf6f",
+      "bytes": 6442
+    },
+    {
+      "task_id": "Q-1678",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Special/Indi_Math.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Special__Indi_Math.mqh",
+      "sha256": "6de80467b3e348ec0a4a49ded91310ed6fe5384327a73c90b0041729f6dd5768",
+      "bytes": 7648
+    },
+    {
+      "task_id": "Q-1680",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_DetrendedPrice.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_DetrendedPrice.mqh",
+      "sha256": "647d1180a1e3e1ab0b1855b031222621d719729e7e8148b0b85aaad82a4a91ae",
+      "bytes": 6792
+    },
+    {
+      "task_id": "Q-1681",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Special/Indi_Custom.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Special__Indi_Custom.mqh",
+      "sha256": "40cca20bc097a2b552870d62b25d83f6defd3480c490ebfa33ea38bb25788a5d",
+      "bytes": 4119
+    },
+    {
+      "task_id": "Q-1683",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_PriceVolumeTrend.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_PriceVolumeTrend.mqh",
+      "sha256": "dbbc0e580c49b86917badb5c8fc9c90e4ea8729907195521760ca9aa6bca4095",
+      "bytes": 6666
+    },
+    {
+      "task_id": "Q-1684",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_ColorCandlesDaily.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_ColorCandlesDaily.mqh",
+      "sha256": "58d68f5d7aff1c986003ab2f10252802a1dfd6827bd7abda3bc8b59e1e5b53b0",
+      "bytes": 5807
+    },
+    {
+      "task_id": "Q-1685",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_FractalAdaptiveMA.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_FractalAdaptiveMA.mqh",
+      "sha256": "bf77628b8c00770d2b5a0b27bc720faca37599fd4d538d1dac20b33e6d5be4aa",
+      "bytes": 8178
+    },
+    {
+      "task_id": "Q-1686",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_UltimateOscillator.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_UltimateOscillator.mqh",
+      "sha256": "6f92ad07982b06362c74bfb5aa4c19e6cf651fdf80b3f7065b7a5e321e157cbc",
+      "bytes": 13673
+    },
+    {
+      "task_id": "Q-1687",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicators/Indi_CustomMovingAverage.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/EA31337__EA31337-classes/Indicators__Indi_CustomMovingAverage.mqh",
+      "sha256": "64ea596fb34a47733095e085fb5d4865ba1143fdcb8b0a10a7b40a484615f362",
+      "bytes": 4215
+    },
+    {
+      "task_id": "Q-1694",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Tree/tree.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Tree__tree.mqh",
+      "sha256": "7d3e0560fd8c60868c79e0c7200c1342010c51ecb117aa713ae723fa20116d42",
+      "bytes": 23448
+    },
+    {
+      "task_id": "Q-1697",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Pandas/Incremental LE.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Pandas__Incremental LE.mqh",
+      "sha256": "7a90fd6ceda372eff0e912b1322147f7cbbbc78e08376b7863fc0b3163769256",
+      "bytes": 10306
+    },
+    {
+      "task_id": "Q-1698",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/preprocessing.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__preprocessing.mqh",
+      "sha256": "753dea33427039f0b2a81234e7cf6a16e26373c2e6b187c15a5cf412bec193fa",
+      "bytes": 66656
+    },
+    {
+      "task_id": "Q-1706",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Linear Models/Ridge.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Linear Models__Ridge.mqh",
+      "sha256": "ec0223c59732a5e81db9e0749bc00df69abcf75c47a99015dae7b15045154af4",
+      "bytes": 2821
+    },
+    {
+      "task_id": "Q-1707",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Ensemble/Random Forest.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Ensemble__Random Forest.mqh",
+      "sha256": "a5ea5470e1ddff079c1e31c5bb9930fc616177485f1ddca24656097167847e05",
+      "bytes": 13034
+    },
+    {
+      "task_id": "Q-1708",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Naive Bayes/Naive Bayes.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Naive Bayes__Naive Bayes.mqh",
+      "sha256": "497edca5d693a8b90082ad78069a45616e9f4874abfb2571b16877485eb80361",
+      "bytes": 14716
+    },
+    {
+      "task_id": "Q-1710",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Cluster/Hierachical Clustering.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Cluster__Hierachical Clustering.mqh",
+      "sha256": "7e45fc93167aaaa8428da4e9e8d0b4a420f5d27d1eed76f3d234ccb3f55e44b6",
+      "bytes": 3413
+    },
+    {
+      "task_id": "Q-1711",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Linear Models/Linear Regression.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Linear Models__Linear Regression.mqh",
+      "sha256": "f743b213bf988d77930de0dcaaf441588a1b07ba538841355893de9f3e0e9085",
+      "bytes": 14414
+    },
+    {
+      "task_id": "Q-1712",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Neighbors/KNN_nearest_neighbors.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Neighbors__KNN_nearest_neighbors.mqh",
+      "sha256": "89a409e707f2bcd88772f6398a4b5285026a92cfba9564861e7fba7e83861c7a",
+      "bytes": 12160
+    },
+    {
+      "task_id": "Q-1713",
+      "status": "Completed",
+      "url": "https://raw.githubusercontent.com/MegaJoctan/ML5/main/Sklearn/Linear Models/Logistic Regression.mqh",
+      "local_path": "data/ea_kb/sources_batch2/github/MegaJoctan__ML5/Sklearn__Linear Models__Logistic Regression.mqh",
+      "sha256": "b5c6961d9b5da93e093ecb1d3d9dab33b2645f315e0db8685595b264331f3423",
+      "bytes": 6558
+    }
+  ]
+}

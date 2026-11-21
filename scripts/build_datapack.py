@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.12.zip
+Outputs: /tmp/alina_pack_v213/ALINA_DATAPACK/…  and  /tmp/alina_pack_v213/ALINA_DATAPACK_v2.13.zip
 """
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ import zipfile
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIST = os.path.join(ROOT, "pack")   # NOT "dist": dist/ is excluded from workspace snapshots
+DIST = os.environ.get("ALINA_PACK_OUT", "/tmp/alina_pack_v213")
 PACK = os.path.join(DIST, "ALINA_DATAPACK")
 RECORDED = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -470,24 +470,33 @@ DATASETS = [
                                        "data/ea_kb/ea_master.jsonl", "data/ea_kb/indicators.jsonl",
                                        "data/ea_kb/visual_symbols.jsonl", "data/ea_kb/strategies.jsonl",
                                        "data/ea_kb/trading_logic.jsonl", "data/ea_kb/developers.jsonl",
+                                       "data/ea_kb/github_repos_audit.jsonl",
                                        "data/ea_kb/unclassified.jsonl", "data/ea_kb/research_queue.jsonl",
+                                       "data/ea_kb/research_queue_batch3.jsonl",
+                                       "data/ea_kb/batch2_mql5_fetched.json", "data/ea_kb/batch2_fpa_q1761.json",
+                                       "data/ea_kb/batch2_p1_deps.json", "data/ea_kb/batch2_gitlab_gh75_probe.json",
+                                       "data/ea_kb/batch2_subbatch_gh_gl_ff.json", "data/ea_kb/batch2_subbatch_gh_expand.json",
+                                       "data/ea_kb/batch2_subbatch_gh_rest.json",
                                        "data/ea_kb/research_papers.jsonl", "data/ea_kb/risk_management_patterns.jsonl",
                                        "data/ea_kb/market_behavior_links.jsonl", "data/ea_kb/knowledge_graph.jsonl",
                                        "data/ea_kb/rag_corpus.jsonl", "data/ea_kb/KB_STATS.json",
+                                       "data/ea_kb/KB_STATS_BATCH2.json",
                                        "data/ea_kb/market_events_index.json", "data/ea_kb/financial_news_index.json",
                                        "data/ea_kb/backtest_evidence.jsonl", "data/ea_kb/source_websites.json",
-                                       "data/ea_kb/DATA_DICTIONARY.md", "data/ea_kb/PROOF_OF_WORK_BATCH1.md"],
+                                       "data/ea_kb/DATA_DICTIONARY.md", "data/ea_kb/PROOF_OF_WORK_BATCH1.md",
+                                       "data/ea_kb/PROOF_OF_WORK_BATCH2.md"],
          kind="knowledge_base", grade="B",
-         title="Global EA Intelligence Knowledge Base (Batch 1: 217 static source files, SQLite+FTS5, Graph, RAG)",
-         card="Persistent AI-ready KB built from 217 downloaded .mq5/.mq4/.mqh/.py/.pine files across MQL5, "
-              "GitHub, GitLab & ForexFactory plus MQL5 Market/Docs metadata & arXiv papers. Contains 96 EAs "
-              "(90 Level 1 source-verified), 63 indicators, 204 visual symbol/Wingdings records, 10 exact/fork "
-              "duplicate pairs (all retained), 725 KG triples, 230 FTS5 RAG chunks, and 1,924 pending queue tasks.",
-         caveats=["Commercial .ex5 listings are tagged strictly Level 5-6 Unverified (internal logic never guessed).",
-                  "MQL5 CodeBase rapid urllib hits rate-limited after ~46 items (403 logged); remainder queued.",
+         title="Global EA Intelligence Knowledge Base (Batch 2: 1,718 static files, SQLite+FTS5, Graph, RAG)",
+         card="Persistent AI-ready KB built from 1,718 downloaded .mq5/.mq4/.mqh/.h/.pine files across MQL5, "
+              "GitHub (75 audited repos), GitLab & ForexFactory plus 100% of 205 unique queued MQL5 CodeBase "
+              "pages (+27 profiles) & ForexPeaceArmy Q-1761. Contains 493 EAs/Utilities, 223 indicators, "
+              "325 visual symbol records, 1,289 duplicate/fork pairs (all kept), 4,726 KG triples, 2,021 FTS5 "
+              "RAG chunks, and 1,924/1,924 Batch 2 queue tasks reconciled (0 pending; 951 Batch 3 tasks staged).",
+         caveats=["Commercial .ex5 and ForexFactory .ex5 binaries tagged strictly Level 5-6 Unverified.",
+                  "MQL5 raw .mq5 archive downloads are IP-blocked in sandbox and queued cleanly in research_queue_batch3.jsonl.",
                   "Static reverse engineering only: downloaded MQL files were NOT compiled or executed in MT5."],
-         use_for=["RAG/FTS5 retrieval over real MQL5 code", "EA/Indicator/VisualSymbol/Fork comparison", "Batch 2+ research queue"],
-         leak_rule="Every record carries evidence_level (1-7), verification_status, source_url, and SHA-256."),
+         use_for=["RAG/FTS5 retrieval over 1,718 real MQL/header files", "EA/Indicator/VisualSymbol/Fork comparison", "Batch 3 non-sandbox archive completion"],
+         leak_rule="Every record carries all 15 unified schema fields, evidence_level (1-7), verification_status, source_url, and SHA-256."),
     dict(id="mobile_cloud_ops", src=["scripts/ask.py", "scripts/notify_telegram.py",
                                      "scripts/telegram_bot.py",
                                      ".github/workflows/daily_pipeline.yml",
@@ -736,7 +745,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.12",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.13",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -806,6 +815,9 @@ def main() -> None:
     ea_src_dir = os.path.join(ROOT, "data", "ea_kb", "sources")
     if os.path.isdir(ea_src_dir):
         shutil.copytree(ea_src_dir, os.path.join(PACK, "code", "ea_sources"))
+    ea_src_b2_dir = os.path.join(ROOT, "data", "ea_kb", "sources_batch2")
+    if os.path.isdir(ea_src_b2_dir):
+        shutil.copytree(ea_src_b2_dir, os.path.join(PACK, "code", "ea_sources_batch2"))
 
     # ---- knowledge docs written by hand elsewhere
     for doc in ("README_FOR_AI.md", "DATA_SOURCES.md", "PITFALLS.md", "WHAT_FAILED.md",
@@ -842,7 +854,8 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.12.zip")
+    os.makedirs(DIST, exist_ok=True)
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.13.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

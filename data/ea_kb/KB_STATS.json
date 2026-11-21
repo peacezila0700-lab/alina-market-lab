@@ -1,112 +1,65 @@
 {
-  "generated_utc": "2026-11-21T08:16:09Z",
-  "total_source_files_analyzed": 217,
-  "total_source_bytes": 5007467,
+  "generated_utc": "2026-11-21T08:57:12Z",
+  "version": "Batch 2 (v2.13)",
+  "total_source_files_analyzed": 1718,
+  "batch1_source_files": 217,
+  "batch2_source_files": 1501,
+  "total_source_bytes": 35160400,
+  "source_extensions": {
+    ".mq5": 480,
+    ".h": 12,
+    ".mq4": 24,
+    ".mqh": 1201,
+    ".pine": 1
+  },
   "source_roles": {
-    "Expert Advisor (Trading)": 59,
-    "Indicator": 56,
-    "Expert Advisor (Modular / Class-based)": 21,
-    "Unclassified Source": 8,
-    "Library / Header (.mqh)": 52,
-    "Script": 11,
-    "Utility / Diagnostic EA": 9,
+    "Expert Advisor (Trading)": 227,
+    "Indicator": 109,
+    "Library / Header (.h)": 12,
+    "Expert Advisor (Modular / Class-based)": 73,
+    "Unclassified Source": 19,
+    "Library / Header (.mqh)": 1201,
+    "Script": 45,
+    "Utility / Diagnostic EA": 31,
     "Trade / Risk Manager EA": 1
   },
-  "ea_master_total": 96,
-  "ea_source_verified": 90,
-  "ea_commercial_unverified": 6,
-  "indicators_master_total": 63,
-  "top_builtin_indicators_in_code": [
-    [
-      "iATR",
-      29
-    ],
-    [
-      "iMA",
-      27
-    ],
-    [
-      "iRSI",
-      15
-    ],
-    [
-      "iADX",
-      9
-    ],
-    [
-      "iCustom",
-      9
-    ],
-    [
-      "iMACD",
-      7
-    ],
-    [
-      "iBands",
-      7
-    ],
-    [
-      "iStochastic",
-      4
-    ],
-    [
-      "iFractals",
-      4
-    ],
-    [
-      "iSAR",
-      4
-    ],
-    [
-      "iStdDev",
-      3
-    ],
-    [
-      "iWPR",
-      3
-    ],
-    [
-      "iCCI",
-      3
-    ],
-    [
-      "iOsMA",
-      3
-    ],
-    [
-      "iRVI",
-      3
-    ]
-  ],
-  "unknown_icustom_targets": 5,
-  "visual_symbol_records_total": 204,
-  "developers_total": 69,
-  "strategies_decomposed": 90,
-  "duplicates_found": {
-    "fork_or_modified": 3,
-    "shared_code_pattern": 4,
-    "exact_sha256": 3
+  "ea_master_total": 493,
+  "ea_source_verified_local": 377,
+  "ea_mql5_codebase_inspected": 99,
+  "ea_closed_source_or_ex5": 17,
+  "indicators_master_total": 223,
+  "visual_symbol_records_total": 325,
+  "developers_total": 197,
+  "github_repos_audited": 75,
+  "strategies_decomposed": 377,
+  "duplicates_total": 1289,
+  "duplicates_by_type": {
+    "exact_sha256": 400,
+    "fork_or_modified": 238,
+    "shared_code_pattern": 366,
+    "near_duplicate": 285
   },
-  "unclassified_or_unknown_records": 28,
-  "knowledge_graph_edges": 725,
-  "rag_documents_indexed": 230,
-  "research_queue_pending": 1924,
-  "research_queue_by_kind": {
-    "mql5_ea_page": 84,
-    "developer_profile": 25,
-    "mql5_related": 83,
-    "mql5_ind_page": 53,
-    "github_repo": 75,
-    "github_source_file": 1393,
-    "gitlab_source_file": 35,
-    "compiled_binary_unreadable": 12,
-    "blocked_403_manual_or_search": 1,
-    "custom_include_dependency": 158,
-    "custom_indicator_icustom": 5
+  "unclassified_or_unknown_records": 49,
+  "knowledge_graph_edges": 4726,
+  "rag_documents_indexed": 2021,
+  "batch2_queue_total": 1924,
+  "batch2_queue_pending": 0,
+  "batch2_queue_by_status": {
+    "completed": 1635,
+    "blocked": 15,
+    "deferred": 262,
+    "completed_metadata_only": 12
   },
-  "catalog_baseline_rows": 332,
+  "batch3_queue_total": 951,
+  "batch3_queue_by_kind": {
+    "mql5_source_archive": 203,
+    "gitlab_source_retry": 14,
+    "p1_dep_retry": 2,
+    "batch2_new_include_dependency": 719,
+    "batch2_new_icustom_target": 13
+  },
+  "schema_15_fields_verified_pct": 100.0,
   "lab_experiments_linked": 23,
   "events_rows_linked": 2028,
-  "news_rows_linked": 1588,
-  "papers_recorded": 4
+  "news_rows_linked": 1588
 }

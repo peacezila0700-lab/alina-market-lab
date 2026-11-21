@@ -1,0 +1,65 @@
+{
+  "generated_utc": "2026-11-21T08:57:12Z",
+  "version": "Batch 2 (v2.13)",
+  "total_source_files_analyzed": 1718,
+  "batch1_source_files": 217,
+  "batch2_source_files": 1501,
+  "total_source_bytes": 35160400,
+  "source_extensions": {
+    ".mq5": 480,
+    ".h": 12,
+    ".mq4": 24,
+    ".mqh": 1201,
+    ".pine": 1
+  },
+  "source_roles": {
+    "Expert Advisor (Trading)": 227,
+    "Indicator": 109,
+    "Library / Header (.h)": 12,
+    "Expert Advisor (Modular / Class-based)": 73,
+    "Unclassified Source": 19,
+    "Library / Header (.mqh)": 1201,
+    "Script": 45,
+    "Utility / Diagnostic EA": 31,
+    "Trade / Risk Manager EA": 1
+  },
+  "ea_master_total": 493,
+  "ea_source_verified_local": 377,
+  "ea_mql5_codebase_inspected": 99,
+  "ea_closed_source_or_ex5": 17,
+  "indicators_master_total": 223,
+  "visual_symbol_records_total": 325,
+  "developers_total": 197,
+  "github_repos_audited": 75,
+  "strategies_decomposed": 377,
+  "duplicates_total": 1289,
+  "duplicates_by_type": {
+    "exact_sha256": 400,
+    "fork_or_modified": 238,
+    "shared_code_pattern": 366,
+    "near_duplicate": 285
+  },
+  "unclassified_or_unknown_records": 49,
+  "knowledge_graph_edges": 4726,
+  "rag_documents_indexed": 2021,
+  "batch2_queue_total": 1924,
+  "batch2_queue_pending": 0,
+  "batch2_queue_by_status": {
+    "completed": 1635,
+    "blocked": 15,
+    "deferred": 262,
+    "completed_metadata_only": 12
+  },
+  "batch3_queue_total": 951,
+  "batch3_queue_by_kind": {
+    "mql5_source_archive": 203,
+    "gitlab_source_retry": 14,
+    "p1_dep_retry": 2,
+    "batch2_new_include_dependency": 719,
+    "batch2_new_icustom_target": 13
+  },
+  "schema_15_fields_verified_pct": 100.0,
+  "lab_experiments_linked": 23,
+  "events_rows_linked": 2028,
+  "news_rows_linked": 1588
+}

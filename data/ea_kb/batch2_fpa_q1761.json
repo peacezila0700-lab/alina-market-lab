@@ -1,0 +1,37 @@
+{
+  "task_id": "Q-1761",
+  "url": "https://www.forexpeacearmy.com/forex-books/204/mt4-expert-advisor-scams",
+  "title": "MT4 Expert Advisor Scams (ForexPeaceArmy Educational Guide)",
+  "status": "completed",
+  "fetched_via": "fetch_page",
+  "fetched_utc": "2026-11-21T08:50:41Z",
+  "verification_status": "Confirmed",
+  "evidence_level": 2,
+  "scam_and_failure_patterns": [
+    {
+      "pattern_id": "FPA-SCAM-01",
+      "name": "Exponential Lot-Doubling Martingale Masked in Backtests",
+      "evidence": "12-year 99% modeling quality backtest showed deceptive 31.11% equity drawdown graph while true Relative Drawdown hit 93.02%, trading only 111 trades and escalating lot sizes to unfillable 200-1000 lots.",
+      "detection_rule": "Inspect Relative Drawdown % vs Max DD %, trade count, and sequential lot escalation (lot_k+1 > lot_k after loss)."
+    },
+    {
+      "pattern_id": "FPA-SCAM-02",
+      "name": "Holding Losing Trades Indefinitely (Equity vs Closed Balance Illusion)",
+      "evidence": "Observed losing positions held open 277 to 1,287 days (~3.5 years) to avoid booking realized losses, creating rising balance curves alongside severe floating equity drawdowns.",
+      "detection_rule": "Audit max trade duration, unrealized MAE, and floating equity-to-balance divergence."
+    },
+    {
+      "pattern_id": "FPA-SCAM-03",
+      "name": "Ultra-Fast 0-3 Second Latency/Delayed-Feed Scalpers",
+      "evidence": "Scammers showcase historical 0-3 second trades exploiting unmodeled demo feed delays or tight fixed backtest spreads that collapse under live broker spreads, slippage, and anti-arbitrage delays.",
+      "detection_rule": "Flag <5s median hold duration and test sensitivity to +0.5/+1.0/+2.0 pip spread and 100-500ms latency."
+    },
+    {
+      "pattern_id": "FPA-SCAM-04",
+      "name": "Missing Stop-Loss (No Hard SL Wipeout Trap)",
+      "evidence": "EAs operating with StopLoss = 0 harvest high win rates in mean-reverting regimes until a single sustained trend wipes out the entire account.",
+      "detection_rule": "Verify hard SL > 0 on every entry deal (OrderSend/CTrade) or enforce external equity-governor kill switch."
+    }
+  ],
+  "conflict_of_interest_note": "Article concludes by promoting Equity Sentry EA (author product); empirical failure modes above remain independently corroborated by Alina Lab EXP/MBL-001."
+}
