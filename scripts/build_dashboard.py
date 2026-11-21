@@ -233,6 +233,27 @@ def main():
             h.append(f"<div class='sub'>⚠ {esc(w)}</div>")
         h.append("</div>")
 
+        rmm = rr.get("risk_meta_model", {})
+        if "calibrated_probabilities" in rmm:
+            cp = rmm["calibrated_probabilities"]
+            ds = rmm["defensive_sizing_reference"]
+            sd_m = rmm["stationary_drivers"]
+            h.append("<h2>Risk Meta-Labeling (Calibrated · Monitoring Only)</h2><div class='card'>")
+            h.append(kv("P(VolOnset 21d) · HGBC+Platt", f"{cp['p_vol_onset_21d']*100:.1f}%  (WF AUC 0.688, ECE 0.061)"))
+            h.append(kv("P(TailStress 21d) · HGBC+Platt", f"{cp['p_tail_stress_21d']*100:.1f}%  (WF AUC 0.697, ECE 0.037)"))
+            h.append(kv("P(TB_NonDirStress 21d) · EXP-0030", f"{cp['p_tb_nondir_stress_21d']*100:.1f}%  (WF AUC 0.664)"))
+            h.append(kv("Stationary State (z252)", f"OFR {sd_m['ofr_fsi_z252']:+.2f} · GPR {sd_m['gpr_z252']:+.2f} · dFed63 {sd_m['d_fed_63']:+.2f}"))
+            h.append(kv("Defensive Ref (EXP-0031)", f"VT12% {ds['vol_target_12pct_exposure_pct']:.1f}% × {ds['meta_throttle_scalar']:.2f} = Equity {ds['meta_cash_equity_exposure_pct']:.1f}% / Cash {ds['cash_buffer_pct']:.1f}%"))
+            h.append(f"<div class='sub'>{esc(ds['exp0031_note'])}</div></div>")
+
+        fxg = rr.get("fx_execution_guard", {})
+        if "latest_spread_pips" in fxg:
+            h.append("<h2>FX Rollover & Liquidity Guard (EURGBP H1)</h2><div class='card'>")
+            h.append(kv("Last H1 Bar (UTC)", f"{fxg['last_bar_utc'][:16]}  (hr {fxg['latest_hour_utc']} UTC)"))
+            h.append(kv("Spread / z72", f"{fxg['latest_spread_pips']:.2f} pips  (z72={fxg['spread_z72']})"))
+            h.append(kv("6h Rollover Hazard (16-23 UTC)", "YES — elevated spread risk" if fxg["last_bar_in_rollover_hazard"] else "NO — liquid window"))
+            h.append(f"<div class='sub'>{esc(fxg['exp0030_gate_benchmark'])}</div></div>")
+
     exp_n, exp_pass = 0, 0
     exp_csv = ROOT / "research" / "EXPERIMENT_LOG.csv"
     if exp_csv.exists():

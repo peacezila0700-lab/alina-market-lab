@@ -72,11 +72,17 @@ def test_workstream_c_ea_kb_batch5_integrity() -> None:
     chk = conn.execute("PRAGMA integrity_check").fetchone()[0]
     assert chk == "ok"
     cnt = conn.execute("SELECT COUNT(*) FROM source_files").fetchone()[0]
-    assert cnt >= 2100, f"Expected >=2100 KB source files, found {cnt}"
+    assert cnt >= 2174, f"Expected >=2174 KB Batch 6 source files, found {cnt}"
     rows = conn.execute("SELECT local_path FROM source_files").fetchall()
     missing = [r[0] for r in rows if not (ROOT / r[0]).exists()]
     assert not missing, f"Missing local KB paths: {missing[:5]}"
     conn.close()
+
+    prov = json.loads((ROOT / "data" / "ea_kb" / "batch6_provenance_audit.json").read_text())
+    assert len(prov) == 74
+    kb_b6 = json.loads((ROOT / "data" / "ea_kb" / "KB_STATS_BATCH6.json").read_text())
+    assert kb_b6["totals"]["source_files"] >= 2174
+    assert any("quantopian/research_public" in str(ex) for ex in kb_b6["excluded_unlicensed_audit"])
 
 
 def test_workstream_d_risk_radar_and_offline_dashboard() -> None:
@@ -84,6 +90,8 @@ def test_workstream_d_risk_radar_and_offline_dashboard() -> None:
     assert rr["total_panels"] == 8
     assert "RISK MONITORING TOOL ONLY" in rr["disclaimer"]
     assert rr["overall_risk_classification"] in ("LOW", "MODERATE", "ELEVATED", "HIGH")
+    assert "calibrated_probabilities" in rr.get("risk_meta_model", {})
+    assert "latest_spread_pips" in rr.get("fx_execution_guard", {})
 
     hist_lines = (ROOT / "data" / "risk_radar" / "history.jsonl").read_text().strip().splitlines()
     assert len(hist_lines) >= 1
@@ -91,6 +99,8 @@ def test_workstream_d_risk_radar_and_offline_dashboard() -> None:
 
     html_txt = (ROOT / "dashboard" / "alina_today.html").read_text()
     assert "Risk Radar" in html_txt
+    assert "Risk Meta-Labeling" in html_txt
+    assert "FX Rollover & Liquidity Guard" in html_txt
     assert "<script src=\"http" not in html_txt.lower()
     assert "fetch(" not in html_txt.lower()
 
@@ -99,6 +109,26 @@ def test_workstream_d_risk_radar_and_offline_dashboard() -> None:
         capture_output=True, text=True, check=True
     )
     assert "RISK MONITOR ONLY" in res.stdout
+
+
+def test_registries_and_v218_meta_labeling_experiments() -> None:
+    df_exp = pd.read_csv(ROOT / "research" / "EXPERIMENT_LOG.csv")
+    df_hyp = pd.read_csv(ROOT / "research" / "HYPOTHESIS_REGISTER.csv")
+    assert len(df_exp) >= 31 and len(df_exp.columns) == 16
+    assert len(df_hyp) >= 26 and len(df_hyp.columns) == 25
+    assert "EXP-0030" in set(df_exp["exp_id"]) and "EXP-0031" in set(df_exp["exp_id"])
+
+    e30 = json.loads((ROOT / "research" / "artifacts" / "exp0030_triple_barrier.json").read_text())
+    ta, tb = e30["track_a_spy_daily_triple_barrier"], e30["track_b_eurgbp_h1_triple_barrier"]
+    assert ta["leakage_audit"]["purged_gap_assertion_passed"] is True
+    assert ta["target_a3_tb_nondir_stress"]["purged_wf_5fold_hgbc"]["roc_auc"] > 0.63
+    assert tb["risk_shock_classification"]["oos_state_only_noclock_platt"]["roc_auc"] > 0.63
+    assert tb["execution_cost_survival_oos_6h_nonoverlap"]["MetaLabel_Risk_Gated_70pct_VALID"]["net_mean_pips"] < 0.0
+
+    e31 = json.loads((ROOT / "research" / "artifacts" / "exp0031_cross_asset_overlay.json").read_text())
+    wf = e31["wf_2015_2026_full"]
+    assert wf["5_VolTarget12_Meta_Cash"]["net"]["max_dd_pct"] > wf["1_SPY_Buy_And_Hold"]["net"]["max_dd_pct"]
+    assert wf["5_VolTarget12_Meta_Cash"]["net"]["max_dd_pct"] > wf["6_VolTarget12_Meta_TLT_Rot"]["net"]["max_dd_pct"]
 
 
 if __name__ == "__main__":

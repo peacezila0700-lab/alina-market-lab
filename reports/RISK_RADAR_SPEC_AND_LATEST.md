@@ -1,8 +1,8 @@
 # Daily Risk Radar — Specification & Latest Reading
 
-> **RISK MONITORING TOOL ONLY — Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 29 experiments).**
+> **RISK MONITORING TOOL ONLY — Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).**
 
-Generated UTC: `2026-11-21T11:38:25+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `8/8`
+Generated UTC: `2026-11-21T12:37:08+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `8/8`
 
 ## 1. Panel Status, Data Sources, Freshness & Thresholds
 | Panel | Last Updated | Age (d) | Freshness | Risk Class | Key Metrics | Warning |
@@ -16,10 +16,19 @@ Generated UTC: `2026-11-21T11:38:25+00:00` | Overall Risk Classification: **`HIG
 | `news_stress` | `2026-11-21T11:37:27` | 0 | `FRESH` | **ELEVATED** | `{"feeds_ok": 16, "feeds_total": 16, "unique_headlines": 418, "stress_keyword_hits": 31}` | none |
 | `crypto_funding_basis` | `2026-11-21` | 0 | `FRESH` | **LOW** | `{"deribit_btc_24h_apr_pct": -2.88, "deribit_btc_index": 58820.48, "okx_btc_24h_apr_pct": -0.46}` | OKX public funding API limited to ~93d; Binance (HTTP 451) & Bybit (HTTP 403) blocked in sandbox. |
 
-## 2. Active Risk Alerts
+## 2. Calibrated Risk Meta-Labeling (`Task 3 + EXP-0030/0031`, Offline Sizing & Monitor Only)
+- **As-Of Date:** `2026-11-20` | **Causal Train Cutoff (`-31d` Purge+Embargo):** `2026-09-09`
+- **Calibrated Probabilities (`HGBC + Platt`):** `P(VolOnset_21d) = 0.0727` | `P(TailStress_21d) = 0.3440` | `P(TB_NonDirStress_21d) = 0.3440`
+- **Stationary Macro/Vol State:** `OFR_FSI_z252=1.284`, `GPR_z252=-0.385`, `d_Fed_63d=0.25`, `VIX=35.89`, `Slope3M=1.16`, `RV21=25.6%`
+- **Defensive Sizing Reference (`EXP-0031`):** `VolTarget12%=46.9%` × `MetaThrottle=0.952` -> **`Equity=44.6%` / `Cash Buffer=55.4%`**
+
+## 3. FX Intraday Rollover & Cost-Shock Guard (`EXP-0030 Track B`)
+- **`EURGBP H1` Last Bar:** `2026-11-20T18:00:00+00:00` | Spread `0.8 pips` (`z72=-0.16`) | In 6h Rollover Hazard (`16–23 UTC`): `True`
+
+## 4. Active Risk Alerts
 - **[HIGH] `vol_term_structure`:** VIX/VIX3M inverted at 1.160 (>1.00)
 - **[ELEVATED] `vol_term_structure`:** VVIX percentile elevated at 1.00 (>=0.90)
 - **[ELEVATED] `equity_vol_dd`:** SPY RV20=26.3%, 52w DD=-11.5%
 
-## 3. Missing Data / Staleness Warnings
+## 5. Missing Data / Staleness Warnings
 - None.

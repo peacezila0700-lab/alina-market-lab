@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-21T11:38:25+00:00",
+  "generated_utc": "2026-11-21T12:37:08+00:00",
   "run_date": "2026-11-21",
-  "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 29 experiments).",
+  "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).",
   "overall_risk_classification": "HIGH",
   "fresh_panels": 8,
   "total_panels": 8,
@@ -196,5 +196,41 @@
       },
       "missing_data_warning": "OKX public funding API limited to ~93d; Binance (HTTP 451) & Bybit (HTTP 403) blocked in sandbox."
     }
+  },
+  "risk_meta_model": {
+    "scope": "MONITORING_AND_OFFLINE_SIZING_ONLY_NOT_DIRECTIONAL_SIGNAL",
+    "as_of_date": "2026-11-20",
+    "train_cutoff_date": "2026-09-09",
+    "purge_plus_embargo_days": 31,
+    "calibrated_probabilities": {
+      "p_vol_onset_21d": 0.0727,
+      "p_tail_stress_21d": 0.344,
+      "p_tb_nondir_stress_21d": 0.344
+    },
+    "stationary_drivers": {
+      "ofr_fsi_z252": 1.284,
+      "gpr_z252": -0.385,
+      "d_fed_63": 0.25,
+      "vix": 35.89,
+      "slope_3m": 1.16,
+      "rv21_past_pct": 25.6
+    },
+    "defensive_sizing_reference": {
+      "vol_target_12pct_exposure_pct": 46.9,
+      "meta_throttle_scalar": 0.952,
+      "meta_cash_equity_exposure_pct": 44.6,
+      "cash_buffer_pct": 55.4,
+      "exp0031_note": "Park throttled equity weight in Cash/Short-Bills (NOT blind TLT rotation when d_fed_63 > 0)."
+    }
+  },
+  "fx_execution_guard": {
+    "pair": "EURGBP_H1_Dukascopy",
+    "last_bar_utc": "2026-11-20T18:00:00+00:00",
+    "latest_hour_utc": 18,
+    "latest_spread_pips": 0.8,
+    "spread_z72": -0.16,
+    "rollover_hazard_window_utc": "16:00-23:00 UTC (6h horizon touches 21-22 UTC rollover)",
+    "last_bar_in_rollover_hazard": true,
+    "exp0030_gate_benchmark": "70pct VALID MetaGate cuts 6h shock 34.9% -> 16.1% & drag 2.21p -> 1.85p (net stays -2.10p < 0; Phase C locked)."
   }
 }
