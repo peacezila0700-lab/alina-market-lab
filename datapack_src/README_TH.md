@@ -158,3 +158,15 @@
   รันเก็บข้อมูล + สร้าง `alina_today.html` ฟรี 0 บาท (แบบเสีย ≤300 บ./ด. คือ Linux VPS ~$5–€6 สำหรับ API บอทเท่านั้น;
   ทั้ง live LLM API และ Telegram push **ยังไม่ได้ทดสอบ** เพราะไม่มี key ในเครื่องนี้)
 
+### รอบที่ 11 (v2.11) — ทดสอบ PIT SEC + OKX 1H Crypto + บอท Telegram สองทาง
+- **EXP-0022 (Sloan accruals / cashflow quality 63 วัน บน 62 หุ้น PIT SEC) — FAIL (ขาดกำลังตัวอย่าง):**
+  `F_NEG_ACCRUALS` บวกทั้งสองครึ่ง (IS +0.624 / OOS +0.947, เปอร์เซ็นไทล์ 93.5% / 92.0%, ฝั่ง Long +2.015 vs EW +1.830)
+  แต่ไม่ถึงเกณฑ์ 98.75% เพราะมีแค่ 62 หุ้นใหญ่ (ต้องขยายฐานบริษัทถึงจะตัดสินได้ชัด)
+- **EXP-0023 (OKX BTC/ETH รายชั่วโมง 9,999 แท่ง confirm==1) — FAIL:**
+  คู่ ETH-BTC 24 ชม. มี gross Sharpe จริง (+1.60 IS / +2.39 OOS, breakeven 2.6–3.1 bp/ข้าง) แต่ถูกค่าธรรมเนียม OKX
+  5–10 bp/ข้าง กินจนขาดทุน (−4.43 / −5.29 Sharpe ที่ 10 bp) — ซ้ำรอยกำแพงต้นทุนเดียวกับ FX 1 ชม.
+- **`scripts/telegram_bot.py` + `.github/workflows/telegram_qa.yml`:** บอทถาม-ตอบสองทางบน Telegram (`/status`,
+  `/set`, `/levels SYMBOL` และถาม AI ภาษาไทย) ทดสอบ `--dry-run` ผ่านทุกคำสั่ง (ยิง Telegram/LLM จริง **ยังไม่ได้ทดสอบ**)
+  พร้อมแท็ก PWA ใน `dashboard/alina_today.html` เพื่อปักเป็นไอคอนแอปบนมือถือ
+
+

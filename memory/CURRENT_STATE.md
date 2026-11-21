@@ -1,13 +1,13 @@
-# CURRENT STATE — 2026-11-21 (v2.10: PIT SEC + US/Thai ML experiments + mobile cloud ops)
+# CURRENT STATE — 2026-11-21 (v2.11: EXP-0022/0023 + two-way Telegram bot + PWA dashboard)
 
 ## Focus
 Data + code + experiments for a downstream AI. App frozen. User clarified: **mobile only (no PC)**,
-**budget ≤ 300 THB/month if clear benefit**, **goal = trade timing / price prediction**.
-Empirical tests EXP-0020 (US ML) & EXP-0021 (Thai SET64 + ML) just ran to directly answer that goal.
+**budget ≤ 300 THB/month if clear benefit**, **goal = trade timing / price prediction**; next asked how
+to test with Telegram vs building his app.
 
 ## Drive (live)
-- **v2.10 `1lqMTfGpVI6riQqbtyofj4szK545CUnnB`** — 54 datasets / 633 files / 72.0 MB. Current.
-- v2.9, v2.8, v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.11 `1biZ1JbdXYH5p3f8NFGIxQ_u2RuPVOVi3`** — 55 datasets / 645 files / 72.0 MB. Current.
+- v2.10, v2.9, v2.8, v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
 ## Shipped this session (chronological)
 1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
@@ -42,10 +42,14 @@ Empirical tests EXP-0020 (US ML) & EXP-0021 (Thai SET64 + ML) just ran to direct
     - **EXP-0020 (`scripts/test_ml_us_stocks.py`, H22):** Purged walk-forward Ridge/HGB on 112 US stocks + macro/DIX-GEX + PIT SEC → **FAIL** (L/S OOS −0.115..+0.360, 76–89th pct vs 99th bar; LO OOS +0.63..+0.96 < EW +1.39).
     - **EXP-0021 (`scripts/test_thai_set.py`, H23):** First experiment on 64 Thai SET stocks (27 bp/side retail cost = 16.8 bp Cash Balance fee+VAT + ~10 bp spread) → **FAIL** (ML Ridge/HGB hit 100th/99.5th pct IS then flipped −0.37/−0.29 OOS; 5d reversal −2.37/−1.70 Sharpe).
     - `scripts/ask.py` (Gemini/Groq/OpenRouter/Ollama, dry-run tested ~9k tokens), `scripts/notify_telegram.py` (dry-run tested), `.github/workflows/daily_pipeline.yml`, `build_dashboard.py` +SET64 summary, `research/MOBILE_SIGNAL_ARCHITECTURE_2026.md`.
-12. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day.
+12. **EXP-0022 / EXP-0023 + Two-Way Telegram Bridge (v2.11):**
+    - **EXP-0022 (`scripts/test_pit_fundamentals.py`, H24):** Standalone 63d test on `pit_fundamentals.csv` (62 US GAAP large caps). Sloan accruals (`F_NEG_ACCRUALS`) positive in both IS (+0.624, 93.5th pct) and OOS (+0.947, 92.0th pct; LO OOS +2.015 vs EW +1.830), underpowered for 98.75th pct bar at N=62 → **FAIL**.
+    - **EXP-0023 (`scripts/test_crypto_1h.py`, H25):** OKX 1H BTC/ETH 9,999 confirmed bars (`2025-10..2026-11`). `CR_PAIR_ETH_BTC` gross Sharpe +1.604/+2.389 (BE +2.62/+3.06 bp/side) destroyed by 5–10 bp/side fees (−4.43/−5.29 at 10 bp; −1.51 at 5 bp) → **FAIL**.
+    - `scripts/telegram_bot.py` (`/status`, `/set`, `/levels SYMBOL`, free-text Gemini/Groq routing; dry-run tested) + `.github/workflows/telegram_qa.yml` + PWA tags on `dashboard/alina_today.html`.
+13. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day.
 
 ## Tally
-21 experiments, 168 screen, 144 family, 59 COT, 0 validated edges. Every failure is in
+23 experiments, 168 screen, 144 family, 59 COT, 0 validated edges. Every failure is in
 `WHAT_FAILED.md` with the reason; every trap is in `PITFALLS.md` (#1-#19).
 
 ## The three sentences that carry the whole project

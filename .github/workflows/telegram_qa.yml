@@ -1,0 +1,43 @@
+name: ALINA Telegram Q&A Poller
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Poll once every 30 min during active market hours (UTC) for pending phone messages
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  reply-telegram:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install --no-cache-dir pandas
+      - name: Process pending Telegram messages
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ]; then
+            echo "TELEGRAM_BOT_TOKEN not set — skipping."
+            exit 0
+          fi
+          PROV="gemini"
+          if [ -z "$GEMINI_API_KEY" ] && [ -n "$GROQ_API_KEY" ]; then PROV="groq"; fi
+          python3 scripts/telegram_bot.py --provider "$PROV"
+      - name: Persist offset if updated
+        run: |
+          git config user.name "ALINA Bot"
+          git config user.email "alina.lab.contact@gmail.com"
+          git add data/collect/telegram_offset.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: telegram offset [skip ci]"
+            git push
+          fi

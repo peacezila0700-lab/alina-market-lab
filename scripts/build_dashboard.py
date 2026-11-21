@@ -74,7 +74,12 @@ def main():
     tech = pd.read_csv(ROOT / "data" / "technicals" / "latest.csv")
 
     h = [f"<!doctype html><html lang='th'><meta charset='utf-8'>",
-         "<meta name='viewport' content='width=device-width,initial-scale=1'>",
+         "<meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'>",
+         "<meta name='apple-mobile-web-app-capable' content='yes'>",
+         "<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>",
+         "<meta name='apple-mobile-web-app-title' content='ALINA Lab'>",
+         "<meta name='mobile-web-app-capable' content='yes'>",
+         "<meta name='theme-color' content='#0b0f14'>",
          f"<title>ALINA — {esc(d)}</title><style>{CSS}</style>",
          f"<h1>สภาวะตลาด {esc(d)}</h1>",
          f"<div class='sub'>สร้าง {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC · "

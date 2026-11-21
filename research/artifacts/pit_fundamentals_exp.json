@@ -1,0 +1,247 @@
+{
+  "exp_id": "EXP-0022",
+  "hyp_id": "H24",
+  "run_utc": "2026-11-21T07:51:35+00:00",
+  "universe": "62 US large-cap GAAP firms with PIT SEC data",
+  "date_range": "2017-01-05..2026-11-20",
+  "is_oos_split": "2023-12-01",
+  "ew_benchmark": {
+    "IS": {
+      "sharpe_net": 1.036,
+      "sharpe_gross": 1.036,
+      "cagr_net_pct": 20.09,
+      "maxdd_pct": -30.6,
+      "ann_turn": 0.0
+    },
+    "OOS": {
+      "sharpe_net": 1.83,
+      "sharpe_gross": 1.83,
+      "cagr_net_pct": 35.25,
+      "maxdd_pct": -19.39,
+      "ann_turn": 0.0
+    }
+  },
+  "arms": {
+    "F_NEG_ACCRUALS": {
+      "ls_5bp": {
+        "IS": {
+          "sharpe_net": 0.624,
+          "sharpe_gross": 0.637,
+          "cagr_net_pct": 9.11,
+          "maxdd_pct": -34.83,
+          "ann_turn": 3.89
+        },
+        "OOS": {
+          "sharpe_net": 0.947,
+          "sharpe_gross": 0.957,
+          "cagr_net_pct": 16.84,
+          "maxdd_pct": -23.17,
+          "ann_turn": 3.81
+        },
+        "null_pct_IS": 93.5,
+        "null_pct_OOS": 92.0
+      },
+      "ls_10bp": {
+        "IS": {
+          "sharpe_net": 0.612,
+          "sharpe_gross": 0.637,
+          "cagr_net_pct": 8.9,
+          "maxdd_pct": -35.08,
+          "ann_turn": 3.89
+        },
+        "OOS": {
+          "sharpe_net": 0.936,
+          "sharpe_gross": 0.957,
+          "cagr_net_pct": 16.61,
+          "maxdd_pct": -23.28,
+          "ann_turn": 3.81
+        }
+      },
+      "lo_topq_5bp": {
+        "IS": {
+          "sharpe_net": 1.171,
+          "sharpe_gross": 1.175,
+          "cagr_net_pct": 29.09,
+          "maxdd_pct": -31.48,
+          "ann_turn": 1.66
+        },
+        "OOS": {
+          "sharpe_net": 2.015,
+          "sharpe_gross": 2.02,
+          "cagr_net_pct": 56.89,
+          "maxdd_pct": -24.28,
+          "ann_turn": 2.17
+        },
+        "null_pct_IS": 93.0,
+        "null_pct_OOS": 94.0
+      },
+      "pass_bar": false
+    },
+    "F_CFO_ASSETS": {
+      "ls_5bp": {
+        "IS": {
+          "sharpe_net": 0.548,
+          "sharpe_gross": 0.552,
+          "cagr_net_pct": 9.25,
+          "maxdd_pct": -34.67,
+          "ann_turn": 1.72
+        },
+        "OOS": {
+          "sharpe_net": -0.484,
+          "sharpe_gross": -0.479,
+          "cagr_net_pct": -10.34,
+          "maxdd_pct": -38.54,
+          "ann_turn": 1.62
+        },
+        "null_pct_IS": 92.0,
+        "null_pct_OOS": 20.5
+      },
+      "ls_10bp": {
+        "IS": {
+          "sharpe_net": 0.543,
+          "sharpe_gross": 0.552,
+          "cagr_net_pct": 9.15,
+          "maxdd_pct": -34.67,
+          "ann_turn": 1.72
+        },
+        "OOS": {
+          "sharpe_net": -0.488,
+          "sharpe_gross": -0.479,
+          "cagr_net_pct": -10.41,
+          "maxdd_pct": -38.66,
+          "ann_turn": 1.62
+        }
+      },
+      "lo_topq_5bp": {
+        "IS": {
+          "sharpe_net": 0.912,
+          "sharpe_gross": 0.914,
+          "cagr_net_pct": 23.01,
+          "maxdd_pct": -37.46,
+          "ann_turn": 1.09
+        },
+        "OOS": {
+          "sharpe_net": 1.25,
+          "sharpe_gross": 1.251,
+          "cagr_net_pct": 34.76,
+          "maxdd_pct": -24.51,
+          "ann_turn": 0.69
+        },
+        "null_pct_IS": 40.0,
+        "null_pct_OOS": 3.5
+      },
+      "pass_bar": false
+    },
+    "F_REV_YOY": {
+      "ls_5bp": {
+        "IS": {
+          "sharpe_net": 0.382,
+          "sharpe_gross": 0.39,
+          "cagr_net_pct": 6.31,
+          "maxdd_pct": -35.8,
+          "ann_turn": 3.61
+        },
+        "OOS": {
+          "sharpe_net": 0.986,
+          "sharpe_gross": 0.992,
+          "cagr_net_pct": 25.95,
+          "maxdd_pct": -29.5,
+          "ann_turn": 3.11
+        },
+        "null_pct_IS": 80.0,
+        "null_pct_OOS": 91.0
+      },
+      "ls_10bp": {
+        "IS": {
+          "sharpe_net": 0.374,
+          "sharpe_gross": 0.39,
+          "cagr_net_pct": 6.12,
+          "maxdd_pct": -35.9,
+          "ann_turn": 3.61
+        },
+        "OOS": {
+          "sharpe_net": 0.98,
+          "sharpe_gross": 0.992,
+          "cagr_net_pct": 25.76,
+          "maxdd_pct": -29.52,
+          "ann_turn": 3.11
+        }
+      },
+      "lo_topq_5bp": {
+        "IS": {
+          "sharpe_net": 0.996,
+          "sharpe_gross": 0.998,
+          "cagr_net_pct": 28.02,
+          "maxdd_pct": -41.57,
+          "ann_turn": 1.52
+        },
+        "OOS": {
+          "sharpe_net": 1.658,
+          "sharpe_gross": 1.659,
+          "cagr_net_pct": 64.76,
+          "maxdd_pct": -30.23,
+          "ann_turn": 1.02
+        },
+        "null_pct_IS": 55.5,
+        "null_pct_OOS": 53.5
+      },
+      "pass_bar": false
+    },
+    "F_QUALITY_COMP": {
+      "ls_5bp": {
+        "IS": {
+          "sharpe_net": 0.302,
+          "sharpe_gross": 0.31,
+          "cagr_net_pct": 3.74,
+          "maxdd_pct": -27.51,
+          "ann_turn": 2.74
+        },
+        "OOS": {
+          "sharpe_net": 0.999,
+          "sharpe_gross": 1.005,
+          "cagr_net_pct": 21.95,
+          "maxdd_pct": -18.57,
+          "ann_turn": 2.77
+        },
+        "null_pct_IS": 78.0,
+        "null_pct_OOS": 92.5
+      },
+      "ls_10bp": {
+        "IS": {
+          "sharpe_net": 0.294,
+          "sharpe_gross": 0.31,
+          "cagr_net_pct": 3.59,
+          "maxdd_pct": -27.66,
+          "ann_turn": 2.74
+        },
+        "OOS": {
+          "sharpe_net": 0.993,
+          "sharpe_gross": 1.005,
+          "cagr_net_pct": 21.78,
+          "maxdd_pct": -18.59,
+          "ann_turn": 2.77
+        }
+      },
+      "lo_topq_5bp": {
+        "IS": {
+          "sharpe_net": 0.902,
+          "sharpe_gross": 0.904,
+          "cagr_net_pct": 22.69,
+          "maxdd_pct": -37.04,
+          "ann_turn": 1.18
+        },
+        "OOS": {
+          "sharpe_net": 1.488,
+          "sharpe_gross": 1.49,
+          "cagr_net_pct": 47.3,
+          "maxdd_pct": -28.3,
+          "ann_turn": 1.26
+        },
+        "null_pct_IS": 39.0,
+        "null_pct_OOS": 29.5
+      },
+      "pass_bar": false
+    }
+  },
+  "verdict": "FAIL"
+}

@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.10.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.11.zip
 """
 from __future__ import annotations
 
@@ -450,19 +450,35 @@ DATASETS = [
                   "Both verdicts are FAIL — proves tabular ML on daily technicals+macro+PIT does not clear costs."],
          use_for=["preventing wasted GPU/server spend on daily price-ML timing", "Thai retail cost benchmark (16.8-27 bp/side)"],
          leak_rule="Purged s+H+2 <= t, 1-bar execution lag (t+1 close), turnover-matched fixed permutation null."),
+    dict(id="pit_and_crypto_experiments", src=["scripts/test_pit_fundamentals.py", "scripts/test_crypto_1h.py",
+                                               "research/artifacts/pit_fundamentals_exp.json",
+                                               "research/artifacts/crypto_1h.json"],
+         kind="evidence", grade="B",
+         title="EXP-0022 (standalone PIT SEC 63d) & EXP-0023 (OKX 1H crypto 9,999 bars) — both FAIL",
+         card="EXP-0022 tests Sloan accruals, CFO/assets, rev_yoy and quality composite at 63d rebalance on "
+              "62 US GAAP large caps using non-restated pit_fundamentals.csv (5 bp/side). Sloan accruals was "
+              "positive both IS (+0.624, 93.5th pct) and OOS (+0.947, 92.0th pct; LO +2.015 vs EW +1.830), "
+              "falling short of the 98.75th-pct bar on N=62. EXP-0023 tests 4 rules on 9,999 confirmed 1H "
+              "OKX BTC/ETH bars: ETH-BTC 24h reversion earns +1.60/+2.39 gross Sharpe (BE 2.6-3.1 bp/side) "
+              "and dies at 5-10 bp/side fees (-4.43/-5.29 net at 10 bp taker, -1.51 at 5 bp maker).",
+         caveats=["Both verdicts are FAIL against pre-declared bars.",
+                  "Sloan accruals signal merits retesting ONLY after expanding PIT SEC coverage beyond 62 names."],
+         use_for=["evidence on quarterly fundamental power limits", "1H crypto cost wall proof"],
+         leak_rule="Strict available_from <= t for SEC; confirm==1 and 1-bar lag for 1H OKX crypto."),
     dict(id="mobile_cloud_ops", src=["scripts/ask.py", "scripts/notify_telegram.py",
+                                     "scripts/telegram_bot.py",
                                      ".github/workflows/daily_pipeline.yml",
+                                     ".github/workflows/telegram_qa.yml",
                                      "research/MOBILE_SIGNAL_ARCHITECTURE_2026.md"],
          kind="ops", grade="B",
-         title="Phone-only cloud ops: ask.py CLI, Telegram push, GitHub Actions daily cron, <=300 THB plan",
-         card="Zero-PC operational stack built for mobile-only users: GitHub Actions free daily collector "
-              "+ dashboard rebuild + optional Telegram HTML push; ask.py composes ~9k-token context from "
-              "briefs/latest.md + packs/<date>.json + tally for Gemini/Groq/OpenRouter free APIs (dry-run "
-              "tested; live API/Telegram untested here without user tokens).",
+         title="Phone-only cloud ops: Telegram two-way bot, ask.py CLI, GitHub Actions workflows, <=300 THB plan",
+         card="Zero-PC operational stack: daily GitHub Actions collector + PWA-capable offline HTML push "
+              "+ two-way Telegram bot (/status, /set, /levels SYMBOL, free-text AI Q&A via Gemini/Groq). "
+              "All dry-run verified; live Telegram & LLM API calls untested in sandbox.",
          caveats=["Live Gemini/Groq/Telegram network calls UNTESTED (no user API keys in sandbox).",
                   "Colab Pro ($9.99 ~338 THB) and MT5 Windows VPS (~$12-20+) exceed 300 THB/month."],
-         use_for=["zero-cost daily automation from a phone", "on-demand rule-enforced LLM analysis"],
-         leak_rule="Reads derived daily outputs only; live API keys live strictly in env/GitHub Secrets."),
+         use_for=["zero-cost daily automation and two-way Telegram trial from a phone"],
+         leak_rule="Reads derived daily outputs only; API keys and owner chat_id stored strictly in Secrets."),
     dict(id="training_kit", src=["training/build_dataset.py", "training/finetune_qwen3_kaggle.py",
                                    "training/data/train.jsonl", "training/data/valid.jsonl",
                                    "training/data/STATS.json", "research/TRAINING_ROUTES_2026.md"],
@@ -695,7 +711,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.10",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.11",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -741,7 +757,7 @@ def main() -> None:
 
     # ---- results json (all artifacts an AI may want to read quickly)
     for rel in ["research/artifacts/cot_panel.json", "research/artifacts/event_conditional.json",
-                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "research/artifacts/congress_trades.json", "research/artifacts/ml_us_stocks.json", "research/artifacts/thai_set.json", "data/sec/MANIFEST_PIT_SEC.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "research/artifacts/congress_trades.json", "research/artifacts/ml_us_stocks.json", "research/artifacts/thai_set.json", "research/artifacts/pit_fundamentals_exp.json", "research/artifacts/crypto_1h.json", "data/sec/MANIFEST_PIT_SEC.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
                 "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
@@ -798,7 +814,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.10.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.11.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

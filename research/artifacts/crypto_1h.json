@@ -1,0 +1,158 @@
+{
+  "exp_id": "EXP-0023",
+  "hyp_id": "H25",
+  "run_utc": "2026-11-21T07:51:41+00:00",
+  "universe": "OKX BTCUSDT + ETHUSDT 1H confirmed bars",
+  "bars": 9999,
+  "date_range": "2025-10-04 08:00:00+00:00..2026-11-20 18:00:00+00:00",
+  "is_oos_split": "2026-07-20 01:00:00+00:00",
+  "bh_benchmark": {
+    "IS": {
+      "sharpe_net": -1.515,
+      "sharpe_gross": -1.515,
+      "ann_turn": 0.0,
+      "breakeven_bp_side": 0.0
+    },
+    "OOS": {
+      "sharpe_net": -0.617,
+      "sharpe_gross": -0.617,
+      "ann_turn": 0.0,
+      "breakeven_bp_side": 0.0
+    }
+  },
+  "arms": {
+    "CR_REV_4H": {
+      "taker_10bp": {
+        "IS": {
+          "sharpe_net": -2.837,
+          "sharpe_gross": 1.788,
+          "ann_turn": 1606.3,
+          "breakeven_bp_side": 3.86
+        },
+        "OOS": {
+          "sharpe_net": -6.437,
+          "sharpe_gross": -1.141,
+          "ann_turn": 1627.4,
+          "breakeven_bp_side": -2.13
+        },
+        "null_pct_IS": 96.0,
+        "null_pct_OOS": 38.0
+      },
+      "maker_5bp": {
+        "IS": {
+          "sharpe_net": -0.529,
+          "sharpe_gross": 1.788,
+          "ann_turn": 1606.3,
+          "breakeven_bp_side": 3.86
+        },
+        "OOS": {
+          "sharpe_net": -3.808,
+          "sharpe_gross": -1.141,
+          "ann_turn": 1627.4,
+          "breakeven_bp_side": -2.13
+        }
+      },
+      "pass_bar": false
+    },
+    "CR_MOM_24H": {
+      "taker_10bp": {
+        "IS": {
+          "sharpe_net": -2.032,
+          "sharpe_gross": -0.394,
+          "ann_turn": 824.4,
+          "breakeven_bp_side": -2.4
+        },
+        "OOS": {
+          "sharpe_net": -1.079,
+          "sharpe_gross": 1.184,
+          "ann_turn": 923.2,
+          "breakeven_bp_side": 5.23
+        },
+        "null_pct_IS": 41.0,
+        "null_pct_OOS": 73.5
+      },
+      "maker_5bp": {
+        "IS": {
+          "sharpe_net": -1.215,
+          "sharpe_gross": -0.394,
+          "ann_turn": 824.4,
+          "breakeven_bp_side": -2.4
+        },
+        "OOS": {
+          "sharpe_net": 0.052,
+          "sharpe_gross": 1.184,
+          "ann_turn": 923.2,
+          "breakeven_bp_side": 5.23
+        }
+      },
+      "pass_bar": false
+    },
+    "CR_BREAK_48H": {
+      "taker_10bp": {
+        "IS": {
+          "sharpe_net": -0.808,
+          "sharpe_gross": -0.332,
+          "ann_turn": 237.7,
+          "breakeven_bp_side": -6.97
+        },
+        "OOS": {
+          "sharpe_net": 0.719,
+          "sharpe_gross": 1.314,
+          "ann_turn": 241.9,
+          "breakeven_bp_side": 22.1
+        },
+        "null_pct_IS": 38.0,
+        "null_pct_OOS": 79.5
+      },
+      "maker_5bp": {
+        "IS": {
+          "sharpe_net": -0.57,
+          "sharpe_gross": -0.332,
+          "ann_turn": 237.7,
+          "breakeven_bp_side": -6.97
+        },
+        "OOS": {
+          "sharpe_net": 1.016,
+          "sharpe_gross": 1.314,
+          "ann_turn": 241.9,
+          "breakeven_bp_side": 22.1
+        }
+      },
+      "pass_bar": false
+    },
+    "CR_PAIR_ETH_BTC": {
+      "taker_10bp": {
+        "IS": {
+          "sharpe_net": -4.431,
+          "sharpe_gross": 1.604,
+          "ann_turn": 706.0,
+          "breakeven_bp_side": 2.62
+        },
+        "OOS": {
+          "sharpe_net": -5.29,
+          "sharpe_gross": 2.389,
+          "ann_turn": 752.4,
+          "breakeven_bp_side": 3.06
+        },
+        "null_pct_IS": 98.5,
+        "null_pct_OOS": 94.0
+      },
+      "maker_5bp": {
+        "IS": {
+          "sharpe_net": -1.452,
+          "sharpe_gross": 1.604,
+          "ann_turn": 706.0,
+          "breakeven_bp_side": 2.62
+        },
+        "OOS": {
+          "sharpe_net": -1.51,
+          "sharpe_gross": 2.389,
+          "ann_turn": 752.4,
+          "breakeven_bp_side": 3.06
+        }
+      },
+      "pass_bar": false
+    }
+  },
+  "verdict": "FAIL"
+}

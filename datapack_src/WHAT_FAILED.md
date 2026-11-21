@@ -113,3 +113,14 @@ lag:
 **Why this matters:** Throwing ML at daily price/technical features — even with lagged macro and SEC
 fundamentals — does not create an alpha signal when the underlying features lack net edge after costs.
 
+### Standalone PIT SEC anomalies & 1H OKX crypto — FAIL (EXP-0022, EXP-0023, 2026-11-21)
+- **EXP-0022 (62 US GAAP large caps, quarterly 63d rebalance on non-restated `pit_fundamentals.csv`, 5 bp/side):**
+  Tested 4 fundamental mechanisms standalone (`F_NEG_ACCRUALS` Sloan accruals, `F_CFO_ASSETS`, `F_REV_YOY`,
+  `F_QUALITY_COMP`). Sloan accruals was positive across both halves (IS +0.624 / OOS +0.947, 93.5th / 92.0th pct,
+  long-only OOS +2.015 vs EW +1.830), falling short of the 98.75th-pct power bar on a 62-firm universe.
+- **EXP-0023 (OKX BTCUSDT + ETHUSDT 9,999 confirmed 1H bars, 2025-10..2026-11, 10 bp/side taker):**
+  `CR_PAIR_ETH_BTC` (24h spread reversion) showed genuine gross Sharpe (+1.604 IS / +2.389 OOS, breakeven
+  +2.62 / +3.06 bp/side) that was wiped out by OKX taker fees (−4.43 / −5.29 net at 10 bp; −1.51 at 5 bp maker).
+  Matches the hourly FX cost wall in EXP-0017/0018.
+
+
