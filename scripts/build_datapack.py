@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.6.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.7.zip
 """
 from __future__ import annotations
 
@@ -433,6 +433,28 @@ DATASETS = [
                   "Form 4 rows are stored but NOT parsed into insider transactions yet (declared gap)."],
          use_for=["valuation ratios", "earnings-reaction studies", "screener joins", "insider-flow work"],
          leak_rule="A statement is known on `filed`, not on `period_end` (typically 30-60 days later)."),
+    dict(id="congress_trades", src=["data/congress/ptrs_index.csv", "data/congress/congress_trades.csv",
+                                     "data/congress/MANIFEST_CONGRESS.json",
+                                     "research/THIRD_PARTY_REVIEW_day_trader_skill.md"],
+         kind="fundamental", grade="A",
+         title="US House congressional trades, parsed from Clerk PTR PDFs (6,365 transactions)",
+         card="The index of every Periodic Transaction Report filed 2019-2026 (3,207 filings), plus parsed "
+              "transactions from the most recent 700 PDFs: member, state/district, transaction type "
+              "(purchase/sale), transaction date, NOTIFICATION date, FILING date, amount range, asset "
+              "description, ticker guess and House asset-type code. Text extracted from PDFs with pypdf; "
+              "the community S3 mirrors are dead, so the official documents are the only route.",
+         caveats=["STOCK Act allows up to 45 days of disclosure lag: use filed_date as available_from, "
+                  "never transaction_date.",
+                  "Amounts are disclosure RANGES; amount_mid is an approximation, not a size.",
+                  "[ST] in the description is an asset TYPE code, not a ticker — ticker_guess comes from "
+                  "the (PAREN) field.",
+                  "173 of 700 PDFs yielded no rows (layout variance); the manifest reports the gap.",
+                  "House only; Senate eFD needs an interactive agreement and is not covered.",
+                  "EXP-0019 tested this and FAILED the pre-declared bar (halves disagree: 0th vs 99.5th "
+                  "percentile) — treat as raw material, not a signal."],
+         use_for=["non-price information studies", "narrative context on a name",
+                  "a long-run sample once the collector accumulates filings"],
+         leak_rule="Known on filed_date only."),
     dict(id="insider_transactions", src=["data/sec/insider_transactions.csv",
                                           "data/sec/MANIFEST_INSIDER.json"],
          kind="fundamental", grade="A",
@@ -585,7 +607,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.6",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.7",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -631,7 +653,7 @@ def main() -> None:
 
     # ---- results json (all artifacts an AI may want to read quickly)
     for rel in ["research/artifacts/cot_panel.json", "research/artifacts/event_conditional.json",
-                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "research/artifacts/congress_trades.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
                 "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
@@ -687,7 +709,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.6.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.7.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

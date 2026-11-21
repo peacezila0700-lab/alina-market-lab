@@ -51,6 +51,15 @@ look-ahead bug in this repo's own code. Treat every number here as *evidence*, n
    measuring luck. Random selection loses ~0.3 Sharpe after costs — that is the sanity check.
 6. **Never martingale.** 5 of 5 instruments in the grid/doubling test were wiped.
 
+## New in v2.7 (what to actually use)
+- `congress_trades` — 6,365 parsed House PTR transactions + the full 2019-2026 PTR index. First dataset of
+  genuinely NON-PRICE information. Use `filed_date`, never `transaction_date` (45-day lag).
+- `research/THIRD_PARTY_REVIEW_day_trader_skill.md` — review of the `day-trader-skill` repo: what to keep
+  (its opening-range-breakout definition, its clock discipline), what to ignore (its Time Machine has no
+  costs at all), and why a GROSS replay distribution is dangerous next to a real account.
+- `PITFALLS.md` #17-#18 plus EXP-0019 as the canonical example of why a both-halves bar matters: the same
+  dataset gave the 0th percentile in-sample and the 99.5th out-of-sample.
+
 ## New in v2.5 — the fundamental/news/macro layer (what to actually use)
 - `technical_indicators` — 209 instruments × 40 indicators, one canonical definition set, plus
   `MANIFEST_TECH.json` mapping every column to momentum / volatility / trend / volume.

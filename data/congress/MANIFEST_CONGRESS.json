@@ -1,0 +1,20 @@
+{
+  "built_utc": "2026-11-21T06:33:31+00:00",
+  "source": "disclosures-clerk.house.gov (House Clerk financial disclosure index + PTR PDFs), text extracted with pypdf",
+  "years_indexed": [
+    2019,
+    2026
+  ],
+  "ptr_filings_indexed": 4623,
+  "ptr_parsed": 700,
+  "failed": 0,
+  "empty": 173,
+  "rows": 6365,
+  "caveats": [
+    "STOCK Act allows up to 45 days between trade and disclosure: use filed_date as available_from, never transaction_date.",
+    "Amounts are ranges; amount_mid is an approximation, not a size.",
+    "Asset type code [ST] is a stock, [GS] a government security \u2014 the bracketed code is NOT a ticker; ticker_guess comes from the (PAREN) in the description.",
+    "Partial sample only (--max-ptr); the index covers every filing in the years indexed.",
+    "House only. Senate eFD needs an interactive agreement flow and is not covered."
+  ]
+}

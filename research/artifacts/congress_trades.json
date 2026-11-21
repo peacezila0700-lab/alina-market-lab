@@ -1,0 +1,31 @@
+{
+  "experiment": "EXP-0019",
+  "hypothesis": "H21",
+  "design": " (written before the result)\n-------------------------------------------------\nData      : data/congress/congress_trades.csv (6,365 parsed transactions, 102 members, filed 2025-07-24 ..\n            2026-11-19) joined to data/stocks/ (115 large caps). 1,186 transactions match a price series\n            in 61 tickers: 616 purchases, 566 sales, 4 exchanges (dropped).\nEvents    : purchase = type 'P'; sale = type 'S' or 'S (partial)'.\nTiming    : the event date is `filed_date`, NOT `transaction_date` \u2014 the STOCK Act allows a 45-day lag and\n            a study that uses transaction_date is trading on information nobody had.\nTarget    : forward 21-trading-day total return of the stock from the first close at or after filed_date,\n            expressed as EXCESS over the equal-weight mean of all 61 covered stocks over the same window\n            (so a market-wide selloff cannot masquerade as an effect \u2014 this repo has been bitten by that\n            before, see test_cot_panel.py).\nTests     : 1) difference in mean excess return: purchases \u2212 sales\n            2) purchases vs a MATCHED CONTROL: for each purchase event, draw 200 random dates from the\n               SAME ticker's own history and compute the same 21-day excess return. The distribution of the\n               control mean is the null for \"congressional buying dates are ordinary dates for this stock\".\n            3) the same two checks on the last 30% of events (by filings date).\nCosts     : 2 bp per side, charged once per event (a 21-day hold, not a scalping strategy).\nBar       : purchases must beat their matched control at the 95th percentile AND purchases \u2212 sales must be\n            positive, in BOTH halves. Otherwise FAIL, no exceptions.\n\nKNOWN LIMITATIONS, STATED UP FRONT (they are why a pass here would still be weak evidence):\n  * 16 months of filings, one market regime, one direction (a sharp selloff).\n  * Only 61 large caps have price history in this workspace: the sample is exactly the stocks everyone\n    already watches, where any information advantage is smallest.\n  * Amounts are disclosure RANGES, so no position weighting beyond equal weight.\n  * Filing is voluntary in timing within 45 days: even a real effect could be an artifact of WHEN people\n    choose to disclose (they disclose winners late, losers early) \u2014 that artifact would show up as sales\n    looking better, which is a useful built-in falsification check.\n",
+  "events": 1137,
+  "results": {
+    "is": {
+      "n_buy": 457,
+      "n_sell": 347,
+      "buy_mean_pct": -0.685,
+      "sell_mean_pct": -0.073,
+      "buy_minus_sell_pct": -0.613,
+      "pct_vs_matched_control": 0.0,
+      "control_mean_pct": 0.614,
+      "control_p95_pct": 1.279
+    },
+    "oos": {
+      "n_buy": 139,
+      "n_sell": 194,
+      "buy_mean_pct": 2.603,
+      "sell_mean_pct": -0.784,
+      "buy_minus_sell_pct": 3.387,
+      "pct_vs_matched_control": 99.5,
+      "control_mean_pct": 0.75,
+      "control_p95_pct": 1.904
+    }
+  },
+  "bar": "buy vs matched control >=95th pct AND buy-sell>0 in both halves",
+  "verdict": "FAIL",
+  "verdict_note": "FAIL here is about a 16-month sample, not a proof of no effect; the sample must grow before H21 closes."
+}

@@ -88,3 +88,11 @@ skew, dealer gamma) that is not in the price series at all.
 gives the measured spread and high-low range for every hour of the UTC day, per pair. EURUSD quotes
 0.40-0.50 pips with a 50-65x range/spread ratio in the London-NY overlap and 6-11x at the 21-23 UTC
 rollover. Use it for execution timing, stop placement and instrument choice — not for direction.
+### Congressional trade disclosures — FAIL, but kept open (EXP-0019, 2026-11-21)
+First experiment on genuinely non-price information: 6,365 parsed House PTR transactions, 1,137 with a
+complete 21-day forward window on a 61-name large-cap panel. In-sample the purchases did *worse* than
+random dates in the same stocks (0th percentile); out-of-sample they did better (99.5th percentile).
+The two halves disagree completely, so the bar is not met and no edge is claimed.
+**The lesson is about study design:** a report that showed only the out-of-sample window would have
+announced a 99.5th-percentile congressional edge. It is also not a proof of "no effect" — a 16-month
+sample in one selloff cannot settle it, so H21 stays open instead of being closed.
