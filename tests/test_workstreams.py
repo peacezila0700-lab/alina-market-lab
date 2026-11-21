@@ -243,6 +243,56 @@ def test_exp0036_to_0042_exhaustive_research_and_crypto_trend() -> None:
     assert e42["results"]["SPY"]["Breakeven_bps_per_side"] < 2.0
 
 
+def test_exp0043_to_0048_v222_open_data_validation() -> None:
+    df_exp = pd.read_csv(ROOT / "research" / "EXPERIMENT_LOG.csv")
+    assert len(df_exp) >= 48
+    for eid in ("EXP-0043", "EXP-0044", "EXP-0045", "EXP-0046", "EXP-0047", "EXP-0048"):
+        assert eid in set(df_exp["exp_id"])
+
+    # Verify new v2.22 datasets
+    c19 = pd.read_csv(ROOT / "data" / "crypto_vision" / "spot_daily_19coins.csv.gz")
+    assert len(c19) >= 50000 and c19["symbol"].nunique() == 19
+    um = pd.read_csv(ROOT / "data" / "crypto_vision" / "binance_um_daily_metrics.csv.gz")
+    assert len(um) >= 3500 and um["symbol"].nunique() == 2
+    liq = pd.read_csv(ROOT / "data" / "macro" / "fred_liquidity_credit.csv")
+    assert len(liq) >= 7500 and liq["net_liquidity_bn"].notna().sum() >= 6000
+    kf = pd.read_csv(ROOT / "data" / "macro" / "ken_french_ff5_mom_daily.csv.gz")
+    assert len(kf) >= 15800
+    cot = pd.read_csv(ROOT / "data" / "cot" / "cot_disagg_commodities.csv.gz")
+    assert len(cot) >= 8500
+    f13 = pd.read_csv(ROOT / "data" / "sec" / "sec_13f_quarterly_holdings.csv.gz")
+    assert len(f13) >= 18000 and f13["period_end"].nunique() >= 50 and f13["ticker"].nunique() >= 380
+    assert (pd.to_datetime(f13["available_from"]) > pd.to_datetime(f13["period_end"])).all()
+
+    # Verify EXP-0043..0048 artifact results
+    e43 = json.loads((ROOT / "research" / "artifacts" / "exp0043_crypto_19coins_and_oi_crowding.json").read_text())
+    assert e43["coins_tested"] == 19
+    b19 = e43["basket_all_19_coins_2018_2026"]["EqualWeight_SMA50_VT25"]
+    assert b19["all_10bp"]["sharpe_ex"] > 1.15 and b19["circ_shift300_all_pct"] >= 99.0
+    assert e43["binance_um_oi_ls_metrics_2021_2026"]["BTCUSDT"]["strategies"]["TrendEns_VT25_Deleverage_HighGlobalLS"]["oos_24_26"]["sharpe_ex"] < e43["binance_um_oi_ls_metrics_2021_2026"]["BTCUSDT"]["strategies"]["TrendEns_VT25_Base"]["oos_24_26"]["sharpe_ex"]
+
+    e44 = json.loads((ROOT / "research" / "artifacts" / "exp0044_fed_liquidity_credit_and_svxy_switch.json").read_text())
+    assert e44["risk_meta_23f_vs_27f_netliq_hy_auc"]["n_rows"] >= 3800
+    assert e44["risk_meta_23f_vs_27f_netliq_hy_auc"]["y_on"]["Plus2_NetLiq"] <= e44["risk_meta_23f_vs_27f_netliq_hy_auc"]["y_on"]["Base23"]
+    assert e44["vix_etp_term_switch_2012_2026"]["Switch_SVXY_lt090_else_BIL"]["oos_19_26"]["sharpe"] < 0.0
+
+    e45 = json.loads((ROOT / "research" / "artifacts" / "exp0045_commodity_cot_eia_and_24country_etfs.json").read_text())
+    assert e45["eia_inventories_timing"]["USO"]["All"]["sharpe"] < 0.0
+    assert e45["country_etf_strategies"]["Country_Mom12_1_Top4Bot4_LS"]["all"]["sharpe"] < 0.0
+
+    e46 = json.loads((ROOT / "research" / "artifacts" / "exp0046_ken_french_63y_factor_timing.json").read_text())
+    assert e46["factor_timing_strategies"]["Factor_TSMOM_21d_LS"]["net10bp_recent_10_26"]["sharpe"] < 0.0
+    assert e46["individual_factors_decay"]["HML"]["post2010_10_26"]["sharpe"] < 0.0
+
+    e47 = json.loads((ROOT / "research" / "artifacts" / "exp0047_sec_13f_institutional_crowding.json").read_text())
+    assert e47["universe_matched_with_13f"] >= 380
+    assert e47["strategies"]["13F_breadth_1q_Q5Q1_LS"]["perm200_oos_pct"] < 95.0
+
+    e48 = json.loads((ROOT / "research" / "artifacts" / "exp0048_wikipedia_attention_skew_and_sp500_events.json").read_text())
+    assert e48["cboe_skew_33y"]["SPY_Cash_if_SKEW_zgt15"]["oos_15_26"]["sharpe"] < e48["cboe_skew_33y"]["SPY_BuyHold_33y"]["oos_15_26"]["sharpe"]
+    assert e48["sp500_addition_removal_drift"]["additions"]["5d"]["mean_ex_spy_pct"] < 0.0
+
+
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_") and callable(v)]
     for fn in tests:

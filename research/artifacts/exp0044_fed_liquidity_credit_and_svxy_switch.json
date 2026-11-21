@@ -1,0 +1,275 @@
+{
+  "generated_utc": "2026-11-21T17:55:37.419444+00:00",
+  "experiment": "EXP-0044",
+  "spy_net_liquidity_hy_timing": {
+    "SPY_BuyHold": {
+      "is_08_16": {
+        "sharpe": 0.416,
+        "cagr_pct": 7.06,
+        "maxdd_pct": -51.88,
+        "calmar": 0.136
+      },
+      "oos_17_26": {
+        "sharpe": 0.675,
+        "cagr_pct": 13.85,
+        "maxdd_pct": -33.7,
+        "calmar": 0.411
+      },
+      "all": {
+        "sharpe": 0.539,
+        "cagr_pct": 10.56,
+        "maxdd_pct": -51.88,
+        "calmar": 0.204
+      },
+      "shift_oos_pct": null
+    },
+    "SPY_if_NetLiq63_Pos_else_BIL": {
+      "is_08_16": {
+        "sharpe": 0.415,
+        "cagr_pct": 6.34,
+        "maxdd_pct": -43.11,
+        "calmar": 0.147
+      },
+      "oos_17_26": {
+        "sharpe": 0.587,
+        "cagr_pct": 10.1,
+        "maxdd_pct": -33.7,
+        "calmar": 0.3
+      },
+      "all": {
+        "sharpe": 0.489,
+        "cagr_pct": 8.29,
+        "maxdd_pct": -43.11,
+        "calmar": 0.192
+      },
+      "shift_oos_pct": 74.0
+    },
+    "SPY_if_HY_OAS_NotWidening_else_BIL": {
+      "is_08_16": {
+        "sharpe": 0.0,
+        "cagr_pct": 0.17,
+        "maxdd_pct": -0.78,
+        "calmar": 0.22
+      },
+      "oos_17_26": {
+        "sharpe": 0.41,
+        "cagr_pct": 4.79,
+        "maxdd_pct": -8.15,
+        "calmar": 0.587
+      },
+      "all": {
+        "sharpe": 0.297,
+        "cagr_pct": 2.56,
+        "maxdd_pct": -8.15,
+        "calmar": 0.314
+      },
+      "shift_oos_pct": 74.5
+    },
+    "SPY_if_NetLiq_OR_HY_Calm_else_BIL": {
+      "is_08_16": {
+        "sharpe": 0.415,
+        "cagr_pct": 6.34,
+        "maxdd_pct": -43.11,
+        "calmar": 0.147
+      },
+      "oos_17_26": {
+        "sharpe": 0.615,
+        "cagr_pct": 10.72,
+        "maxdd_pct": -33.7,
+        "calmar": 0.318
+      },
+      "all": {
+        "sharpe": 0.503,
+        "cagr_pct": 8.61,
+        "maxdd_pct": -43.11,
+        "calmar": 0.2
+      },
+      "shift_oos_pct": 78.0
+    }
+  },
+  "btc_net_liquidity_hy_timing": {
+    "BTC_BuyHold": {
+      "is_15_20": {
+        "sharpe": 1.537,
+        "cagr_pct": 137.43,
+        "maxdd_pct": -83.4,
+        "calmar": 1.648
+      },
+      "oos_21_26": {
+        "sharpe": 0.442,
+        "cagr_pct": 13.12,
+        "maxdd_pct": -76.63,
+        "calmar": 0.171
+      },
+      "all": {
+        "sharpe": 1.036,
+        "cagr_pct": 62.29,
+        "maxdd_pct": -83.4,
+        "calmar": 0.747
+      },
+      "shift_oos_pct": null
+    },
+    "BTC_if_NetLiq90d_Pos_else_Cash": {
+      "is_15_20": {
+        "sharpe": 1.527,
+        "cagr_pct": 87.11,
+        "maxdd_pct": -62.59,
+        "calmar": 1.392
+      },
+      "oos_21_26": {
+        "sharpe": 0.439,
+        "cagr_pct": 13.82,
+        "maxdd_pct": -64.21,
+        "calmar": 0.215
+      },
+      "all": {
+        "sharpe": 0.998,
+        "cagr_pct": 44.99,
+        "maxdd_pct": -64.21,
+        "calmar": 0.701
+      },
+      "shift_oos_pct": 72.0
+    },
+    "BTC_if_HY_Calm_else_Cash": {
+      "is_15_20": {
+        "sharpe": 0.0,
+        "cagr_pct": 1.05,
+        "maxdd_pct": 0.0,
+        "calmar": 1051.259
+      },
+      "oos_21_26": {
+        "sharpe": 0.053,
+        "cagr_pct": 0.33,
+        "maxdd_pct": -62.08,
+        "calmar": 0.005
+      },
+      "all": {
+        "sharpe": 0.038,
+        "cagr_pct": 0.68,
+        "maxdd_pct": -62.08,
+        "calmar": 0.011
+      },
+      "shift_oos_pct": 23.0
+    }
+  },
+  "risk_meta_23f_vs_27f_netliq_hy_auc": {
+    "sample": "2011-08-01..2026-10-22",
+    "n_rows": 3830,
+    "y_on": {
+      "Base23": 0.7656,
+      "Plus2_NetLiq": 0.7591,
+      "Plus4_NetLiq_T10YIE_Curve": 0.7633
+    },
+    "y_ts": {
+      "Base23": 0.6461,
+      "Plus2_NetLiq": 0.6311,
+      "Plus4_NetLiq_T10YIE_Curve": 0.6522
+    },
+    "vt12_meta_cash_portfolio": {
+      "Base23": {
+        "sharpe": 0.784,
+        "cagr_pct": 9.09,
+        "maxdd_pct": -12.17,
+        "calmar": 0.747
+      },
+      "Plus2_NetLiq": {
+        "sharpe": 0.782,
+        "cagr_pct": 9.03,
+        "maxdd_pct": -11.95,
+        "calmar": 0.756
+      },
+      "Plus4_NetLiq_T10YIE_Curve": {
+        "sharpe": 0.801,
+        "cagr_pct": 9.26,
+        "maxdd_pct": -12.72,
+        "calmar": 0.728
+      }
+    }
+  },
+  "vix_etp_term_switch_2012_2026": {
+    "SVXY_BuyHold": {
+      "is_12_18_incl_volmageddon": {
+        "sharpe": -1.432,
+        "cagr_pct": -93.1,
+        "maxdd_pct": -92.57,
+        "calmar": -1.006
+      },
+      "oos_19_26": {
+        "sharpe": 0.414,
+        "cagr_pct": 11.51,
+        "maxdd_pct": -62.19,
+        "calmar": 0.185
+      },
+      "all": {
+        "sharpe": -0.039,
+        "cagr_pct": -16.95,
+        "maxdd_pct": -94.9,
+        "calmar": -0.179
+      },
+      "shift_oos_pct": null
+    },
+    "Switch_SVXY_lt090_else_BIL": {
+      "is_12_18_incl_volmageddon": {
+        "sharpe": -1.381,
+        "cagr_pct": -23.0,
+        "maxdd_pct": -25.11,
+        "calmar": -0.916
+      },
+      "oos_19_26": {
+        "sharpe": -0.299,
+        "cagr_pct": -5.53,
+        "maxdd_pct": -50.02,
+        "calmar": -0.111
+      },
+      "all": {
+        "sharpe": -0.405,
+        "cagr_pct": -7.55,
+        "maxdd_pct": -50.25,
+        "calmar": -0.15
+      },
+      "shift_oos_pct": 0.0
+    },
+    "Switch_SVXY_lt090_VXZ_gt100_else_BIL": {
+      "is_12_18_incl_volmageddon": {
+        "sharpe": 0.386,
+        "cagr_pct": 9.79,
+        "maxdd_pct": -20.05,
+        "calmar": 0.488
+      },
+      "oos_19_26": {
+        "sharpe": -0.101,
+        "cagr_pct": -4.28,
+        "maxdd_pct": -59.66,
+        "calmar": -0.072
+      },
+      "all": {
+        "sharpe": -0.044,
+        "cagr_pct": -2.88,
+        "maxdd_pct": -59.66,
+        "calmar": -0.048
+      },
+      "shift_oos_pct": 6.5
+    },
+    "Switch_SVXY_lt090_VT15_else_BIL": {
+      "is_12_18_incl_volmageddon": {
+        "sharpe": -1.061,
+        "cagr_pct": -9.63,
+        "maxdd_pct": -13.5,
+        "calmar": -0.714
+      },
+      "oos_19_26": {
+        "sharpe": -0.518,
+        "cagr_pct": -4.65,
+        "maxdd_pct": -36.85,
+        "calmar": -0.126
+      },
+      "all": {
+        "sharpe": -0.566,
+        "cagr_pct": -5.19,
+        "maxdd_pct": -39.26,
+        "calmar": -0.132
+      },
+      "shift_oos_pct": 0.0
+    }
+  }
+}

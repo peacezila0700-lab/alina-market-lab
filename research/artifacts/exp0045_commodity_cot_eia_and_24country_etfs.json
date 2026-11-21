@@ -1,0 +1,540 @@
+{
+  "generated_utc": "2026-11-21T17:52:22.134354+00:00",
+  "experiment": "EXP-0045",
+  "commodity_cot_timing": {
+    "GOLD_GLD": {
+      "BuyHold": {
+        "is": {
+          "sharpe": 0.314,
+          "cagr_pct": 4.05,
+          "maxdd_pct": -45.56,
+          "calmar": 0.089
+        },
+        "oos": {
+          "sharpe": 0.566,
+          "cagr_pct": 11.43,
+          "maxdd_pct": -34.89,
+          "calmar": 0.328
+        },
+        "all": {
+          "sharpe": 0.44,
+          "cagr_pct": 7.65,
+          "maxdd_pct": -45.56,
+          "calmar": 0.168
+        }
+      },
+      "MM_Mom_zgt0": {
+        "is": {
+          "sharpe": -0.6,
+          "cagr_pct": -4.41,
+          "maxdd_pct": -34.53,
+          "calmar": -0.128
+        },
+        "oos": {
+          "sharpe": 0.713,
+          "cagr_pct": 11.86,
+          "maxdd_pct": -22.6,
+          "calmar": 0.524
+        },
+        "all": {
+          "sharpe": 0.24,
+          "cagr_pct": 3.35,
+          "maxdd_pct": -34.53,
+          "calmar": 0.097
+        }
+      },
+      "MM_Contrarian_zlt_m1": {
+        "is": {
+          "sharpe": 0.193,
+          "cagr_pct": 1.41,
+          "maxdd_pct": -29.16,
+          "calmar": 0.048
+        },
+        "oos": {
+          "sharpe": 0.176,
+          "cagr_pct": 3.38,
+          "maxdd_pct": -13.83,
+          "calmar": 0.244
+        },
+        "all": {
+          "sharpe": 0.18,
+          "cagr_pct": 2.38,
+          "maxdd_pct": -29.16,
+          "calmar": 0.082
+        }
+      }
+    },
+    "SILVER_SLV": {
+      "BuyHold": {
+        "is": {
+          "sharpe": 0.28,
+          "cagr_pct": 4.04,
+          "maxdd_pct": -72.37,
+          "calmar": 0.056
+        },
+        "oos": {
+          "sharpe": 0.379,
+          "cagr_pct": 9.97,
+          "maxdd_pct": -64.83,
+          "calmar": 0.154
+        },
+        "all": {
+          "sharpe": 0.332,
+          "cagr_pct": 6.94,
+          "maxdd_pct": -76.28,
+          "calmar": 0.091
+        }
+      },
+      "MM_Mom_zgt0": {
+        "is": {
+          "sharpe": -0.518,
+          "cagr_pct": -7.27,
+          "maxdd_pct": -56.14,
+          "calmar": -0.129
+        },
+        "oos": {
+          "sharpe": 0.373,
+          "cagr_pct": 8.78,
+          "maxdd_pct": -46.64,
+          "calmar": 0.188
+        },
+        "all": {
+          "sharpe": 0.043,
+          "cagr_pct": 0.39,
+          "maxdd_pct": -66.95,
+          "calmar": 0.006
+        }
+      },
+      "MM_Contrarian_zlt_m1": {
+        "is": {
+          "sharpe": 0.056,
+          "cagr_pct": -0.01,
+          "maxdd_pct": -37.52,
+          "calmar": -0.0
+        },
+        "oos": {
+          "sharpe": 0.128,
+          "cagr_pct": 3.37,
+          "maxdd_pct": -33.02,
+          "calmar": 0.102
+        },
+        "all": {
+          "sharpe": 0.095,
+          "cagr_pct": 1.66,
+          "maxdd_pct": -37.52,
+          "calmar": 0.044
+        }
+      }
+    },
+    "PLATINUM_PPLT": {
+      "BuyHold": {
+        "is": {
+          "sharpe": -0.29,
+          "cagr_pct": -7.1,
+          "maxdd_pct": -58.16,
+          "calmar": -0.122
+        },
+        "oos": {
+          "sharpe": 0.178,
+          "cagr_pct": 3.27,
+          "maxdd_pct": -53.36,
+          "calmar": 0.061
+        },
+        "all": {
+          "sharpe": 0.011,
+          "cagr_pct": -1.78,
+          "maxdd_pct": -70.73,
+          "calmar": -0.025
+        }
+      },
+      "MM_Mom_zgt0": {
+        "is": {
+          "sharpe": -0.867,
+          "cagr_pct": -6.09,
+          "maxdd_pct": -44.19,
+          "calmar": -0.138
+        },
+        "oos": {
+          "sharpe": 0.006,
+          "cagr_pct": -0.3,
+          "maxdd_pct": -54.96,
+          "calmar": -0.006
+        },
+        "all": {
+          "sharpe": -0.152,
+          "cagr_pct": -3.09,
+          "maxdd_pct": -71.12,
+          "calmar": -0.043
+        }
+      },
+      "MM_Contrarian_zlt_m1": {
+        "is": {
+          "sharpe": 0.4,
+          "cagr_pct": 3.49,
+          "maxdd_pct": -21.73,
+          "calmar": 0.161
+        },
+        "oos": {
+          "sharpe": 0.495,
+          "cagr_pct": 7.49,
+          "maxdd_pct": -18.53,
+          "calmar": 0.404
+        },
+        "all": {
+          "sharpe": 0.452,
+          "cagr_pct": 5.58,
+          "maxdd_pct": -21.73,
+          "calmar": 0.257
+        }
+      }
+    },
+    "WTI_NYMEX_USO": {
+      "BuyHold": {
+        "is": {
+          "sharpe": -0.179,
+          "cagr_pct": -10.67,
+          "maxdd_pct": -82.37,
+          "calmar": -0.13
+        },
+        "oos": {
+          "sharpe": 0.247,
+          "cagr_pct": 4.19,
+          "maxdd_pct": -86.75,
+          "calmar": 0.048
+        },
+        "all": {
+          "sharpe": 0.055,
+          "cagr_pct": -3.57,
+          "maxdd_pct": -95.28,
+          "calmar": -0.038
+        }
+      },
+      "MM_Mom_zgt0": {
+        "is": {
+          "sharpe": -0.904,
+          "cagr_pct": -12.01,
+          "maxdd_pct": -73.56,
+          "calmar": -0.163
+        },
+        "oos": {
+          "sharpe": 0.806,
+          "cagr_pct": 17.69,
+          "maxdd_pct": -19.92,
+          "calmar": 0.888
+        },
+        "all": {
+          "sharpe": 0.105,
+          "cagr_pct": 1.67,
+          "maxdd_pct": -73.56,
+          "calmar": 0.023
+        }
+      },
+      "MM_Contrarian_zlt_m1": {
+        "is": {
+          "sharpe": 0.126,
+          "cagr_pct": 0.84,
+          "maxdd_pct": -49.44,
+          "calmar": 0.017
+        },
+        "oos": {
+          "sharpe": -0.212,
+          "cagr_pct": -4.68,
+          "maxdd_pct": -58.24,
+          "calmar": -0.08
+        },
+        "all": {
+          "sharpe": -0.073,
+          "cagr_pct": -1.94,
+          "maxdd_pct": -58.24,
+          "calmar": -0.033
+        }
+      }
+    },
+    "NATGAS_UNG": {
+      "BuyHold": {
+        "is": {
+          "sharpe": -0.738,
+          "cagr_pct": -31.95,
+          "maxdd_pct": -97.45,
+          "calmar": -0.328
+        },
+        "oos": {
+          "sharpe": -0.196,
+          "cagr_pct": -21.88,
+          "maxdd_pct": -94.28,
+          "calmar": -0.232
+        },
+        "all": {
+          "sharpe": -0.42,
+          "cagr_pct": -27.12,
+          "maxdd_pct": -99.72,
+          "calmar": -0.272
+        }
+      },
+      "MM_Mom_zgt0": {
+        "is": {
+          "sharpe": -0.272,
+          "cagr_pct": -10.03,
+          "maxdd_pct": -62.87,
+          "calmar": -0.16
+        },
+        "oos": {
+          "sharpe": -0.035,
+          "cagr_pct": -7.84,
+          "maxdd_pct": -86.93,
+          "calmar": -0.09
+        },
+        "all": {
+          "sharpe": -0.122,
+          "cagr_pct": -8.95,
+          "maxdd_pct": -86.93,
+          "calmar": -0.103
+        }
+      },
+      "MM_Contrarian_zlt_m1": {
+        "is": {
+          "sharpe": -0.512,
+          "cagr_pct": -7.78,
+          "maxdd_pct": -61.48,
+          "calmar": -0.127
+        },
+        "oos": {
+          "sharpe": -0.076,
+          "cagr_pct": -1.3,
+          "maxdd_pct": -47.6,
+          "calmar": -0.027
+        },
+        "all": {
+          "sharpe": -0.245,
+          "cagr_pct": -4.62,
+          "maxdd_pct": -74.93,
+          "calmar": -0.062
+        }
+      }
+    },
+    "CORN_DBA": {
+      "BuyHold": {
+        "is": {
+          "sharpe": -0.178,
+          "cagr_pct": -3.65,
+          "maxdd_pct": -48.67,
+          "calmar": -0.075
+        },
+        "oos": {
+          "sharpe": 0.283,
+          "cagr_pct": 5.6,
+          "maxdd_pct": -31.18,
+          "calmar": 0.18
+        },
+        "all": {
+          "sharpe": 0.038,
+          "cagr_pct": 0.84,
+          "maxdd_pct": -61.88,
+          "calmar": 0.014
+        }
+      },
+      "MM_Mom_zgt0": {
+        "is": {
+          "sharpe": -0.784,
+          "cagr_pct": -4.26,
+          "maxdd_pct": -35.3,
+          "calmar": -0.121
+        },
+        "oos": {
+          "sharpe": 0.085,
+          "cagr_pct": 2.94,
+          "maxdd_pct": -23.92,
+          "calmar": 0.123
+        },
+        "all": {
+          "sharpe": -0.218,
+          "cagr_pct": -0.75,
+          "maxdd_pct": -48.4,
+          "calmar": -0.015
+        }
+      },
+      "MM_Contrarian_zlt_m1": {
+        "is": {
+          "sharpe": 0.081,
+          "cagr_pct": 0.36,
+          "maxdd_pct": -9.59,
+          "calmar": 0.038
+        },
+        "oos": {
+          "sharpe": 0.392,
+          "cagr_pct": 4.96,
+          "maxdd_pct": -11.64,
+          "calmar": 0.426
+        },
+        "all": {
+          "sharpe": 0.25,
+          "cagr_pct": 2.62,
+          "maxdd_pct": -11.64,
+          "calmar": 0.225
+        }
+      }
+    }
+  },
+  "eia_inventories_timing": {
+    "USO": {
+      "BuyHold": {
+        "sharpe": 0.014,
+        "cagr_pct": -4.75,
+        "maxdd_pct": -95.28,
+        "calmar": -0.05
+      },
+      "EIA_Draw_Bullish_IS": {
+        "sharpe": -0.367,
+        "cagr_pct": -7.55,
+        "maxdd_pct": -62.38,
+        "calmar": -0.121
+      },
+      "EIA_Draw_Bullish_OOS": {
+        "sharpe": 0.077,
+        "cagr_pct": 2.01,
+        "maxdd_pct": -53.17,
+        "calmar": 0.038
+      },
+      "All": {
+        "sharpe": -0.114,
+        "cagr_pct": -2.64,
+        "maxdd_pct": -62.38,
+        "calmar": -0.042
+      }
+    },
+    "UNG": {
+      "BuyHold": {
+        "sharpe": -0.368,
+        "cagr_pct": -24.86,
+        "maxdd_pct": -99.35,
+        "calmar": -0.25
+      },
+      "EIA_Draw_Bullish_IS": {
+        "sharpe": -0.144,
+        "cagr_pct": -4.42,
+        "maxdd_pct": -50.39,
+        "calmar": -0.088
+      },
+      "EIA_Draw_Bullish_OOS": {
+        "sharpe": -0.231,
+        "cagr_pct": -6.63,
+        "maxdd_pct": -63.03,
+        "calmar": -0.105
+      },
+      "All": {
+        "sharpe": -0.194,
+        "cagr_pct": -5.59,
+        "maxdd_pct": -73.12,
+        "calmar": -0.076
+      }
+    }
+  },
+  "country_19_etfs_common_start": "2013-02-06",
+  "country_etf_strategies": {
+    "Country_EqualWeight_19": {
+      "is": {
+        "sharpe": 0.125,
+        "cagr_pct": 1.11,
+        "maxdd_pct": -31.68,
+        "calmar": 0.035
+      },
+      "oos": {
+        "sharpe": 0.39,
+        "cagr_pct": 8.57,
+        "maxdd_pct": -40.06,
+        "calmar": 0.214
+      },
+      "all": {
+        "sharpe": 0.287,
+        "cagr_pct": 5.31,
+        "maxdd_pct": -42.91,
+        "calmar": 0.124
+      },
+      "perm200_oos_pct": null
+    },
+    "Country_Mom12_1_Top4_LO": {
+      "is": {
+        "sharpe": -0.088,
+        "cagr_pct": -2.45,
+        "maxdd_pct": -33.42,
+        "calmar": -0.073
+      },
+      "oos": {
+        "sharpe": 0.573,
+        "cagr_pct": 13.5,
+        "maxdd_pct": -32.69,
+        "calmar": 0.413
+      },
+      "all": {
+        "sharpe": 0.328,
+        "cagr_pct": 6.38,
+        "maxdd_pct": -33.42,
+        "calmar": 0.191
+      },
+      "perm200_oos_pct": 98.5
+    },
+    "Country_Mom12_1_Top4Bot4_LS": {
+      "is": {
+        "sharpe": -0.704,
+        "cagr_pct": -5.07,
+        "maxdd_pct": -31.31,
+        "calmar": -0.162
+      },
+      "oos": {
+        "sharpe": 0.198,
+        "cagr_pct": 1.35,
+        "maxdd_pct": -15.0,
+        "calmar": 0.09
+      },
+      "all": {
+        "sharpe": -0.142,
+        "cagr_pct": -1.45,
+        "maxdd_pct": -33.44,
+        "calmar": -0.043
+      },
+      "perm200_oos_pct": 72.5
+    },
+    "Country_Rev21d_Top4Bot4_LS": {
+      "is": {
+        "sharpe": 0.374,
+        "cagr_pct": 2.33,
+        "maxdd_pct": -7.7,
+        "calmar": 0.303
+      },
+      "oos": {
+        "sharpe": -0.076,
+        "cagr_pct": -1.02,
+        "maxdd_pct": -28.9,
+        "calmar": -0.035
+      },
+      "all": {
+        "sharpe": 0.09,
+        "cagr_pct": 0.4,
+        "maxdd_pct": -28.9,
+        "calmar": 0.014
+      },
+      "perm200_oos_pct": 59.0
+    },
+    "Country_SMA126_VT12_Cash": {
+      "is": {
+        "sharpe": -0.002,
+        "cagr_pct": 0.2,
+        "maxdd_pct": -12.91,
+        "calmar": 0.015
+      },
+      "oos": {
+        "sharpe": 0.126,
+        "cagr_pct": 3.28,
+        "maxdd_pct": -8.28,
+        "calmar": 0.396
+      },
+      "all": {
+        "sharpe": 0.072,
+        "cagr_pct": 1.95,
+        "maxdd_pct": -15.27,
+        "calmar": 0.128
+      },
+      "perm200_oos_pct": 54.0
+    }
+  }
+}

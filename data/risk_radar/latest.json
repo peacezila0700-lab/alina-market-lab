@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-21T17:31:10+00:00",
+  "generated_utc": "2026-11-21T18:19:55+00:00",
   "run_date": "2026-11-21",
   "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).",
   "overall_risk_classification": "HIGH",
@@ -269,6 +269,12 @@
     "suggested_btc_ens_vt25_pct": 0.0,
     "suggested_btc_sma50_vt25_pct": 0.0,
     "suggested_cash_pct": 100.0,
-    "exp0041_note": "EXP-0041 (2015-2026 BTC 11.5y EFFR excess): SMA50_VT25 Sh +1.665 DD -33.5% (Shift=99.9%); TrendEns_VT25 Sh +1.590 DD -27.8% (Shift=99.9%). Monitoring/defense reference only."
+    "breadth_19coins_exp0043": {
+      "as_of_date": "2026-10-31",
+      "coins_above_sma50": 1,
+      "coins_total": 19,
+      "pct_above_sma50": 5.3
+    },
+    "exp0041_note": "EXP-0041 (11.5y BTC): SMA50_VT25 Sh +1.665 DD -33.5% (Shift=99.9%). EXP-0043 (2018-2026 19-coin SF): EW SMA50_VT25 Sh +1.176 DD -19.1% vs BH +0.661 DD -81.8% (15/19 coins, Shift=99.67%). Monitoring/defense reference only."
   }
 }

@@ -2,7 +2,7 @@
 
 > **RISK MONITORING TOOL ONLY — Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).**
 
-Generated UTC: `2026-11-21T17:31:10+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `9/9`
+Generated UTC: `2026-11-21T18:19:55+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `9/9`
 
 ## 1. Panel Status, Data Sources, Freshness & Thresholds
 | Panel | Last Updated | Age (d) | Freshness | Risk Class | Key Metrics | Warning |
@@ -26,8 +26,8 @@ Generated UTC: `2026-11-21T17:31:10+00:00` | Overall Risk Classification: **`HIG
 ## 3. FX Intraday Rollover & Cost-Shock Guard (`EXP-0030 Track B`)
 - **`EURGBP H1` Last Bar:** `2026-11-20T18:00:00+00:00` | Spread `0.8 pips` (`z72=-0.16`) | In 6h Rollover Hazard (`16–23 UTC`): `True`
 
-## 4. Crypto Daily Trend Regime & VolTarget25% Monitor (`EXP-0041`, Monitoring Reference)
-- **`BTC-USD` As-Of `2026-11-21`:** Close `$59,958.45` | `SMA(50)=$77,133.24` (`Above=False`) | `TrendEns(20,40,60,90,120)=0.00` | `RV21=51.06%`
+## 4. Crypto Daily Trend Regime & VolTarget25% Monitor (`EXP-0041 + EXP-0043`, Monitoring Reference)
+- **`BTC-USD` As-Of `2026-11-21`:** Close `$59,958.45` | `SMA(50)=$77,133.24` (`Above=False`) | `TrendEns(20..120)=0.00` | `RV21=51.06%` | `19-Coin Breadth >SMA50`: `1/19 (5.3%)`
 - **Vol-Targeted Reference (`VT25%`):** `TrendEns x VT25 = 0.0%` (`SMA50 x VT25 = 0.0%`) | Cash/EFFR `100.0%`
 
 ## 5. Active Risk Alerts

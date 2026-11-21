@@ -1,0 +1,206 @@
+{
+  "generated_utc": "2026-11-21T18:15:40.497268+00:00",
+  "experiment": "EXP-0047",
+  "universe_matched_with_13f": 386,
+  "sample": "2017-03-02..2026-11-20",
+  "strategies": {
+    "EqualWeight_Universe": {
+      "is_17_21": {
+        "sharpe": 1.013,
+        "cagr_pct": 22.07,
+        "maxdd_pct": -37.51
+      },
+      "oos_22_26": {
+        "sharpe": 0.715,
+        "cagr_pct": 15.83,
+        "maxdd_pct": -20.38
+      },
+      "all": {
+        "sharpe": 0.874,
+        "cagr_pct": 18.9,
+        "maxdd_pct": -37.51
+      },
+      "perm200_oos_pct": null
+    },
+    "13F_breadth_1q_Q5Q1_LS": {
+      "is_17_21": {
+        "sharpe": 0.107,
+        "cagr_pct": 0.55,
+        "maxdd_pct": -16.56
+      },
+      "oos_22_26": {
+        "sharpe": 0.361,
+        "cagr_pct": 3.32,
+        "maxdd_pct": -16.86
+      },
+      "all": {
+        "sharpe": 0.247,
+        "cagr_pct": 1.93,
+        "maxdd_pct": -23.57
+      },
+      "perm200_oos_pct": 71.5
+    },
+    "13F_breadth_1q_Top25_LO": {
+      "is_17_21": {
+        "sharpe": 1.156,
+        "cagr_pct": 32.99,
+        "maxdd_pct": -34.63
+      },
+      "oos_22_26": {
+        "sharpe": 0.755,
+        "cagr_pct": 26.81,
+        "maxdd_pct": -40.06
+      },
+      "all": {
+        "sharpe": 0.925,
+        "cagr_pct": 29.85,
+        "maxdd_pct": -44.62
+      },
+      "perm200_oos_pct": 53.5
+    },
+    "13F_breadth_4q_Q5Q1_LS": {
+      "is_17_21": {
+        "sharpe": 0.43,
+        "cagr_pct": 3.96,
+        "maxdd_pct": -21.92
+      },
+      "oos_22_26": {
+        "sharpe": 0.134,
+        "cagr_pct": 0.88,
+        "maxdd_pct": -19.43
+      },
+      "all": {
+        "sharpe": 0.276,
+        "cagr_pct": 2.4,
+        "maxdd_pct": -25.88
+      },
+      "perm200_oos_pct": 56.5
+    },
+    "13F_breadth_4q_Top25_LO": {
+      "is_17_21": {
+        "sharpe": 1.247,
+        "cagr_pct": 37.81,
+        "maxdd_pct": -38.35
+      },
+      "oos_22_26": {
+        "sharpe": 0.535,
+        "cagr_pct": 17.84,
+        "maxdd_pct": -43.19
+      },
+      "all": {
+        "sharpe": 0.844,
+        "cagr_pct": 27.4,
+        "maxdd_pct": -44.66
+      },
+      "perm200_oos_pct": 25.5
+    },
+    "13F_anti_hhi_Q5Q1_LS": {
+      "is_17_21": {
+        "sharpe": -0.083,
+        "cagr_pct": -0.41,
+        "maxdd_pct": -11.09
+      },
+      "oos_22_26": {
+        "sharpe": -0.648,
+        "cagr_pct": -2.91,
+        "maxdd_pct": -22.21
+      },
+      "all": {
+        "sharpe": -0.38,
+        "cagr_pct": -1.67,
+        "maxdd_pct": -22.21
+      },
+      "perm200_oos_pct": 27.5
+    },
+    "13F_anti_hhi_Top25_LO": {
+      "is_17_21": {
+        "sharpe": 0.961,
+        "cagr_pct": 24.71,
+        "maxdd_pct": -42.25
+      },
+      "oos_22_26": {
+        "sharpe": 0.534,
+        "cagr_pct": 13.45,
+        "maxdd_pct": -24.52
+      },
+      "all": {
+        "sharpe": 0.766,
+        "cagr_pct": 18.93,
+        "maxdd_pct": -42.25
+      },
+      "perm200_oos_pct": 27.0
+    },
+    "13F_low_put_call_filers_Q5Q1_LS": {
+      "is_17_21": {
+        "sharpe": -0.867,
+        "cagr_pct": -2.66,
+        "maxdd_pct": -14.03
+      },
+      "oos_22_26": {
+        "sharpe": 0.625,
+        "cagr_pct": 2.26,
+        "maxdd_pct": -4.62
+      },
+      "all": {
+        "sharpe": -0.048,
+        "cagr_pct": -0.22,
+        "maxdd_pct": -14.03
+      },
+      "perm200_oos_pct": 81.0
+    },
+    "13F_low_put_call_filers_Top25_LO": {
+      "is_17_21": {
+        "sharpe": 0.753,
+        "cagr_pct": 16.81,
+        "maxdd_pct": -44.94
+      },
+      "oos_22_26": {
+        "sharpe": 1.117,
+        "cagr_pct": 26.17,
+        "maxdd_pct": -21.06
+      },
+      "all": {
+        "sharpe": 0.915,
+        "cagr_pct": 21.42,
+        "maxdd_pct": -44.94
+      },
+      "perm200_oos_pct": 90.5
+    },
+    "13F_low_put_call_shares_Q5Q1_LS": {
+      "is_17_21": {
+        "sharpe": -1.371,
+        "cagr_pct": -4.7,
+        "maxdd_pct": -22.34
+      },
+      "oos_22_26": {
+        "sharpe": 0.374,
+        "cagr_pct": 2.03,
+        "maxdd_pct": -16.6
+      },
+      "all": {
+        "sharpe": -0.265,
+        "cagr_pct": -1.38,
+        "maxdd_pct": -23.01
+      },
+      "perm200_oos_pct": 72.5
+    },
+    "13F_low_put_call_shares_Top25_LO": {
+      "is_17_21": {
+        "sharpe": 0.861,
+        "cagr_pct": 18.89,
+        "maxdd_pct": -40.59
+      },
+      "oos_22_26": {
+        "sharpe": 0.919,
+        "cagr_pct": 19.18,
+        "maxdd_pct": -18.57
+      },
+      "all": {
+        "sharpe": 0.878,
+        "cagr_pct": 19.03,
+        "maxdd_pct": -40.59
+      },
+      "perm200_oos_pct": 75.5
+    }
+  }
+}

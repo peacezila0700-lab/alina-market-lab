@@ -1,0 +1,207 @@
+{
+  "generated_utc": "2026-11-21T18:14:34.700905+00:00",
+  "experiment": "EXP-0048",
+  "wikipedia_attention": {
+    "BTCUSD": {
+      "spearman_ic7d": 0.0499,
+      "BuyHold": {
+        "is": 1.442,
+        "oos": 0.291,
+        "all": 1.009
+      },
+      "Contrarian_Cash_if_zgt2": {
+        "is": 1.208,
+        "oos": 0.262,
+        "all": 0.849
+      },
+      "FOMO_Long_if_zgt05": {
+        "is": 0.835,
+        "oos": -0.118,
+        "all": 0.502
+      }
+    },
+    "ETHUSD": {
+      "spearman_ic7d": 0.0636,
+      "BuyHold": {
+        "is": 1.087,
+        "oos": 0.061,
+        "all": 0.616
+      },
+      "Contrarian_Cash_if_zgt2": {
+        "is": 0.88,
+        "oos": -0.029,
+        "all": 0.462
+      },
+      "FOMO_Long_if_zgt05": {
+        "is": 1.181,
+        "oos": 0.188,
+        "all": 0.768
+      }
+    },
+    "SP500": {
+      "spearman_ic7d": -0.0296,
+      "BuyHold": {
+        "is": 0.946,
+        "oos": 0.42,
+        "all": 0.709
+      },
+      "Contrarian_Cash_if_zgt2": {
+        "is": 1.178,
+        "oos": 0.248,
+        "all": 0.757
+      },
+      "FOMO_Long_if_zgt05": {
+        "is": 0.139,
+        "oos": -0.254,
+        "all": -0.024
+      }
+    },
+    "XAUUSD": {
+      "spearman_ic7d": 0.0192,
+      "BuyHold": {
+        "is": 0.459,
+        "oos": 0.606,
+        "all": 0.531
+      },
+      "Contrarian_Cash_if_zgt2": {
+        "is": 0.404,
+        "oos": 0.389,
+        "all": 0.392
+      },
+      "FOMO_Long_if_zgt05": {
+        "is": -0.783,
+        "oos": 0.426,
+        "all": -0.116
+      }
+    },
+    "WTI": {
+      "spearman_ic7d": -0.0289,
+      "BuyHold": {
+        "is": 0.028,
+        "oos": 0.591,
+        "all": 0.276
+      },
+      "Contrarian_Cash_if_zgt2": {
+        "is": 0.193,
+        "oos": 0.379,
+        "all": 0.275
+      },
+      "FOMO_Long_if_zgt05": {
+        "is": -0.377,
+        "oos": 0.404,
+        "all": -0.078
+      }
+    },
+    "COPPER": {
+      "spearman_ic7d": 0.0002,
+      "BuyHold": {
+        "is": 0.564,
+        "oos": 0.155,
+        "all": 0.349
+      },
+      "Contrarian_Cash_if_zgt2": {
+        "is": 0.431,
+        "oos": 0.109,
+        "all": 0.261
+      },
+      "FOMO_Long_if_zgt05": {
+        "is": 0.367,
+        "oos": 0.033,
+        "all": 0.204
+      }
+    }
+  },
+  "cboe_skew_33y": {
+    "SPY_BuyHold_33y": {
+      "is_93_14": {
+        "sharpe": 0.21,
+        "cagr_pct": 4.3,
+        "maxdd_pct": -55.2
+      },
+      "oos_15_26": {
+        "sharpe": 0.652,
+        "cagr_pct": 12.78,
+        "maxdd_pct": -33.7
+      },
+      "all": {
+        "sharpe": 0.388,
+        "cagr_pct": 7.97,
+        "maxdd_pct": -55.2
+      }
+    },
+    "SPY_Cash_if_SKEW_zgt15": {
+      "is_93_14": {
+        "sharpe": 0.255,
+        "cagr_pct": 5.12,
+        "maxdd_pct": -45.68
+      },
+      "oos_15_26": {
+        "sharpe": 0.421,
+        "cagr_pct": 8.13,
+        "maxdd_pct": -32.96
+      },
+      "all": {
+        "sharpe": 0.325,
+        "cagr_pct": 6.44,
+        "maxdd_pct": -45.68
+      }
+    },
+    "SPY_Cash_if_SKEW_gt145": {
+      "is_93_14": {
+        "sharpe": 0.212,
+        "cagr_pct": 4.35,
+        "maxdd_pct": -55.2
+      },
+      "oos_15_26": {
+        "sharpe": 0.484,
+        "cagr_pct": 9.19,
+        "maxdd_pct": -33.7
+      },
+      "all": {
+        "sharpe": 0.317,
+        "cagr_pct": 6.46,
+        "maxdd_pct": -55.2
+      }
+    },
+    "SPY_Long_only_if_SKEW_zgt0": {
+      "is_93_14": {
+        "sharpe": -0.075,
+        "cagr_pct": 0.16,
+        "maxdd_pct": -37.06
+      },
+      "oos_15_26": {
+        "sharpe": 0.261,
+        "cagr_pct": 4.43,
+        "maxdd_pct": -36.23
+      },
+      "all": {
+        "sharpe": 0.056,
+        "cagr_pct": 2.03,
+        "maxdd_pct": -37.49
+      }
+    }
+  },
+  "sp500_addition_removal_drift": {
+    "additions": {
+      "5d": {
+        "n": 31,
+        "mean_ex_spy_pct": -0.543,
+        "win_rate_pct": 41.9,
+        "t_stat": -0.63
+      },
+      "21d": {
+        "n": 31,
+        "mean_ex_spy_pct": 0.758,
+        "win_rate_pct": 38.7,
+        "t_stat": 0.41
+      },
+      "63d": {
+        "n": 31,
+        "mean_ex_spy_pct": 8.49,
+        "win_rate_pct": 45.2,
+        "t_stat": 1.2
+      }
+    },
+    "removals": {}
+  }
+}

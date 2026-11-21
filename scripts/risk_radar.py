@@ -285,7 +285,7 @@ def _rank_risk(val: float | None, elev: float, high: float, reverse: bool = Fals
 
 def compute_crypto_trend_overlay() -> dict:
     """
-    EXP-0041: Strictly causal Daily Crypto Trend Regime + VolTarget 25% Monitor (BTC-USD).
+    EXP-0041 + EXP-0043: Strictly causal Daily Crypto Trend Regime + VolTarget 25% Monitor (BTC-USD + 19-coin breadth).
     Long-only trend-regime defense / sizing overlay (not market-neutral alpha).
     """
     btc = pd.read_csv(ROOT / "data" / "universe" / "BTC.csv")
@@ -301,6 +301,21 @@ def compute_crypto_trend_overlay() -> dict:
     vt25_scalar = min(1.0, 0.25 / rv21)
     target_w_ens = round(trend_ens * vt25_scalar * 100.0, 1)
     target_w_sma50 = round((1.0 if last_c > sma50 else 0.0) * vt25_scalar * 100.0, 1)
+
+    breadth_19 = {}
+    p19 = ROOT / "data" / "crypto_vision" / "spot_daily_19coins.csv.gz"
+    if p19.exists():
+        d19 = pd.read_csv(p19)
+        d19["date"] = pd.to_datetime(d19["date"])
+        px19 = d19.pivot(index="date", columns="symbol", values="close").sort_index()
+        ab50 = (px19.iloc[-1] > px19.rolling(50).mean().iloc[-1]).dropna()
+        breadth_19 = {
+            "as_of_date": px19.index[-1].strftime("%Y-%m-%d"),
+            "coins_above_sma50": int(ab50.sum()),
+            "coins_total": int(len(ab50)),
+            "pct_above_sma50": round(float(ab50.mean() * 100.0), 1),
+        }
+
     return {
         "as_of_date": c.index[-1].strftime("%Y-%m-%d"),
         "btc_close": round(last_c, 2),
@@ -312,7 +327,8 @@ def compute_crypto_trend_overlay() -> dict:
         "suggested_btc_ens_vt25_pct": target_w_ens,
         "suggested_btc_sma50_vt25_pct": target_w_sma50,
         "suggested_cash_pct": round(100.0 - target_w_ens, 1),
-        "exp0041_note": "EXP-0041 (2015-2026 BTC 11.5y EFFR excess): SMA50_VT25 Sh +1.665 DD -33.5% (Shift=99.9%); TrendEns_VT25 Sh +1.590 DD -27.8% (Shift=99.9%). Monitoring/defense reference only.",
+        "breadth_19coins_exp0043": breadth_19,
+        "exp0041_note": "EXP-0041 (11.5y BTC): SMA50_VT25 Sh +1.665 DD -33.5% (Shift=99.9%). EXP-0043 (2018-2026 19-coin SF): EW SMA50_VT25 Sh +1.176 DD -19.1% vs BH +0.661 DD -81.8% (15/19 coins, Shift=99.67%). Monitoring/defense reference only.",
     }
 
 
@@ -715,10 +731,12 @@ def build_risk_radar() -> dict:
             f"- **`EURGBP H1` Last Bar:** `{fx_guard['last_bar_utc']}` | Spread `{fx_guard['latest_spread_pips']} pips` (`z72={fx_guard['spread_z72']}`) | In 6h Rollover Hazard (`16–23 UTC`): `{fx_guard['last_bar_in_rollover_hazard']}`",
         ]
     if "btc_close" in crypto_overlay:
+        b19 = crypto_overlay.get("breadth_19coins_exp0043", {})
+        b19_txt = f" | `19-Coin Breadth >SMA50`: `{b19.get('coins_above_sma50')}/{b19.get('coins_total')} ({b19.get('pct_above_sma50')}%)`" if b19 else ""
         lines += [
             "",
-            "## 4. Crypto Daily Trend Regime & VolTarget25% Monitor (`EXP-0041`, Monitoring Reference)",
-            f"- **`BTC-USD` As-Of `{crypto_overlay['as_of_date']}`:** Close `${crypto_overlay['btc_close']:,.2f}` | `SMA(50)=${crypto_overlay['btc_sma50']:,.2f}` (`Above={crypto_overlay['above_sma50']}`) | `TrendEns(20,40,60,90,120)={crypto_overlay['trend_ens_vote_20_40_60_90_120']:.2f}` | `RV21={crypto_overlay['rv21_ann_pct']}%`",
+            "## 4. Crypto Daily Trend Regime & VolTarget25% Monitor (`EXP-0041 + EXP-0043`, Monitoring Reference)",
+            f"- **`BTC-USD` As-Of `{crypto_overlay['as_of_date']}`:** Close `${crypto_overlay['btc_close']:,.2f}` | `SMA(50)=${crypto_overlay['btc_sma50']:,.2f}` (`Above={crypto_overlay['above_sma50']}`) | `TrendEns(20..120)={crypto_overlay['trend_ens_vote_20_40_60_90_120']:.2f}` | `RV21={crypto_overlay['rv21_ann_pct']}%`{b19_txt}",
             f"- **Vol-Targeted Reference (`VT25%`):** `TrendEns x VT25 = {crypto_overlay['suggested_btc_ens_vt25_pct']}%` (`SMA50 x VT25 = {crypto_overlay['suggested_btc_sma50_vt25_pct']}%`) | Cash/EFFR `{crypto_overlay['suggested_cash_pct']}%`",
         ]
     lines += ["", "## 5. Active Risk Alerts"]
