@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.8.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.9.zip
 """
 from __future__ import annotations
 
@@ -422,6 +422,25 @@ DATASETS = [
          use_for=["Thai market context", "cross-market breadth", "a phone-first dashboard that speaks THB"],
          leak_rule="Daily close in Bangkok time; a US-close decision cannot see the Thai close of the same "
                    "calendar date that has not happened yet."),
+    dict(id="training_kit", src=["training/build_dataset.py", "training/finetune_qwen3_kaggle.py",
+                                   "training/data/train.jsonl", "training/data/valid.jsonl",
+                                   "training/data/STATS.json", "research/TRAINING_ROUTES_2026.md"],
+         kind="meta", grade="B",
+         title="Behaviour fine-tuning kit: 213 instruction pairs from this lab's own research record",
+         card="build_dataset.py converts EXPERIMENT_LOG, HYPOTHESIS_REGISTER, PITFALLS, WHAT_FAILED, the "
+              "dataset registry, base rates and manifests into chat-format pairs that teach the house rules: "
+              "quote n_eff, never call an unpassed result an edge, name the cost assumption, say "
+              "'ยังไม่ได้ทดสอบ' instead of estimating, never recommend a trade. finetune_qwen3_kaggle.py is "
+              "the QLoRA script for a free Kaggle T4 (Qwen3-8B in 4-bit fits 16 GB; ~20-40 min per run).",
+         caveats=["The training script has NEVER been executed (no GPU in the build sandbox) — its first "
+                  "run is a test of the script itself.",
+                  "This trains BEHAVIOUR, not market knowledge: a 4-bit 8B model cannot learn alpha from 213 "
+                  "pairs, and any claim that it can is the expensive mistake this project keeps warning about.",
+                  "Splits are by category, so no experiment or dataset card appears in both train and valid.",
+                  "Serving the result is NOT free in the cloud — the zero-cost path is GGUF + Ollama locally."],
+         use_for=["making any small local model follow the lab's evidence rules",
+                  "a measurable acceptance test (4 tests in TRAINING_ROUTES_2026.md) before trusting output"],
+         leak_rule="Inherits its sources; contains no future information."),
     dict(id="dashboard_today", src=["dashboard/alina_today.html"], kind="brief", grade="B",
          title="alina_today.html — one self-contained page for a phone (~9 KB)",
          card="Everything that matters today, in one file with inline CSS and no network calls: VIX-curve "
@@ -635,7 +654,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.8",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.9",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -737,7 +756,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.8.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.9.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

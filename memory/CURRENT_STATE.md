@@ -6,8 +6,8 @@ panel, 5-instrument execution book, 68-ETF cross-section, CBOE term structure, 3
 and now 23 years of hourly FX with BOTH bid and ask.
 
 ## Drive (live)
-- **v2.8 `1z2KHHoq_41ASXgkdUex34-Nhnz3UAo-l`** — 50 datasets / 601 files / 71 MB. Current.
-- v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.9 `10HRJkA7PRsSxJ6sVNI2p8w1C2UdWMq__`** — 51 datasets / 608 files / 71.1 MB. Current.
+- v2.8, v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
 ## Shipped this session (chronological)
 1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
@@ -36,7 +36,12 @@ and now 23 years of hourly FX with BOTH bid and ask.
    `research/BUILD_PLAN_ZERO_BUDGET.md` (corrects the popular Dify+Colab+Unsloth plan: Gemini Plus is not
    an API key, Dify free 50 MB cannot index 400 GB, fine-tuning changes style not alpha; the real blocker is
    still 0 validated rules, so the EA may own risk management but not signal generation).
-10. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
+10. **Training kit (v2.9)** — `training/build_dataset.py` → 213 instruction pairs from EXPERIMENT_LOG,
+   HYPOTHESIS_REGISTER, PITFALLS, WHAT_FAILED, the registry and manifests (train/valid split BY CATEGORY).
+   `training/finetune_qwen3_kaggle.py` = QLoRA Qwen3-8B (UNTESTED, no GPU here). 4 acceptance tests
+   pre-declared in `research/TRAINING_ROUTES_2026.md`; free quotas verified 2026-11 (Kaggle 30 GPU-h/week,
+   Modal $30/mo, Lightning ~50 h one-time, HF ZeroGPU 5 min/day = demos only).
+11. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
    levels, VIX-curve state + conditioned base rates, carry, headlines, 12 nearest historical states with
    realised next-5/21-day outcomes). This is the file to feed a local model for per-day/per-event work.
    Intraday CSVs gzipped (79 MB → 21 MB) after confirming they are in the pack on Drive.

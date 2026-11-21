@@ -1,0 +1,26 @@
+{
+  "pairs": 213,
+  "train": 194,
+  "valid": 19,
+  "by_tag": {
+    "abstain": 10,
+    "base-rate": 3,
+    "dataset-card": 88,
+    "experiment": 19,
+    "experiment-claim": 19,
+    "failed": 8,
+    "glossary": 4,
+    "hypothesis": 13,
+    "ideas": 4,
+    "method": 15,
+    "pitfall": 19,
+    "provenance": 11
+  },
+  "valid_tags": [
+    "base-rate",
+    "failed",
+    "glossary",
+    "ideas"
+  ],
+  "avg_chars": 1426
+}

@@ -51,6 +51,15 @@ look-ahead bug in this repo's own code. Treat every number here as *evidence*, n
    measuring luck. Random selection loses ~0.3 Sharpe after costs — that is the sanity check.
 6. **Never martingale.** 5 of 5 instruments in the grid/doubling test were wiped.
 
+## New in v2.9 (what to actually use)
+- `training_kit` — 213 instruction pairs built from this lab's own research record, plus a Kaggle-ready
+  QLoRA script. It trains BEHAVIOUR (quote n_eff, refuse unpassed edges, say "ยังไม่ได้ทดสอบ", never advise a
+  trade), never market knowledge. Four acceptance tests are defined before training in
+  `research/TRAINING_ROUTES_2026.md`; the training script is UNTESTED (no GPU in the build sandbox).
+- Free-compute facts for 2026-11: Kaggle ~30 GPU-h/week recurring (T4x2/P100, no card), Modal $30/month
+  credit, Lightning AI ~50 GPU-h one-time, HF ZeroGPU 5 min/day (demos only). Qwen3-8B QLoRA fits 16 GB;
+  14B does not, reliably.
+
 ## New in v2.8 (what to actually use)
 - `thai_set_panel` — 64 liquid SET names, 10 years daily (THB) + `SET_EW`, an equal-weight index built
   because the official SET index history is not free. Use SET_EW as a mood/breadth proxy, never as SET50.
