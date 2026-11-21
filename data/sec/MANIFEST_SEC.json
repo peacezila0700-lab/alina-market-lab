@@ -1,0 +1,14 @@
+{
+  "built_utc": "2026-11-21T02:56:24+00:00",
+  "source": "data.sec.gov (XBRL companyfacts + submissions), sec.gov company_tickers, api.nasdaq.com",
+  "companies_covered": 60,
+  "companies_failed": [],
+  "filings_rows": 1500,
+  "fundamental_rows": 56078,
+  "caveats": [
+    "XBRL values are as-filed; use `filed` as available_from, never `period_end`.",
+    "Banks/insurers often lack a Revenues tag -> NaN, not wrong.",
+    "Only the top market-cap companies in the screener are covered.",
+    "Nasdaq screener is an unofficial endpoint and may change."
+  ]
+}

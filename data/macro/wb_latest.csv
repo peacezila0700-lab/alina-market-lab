@@ -1,0 +1,188 @@
+iso3,country,indicator,year,value,data_year
+DEU,Germany,govt_debt_pct_gdp,1990,20.8541847518408,1990
+IDN,Indonesia,govt_debt_pct_gdp,2009,29.997306381567,2009
+GBR,United Kingdom,lending_rate_pct,2014,0.5,2014
+CAN,Canada,lending_rate_pct,2017,2.7,2017
+JPN,Japan,lending_rate_pct,2017,0.994,2017
+IND,India,govt_debt_pct_gdp,2018,46.5224986659322,2018
+AUS,Australia,lending_rate_pct,2019,5.101,2019
+SGP,Singapore,lending_rate_pct,2021,5.25,2021
+USA,United States,lending_rate_pct,2021,3.25,2021
+IND,India,lending_rate_pct,2022,8.56714285714286,2022
+AUS,Australia,govt_debt_pct_gdp,2022,57.8834285733848,2022
+VNM,Vietnam,lending_rate_pct,2023,9.323,2023
+RUS,Russia,lending_rate_pct,2024,17.0925,2024
+USA,United States,govt_debt_pct_gdp,2024,115.788609964778,2024
+RUS,Russia,govt_debt_pct_gdp,2024,17.8500676833114,2024
+THA,Thailand,govt_debt_pct_gdp,2024,61.861415782411,2024
+CHN,China,lending_rate_pct,2024,4.35,2024
+TUR,Turkey,govt_debt_pct_gdp,2024,25.5128667788107,2024
+USA,United States,inflation_cpi_pct,2024,2.94952520485207,2024
+GBR,United Kingdom,govt_debt_pct_gdp,2024,130.735888365813,2024
+ZAF,South Africa,govt_debt_pct_gdp,2024,82.7627080034486,2024
+USA,United States,exports_pct_gdp,2024,10.97469647515,2024
+CAN,Canada,govt_debt_pct_gdp,2024,64.1314232901439,2024
+CHE,Switzerland,govt_debt_pct_gdp,2024,22.2786942016816,2024
+JPN,Japan,exports_pct_gdp,2024,21.9799093698461,2024
+KOR,South Korea,govt_debt_pct_gdp,2024,47.8141426119509,2024
+BRA,Brazil,govt_debt_pct_gdp,2024,81.8554431191023,2024
+SGP,Singapore,govt_debt_pct_gdp,2024,167.799832036767,2024
+MEX,Mexico,govt_debt_pct_gdp,2024,50.270950655733,2024
+VNM,Vietnam,inflation_cpi_pct,2025,3.30999314219739,2025
+VNM,Vietnam,unemployment_pct,2025,1.523,2025
+DEU,Germany,inflation_cpi_pct,2025,2.17178770949721,2025
+AUS,Australia,gdp_growth_pct,2025,1.35039785076631,2025
+THA,Thailand,exports_pct_gdp,2025,71.1480976123329,2025
+MEX,Mexico,exports_pct_gdp,2025,39.6453397926899,2025
+MEX,Mexico,gdp_usd,2025,1832641364775.52,2025
+DEU,Germany,gdp_usd,2025,5050922925047.05,2025
+CAN,Canada,gdp_growth_pct,2025,1.74268536175708,2025
+USA,United States,current_account_pct_gdp,2025,-3.8254126624569,2025
+ZAF,South Africa,current_account_pct_gdp,2025,-0.422766754018983,2025
+CAN,Canada,exports_pct_gdp,2025,31.3323868147182,2025
+JPN,Japan,unemployment_pct,2025,2.451,2025
+GBR,United Kingdom,inflation_cpi_pct,2025,3.88306881625999,2025
+MEX,Mexico,current_account_pct_gdp,2025,-0.510910143793841,2025
+CAN,Canada,gdp_usd,2025,2319899772425.92,2025
+MEX,Mexico,gdp_growth_pct,2025,0.561683456144578,2025
+AUS,Australia,exports_pct_gdp,2025,23.2444383508997,2025
+SGP,Singapore,population,2025,6111175.0,2025
+AUS,Australia,gdp_usd,2025,1798518933689.21,2025
+SGP,Singapore,unemployment_pct,2025,2.818,2025
+GBR,United Kingdom,population,2025,69487000.0,2025
+GBR,United Kingdom,unemployment_pct,2025,4.746,2025
+CAN,Canada,current_account_pct_gdp,2025,-0.96097945348872,2025
+VNM,Vietnam,gdp_usd,2025,514697215165.065,2025
+RUS,Russia,gdp_growth_pct,2025,1.00117656925738,2025
+DEU,Germany,unemployment_pct,2025,3.711,2025
+CHE,Switzerland,lending_rate_pct,2025,2.82202913833333,2025
+THA,Thailand,gdp_usd,2025,577009981112.015,2025
+CHE,Switzerland,unemployment_pct,2025,4.873,2025
+DEU,Germany,population,2025,83491249.0,2025
+CHE,Switzerland,population,2025,9092436.0,2025
+FRA,France,gdp_growth_pct,2025,0.840949955479587,2025
+TUR,Turkey,current_account_pct_gdp,2025,-1.89933817058389,2025
+MEX,Mexico,lending_rate_pct,2025,8.78583333333333,2025
+BRA,Brazil,lending_rate_pct,2025,45.3333333333333,2025
+CAN,Canada,inflation_cpi_pct,2025,2.07232411149103,2025
+GBR,United Kingdom,gdp_usd,2025,4002587541846.01,2025
+JPN,Japan,gdp_usd,2025,4435162999976.94,2025
+CAN,Canada,population,2025,41651653.0,2025
+USA,United States,population,2025,341784857.0,2025
+GBR,United Kingdom,gdp_growth_pct,2025,1.38844207858726,2025
+JPN,Japan,gdp_growth_pct,2025,1.19311288444599,2025
+USA,United States,gdp_usd,2025,30769700000000.0,2025
+IDN,Indonesia,current_account_pct_gdp,2025,-0.0866434374916221,2025
+NGA,Nigeria,lending_rate_pct,2025,18.4535508694791,2025
+SAU,Saudi Arabia,population,2025,36973555.0,2025
+KOR,South Korea,population,2025,51684564.0,2025
+TUR,Turkey,exports_pct_gdp,2025,24.8497719904256,2025
+FRA,France,current_account_pct_gdp,2025,-0.331289693053725,2025
+SAU,Saudi Arabia,inflation_cpi_pct,2025,2.03559944812264,2025
+BRA,Brazil,current_account_pct_gdp,2025,-2.92630139201733,2025
+SAU,Saudi Arabia,unemployment_pct,2025,3.038,2025
+NGA,Nigeria,inflation_cpi_pct,2025,23.0101235833333,2025
+NGA,Nigeria,unemployment_pct,2025,3.064,2025
+NGA,Nigeria,population,2025,237527782.0,2025
+IDN,Indonesia,exports_pct_gdp,2025,22.8465482987858,2025
+BRA,Brazil,exports_pct_gdp,2025,17.8207228961707,2025
+KOR,South Korea,inflation_cpi_pct,2025,2.12309421458659,2025
+FRA,France,gdp_usd,2025,3366315927447.33,2025
+THA,Thailand,population,2025,71619863.0,2025
+THA,Thailand,lending_rate_pct,2025,4.9875,2025
+AUS,Australia,population,2025,27614411.0,2025
+THA,Thailand,inflation_cpi_pct,2025,-0.133634356480206,2025
+IND,India,inflation_cpi_pct,2025,2.39884954182294,2025
+CHE,Switzerland,exports_pct_gdp,2025,78.0527434720482,2025
+CHE,Switzerland,current_account_pct_gdp,2025,6.24639351116552,2025
+USA,United States,unemployment_pct,2025,4.198,2025
+KOR,South Korea,unemployment_pct,2025,2.683,2025
+IND,India,unemployment_pct,2025,4.219,2025
+IND,India,gdp_usd,2025,3956067115771.63,2025
+FRA,France,inflation_cpi_pct,2025,0.943824761520197,2025
+CHE,Switzerland,gdp_growth_pct,2025,1.30007790958307,2025
+THA,Thailand,unemployment_pct,2025,0.781,2025
+FRA,France,exports_pct_gdp,2025,33.3928225145364,2025
+IND,India,population,2025,1463865525.0,2025
+AUS,Australia,unemployment_pct,2025,4.09,2025
+CHN,China,unemployment_pct,2025,4.615,2025
+TUR,Turkey,gdp_growth_pct,2025,3.60462514082589,2025
+CHN,China,population,2025,1406585000.0,2025
+TUR,Turkey,gdp_usd,2025,1597293229287.0,2025
+ZAF,South Africa,lending_rate_pct,2025,10.6875,2025
+BRA,Brazil,inflation_cpi_pct,2025,5.01675279604836,2025
+SGP,Singapore,gdp_usd,2025,603869516998.738,2025
+MEX,Mexico,population,2025,131946900.0,2025
+KOR,South Korea,lending_rate_pct,2025,4.1925,2025
+CAN,Canada,unemployment_pct,2025,6.907,2025
+GBR,United Kingdom,exports_pct_gdp,2025,30.5969582161816,2025
+ZAF,South Africa,population,2025,64747319.0,2025
+ZAF,South Africa,inflation_cpi_pct,2025,3.20550474112603,2025
+JPN,Japan,current_account_pct_gdp,2025,4.86496093471918,2025
+CHN,China,current_account_pct_gdp,2025,3.76972243689338,2025
+GBR,United Kingdom,current_account_pct_gdp,2025,-3.13347768999639,2025
+IND,India,exports_pct_gdp,2025,22.2630410669804,2025
+IND,India,gdp_growth_pct,2025,7.56666179284244,2025
+CHE,Switzerland,gdp_usd,2025,1043529899250.92,2025
+AUS,Australia,inflation_cpi_pct,2025,2.87403791660173,2025
+BRA,Brazil,population,2025,212812405.0,2025
+JPN,Japan,population,2025,123366734.0,2025
+SGP,Singapore,inflation_cpi_pct,2025,0.902998495002676,2025
+FRA,France,population,2025,68720337.0,2025
+ZAF,South Africa,exports_pct_gdp,2025,31.4101947337253,2025
+ZAF,South Africa,gdp_growth_pct,2025,1.11462608103956,2025
+MEX,Mexico,inflation_cpi_pct,2025,3.80957950037393,2025
+BRA,Brazil,unemployment_pct,2025,5.97,2025
+VNM,Vietnam,current_account_pct_gdp,2025,6.43776554908569,2025
+SAU,Saudi Arabia,gdp_usd,2025,1276942933333.33,2025
+ZAF,South Africa,gdp_usd,2025,427184325997.307,2025
+JPN,Japan,inflation_cpi_pct,2025,3.17253034260247,2025
+TUR,Turkey,inflation_cpi_pct,2025,34.8811700293777,2025
+IDN,Indonesia,inflation_cpi_pct,2025,1.91333443295079,2025
+BRA,Brazil,gdp_growth_pct,2025,2.2857464902475,2025
+IDN,Indonesia,gdp_growth_pct,2025,5.10808904438025,2025
+CHN,China,inflation_cpi_pct,2025,0.0595646916565402,2025
+IDN,Indonesia,gdp_usd,2025,1445642584163.81,2025
+SGP,Singapore,exports_pct_gdp,2025,177.851484150301,2025
+NGA,Nigeria,current_account_pct_gdp,2025,4.82784315736378,2025
+SGP,Singapore,current_account_pct_gdp,2025,16.7132387250529,2025
+KOR,South Korea,gdp_usd,2025,1872374961553.15,2025
+KOR,South Korea,current_account_pct_gdp,2025,6.57207036660681,2025
+IDN,Indonesia,population,2025,285721236.0,2025
+BRA,Brazil,gdp_usd,2025,2279920092492.13,2025
+CHE,Switzerland,inflation_cpi_pct,2025,0.154376978290185,2025
+IND,India,current_account_pct_gdp,2025,-0.511308076227287,2025
+SAU,Saudi Arabia,current_account_pct_gdp,2025,-2.56365940191401,2025
+VNM,Vietnam,gdp_growth_pct,2025,8.01882998978245,2025
+DEU,Germany,current_account_pct_gdp,2025,4.44736378284623,2025
+SAU,Saudi Arabia,exports_pct_gdp,2025,29.7448740074211,2025
+VNM,Vietnam,exports_pct_gdp,2025,98.2444078637672,2025
+RUS,Russia,unemployment_pct,2025,2.133,2025
+RUS,Russia,gdp_usd,2025,2561310169358.74,2025
+FRA,France,unemployment_pct,2025,7.542,2025
+RUS,Russia,current_account_pct_gdp,2025,1.51505781940168,2025
+SAU,Saudi Arabia,gdp_growth_pct,2025,4.50246560191663,2025
+RUS,Russia,exports_pct_gdp,2025,18.2030774281844,2025
+TUR,Turkey,population,2025,85878556.0,2025
+KOR,South Korea,gdp_growth_pct,2025,1.00701840291242,2025
+CHN,China,gdp_usd,2025,19498039388042.6,2025
+KOR,South Korea,exports_pct_gdp,2025,45.7630385215931,2025
+CHN,China,gdp_growth_pct,2025,4.95994886240992,2025
+MEX,Mexico,unemployment_pct,2025,2.673,2025
+SGP,Singapore,gdp_growth_pct,2025,5.02588199508003,2025
+USA,United States,gdp_growth_pct,2025,2.16138195623856,2025
+IDN,Indonesia,lending_rate_pct,2025,8.50158323159016,2025
+ZAF,South Africa,unemployment_pct,2025,32.391,2025
+IDN,Indonesia,unemployment_pct,2025,3.237,2025
+TUR,Turkey,unemployment_pct,2025,8.52,2025
+CHN,China,exports_pct_gdp,2025,21.0711983566772,2025
+AUS,Australia,current_account_pct_gdp,2025,-2.76564744083184,2025
+VNM,Vietnam,population,2025,101598527.0,2025
+NGA,Nigeria,gdp_growth_pct,2025,4.01336180700973,2025
+NGA,Nigeria,gdp_usd,2025,290794361542.112,2025
+DEU,Germany,exports_pct_gdp,2025,40.4347738545071,2025
+THA,Thailand,current_account_pct_gdp,2025,3.020571304444,2025
+RUS,Russia,population,2025,143513328.0,2025
+RUS,Russia,inflation_cpi_pct,2025,8.71986939402666,2025
+DEU,Germany,gdp_growth_pct,2025,0.239578342117881,2025
+THA,Thailand,gdp_growth_pct,2025,2.44247444990198,2025

@@ -38,6 +38,17 @@ Only step ①② matter for daily use. Step ② weekly is enough.
 by id from `catalog.json`. The catalog carries row counts, coverage, caveats and a 2-row preview
 precisely so the model can decide *without* loading the file.
 
+## 2a. The fundamental / screening layer (weekly is enough)
+```
+python3 scripts/fetch_sec_fundamentals.py --top 60   # ~8 min, SEC fair-access respected
+python3 scripts/fetch_stock_panel.py --top 120       # ~1 min, Yahoo daily
+python3 scripts/build_technical_indicators.py        # 209 instruments x 40 indicators
+python3 scripts/build_screener.py                    # joins identity + technicals + fundamentals
+python3 scripts/fetch_worldbank.py                   # 22 economies, annual (run monthly)
+```
+Read `research/COVERAGE_MATRIX.md` before adding a new source: it lists the 13 content categories, the
+file that answers each, and the gaps that free data cannot close.
+
 ## 2b. Analysing ONE day or ONE event (the per-day mode)
 ```
 python3 scripts/event_pack.py 2026-11-20            # -> packs/2026-11-20.json (~35 KB)

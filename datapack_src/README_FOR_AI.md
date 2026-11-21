@@ -1,10 +1,10 @@
-# ALINA DATAPACK v2.4 — read this first (≈900 tokens, saves you thousands)
+# ALINA DATAPACK v2.5 — read this first (≈900 tokens, saves you thousands)
 
 ## What this is
 A self-contained research base built by an agent over ~12 sessions, for an AI trading system to
 consume **without re-searching the internet**. It contains market data, positioning data,
 volatility data, measured trading costs, calendars, an attention proxy, a catalogue of 332 free
-EAs, **40 datasets** including a 68-ETF cross-section, the CBOE volatility term structure with
+EAs, **46 datasets** including a 68-ETF cross-section, the CBOE volatility term structure with
 conditioned base rates, a 36-year Treasury curve, news headlines with entity tags, per-instrument
 support/resistance levels, and a **ready-made daily brief** (`briefs/latest.md`) — plus **every
 experiment run here with its verdict**.
@@ -50,6 +50,22 @@ look-ahead bug in this repo's own code. Treat every number here as *evidence*, n
 5. **Report a null.** Every result needs a turnover-matched random control; otherwise you are
    measuring luck. Random selection loses ~0.3 Sharpe after costs — that is the sanity check.
 6. **Never martingale.** 5 of 5 instruments in the grid/doubling test were wiped.
+
+## New in v2.5 — the fundamental/news/macro layer (what to actually use)
+- `technical_indicators` — 209 instruments × 40 indicators, one canonical definition set, plus
+  `MANIFEST_TECH.json` mapping every column to momentum / volatility / trend / volume.
+- `us_stock_panel` — 115 US single stocks, 10y daily. **Survivorship-biased by construction** (today's
+  largest); say so in any cross-sectional result.
+- `sec_filings_fundamentals` — as-filed XBRL for the top 60 US companies (revenue, net income, EPS,
+  assets, equity, CFO, debt) with the **filing date on every row**. Use `filed` as available_from, never
+  `period_end`.
+- `stock_screener` — 7,301 symbols joined to technicals and fundamentals, with `fund_age_days` and
+  `filing_age_days` so staleness is visible. No composite score, deliberately.
+- `news_world` — 1,294 headlines, 425 outlets, 26 queries, 16 country editions (Thai/Vietnamese/Arabic/
+  Chinese/Japanese included), entity-tagged.
+- `macro_worldbank` — 22 economies × 9 indicators, 1990-2025 (slow prior only; 1-2 year lag).
+- `research/COVERAGE_MATRIX.md` — the owner's 13 content categories mapped to exact files, with the
+  gaps that free data cannot close (options chains, point-in-time fundamentals, parsed Form 4).
 
 ## New in v2.4 (what to actually use)
 - `event_packs/*.json` — one ~35 KB file per day: calendar, 17-instrument snapshot, levels, VIX-curve

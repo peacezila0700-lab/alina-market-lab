@@ -1,4 +1,4 @@
-# CURRENT STATE — 2026-11-20 (v2.3, after EXP-0018)
+# CURRENT STATE — 2026-11-21 (v2.5: all 13 content categories covered)
 
 ## Focus
 Data + code + experiments for a downstream AI. App frozen. Stacked universes: 24-instrument research
@@ -6,8 +6,8 @@ panel, 5-instrument execution book, 68-ETF cross-section, CBOE term structure, 3
 and now 23 years of hourly FX with BOTH bid and ask.
 
 ## Drive (live)
-- **v2.4 `1nAQU5i-gVPdp8pOPBgOgnukSkD5HjwCb`** — 40 datasets / 374 files / 40 MB. Current.
-- v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.5 `1ZiC93GExcWMwpjfqsWkHisNZSNAMeIGc`** — 46 datasets / 518 files / 68.8 MB. Current.
+- v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
 ## Shipped this session (chronological)
 1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
@@ -18,7 +18,12 @@ and now 23 years of hourly FX with BOTH bid and ask.
 5. **Dukascopy hourly bid+ask, 6 pairs, 2003-2026, ~145k bars each** + HOUR_OF_DAY_PROFILE;
    EXP-0017 (5 hourly rules, net Sharpe −0.4..−10.8) / EXP-0018 (gating, breakeven multiple 0.03-0.29)
    → FAIL → v2.3
-6. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
+6. **Coverage build-out (v2.5)** — the owner's 13 categories: `build_technical_indicators.py`
+   (209 instruments × 40 indicators), `fetch_stock_panel.py` (115 US stocks), `fetch_sec_fundamentals.py`
+   (top 60: SEC XBRL as-filed + 10-K/10-Q/8-K/Form 4 filings), `build_screener.py` (7,301 symbols joined,
+   staleness columns), `fetch_news_world.py` (1,294 headlines / 425 outlets / 16 country editions),
+   `fetch_worldbank.py` (22 economies × 9 indicators 1990-2025), `research/COVERAGE_MATRIX.md`.
+7. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
    levels, VIX-curve state + conditioned base rates, carry, headlines, 12 nearest historical states with
    realised next-5/21-day outcomes). This is the file to feed a local model for per-day/per-event work.
    Intraday CSVs gzipped (79 MB → 21 MB) after confirming they are in the pack on Drive.

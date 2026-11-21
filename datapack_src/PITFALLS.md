@@ -125,3 +125,15 @@ Two rules follow:
 2. **Report the breakeven cost multiple** = gross mean return / cost drag. If it is below 1, the idea
    needs cheaper execution, not a better filter; EXP-0018's gated variants came in at 0.03-0.29 while
    still looking "less bad", which is exactly how a dead idea keeps a researcher busy for months.
+
+## 18. `.git/config` is not persisted — the remote and the identity disappear between sessions
+The workspace snapshot deliberately excludes `.git/config`, `.git-credentials` and `.netrc`. The first
+symptom is `fatal: empty ident name` on commit, the second is `git remote -v` returning nothing, so a
+`git push` looks like it worked while pushing to a URL that no longer exists.
+**Always do this first in a new session:**
+```
+bash scripts/gh_push.sh --check        # reattaches origin from ~/.alina/git_token
+git -c user.name="ALINA Agent" -c user.email="alina.lab.contact@gmail.com" commit -m "..."
+bash scripts/gh_push.sh
+```
+Then verify with `git fetch <url> main && git log --oneline -1 FETCH_HEAD`.

@@ -1,0 +1,49 @@
+{
+  "built_utc": "2026-11-21T03:06:07+00:00",
+  "source": "api.worldbank.org/v2 (World Bank Open Data, no key)",
+  "countries": [
+    "USA",
+    "GBR",
+    "DEU",
+    "FRA",
+    "JPN",
+    "CHN",
+    "IND",
+    "BRA",
+    "RUS",
+    "THA",
+    "VNM",
+    "IDN",
+    "TUR",
+    "MEX",
+    "SAU",
+    "ZAF",
+    "KOR",
+    "AUS",
+    "CAN",
+    "CHE",
+    "SGP",
+    "NGA"
+  ],
+  "rows": 6418,
+  "year_range": [
+    1990,
+    2025
+  ],
+  "countries_covered_per_indicator": {
+    "current_account_pct_gdp": 22,
+    "exports_pct_gdp": 21,
+    "gdp_growth_pct": 22,
+    "gdp_usd": 22,
+    "govt_debt_pct_gdp": 16,
+    "inflation_cpi_pct": 22,
+    "lending_rate_pct": 18,
+    "population": 22,
+    "unemployment_pct": 22
+  },
+  "caveats": [
+    "Data lag 1-2 years and are revised: not point-in-time, use as a slow prior.",
+    "ILO-modelled unemployment and national variations mean cross-country comparability is approximate.",
+    "Newest-year values are often missing (published in arrears)."
+  ]
+}

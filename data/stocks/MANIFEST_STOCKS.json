@@ -1,0 +1,723 @@
+{
+  "built_utc": "2026-11-21T03:07:51+00:00",
+  "source": "Yahoo chart v8, interval=1d, range=10y, no key",
+  "requested": 120,
+  "ok": 115,
+  "symbols": {
+    "AAPL": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MSFT": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "NVDA": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GOOGL": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GOOG": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AMZN": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SPCX": {
+      "status": "ok",
+      "rows": 0
+    },
+    "TSM": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AVGO": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "META": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TSLA": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ANT": {
+      "status": "ok",
+      "rows": 0
+    },
+    "LLY": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "WMT": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SNDK": {
+      "status": "ok",
+      "rows": 445,
+      "first": "2025-02-13",
+      "last": "2026-11-19"
+    },
+    "SKHY": {
+      "status": "ok",
+      "rows": 0
+    },
+    "JPM": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AMD": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MU": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "V": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "XOM": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "JNJ": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MA": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ASML": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ABBV": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GOOGN": {
+      "status": "ok",
+      "rows": 0
+    },
+    "GOOGM": {
+      "status": "ok",
+      "rows": 0
+    },
+    "COST": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "KO": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CVX": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PG": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CSCO": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PLTR": {
+      "status": "ok",
+      "rows": 1544,
+      "first": "2020-09-30",
+      "last": "2026-11-20"
+    },
+    "HD": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BAC": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ORCL": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GE": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MRK": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PANW": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "INTC": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "UNH": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PM": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "NVS": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "HSBC": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TM": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MS": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AZN": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AMAT": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TXN": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "RTX": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SHEL": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "RY": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TMO": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "LRCX": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SAP": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CRWD": {
+      "status": "ok",
+      "rows": 1873,
+      "first": "2019-06-12",
+      "last": "2026-11-20"
+    },
+    "CAT": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GS": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "WFC": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "NFLX": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ANET": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AMGN": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "LIN": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MUFG": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CCZ": {
+      "status": "ok",
+      "rows": 1720,
+      "first": "2020-01-21",
+      "last": "2026-11-20"
+    },
+    "IBM": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AXP": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GILD": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "DIS": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BABA": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GEV": {
+      "status": "ok",
+      "rows": 667,
+      "first": "2024-03-27",
+      "last": "2026-11-20"
+    },
+    "DELL": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "KOF": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MCD": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "C": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "VZ": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PEP": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ARM": {
+      "status": "ok",
+      "rows": 801,
+      "first": "2023-09-14",
+      "last": "2026-11-20"
+    },
+    "TTE": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TD": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "APH": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "KLAC": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ADI": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ABT": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "WELL": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "NEE": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BLK": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BHP": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "QCOM": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "UNP": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "NVO": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TMUS": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SHOP": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "DE": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "WMB": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SAN": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SONY": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "DHR": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "COP": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BUD": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SCHW": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PFE": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TJX": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CRM": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "T": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ACN": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SMFG": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CB": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ISRG": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "UBS": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BBVA": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "UL": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "HDB": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "UBER": {
+      "status": "ok",
+      "rows": 1895,
+      "first": "2019-05-10",
+      "last": "2026-11-20"
+    },
+    "PGR": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "LMT": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "VRTX": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MDT": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ETN": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SPGI": {
+      "status": "ok",
+      "rows": 2514,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    }
+  },
+  "caveats": [
+    "Today's largest companies only: survivorship bias is built in.",
+    "10-year history ceiling; no long-cycle study on single names.",
+    "`close` is the raw print, `adjclose` adjusts for splits/dividends \u2014 pick one deliberately, never mix within a study."
+  ]
+}

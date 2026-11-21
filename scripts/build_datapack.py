@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.4.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.5.zip
 """
 from __future__ import annotations
 
@@ -390,6 +390,87 @@ DATASETS = [
                   "Survivorship: only funds alive today are in the list."],
          use_for=["cross-sectional factor tests", "rotation studies", "regime breadth measures"],
          leak_rule="Daily close; use next session for fills."),
+    dict(id="technical_indicators", src=["data/technicals/latest.csv",
+                                        "data/technicals/history_wide.csv.gz",
+                                        "data/technicals/MANIFEST_TECH.json"],
+         kind="technical", grade="B",
+         title="One canonical indicator stack: 209 instruments x 40 indicators, daily",
+         card="SMA/EMA, RSI14, MACD(12,26,9), Bollinger(20,2) with %B and width, ATR14 and ATR%, ADX14 with"
+              " +DI/-DI, Stochastics %K/%D, OBV slope, Donchian20 + position, Keltner20, z-score, returns"
+              " 1/5/21/63d, realised vol 20/63d, distance to 52-week extremes, volume z-score. One row per"
+              " instrument for the latest bar, plus a wide history for the 94 ETFs/indices.",
+         caveats=["Volume-derived columns are NaN where the source file has no volume — that is 'no data', "
+                  "not zero.",
+                  "Wilder smoothing is implemented manually; expect small differences from TA-Lib.",
+                  "These are indicator VALUES, not signals: EXP-0001 rejected 7 classic TA families on 24 "
+                  "instruments against a permutation null."],
+         use_for=["screener joins", "level/stop sizing", "consistent definitions across studies"],
+         leak_rule="Computed on the close; a value from this table applies to the next bar."),
+    dict(id="us_stock_panel", src=["data/stocks/*.csv", "data/stocks/MANIFEST_STOCKS.json"],
+         kind="prices", grade="C",
+         title="115 US single-stock daily series (10 years, Yahoo chart v8)",
+         card="The largest companies by market cap, daily OHLC + adjusted close + volume. Exists so the "
+              "fundamental layer and the screener have prices to attach to, and so cross-sectional tests "
+              "are not limited to ETFs.",
+         caveats=["Survivorship: this is today's list, so any cross-sectional result on it is biased up.",
+                  "10-year history ceiling per symbol.",
+                  "`close` is the raw print and `adjclose` is split/dividend adjusted — never mix them "
+                  "inside one study."],
+         use_for=["fundamental-price joins", "earnings reaction studies", "screening"],
+         leak_rule="Daily close; fill next session. Do not use adjclose for a level, or close for a return "
+                   "series across a split."),
+    dict(id="sec_filings_fundamentals", src=["data/sec/company_tickers.csv", "data/sec/filings.csv",
+                                             "data/sec/fundamentals.csv", "data/sec/MANIFEST_SEC.json"],
+         kind="fundamental", grade="A",
+         title="SEC filings + as-filed XBRL financial statements (top 60 US companies)",
+         card="10,399 ticker-to-CIK mappings, the last 25 filings per covered company (10-K, 10-Q, 8-K, "
+              "Form 4), and 56k XBRL observations for revenue, net income, diluted EPS, assets, "
+              "liabilities, equity, cash, operating cash flow and long-term debt, with the FILING date on "
+              "every row.",
+         caveats=["As-filed but revision-free: no vintages, so fundamental backtests carry restatement bias. "
+                  "Always use `filed` as available_from, never `period_end`.",
+                  "Banks/insurers often lack a Revenues tag -> NaN, not wrong.",
+                  "Form 4 rows are stored but NOT parsed into insider transactions yet (declared gap)."],
+         use_for=["valuation ratios", "earnings-reaction studies", "screener joins", "insider-flow work"],
+         leak_rule="A statement is known on `filed`, not on `period_end` (typically 30-60 days later)."),
+    dict(id="stock_screener", src=["data/screener/nasdaq_all.csv", "data/screener/screener_latest.csv",
+                                   "data/screener/MANIFEST_SCREENER.json"],
+         kind="screener", grade="C",
+         title="7,301-symbol screener with technicals and as-filed fundamentals joined",
+         card="Every NYSE/Nasdaq symbol with market cap, sector, industry and country, joined to the "
+              "indicator stack and to the XBRL fundamentals — with staleness columns (fund_age_days, "
+              "filing_age_days) so a stale row can be rejected instead of silently trusted.",
+         caveats=["Fundamental coverage is the top 60 names only; the rest carry NaN.",
+                  "No composite score is provided on purpose — an untested score is a strategy in disguise.",
+                  "Nasdaq's screener endpoint is unofficial and can change without notice."],
+         use_for=["finding candidates for a specific question", "breadth by sector",
+                  "checking whether a move had an earnings basis"],
+         leak_rule="Snapshot; market cap changes every session."),
+    dict(id="news_world", src=["data/news/headlines_world.csv", "data/news/news_world_pressure.csv",
+                               "data/news/news_world_status.json"],
+         kind="news", grade="B",
+         title="Global news wire: 1,294 headlines, 425 outlets, 26 queries, 16 country editions",
+         card="Google News RSS queried by topic (stock market, central bank, inflation, oil, bond yields, "
+              "trade war, currency crisis, earnings surprise, banking stress, recession risk) and by "
+              "country edition (US, UK, DE, FR, JP, CN, IN, BR, RU, TH, VN, ID, TR, MX, SA, ZA). Local "
+              "language headlines included; entity-tagged with the same layer as the direct feeds.",
+         caveats=["Unofficial endpoint: it rate-limits and drops editions without notice — every query "
+                  "status is recorded in news_world_status.json.",
+                  "Headlines only, no article bodies: sentiment must come from a local model reading titles.",
+                  "De-duplicated by title hash, so the same story from three outlets counts once."],
+         use_for=["narrative context", "country/cross-market attention", "event confirmation"],
+         leak_rule="Known only when published; harvest time is recorded."),
+    dict(id="macro_worldbank", src=["data/macro/wb_panel_long.csv", "data/macro/wb_latest.csv",
+                                    "data/macro/MANIFEST_WB.json"],
+         kind="macro", grade="A",
+         title="World Bank macro panel: 22 economies x 9 indicators, 1990-2025",
+         card="GDP growth, GDP, CPI inflation, unemployment, government debt, current account, lending "
+              "rate, population and exports share, on one comparable definition set across 22 economies.",
+         caveats=["Data lag 1-2 years and are revised: not point-in-time, use as a slow prior only.",
+                  "ILO-modelled unemployment: cross-country comparability is approximate.",
+                  "Newest-year values are frequently missing."],
+         use_for=["country priors", "carry/funding context", "regime narratives for a local model"],
+         leak_rule="Annual reference year; published in arrears, so never treat as known in real time."),
     dict(id="event_packs", src=["packs/*.json"], kind="brief", grade="B",
          title="Per-day event packs: one self-describing JSON per trading day (~35 KB)",
          card="Built by scripts/event_pack.py. For any date it assembles the calendar, a 17-instrument "
@@ -488,7 +569,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.4",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.5",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -590,7 +671,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.4.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.5.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:
