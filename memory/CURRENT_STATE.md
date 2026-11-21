@@ -6,8 +6,8 @@ panel, 5-instrument execution book, 68-ETF cross-section, CBOE term structure, 3
 and now 23 years of hourly FX with BOTH bid and ask.
 
 ## Drive (live)
-- **v2.7 `1zETeqcXX7kTLBuAW9vfboiqUuXslJog4`** — 48 datasets / 530 files / 69.2 MB. Current.
-- v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.8 `1z2KHHoq_41ASXgkdUex34-Nhnz3UAo-l`** — 50 datasets / 601 files / 71 MB. Current.
+- v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
 ## Shipped this session (chronological)
 1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
@@ -31,7 +31,12 @@ and now 23 years of hourly FX with BOTH bid and ask.
    GROSS distribution next to a real account is the most expensive beginner mistake in day trading).
    Ported the House Clerk route: `scripts/fetch_congress_trades.py` → 6,365 parsed PTR transactions +
    3,207-filing index 2019-2026. EXP-0019 failed with a textbook sign flip (IS 0.0th pct, OOS 99.5th).
-9. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
+9. **Zero-budget build path (v2.8)** — `fetch_thai_panel.py` (64 SET names, 10y, SET_EW index because
+   ^SET has no free history), `build_dashboard.py` (9 KB self-contained phone page), and
+   `research/BUILD_PLAN_ZERO_BUDGET.md` (corrects the popular Dify+Colab+Unsloth plan: Gemini Plus is not
+   an API key, Dify free 50 MB cannot index 400 GB, fine-tuning changes style not alpha; the real blocker is
+   still 0 validated rules, so the EA may own risk management but not signal generation).
+10. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
    levels, VIX-curve state + conditioned base rates, carry, headlines, 12 nearest historical states with
    realised next-5/21-day outcomes). This is the file to feed a local model for per-day/per-event work.
    Intraday CSVs gzipped (79 MB → 21 MB) after confirming they are in the pack on Drive.

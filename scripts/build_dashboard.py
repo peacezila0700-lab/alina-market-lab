@@ -1,0 +1,190 @@
+#!/usr/bin/env python3
+"""
+build_dashboard.py — one self-contained HTML file that shows today's state on a phone.
+
+Constraints that shaped it:
+  * It must work **offline** and from a phone: every byte is inlined (no CDN, no fonts, no fetch calls),
+    so opening the file from Drive or the Files app renders completely.
+  * It must not become a second source of truth: it reads `briefs/latest.json`, `packs/<date>.json` and
+    `data/technicals/latest.csv` and prints them. If a number is not in those files, it is not here.
+  * It must not pretend to be advice: the page shows measured base rates with their n_effective, and the
+    flags the daily brief already computed.
+
+Why not a live app: a hosted app needs a server (cost) and an API key in the browser (leak). A generated
+static file needs neither, and a phone can open it in one tap. Regenerate it in the daily collector.
+
+Output: dashboard/alina_today.html  (~40-60 KB, self-contained)
+"""
+import html
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "dashboard"
+CSS = """
+:root{--bg:#0b0f14;--card:#141b24;--fg:#e8eef6;--muted:#8fa2b8;--up:#2ecc71;--down:#ff5d5d;--accent:#4cc9f0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
+font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Thai",sans-serif;padding:14px}
+h1{font-size:19px;margin:0 0 2px}h2{font-size:15px;margin:18px 0 8px;color:var(--accent);
+text-transform:uppercase;letter-spacing:.06em}
+.sub{color:var(--muted);font-size:12px;margin-bottom:12px}
+.card{background:var(--card);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.kv{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px solid #1e2833}
+.kv:last-child{border-bottom:0}.k{color:var(--muted)}.v{font-variant-numeric:tabular-nums;text-align:right}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:5px 4px;text-align:right;
+border-bottom:1px solid #1e2833}th{color:var(--muted);font-weight:500;font-size:11px;text-transform:uppercase}
+td:first-child,th:first-child{text-align:left}
+.up{color:var(--up)}.down{color:var(--down)}
+details{background:var(--card);border-radius:12px;padding:10px 14px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:600}
+.flag{background:#3a1d1d;border-left:3px solid #ff5d5d;padding:8px 10px;border-radius:6px;margin:6px 0;font-size:13px}
+.ok{background:#16301f;border-left:3px solid #2ecc71;padding:8px 10px;border-radius:6px;margin:6px 0;font-size:13px}
+.foot{color:var(--muted);font-size:11px;margin-top:18px;line-height:1.5}
+"""
+
+
+def esc(x):
+    return html.escape(str(x))
+
+
+def kv(k, v):
+    return f'<div class="kv"><span class="k">{esc(k)}</span><span class="v">{esc(v)}</span></div>'
+
+
+def pct_class(x):
+    try:
+        return "up" if float(x) >= 0 else "down"
+    except Exception:                                            # noqa: BLE001
+        return ""
+
+
+def main():
+    OUT.mkdir(parents=True, exist_ok=True)
+    brief = json.loads((ROOT / "briefs" / "latest.json").read_text())
+    state = brief.get("state", {})
+    d = brief.get("date") or brief.get("as_of") or ""
+    pack_path = ROOT / "packs" / f"{d}.json"
+    if not pack_path.exists():                     # fall back to the newest pack on disk
+        packs = sorted((ROOT / "packs").glob("*.json"))
+        pack_path = packs[-1] if packs else pack_path
+    pack = json.loads(pack_path.read_text()) if pack_path.exists() else {}
+    tech = pd.read_csv(ROOT / "data" / "technicals" / "latest.csv")
+
+    h = [f"<!doctype html><html lang='th'><meta charset='utf-8'>",
+         "<meta name='viewport' content='width=device-width,initial-scale=1'>",
+         f"<title>ALINA — {esc(d)}</title><style>{CSS}</style>",
+         f"<h1>สภาวะตลาด {esc(d)}</h1>",
+         f"<div class='sub'>สร้าง {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC · "
+         f"ไฟล์เดียว เปิดจากมือถือได้ทันที ไม่ต้องเน็ต</div>"]
+
+    # ---- state
+    keys = [("VIX", state.get("vix"), f"percentile {state.get('vix_percentile_all_history')}"),
+            ("VIX/VIX3M", state.get("vix_slope_3m"), ">1 = inverted = stress now"),
+            ("VIX9D/VIX", state.get("vix_slope_9d"), ">1 = front-end panic"),
+            ("VVIX pct", state.get("vvix_percentile"), "vol-of-vol"),
+            ("SKEW", state.get("skew"), ">145 = expensive tail"),
+            ("DIX", state.get("dix"), f"pct {state.get('dix_percentile')}"),
+            ("GEX (bn USD)", state.get("gex_usd_bn"), state.get("gex_regime", ""))]
+    h.append("<h2>สถานะตอนนี้</h2><div class='card'>")
+    for k, v, note in keys:
+        if v is None:
+            continue
+        h.append(kv(k, f"{v}  ({note})" if note else v))
+    h.append("</div>")
+
+    # ---- flags
+    flags = brief.get("flags", [])
+    if flags:
+        h.append("<h2>ธงเตือน</h2>")
+        for f in flags:
+            h.append(f"<div class='flag'>{esc(f)}</div>")
+    else:
+        h.append("<div class='ok'>ไม่มีธงเตือนที่ déclaré</div>")
+
+    # ---- base rates
+    br = pack.get("base_rates", {}).get("rows", [])
+    if br:
+        h.append(f"<h2>สถิติย้อนหลังตามสภาวะนี้</h2><div class='card'><div class='sub'>"
+                 f"{esc(pack['base_rates'].get('condition', ''))}</div><table>"
+                 "<tr><th>horizon</th><th>median %</th><th>%pos</th><th>n_eff</th></tr>")
+        for r in br:
+            h.append(f"<tr><td>{int(r['horizon_d'])}d</td>"
+                     f"<td class='{pct_class(r['median_pct'])}'>{r['median_pct']:+.2f}</td>"
+                     f"<td>{r['pct_positive']:.0f}%</td><td>{int(r['n_eff'])}</td></tr>")
+        h.append("</table></div>")
+
+    # ---- similar days
+    sd = pack.get("similar_days", {})
+    if sd.get("fwd21_summary"):
+        s = sd["fwd21_summary"]
+        h.append(f"<h2>12 วันที่คล้ายวันนี้</h2><div class='card'>"
+                 + kv("median 21d", f"{s['median_pct']:+.2f}%")
+                 + kv("ช่วง", f"{s['min_pct']:+.1f}% ถึง {s['max_pct']:+.1f}%")
+                 + kv("บวกกี่วัน", f"{s['pct_positive']:.0f}% ของ {s['n']} วัน")
+                 + "<div class='sub' style='margin-top:8px'>ใช้เป็นภาพการกระจาย ไม่ใช่ค่าคาดหวัง "
+                   "(n น้อย อ่าน min–max)</div></div>")
+
+    # ---- movers
+    t = tech.dropna(subset=["ret21d"]).copy()
+    t = t[~t.symbol.str.contains("^SET_EW$", na=False)]
+    rows = pd.concat([t.nlargest(6, "ret21d"), t.nsmallest(6, "ret21d")]).drop_duplicates("symbol")
+    if len(rows):
+        h.append("<h2>แรงที่สุด / อ่อนที่สุด 21 วัน</h2><div class='card'><table>"
+                 "<tr><th>symbol</th><th>21d %</th><th>RSI</th><th>vs 52w high</th></tr>")
+        for _, r in rows.sort_values("ret21d", ascending=False).iterrows():
+            h.append(f"<tr><td>{esc(r['symbol'])}</td>"
+                     f"<td class='{pct_class(r['ret21d'])}'>{r['ret21d']:+.1f}</td>"
+                     f"<td>{'' if pd.isna(r.get('rsi14')) else round(float(r['rsi14']))}</td>"
+                     f"<td class='{pct_class(r.get('dist_52w_high_pct'))}'>"
+                     f"{'' if pd.isna(r.get('dist_52w_high_pct')) else f'{r.dist_52w_high_pct:+.1f}%'}</td></tr>")
+        h.append("</table></div>")
+
+    # ---- levels
+    levels = pack.get("levels", {}).get("rows", [])
+    if levels:
+        h.append("<h2>ระดับรับ/ส่ง (測定)</h2><div class='card'><table>"
+                 "<tr><th>inst</th><th>close</th><th>pivot</th><th>pdh</th><th>pdl</th><th>ATR</th></tr>")
+        for r in levels[:12]:
+            h.append(f"<tr><td>{esc(r.get('instrument', ''))}</td><td>{r.get('close', '')}</td>"
+                     f"<td>{r.get('pivot', '')}</td><td>{r.get('pdh', '')}</td>"
+                     f"<td>{r.get('pdl', '')}</td><td>{r.get('atr14', '')}</td></tr>")
+        h.append("</table></div>")
+
+    # ---- calendar
+    cal = pack.get("calendar", {}).get("events", [])
+    if cal:
+        h.append("<h2>ปฏิทินใกล้ ๆ</h2><div class='card'>")
+        for e in cal[:10]:
+            h.append(kv(e.get("date", ""), e.get("event", "")))
+        h.append("</div>")
+
+    # ---- news
+    news = brief.get("news", [])
+    if news:
+        h.append("<h2>ข่าวล่าสุด</h2>")
+        for n in news[:8]:
+            h.append(f"<div class='card'><div class='sub'>{esc(n.get('source', ''))}</div>"
+                     f"{esc(n.get('title', ''))}</div>")
+
+    h.append("<details><summary>สิ่งที่ไฟล์นี้ไม่บอก (อ่านก่อนใช้)</summary>"
+             "<div class='sub'>1) ไม่มีคำแนะนำซื้อขาย — 19 การทดลองในโปรเจกต์นี้ไม่มี edge ใดผ่านเกณฑ์ "
+             "2) ตัวเลข base rate เป็นค่ากลางของการกระจายที่กว้าง อ่าน n_eff ก่อนเชื่อ "
+             "3) ข้อมูลหน่วงตามแหล่ง (VIX ปิดวัน, GEX รายวัน, ข่าว real-time) "
+             "4) ทั้งหมดมาจาก briefs/latest.json + packs/<date>.json ถ้าตัวเลขไม่ตรง ให้ยึดไฟล์ต้นทาง"
+             "</div></details>")
+    h.append(f"<div class='foot'>ALINA Market Lab · generated {datetime.now(timezone.utc):%Y-%m-%dT%H:%MZ} · "
+             f"source files: briefs/latest.json, packs/{esc(d)}.json, data/technicals/latest.csv</div>")
+    h.append("</html>")
+
+    path = OUT / "alina_today.html"
+    path.write_text("\n".join(h))
+    print(f"  dashboard -> {path}  ({path.stat().st_size/1024:.0f} KB, self-contained)")
+    print(f"    state keys {len(state)}, flags {len(flags)}, base-rate rows {len(br)}, "
+          f"similar days {sd.get('fwd21_summary', {}).get('n', 0)}, movers {len(rows)}")
+
+
+if __name__ == "__main__":
+    main()

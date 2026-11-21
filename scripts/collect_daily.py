@@ -236,7 +236,8 @@ def c_downstream() -> None:
     import subprocess
     daily = ("scripts/fetch_vol_term.py", "scripts/fetch_news.py", "scripts/fetch_news_world.py",
              "scripts/build_levels.py", "scripts/build_event_db.py", "scripts/build_vol_regimes.py",
-             "scripts/build_hour_profile.py", "scripts/build_technical_indicators.py", "scripts/daily_brief.py")
+             "scripts/build_hour_profile.py", "scripts/build_technical_indicators.py", "scripts/daily_brief.py",
+             "scripts/event_pack.py", "scripts/build_dashboard.py")
     for script in daily:
         p = os.path.join(ROOT, script)
         if not os.path.exists(p):

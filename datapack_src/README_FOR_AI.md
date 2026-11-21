@@ -51,6 +51,15 @@ look-ahead bug in this repo's own code. Treat every number here as *evidence*, n
    measuring luck. Random selection loses ~0.3 Sharpe after costs — that is the sanity check.
 6. **Never martingale.** 5 of 5 instruments in the grid/doubling test were wiped.
 
+## New in v2.8 (what to actually use)
+- `thai_set_panel` — 64 liquid SET names, 10 years daily (THB) + `SET_EW`, an equal-weight index built
+  because the official SET index history is not free. Use SET_EW as a mood/breadth proxy, never as SET50.
+- `dashboard_today` — `dashboard/alina_today.html`, a 9 KB self-contained page for a phone. Regenerate with
+  `python3 scripts/build_dashboard.py`.
+- `research/BUILD_PLAN_ZERO_BUDGET.md` — the honest build order for an auto-trading EA at zero budget: what
+  works, what three things in the popular "Dify + Colab + Unsloth" plan waste money and time, and why the
+  EA can responsibly own risk management but not signal generation yet.
+
 ## New in v2.7 (what to actually use)
 - `congress_trades` — 6,365 parsed House PTR transactions + the full 2019-2026 PTR index. First dataset of
   genuinely NON-PRICE information. Use `filed_date`, never `transaction_date` (45-day lag).

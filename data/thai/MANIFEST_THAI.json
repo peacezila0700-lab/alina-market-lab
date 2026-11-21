@@ -1,0 +1,402 @@
+{
+  "built_utc": "2026-11-21T06:44:10+00:00",
+  "source": "Yahoo chart v8 with the .BK suffix; SET index history is NOT available (^SET returns 1 bar)",
+  "requested": 65,
+  "ok": 64,
+  "index_construction": "SET_EW = equal-weight daily-rebalanced index of the constituents that traded, base 100 = first common date. Cap-weighted SET50/SET are not reproducible without the official membership and float data.",
+  "caveats": [
+    "Price-only, THB, no dividend adjustment (SET yields ~3%).",
+    "Ticker list is today's liquid names: survivorship applies.",
+    "Thai and US trading calendars differ; align on dates, never on row numbers."
+  ],
+  "symbols": {
+    "ADVANC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AOT": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "AWC": {
+      "status": "ok",
+      "rows": 1722,
+      "first": "2019-10-10",
+      "last": "2026-11-20"
+    },
+    "BAM": {
+      "status": "ok",
+      "rows": 1679,
+      "first": "2019-12-16",
+      "last": "2026-11-20"
+    },
+    "BBL": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BDMS": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BEM": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BGRIM": {
+      "status": "ok",
+      "rows": 2267,
+      "first": "2017-07-20",
+      "last": "2026-11-20"
+    },
+    "BH": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BJC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "BLA": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CBG": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "COM7": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CPALL": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CPF": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CPN": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "CRC": {
+      "status": "ok",
+      "rows": 1634,
+      "first": "2020-02-20",
+      "last": "2026-11-20"
+    },
+    "DELTA": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "DOHOME": {
+      "status": "ok",
+      "rows": 1768,
+      "first": "2019-08-06",
+      "last": "2026-11-20"
+    },
+    "EA": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "EGCO": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "ERW": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GLOBAL": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GPSC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "GULF": {
+      "status": "ok",
+      "rows": 393,
+      "first": "2025-04-03",
+      "last": "2026-11-20"
+    },
+    "HMPRO": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "INTUCH": {
+      "status": "HTTPError: HTTP Error 404: Not Found",
+      "rows": 0
+    },
+    "IRPC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "IVL": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "JMT": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "KBANK": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "KCE": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "KKP": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "KTB": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "KTC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "LH": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MEGA": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MINT": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "MTC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "OR": {
+      "status": "ok",
+      "rows": 1397,
+      "first": "2021-02-11",
+      "last": "2026-11-20"
+    },
+    "OSP": {
+      "status": "ok",
+      "rows": 1962,
+      "first": "2018-10-17",
+      "last": "2026-11-20"
+    },
+    "PLANB": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PTT": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PTTEP": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "PTTGC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "RATCH": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SAWAD": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SCB": {
+      "status": "ok",
+      "rows": 1109,
+      "first": "2022-04-20",
+      "last": "2026-11-20"
+    },
+    "SCC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "SCGP": {
+      "status": "ok",
+      "rows": 1471,
+      "first": "2020-10-22",
+      "last": "2026-11-20"
+    },
+    "SISB": {
+      "status": "ok",
+      "rows": 1932,
+      "first": "2018-11-29",
+      "last": "2026-11-20"
+    },
+    "SPRC": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "STA": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TASCO": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TCAP": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "THG": {
+      "status": "ok",
+      "rows": 2173,
+      "first": "2017-12-07",
+      "last": "2026-11-20"
+    },
+    "TIDLOR": {
+      "status": "ok",
+      "rows": 368,
+      "first": "2025-05-16",
+      "last": "2026-11-20"
+    },
+    "TISCO": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TOP": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TRUE": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TU": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TVO": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "TTB": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "VGI": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    },
+    "WHA": {
+      "status": "ok",
+      "rows": 2427,
+      "first": "2016-11-21",
+      "last": "2026-11-20"
+    }
+  }
+}
