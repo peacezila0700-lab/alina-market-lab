@@ -2,7 +2,7 @@
 
 > **RISK MONITORING TOOL ONLY — Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).**
 
-Generated UTC: `2026-11-21T15:18:53+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `8/8`
+Generated UTC: `2026-11-21T17:05:00+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `9/9`
 
 ## 1. Panel Status, Data Sources, Freshness & Thresholds
 | Panel | Last Updated | Age (d) | Freshness | Risk Class | Key Metrics | Warning |
@@ -15,6 +15,7 @@ Generated UTC: `2026-11-21T15:18:53+00:00` | Overall Risk Classification: **`HIG
 | `macro_rates` | `2026-11-20` | 1 | `FRESH` | **LOW** | `{"ecb_dfr": 2.5, "boe_rate": 4.0, "fed_rate_proxy": 3.88, "diff_boe_ecb_dfr": 1.5, "diff_fed_ec` | none |
 | `news_stress` | `2026-11-21T11:37:27` | 0 | `FRESH` | **ELEVATED** | `{"feeds_ok": 16, "feeds_total": 16, "unique_headlines": 418, "stress_keyword_hits": 31}` | none |
 | `crypto_funding_basis` | `2026-11-21` | 0 | `FRESH` | **LOW** | `{"deribit_btc_24h_apr_pct": -2.88, "deribit_btc_index": 58820.48, "okx_btc_24h_apr_pct": -0.46}` | none |
+| `equity_short_insider_breadth` | `2026-11-20` | 1 | `FRESH` | **MODERATE** | `{"regsho_mkt_short_ratio": 0.4612, "regsho_ma5": 0.4745, "regsho_surge_5v60": -0.0242, "regsho_` | none |
 
 ## 2. Calibrated Risk Meta-Labeling (`Task 3 + EXP-0030/0031`, Offline Sizing & Monitor Only)
 - **As-Of Date:** `2026-11-20` | **Causal Train Cutoff (`-31d` Purge+Embargo):** `2026-09-09`
@@ -29,6 +30,7 @@ Generated UTC: `2026-11-21T15:18:53+00:00` | Overall Risk Classification: **`HIG
 - **[HIGH] `vol_term_structure`:** VIX/VIX3M inverted at 1.160 (>1.00)
 - **[ELEVATED] `vol_term_structure`:** VVIX percentile elevated at 1.00 (>=0.90)
 - **[ELEVATED] `equity_vol_dd`:** SPY RV20=26.3%, 52w DD=-11.5%
+- **[MODERATE] `equity_short_insider_breadth`:** FINRA RegSHO mkt short ratio=0.461 (z60=-2.02)
 
 ## 5. Missing Data / Staleness Warnings
 - None.

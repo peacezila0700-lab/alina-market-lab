@@ -12,6 +12,7 @@ Monitors:
   6. Macro Central Bank Policy Differentials (`macro/central_bank_rates_daily.csv`)
   7. News Feed Health & Stress Keyword Density (`news/feed_status.json`, `news/headlines.csv`)
   8. Crypto Funding & Perp Basis Monitor (`microstructure/deribit_BTC_funding_1h.csv.gz`, `collect/okx_BTCUSDT_funding_deep.csv`)
+  9. US Equity RegSHO Market Short Volume & Form 4 Context (`equities/finra_regsho_market_daily.csv`, `sec/insider_form4_2018_2026q1.csv.gz`)
 
 Every panel reports:
   - `data_source`
@@ -526,6 +527,45 @@ def build_risk_radar() -> dict:
     except Exception as e:
         panels["crypto_funding_basis"] = {"data_source": "data/microstructure/", "freshness_status": "MISSING_OR_ERROR", "risk_classification": "UNKNOWN", "missing_data_warning": str(e)}
         missing_warnings.append(f"crypto_funding_basis error: {e}")
+
+    # 9. US Equity RegSHO Market Short Volume & Insider Context (Monitoring Only - EXP-0035)
+    try:
+        reg_p = ROOT / "data" / "equities" / "finra_regsho_market_daily.csv"
+        reg_m = pd.read_csv(reg_p)
+        reg_m["dt"] = pd.to_datetime(reg_m["date"], errors="coerce")
+        reg_m = reg_m.dropna(subset=["dt"]).sort_values("dt")
+        ld = reg_m["dt"].iloc[-1].strftime("%Y-%m-%d")
+        fr, age = _freshness(ld, now)
+        sr = pd.to_numeric(reg_m["mkt_short_ratio"], errors="coerce")
+        sr_last = float(sr.iloc[-1])
+        sr_ma5 = float(sr.tail(5).mean())
+        sr_ma60 = float(sr.tail(60).mean())
+        sr_sd60 = float(sr.tail(60).std())
+        sr_z60 = float((sr_last - sr_ma60) / sr_sd60) if sr_sd60 > 0 else 0.0
+        sr_surge = float(sr_ma5 - sr_ma60)
+        rc = "ELEVATED" if abs(sr_z60) >= 2.5 else ("MODERATE" if abs(sr_z60) >= 1.75 else "LOW")
+        if rc != "LOW":
+            alerts.append({"panel": "equity_short_insider_breadth", "severity": rc, "msg": f"FINRA RegSHO mkt short ratio={sr_last:.3f} (z60={sr_z60:+.2f})"})
+        panels["equity_short_insider_breadth"] = {
+            "data_source": "data/equities/finra_regsho_market_daily.csv (FINRA RegSHO CNMS, monitoring context only; EXP-0035)",
+            "last_updated": ld,
+            "age_days": age,
+            "freshness_status": fr,
+            "risk_classification": rc,
+            "alert_thresholds": {"abs_regsho_z60_mod": 1.75, "abs_regsho_z60_elev": 2.50},
+            "metrics": {
+                "regsho_mkt_short_ratio": round(sr_last, 4),
+                "regsho_ma5": round(sr_ma5, 4),
+                "regsho_surge_5v60": round(sr_surge, 4),
+                "regsho_z60": round(sr_z60, 2),
+                "n_nms_symbols": int(reg_m["n_symbols"].iloc[-1]),
+                "sec_form4_archive_range": "2018q1..2026q1 (quarterly DERA; context only)",
+            },
+            "missing_data_warning": None if fr == "FRESH" else f"FINRA RegSHO stale ({age}d old)",
+        }
+    except Exception as e:
+        panels["equity_short_insider_breadth"] = {"data_source": "data/equities/finra_regsho_market_daily.csv", "freshness_status": "MISSING_OR_ERROR", "risk_classification": "UNKNOWN", "missing_data_warning": str(e)}
+        missing_warnings.append(f"equity_short_insider_breadth error: {e}")
 
     # Freshness SLA audit across all panels
     stale_panels = [k for k, v in panels.items() if v.get("freshness_status") in ("STALE_WARNING", "CRITICAL_STALE", "MISSING_OR_ERROR")]

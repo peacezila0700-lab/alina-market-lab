@@ -1,0 +1,217 @@
+{
+  "generated_utc": "2026-11-21T17:01:23.034368+00:00",
+  "experiment": "EXP-0034",
+  "active_only": {
+    "firms": 317,
+    "delisted_in_panel": 0,
+    "results": {
+      "F_NEG_ACCRUALS": {
+        "ls_5bp_all": 0.747,
+        "ls_10bp_is": 0.89,
+        "ls_10bp_oos": 0.572,
+        "ls_10bp_all": 0.729,
+        "ls_20bp_all": 0.693,
+        "ls_10bp_maxdd_pct": -8.34,
+        "lo_10bp_all": 1.222,
+        "perm_pct_is": 99.5,
+        "perm_pct_oos": 92.5,
+        "delisted_long_legs": 0,
+        "delisted_short_legs": 0
+      },
+      "F_CFO_ASSETS": {
+        "ls_5bp_all": -0.051,
+        "ls_10bp_is": 0.326,
+        "ls_10bp_oos": -0.623,
+        "ls_10bp_all": -0.061,
+        "ls_20bp_all": -0.081,
+        "ls_10bp_maxdd_pct": -21.38,
+        "lo_10bp_all": 1.117,
+        "perm_pct_is": 75.0,
+        "perm_pct_oos": 10.5,
+        "delisted_long_legs": 0,
+        "delisted_short_legs": 0
+      },
+      "F_REV_YOY": {
+        "ls_5bp_all": 0.361,
+        "ls_10bp_is": 0.206,
+        "ls_10bp_oos": 0.505,
+        "ls_10bp_all": 0.349,
+        "ls_20bp_all": 0.326,
+        "ls_10bp_maxdd_pct": -18.7,
+        "lo_10bp_all": 1.157,
+        "perm_pct_is": 76.0,
+        "perm_pct_oos": 90.0,
+        "delisted_long_legs": 0,
+        "delisted_short_legs": 0
+      },
+      "F_QUALITY_COMP": {
+        "ls_5bp_all": -0.271,
+        "ls_10bp_is": 0.03,
+        "ls_10bp_oos": -0.689,
+        "ls_10bp_all": -0.281,
+        "ls_20bp_all": -0.301,
+        "ls_10bp_maxdd_pct": -24.29,
+        "lo_10bp_all": 1.073,
+        "perm_pct_is": 60.0,
+        "perm_pct_oos": 6.5,
+        "delisted_long_legs": 0,
+        "delisted_short_legs": 0
+      },
+      "F_SECTOR_NEUT_ACCRUALS": {
+        "ls_5bp_all": 0.471,
+        "ls_10bp_is": 0.698,
+        "ls_10bp_oos": 0.227,
+        "ls_10bp_all": 0.442,
+        "ls_20bp_all": 0.382,
+        "ls_10bp_maxdd_pct": -10.68,
+        "lo_10bp_all": 1.268,
+        "perm_pct_is": 98.5,
+        "perm_pct_oos": 72.5,
+        "delisted_long_legs": 0,
+        "delisted_short_legs": 0
+      }
+    }
+  },
+  "survivorship_augmented_2usd": {
+    "firms": 385,
+    "delisted_in_panel": 68,
+    "results": {
+      "F_NEG_ACCRUALS": {
+        "ls_5bp_all": 0.47,
+        "ls_10bp_is": 0.489,
+        "ls_10bp_oos": 0.413,
+        "ls_10bp_all": 0.453,
+        "ls_20bp_all": 0.419,
+        "ls_10bp_maxdd_pct": -8.81,
+        "lo_10bp_all": 1.045,
+        "perm_pct_is": 91.5,
+        "perm_pct_oos": 73.5,
+        "delisted_long_legs": 528,
+        "delisted_short_legs": 332
+      },
+      "F_CFO_ASSETS": {
+        "ls_5bp_all": 0.049,
+        "ls_10bp_is": 0.202,
+        "ls_10bp_oos": -0.183,
+        "ls_10bp_all": 0.039,
+        "ls_20bp_all": 0.021,
+        "ls_10bp_maxdd_pct": -17.71,
+        "lo_10bp_all": 1.065,
+        "perm_pct_is": 73.0,
+        "perm_pct_oos": 41.5,
+        "delisted_long_legs": 292,
+        "delisted_short_legs": 374
+      },
+      "F_REV_YOY": {
+        "ls_5bp_all": 0.298,
+        "ls_10bp_is": 0.093,
+        "ls_10bp_oos": 0.512,
+        "ls_10bp_all": 0.286,
+        "ls_20bp_all": 0.263,
+        "ls_10bp_maxdd_pct": -18.67,
+        "lo_10bp_all": 1.067,
+        "perm_pct_is": 69.0,
+        "perm_pct_oos": 83.5,
+        "delisted_long_legs": 274,
+        "delisted_short_legs": 499
+      },
+      "F_QUALITY_COMP": {
+        "ls_5bp_all": -0.099,
+        "ls_10bp_is": 0.127,
+        "ls_10bp_oos": -0.461,
+        "ls_10bp_all": -0.108,
+        "ls_20bp_all": -0.127,
+        "ls_10bp_maxdd_pct": -20.43,
+        "lo_10bp_all": 1.054,
+        "perm_pct_is": 70.0,
+        "perm_pct_oos": 27.5,
+        "delisted_long_legs": 210,
+        "delisted_short_legs": 463
+      },
+      "F_SECTOR_NEUT_ACCRUALS": {
+        "ls_5bp_all": 0.23,
+        "ls_10bp_is": 0.508,
+        "ls_10bp_oos": -0.064,
+        "ls_10bp_all": 0.201,
+        "ls_20bp_all": 0.143,
+        "ls_10bp_maxdd_pct": -11.04,
+        "lo_10bp_all": 1.101,
+        "perm_pct_is": 91.5,
+        "perm_pct_oos": 48.5,
+        "delisted_long_legs": 412,
+        "delisted_short_legs": 301
+      }
+    }
+  },
+  "survivorship_augmented_no_price_floor": {
+    "firms": 385,
+    "delisted_in_panel": 68,
+    "results": {
+      "F_NEG_ACCRUALS": {
+        "ls_5bp_all": 0.525,
+        "ls_10bp_is": 0.529,
+        "ls_10bp_oos": 0.513,
+        "ls_10bp_all": 0.511,
+        "ls_20bp_all": 0.482,
+        "ls_10bp_maxdd_pct": -9.18,
+        "lo_10bp_all": 1.212,
+        "perm_pct_is": 93.0,
+        "perm_pct_oos": 76.0,
+        "delisted_long_legs": 546,
+        "delisted_short_legs": 338
+      },
+      "F_CFO_ASSETS": {
+        "ls_5bp_all": -0.498,
+        "ls_10bp_is": 0.221,
+        "ls_10bp_oos": -1.199,
+        "ls_10bp_all": -0.506,
+        "ls_20bp_all": -0.522,
+        "ls_10bp_maxdd_pct": -44.22,
+        "lo_10bp_all": 1.069,
+        "perm_pct_is": 77.0,
+        "perm_pct_oos": 2.5,
+        "delisted_long_legs": 294,
+        "delisted_short_legs": 394
+      },
+      "F_REV_YOY": {
+        "ls_5bp_all": 0.133,
+        "ls_10bp_is": 0.055,
+        "ls_10bp_oos": 0.196,
+        "ls_10bp_all": 0.121,
+        "ls_20bp_all": 0.099,
+        "ls_10bp_maxdd_pct": -21.15,
+        "lo_10bp_all": 1.065,
+        "perm_pct_is": 67.5,
+        "perm_pct_oos": 68.0,
+        "delisted_long_legs": 277,
+        "delisted_short_legs": 517
+      },
+      "F_QUALITY_COMP": {
+        "ls_5bp_all": -0.137,
+        "ls_10bp_is": 0.058,
+        "ls_10bp_oos": -0.46,
+        "ls_10bp_all": -0.146,
+        "ls_20bp_all": -0.164,
+        "ls_10bp_maxdd_pct": -22.1,
+        "lo_10bp_all": 1.055,
+        "perm_pct_is": 60.5,
+        "perm_pct_oos": 27.5,
+        "delisted_long_legs": 210,
+        "delisted_short_legs": 469
+      },
+      "F_SECTOR_NEUT_ACCRUALS": {
+        "ls_5bp_all": 0.618,
+        "ls_10bp_is": 0.494,
+        "ls_10bp_oos": 0.715,
+        "ls_10bp_all": 0.596,
+        "ls_20bp_all": 0.551,
+        "ls_10bp_maxdd_pct": -11.48,
+        "lo_10bp_all": 1.262,
+        "perm_pct_is": 90.5,
+        "perm_pct_oos": 81.0,
+        "delisted_long_legs": 430,
+        "delisted_short_legs": 309
+      }
+    }
+  }
+}

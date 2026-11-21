@@ -87,7 +87,8 @@ def test_workstream_c_ea_kb_batch5_integrity() -> None:
 
 def test_workstream_d_risk_radar_and_offline_dashboard() -> None:
     rr = json.loads((ROOT / "data" / "risk_radar" / "latest.json").read_text())
-    assert rr["total_panels"] == 8
+    assert rr["total_panels"] == 9
+    assert "equity_short_insider_breadth" in rr["panels"]
     assert "RISK MONITORING TOOL ONLY" in rr["disclaimer"]
     assert rr["overall_risk_classification"] in ("LOW", "MODERATE", "ELEVATED", "HIGH")
     assert "calibrated_probabilities" in rr.get("risk_meta_model", {})
@@ -164,8 +165,9 @@ def test_v219_cloud_data_upgrades_and_cleanups() -> None:
     bv = pd.read_csv(ROOT / "data" / "crypto_vision" / "binance_BTCUSDT_um_perp_1h.csv.gz")
     assert len(bv) >= 59000 and str(bv["ts_utc"].iloc[0]).startswith("2020-01-01")
     pdel = pd.read_csv(ROOT / "data" / "sec" / "pit_fundamentals_delisted.csv")
-    assert pdel["ticker"].nunique() >= 25
+    assert pdel["ticker"].nunique() >= 65
     assert int((pd.to_datetime(pdel["available_from"]) < pd.to_datetime(pdel["latest_period_end"])).sum()) == 0
+    assert not (ROOT / "data" / "equities" / "finra_short_interest_latest5k.csv.gz").exists()
 
 
 def test_exp0032_0033_survivorship_and_total_return() -> None:
@@ -178,6 +180,28 @@ def test_exp0032_0033_survivorship_and_total_return() -> None:
     tr = e33["total_return_results"]
     assert tr["5_VolTarget12_Meta_Cash"]["cash_bil_etf"]["calmar_cagr"] > tr["1_SPY_Buy_And_Hold"]["cash_bil_etf"]["calmar_cagr"]
     assert tr["5_VolTarget12_Meta_Cash"]["cash_bil_etf"]["max_dd_pct"] > tr["6_VolTarget12_Meta_TLT_Rot"]["cash_bil_etf"]["max_dd_pct"]
+
+
+def test_exp0034_0035_expanded_survivorship_and_form4_regsho() -> None:
+    e34 = json.loads((ROOT / "research" / "artifacts" / "exp0034_expanded_survivorship_pit.json").read_text())
+    assert e34["survivorship_augmented_2usd"]["delisted_in_panel"] >= 65
+    assert e34["survivorship_augmented_2usd"]["firms"] >= 380
+    assert (
+        e34["survivorship_augmented_2usd"]["results"]["F_NEG_ACCRUALS"]["ls_10bp_all"]
+        < e34["active_only"]["results"]["F_NEG_ACCRUALS"]["ls_10bp_all"]
+    )
+
+    f4 = pd.read_csv(ROOT / "data" / "sec" / "insider_form4_2018_2026q1.csv.gz")
+    assert len(f4) >= 900000 and f4["issuertradingsymbol"].nunique() >= 8000
+
+    reg_m = pd.read_csv(ROOT / "data" / "equities" / "finra_regsho_market_daily.csv")
+    assert len(reg_m) >= 1900 and str(reg_m["date"].iloc[-1]) >= "2026-11-20"
+    reg_u = pd.read_csv(ROOT / "data" / "equities" / "finra_regsho_universe_daily.csv.gz")
+    assert len(reg_u) >= 600000 and reg_u["ticker"].nunique() >= 370
+
+    e35 = json.loads((ROOT / "research" / "artifacts" / "exp0035_form4_regsho_pit.json").read_text())
+    assert e35["universe_firms"] >= 380 and e35["delisted_firms"] >= 65
+    assert e35["form4_cross_section"]["F4_LOG_NET_USD_63D_21d"]["perm_pct_oos"] < 95.0
 
 
 if __name__ == "__main__":

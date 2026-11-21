@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-11-21T15:18:53+00:00",
+  "generated_utc": "2026-11-21T17:05:00+00:00",
   "run_date": "2026-11-21",
   "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).",
   "overall_risk_classification": "HIGH",
-  "fresh_panels": 8,
-  "total_panels": 8,
+  "fresh_panels": 9,
+  "total_panels": 9,
   "stale_or_missing_panels": [],
   "active_alerts": [
     {
@@ -21,6 +21,11 @@
       "panel": "equity_vol_dd",
       "severity": "ELEVATED",
       "msg": "SPY RV20=26.3%, 52w DD=-11.5%"
+    },
+    {
+      "panel": "equity_short_insider_breadth",
+      "severity": "MODERATE",
+      "msg": "FINRA RegSHO mkt short ratio=0.461 (z60=-2.02)"
     }
   ],
   "missing_data_warnings": [],
@@ -193,6 +198,26 @@
         "deribit_btc_24h_apr_pct": -2.88,
         "deribit_btc_index": 58820.48,
         "okx_btc_24h_apr_pct": -0.46
+      },
+      "missing_data_warning": null
+    },
+    "equity_short_insider_breadth": {
+      "data_source": "data/equities/finra_regsho_market_daily.csv (FINRA RegSHO CNMS, monitoring context only; EXP-0035)",
+      "last_updated": "2026-11-20",
+      "age_days": 1,
+      "freshness_status": "FRESH",
+      "risk_classification": "MODERATE",
+      "alert_thresholds": {
+        "abs_regsho_z60_mod": 1.75,
+        "abs_regsho_z60_elev": 2.5
+      },
+      "metrics": {
+        "regsho_mkt_short_ratio": 0.4612,
+        "regsho_ma5": 0.4745,
+        "regsho_surge_5v60": -0.0242,
+        "regsho_z60": -2.02,
+        "n_nms_symbols": 12414,
+        "sec_form4_archive_range": "2018q1..2026q1 (quarterly DERA; context only)"
       },
       "missing_data_warning": null
     }

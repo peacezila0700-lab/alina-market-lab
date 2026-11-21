@@ -1,7 +1,7 @@
 {
   "source": "Tiingo Daily API (personal-research-only)",
-  "count_requested": 30,
-  "count_ok": 30,
+  "count_requested": 75,
+  "count_ok": 70,
   "symbols": {
     "SIVBQ": {
       "status": "ok",
@@ -157,7 +157,7 @@
       "exchange": "NYSE"
     },
     "WRK": {
-      "status": "ok",
+      "status": "excluded_reused_or_short_ticker",
       "rows": 1,
       "first": "2024-07-05",
       "last": "2024-07-05",
@@ -272,6 +272,406 @@
       "first_close": 20.49,
       "last_close": 103.14,
       "exchange": "NASDAQ"
+    },
+    "SPLS": {
+      "status": "excluded_reused_or_short_ticker",
+      "rows": 214,
+      "first": "2026-01-16",
+      "last": "2026-11-20",
+      "first_close": 50.0066,
+      "last_close": 49.18,
+      "exchange": "BATS"
+    },
+    "CHK": {
+      "status": "ok",
+      "rows": 2809,
+      "first": "2010-01-04",
+      "last": "2024-10-04",
+      "first_close": 28.09,
+      "last_close": 81.46,
+      "exchange": "NASDAQ"
+    },
+    "SWN": {
+      "status": "ok",
+      "rows": 3711,
+      "first": "2010-01-04",
+      "last": "2024-10-01",
+      "first_close": 50.83,
+      "last_close": 7.11,
+      "exchange": "NYSE"
+    },
+    "JWN": {
+      "status": "ok",
+      "rows": 3869,
+      "first": "2010-01-04",
+      "last": "2025-05-20",
+      "first_close": 37.92,
+      "last_close": 24.66,
+      "exchange": "NYSE"
+    },
+    "FL": {
+      "status": "ok",
+      "rows": 3943,
+      "first": "2010-01-04",
+      "last": "2025-09-05",
+      "first_close": 11.16,
+      "last_close": 24.01,
+      "exchange": "NYSE"
+    },
+    "HBI": {
+      "status": "ok",
+      "rows": 4003,
+      "first": "2010-01-04",
+      "last": "2025-12-01",
+      "first_close": 24.7,
+      "last_close": 6.47,
+      "exchange": "NYSE"
+    },
+    "CMA": {
+      "status": "ok",
+      "rows": 4044,
+      "first": "2010-01-04",
+      "last": "2026-01-30",
+      "first_close": 30.5,
+      "last_close": 88.67,
+      "exchange": "NYSE"
+    },
+    "KSU": {
+      "status": "ok",
+      "rows": 3008,
+      "first": "2010-01-04",
+      "last": "2021-12-13",
+      "first_close": 33.65,
+      "last_close": 293.59,
+      "exchange": "NYSE"
+    },
+    "ALXN": {
+      "status": "ok",
+      "rows": 2909,
+      "first": "2010-01-04",
+      "last": "2021-07-28",
+      "first_close": 48.25,
+      "last_close": 182.5,
+      "exchange": "NASDAQ"
+    },
+    "FLIR": {
+      "status": "ok",
+      "rows": 2861,
+      "first": "2010-01-04",
+      "last": "2021-05-14",
+      "first_close": 32.64,
+      "last_close": 57.34,
+      "exchange": "NASDAQ"
+    },
+    "VAR": {
+      "status": "ok",
+      "rows": 2841,
+      "first": "2010-01-04",
+      "last": "2021-04-16",
+      "first_close": 47.17,
+      "last_close": 177.07,
+      "exchange": "NYSE"
+    },
+    "CXO": {
+      "status": "ok",
+      "rows": 2779,
+      "first": "2010-01-04",
+      "last": "2021-01-15",
+      "first_close": 47.39,
+      "last_close": 65.6,
+      "exchange": "NYSE"
+    },
+    "MYL": {
+      "status": "ok",
+      "rows": 2739,
+      "first": "2010-01-04",
+      "last": "2020-11-19",
+      "first_close": 18.72,
+      "last_close": 15.855,
+      "exchange": "NASDAQ"
+    },
+    "NBL": {
+      "status": "ok",
+      "rows": 2709,
+      "first": "2010-01-04",
+      "last": "2020-10-06",
+      "first_close": 73.22,
+      "last_close": 8.46,
+      "exchange": "NYSE"
+    },
+    "ETFC": {
+      "status": "ok",
+      "rows": 2707,
+      "first": "2010-01-04",
+      "last": "2020-10-02",
+      "first_close": 1.84,
+      "last_close": 49.26,
+      "exchange": "NASDAQ"
+    },
+    "AGN": {
+      "status": "ok",
+      "rows": 2605,
+      "first": "2010-01-04",
+      "last": "2020-05-08",
+      "first_close": 40.29,
+      "last_close": 193.02,
+      "exchange": "NYSE"
+    },
+    "RTN": {
+      "status": "ok",
+      "rows": 2581,
+      "first": "2010-01-04",
+      "last": "2020-04-03",
+      "first_close": 52.21,
+      "last_close": 116.96,
+      "exchange": "NYSE"
+    },
+    "CELG": {
+      "status": "ok",
+      "rows": 2490,
+      "first": "2010-01-04",
+      "last": "2019-11-22",
+      "first_close": 55.74,
+      "last_close": 108.24,
+      "exchange": "NASDAQ"
+    },
+    "RHT": {
+      "status": "ok",
+      "rows": 2393,
+      "first": "2010-01-04",
+      "last": "2019-07-08",
+      "first_close": 31.12,
+      "last_close": 187.71,
+      "exchange": "NYSE"
+    },
+    "ESRX": {
+      "status": "ok",
+      "rows": 2258,
+      "first": "2010-01-04",
+      "last": "2018-12-20",
+      "first_close": 88.53,
+      "last_close": 92.33,
+      "exchange": "NASDAQ"
+    },
+    "AET": {
+      "status": "ok",
+      "rows": 2243,
+      "first": "2010-01-04",
+      "last": "2018-11-28",
+      "first_close": 33.0,
+      "last_close": 212.7,
+      "exchange": "NYSE"
+    },
+    "COL": {
+      "status": "ok",
+      "rows": 2241,
+      "first": "2010-01-04",
+      "last": "2018-11-26",
+      "first_close": 56.35,
+      "last_close": 141.04,
+      "exchange": "NYSE"
+    },
+    "CA": {
+      "status": "excluded_reused_or_short_ticker",
+      "rows": 600,
+      "first": "2023-12-14",
+      "last": "2026-05-07",
+      "first_close": 25.195,
+      "last_close": 24.99,
+      "exchange": "NASDAQ"
+    },
+    "PX": {
+      "status": "ok",
+      "rows": 2223,
+      "first": "2010-01-04",
+      "last": "2018-10-30",
+      "first_close": 81.56,
+      "last_close": 164.5,
+      "exchange": "NYSE"
+    },
+    "TWX": {
+      "status": "ok",
+      "rows": 2128,
+      "first": "2010-01-04",
+      "last": "2018-06-15",
+      "first_close": 29.42,
+      "last_close": 98.77,
+      "exchange": "NYSE"
+    },
+    "WFM": {
+      "status": "ok",
+      "rows": 1927,
+      "first": "2010-01-04",
+      "last": "2017-08-28",
+      "first_close": 27.85,
+      "last_close": 41.99,
+      "exchange": "NASDAQ"
+    },
+    "RAI": {
+      "status": "ok",
+      "rows": 1920,
+      "first": "2010-01-04",
+      "last": "2017-08-17",
+      "first_close": 53.24,
+      "last_close": 65.4,
+      "exchange": "NYSE"
+    },
+    "STJ": {
+      "status": "ok",
+      "rows": 1773,
+      "first": "2010-01-04",
+      "last": "2017-01-18",
+      "first_close": 37.03,
+      "last_close": 80.82,
+      "exchange": "NYSE"
+    },
+    "EMC": {
+      "status": "excluded_reused_or_short_ticker",
+      "rows": 885,
+      "first": "2023-05-15",
+      "last": "2026-11-20",
+      "first_close": 25.15,
+      "last_close": 29.7,
+      "exchange": "NYSE"
+    },
+    "HOLX": {
+      "status": "ok",
+      "rows": 4089,
+      "first": "2010-01-04",
+      "last": "2026-04-07",
+      "first_close": 14.94,
+      "last_close": 76.01,
+      "exchange": "NASDAQ"
+    },
+    "CTRA": {
+      "status": "ok",
+      "rows": 4110,
+      "first": "2010-01-04",
+      "last": "2026-05-06",
+      "first_close": 46.23,
+      "last_close": 32.56,
+      "exchange": "NYSE"
+    },
+    "EA": {
+      "status": "ok",
+      "rows": 4171,
+      "first": "2010-01-04",
+      "last": "2026-08-04",
+      "first_close": 18.15,
+      "last_close": 209.7,
+      "exchange": "NASDAQ"
+    },
+    "LEG": {
+      "status": "ok",
+      "rows": 4188,
+      "first": "2010-01-04",
+      "last": "2026-08-27",
+      "first_close": 20.51,
+      "last_close": 9.2,
+      "exchange": "NYSE"
+    },
+    "SEE": {
+      "status": "ok",
+      "rows": 4091,
+      "first": "2010-01-04",
+      "last": "2026-04-09",
+      "first_close": 22.02,
+      "last_close": 42.15,
+      "exchange": "NYSE"
+    },
+    "TGNA": {
+      "status": "ok",
+      "rows": 4078,
+      "first": "2010-01-04",
+      "last": "2026-03-20",
+      "first_close": 15.35,
+      "last_close": 20.03,
+      "exchange": "NYSE"
+    },
+    "PDCO": {
+      "status": "ok",
+      "rows": 3847,
+      "first": "2010-01-04",
+      "last": "2025-04-17",
+      "first_close": 28.81,
+      "last_close": 31.33,
+      "exchange": "NASDAQ"
+    },
+    "SRCL": {
+      "status": "ok",
+      "rows": 3735,
+      "first": "2010-01-04",
+      "last": "2024-11-04",
+      "first_close": 55.16,
+      "last_close": 61.98,
+      "exchange": "NASDAQ"
+    },
+    "XEC": {
+      "status": "ok",
+      "rows": 2959,
+      "first": "2010-01-04",
+      "last": "2021-10-04",
+      "first_close": 55.17,
+      "last_close": 87.2,
+      "exchange": "NYSE"
+    },
+    "QEP": {
+      "status": "ok",
+      "rows": 2708,
+      "first": "2010-06-16",
+      "last": "2021-03-18",
+      "first_close": 34.61,
+      "last_close": 4.08,
+      "exchange": "NYSE"
+    },
+    "LM": {
+      "status": "ok",
+      "rows": 2663,
+      "first": "2010-01-04",
+      "last": "2020-07-31",
+      "first_close": 30.25,
+      "last_close": 49.99,
+      "exchange": "NYSE"
+    },
+    "DNR": {
+      "status": "ok",
+      "rows": 2662,
+      "first": "2010-01-04",
+      "last": "2020-07-30",
+      "first_close": 15.63,
+      "last_close": 0.241,
+      "exchange": "NYSE"
+    },
+    "WCG": {
+      "status": "ok",
+      "rows": 2531,
+      "first": "2010-01-04",
+      "last": "2020-01-23",
+      "first_close": 37.15,
+      "last_close": 349.92,
+      "exchange": "NYSE"
+    },
+    "AVP": {
+      "status": "ok",
+      "rows": 2518,
+      "first": "2010-01-04",
+      "last": "2020-01-03",
+      "first_close": 32.12,
+      "last_close": 5.6,
+      "exchange": "NYSE"
+    },
+    "NFX": {
+      "status": "short:98",
+      "rows": 98
+    },
+    "SCG": {
+      "status": "ok",
+      "rows": 2264,
+      "first": "2010-01-04",
+      "last": "2018-12-31",
+      "first_close": 37.59,
+      "last_close": 47.78,
+      "exchange": "NYSE"
     }
   }
 }
