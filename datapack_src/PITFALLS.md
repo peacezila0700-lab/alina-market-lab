@@ -137,3 +137,23 @@ git -c user.name="ALINA Agent" -c user.email="alina.lab.contact@gmail.com" commi
 bash scripts/gh_push.sh
 ```
 Then verify with `git fetch <url> main && git log --oneline -1 FETCH_HEAD`.
+
+## 19. The local git history silently diverges from the remote — check before you push
+Three sessions in a row, `git push` was rejected with "fetch first" while the local log *looked* fine.
+The cause: the sandbox snapshot restores the working tree and most of `.git`, but not `.git/config`, and a
+newer base commit from the remote was never fetched — so local commits were being stacked on an older
+history and every push was a non-fast-forward.
+**Procedure that always works (and never loses the work):**
+```
+URL=https://x-access-token:$(cat ~/.alina/git_token)@github.com/<org>/<repo>.git
+git fetch -q $URL main
+git merge-base --is-ancestor FETCH_HEAD HEAD && echo "fast-forward ok" || echo "DIVERGED"
+# if diverged, keep the WORKING TREE (it is the source of truth) and re-commit on top of the remote:
+git branch -f backup-$(date +%H%M) HEAD
+git reset --soft FETCH_HEAD
+git -c user.name="…" -c user.email="…" commit -m "…"     # diff vs the real remote base
+git push $URL HEAD:main
+git fetch -q $URL main && git log --oneline -1 FETCH_HEAD # verify
+```
+Never `git pull` into this repo: the working tree carries gigabytes of regenerated data and a merge will
+produce conflicts in every CSV. `reset --soft` + one fresh commit is the safe path.
