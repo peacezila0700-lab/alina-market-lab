@@ -1,0 +1,156 @@
+{
+  "generated_utc": "2026-11-21T11:33:06+00:00",
+  "experiment": "EXP-0029",
+  "data_adequacy": {
+    "deribit_funding_perp_1h": "ADEQUATE (25,284h, 2024-01-01..2026-11-21)",
+    "okx_perp_index_1h": "PARTIAL (10,000h, 2025-09-30..2026-11-20)",
+    "okx_funding_8h": "INADEQUATE (280 rows / ~93 days API cap)",
+    "binance_bybit": "UNAVAILABLE (Sandbox HTTP 451 / 403)"
+  },
+  "deribit_carry": {
+    "BTC": {
+      "asset": "BTC",
+      "hours": 25284,
+      "date_range": "2024-01-01 01:00:00+00:00..2026-11-21 00:00:00+00:00",
+      "mean_ann_funding_pct": 6.15,
+      "is_mean_ann_funding_pct": 8.29,
+      "oos_mean_ann_funding_pct": 3.84,
+      "median_basis_bps": 2.13,
+      "scenarios": {
+        "entry_8pct_exit_2pct": {
+          "round_trips": 71,
+          "time_in_market_pct": 38.8,
+          "tiers": {
+            "Gross_Zero_Cost": {
+              "is_sharpe": 0.255,
+              "oos_sharpe": 0.011,
+              "all_cagr_pct": 6.75,
+              "oos_cagr_pct": 0.3,
+              "maxdd_pct": -15.47
+            },
+            "Maker_2bp_leg_5pct_Borrow": {
+              "is_sharpe": 0.13,
+              "oos_sharpe": -0.149,
+              "all_cagr_pct": 1.37,
+              "oos_cagr_pct": -4.17,
+              "maxdd_pct": -24.04
+            },
+            "Taker_5bp_leg_8pct_Borrow": {
+              "is_sharpe": 0.002,
+              "oos_sharpe": -0.318,
+              "all_cagr_pct": -4.23,
+              "oos_cagr_pct": -8.89,
+              "maxdd_pct": -34.47
+            }
+          }
+        },
+        "entry_15pct_exit_5pct": {
+          "round_trips": 48,
+          "time_in_market_pct": 20.8,
+          "tiers": {
+            "Gross_Zero_Cost": {
+              "is_sharpe": 0.106,
+              "oos_sharpe": 0.153,
+              "all_cagr_pct": 3.59,
+              "oos_cagr_pct": 2.48,
+              "maxdd_pct": -14.85
+            },
+            "Maker_2bp_leg_5pct_Borrow": {
+              "is_sharpe": -0.002,
+              "oos_sharpe": 0.035,
+              "all_cagr_pct": 0.22,
+              "oos_cagr_pct": 0.57,
+              "maxdd_pct": -20.95
+            },
+            "Taker_5bp_leg_8pct_Borrow": {
+              "is_sharpe": -0.117,
+              "oos_sharpe": -0.095,
+              "all_cagr_pct": -3.39,
+              "oos_cagr_pct": -1.54,
+              "maxdd_pct": -28.64
+            }
+          }
+        }
+      }
+    },
+    "ETH": {
+      "asset": "ETH",
+      "hours": 25284,
+      "date_range": "2024-01-01 01:00:00+00:00..2026-11-21 00:00:00+00:00",
+      "mean_ann_funding_pct": 3.7,
+      "is_mean_ann_funding_pct": 5.51,
+      "oos_mean_ann_funding_pct": 1.74,
+      "median_basis_bps": 1.78,
+      "scenarios": {
+        "entry_8pct_exit_2pct": {
+          "round_trips": 54,
+          "time_in_market_pct": 24.7,
+          "tiers": {
+            "Gross_Zero_Cost": {
+              "is_sharpe": 0.098,
+              "oos_sharpe": 0.038,
+              "all_cagr_pct": 3.39,
+              "oos_cagr_pct": 1.32,
+              "maxdd_pct": -24.99
+            },
+            "Maker_2bp_leg_5pct_Borrow": {
+              "is_sharpe": 0.014,
+              "oos_sharpe": -0.051,
+              "all_cagr_pct": -0.46,
+              "oos_cagr_pct": -1.76,
+              "maxdd_pct": -31.73
+            },
+            "Taker_5bp_leg_8pct_Borrow": {
+              "is_sharpe": -0.074,
+              "oos_sharpe": -0.151,
+              "all_cagr_pct": -4.57,
+              "oos_cagr_pct": -5.2,
+              "maxdd_pct": -39.23
+            }
+          }
+        },
+        "entry_15pct_exit_5pct": {
+          "round_trips": 31,
+          "time_in_market_pct": 11.9,
+          "tiers": {
+            "Gross_Zero_Cost": {
+              "is_sharpe": 0.139,
+              "oos_sharpe": -0.044,
+              "all_cagr_pct": 2.95,
+              "oos_cagr_pct": -0.58,
+              "maxdd_pct": -17.11
+            },
+            "Maker_2bp_leg_5pct_Borrow": {
+              "is_sharpe": 0.061,
+              "oos_sharpe": -0.091,
+              "all_cagr_pct": 0.85,
+              "oos_cagr_pct": -1.19,
+              "maxdd_pct": -19.36
+            },
+            "Taker_5bp_leg_8pct_Borrow": {
+              "is_sharpe": -0.022,
+              "oos_sharpe": -0.145,
+              "all_cagr_pct": -1.44,
+              "oos_cagr_pct": -1.9,
+              "maxdd_pct": -22.33
+            }
+          }
+        }
+      }
+    }
+  },
+  "cross_venue_okx_deribit": {
+    "asset": "BTC",
+    "price_overlap_hours": 10000,
+    "price_overlap_range": "2025-09-30 04:00:00+00:00..2026-11-20 19:00:00+00:00",
+    "okx_minus_deribit_median_bps": 3.65,
+    "okx_minus_deribit_p95_abs_bps": 12.89,
+    "okx_minus_deribit_p99_abs_bps": 16.9,
+    "okx_minus_deribit_max_abs_bps": 127.52,
+    "funding_overlap_8h_rows": 280,
+    "funding_overlap_range": "2026-08-19 16:00:00+00:00..2026-11-20 16:00:00+00:00",
+    "okx_mean_8h_ann_pct": 5.8,
+    "deribit_mean_8h_ann_pct": 4.19,
+    "cross_venue_tradability_verdict": "NOT_ARBITRAGE: 95th percentile cross-venue perp spread (12.89 bps) is below 2-exchange taker round-trip execution + spread + slippage cost (~24\u201332 bps), and OKX public funding history covers only ~93 days (insufficient for multi-regime validation)."
+  }
+}

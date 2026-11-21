@@ -1,0 +1,321 @@
+cik,ticker,name,sector,industry,market_cap,xbrl_rows
+320193,AAPL,Apple Inc. Common Stock,Technology,Computer Manufacturing,5074783276220.0,2393
+789019,MSFT,Microsoft Corporation Common Stock,Technology,Computer Software: Prepackaged Software,3700472745262.0,2600
+1045810,NVDA,NVIDIA Corporation Common Stock,Technology,Semiconductors,3518118000000.0,2300
+1652044,GOOGL,Alphabet Inc. Class A Common Stock,Technology,Computer Software: Programming Data Processing,3352082040000.0,1478
+1018724,AMZN,Amazon.com Inc. Common Stock,Consumer Discretionary,Catalog/Specialty Distribution,2782977405815.0,2843
+1730168,AVGO,Broadcom Inc. Common Stock,Technology,Semiconductors,1654778792702.0,1370
+1326801,META,Meta Platforms Inc. Class A Common Stock,Technology,Computer Software: Programming Data Processing,1524082159864.0,1872
+1318605,TSLA,Tesla Inc. Common Stock,Industrials,Auto Manufacturing,1479952102562.0,2270
+59478,LLY,Eli Lilly and Company Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,1271558021151.0,1991
+104169,WMT,Walmart Inc. Common Stock,Consumer Discretionary,Department/Specialty Retail Stores,999969376216.0,3198
+2023554,SNDK,Sandisk Corporation Common Stock,Technology,Electronic Components,967062099221.0,273
+19617,JPM,JP Morgan Chase & Co. Common Stock,Finance,Major Banks,850512057447.0,1914
+2488,AMD,Advanced Micro Devices Inc. Common Stock,Technology,Semiconductors,809641527656.0,2246
+723125,MU,Micron Technology Inc. Common Stock,Technology,Semiconductors,781179842493.0,2701
+1403161,V,Visa Inc.,Consumer Discretionary,Business Services,725720832008.0,1833
+2115436,XOM,ExxonMobil Holdings Corporation Common Stock,Energy,Integrated oil Companies,648372011362.0,84
+200406,JNJ,Johnson & Johnson Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,642992572049.0,2455
+1141391,MA,Mastercard Incorporated Common Stock,Consumer Discretionary,Business Services,546096747061.0,2661
+1551152,ABBV,AbbVie Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,501136898914.0,2105
+909832,COST,Costco Wholesale Corporation Common Stock,Consumer Discretionary,Department/Specialty Retail Stores,484708175817.0,3236
+21344,KO,Coca-Cola Company (The) Common Stock,Consumer Staples,Beverages (Production/Distribution),413412814394.0,2407
+93410,CVX,Chevron Corporation Common Stock,Energy,Integrated oil Companies,406056120328.0,2525
+80424,PG,Procter & Gamble Company (The) Common Stock,Consumer Discretionary,Package Goods/Cosmetics,389155789710.0,2584
+858877,CSCO,Cisco Systems Inc. Common Stock (DE),Telecommunications,Computer Communications Equipment,373349843025.0,2665
+1321655,PLTR,Palantir Technologies Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,370291571804.0,902
+354950,HD,Home Depot Inc. (The) Common Stock,Consumer Discretionary,RETAIL: Building Materials,336141588792.0,2243
+70858,BAC,Bank of America Corporation Common Stock,Finance,Major Banks,335108650376.0,2303
+1341439,ORCL,Oracle Corporation Common Stock,Technology,Computer Software: Prepackaged Software,334153065360.0,1783
+40545,GE,GE Aerospace Common Stock,Technology,Consumer Electronics/Appliances,329448092694.0,3312
+310158,MRK,Merck & Company Inc. Common Stock (new),Health Care,Biotechnology: Pharmaceutical Preparations,327236712625.0,2414
+1327567,PANW,Palo Alto Networks Inc. Common Stock,Technology,Computer peripheral equipment,297047652000.0,1761
+50863,INTC,Intel Corporation Common Stock,Technology,Semiconductors,296151800000.0,1948
+731766,UNH,UnitedHealth Group Incorporated Common Stock (DE),Health Care,Medical Specialities,296018989996.0,2488
+1413329,PM,Philip Morris International Inc Common Stock,Health Care, Medicinal Chemicals and Botanical Products ,290580168914.0,2922
+895421,MS,Morgan Stanley Common Stock,Finance,Investment Bankers/Brokers/Service,273921950000.0,2945
+6951,AMAT,Applied Materials Inc. Common Stock,Technology,Semiconductors,268973981356.0,2321
+97476,TXN,Texas Instruments Incorporated Common Stock,Technology,Semiconductors,261109867797.0,2387
+101829,RTX,RTX Corporation Common Stock,Industrials,Aerospace,261008790794.0,2907
+97745,TMO,Thermo Fisher Scientific Inc Common Stock,Industrials,Industrial Machinery/Components,255252086624.0,2654
+707549,LRCX,Lam Research Corporation Common Stock,Technology,Industrial Machinery/Components,254431149280.0,2144
+1535527,CRWD,CrowdStrike Holdings Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,249287176633.0,1051
+18230,CAT,Caterpillar Inc. Common Stock,Industrials,Construction/Ag Equipment/Trucks,245760103030.0,2594
+886982,GS,Goldman Sachs Group Inc. (The) Common Stock,Finance,Investment Bankers/Brokers/Service,244580989001.0,1937
+72971,WFC,Wells Fargo & Company Common Stock,Finance,Major Banks,241979154053.0,2130
+1065280,NFLX,Netflix Inc. Common Stock,Consumer Discretionary,Consumer Electronics/Video Chains,240055812289.0,2513
+1596532,ANET,Arista Networks Inc. Common Stock,Telecommunications,Computer Communications Equipment,239680056973.0,1876
+318154,AMGN,Amgen Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),237362780042.0,2494
+1707925,LIN,Linde plc Ordinary Shares,Basic Materials,Major Chemicals,234229134884.0,1384
+1166691,CCZ,Comcast Holdings ZONES,Telecommunications,Cable & Other Pay Television Services,220695043720.0,2602
+51143,IBM,International Business Machines Corporation Common Stock,Technology,Computer Manufacturing,211541664179.0,2651
+4962,AXP,American Express Company Common Stock,Finance,Finance: Consumer Services,208642260401.0,2097
+882095,GILD,Gilead Sciences Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),206553589389.0,2812
+1744489,DIS,Walt Disney Company (The) Common Stock,Consumer Discretionary,Services-Misc. Amusement & Recreation,205424728170.0,1105
+1996810,GEV,GE Vernova Inc. Common Stock,Technology,Consumer Electronics/Appliances,200291722925.0,376
+1571996,DELL,Dell Technologies Inc. Class C Common Stock ,Technology,Computer Manufacturing,198767781905.0,1664
+63908,MCD,McDonald's Corporation Common Stock,Consumer Discretionary,Restaurants,192262822113.0,2573
+831001,C,Citigroup Inc. Common Stock,Finance,Major Banks,190745248000.0,2735
+732712,VZ,Verizon Communications Inc. Common Stock,Telecommunications,Telecommunications Equipment,189636096864.0,2507
+77476,PEP,PepsiCo Inc. Common Stock,Consumer Staples,Beverages (Production/Distribution),189421011788.0,2640
+820313,APH,Amphenol Corporation Common Stock,Technology,Electrical Products,186725531037.0,2827
+319201,KLAC,KLA Corporation Common Stock,Technology,Electronic Components,184343125304.0,2576
+6281,ADI,Analog Devices Inc. Common Stock,Technology,Semiconductors,182894389110.0,1976
+1800,ABT,Abbott Laboratories Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,180061308548.0,2565
+766704,WELL,Welltower Inc. Common Stock,Real Estate,Real Estate Investment Trusts,178476275520.0,2595
+753308,NEE,NextEra Energy Inc. Common Stock,Utilities,Electric Utilities: Central,175712300785.0,2403
+2012383,BLK,BlackRock Inc. Common Stock,Finance,Investment Bankers/Brokers/Service,175531558416.0,345
+804328,QCOM,QUALCOMM Incorporated Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,173350700000.0,2663
+100885,UNP,Union Pacific Corporation Common Stock,Industrials,Railroads,172677285881.0,2582
+1283699,TMUS,T-Mobile US Inc. Common Stock,Telecommunications,Telecommunications Equipment,172163570965.0,2497
+1594805,SHOP,Shopify Inc. Class A Subordinate Voting Shares,Technology,Computer Software: Prepackaged Software,169782310056.0,246
+315189,DE,Deere & Company Common Stock,Industrials,Industrial Machinery/Components,168502401229.0,3256
+107263,WMB,Williams Companies Inc. (The) Common Stock,Utilities,Natural Gas Distribution,167903072615.0,2423
+313616,DHR,Danaher Corporation Common Stock,Industrials,Industrial Machinery/Components,160081401645.0,2547
+1163165,COP,ConocoPhillips Common Stock,Energy,Integrated oil Companies,159627056046.0,2740
+316709,SCHW,Charles Schwab Corporation (The) Common Stock,Finance,Investment Bankers/Brokers/Service,159034349939.0,2688
+78003,PFE,Pfizer Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,157144967419.0,2652
+109198,TJX,TJX Companies Inc. (The) Common Stock,Consumer Discretionary,Clothing/Shoe/Accessory Stores,153468380991.0,2407
+1108524,CRM,Salesforce Inc. Common Stock,Technology,Computer Software: Prepackaged Software,150946430000.0,2560
+732717,T,AT&T Inc.,Telecommunications,Telecommunications Equipment,147158262144.0,2755
+1467373,ACN,Accenture plc Class A Ordinary Shares (Ireland),Consumer Discretionary,Business Services,146263053878.0,2530
+896159,CB,Chubb Limited  Common Stock,Finance,Property-Casualty Insurers,141436176004.0,2378
+1035267,ISRG,Intuitive Surgical Inc. Common Stock,Health Care,Industrial Specialties,141167187718.0,2608
+1543151,UBER,Uber Technologies Inc. Common Stock,Consumer Discretionary,Business Services,133968932373.0,1284
+80661,PGR,Progressive Corporation (The) Common Stock,Finance,Property-Casualty Insurers,133328617333.0,2028
+936468,LMT,Lockheed Martin Corporation Common Stock,Industrials,Military/Government/Technical,132136964126.0,2629
+875320,VRTX,Vertex Pharmaceuticals Incorporated Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,132006925345.0,2772
+1613103,MDT,Medtronic plc. Ordinary Shares,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,128719645871.0,1986
+1551182,ETN,Eaton Corporation PLC Ordinary Shares,Technology,Industrial Machinery/Components,128410905000.0,2096
+64040,SPGI,S&P Global Inc. Common Stock,Finance,Finance: Consumer Services,128340179500.0,2990
+12927,BA,Boeing Company (The) Common Stock,Industrials,Aerospace,127219913368.0,2932
+1751008,APP,Applovin Corporation Class A Common Stock,Technology,Computer Software: Programming Data Processing,125577690213.0,942
+764180,MO,Altria Group Inc.,Health Care, Medicinal Chemicals and Botanical Products ,124258737551.0,2704
+60667,LOW,Lowe's Companies Inc. Common Stock,Consumer Discretionary,RETAIL: Building Materials,122949377724.0,2379
+927653,MCK,McKesson Corporation Common Stock,Health Care,Other Pharmaceuticals,122648459601.0,2708
+1835632,MRVL,Marvell Technology Inc. Common Stock,Technology,Semiconductors,121424343000.0,799
+1137789,STX,Seagate Technology Holdings PLC Ordinary Shares (Ireland),Technology,Electronic Components,119690866622.0,2101
+1001838,SCCO,Southern Copper Corporation Common Stock,Basic Materials,Metal Mining,119415468110.0,2404
+310764,SYK,Stryker Corporation Common Stock,Health Care,Medical/Dental Instruments,119259070823.0,2449
+14272,BMY,Bristol-Myers Squibb Company Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,119241746951.0,3089
+829224,SBUX,Starbucks Corporation Common Stock,Consumer Discretionary,Restaurants,119106247000.0,2812
+8670,ADP,Automatic Data Processing Inc. Common Stock,Technology,EDP Services,118897593324.0,2294
+1045609,PLD,Prologis Inc. Common Stock,Real Estate,Real Estate Investment Trusts,117245778550.0,2567
+76334,PH,Parker-Hannifin Corporation Common Stock,Industrials,Metal Fabrications,114255044982.0,2912
+106040,WDC,Western Digital Corporation Common Stock,Technology,Electronic Components,111091659774.0,2583
+1156375,CME,CME Group Inc. Class A Common Stock,Finance,Investment Bankers/Brokers/Service,109637958251.0,2579
+1075531,BKNG,Booking Holdings Inc. Common Stock,Consumer Discretionary,Transportation Services,109562069181.0,2479
+927628,COF,Capital One Financial Corporation Common Stock,Finance,Major Banks,109322635226.0,2216
+1477333,NET,Cloudflare Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,108840143921.0,837
+92122,SO,Southern Company (The) Common Stock,Utilities,Electric Utilities: Central,108590626175.0,2630
+1048286,MAR,Marriott International Class A Common Stock,Consumer Discretionary,Hotels/Resorts,106617120534.0,2246
+1164727,NEM,Newmont Corporation,Basic Materials,Precious Metals,103877750773.0,2940
+64803,CVS,CVS Health Corporation Common Stock,Consumer Staples,Retail-Drug Stores and Proprietary Stores,102421908749.0,2828
+895728,ENB,Enbridge Inc Common Stock,Energy,Natural Gas Distribution,102417407644.0,1858
+1559720,ABNB,Airbnb Inc. Class A Common Stock,Consumer Discretionary,Diversified Commercial Services,101521416220.0,678
+1101239,EQIX,Equinix Inc. Common Stock REIT,Real Estate,Real Estate Investment Trusts,100775057140.0,2587
+1326160,DUK,Duke Energy Corporation (Holding Company) Common Stock,Utilities,Power Generation,100473211151.0,2845
+1510295,MPC,Marathon Petroleum Corporation Common Stock,Energy,Integrated oil Companies,100172650812.0,2775
+1390777,BNY,The Bank of New York Mellon Corporation Common Stock,Finance,Major Banks,97462617292.0,2688
+62709,MRSH,Marsh Common Stock,Finance,Specialty Insurers,97354425738.0,2240
+1262039,FTNT,Fortinet Inc. Common Stock,Technology,Computer peripheral equipment,96584942552.0,1938
+860730,HCA,HCA Healthcare Inc. Common Stock,Health Care,Hospital/Nursing Management,96139013060.0,2554
+872589,REGN,Regeneron Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,95517546129.0,2419
+1571949,ICE,Intercontinental Exchange Inc. Common Stock,Finance,Investment Bankers/Brokers/Service,95514491195.0,2149
+823768,WM,Waste Management Inc. Common Stock,Utilities,Environmental Services,94883643656.0,2855
+1640147,SNOW,Snowflake Inc. Common Stock,Technology,Computer Software: Prepackaged Software,94747968000.0,812
+1534701,PSX,Phillips 66 Common Stock,Energy,Integrated oil Companies,94682264428.0,2497
+1035002,VLO,Valero Energy Corporation Common Stock,Energy,Integrated oil Companies,94427468996.0,2690
+40533,GD,General Dynamics Corporation Common Stock,Industrials,Marine Transportation,93856800847.0,1937
+1090727,UPS,United Parcel Service Inc. Common Stock,Industrials,Trucking Freight/Courier Services,92903823179.0,2446
+66740,MMM,3M Company Common Stock,Health Care,Medical/Dental Instruments,92225894368.0,2959
+1373715,NOW,ServiceNow Inc. Common Stock,Technology,Computer Software: Prepackaged Software,92215920000.0,1717
+277948,CSX,CSX Corporation Common Stock,Industrials,Railroads,92133042536.0,2543
+24741,GLW,Corning Incorporated Common Stock,Industrials,Telecommunications Equipment,91308517236.0,2666
+36104,USB,U.S. Bancorp Common Stock,Finance,Major Banks,89230828364.0,2328
+1868275,CEG,Constellation Energy Corporation Common Stock ,Utilities,Electric Utilities: Central,88615891263.0,797
+1050915,PWR,Quanta Services Inc. Common Stock,Industrials,Engineering & Construction,88522822688.0,2685
+1466258,TT,Trane Technologies plc,Industrials,Auto Parts:O.E.M.,88001397857.0,2559
+1393818,BX,Blackstone Inc. Common Stock,Finance,Investment Managers,87136887925.0,2286
+723254,CTAS,Cintas Corporation Common Stock,Industrials,Garments and Clothing,86927679360.0,2226
+4281,HWM,Howmet Aerospace Inc. Common Stock,Industrials,Metal Fabrications,86693963425.0,2953
+713676,PNC,PNC Financial Services Group Inc. (The) Common Stock,Finance,Major Banks,86485702622.0,2140
+32604,EMR,Emerson Electric Company Common Stock,Technology,Consumer Electronics/Appliances,86481304000.0,2750
+68505,MSI,Motorola Solutions Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,86322503413.0,2616
+796343,ADBE,Adobe Inc. Common Stock,Technology,Computer Software: Prepackaged Software,86277856000.0,2477
+865752,MNST,Monster Beverage Corporation,Consumer Staples,Beverages (Production/Distribution),86013073853.0,1632
+1156039,ELV,Elevance Health Inc. Common Stock,Health Care,Medical Specialities,84296366433.0,2627
+1053507,AMT,American Tower Corporation (REIT) Common Stock,Real Estate,Real Estate Investment Trusts,84029318530.0,3277
+813672,CDNS,Cadence Design Systems Inc. Common Stock,Technology,Computer Software: Prepackaged Software,83652669520.0,1737
+31462,ECL,Ecolab Inc. Common Stock,Consumer Discretionary,Package Goods/Cosmetics,83402705225.0,2898
+1103982,MDLZ,Mondelez International Inc. Class A Common Stock,Consumer Staples,Packaged Foods,83152923117.0,2662
+883241,SNPS,Synopsys Inc. Common Stock,Technology,Computer Software: Prepackaged Software,82578147128.0,2201
+1404912,KKR,KKR & Co. Inc. Common Stock,Finance,Investment Managers,82183893872.0,1684
+89800,SHW,Sherwin-Williams Company (The) Common Stock,Consumer Discretionary,RETAIL: Building Materials,82091626866.0,2771
+896878,INTU,Intuit Inc. Common Stock,Technology,Computer Software: Prepackaged Software,81849930300.0,2666
+833444,JCI,Johnson Controls International plc Ordinary Share,Industrials,Industrial Machinery/Components,81648171087.0,2589
+1059556,MCO,Moody's Corporation Common Stock,Finance,Finance: Consumer Services,81332286000.0,2771
+884887,RCL,Royal Caribbean Cruises Ltd. Common Stock,Consumer Discretionary,Marine Transportation,81078461495.0,2494
+1682852,MRNA,Moderna Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),80653098947.0,985
+1585689,HLT,Hilton Worldwide Holdings Inc. Common Stock ,Consumer Discretionary,Hotels/Resorts,80613327817.0,2237
+1937926,BAM,Brookfield Asset Management Inc Class A Limited Voting Shares,Real Estate,Building operators,80229464221.0,280
+86312,TRV,The Travelers Companies Inc. Common Stock,Finance,Property-Casualty Insurers,80066389382.0,2202
+16875,CP,Canadian Pacific Kansas City Limited Common Shares,Industrials,Railroads,79485998783.0,1885
+49826,ITW,Illinois Tool Works Inc. Common Stock,Industrials,Industrial Machinery/Components,78714874000.0,2190
+1061219,EPD,Enterprise Products Partners L.P. Common Stock,Utilities,Natural Gas Distribution,78004397714.0,1846
+821189,EOG,EOG Resources Inc. Common Stock,Energy,Oil & Gas Production,77513391488.0,2197
+1133421,NOC,Northrop Grumman Corporation Common Stock,Industrials,Industrial Machinery/Components,77065013025.0,2472
+21665,CL,Colgate-Palmolive Company Common Stock,Consumer Discretionary,Package Goods/Cosmetics,77019848505.0,2987
+27419,TGT,Target Corporation Common Stock,Consumer Discretionary,Department/Specialty Retail Stores,76108332182.0,2396
+1060391,RSG,Republic Services Inc. Common Stock,Utilities,Environmental Services,75108906447.0,3016
+1690820,CVNA,Carvana Co. Class A Common Stock,Consumer Discretionary,Retail-Auto Dealers and Gas Stations,75032787411.0,1510
+898173,ORLY,O'Reilly Automotive Inc. Common Stock,Consumer Discretionary,Auto & Home Supply Stores,74277733163.0,2359
+1048911,FDX,FedEx Corporation Common Stock,Consumer Discretionary,Air Freight/Delivery Services,73696681405.0,2359
+1063761,SPG,Simon Property Group Inc. Common Stock,Real Estate,Real Estate Investment Trusts,72633190326.0,2712
+1739940,CI,The Cigna Group Common Stock,Health Care,Medical Specialities,71944104230.0,1219
+1674101,VRT,Vertiv Holdings LLC Class A Common Stock,Technology,Industrial Machinery/Components,71259281510.0,1160
+354190,AJG,Arthur J. Gallagher & Co. Common Stock,Finance,Specialty Insurers,71156128000.0,2542
+702165,NSC,Norfolk Southern Corporation Common Stock,Industrials,Railroads,71146212207.0,2677
+87347,SLB,SLB Limited Common Shares,Energy,Oilfield Services/Equipment,70701818463.0,2340
+831259,FCX,Freeport-McMoRan Inc. Common Stock,Basic Materials,Metal Mining,70426660549.0,2861
+315293,AON,Aon plc Class A Ordinary Shares (Ireland),Finance,Specialty Insurers,70247362545.0,2754
+745732,ROST,Ross Stores Inc. Common Stock,Consumer Discretionary,Clothing/Shoe/Accessory Stores,70241349827.0,2534
+1506307,KMI,Kinder Morgan Inc. Common Stock,Utilities,Natural Gas Distribution,69281943622.0,2384
+773840,HON,Honeywell International Inc. Common Stock,Industrials,Aerospace,69133379561.0,2767
+1467858,GM,General Motors Company Common Stock,Industrials,Auto Manufacturing,68960165330.0,2874
+1099590,MELI,MercadoLibre Inc. Common Stock,Consumer Discretionary,Business Services,68719008143.0,2737
+1858681,APO,Apollo Global Management Inc. (New) Common Stock,Finance,Investment Managers,68690926823.0,800
+1109354,BRKRP,Bruker Corporation 6.375% Mandatory Convertible Preferred Stock Series A,Industrials,Biotechnology: Laboratory Analytical Instruments,68583041432.0,2679
+1792789,DASH,DoorDash Inc. Class A Common Stock,Consumer Discretionary,Business Services,68504960890.0,854
+4904,AEP,American Electric Power Company Inc. Common Stock,Utilities,Electric Utilities: Central,68049455460.0,3079
+2969,APD,Air Products and Chemicals Inc. Common Stock,Basic Materials,Major Chemicals,67662051924.0,2765
+277135,GWW,W.W. Grainger Inc. Common Stock,Industrials,Office Equipment/Supplies/Services,66658197196.0,2755
+899051,ALL,Allstate Corporation (The) Common Stock,Finance,Property-Casualty Insurers,66009627553.0,2617
+1297996,DLR,Digital Realty Trust Inc. Common Stock,Real Estate,Real Estate Investment Trusts,65836258152.0,2730
+1067701,URI,United Rentals Inc. Common Stock,Consumer Discretionary,Diversified Commercial Services,65617342465.0,2235
+1140859,COR,Cencora Inc. Common Stock,Health Care,Other Pharmaceuticals,65123586600.0,2585
+55785,KMB,Kimberly-Clark Corporation Common Stock,Consumer Discretionary,Containers/Packaging,64589326799.0,2323
+1413447,NXPI,NXP Semiconductors N.V. Common Stock,Technology,Semiconductors,63456860259.0,1151
+1260221,TDG,Transdigm Group Incorporated Common Stock,Industrials,Military/Government/Technical,63313564742.0,2038
+1280452,MPWR,Monolithic Power Systems Inc. Common Stock,Technology,Semiconductors,63196500480.0,2043
+721371,CAH,Cardinal Health Inc. Common Stock,Health Care,Other Pharmaceuticals,62952379356.0,2150
+885725,BSX,Boston Scientific Corporation Common Stock,Health Care,Medical/Dental Instruments,62327348546.0,2083
+1783879,HOOD,Robinhood Markets Inc. Class A Common Stock,Finance,Investment Bankers/Brokers/Service,61818726166.0,758
+4977,AFL,AFLAC Incorporated Common Stock,Finance,Accident &Health Insurance,61709649841.0,2330
+1099219,MET,MetLife Inc. Common Stock,Finance,Life Insurance,61348522000.0,3209
+1389170,TRGP,Targa Resources Inc. Common Stock,Utilities,Natural Gas Distribution,61240151360.0,2526
+1393311,PSA,Public Storage Common Stock,Real Estate,Real Estate Investment Trusts,61028675747.0,2871
+1385157,TEL,TE Connectivity plc Ordinary Shares,Technology,Electronic Components,60547137535.0,2756
+815556,FAST,Fastenal Company Common Stock,Consumer Discretionary,RETAIL: Building Materials,60439842388.0,2190
+1645590,HPE,Hewlett Packard Enterprise Company Common Stock,Technology,Retail: Computer Software & Peripheral Equipment,60359823501.0,1521
+3570,LNG,Cheniere Energy Inc. Common Stock,Utilities,Oil/Gas Transmission,60335109450.0,2479
+849395,CRH,CRH PLC Ordinary Shares,Industrials,Building Materials,60239970657.0,526
+1561550,DDOG,Datadog Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,60099142041.0,900
+1099800,EW,Edwards Lifesciences Corporation Common Stock,Health Care,Industrial Specialties,59742500000.0,2417
+715957,D,Dominion Energy Inc. Common Stock,Utilities,Electric Utilities: Central,58640670420.0,3011
+10795,BDX,Becton Dickinson and Company Common Stock,Health Care,Medical/Dental Instruments,57946205898.0,2028
+1120193,NDAQ,Nasdaq Inc. Common Stock,Finance,Investment Bankers/Brokers/Service,57688377966.0,2363
+26172,CMI,Cummins Inc. Common Stock,Industrials,Industrial Machinery/Components,57682376112.0,2600
+1552000,MPLX,MPLX LP Common Units Representing Limited Partner Interests,Energy,Natural Gas Distribution,57286679055.0,1541
+92230,TFC,Truist Financial Corporation Common Stock,Finance,Major Banks,55951431514.0,2003
+73309,NUE,Nucor Corporation Common Stock,Industrials,Steel/Iron Ore,55671434366.0,3221
+49938,IMO,Imperial Oil Limited Common Stock,Energy,Integrated oil Companies,55083776710.0,2264
+726728,O,Realty Income Corporation Common Stock,Real Estate,Real Estate Investment Trusts,54843999758.0,2000
+75362,PCAR,PACCAR Inc. Common Stock,Industrials,Auto Manufacturing,54835530015.0,1721
+27904,DAL,Delta Air Lines Inc. Common Stock,Consumer Discretionary,Air Freight/Delivery Services,54725151768.0,2391
+1039684,OKE,ONEOK Inc. Common Stock,Utilities,Oil & Gas Production,54552876314.0,2899
+874716,IDXX,IDEXX Laboratories Inc. Common Stock,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,54334947657.0,2673
+797468,OXY,Occidental Petroleum Corporation Common Stock,Energy,Oil & Gas Production,53804336228.0,2683
+1037868,AME,AMETEK Inc.,Industrials,Industrial Machinery/Components,53036666577.0,2389
+866787,AZO,AutoZone Inc. Common Stock,Consumer Discretionary,Auto & Home Supply Stores,52766745459.0,2217
+1121788,GRMN,Garmin Ltd. Common Stock (Switzerland),Industrials,Industrial Machinery/Components,52399632385.0,2070
+1065088,EBAY,eBay Inc. Common Stock,Consumer Discretionary,Business Services,51459580000.0,2452
+320187,NKE,Nike Inc. Common Stock,Consumer Discretionary,Shoe Manufacturing,51005505188.0,1964
+72903,XEL,Xcel Energy Inc. Common Stock,Utilities,Power Generation,51003343638.0,2513
+769397,ADSK,Autodesk Inc. Common Stock,Technology,Computer Software: Prepackaged Software,50881050000.0,2225
+65984,ETR,Entergy Corporation Common Stock,Utilities,Electric Utilities: Central,50726127165.0,2605
+1032208,SRE,DBA Sempra Common Stock,Utilities,Natural Gas Distribution,49896242401.0,2423
+1664703,BE,Bloom Energy Corporation Class A Common Stock,Energy,Industrial Machinery/Components,49688063153.0,1413
+49196,HBANL,Huntington Bancshares Incorporated Depositary Shares Each Representing a 1/40th Interest in a Share of 6.875% Series J Non-Cumulative Perpetual Preferred Stock,Finance,Major Banks,49659141865.0,2442
+1090872,A,Agilent Technologies Inc. Common Stock,Industrials,Biotechnology: Laboratory Analytical Instruments,49458778857.0,2188
+1539838,FANG,Diamondback Energy Inc. Common Stock,Energy,Oil & Gas Production,49348499254.0,2441
+1418135,KDP,Keurig Dr Pepper Inc. Common Stock,Consumer Staples,Beverages (Production/Distribution),49124232735.0,2728
+906107,VMRK,Vivmark Residential Common Shares of Beneficial Interest,Real Estate,Real Estate Investment Trusts,48572120786.0,2333
+1633978,LITE,Lumentum Holdings Inc. Common Stock,Telecommunications,Telecommunications Equipment,48538105000.0,1799
+1601046,KEYS,Keysight Technologies Inc. Common Stock,Industrials,Industrial Machinery/Components,47925598165.0,1714
+1090012,DVN,Devon Energy Corporation Common Stock,Energy,Oil & Gas Production,47924986736.0,2900
+2011641,FERG,Ferguson Enterprises Inc. Common Stock,Miscellaneous,Miscellaneous,47912537107.0,262
+202058,LHX,L3Harris Technologies Inc. Common Stock,Industrials,Industrial Machinery/Components,47780970095.0,2402
+943452,WAB,Westinghouse Air Brake Technologies Corporation Common Stock,Industrials,Railroads,47105485236.0,2738
+1109357,EXC,Exelon Corporation Common Stock,Utilities,Power Generation,47005007478.0,2650
+1633917,PYPL,PayPal Holdings Inc. Common Stock,Industrials,Diversified Commercial Services,46824208258.0,1798
+1701605,BKR,Baker Hughes Company Class A Common Stock,Consumer Discretionary,Oil and Gas Field Machinery,46346972335.0,1186
+46619,HEI,Heico Corporation Common Stock,Industrials,Aerospace,46301628277.0,2715
+740260,VTR,Ventas Inc. Common Stock,Real Estate,Real Estate Investment Trusts,46007340000.0,2714
+35527,FITB,Fifth Third Bancorp Common Stock,Finance,Major Banks,45950387150.0,2222
+1058090,CMG,Chipotle Mexican Grill Inc. Common Stock,Consumer Discretionary,Restaurants,45905942750.0,2081
+882835,ROP,Roper Technologies Inc. Common Stock,Industrials,Industrial Machinery/Components,45849905170.0,2548
+1651308,ONC,BeOne Medicines Ltd. American Depositary Shares,Health Care,Biotechnology: Pharmaceutical Preparations,45656163776.0,1626
+49071,HUM,Humana Inc. Common Stock,Health Care,Medical Specialities,45650644809.0,2623
+1318220,WCN,Waste Connections Inc. Common Shares,Utilities,Environmental Services,45136667860.0,1997
+818686,TEVA,Teva Pharmaceutical Industries Limited Ordinary Shares,Health Care,Biotechnology: Pharmaceutical Preparations,44957835988.0,1564
+1512673,XYZ,Block Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,44885758500.0,1631
+1000697,WAT,Waters Corporation Common Stock,Industrials,Biotechnology: Laboratory Analytical Instruments,44883117622.0,2517
+37996,F,Ford Motor Company Common Stock,Industrials,Auto Manufacturing,44863798231.0,2874
+1408198,MSCI,MSCI Inc. Common Stock,Consumer Discretionary,Business Services,44651035000.0,2536
+1047862,ED,Consolidated Edison Inc. Common Stock,Utilities,Power Generation,44198319478.0,2351
+93751,STT,State Street Corporation Common Stock,Finance,Major Banks,43886188336.0,2178
+1041061,YUM,Yum! Brands Inc.,Consumer Discretionary,Restaurants,42755064753.0,2585
+820027,AMP,Ameriprise Financial Inc. Common Stock,Finance,Investment Managers,42736042239.0,2521
+1393052,VEEV,Veeva Systems Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,42573932108.0,1946
+820318,COHR,Coherent Corp. Common Stock,Technology,Electronic Components,42332326728.0,2852
+1335258,LYV,Live Nation Entertainment Inc. Common Stock,Consumer Discretionary,Services-Misc. Amusement & Recreation,42234463540.0,2493
+1783180,CARR,Carrier Global Corporation Common Stock ,Industrials,Industrial Machinery/Components,42159795415.0,1155
+1692819,VST,Vistra Corp. Common Stock,Utilities,Electric Utilities: Central,42115486213.0,1603
+1024478,ROK,Rockwell Automation Inc. Common Stock,Industrials,Industrial Machinery/Components,42051840386.0,2600
+1604821,NTRA,Natera Inc. Common Stock,Health Care,Medical Specialities,42039710728.0,1518
+1327811,WDAY,Workday Inc. Class A Common Stock,Technology,EDP Services,41779760000.0,1725
+1865782,BTSGU,BrightSpring Health Services Inc. Tangible Equity Unit,Health Care,Medical/Nursing Services,41699215291.0,453
+1478242,IQV,IQVIA Holdings Inc. Common Stock,Health Care,Biotechnology: Commercial Physical & Biological Resarch,41275808000.0,2293
+1137774,PRU,Prudential Financial Inc. Common Stock,Finance,Life Insurance,41274905000.0,3005
+5272,AIG,American International Group Inc. New Common Stock,Finance,Property-Casualty Insurers,41215890801.0,2532
+1176948,ARES,Ares Management Corporation Class A Common Stock,Finance,Investment Managers,41085068887.0,1591
+1050446,STRF,Strategy Inc 10.00% Series A Perpetual Strife Preferred Stock,Technology,Computer Software: Prepackaged Software,41057091346.0,2373
+56873,KR,Kroger Company (The) Common Stock,Consumer Staples,Food Chains,40118690391.0,3287
+1511737,UI,Ubiquiti Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,40106668080.0,2319
+1374310,CBOE,Cboe Global Markets Inc. Common Stock,Finance,Investment Bankers/Brokers/Service,40024403375.0,2552
+723531,PAYX,Paychex Inc. Common Stock,Industrials,Diversified Commercial Services,39656224692.0,2466
+946581,TTWO,Take-Two Interactive Software Inc. Common Stock,Technology,Computer Software: Prepackaged Software,39062094271.0,2436
+1035983,FIX,Comfort Systems USA Inc. Common Stock,Industrials,Engineering & Construction,38949107205.0,2728
+1802768,RPRX,Royalty Pharma plc Class A Ordinary Shares ,Health Care,Biotechnology: Pharmaceutical Preparations,38844551119.0,1056
+783325,WEC,WEC Energy Group Inc. Common Stock,Utilities,Power Generation,38197654359.0,2005
+882184,DHI,D.R. Horton Inc. Common Stock,Consumer Discretionary,Homebuilding,38183214594.0,2487
+96021,SYY,Sysco Corporation Common Stock,Consumer Discretionary,Food Distributors,37978688825.0,2494
+1805284,RKT,Rocket Companies Inc. Class A Common Stock,Finance,Finance: Consumer Services,37417666210.0,944
+1004980,PCG,Pacific Gas & Electric Co. Common Stock,Utilities,Power Generation,37348214838.0,2312
+936395,CIEN,Ciena Corporation Common Stock,Utilities,Telecommunications Equipment,37263026114.0,2069
+815097,CCL,Carnival Corporation Ltd. Common Shares,Consumer Discretionary,Marine Transportation,37077624307.0,1886
+1932393,GEHC,GE HealthCare Technologies Inc. Common Stock ,Health Care,Medical Electronics,37025566981.0,617
+1138118,CBRE,CBRE Group Inc Common Stock Class A,Finance,Real Estate,37001517051.0,2641
+1736297,ALAB,Astera Labs Inc. Common Stock,Technology,Semiconductors,36983887070.0,334
+788784,PEG,Public Service Enterprise Group Incorporated Common Stock,Utilities,Power Generation,36959933016.0,2466
+1001250,EL,Estee Lauder Companies Inc. (The) Common Stock,Consumer Discretionary,Package Goods/Cosmetics,36881617523.0,2345
+875045,BIIB,Biogen Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),36530811710.0,2947
+874766,HIG,The Hartford Insurance Group Inc. Common Stock,Finance,Property-Casualty Insurers,36258582499.0,2562
+1660134,OKTA,Okta Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,36161708957.0,1029
+1754301,FOXA,Fox Corporation Class A Common Stock,Industrials,Broadcasting,36084726100.0,1174
+916076,MLM,Martin Marietta Materials Inc. Common Stock,Industrials,Mining & Quarrying of Nonmetallic Minerals (No Fuels),36051026824.0,2695
+878927,ODFL,Old Dominion Freight Line Inc. Common Stock,Industrials,Trucking Freight/Courier Services,35815913383.0,2080
+97210,TER,Teradyne Inc. Common Stock,Industrials,Electrical Products,35507452120.0,2509
+947484,ACGL,Arch Capital Group Ltd. Common Stock,Finance,Property-Casualty Insurers,35208820342.0,2632
+1396009,VMC,Vulcan Materials Company (Holding Company) Common Stock,Industrials,Mining & Quarrying of Nonmetallic Minerals (No Fuels),35181772959.0,3024
+1474432,P,Everpure Inc. Class A common stock,Technology,Electronic Components,35075500440.0,1254
+47111,HSY,The Hershey Company Common Stock,Consumer Staples,Specialty Foods,34982646509.0,2066
+1051470,CCI,Crown Castle Inc. Common Stock,Real Estate,Real Estate Investment Trusts,34853291597.0,2833
+1628171,RVMD,Revolution Medicines Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),34483485056.0,923
+100517,UAL,United Airlines Holdings Inc. Common Stock,Consumer Discretionary,Air Freight/Delivery Services,34286103394.0,2389
+1381197,IBKR,Interactive Brokers Group Inc. Class A Common Stock,Finance,Investment Bankers/Brokers/Service,34277302394.0,2256
+1973266,TKO,TKO Group Holdings Inc. Class A Common Stock,Consumer Discretionary,Services-Misc. Amusement & Recreation,34219374618.0,569
+1037646,MTD,Mettler-Toledo International Inc. Common Stock,Industrials,Biotechnology: Laboratory Analytical Instruments,33907969020.0,2711
+1713683,ZS,Zscaler Inc. Common Stock,Technology,EDP Services,33541981926.0,1052
+1650372,TEAM,Atlassian Corporation Class A Common Stock,Technology,Computer Software: Prepackaged Software,33498964072.0,587

@@ -1,0 +1,10 @@
+{
+  "built_utc": "2026-11-21T11:30:41+00:00",
+  "rows": 15073,
+  "tickers": 317,
+  "date_range": "2014-01-08..2026-11-23",
+  "leak_check_available_before_period_end": 0,
+  "median_report_lag_days": 35.0,
+  "accruals_non_null": 14957,
+  "cfo_to_assets_non_null": 14957
+}

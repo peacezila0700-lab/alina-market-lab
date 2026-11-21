@@ -44,8 +44,21 @@ def format_message() -> str:
     if ep.exists():
         exp_count = max(0, len(list(csv.reader(ep.open()))) - 1)
 
+    rr_path = ROOT / "data" / "risk_radar" / "latest.json"
+    rr_block = ""
+    if rr_path.exists():
+        rr = json.loads(rr_path.read_text())
+        rr_block = (
+            f"Risk Radar: {rr.get('overall_risk_classification', '?')} "
+            f"(Fresh {rr.get('fresh_panels', '?')}/{rr.get('total_panels', '?')}) | "
+            f"Alerts: {len(rr.get('active_alerts', []))}\n"
+        )
+        if rr.get("missing_data_warnings"):
+            rr_block += "Data Warnings: " + "; ".join(rr["missing_data_warnings"][:2]) + "\n"
+
     lines = [
-        f"ALINA Market Lab — {d}",
+        f"ALINA Risk Radar — {d}",
+        rr_block.strip(),
         f"VIX: {st.get('vix', '?')} (pct {st.get('vix_percentile_all_history', '?')}) | "
         f"slope_3m: {st.get('vix_slope_3m', '?')}",
         f"VVIX pct: {st.get('vvix_percentile', '?')} | SKEW: {st.get('skew', '?')}",
@@ -53,10 +66,10 @@ def format_message() -> str:
         "",
         "ธงเตือน: " + (" | ".join(flags[:4]) if flags else "ไม่มี"),
         "",
-        f"สถานะวิจัย: {exp_count} การทดลอง, 0 validated edges (ไม่มีสัญญาณซื้อขายอัตโนมัติ)",
+        f"สถานะวิจัย: {exp_count} การทดลอง, 0 validated edges (Risk Monitor Only — ไม่ใช่สัญญาณซื้อขาย)",
         "เปิดไฟล์ alina_today.html ด้านล่างบนมือถือได้ทันที (ไม่ต้องต่อเน็ต)",
     ]
-    return "\n".join(lines)
+    return "\n".join(line for line in lines if line is not None)
 
 
 def send_text(token: str, chat_id: str, text: str) -> None:

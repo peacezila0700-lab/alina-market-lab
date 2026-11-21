@@ -50,12 +50,29 @@ def _cfg(env_name: str, file_name: str) -> str:
 
 def cmd_help() -> str:
     return (
-        "คำสั่ง ALINA Lab (ข้อมูลจาก repo จริง):\n"
+        "คำสั่ง ALINA Lab (ข้อมูลจาก repo จริง — Risk Monitor Only):\n"
         "/status — สภาวะตลาดวันนี้ + ธงเตือน + ยอดทดลอง\n"
+        "/risk — รายงาน Daily Risk Radar (Freshness SLA + Macro + Crypto + Warnings)\n"
         "/set — สถานะ SET64 Equal-Weight + หุ้นไทยขยับแรง\n"
         "/levels SPY — แนวรับ-แนวต้านวัดจากสถิติ (เช่น SPY, EURUSD, BTC, GOLD)\n"
         "หรือพิมพ์ถามภาษาไทยตรง ๆ เพื่อให้ AI วิเคราะห์จาก brief + event pack"
     )
+
+
+def cmd_risk() -> str:
+    rr_path = ROOT / "data" / "risk_radar" / "latest.json"
+    if not rr_path.exists():
+        return "ยังไม่มีไฟล์ data/risk_radar/latest.json (รัน scripts/risk_radar.py ก่อน)"
+    rr = json.loads(rr_path.read_text())
+    lines = [
+        f"ALINA Risk Radar ({rr.get('run_date', '?')}) — RISK MONITOR ONLY",
+        f"• Overall Risk: {rr.get('overall_risk_classification', '?')} | Fresh: {rr.get('fresh_panels')}/{rr.get('total_panels')}",
+    ]
+    for a in rr.get("active_alerts", [])[:4]:
+        lines.append(f"• ALERT [{a['severity']}] {a['panel']}: {a['msg']}")
+    for w in rr.get("missing_data_warnings", [])[:3]:
+        lines.append(f"• WARN: {w}")
+    return "\n".join(lines)
 
 
 def cmd_status() -> str:
@@ -135,6 +152,8 @@ def handle_text(text: str, provider: str = "dry-run") -> str:
         return cmd_help()
     if low.startswith("/status"):
         return cmd_status()
+    if low.startswith("/risk"):
+        return cmd_risk()
     if low.startswith("/set"):
         return cmd_set()
     if low.startswith("/levels"):

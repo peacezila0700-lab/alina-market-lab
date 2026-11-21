@@ -27,7 +27,7 @@ import zipfile
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIST = os.environ.get("ALINA_PACK_OUT", "/tmp/alina_pack_v215")
+DIST = os.environ.get("ALINA_PACK_OUT", "/tmp/alina_pack_v216")
 PACK = os.path.join(DIST, "ALINA_DATAPACK")
 RECORDED = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -686,6 +686,34 @@ DATASETS = [
                   "independent confirmation."],
          use_for=["avoiding duplicate work", "learning the failure modes", "meta-analysis"],
          leak_rule="n/a"),
+    dict(id="sec_pit_expanded_317", src=["data/sec/pit_fundamentals_expanded.csv", "data/sec/universe_pit_meta.csv", "data/sec/filings_expanded.csv"],
+         kind="fundamentals", grade="A", title="Expanded SEC EDGAR PIT Fundamentals (317 US-GAAP firms, 16:00 ET cutoff)",
+         card="Point-in-time TTM/balance-sheet fundamentals for 317 US-GAAP companies (15,073 snapshots, "
+              "2014-2026) using strict SEC acceptanceDateTime <= 16:00 ET causal cutoff (0 pre-period leaks).",
+         caveats=["Active top market-cap Nasdaq universe carries survivorship bias (no delisted firms)."],
+         use_for=["EXP-0026 accruals/quality research", "non-price fundamental monitoring"],
+         leak_rule="Use available_from <= t only; execute at t+1 close."),
+    dict(id="macro_central_bank_rates", src=["data/macro/central_bank_rates_daily.csv", "data/macro/cb_rate_changes.csv"],
+         kind="macro-rates", grade="A", title="Official ECB, BoE & NYFed EFFR Daily Policy Rates (1999-2026)",
+         card="Official central bank policy rates (ECB DFR/MRO, BoE Bank Rate, NYFed EFFR + pre-2016 ^IRX proxy) "
+              "and 321 exact historical CB rate-change dates.",
+         caveats=["Pre-2016 US rate uses Yahoo ^IRX 13W T-Bill proxy."],
+         use_for=["EXP-0027 macro/event volatility", "EXP-0028 23y FX carry modeling"],
+         leak_rule="Use previous-day policy differential (t-1) on day t."),
+    dict(id="deribit_microstructure_1h", src="data/microstructure/*.csv*",
+         kind="crypto-microstructure", grade="A", title="Deribit BTC & ETH 1H Funding, Perp OHLCV, DVOL & Term Snapshot",
+         card="25,284 real hourly Deribit BTC & ETH funding records, perp 1H candles, and DVOL 1H index "
+              "(2024-01..2026-11), plus live dated futures snapshot.",
+         caveats=["Binance (HTTP 451) & Bybit (HTTP 403) blocked in sandbox; OKX funding capped at ~93d."],
+         use_for=["EXP-0029 funding cash-and-carry feasibility", "Risk Radar crypto funding monitor"],
+         leak_rule="1-hour execution delay enforced on signal evaluation."),
+    dict(id="risk_radar_snapshots", src=["data/risk_radar/latest.json", "data/risk_radar/history.jsonl"],
+         kind="risk-monitoring", grade="B", title="Daily Risk Radar Live SLA Snapshots & History",
+         card="8-panel automated risk monitor covering VIX term structure, OFR FSI, SPY RV20, S/R levels, "
+              "7d events, CB rate differentials, 16-feed RSS news stress, and crypto funding.",
+         caveats=["RISK MONITORING TOOL ONLY — NOT a buy/sell signal generator or edge claim."],
+         use_for=["daily portfolio risk alerts", "Telegram & offline mobile dashboard delivery"],
+         leak_rule="Snapshots stamped with UTC generation timestamp and per-panel freshness SLA."),
 ]
 
 
@@ -753,7 +781,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.15",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.16",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -799,7 +827,7 @@ def main() -> None:
 
     # ---- results json (all artifacts an AI may want to read quickly)
     for rel in ["research/artifacts/cot_panel.json", "research/artifacts/event_conditional.json",
-                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "research/artifacts/congress_trades.json", "research/artifacts/ml_us_stocks.json", "research/artifacts/thai_set.json", "research/artifacts/pit_fundamentals_exp.json", "research/artifacts/crypto_1h.json", "research/artifacts/ea_kb_synthesis.json", "research/artifacts/qc_h1_bidask.json", "research/artifacts/exp0024_phase_c.json", "configs/broker_cost_models.json", "reports/EA_KB_ALPHA_RISK_BLUEPRINT.md", "reports/QC_H1_BIDASK.md", "reports/EXP_0024_PHASE_C.md", "data/sec/MANIFEST_PIT_SEC.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "research/artifacts/congress_trades.json", "research/artifacts/ml_us_stocks.json", "research/artifacts/thai_set.json", "research/artifacts/pit_fundamentals_exp.json", "research/artifacts/crypto_1h.json", "research/artifacts/ea_kb_synthesis.json", "research/artifacts/qc_h1_bidask.json", "research/artifacts/exp0024_phase_c.json", "configs/broker_cost_models.json", "reports/EA_KB_ALPHA_RISK_BLUEPRINT.md", "reports/QC_H1_BIDASK.md", "reports/EXP_0024_PHASE_C.md", "research/artifacts/exp0026_sec_pit_300.json", "research/artifacts/exp0027_macro_events.json", "research/artifacts/exp0028_fx_carry.json", "research/artifacts/exp0029_crypto_basis.json", "research/artifacts/ea_kb_batch5_report.json", "reports/EXP_0026_SEC_PIT_300PLUS.md", "reports/EXP_0027_MACRO_EVENT_INTELLIGENCE.md", "reports/EXP_0028_0029_MICROSTRUCTURE_CARRY.md", "reports/EA_KB_BATCH5_ARCHETYPE_REPORT.md", "reports/RISK_RADAR_SPEC_AND_LATEST.md", "PROJECT_HEALTH_REPORT.md", "PROJECT_STATUS.md", "RESEARCH_LOG.md", "BLOCKERS.md", "NEXT_ACTIONS.md", "data/sec/MANIFEST_PIT_SEC_EXPANDED.json", "data/macro/MANIFEST_CENTRAL_BANK_RATES.json", "data/microstructure/MANIFEST_MICROSTRUCTURE.json", "data/sec/MANIFEST_PIT_SEC.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
                 "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
@@ -832,6 +860,9 @@ def main() -> None:
     ea_src_b4_dir = os.path.join(ROOT, "data", "ea_kb", "sources_batch4")
     if os.path.isdir(ea_src_b4_dir):
         shutil.copytree(ea_src_b4_dir, os.path.join(PACK, "code", "ea_sources_batch4"))
+    ea_src_b5_dir = os.path.join(ROOT, "data", "ea_kb", "sources_batch5")
+    if os.path.isdir(ea_src_b5_dir):
+        shutil.copytree(ea_src_b5_dir, os.path.join(PACK, "code", "ea_sources_batch5"))
 
     # ---- knowledge docs written by hand elsewhere
     for doc in ("README_FOR_AI.md", "DATA_SOURCES.md", "PITFALLS.md", "WHAT_FAILED.md",
@@ -869,7 +900,7 @@ def main() -> None:
 
     # ---- zip
     os.makedirs(DIST, exist_ok=True)
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.15.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.16.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

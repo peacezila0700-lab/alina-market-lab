@@ -1,0 +1,402 @@
+{
+  "generated_utc": "2026-11-21T11:32:15+00:00",
+  "experiment": "EXP-0026",
+  "hypothesis": "H29",
+  "universe_firms": 317,
+  "sectors": 12,
+  "date_range": "2015-01-02..2026-11-20",
+  "split_date": "2022-01-01",
+  "ew_benchmark_10bp": {
+    "is_sharpe": 1.218,
+    "oos_sharpe": 0.996
+  },
+  "bonferroni_pct_bar": 99.0,
+  "survivorship_caveat": "Universe built from current Nasdaq top market-cap active SEC filers; delisted firms absent.",
+  "results": {
+    "F_NEG_ACCRUALS": {
+      "ls_5bp": {
+        "is_sharpe": 0.963,
+        "oos_sharpe": 0.541,
+        "all_sharpe": 0.746,
+        "maxdd_all": -0.083
+      },
+      "ls_10bp": {
+        "is_sharpe": 0.943,
+        "oos_sharpe": 0.525,
+        "all_sharpe": 0.728,
+        "maxdd_all": -0.083,
+        "pct_is": 99.0,
+        "pct_oos": 90.0,
+        "p_is": 0.0149,
+        "p_oos": 0.1045
+      },
+      "ls_20bp": {
+        "is_sharpe": 0.902,
+        "oos_sharpe": 0.494
+      },
+      "lo_10bp_vs_ew": {
+        "lo_is_sharpe": 1.421,
+        "ew_is_sharpe": 1.218,
+        "lo_oos_sharpe": 0.976,
+        "ew_oos_sharpe": 0.996,
+        "excess_oos_cagr_pct": 4.9
+      },
+      "cap_split_10bp": {
+        "large_is": 0.657,
+        "large_oos": 0.442,
+        "mid_is": 1.022,
+        "mid_oos": 0.541
+      },
+      "regimes_10bp": {
+        "low_vix": 0.939,
+        "high_vix": 0.282,
+        "bull_spy": 0.927,
+        "bear_spy": 0.153
+      },
+      "sectors": {
+        "Technology": {
+          "n_firms": 60,
+          "is_sharpe_10bp": 0.364,
+          "oos_sharpe_10bp": -0.013
+        },
+        "Industrials": {
+          "n_firms": 52,
+          "is_sharpe_10bp": 0.961,
+          "oos_sharpe_10bp": -0.324
+        },
+        "Consumer Discretionary": {
+          "n_firms": 48,
+          "is_sharpe_10bp": -0.17,
+          "oos_sharpe_10bp": 0.644
+        },
+        "Finance": {
+          "n_firms": 45,
+          "is_sharpe_10bp": -0.223,
+          "oos_sharpe_10bp": -0.335
+        },
+        "Health Care": {
+          "n_firms": 39,
+          "is_sharpe_10bp": 0.585,
+          "oos_sharpe_10bp": 0.879
+        },
+        "Utilities": {
+          "n_firms": 25,
+          "is_sharpe_10bp": 0.291,
+          "oos_sharpe_10bp": 1.042
+        }
+      },
+      "avg_positions_per_rebalance": 115.5,
+      "fdr_is_pass": false,
+      "fdr_oos_pass": false,
+      "bonferroni_99_both_pass": false
+    },
+    "F_CFO_ASSETS": {
+      "ls_5bp": {
+        "is_sharpe": 0.369,
+        "oos_sharpe": -0.682,
+        "all_sharpe": -0.066,
+        "maxdd_all": -0.216
+      },
+      "ls_10bp": {
+        "is_sharpe": 0.359,
+        "oos_sharpe": -0.691,
+        "all_sharpe": -0.075,
+        "maxdd_all": -0.219,
+        "pct_is": 76.5,
+        "pct_oos": 8.0,
+        "p_is": 0.2388,
+        "p_oos": 0.9204
+      },
+      "ls_20bp": {
+        "is_sharpe": 0.34,
+        "oos_sharpe": -0.71
+      },
+      "lo_10bp_vs_ew": {
+        "lo_is_sharpe": 1.382,
+        "ew_is_sharpe": 1.218,
+        "lo_oos_sharpe": 0.761,
+        "ew_oos_sharpe": 0.996,
+        "excess_oos_cagr_pct": -2.13
+      },
+      "cap_split_10bp": {
+        "large_is": 0.484,
+        "large_oos": 0.141,
+        "mid_is": 0.116,
+        "mid_oos": -1.165
+      },
+      "regimes_10bp": {
+        "low_vix": -0.251,
+        "high_vix": 0.275,
+        "bull_spy": -0.358,
+        "bear_spy": 0.937
+      },
+      "sectors": {
+        "Technology": {
+          "n_firms": 60,
+          "is_sharpe_10bp": -0.173,
+          "oos_sharpe_10bp": 0.063
+        },
+        "Industrials": {
+          "n_firms": 52,
+          "is_sharpe_10bp": 0.669,
+          "oos_sharpe_10bp": -0.272
+        },
+        "Consumer Discretionary": {
+          "n_firms": 48,
+          "is_sharpe_10bp": -0.382,
+          "oos_sharpe_10bp": -0.304
+        },
+        "Finance": {
+          "n_firms": 45,
+          "is_sharpe_10bp": 0.2,
+          "oos_sharpe_10bp": -0.324
+        },
+        "Health Care": {
+          "n_firms": 39,
+          "is_sharpe_10bp": -0.61,
+          "oos_sharpe_10bp": -0.807
+        },
+        "Utilities": {
+          "n_firms": 25,
+          "is_sharpe_10bp": -0.076,
+          "oos_sharpe_10bp": 0.562
+        }
+      },
+      "avg_positions_per_rebalance": 115.5,
+      "fdr_is_pass": false,
+      "fdr_oos_pass": false,
+      "bonferroni_99_both_pass": false
+    },
+    "F_REV_YOY": {
+      "ls_5bp": {
+        "is_sharpe": 0.25,
+        "oos_sharpe": 0.522,
+        "all_sharpe": 0.382,
+        "maxdd_all": -0.183
+      },
+      "ls_10bp": {
+        "is_sharpe": 0.237,
+        "oos_sharpe": 0.512,
+        "all_sharpe": 0.37,
+        "maxdd_all": -0.185,
+        "pct_is": 76.0,
+        "pct_oos": 88.5,
+        "p_is": 0.2438,
+        "p_oos": 0.1194
+      },
+      "ls_20bp": {
+        "is_sharpe": 0.212,
+        "oos_sharpe": 0.492
+      },
+      "lo_10bp_vs_ew": {
+        "lo_is_sharpe": 1.265,
+        "ew_is_sharpe": 1.218,
+        "lo_oos_sharpe": 1.044,
+        "ew_oos_sharpe": 0.996,
+        "excess_oos_cagr_pct": 10.06
+      },
+      "cap_split_10bp": {
+        "large_is": 0.366,
+        "large_oos": 0.557,
+        "mid_is": 0.139,
+        "mid_oos": 0.517
+      },
+      "regimes_10bp": {
+        "low_vix": 1.039,
+        "high_vix": -1.016,
+        "bull_spy": 0.502,
+        "bear_spy": -0.109
+      },
+      "sectors": {
+        "Technology": {
+          "n_firms": 60,
+          "is_sharpe_10bp": 0.581,
+          "oos_sharpe_10bp": 0.294
+        },
+        "Industrials": {
+          "n_firms": 52,
+          "is_sharpe_10bp": -0.026,
+          "oos_sharpe_10bp": 0.238
+        },
+        "Consumer Discretionary": {
+          "n_firms": 48,
+          "is_sharpe_10bp": 0.242,
+          "oos_sharpe_10bp": 0.347
+        },
+        "Finance": {
+          "n_firms": 45,
+          "is_sharpe_10bp": -0.445,
+          "oos_sharpe_10bp": -0.03
+        },
+        "Health Care": {
+          "n_firms": 39,
+          "is_sharpe_10bp": 0.206,
+          "oos_sharpe_10bp": 0.16
+        },
+        "Utilities": {
+          "n_firms": 25,
+          "is_sharpe_10bp": -0.127,
+          "oos_sharpe_10bp": 0.03
+        }
+      },
+      "avg_positions_per_rebalance": 112.1,
+      "fdr_is_pass": false,
+      "fdr_oos_pass": false,
+      "bonferroni_99_both_pass": false
+    },
+    "F_QUALITY_COMP": {
+      "ls_5bp": {
+        "is_sharpe": 0.052,
+        "oos_sharpe": -0.717,
+        "all_sharpe": -0.287,
+        "maxdd_all": -0.251
+      },
+      "ls_10bp": {
+        "is_sharpe": 0.041,
+        "oos_sharpe": -0.726,
+        "all_sharpe": -0.297,
+        "maxdd_all": -0.253,
+        "pct_is": 56.5,
+        "pct_oos": 6.0,
+        "p_is": 0.4378,
+        "p_oos": 0.9403
+      },
+      "ls_20bp": {
+        "is_sharpe": 0.02,
+        "oos_sharpe": -0.742
+      },
+      "lo_10bp_vs_ew": {
+        "lo_is_sharpe": 1.297,
+        "ew_is_sharpe": 1.218,
+        "lo_oos_sharpe": 0.754,
+        "ew_oos_sharpe": 0.996,
+        "excess_oos_cagr_pct": -2.4
+      },
+      "cap_split_10bp": {
+        "large_is": 0.172,
+        "large_oos": -0.326,
+        "mid_is": -0.301,
+        "mid_oos": -1.105
+      },
+      "regimes_10bp": {
+        "low_vix": -0.312,
+        "high_vix": -0.291,
+        "bull_spy": -0.487,
+        "bear_spy": 0.369
+      },
+      "sectors": {
+        "Technology": {
+          "n_firms": 60,
+          "is_sharpe_10bp": 0.047,
+          "oos_sharpe_10bp": -0.073
+        },
+        "Industrials": {
+          "n_firms": 52,
+          "is_sharpe_10bp": -0.093,
+          "oos_sharpe_10bp": -0.708
+        },
+        "Consumer Discretionary": {
+          "n_firms": 48,
+          "is_sharpe_10bp": -0.632,
+          "oos_sharpe_10bp": -0.292
+        },
+        "Finance": {
+          "n_firms": 45,
+          "is_sharpe_10bp": -0.003,
+          "oos_sharpe_10bp": -0.179
+        },
+        "Health Care": {
+          "n_firms": 39,
+          "is_sharpe_10bp": -0.492,
+          "oos_sharpe_10bp": -0.955
+        },
+        "Utilities": {
+          "n_firms": 25,
+          "is_sharpe_10bp": 0.057,
+          "oos_sharpe_10bp": 0.528
+        }
+      },
+      "avg_positions_per_rebalance": 107.7,
+      "fdr_is_pass": false,
+      "fdr_oos_pass": false,
+      "bonferroni_99_both_pass": false
+    },
+    "F_SECTOR_NEUT_ACCRUALS": {
+      "ls_5bp": {
+        "is_sharpe": 0.715,
+        "oos_sharpe": 0.227,
+        "all_sharpe": 0.446,
+        "maxdd_all": -0.105
+      },
+      "ls_10bp": {
+        "is_sharpe": 0.676,
+        "oos_sharpe": 0.204,
+        "all_sharpe": 0.416,
+        "maxdd_all": -0.107,
+        "pct_is": 98.0,
+        "pct_oos": 74.5,
+        "p_is": 0.0249,
+        "p_oos": 0.2587
+      },
+      "ls_20bp": {
+        "is_sharpe": 0.599,
+        "oos_sharpe": 0.158
+      },
+      "lo_10bp_vs_ew": {
+        "lo_is_sharpe": 1.434,
+        "ew_is_sharpe": 1.218,
+        "lo_oos_sharpe": 1.023,
+        "ew_oos_sharpe": 0.996,
+        "excess_oos_cagr_pct": 2.79
+      },
+      "cap_split_10bp": {
+        "large_is": 0.386,
+        "large_oos": -0.228,
+        "mid_is": 1.088,
+        "mid_oos": 0.571
+      },
+      "regimes_10bp": {
+        "low_vix": 0.526,
+        "high_vix": 0.145,
+        "bull_spy": 0.594,
+        "bear_spy": -0.169
+      },
+      "sectors": {
+        "Technology": {
+          "n_firms": 60,
+          "is_sharpe_10bp": 0.364,
+          "oos_sharpe_10bp": -0.013
+        },
+        "Industrials": {
+          "n_firms": 52,
+          "is_sharpe_10bp": 0.961,
+          "oos_sharpe_10bp": -0.324
+        },
+        "Consumer Discretionary": {
+          "n_firms": 48,
+          "is_sharpe_10bp": -0.17,
+          "oos_sharpe_10bp": 0.644
+        },
+        "Finance": {
+          "n_firms": 45,
+          "is_sharpe_10bp": -0.223,
+          "oos_sharpe_10bp": -0.335
+        },
+        "Health Care": {
+          "n_firms": 39,
+          "is_sharpe_10bp": 0.585,
+          "oos_sharpe_10bp": 0.879
+        },
+        "Utilities": {
+          "n_firms": 25,
+          "is_sharpe_10bp": 0.291,
+          "oos_sharpe_10bp": 1.042
+        }
+      },
+      "avg_positions_per_rebalance": 115.5,
+      "fdr_is_pass": false,
+      "fdr_oos_pass": false,
+      "bonferroni_99_both_pass": false
+    }
+  }
+}

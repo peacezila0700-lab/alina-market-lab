@@ -1,15 +1,15 @@
 {
-  "stamp": "2026-11-20T19:19:31Z",
+  "stamp": "2026-11-21T11:37:27Z",
   "feeds": {
-    "BBC_Business": "OK 57",
-    "BBC_World": "OK 23",
+    "BBC_Business": "OK 58",
+    "BBC_World": "OK 24",
     "AlJazeera": "OK 25",
     "WSJ_Markets": "OK 20",
     "WSJ_Economy": "OK 20",
     "FT_Home": "OK 11",
     "CNBC_Top": "OK 30",
     "CNBC_Economy": "OK 30",
-    "MarketWatch": "FAIL",
+    "MarketWatch": "OK 10",
     "Investing_Markets": "OK 10",
     "Investing_Economy": "OK 10",
     "SeekingAlpha": "OK 7",
@@ -18,5 +18,5 @@
     "BangkokPost_Biz": "OK 10",
     "BangkokPost_World": "OK 10"
   },
-  "total_rows": 294
+  "total_rows": 418
 }

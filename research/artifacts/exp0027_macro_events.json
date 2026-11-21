@@ -1,0 +1,99 @@
+{
+  "generated_utc": "2026-11-21T11:32:16+00:00",
+  "experiment": "EXP-0027",
+  "split_date": "2021-01-01",
+  "directional_prediction": {
+    "SPY 5d Forward Return": {
+      "oos_corr": 0.0638,
+      "oos_net_sharpe": 0.153,
+      "circular_shift_pct": 40.0,
+      "verdict": "FAIL"
+    },
+    "SPY 21d Forward Return": {
+      "oos_corr": 0.0935,
+      "oos_net_sharpe": 0.821,
+      "circular_shift_pct": 90.5,
+      "verdict": "FAIL"
+    },
+    "EURGBP 5d Forward Return": {
+      "oos_corr": 0.0883,
+      "oos_net_sharpe": -0.423,
+      "circular_shift_pct": 24.0,
+      "verdict": "FAIL"
+    }
+  },
+  "volatility_prediction": {
+    "oos_rv21_r2": -0.021,
+    "oos_rv21_corr": 0.4271,
+    "oos_onset_auc": 0.7212,
+    "oos_onset_brier_skill": -0.1571,
+    "event_day_volatility": {
+      "FOMC Decision Day (SPY)": {
+        "n_events": 132,
+        "abs_move_ratio_vs_normal": 1.187,
+        "mean_signed_ret_bp": 7.78
+      },
+      "BoE Rate Change Day (EURGBP)": {
+        "n_events": 26,
+        "abs_move_ratio_vs_normal": 1.573,
+        "mean_signed_ret_bp": 29.29
+      },
+      "ECB Rate Change Day (EURGBP)": {
+        "n_events": 30,
+        "abs_move_ratio_vs_normal": 0.724,
+        "mean_signed_ret_bp": -10.03
+      }
+    }
+  },
+  "regime_classification": {
+    "Normal Term Structure (slope_3m <= 1.0)": {
+      "days": 3982,
+      "spy_ann_vol_pct": 13.56,
+      "spy_fwd21_median_pct": 1.47
+    },
+    "Inverted Stress (slope_3m > 1.0)": {
+      "days": 330,
+      "spy_ann_vol_pct": 38.12,
+      "spy_fwd21_median_pct": 3.41
+    },
+    "High Financial Stress (OFR FSI > 0)": {
+      "days": 1036,
+      "spy_ann_vol_pct": 26.36,
+      "spy_fwd21_median_pct": 2.79
+    },
+    "Low Financial Stress (OFR FSI <= 0)": {
+      "days": 3276,
+      "spy_ann_vol_pct": 12.9,
+      "spy_fwd21_median_pct": 1.29
+    }
+  },
+  "risk_sizing_and_exposure_control": {
+    "SPY_Buy_And_Hold": {
+      "is_sharpe": 0.737,
+      "oos_sharpe": 0.705,
+      "all_sharpe": 0.726,
+      "is_maxdd_pct": -34.1,
+      "oos_maxdd_pct": -25.36,
+      "all_maxdd_pct": -34.1,
+      "avg_exposure": 1.0
+    },
+    "Causal_Vol_Targeting_12pct": {
+      "is_sharpe": 0.769,
+      "oos_sharpe": 0.683,
+      "all_sharpe": 0.739,
+      "is_maxdd_pct": -16.57,
+      "oos_maxdd_pct": -16.18,
+      "all_maxdd_pct": -16.57,
+      "avg_exposure": 0.974
+    },
+    "VolTarget_Plus_MacroStress_Throttle": {
+      "is_sharpe": 0.694,
+      "oos_sharpe": 0.607,
+      "all_sharpe": 0.663,
+      "is_maxdd_pct": -15.17,
+      "oos_maxdd_pct": -17.67,
+      "all_maxdd_pct": -17.67,
+      "avg_exposure": 0.94
+    }
+  }
+}

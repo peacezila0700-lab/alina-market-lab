@@ -1,0 +1,13 @@
+{
+  "built_utc": "2026-11-21T11:10:37+00:00",
+  "daily_rows": 10186,
+  "rate_changes_rows": 321,
+  "sources": {
+    "ecb_dfr": "data-api.ecb.europa.eu (69 obs)",
+    "ecb_mro": "data-api.ecb.europa.eu (48 obs)",
+    "boe_bank_rate": "bankofengland.co.uk (259 changes since 1975-01-20)",
+    "fed_effr": "markets.newyorkfed.org (2694 obs since 2016-03-01)",
+    "us_irx_fallback": "Yahoo ^IRX (6757 obs since 2000-01-03)"
+  },
+  "caveat": "Fed EFFR starts 2016-03-01 via NYFed API; pre-2016 uses ^IRX 13W T-Bill close as causal risk-free proxy."
+}

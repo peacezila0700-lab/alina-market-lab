@@ -24,9 +24,14 @@ jobs:
       - name: Install dependencies
         run: pip install --no-cache-dir pandas numpy scipy scikit-learn requests xlrd openpyxl pypdf
 
-      - name: Run daily collector + derived layers + dashboard
+      - name: Restore gitignored daily universe if missing
+        run: python3 scripts/fetch_universe.py
+
+      - name: Run daily collector + derived layers + risk radar + dashboard
         run: |
           python3 scripts/collect_daily.py
+          if [ -f scripts/fetch_macro_rates_and_events.py ]; then python3 scripts/fetch_macro_rates_and_events.py || echo "WARN: macro rates update failed"; fi
+          if [ -f scripts/risk_radar.py ]; then python3 scripts/risk_radar.py; fi
           python3 scripts/build_dashboard.py
 
       - name: Push optional Telegram alert + offline dashboard to phone
@@ -39,7 +44,7 @@ jobs:
         run: |
           git config user.name "ALINA Bot"
           git config user.email "alina.lab.contact@gmail.com"
-          git add briefs/ packs/ dashboard/ data/collect/ data/events/ data/news/ data/levels/ data/technicals/
+          git add briefs/ packs/ dashboard/ data/collect/ data/events/ data/news/ data/levels/ data/technicals/ data/risk_radar/ reports/RISK_RADAR_SPEC_AND_LATEST.md
           if ! git diff --cached --quiet; then
             git commit -m "auto: daily collect + dashboard [skip ci]"
             git push

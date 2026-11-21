@@ -44,7 +44,7 @@ FEEDS = {
     "FT_Home": "https://www.ft.com/rss/home",
     "CNBC_Top": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
     "CNBC_Economy": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
-    "MarketWatch": "https://www.marketwatch.com/rss/topstories",
+    "MarketWatch": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
     "Investing_Markets": "https://www.investing.com/rss/news_25.rss",
     "Investing_Economy": "https://www.investing.com/rss/news_14.rss",
     "SeekingAlpha": "https://seekingalpha.com/market_currents.xml",

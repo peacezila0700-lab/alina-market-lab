@@ -1,0 +1,133 @@
+{
+  "generated_utc": "2026-11-21T11:12:49+00:00",
+  "queue_total": 344,
+  "new_files_downloaded": 118,
+  "status_counts": {
+    "mql5_blocked_external": 201,
+    "deferred_external_sdk": 24,
+    "completed": 118,
+    "stdlib_builtin": 1
+  },
+  "resolutions_sample": [
+    {
+      "task_id": "Q-3476",
+      "target": "AZ-INVEST/SDK/CommonSettings.mqh",
+      "url": "https://raw.githubusercontent.com/9nix6/Median-and-Turbo-Renko-indicator-bundle/master/Include/AZ-INVEST/SDK/CommonSettings.mqh",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/9nix6__Median-and-Turbo-Renko-indicator-bundle/Include__AZ-INVEST__SDK__CommonSettings.mqh"
+    },
+    {
+      "task_id": "Q-3477",
+      "target": "AZ-INVEST/SDK/CustomChartSettingsBase.mqh",
+      "url": "https://raw.githubusercontent.com/9nix6/Median-and-Turbo-Renko-indicator-bundle/master/Include/AZ-INVEST/SDK/CustomChartSettingsBase.mqh",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/9nix6__Median-and-Turbo-Renko-indicator-bundle/Include__AZ-INVEST__SDK__CustomChartSettingsBase.mqh"
+    },
+    {
+      "task_id": "Q-3478",
+      "target": "AccountBase.struct.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Account/AccountBase.struct.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Account__AccountBase.struct.h"
+    },
+    {
+      "task_id": "Q-3479",
+      "target": "../Storage/IValueStorage.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Storage/IValueStorage.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Storage__IValueStorage.h"
+    },
+    {
+      "task_id": "Q-3480",
+      "target": "../Buffer/BufferCandle.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Buffer/BufferCandle.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Buffer__BufferCandle.h"
+    },
+    {
+      "task_id": "Q-3481",
+      "target": "../Candle.struct.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Candle.struct.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Candle.struct.h"
+    },
+    {
+      "task_id": "Q-3482",
+      "target": "../../IndicatorTick.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Indicator/IndicatorTick.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Indicator__IndicatorTick.h"
+    },
+    {
+      "task_id": "Q-3484",
+      "target": "Task.enum.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/Task.enum.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__Task.enum.h"
+    },
+    {
+      "task_id": "Q-3485",
+      "target": "TaskCondition.struct.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/TaskCondition.struct.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__TaskCondition.struct.h"
+    },
+    {
+      "task_id": "Q-3486",
+      "target": "TaskCondition.enum.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/TaskCondition.enum.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__TaskCondition.enum.h"
+    },
+    {
+      "task_id": "Q-3487",
+      "target": "TaskConditionBase.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/TaskConditionBase.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__TaskConditionBase.h"
+    },
+    {
+      "task_id": "Q-3488",
+      "target": "TaskGetter.struct.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/TaskGetter.struct.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__TaskGetter.struct.h"
+    },
+    {
+      "task_id": "Q-3489",
+      "target": "TaskGetterBase.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/TaskGetterBase.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__TaskGetterBase.h"
+    },
+    {
+      "task_id": "Q-3490",
+      "target": "Task.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/Task.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__Task.h"
+    },
+    {
+      "task_id": "Q-3491",
+      "target": "TaskSetter.struct.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/TaskSetter.struct.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__TaskSetter.struct.h"
+    },
+    {
+      "task_id": "Q-3492",
+      "target": "TaskSetterBase.h",
+      "url": "https://raw.githubusercontent.com/EA31337/EA31337-classes/master/Task/TaskSetterBase.h",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/EA31337__EA31337-classes/Task__TaskSetterBase.h"
+    },
+    {
+      "task_id": "Q-3493",
+      "target": "Forexsb.com/Enumerations.mqh",
+      "url": "https://raw.githubusercontent.com/PopovMP/FSB_Expert_Advisor_Code/master/Forexsb.com/Enumerations.mqh",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/PopovMP__FSB_Expert_Advisor_Code/Forexsb.com__Enumerations.mqh"
+    },
+    {
+      "task_id": "Q-3494",
+      "target": "Forexsb.com/Indicators/AcceleratorOscillator.mqh",
+      "url": "https://raw.githubusercontent.com/PopovMP/FSB_Expert_Advisor_Code/master/Forexsb.com/Indicators/AcceleratorOscillator.mqh",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/PopovMP__FSB_Expert_Advisor_Code/Forexsb.com__Indicators__AcceleratorOscillator.mqh"
+    },
+    {
+      "task_id": "Q-3495",
+      "target": "Forexsb.com/Indicators/AccountPercentStop.mqh",
+      "url": "https://raw.githubusercontent.com/PopovMP/FSB_Expert_Advisor_Code/master/Forexsb.com/Indicators/AccountPercentStop.mqh",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/PopovMP__FSB_Expert_Advisor_Code/Forexsb.com__Indicators__AccountPercentStop.mqh"
+    },
+    {
+      "task_id": "Q-3496",
+      "target": "Forexsb.com/Indicators/AccumulationDistribution.mqh",
+      "url": "https://raw.githubusercontent.com/PopovMP/FSB_Expert_Advisor_Code/master/Forexsb.com/Indicators/AccumulationDistribution.mqh",
+      "local_path": "/tmp/alina_lab/data/ea_kb/sources_batch5/github/PopovMP__FSB_Expert_Advisor_Code/Forexsb.com__Indicators__AccumulationDistribution.mqh"
+    }
+  ]
+}

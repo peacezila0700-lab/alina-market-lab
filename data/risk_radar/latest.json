@@ -1,0 +1,200 @@
+{
+  "generated_utc": "2026-11-21T11:38:25+00:00",
+  "run_date": "2026-11-21",
+  "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 29 experiments).",
+  "overall_risk_classification": "HIGH",
+  "fresh_panels": 8,
+  "total_panels": 8,
+  "stale_or_missing_panels": [],
+  "active_alerts": [
+    {
+      "panel": "vol_term_structure",
+      "severity": "HIGH",
+      "msg": "VIX/VIX3M inverted at 1.160 (>1.00)"
+    },
+    {
+      "panel": "vol_term_structure",
+      "severity": "ELEVATED",
+      "msg": "VVIX percentile elevated at 1.00 (>=0.90)"
+    },
+    {
+      "panel": "equity_vol_dd",
+      "severity": "ELEVATED",
+      "msg": "SPY RV20=26.3%, 52w DD=-11.5%"
+    }
+  ],
+  "missing_data_warnings": [],
+  "panels": {
+    "vol_term_structure": {
+      "data_source": "data/collect/vol_stress_features.csv (CBOE VIX/VIX3M/VIX9D/VVIX)",
+      "last_updated": "2026-11-20",
+      "age_days": 1,
+      "freshness_status": "FRESH",
+      "risk_classification": "HIGH",
+      "alert_thresholds": {
+        "vix_elev": 22.0,
+        "vix_high": 30.0,
+        "slope_3m_inversion": 1.0,
+        "vvix_pct_elev": 0.9
+      },
+      "metrics": {
+        "vix": 35.89,
+        "slope_3m": 1.16,
+        "slope_9d": 1.135,
+        "vvix_pct": 0.996
+      },
+      "missing_data_warning": null
+    },
+    "ofr_fsi": {
+      "data_source": "data/collect/ofr_fsi.csv (US Treasury OFR)",
+      "last_updated": "2026-11-18",
+      "age_days": 3,
+      "freshness_status": "FRESH",
+      "risk_classification": "LOW",
+      "alert_thresholds": {
+        "fsi_elevated": 0.0,
+        "fsi_high": 2.0
+      },
+      "metrics": {
+        "ofr_fsi": -1.387,
+        "credit": -0.853,
+        "volatility_sub": 0.24
+      },
+      "missing_data_warning": null
+    },
+    "equity_vol_dd": {
+      "data_source": "data/universe/SPY.csv (Yahoo Finance Daily)",
+      "last_updated": "2026-11-20",
+      "age_days": 1,
+      "freshness_status": "FRESH",
+      "risk_classification": "ELEVATED",
+      "alert_thresholds": {
+        "rv20_elev": 18.0,
+        "rv20_high": 28.0,
+        "dd52_elev": -8.0,
+        "dd52_high": -15.0
+      },
+      "metrics": {
+        "spy_close": 689.81,
+        "rv20_pct": 26.26,
+        "rv63_pct": 17.05,
+        "dd_52w_pct": -11.46
+      },
+      "missing_data_warning": null
+    },
+    "support_resistance": {
+      "data_source": "data/levels/levels_latest.csv",
+      "last_updated": "2026-11-21",
+      "age_days": 0,
+      "freshness_status": "FRESH",
+      "risk_classification": "MODERATE",
+      "alert_thresholds": {
+        "near_pivot_atr": 0.35
+      },
+      "metrics": {
+        "instruments": [
+          {
+            "instrument": "BTC",
+            "close": 57808.3906,
+            "s1": 55932.7956,
+            "r1": 59382.7643,
+            "dist_s1_atr": 0.63,
+            "dist_r1_atr": 0.52
+          },
+          {
+            "instrument": "EURUSD",
+            "close": 1.097,
+            "s1": 1.0952,
+            "r1": 1.0993,
+            "dist_s1_atr": 0.29,
+            "dist_r1_atr": 0.39
+          },
+          {
+            "instrument": "GOLD",
+            "close": 3515.3999,
+            "s1": 3466.1665,
+            "r1": 3601.3667,
+            "dist_s1_atr": 0.47,
+            "dist_r1_atr": 0.83
+          },
+          {
+            "instrument": "SPY",
+            "close": 689.81,
+            "s1": 678.2767,
+            "r1": 709.8167,
+            "dist_s1_atr": 0.82,
+            "dist_r1_atr": 1.41
+          }
+        ]
+      },
+      "missing_data_warning": null
+    },
+    "calendar_7d": {
+      "data_source": "data/events/event_calendar_full.csv",
+      "last_updated": "2026-11-21",
+      "age_days": 0,
+      "freshness_status": "FRESH",
+      "risk_classification": "LOW",
+      "alert_thresholds": {
+        "fomc_7d": true
+      },
+      "metrics": {
+        "upcoming_7d_count": 0,
+        "events": []
+      },
+      "missing_data_warning": "Note: ECB/BoE 2027 dates require annual calendar extension after Dec 2026."
+    },
+    "macro_rates": {
+      "data_source": "data/macro/central_bank_rates_daily.csv (ECB + BoE + NYFed EFFR)",
+      "last_updated": "2026-11-20",
+      "age_days": 1,
+      "freshness_status": "FRESH",
+      "risk_classification": "LOW",
+      "alert_thresholds": {
+        "abs_spread_wide_pct": 2.0
+      },
+      "metrics": {
+        "ecb_dfr": 2.5,
+        "boe_rate": 4.0,
+        "fed_rate_proxy": 3.88,
+        "diff_boe_ecb_dfr": 1.5,
+        "diff_fed_ecb_dfr": 1.38
+      },
+      "missing_data_warning": null
+    },
+    "news_stress": {
+      "data_source": "data/news/feed_status.json + headlines.csv (16 RSS feeds)",
+      "last_updated": "2026-11-21T11:37:27",
+      "age_days": 0,
+      "freshness_status": "FRESH",
+      "risk_classification": "ELEVATED",
+      "alert_thresholds": {
+        "min_feeds_ok": 16,
+        "stress_headlines_elev": 25
+      },
+      "metrics": {
+        "feeds_ok": 16,
+        "feeds_total": 16,
+        "unique_headlines": 418,
+        "stress_keyword_hits": 31
+      },
+      "missing_data_warning": null
+    },
+    "crypto_funding_basis": {
+      "data_source": "data/microstructure/deribit_BTC_funding_1h.csv.gz + okx_BTCUSDT_funding_deep.csv",
+      "last_updated": "2026-11-21",
+      "age_days": 0,
+      "freshness_status": "FRESH",
+      "risk_classification": "LOW",
+      "alert_thresholds": {
+        "abs_funding_apr_elev": 25.0
+      },
+      "metrics": {
+        "deribit_btc_24h_apr_pct": -2.88,
+        "deribit_btc_index": 58820.48,
+        "okx_btc_24h_apr_pct": -0.46
+      },
+      "missing_data_warning": "OKX public funding API limited to ~93d; Binance (HTTP 451) & Bybit (HTTP 403) blocked in sandbox."
+    }
+  }
+}

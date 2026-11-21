@@ -86,7 +86,10 @@ def c_vix_skew() -> None:
                       ("skew", "https://cdn.cboe.com/api/global/us_indices/daily_prices/SKEW_History.csv")):
         raw = get(url)
         if raw:
-            rec(name, upsert(name, pd.read_csv(io.BytesIO(raw)), ["DATE"], mode="replace"))
+            df = pd.read_csv(io.BytesIO(raw))
+            if "DATE" in df.columns:
+                df["date_iso"] = pd.to_datetime(df["DATE"], format="mixed", errors="coerce").dt.strftime("%Y-%m-%d")
+            rec(name, upsert(name, df, ["DATE"], mode="replace"))
 
 
 def c_okx() -> None:
@@ -141,6 +144,8 @@ def c_calendar() -> None:
             rows = [{c.tag: (c.text or "") for c in ev} for ev in root.findall("event")]
             if rows:
                 df = pd.DataFrame(rows)
+                if "date" in df.columns:
+                    df["date_iso"] = pd.to_datetime(df["date"], format="mixed", errors="coerce").dt.strftime("%Y-%m-%d")
                 df["collected"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
                 key = [c for c in ("date", "time", "title", "country") if c in df.columns]
                 rec("econ_calendar", upsert("econ_calendar", df, key))
@@ -203,6 +208,8 @@ def c_treasury() -> None:
              f"field_tdr_date_value={datetime.now().year}&_format=csv")
     if yc:
         df = pd.read_csv(io.BytesIO(yc))
+        if "Date" in df.columns:
+            df["date_iso"] = pd.to_datetime(df["Date"], format="mixed", errors="coerce").dt.strftime("%Y-%m-%d")
         rec("treasury_yield_curve", upsert("treasury_yield_curve", df, ["Date"], mode="replace"))
 
 

@@ -30,6 +30,8 @@ UNIVERSE = {
     "BTC": ("BTC-USD", "crypto"), "ETH": ("ETH-USD", "crypto"),
     # ag
     "CORN": ("ZC=F", "ag"), "WHEAT": ("ZW=F", "ag"),
+    # extra index ETFs required by base-rate & vol-carry panels
+    "SPY": ("SPY", "index"), "VIXY": ("VIXY", "index"),
 }
 
 # cost per round trip as % of notional (documented assumption per class, NOT measured)

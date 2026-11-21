@@ -13,4 +13,6 @@ __pycache__/
 screen/raw/
 data/universe/
 data/ea_kb_backup_v2.12/
+data/sec/fundamentals_expanded.csv
+data/sec/prices_pit/
 pack/

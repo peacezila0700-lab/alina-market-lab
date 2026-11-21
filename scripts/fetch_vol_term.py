@@ -66,12 +66,14 @@ def main():
         print(f"  {sym:<6} {status[sym]}")
 
     df = pd.DataFrame(frames).sort_index()
+    df.index.name = "date"
     COLLECT.mkdir(parents=True, exist_ok=True)
     df.to_csv(COLLECT / "vol_term_structure.csv")
     print(f"\n  wrote {COLLECT/'vol_term_structure.csv'}  {df.shape[0]} rows x {df.shape[1]} cols")
 
     # derived features (all causal, computed on the close)
     d = pd.DataFrame(index=df.index)
+    d.index.name = "date"
     d["vix"] = df["VIX"]
     d["slope_3m"] = df["VIX"] / df["VIX3M"]            # >1 inverted (stress now)
     d["slope_9d"] = df["VIX9D"] / df["VIX"]            # >1 front-end panic

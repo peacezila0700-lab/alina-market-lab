@@ -1,13 +1,13 @@
 {
-  "built_utc": "2026-11-20T19:07:38Z",
-  "events": 2028,
+  "built_utc": "2026-11-21T11:38:06Z",
+  "events": 2029,
   "types": {
     "AUCTION": 711,
     "NFP_approx": 264,
     "OPEX": 264,
     "MONTH_END": 264,
     "FOMC": 205,
-    "SHOCK_2.5SIG": 159,
+    "SHOCK_2.5SIG": 160,
     "QUARTER_END": 88,
     "VIX_ONSET30": 73
   },

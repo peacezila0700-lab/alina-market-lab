@@ -1,0 +1,43 @@
+{
+  "built_utc": "2026-11-21T11:10:38+00:00",
+  "datasets": {
+    "deribit_BTC_funding_1h": {
+      "rows": 25284,
+      "start": "2024-01-01 01:00:00+00:00",
+      "end": "2026-11-21 00:00:00+00:00"
+    },
+    "deribit_BTC_perp_1h": {
+      "rows": 25321,
+      "start": "2024-01-01 00:00:00+00:00",
+      "end": "2026-11-21 00:00:00+00:00"
+    },
+    "deribit_ETH_funding_1h": {
+      "rows": 25284,
+      "start": "2024-01-01 01:00:00+00:00",
+      "end": "2026-11-21 00:00:00+00:00"
+    },
+    "deribit_ETH_perp_1h": {
+      "rows": 25321,
+      "start": "2024-01-01 00:00:00+00:00",
+      "end": "2026-11-21 00:00:00+00:00"
+    },
+    "deribit_BTC_dvol_1h": {
+      "rows": 25320,
+      "start": "2024-01-01 00:00:00+00:00",
+      "end": "2026-11-21 00:00:00+00:00"
+    },
+    "deribit_ETH_dvol_1h": {
+      "rows": 25320,
+      "start": "2024-01-01 00:00:00+00:00",
+      "end": "2026-11-21 00:00:00+00:00"
+    },
+    "deribit_futures_term_snapshot": {
+      "rows": 26
+    }
+  },
+  "blocked_sources": {
+    "binance_fapi": "HTTP 451 (geo-blocked in sandbox)",
+    "bybit_v5": "HTTP 403 (WAF blocked in sandbox)",
+    "okx_funding_history": "API caps public lookback to ~93 days (280 8h rows in data/collect/okx_*_funding_deep.csv)"
+  }
+}

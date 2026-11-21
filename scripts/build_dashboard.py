@@ -211,6 +211,28 @@ def main():
             h.append(f"<div class='card'><div class='sub'>{esc(n.get('source', ''))}</div>"
                      f"{esc(n.get('title', ''))}</div>")
 
+    # ---- Workstream D: Risk Radar SLA, Macro Rates, Crypto Basis & Warnings
+    rr_path = ROOT / "data" / "risk_radar" / "latest.json"
+    if rr_path.exists():
+        rr = json.loads(rr_path.read_text())
+        orc = rr.get("overall_risk_classification", "UNKNOWN")
+        cls_name = "flag" if orc in ("ELEVATED", "HIGH") else "ok"
+        h.append(f"<h2>Risk Radar (Monitoring Only — Not a Signal)</h2>")
+        h.append(f"<div class='{cls_name}'><b>Overall Risk: {esc(orc)}</b> · "
+                 f"Fresh Panels: {rr.get('fresh_panels', 0)}/{rr.get('total_panels', 0)} · "
+                 f"{esc(rr.get('disclaimer', ''))}</div>")
+        h.append("<div class='card'><table><tr><th>Panel</th><th>Updated</th><th>Freshness</th><th>Risk</th></tr>")
+        for pname, pval in rr.get("panels", {}).items():
+            h.append(
+                f"<tr><td>{esc(pname)}</td><td>{esc(pval.get('last_updated', '?'))}</td>"
+                f"<td>{esc(pval.get('freshness_status', '?'))}</td>"
+                f"<td><b>{esc(pval.get('risk_classification', '?'))}</b></td></tr>"
+            )
+        h.append("</table>")
+        for w in rr.get("missing_data_warnings", [])[:5]:
+            h.append(f"<div class='sub'>⚠ {esc(w)}</div>")
+        h.append("</div>")
+
     exp_n, exp_pass = 0, 0
     exp_csv = ROOT / "research" / "EXPERIMENT_LOG.csv"
     if exp_csv.exists():

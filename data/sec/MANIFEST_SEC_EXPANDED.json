@@ -1,0 +1,135 @@
+{
+  "built_utc": "2026-11-21T11:19:30+00:00",
+  "candidate_target": 420,
+  "companies_complete_sec_and_price": 320,
+  "failed_count": 94,
+  "failed_sample": [
+    [
+      "TSM",
+      "no_us_gaap"
+    ],
+    [
+      "ANT",
+      "no_us_gaap"
+    ],
+    [
+      "SKHY",
+      "no_us_gaap"
+    ],
+    [
+      "ASML",
+      "zero_xbrl_rows"
+    ],
+    [
+      "NVS",
+      "no_us_gaap"
+    ],
+    [
+      "HSBC",
+      "no_us_gaap"
+    ],
+    [
+      "TM",
+      "zero_xbrl_rows"
+    ],
+    [
+      "AZN",
+      "no_us_gaap"
+    ],
+    [
+      "SHEL",
+      "no_us_gaap"
+    ],
+    [
+      "RY",
+      "no_us_gaap"
+    ],
+    [
+      "SAP",
+      "no_us_gaap"
+    ],
+    [
+      "MUFG",
+      "zero_xbrl_rows"
+    ],
+    [
+      "BABA",
+      "zero_xbrl_rows"
+    ],
+    [
+      "KOF",
+      "zero_xbrl_rows"
+    ],
+    [
+      "ARM",
+      "zero_xbrl_rows"
+    ],
+    [
+      "TTE",
+      "zero_xbrl_rows"
+    ],
+    [
+      "TD",
+      "no_us_gaap"
+    ],
+    [
+      "BHP",
+      "zero_xbrl_rows"
+    ],
+    [
+      "NVO",
+      "no_us_gaap"
+    ],
+    [
+      "SAN",
+      "zero_xbrl_rows"
+    ],
+    [
+      "SONY",
+      "zero_xbrl_rows"
+    ],
+    [
+      "BUD",
+      "no_us_gaap"
+    ],
+    [
+      "SMFG",
+      "no_us_gaap"
+    ],
+    [
+      "UBS",
+      "no_us_gaap"
+    ],
+    [
+      "BBVA",
+      "zero_xbrl_rows"
+    ],
+    [
+      "UL",
+      "no_us_gaap"
+    ],
+    [
+      "HDB",
+      "zero_xbrl_rows"
+    ],
+    [
+      "IBN",
+      "companyfacts_http"
+    ],
+    [
+      "BTI",
+      "zero_xbrl_rows"
+    ],
+    [
+      "SPOT",
+      "no_us_gaap"
+    ]
+  ],
+  "filings_expanded_rows": 16792,
+  "fundamentals_expanded_rows": 520024,
+  "acceptance_cutoff_rule": "16:00 America/New_York; >=16:00 ET or missing acceptanceDateTime -> next NYSE weekday",
+  "caveats": [
+    "Current-constituent market-cap ranking from Nasdaq screener introduces survivorship bias on dead/delisted firms.",
+    "Banks/REITs lacking standard us-gaap Revenues or CFO tags have NaN on those specific metrics rather than forced imputation."
+  ]
+}

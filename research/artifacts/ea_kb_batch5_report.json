@@ -1,0 +1,489 @@
+{
+  "generated_utc": "2026-11-21T11:35:12+00:00",
+  "sqlite_integrity": "ok",
+  "source_files_total": 2100,
+  "source_files_inserted_batch5": 118,
+  "missing_local_paths": 0,
+  "ea_master_total": 499,
+  "indicators_total": 226,
+  "duplicates_total": 1322,
+  "new_duplicates_batch5": 10,
+  "batch_counts": {
+    "batch1": 217,
+    "batch2": 1501,
+    "batch3": 222,
+    "batch4": 42,
+    "batch5": 118
+  },
+  "duplicate_relation_counts": {
+    "exact_sha256": 410,
+    "fork_or_modified": 238,
+    "near_duplicate": 287,
+    "shared_code_pattern": 387
+  },
+  "archetype_source_counts": {
+    "multi_currency": 126,
+    "basket_trading": 37,
+    "hedging": 278,
+    "vol_breakout": 204,
+    "icustom_usage": 99
+  },
+  "top_15_includes": [
+    [
+      "Trade\\Trade.mqh",
+      200
+    ],
+    [
+      "Forexsb.com/Enumerations.mqh",
+      111
+    ],
+    [
+      "Forexsb.com/Indicator.mqh",
+      109
+    ],
+    [
+      "Object.mqh",
+      70
+    ],
+    [
+      "Math.mqh",
+      63
+    ],
+    [
+      "Trade/Trade.mqh",
+      62
+    ],
+    [
+      "../Indicator/IndicatorTickOrCandleSource.h",
+      58
+    ],
+    [
+      "Trade\\SymbolInfo.mqh",
+      57
+    ],
+    [
+      "Arrays\\List.mqh",
+      46
+    ],
+    [
+      "Trade\\PositionInfo.mqh",
+      43
+    ],
+    [
+      "Expert\\ExpertSignal.mqh",
+      40
+    ],
+    [
+      "Array.mqh",
+      39
+    ],
+    [
+      "MEMO\\Core\\Settings.mqh",
+      35
+    ],
+    [
+      "../BufferStruct.mqh",
+      34
+    ],
+    [
+      "../_united/MagicNumberHelpers.mqh",
+      32
+    ]
+  ],
+  "top_15_icustom_targets": [
+    [
+      "Development\\\\Breakout\\\\BreakoutBarsTrend_v2",
+      10
+    ],
+    [
+      "Custom\\\\MovingAverageCross",
+      4
+    ],
+    [
+      "Heiken Ashi",
+      3
+    ],
+    [
+      "dantrend",
+      2
+    ],
+    [
+      "smc_test\\\\SMC_Test_",
+      2
+    ],
+    [
+      "Examples\\\\Custom Moving Average",
+      2
+    ],
+    [
+      "Development\\\\Currency Index\\\\CurrencyStrength",
+      2
+    ],
+    [
+      "Custom\\\\AdMa",
+      1
+    ],
+    [
+      "Custom\\\\DonchianChannel",
+      1
+    ],
+    [
+      "ATR_Trailing_Stop",
+      1
+    ],
+    [
+      "Unknown command type",
+      1
+    ],
+    [
+      "Roffild/ToIndicator",
+      1
+    ],
+    [
+      "CustomChartIndicators\\\\RSI",
+      1
+    ],
+    [
+      "P-RENKO BR Ultimate\\\\RSI",
+      1
+    ],
+    [
+      "Ultimate Renko\\\\RSI",
+      1
+    ]
+  ],
+  "top_10_dll_imports": [
+    [
+      "kernel32.dll",
+      28
+    ],
+    [
+      "user32.dll",
+      10
+    ],
+    [
+      "advapi32.dll",
+      8
+    ],
+    [
+      "AdoSuite.dll",
+      7
+    ],
+    [
+      "Wininet.dll",
+      3
+    ],
+    [
+      "wininet.dll",
+      2
+    ],
+    [
+      "kernelbase.dll",
+      2
+    ],
+    [
+      "gdi32.dll",
+      2
+    ],
+    [
+      "Opengl32.dll",
+      2
+    ],
+    [
+      "MTConnector.dll",
+      1
+    ]
+  ],
+  "top_examples": {
+    "multi_currency": [
+      {
+        "src_id": "SRC-0502",
+        "file": "MQL4__Experts__Account Protector__Account Protector.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 60
+      },
+      {
+        "src_id": "SRC-0637",
+        "file": "Forexsb.com__ActionTrade4.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 47
+      },
+      {
+        "src_id": "SRC-0135",
+        "file": "mq4__MtApi.mq4",
+        "batch": "batch1",
+        "platform": "MT4",
+        "hits": 34
+      },
+      {
+        "src_id": "SRC-0243",
+        "file": "MQL4__Experts__Position Sizer__Position Sizer.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 32
+      },
+      {
+        "src_id": "SRC-0004",
+        "file": "MT5_EurUsd_v02x.mq5",
+        "batch": "batch1",
+        "platform": "MT5",
+        "hits": 28
+      },
+      {
+        "src_id": "SRC-0364",
+        "file": "BufferFXT.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 20
+      },
+      {
+        "src_id": "SRC-0050",
+        "file": "MQ4__Includes__bsebars.mqh",
+        "batch": "batch1",
+        "platform": "MQL_Include",
+        "hits": 13
+      },
+      {
+        "src_id": "SRC-1832",
+        "file": "SymbolInfo.struct.static.h",
+        "batch": "batch3",
+        "platform": "MQL_C_Header",
+        "hits": 12
+      }
+    ],
+    "basket_trading": [
+      {
+        "src_id": "SRC-0563",
+        "file": "ea-research__xaubot-mq5__Include__XAUBot_PositionManager.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 28
+      },
+      {
+        "src_id": "SRC-1439",
+        "file": "Trade Manager__Trade Manager.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 27
+      },
+      {
+        "src_id": "SRC-0180",
+        "file": "Basket_Close_Manager.mq5",
+        "batch": "batch1",
+        "platform": "MT5",
+        "hits": 23
+      },
+      {
+        "src_id": "SRC-1356",
+        "file": "EA Snippets__Breakout__Breakout5-2-2.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 13
+      },
+      {
+        "src_id": "SRC-1357",
+        "file": "EA Snippets__Breakout__Breakout5-2.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 13
+      },
+      {
+        "src_id": "SRC-1354",
+        "file": "EA Snippets__Breakout__Breakout3.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 12
+      },
+      {
+        "src_id": "SRC-1358",
+        "file": "EA Snippets__Breakout__Breakout5.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 12
+      },
+      {
+        "src_id": "SRC-1438",
+        "file": "Trade Manager__Trade Manager.mq4",
+        "batch": "batch2",
+        "platform": "MT4",
+        "hits": 12
+      }
+    ],
+    "hedging": [
+      {
+        "src_id": "SRC-0246",
+        "file": "MQL5__Include__OrderIterator.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 25
+      },
+      {
+        "src_id": "SRC-0526",
+        "file": "MQL5__Experts__Position Sizer__PortfolioRisk.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 24
+      },
+      {
+        "src_id": "SRC-0801",
+        "file": "MQL5__Include__EA_SCALPER__Risk__CRecoveryManager.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 16
+      },
+      {
+        "src_id": "SRC-0045",
+        "file": "MQL5__Indicators__RiskCalculator.mq5",
+        "batch": "batch1",
+        "platform": "MT5",
+        "hits": 15
+      },
+      {
+        "src_id": "SRC-0909",
+        "file": "MQL5__Include__Math__Fuzzy__fuzzyrule.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 11
+      },
+      {
+        "src_id": "SRC-1137",
+        "file": "MQL5__Include___stdlib_backup__Math__Fuzzy__fuzzyrule.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 11
+      },
+      {
+        "src_id": "SRC-1550",
+        "file": "GOLD_ORB__Include__Math__Fuzzy__fuzzyrule.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 11
+      },
+      {
+        "src_id": "SRC-0525",
+        "file": "MQL5__Experts__Position Sizer__PortfolioMargin.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 9
+      }
+    ],
+    "vol_breakout": [
+      {
+        "src_id": "SRC-0816",
+        "file": "MQL5__Include__EA_SCALPER__Strategy__CTrendFollowStrategy.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 29
+      },
+      {
+        "src_id": "SRC-1282",
+        "file": "indicators__bollinger_bands_distance_calculator.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 24
+      },
+      {
+        "src_id": "SRC-0687",
+        "file": "MQL5__Experts__SmartPropAI_Template.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 18
+      },
+      {
+        "src_id": "SRC-1281",
+        "file": "indicators__bollinger_bands.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 15
+      },
+      {
+        "src_id": "SRC-0685",
+        "file": "MQL5__Experts__EA_SCALPER_XAUUSD.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 14
+      },
+      {
+        "src_id": "SRC-0810",
+        "file": "MQL5__Include__EA_SCALPER__Signal__CConfluenceScorer.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 13
+      },
+      {
+        "src_id": "SRC-0019",
+        "file": "indicatorarrows.mq4",
+        "batch": "batch1",
+        "platform": "MT4",
+        "hits": 11
+      },
+      {
+        "src_id": "SRC-0046",
+        "file": "SmartMoneyConcepts.mq5",
+        "batch": "batch1",
+        "platform": "MT5",
+        "hits": 11
+      }
+    ],
+    "icustom_usage": [
+      {
+        "src_id": "SRC-1776",
+        "file": "IndicatorBase.h",
+        "batch": "batch3",
+        "platform": "MQL_C_Header",
+        "hits": 26
+      },
+      {
+        "src_id": "SRC-0135",
+        "file": "mq4__MtApi.mq4",
+        "batch": "batch1",
+        "platform": "MT4",
+        "hits": 12
+      },
+      {
+        "src_id": "SRC-0138",
+        "file": "mq5__MtApi5.mq5",
+        "batch": "batch1",
+        "platform": "MT5",
+        "hits": 12
+      },
+      {
+        "src_id": "SRC-0025",
+        "file": "Library__IndicatorLibrary.mq5",
+        "batch": "batch1",
+        "platform": "MT5",
+        "hits": 6
+      },
+      {
+        "src_id": "SRC-0417",
+        "file": "Indicators__Indi_HeikenAshi.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 5
+      },
+      {
+        "src_id": "SRC-0338",
+        "file": "Experts__ExampleEA3.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 4
+      },
+      {
+        "src_id": "SRC-0450",
+        "file": "Indicators__Special__Indi_Custom.mqh",
+        "batch": "batch2",
+        "platform": "MQL_Include",
+        "hits": 3
+      },
+      {
+        "src_id": "SRC-1214",
+        "file": "Experts__CEZLSMA.mq5",
+        "batch": "batch2",
+        "platform": "MT5",
+        "hits": 3
+      }
+    ]
+  }
+}

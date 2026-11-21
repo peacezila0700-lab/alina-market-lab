@@ -1,11 +1,11 @@
 {
-  "fetched_utc": "2026-11-21T02:55:46+00:00",
+  "fetched_utc": "2026-11-21T11:38:02+00:00",
   "jobs": [
     {
       "kind": "topic",
       "label": "stock market",
       "status": "OK",
-      "items": 102
+      "items": 104
     },
     {
       "kind": "topic",
@@ -35,73 +35,73 @@
       "kind": "topic",
       "label": "trade war",
       "status": "OK",
-      "items": 94
+      "items": 91
     },
     {
       "kind": "topic",
       "label": "currency crisis",
       "status": "OK",
-      "items": 34
+      "items": 33
     },
     {
       "kind": "topic",
       "label": "earnings surprise",
       "status": "OK",
-      "items": 45
+      "items": 47
     },
     {
       "kind": "topic",
       "label": "banking stress",
       "status": "OK",
-      "items": 31
+      "items": 32
     },
     {
       "kind": "topic",
       "label": "recession risk",
       "status": "OK",
-      "items": 67
+      "items": 69
     },
     {
       "kind": "country",
       "label": "US",
       "status": "OK",
-      "items": 73
+      "items": 92
     },
     {
       "kind": "country",
       "label": "UK",
       "status": "OK",
-      "items": 74
+      "items": 89
     },
     {
       "kind": "country",
       "label": "DE",
       "status": "OK",
-      "items": 29
+      "items": 27
     },
     {
       "kind": "country",
       "label": "FR",
       "status": "OK",
-      "items": 30
+      "items": 77
     },
     {
       "kind": "country",
       "label": "JP",
       "status": "OK",
-      "items": 19
+      "items": 22
     },
     {
       "kind": "country",
       "label": "CN",
       "status": "OK",
-      "items": 27
+      "items": 25
     },
     {
       "kind": "country",
       "label": "IN",
       "status": "OK",
-      "items": 80
+      "items": 99
     },
     {
       "kind": "country",
@@ -113,31 +113,31 @@
       "kind": "country",
       "label": "RU",
       "status": "OK",
-      "items": 20
+      "items": 22
     },
     {
       "kind": "country",
       "label": "TH",
       "status": "OK",
-      "items": 27
+      "items": 24
     },
     {
       "kind": "country",
       "label": "VN",
       "status": "OK",
-      "items": 79
+      "items": 34
     },
     {
       "kind": "country",
       "label": "ID",
       "status": "OK",
-      "items": 31
+      "items": 100
     },
     {
       "kind": "country",
       "label": "TR",
       "status": "OK",
-      "items": 32
+      "items": 29
     },
     {
       "kind": "country",
@@ -149,15 +149,15 @@
       "kind": "country",
       "label": "SA",
       "status": "OK",
-      "items": 78
+      "items": 34
     },
     {
       "kind": "country",
       "label": "ZA",
       "status": "OK",
-      "items": 72
+      "items": 100
     }
   ],
-  "unique_headlines": 1294,
+  "unique_headlines": 1392,
   "note": "Google News RSS is unofficial; every query status is recorded so failures stay visible."
 }
