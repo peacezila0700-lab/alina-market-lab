@@ -1,0 +1,49 @@
+{
+  "updated_utc": "2026-11-21T09:50:00Z",
+  "note": "Publicly documented FX contract/cost benchmarks for backtest sensitivity ONLY (zero real accounts/credentials).",
+  "pip_size": {
+    "EURGBP": 0.0001,
+    "EURUSD": 0.0001
+  },
+  "models": {
+    "dukascopy_measured": {
+      "label": "Dukascopy Measured H1 Bid/Ask",
+      "uses_bar_spread": true,
+      "commission_rt_pips": 0.0,
+      "slippage_market_rt_pips": 0.2,
+      "slippage_limit_rt_pips": 0.05,
+      "swap_pips_per_night_grid": [0.0, 0.35],
+      "description": "Uses exact per-bar quoted spread_close_pips / spread_mean_of_bar_pips from Dukascopy H1 bid+ask feed."
+    },
+    "ic_markets_raw_ecn": {
+      "label": "IC Markets Raw Spread (ECN, Public Spec)",
+      "uses_bar_spread": false,
+      "spread_pips": {"EURGBP": 0.4, "EURUSD": 0.1},
+      "commission_rt_pips": {"EURGBP": 0.56, "EURUSD": 0.64},
+      "slippage_market_rt_pips": 0.2,
+      "slippage_limit_rt_pips": 0.05,
+      "swap_pips_per_night_grid": [0.0, 0.35],
+      "description": "$7.00/lot round-turn (~$5.6-$6.4 pip-value adjusted -> 0.56 pip EURGBP / 0.64 pip EURUSD equiv) + tight raw spread."
+    },
+    "exness_raw_spread": {
+      "label": "Exness Raw Spread (Public Spec)",
+      "uses_bar_spread": false,
+      "spread_pips": {"EURGBP": 0.3, "EURUSD": 0.1},
+      "commission_rt_pips": {"EURGBP": 0.56, "EURUSD": 0.64},
+      "slippage_market_rt_pips": 0.2,
+      "slippage_limit_rt_pips": 0.05,
+      "swap_pips_per_night_grid": [0.0, 0.35],
+      "description": "Up to $3.50/side/lot ($7 RT) + ultra-low raw spread."
+    },
+    "exness_standard": {
+      "label": "Exness Standard ($0 Comm Retail, Public Spec)",
+      "uses_bar_spread": false,
+      "spread_pips": {"EURGBP": 1.2, "EURUSD": 0.9},
+      "commission_rt_pips": {"EURGBP": 0.0, "EURUSD": 0.0},
+      "slippage_market_rt_pips": 0.25,
+      "slippage_limit_rt_pips": 0.10,
+      "swap_pips_per_night_grid": [0.0, 0.35],
+      "description": "Zero commission retail account with spread markup (~1.2 pip EURGBP, ~0.9 pip EURUSD)."
+    }
+  }
+}

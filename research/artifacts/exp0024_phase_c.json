@@ -1,0 +1,1134 @@
+{
+  "generated_utc": "2026-11-21T09:51:25Z",
+  "splits": {
+    "IS": "<= 2021-12-31",
+    "VALID": "2022-01-01..2026-05-19",
+    "OOS_LOCKED": "2026-05-20..2026-11-20"
+  },
+  "runs": {
+    "EURGBP": {
+      "H26_LIMIT_OU": {
+        "total_trades": 2242,
+        "by_split_duka": {
+          "IS": {
+            "n": 1826,
+            "net_exp_pips": -1.8,
+            "total_pips": -3280.9,
+            "win_rate_pct": 56.3,
+            "pf": 0.89,
+            "max_dd_pips": 3865.5,
+            "ci_95_pips": [
+              -3.24,
+              -0.45
+            ],
+            "net_exp_swap035_pips": -2.21,
+            "random_null": {
+              "null_mean_pips": -1.58,
+              "null_p95_pips": -0.11,
+              "obs_pct_vs_random": 39.7
+            }
+          },
+          "VALID": {
+            "n": 386,
+            "net_exp_pips": -0.48,
+            "total_pips": -186.2,
+            "win_rate_pct": 53.9,
+            "pf": 0.96,
+            "max_dd_pips": 603.2,
+            "ci_95_pips": [
+              -2.87,
+              1.84
+            ],
+            "net_exp_swap035_pips": -1.04
+          },
+          "OOS": {
+            "n": 30,
+            "net_exp_pips": -4.28,
+            "total_pips": -128.3,
+            "win_rate_pct": 43.3,
+            "pf": 0.67,
+            "max_dd_pips": 217.2,
+            "ci_95_pips": [
+              -9.34,
+              3.63
+            ],
+            "net_exp_swap035_pips": -5.32
+          },
+          "ALL": {
+            "n": 2242,
+            "net_exp_pips": -1.6,
+            "total_pips": -3595.5,
+            "win_rate_pct": 55.7,
+            "pf": 0.9,
+            "max_dd_pips": 3865.5,
+            "ci_95_pips": [
+              -2.79,
+              -0.37
+            ],
+            "net_exp_swap035_pips": -2.05
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 2242,
+            "net_exp_pips": -1.79,
+            "total_pips": -4024.2,
+            "win_rate_pct": 55.7,
+            "pf": 0.88,
+            "max_dd_pips": 4224.0,
+            "ci_95_pips": [
+              -2.97,
+              -0.56
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 2242,
+            "net_exp_pips": -1.52,
+            "total_pips": -3406.9,
+            "win_rate_pct": 55.7,
+            "pf": 0.9,
+            "max_dd_pips": 3694.5,
+            "ci_95_pips": [
+              -2.69,
+              -0.3
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 2242,
+            "net_exp_pips": -1.42,
+            "total_pips": -3182.7,
+            "win_rate_pct": 55.7,
+            "pf": 0.91,
+            "max_dd_pips": 3538.9,
+            "ci_95_pips": [
+              -2.59,
+              -0.2
+            ]
+          },
+          "exness_standard": {
+            "n": 2242,
+            "net_exp_pips": -1.81,
+            "total_pips": -4057.1,
+            "win_rate_pct": 55.7,
+            "pf": 0.88,
+            "max_dd_pips": 4266.2,
+            "ci_95_pips": [
+              -2.98,
+              -0.59
+            ]
+          }
+        }
+      },
+      "H26_MKT_COMPARE": {
+        "total_trades": 2446,
+        "by_split_duka": {
+          "IS": {
+            "n": 1981,
+            "net_exp_pips": -2.64,
+            "total_pips": -5221.8,
+            "win_rate_pct": 55.2,
+            "pf": 0.84,
+            "max_dd_pips": 5641.3,
+            "ci_95_pips": [
+              -3.99,
+              -1.33
+            ],
+            "net_exp_swap035_pips": -3.05,
+            "random_null": {
+              "null_mean_pips": -1.52,
+              "null_p95_pips": -0.03,
+              "obs_pct_vs_random": 13.0
+            }
+          },
+          "VALID": {
+            "n": 432,
+            "net_exp_pips": -1.09,
+            "total_pips": -469.2,
+            "win_rate_pct": 53.2,
+            "pf": 0.92,
+            "max_dd_pips": 769.5,
+            "ci_95_pips": [
+              -3.29,
+              1.27
+            ],
+            "net_exp_swap035_pips": -1.66
+          },
+          "OOS": {
+            "n": 33,
+            "net_exp_pips": -4.27,
+            "total_pips": -140.8,
+            "win_rate_pct": 42.4,
+            "pf": 0.67,
+            "max_dd_pips": 212.3,
+            "ci_95_pips": [
+              -9.32,
+              3.75
+            ],
+            "net_exp_swap035_pips": -5.22
+          },
+          "ALL": {
+            "n": 2446,
+            "net_exp_pips": -2.38,
+            "total_pips": -5831.9,
+            "win_rate_pct": 54.7,
+            "pf": 0.85,
+            "max_dd_pips": 6013.2,
+            "ci_95_pips": [
+              -3.55,
+              -1.16
+            ],
+            "net_exp_swap035_pips": -2.83
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 2446,
+            "net_exp_pips": -2.58,
+            "total_pips": -6302.4,
+            "win_rate_pct": 54.6,
+            "pf": 0.84,
+            "max_dd_pips": 6429.6,
+            "ci_95_pips": [
+              -3.75,
+              -1.35
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 2446,
+            "net_exp_pips": -2.35,
+            "total_pips": -5748.8,
+            "win_rate_pct": 54.6,
+            "pf": 0.85,
+            "max_dd_pips": 5923.0,
+            "ci_95_pips": [
+              -3.51,
+              -1.13
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 2446,
+            "net_exp_pips": -2.25,
+            "total_pips": -5504.2,
+            "win_rate_pct": 54.6,
+            "pf": 0.86,
+            "max_dd_pips": 5697.3,
+            "ci_95_pips": [
+              -3.41,
+              -1.03
+            ]
+          },
+          "exness_standard": {
+            "n": 2446,
+            "net_exp_pips": -2.64,
+            "total_pips": -6458.1,
+            "win_rate_pct": 54.6,
+            "pf": 0.83,
+            "max_dd_pips": 6577.6,
+            "ci_95_pips": [
+              -3.8,
+              -1.42
+            ]
+          }
+        }
+      },
+      "H27_LONDON_FIX_REVERT": {
+        "total_trades": 3202,
+        "by_split_duka": {
+          "IS": {
+            "n": 2522,
+            "net_exp_pips": -2.25,
+            "total_pips": -5670.7,
+            "win_rate_pct": 39.0,
+            "pf": 0.57,
+            "max_dd_pips": 5705.2,
+            "ci_95_pips": [
+              -2.7,
+              -1.76
+            ],
+            "net_exp_swap035_pips": -2.25,
+            "random_null": {
+              "null_mean_pips": -1.54,
+              "null_p95_pips": -0.96,
+              "obs_pct_vs_random": 3.7
+            }
+          },
+          "VALID": {
+            "n": 611,
+            "net_exp_pips": -2.25,
+            "total_pips": -1374.5,
+            "win_rate_pct": 36.0,
+            "pf": 0.49,
+            "max_dd_pips": 1407.9,
+            "ci_95_pips": [
+              -3.01,
+              -1.45
+            ],
+            "net_exp_swap035_pips": -2.25
+          },
+          "OOS": {
+            "n": 69,
+            "net_exp_pips": -1.81,
+            "total_pips": -124.7,
+            "win_rate_pct": 29.0,
+            "pf": 0.37,
+            "max_dd_pips": 141.0,
+            "ci_95_pips": [
+              -2.74,
+              -1.1
+            ],
+            "net_exp_swap035_pips": -1.81
+          },
+          "ALL": {
+            "n": 3202,
+            "net_exp_pips": -2.24,
+            "total_pips": -7170.0,
+            "win_rate_pct": 38.2,
+            "pf": 0.56,
+            "max_dd_pips": 7205.3,
+            "ci_95_pips": [
+              -2.62,
+              -1.83
+            ],
+            "net_exp_swap035_pips": -2.24
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 3202,
+            "net_exp_pips": -2.24,
+            "total_pips": -7170.0,
+            "win_rate_pct": 38.2,
+            "pf": 0.56,
+            "max_dd_pips": 7205.3,
+            "ci_95_pips": [
+              -2.62,
+              -1.83
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 3202,
+            "net_exp_pips": -1.16,
+            "total_pips": -3710.8,
+            "win_rate_pct": 45.0,
+            "pf": 0.74,
+            "max_dd_pips": 3857.3,
+            "ci_95_pips": [
+              -1.54,
+              -0.78
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 3202,
+            "net_exp_pips": -1.06,
+            "total_pips": -3390.6,
+            "win_rate_pct": 45.3,
+            "pf": 0.75,
+            "max_dd_pips": 3566.1,
+            "ci_95_pips": [
+              -1.44,
+              -0.68
+            ]
+          },
+          "exness_standard": {
+            "n": 3202,
+            "net_exp_pips": -1.45,
+            "total_pips": -4639.4,
+            "win_rate_pct": 43.4,
+            "pf": 0.68,
+            "max_dd_pips": 4711.9,
+            "ci_95_pips": [
+              -1.83,
+              -1.07
+            ]
+          }
+        }
+      },
+      "H28_REGIME_GUARDED": {
+        "total_trades": 1617,
+        "by_split_duka": {
+          "IS": {
+            "n": 1326,
+            "net_exp_pips": -1.84,
+            "total_pips": -2433.7,
+            "win_rate_pct": 53.4,
+            "pf": 0.88,
+            "max_dd_pips": 2621.3,
+            "ci_95_pips": [
+              -3.35,
+              -0.2
+            ],
+            "net_exp_swap035_pips": -2.29,
+            "random_null": {
+              "null_mean_pips": -1.57,
+              "null_p95_pips": 0.12,
+              "obs_pct_vs_random": 42.7
+            }
+          },
+          "VALID": {
+            "n": 265,
+            "net_exp_pips": 1.08,
+            "total_pips": 286.0,
+            "win_rate_pct": 53.6,
+            "pf": 1.09,
+            "max_dd_pips": 418.2,
+            "ci_95_pips": [
+              -1.56,
+              3.31
+            ],
+            "net_exp_swap035_pips": 0.45
+          },
+          "OOS": {
+            "n": 26,
+            "net_exp_pips": -4.93,
+            "total_pips": -128.1,
+            "win_rate_pct": 42.3,
+            "pf": 0.62,
+            "max_dd_pips": 217.0,
+            "ci_95_pips": [
+              -12.08,
+              5.53
+            ],
+            "net_exp_swap035_pips": -6.0
+          },
+          "ALL": {
+            "n": 1617,
+            "net_exp_pips": -1.41,
+            "total_pips": -2275.8,
+            "win_rate_pct": 53.2,
+            "pf": 0.9,
+            "max_dd_pips": 2621.3,
+            "ci_95_pips": [
+              -2.78,
+              -0.12
+            ],
+            "net_exp_swap035_pips": -1.9
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 1617,
+            "net_exp_pips": -1.62,
+            "total_pips": -2615.5,
+            "win_rate_pct": 53.2,
+            "pf": 0.89,
+            "max_dd_pips": 2839.9,
+            "ci_95_pips": [
+              -2.99,
+              -0.33
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 1617,
+            "net_exp_pips": -1.39,
+            "total_pips": -2252.8,
+            "win_rate_pct": 53.2,
+            "pf": 0.9,
+            "max_dd_pips": 2592.4,
+            "ci_95_pips": [
+              -2.78,
+              -0.12
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 1617,
+            "net_exp_pips": -1.29,
+            "total_pips": -2091.1,
+            "win_rate_pct": 53.2,
+            "pf": 0.91,
+            "max_dd_pips": 2476.9,
+            "ci_95_pips": [
+              -2.68,
+              -0.02
+            ]
+          },
+          "exness_standard": {
+            "n": 1617,
+            "net_exp_pips": -1.68,
+            "total_pips": -2721.7,
+            "win_rate_pct": 53.2,
+            "pf": 0.89,
+            "max_dd_pips": 2927.3,
+            "ci_95_pips": [
+              -3.07,
+              -0.41
+            ]
+          }
+        }
+      },
+      "H28_H1_SCALP_BASELINE": {
+        "total_trades": 4296,
+        "by_split_duka": {
+          "IS": {
+            "n": 3453,
+            "net_exp_pips": -3.58,
+            "total_pips": -12355.5,
+            "win_rate_pct": 52.0,
+            "pf": 0.45,
+            "max_dd_pips": 12367.1,
+            "ci_95_pips": [
+              -4.01,
+              -3.13
+            ],
+            "net_exp_swap035_pips": -3.59,
+            "random_null": {
+              "null_mean_pips": -1.57,
+              "null_p95_pips": -1.16,
+              "obs_pct_vs_random": 0.0
+            }
+          },
+          "VALID": {
+            "n": 778,
+            "net_exp_pips": -2.42,
+            "total_pips": -1881.8,
+            "win_rate_pct": 54.8,
+            "pf": 0.56,
+            "max_dd_pips": 1887.6,
+            "ci_95_pips": [
+              -3.33,
+              -1.61
+            ],
+            "net_exp_swap035_pips": -2.45
+          },
+          "OOS": {
+            "n": 65,
+            "net_exp_pips": -2.14,
+            "total_pips": -139.3,
+            "win_rate_pct": 52.3,
+            "pf": 0.55,
+            "max_dd_pips": 169.2,
+            "ci_95_pips": [
+              -3.22,
+              0.13
+            ],
+            "net_exp_swap035_pips": -2.18
+          },
+          "ALL": {
+            "n": 4296,
+            "net_exp_pips": -3.35,
+            "total_pips": -14376.6,
+            "win_rate_pct": 52.5,
+            "pf": 0.47,
+            "max_dd_pips": 14384.1,
+            "ci_95_pips": [
+              -3.77,
+              -2.95
+            ],
+            "net_exp_swap035_pips": -3.37
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 4296,
+            "net_exp_pips": -3.35,
+            "total_pips": -14413.0,
+            "win_rate_pct": 52.5,
+            "pf": 0.47,
+            "max_dd_pips": 14420.4,
+            "ci_95_pips": [
+              -3.77,
+              -2.96
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 4296,
+            "net_exp_pips": -3.17,
+            "total_pips": -13602.1,
+            "win_rate_pct": 52.8,
+            "pf": 0.49,
+            "max_dd_pips": 13608.8,
+            "ci_95_pips": [
+              -3.58,
+              -2.77
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 4296,
+            "net_exp_pips": -3.07,
+            "total_pips": -13172.5,
+            "win_rate_pct": 52.8,
+            "pf": 0.5,
+            "max_dd_pips": 13179.4,
+            "ci_95_pips": [
+              -3.48,
+              -2.67
+            ]
+          },
+          "exness_standard": {
+            "n": 4296,
+            "net_exp_pips": -3.46,
+            "total_pips": -14847.9,
+            "win_rate_pct": 52.7,
+            "pf": 0.46,
+            "max_dd_pips": 14854.1,
+            "ci_95_pips": [
+              -3.87,
+              -3.06
+            ]
+          }
+        }
+      }
+    },
+    "EURUSD": {
+      "H26_LIMIT_OU": {
+        "total_trades": 2663,
+        "by_split_duka": {
+          "IS": {
+            "n": 2131,
+            "net_exp_pips": -3.71,
+            "total_pips": -7903.6,
+            "win_rate_pct": 65.7,
+            "pf": 0.82,
+            "max_dd_pips": 8206.0,
+            "ci_95_pips": [
+              -5.38,
+              -1.82
+            ],
+            "net_exp_swap035_pips": -3.97,
+            "random_null": {
+              "null_mean_pips": -0.96,
+              "null_p95_pips": 0.83,
+              "obs_pct_vs_random": 0.7
+            }
+          },
+          "VALID": {
+            "n": 477,
+            "net_exp_pips": 0.32,
+            "total_pips": 152.3,
+            "win_rate_pct": 63.9,
+            "pf": 1.02,
+            "max_dd_pips": 664.4,
+            "ci_95_pips": [
+              -2.86,
+              3.33
+            ],
+            "net_exp_swap035_pips": 0.05
+          },
+          "OOS": {
+            "n": 55,
+            "net_exp_pips": 7.7,
+            "total_pips": 423.5,
+            "win_rate_pct": 69.1,
+            "pf": 1.81,
+            "max_dd_pips": 94.5,
+            "ci_95_pips": [
+              2.22,
+              13.4
+            ],
+            "net_exp_swap035_pips": 7.31
+          },
+          "ALL": {
+            "n": 2663,
+            "net_exp_pips": -2.75,
+            "total_pips": -7327.8,
+            "win_rate_pct": 65.5,
+            "pf": 0.86,
+            "max_dd_pips": 8568.0,
+            "ci_95_pips": [
+              -4.37,
+              -1.19
+            ],
+            "net_exp_swap035_pips": -3.02
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 2663,
+            "net_exp_pips": -2.87,
+            "total_pips": -7630.2,
+            "win_rate_pct": 65.5,
+            "pf": 0.85,
+            "max_dd_pips": 8815.4,
+            "ci_95_pips": [
+              -4.48,
+              -1.31
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 2663,
+            "net_exp_pips": -2.89,
+            "total_pips": -7695.6,
+            "win_rate_pct": 65.5,
+            "pf": 0.85,
+            "max_dd_pips": 8739.8,
+            "ci_95_pips": [
+              -4.46,
+              -1.36
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 2663,
+            "net_exp_pips": -2.89,
+            "total_pips": -7695.6,
+            "win_rate_pct": 65.5,
+            "pf": 0.85,
+            "max_dd_pips": 8739.8,
+            "ci_95_pips": [
+              -4.46,
+              -1.36
+            ]
+          },
+          "exness_standard": {
+            "n": 2663,
+            "net_exp_pips": -3.1,
+            "total_pips": -8254.8,
+            "win_rate_pct": 65.5,
+            "pf": 0.84,
+            "max_dd_pips": 9208.3,
+            "ci_95_pips": [
+              -4.67,
+              -1.57
+            ]
+          }
+        }
+      },
+      "H26_MKT_COMPARE": {
+        "total_trades": 2866,
+        "by_split_duka": {
+          "IS": {
+            "n": 2281,
+            "net_exp_pips": -4.86,
+            "total_pips": -11093.9,
+            "win_rate_pct": 64.3,
+            "pf": 0.77,
+            "max_dd_pips": 11417.4,
+            "ci_95_pips": [
+              -6.47,
+              -3.15
+            ],
+            "net_exp_swap035_pips": -5.13,
+            "random_null": {
+              "null_mean_pips": -0.95,
+              "null_p95_pips": 0.73,
+              "obs_pct_vs_random": 0.0
+            }
+          },
+          "VALID": {
+            "n": 528,
+            "net_exp_pips": 1.93,
+            "total_pips": 1018.1,
+            "win_rate_pct": 66.1,
+            "pf": 1.13,
+            "max_dd_pips": 365.0,
+            "ci_95_pips": [
+              -1.13,
+              4.54
+            ],
+            "net_exp_swap035_pips": 1.67
+          },
+          "OOS": {
+            "n": 57,
+            "net_exp_pips": 6.92,
+            "total_pips": 394.3,
+            "win_rate_pct": 68.4,
+            "pf": 1.69,
+            "max_dd_pips": 107.5,
+            "ci_95_pips": [
+              1.49,
+              11.52
+            ],
+            "net_exp_swap035_pips": 6.57
+          },
+          "ALL": {
+            "n": 2866,
+            "net_exp_pips": -3.38,
+            "total_pips": -9681.5,
+            "win_rate_pct": 64.7,
+            "pf": 0.83,
+            "max_dd_pips": 11448.4,
+            "ci_95_pips": [
+              -4.91,
+              -1.97
+            ],
+            "net_exp_swap035_pips": -3.64
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 2866,
+            "net_exp_pips": -3.49,
+            "total_pips": -10008.2,
+            "win_rate_pct": 64.7,
+            "pf": 0.82,
+            "max_dd_pips": 11715.9,
+            "ci_95_pips": [
+              -5.02,
+              -2.08
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 2866,
+            "net_exp_pips": -3.55,
+            "total_pips": -10160.9,
+            "win_rate_pct": 64.7,
+            "pf": 0.82,
+            "max_dd_pips": 11682.3,
+            "ci_95_pips": [
+              -5.06,
+              -2.13
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 2866,
+            "net_exp_pips": -3.55,
+            "total_pips": -10160.9,
+            "win_rate_pct": 64.7,
+            "pf": 0.82,
+            "max_dd_pips": 11682.3,
+            "ci_95_pips": [
+              -5.06,
+              -2.13
+            ]
+          },
+          "exness_standard": {
+            "n": 2866,
+            "net_exp_pips": -3.76,
+            "total_pips": -10762.8,
+            "win_rate_pct": 64.7,
+            "pf": 0.81,
+            "max_dd_pips": 12178.7,
+            "ci_95_pips": [
+              -5.27,
+              -2.34
+            ]
+          }
+        }
+      },
+      "H27_LONDON_FIX_REVERT": {
+        "total_trades": 3338,
+        "by_split_duka": {
+          "IS": {
+            "n": 2617,
+            "net_exp_pips": -2.24,
+            "total_pips": -5870.7,
+            "win_rate_pct": 47.8,
+            "pf": 0.75,
+            "max_dd_pips": 5954.7,
+            "ci_95_pips": [
+              -3.06,
+              -1.34
+            ],
+            "net_exp_swap035_pips": -2.24,
+            "random_null": {
+              "null_mean_pips": -1.05,
+              "null_p95_pips": -0.16,
+              "obs_pct_vs_random": 2.7
+            }
+          },
+          "VALID": {
+            "n": 658,
+            "net_exp_pips": -1.03,
+            "total_pips": -674.8,
+            "win_rate_pct": 48.3,
+            "pf": 0.84,
+            "max_dd_pips": 885.8,
+            "ci_95_pips": [
+              -2.38,
+              0.23
+            ],
+            "net_exp_swap035_pips": -1.03
+          },
+          "OOS": {
+            "n": 63,
+            "net_exp_pips": -1.3,
+            "total_pips": -82.2,
+            "win_rate_pct": 47.6,
+            "pf": 0.72,
+            "max_dd_pips": 117.9,
+            "ci_95_pips": [
+              -2.93,
+              0.83
+            ],
+            "net_exp_swap035_pips": -1.3
+          },
+          "ALL": {
+            "n": 3338,
+            "net_exp_pips": -1.99,
+            "total_pips": -6627.7,
+            "win_rate_pct": 47.9,
+            "pf": 0.76,
+            "max_dd_pips": 6695.3,
+            "ci_95_pips": [
+              -2.71,
+              -1.29
+            ],
+            "net_exp_swap035_pips": -1.99
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 3338,
+            "net_exp_pips": -1.99,
+            "total_pips": -6627.9,
+            "win_rate_pct": 47.9,
+            "pf": 0.76,
+            "max_dd_pips": 6695.4,
+            "ci_95_pips": [
+              -2.71,
+              -1.29
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 3338,
+            "net_exp_pips": -1.59,
+            "total_pips": -5293.8,
+            "win_rate_pct": 49.3,
+            "pf": 0.81,
+            "max_dd_pips": 5451.9,
+            "ci_95_pips": [
+              -2.33,
+              -0.91
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 3338,
+            "net_exp_pips": -1.59,
+            "total_pips": -5293.8,
+            "win_rate_pct": 49.3,
+            "pf": 0.81,
+            "max_dd_pips": 5451.9,
+            "ci_95_pips": [
+              -2.33,
+              -0.91
+            ]
+          },
+          "exness_standard": {
+            "n": 3338,
+            "net_exp_pips": -1.8,
+            "total_pips": -5994.8,
+            "win_rate_pct": 48.5,
+            "pf": 0.78,
+            "max_dd_pips": 6139.8,
+            "ci_95_pips": [
+              -2.54,
+              -1.12
+            ]
+          }
+        }
+      },
+      "H28_REGIME_GUARDED": {
+        "total_trades": 1892,
+        "by_split_duka": {
+          "IS": {
+            "n": 1523,
+            "net_exp_pips": -3.25,
+            "total_pips": -4947.8,
+            "win_rate_pct": 63.6,
+            "pf": 0.83,
+            "max_dd_pips": 5053.9,
+            "ci_95_pips": [
+              -5.37,
+              -1.54
+            ],
+            "net_exp_swap035_pips": -3.52,
+            "random_null": {
+              "null_mean_pips": -1.1,
+              "null_p95_pips": 0.98,
+              "obs_pct_vs_random": 6.0
+            }
+          },
+          "VALID": {
+            "n": 322,
+            "net_exp_pips": 0.82,
+            "total_pips": 263.5,
+            "win_rate_pct": 60.9,
+            "pf": 1.06,
+            "max_dd_pips": 365.9,
+            "ci_95_pips": [
+              -3.23,
+              4.05
+            ],
+            "net_exp_swap035_pips": 0.52
+          },
+          "OOS": {
+            "n": 47,
+            "net_exp_pips": 7.68,
+            "total_pips": 361.1,
+            "win_rate_pct": 68.1,
+            "pf": 1.83,
+            "max_dd_pips": 102.3,
+            "ci_95_pips": [
+              -0.08,
+              15.69
+            ],
+            "net_exp_swap035_pips": 7.24
+          },
+          "ALL": {
+            "n": 1892,
+            "net_exp_pips": -2.29,
+            "total_pips": -4323.2,
+            "win_rate_pct": 63.3,
+            "pf": 0.87,
+            "max_dd_pips": 5211.0,
+            "ci_95_pips": [
+              -3.93,
+              -0.66
+            ],
+            "net_exp_swap035_pips": -2.57
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 1892,
+            "net_exp_pips": -2.41,
+            "total_pips": -4552.7,
+            "win_rate_pct": 63.3,
+            "pf": 0.87,
+            "max_dd_pips": 5393.0,
+            "ci_95_pips": [
+              -4.05,
+              -0.78
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 1892,
+            "net_exp_pips": -2.45,
+            "total_pips": -4636.4,
+            "win_rate_pct": 63.3,
+            "pf": 0.86,
+            "max_dd_pips": 5358.4,
+            "ci_95_pips": [
+              -4.11,
+              -0.86
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 1892,
+            "net_exp_pips": -2.45,
+            "total_pips": -4636.4,
+            "win_rate_pct": 63.3,
+            "pf": 0.86,
+            "max_dd_pips": 5358.4,
+            "ci_95_pips": [
+              -4.11,
+              -0.86
+            ]
+          },
+          "exness_standard": {
+            "n": 1892,
+            "net_exp_pips": -2.66,
+            "total_pips": -5033.7,
+            "win_rate_pct": 63.3,
+            "pf": 0.85,
+            "max_dd_pips": 5683.9,
+            "ci_95_pips": [
+              -4.32,
+              -1.07
+            ]
+          }
+        }
+      },
+      "H28_H1_SCALP_BASELINE": {
+        "total_trades": 4415,
+        "by_split_duka": {
+          "IS": {
+            "n": 3531,
+            "net_exp_pips": -6.31,
+            "total_pips": -22271.9,
+            "win_rate_pct": 48.5,
+            "pf": 0.31,
+            "max_dd_pips": 22283.5,
+            "ci_95_pips": [
+              -6.95,
+              -5.67
+            ],
+            "net_exp_swap035_pips": -6.31,
+            "random_null": {
+              "null_mean_pips": -0.99,
+              "null_p95_pips": -0.38,
+              "obs_pct_vs_random": 0.0
+            }
+          },
+          "VALID": {
+            "n": 801,
+            "net_exp_pips": -4.25,
+            "total_pips": -3404.6,
+            "win_rate_pct": 53.3,
+            "pf": 0.42,
+            "max_dd_pips": 3410.4,
+            "ci_95_pips": [
+              -5.15,
+              -3.41
+            ],
+            "net_exp_swap035_pips": -4.26
+          },
+          "OOS": {
+            "n": 83,
+            "net_exp_pips": -2.58,
+            "total_pips": -214.0,
+            "win_rate_pct": 56.6,
+            "pf": 0.56,
+            "max_dd_pips": 231.4,
+            "ci_95_pips": [
+              -3.21,
+              -1.82
+            ],
+            "net_exp_swap035_pips": -2.6
+          },
+          "ALL": {
+            "n": 4415,
+            "net_exp_pips": -5.86,
+            "total_pips": -25890.5,
+            "win_rate_pct": 49.5,
+            "pf": 0.33,
+            "max_dd_pips": 25902.1,
+            "ci_95_pips": [
+              -6.44,
+              -5.34
+            ],
+            "net_exp_swap035_pips": -5.87
+          }
+        },
+        "broker_matrix_all": {
+          "dukascopy_measured": {
+            "n": 4415,
+            "net_exp_pips": -5.87,
+            "total_pips": -25904.3,
+            "win_rate_pct": 49.4,
+            "pf": 0.33,
+            "max_dd_pips": 25915.9,
+            "ci_95_pips": [
+              -6.45,
+              -5.34
+            ]
+          },
+          "ic_markets_raw_ecn": {
+            "n": 4415,
+            "net_exp_pips": -5.96,
+            "total_pips": -26304.0,
+            "win_rate_pct": 49.4,
+            "pf": 0.32,
+            "max_dd_pips": 26317.1,
+            "ci_95_pips": [
+              -6.51,
+              -5.44
+            ]
+          },
+          "exness_raw_spread": {
+            "n": 4415,
+            "net_exp_pips": -5.96,
+            "total_pips": -26304.0,
+            "win_rate_pct": 49.4,
+            "pf": 0.32,
+            "max_dd_pips": 26317.1,
+            "ci_95_pips": [
+              -6.51,
+              -5.44
+            ]
+          },
+          "exness_standard": {
+            "n": 4415,
+            "net_exp_pips": -6.17,
+            "total_pips": -27231.1,
+            "win_rate_pct": 49.4,
+            "pf": 0.3,
+            "max_dd_pips": 27243.8,
+            "ci_95_pips": [
+              -6.72,
+              -5.65
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -118,6 +118,28 @@ fundamentals — does not create an alpha signal when the underlying features la
   Tested 4 fundamental mechanisms standalone (`F_NEG_ACCRUALS` Sloan accruals, `F_CFO_ASSETS`, `F_REV_YOY`,
   `F_QUALITY_COMP`). Sloan accruals was positive across both halves (IS +0.624 / OOS +0.947, 93.5th / 92.0th pct,
   long-only OOS +2.015 vs EW +1.830), falling short of the 98.75th-pct power bar on a 62-firm universe.
+- **EXP-0023 (OKX BTCUSDT + ETHUSDT 1H, 9,999 confirmed bars, 5–10 bp/side):**
+  ETH-BTC 24h spread reversion had genuine gross Sharpe (+1.604 IS / +2.389 OOS, breakeven 2.62–3.06 bp/side)
+  but flipped negative at 5 bp maker (−1.510 OOS) and 10 bp taker (−4.431 / −5.290).
+
+### 23-Year Dukascopy H1 Bid/Ask & EA KB Blueprint Strategies — FAIL (EXP-0024, EXP-0025, 2026-11-21)
+Following EA KB Batch 4 synthesis (`reports/EA_KB_ALPHA_RISK_BLUEPRINT.md`), tested passive limit OU (`H26`),
+London-NY fix reversion (`H27`), and trailing-vol compression + max-spread guardrails (`H28`) against market
+entries and H1 scalping across **23 years of real quoted Dukascopy H1 bid/ask bars** (`147,297` EURGBP + `148,482`
+EURUSD, live `.bi5` cross-verified) and **4 public broker cost tiers** (Dukascopy Measured, IC Markets Raw ECN,
+Exness Raw, Exness Standard) + `[0, 0.35]` pip/night swap bounds:
+- **EXP-0024 (`H26` / `H27`):** On 23-year EURGBP, `H26_LIMIT_OU` saved `+0.78` pips/trade vs `H26_MKT_COMPARE`
+  (−1.60 vs −2.38 pips ALL, confirming passive limit execution cuts spread drag), yet stayed negative across IS
+  (−1.80, n=1,826), VALID (−0.48, n=386), and OOS_LOCKED (−4.28, n=30). `H27_LONDON_FIX_REVERT` lost in every
+  split (−2.25 / −2.25 / −1.81, PF 0.56). On control EURUSD, `H26_LIMIT_OU` looked positive in 2022–2026
+  (+0.32 VALID / +7.70 OOS) ONLY because 18.4y IS (2003–2021, n=2,131) lost −3.71 pips (ALL −2.75).
+- **EXP-0025 (`H28` + H1 Scalp + 4-Broker Stress):** `H28_REGIME_GUARDED` posted VALID +1.08 (CI [−1.56, +3.31])
+  before failing IS (−1.84) and OOS_LOCKED (−4.93, ALL −1.41). `H28_H1_SCALP_BASELINE` failed catastrophically
+  (EURGBP −3.35 PF 0.47, 0.0th null pct; EURUSD −5.86 PF 0.33), empirically locking Decision `D02`. **Every
+  rule remained negative across all 4 broker models** (even Exness Raw: −1.06 to −3.07 pips on EURGBP).
+  **Phase C Kill Point enforced:** Phase D ML and demo/live EA deployment remain PARKED; `AlinaRiskGovernor.mq5`
+  stays `SIG_NONE` / `MODE_PAPER`.
+
 - **EXP-0023 (OKX BTCUSDT + ETHUSDT 9,999 confirmed 1H bars, 2025-10..2026-11, 10 bp/side taker):**
   `CR_PAIR_ETH_BTC` (24h spread reversion) showed genuine gross Sharpe (+1.604 IS / +2.389 OOS, breakeven
   +2.62 / +3.06 bp/side) that was wiped out by OKX taker fees (−4.43 / −5.29 net at 10 bp; −1.51 at 5 bp maker).

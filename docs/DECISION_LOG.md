@@ -95,3 +95,18 @@
   the token is masked out of all output.
 - Trade-off accepted by the owner: the token sits in plaintext inside the private workspace in
   exchange for not having to re-paste it every session.
+
+## D13 — Unified Full Execution Authorization (Batch 4 KB + Blueprint + Phase B/C Quant Pipeline)
+- **Date:** 2026-11-21 · **Status:** LOCKED by owner (`"ต่อเลย ขขอแบบทั้งหมดการตัดสนใจกูคือทำทั้งหมดเลย"`)
+- **Instruments:** `EURGBP` primary (D1/4H bias + H1 execution), `EURUSD` control — using 23-year Dukascopy
+  real bid/ask H1 (`data/intraday/EUR{GBP,USD}_H1_bidask.csv.gz`, 2003–2026) anchored to ECB Official Daily Reference.
+- **Broker Cost Models (`configs/broker_cost_models.json`):** Public specifications only (zero credentials/real money):
+  `Dukascopy Measured Bid/Ask` (real bar-by-bar quoted spread), `IC Markets Raw ECN` (raw + $7/lot RT commission = ~0.55–0.70 pip eq),
+  `Exness Raw Spread` ($7/lot RT), and `Exness Standard` (~1.0–1.4 pip spread all-in, $0 comm), plus overnight swap bounds `[0.0, 0.35]` pip/night.
+- **Archetypes Evaluated (Phase C `EXP-0024` Suite, H26–H28):**
+  Never retuning rejected rules (`H01`, `H05`, `H06`, `H09`, `H20`). Instead testing KB-derived upgrades:
+  `H26` Passive Limit-Order Multi-Day OU Mean-Reversion (15–40 pip target, simulated strictly via H1 `ask_l`/`bid_h` post-signal fill),
+  `H27` Session-Liquidity Reversal with Spread/Rollover Gate (`20-22 UTC` blocked), and
+  `H28` Volatility-Compression Regime Filter + Hard Risk Governor across all 4 broker cost tiers on locked 6-month OOS (`2026-05-20..2026-11-20`).
+- **Governance:** ML (`Phase D`) and Demo/Live EA remain strictly gated by Phase C Kill Point (`net OOS expectancy > 0` after real costs).
+

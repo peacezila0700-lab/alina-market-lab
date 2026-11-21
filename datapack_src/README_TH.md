@@ -170,4 +170,18 @@
   `/set`, `/levels SYMBOL` และถาม AI ภาษาไทย) ทดสอบ `--dry-run` ผ่านทุกคำสั่ง (ยิง Telegram/LLM จริง **ยังไม่ได้ทดสอบ**)
   พร้อมแท็ก PWA ใน `dashboard/alina_today.html` เพื่อปักเป็นไอคอนแอปบนมือถือ
 
+### รอบที่ 12–15 (v2.12–v2.15) — คลังความรู้ EA ระดับโลก (Batch 1–4) + สังเคราะห์สูตร + พิสูจน์ EURGBP 23 ปี & 4 โบรกเกอร์
+- **คลังความรู้ EA เชิงลึก Batch 4 (`v2.15`, `data/ea_kb/alina_ea_kb.sqlite`):** Reverse-engineer โค้ดจริงสะสมเพิ่มเป็น
+  **1,982 ไฟล์ (`39.16 MB`)** ปิดคิว Batch 4 ครบ **375/375 งาน (0 ค้าง)** (`150/150` `#include` ต่อเนื่อง + สร้าง
+  `scripts/fetch_mql5_non_sandbox.py` ให้ดึง MQL5 raw archive `201` ตัวนอก sandbox), `5,029` KG edges, `2,285` RAG chunks,
+  `1,312` duplicate/fork และเตรียมคิว Batch 5 (`344` งาน)
+- **สังเคราะห์กลยุทธ์จาก 383 EA ที่อ่านโค้ดจริง (`reports/EA_KB_ALPHA_RISK_BLUEPRINT.md`):** พบว่ามีแค่ `5.2%` ที่ใช้คำสั่ง limit,
+  `15.9%` มีตัวกรอง spread, `5.7%` มีตัวกัน drawdown รายวัน และ `30.3%` เป็นระบบสะอาดไม่ martingale + มี SL + มีตัวกรองเวลา/สภาวะ
+- **พิสูจน์ 23 ปีข้อมูลจริง Dukascopy Bid/Ask (`EXP-0024`, `EXP-0025`, 17/17 unit tests ผ่าน):**
+  - ตรวจ QC 147,297 แท่ง EURGBP และ 148,482 แท่ง EURUSD + เทียบไฟล์สด `.bi5` (2026-11-18) ตรงเป๊ะทุกหลักทศนิยม
+  - การใช้ **Limit entry (`H26_LIMIT_OU`)** ลดต้นทุนได้จริง `+0.78` pips/ไม้ เทียบกับ Market (`-1.60` vs `-2.38`) แต่ **ยังติดลบสุทธิทุกช่วง** (`IS -1.80`, `VALID -0.48`, `OOS_LOCKED -4.28` pips)
+  - **`H27_LONDON_FIX_REVERT`** ขาดทุนทุกช่วง (`-2.24` pips, PF `0.56`) และ **`H28_H1_SCALP_BASELINE`** พังยับ (`-3.35` EURGBP / `-5.86` EURUSD) ยืนยันว่าห้าม Scalping H1
+  - **`H28_REGIME_GUARDED`** (กรองความผันผวนต่ำกว่า P65 + spread <= 2.5) แตะ `+1.08` ในช่วง VALID แต่แพ้ IS (`-1.84`) และ OOS (`-4.93`) **รวมทั้ง 4 โบรกเกอร์ (Dukascopy, IC Markets Raw, Exness Raw, Exness Standard) ติดลบทุกตัว**
+  - **บังคับใช้ Kill Point:** หยุด Phase D ML และไม่เปิดเทรดจริง/เดโม (`AlinaRiskGovernor.mq5` คง `SIG_NONE` / `MODE_PAPER`) จนกว่าจะมีสมมติฐานใหม่ที่ผ่าน OOS > 0 จริง
+
 

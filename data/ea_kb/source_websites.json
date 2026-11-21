@@ -20,6 +20,7 @@
     "deps_files_staged_batch2": 112,
     "gitlab_files_staged_batch2": 21,
     "batch3_files_staged": 222,
+    "batch4_files_staged": 42,
     "forexfactory_ex5_threads_verified": 2
   },
   "summary_notes": "All 1,924 Batch 1 queue tasks resolved in Batch 2 (0 pending). MQL5 raw archive downloads blocked by MQL5 IP rate-limit in sandbox are cleanly queued in research_queue_batch3.jsonl."

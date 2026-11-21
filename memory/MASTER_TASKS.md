@@ -2,29 +2,17 @@
 
 | ID | Task | Status | Dependency | Acceptance |
 |---|---|---|---|---|
-| T01 | Stage 0 permission audit | DONE | — | evidence in docs/STAGE0_AUDIT.md |
-| T02 | Instrument selection with data | DONE | T01 | plan v1 + screening table |
-| T03 | GitHub repo scaffold | DONE | — | remote commit verified |
-| T04 | Ingest Dukascopy M1→H1 (1y, 2 symbols) | BLOCKED (429) | T02 | H1 csv + spread columns per symbol |
-| T04b | QC + manifest on D1 10y research dataset | DONE | — | reports/QC_D1.md PASS, MANIFEST.json |
-| T05 | QC report on M1/H1 (Dukascopy) | BLOCKED (429) | T04 | qc_report_M1.md |
-| T06 | Dataset manifest + checksum | TODO | T05 | manifest.json |
-| T07 | Descriptive stats (D1, 10y) | DONE | T04b | reports/RESEARCH_D1.md (findings with status) |
-| T07b | MT5 history export (EURGBP H1, broker-grade) | TODO — owner action | — | CSV with real spread |
-| T08 | Hypothesis register (3–5 falsifiable) | DONE — awaiting owner approval of order | T07 | research/HYPOTHESIS_REGISTER.csv + docs/HYPOTHESIS_NOTES.md |
-| T09 | Backtest engine + unit tests + EXP-0001 | DONE — H01 not supported | T08 | reports/EXP_0001.md, 13/13 tests |
-| T10 | Walk-forward + OOS validation | NOT RUN — moot: H01 rejected first | T09 | deferred |
-| T13 | EXP-0002 basket replication (26y × 5 pairs) | DONE — H01 rejected | T09 | reports/EXP_0002.md |
-| T14 | Direction decision after rejection | DONE — chose intraday (zero swap) | T13 | D08 |
-| T15 | EXP-0003 H1 fade (H05, pre-registered) | DONE — rejected | T14 | reports/EXP_0003.md |
-| T16 | EXP-0004 H1 breakout (H06, pre-registered) | DONE — rejected | T15 | reports/EXP_0004.md |
-| T17 | PROJECT REVIEW #1 (hard stop at 6 hypotheses) | DONE | T16 | reports/PROJECT_REVIEW_1.md |
-| T18 | Re-run with measured broker spread/swap | BLOCKED — owner MT5 export | T17 | decision pending |
-| T10 | Walk-forward + OOS holdout (locked 6 months) | TODO | T09 | IS/OOS report |
-| T11 | Broker cost model | BLOCKED | owner: broker + account type | cost spec documented |
-| T12 | MT5 EA (MQL5) | PARKED | T10 pass | demo only, never live |
+| T01..T08 | Stage 0 audit, instrument lock, D1 QC & initial hypotheses (`H01`–`H25`) | DONE | — | `reports/QC_D1.md`, `EXP-0001..0023` |
+| T18 | Re-score / test FX with measured Dukascopy bid/ask + public broker matrix | DONE | `D13` | `configs/broker_cost_models.json`, `EXP-0024/0025` |
+| T19 | EA KB Batch 4 (`v2.15`): resolve 150 transitive `#include` + 24 non-MQL5 + standalone MQL5 script + SQLite rebuild | DONE | Batch 3 | `KB_STATS_BATCH4.json`, `PROOF_OF_WORK_BATCH4.md`, `fetch_mql5_non_sandbox.py` |
+| T20 | EA KB Alpha & Risk Blueprint extraction across 1,982 files / 383 local source-verified EAs | DONE | T19 | `reports/EA_KB_ALPHA_RISK_BLUEPRINT.md`, `H26`–`H28` |
+| T21 | Phase A Governance lock (`D13`, `PROJECT_RULES.md`) + `configs/broker_cost_models.json` | DONE | — | `docs/DECISION_LOG.md`, `memory/PROJECT_RULES.md` |
+| T22 | Phase B H1 Bid/Ask Data QC + Live `.bi5` M1 -> H1 Parity Check (`EURGBP` & `EURUSD` 23y) | DONE | T21 | `reports/QC_H1_BIDASK.md`, `research/artifacts/qc_h1_bidask.json` |
+| T23 | Phase C Unit-Tested 23y Backtests (`EXP-0024` `H26/H27`, `EXP-0025` `H28` + H1 Scalp + 4 Brokers + OOS Locked) | DONE — REJECTED | T20, T22 | `17/17` unit tests PASS, `reports/EXP_0024_PHASE_C.md` |
+| T24 | Non-sandbox MQL5 archive harvest (`201` blocked archives -> Batch 5 `344` queue) | READY (Owner non-sandbox run) | — | Run `python3 scripts/fetch_mql5_non_sandbox.py` outside sandbox |
+| T25 | Phase D ML Signal/Filter + MQL5 Demo EA (`AlinaRiskGovernor.mq5`) | PARKED (Kill Point) | Validated Phase C `OOS > 0` | Remains `SIG_NONE` / `MODE_PAPER` until a hypothesis clears OOS > 0 |
+| T26 | Expand PIT SEC filings beyond 62 US large caps or new non-price alpha (`H21` PTR accumulation) | BACKLOG | Collector growth | Re-test only when power/sample threshold clears |
 
-## Budget rules
-- max 12 hypotheses tested before a full project review
-- 1 session = 1 finished experiment with handoff
-- OOS last 6 months locked until final decision
+## Budget & Governance Rules
+- `memory/PROJECT_RULES.md` enforced: strict causality (`signal[t] -> fill >= t+1`), no tuning on locked OOS, kill ML/live if OOS <= 0.
+- `AlinaRiskGovernor.mq5` stays `SIG_NONE` and `MODE_PAPER`.

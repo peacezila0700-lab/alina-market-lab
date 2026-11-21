@@ -1,0 +1,633 @@
+{
+  "generated_utc": "2026-11-21T09:48:21Z",
+  "kb_version": "Batch 4 (v2.15)",
+  "total_source_files": 1982,
+  "total_ea_master": 499,
+  "local_source_verified_eas": 383,
+  "indicators_total": 226,
+  "strategies_decomposed": 383,
+  "ea_structural_rates": {
+    "has_sl": 191,
+    "has_sl_pct": 49.9,
+    "has_tp": 184,
+    "has_tp_pct": 48.0,
+    "grid_or_martingale": 14,
+    "grid_or_martingale_pct": 3.7,
+    "grid_martingale_without_sl": 4,
+    "smc_ict": 26,
+    "ml_onnx": 14,
+    "newbar_gate": 220,
+    "newbar_gate_pct": 57.4,
+    "limit_or_pending_order": 20,
+    "limit_or_pending_pct": 5.2,
+    "spread_filter": 61,
+    "spread_filter_pct": 15.9,
+    "session_filter": 201,
+    "session_filter_pct": 52.5,
+    "daily_dd_or_equity_guard": 22,
+    "daily_dd_or_equity_guard_pct": 5.7,
+    "clean_non_martingale_guarded_count": 116
+  },
+  "top_strategy_categories": [
+    [
+      "Price Action / General / Unclassified",
+      155
+    ],
+    [
+      "Trend/Breakout",
+      119
+    ],
+    [
+      "Oscillator/Mean-Reversion",
+      93
+    ],
+    [
+      "Risk/Trade Utility",
+      32
+    ],
+    [
+      "SMC/ICT",
+      26
+    ],
+    [
+      "Grid/Martingale/Basket",
+      14
+    ],
+    [
+      "ML/Neural/ONNX",
+      14
+    ],
+    [
+      "News/Calendar",
+      7
+    ]
+  ],
+  "top_indicators_used": [
+    [
+      "iMA",
+      76
+    ],
+    [
+      "iRSI",
+      71
+    ],
+    [
+      "iATR",
+      50
+    ],
+    [
+      "iMACD",
+      22
+    ],
+    [
+      "iADX",
+      21
+    ],
+    [
+      "iCustom",
+      18
+    ],
+    [
+      "iBands",
+      13
+    ],
+    [
+      "iCCI",
+      12
+    ],
+    [
+      "iMFI",
+      12
+    ],
+    [
+      "iMomentum",
+      8
+    ],
+    [
+      "iStochastic",
+      7
+    ],
+    [
+      "iSAR",
+      5
+    ],
+    [
+      "iFractals",
+      4
+    ],
+    [
+      "iOBV",
+      4
+    ],
+    [
+      "iStdDev",
+      3
+    ]
+  ],
+  "risk_tokens": [
+    [
+      "SessionFilter",
+      201
+    ],
+    [
+      "HardSL",
+      191
+    ],
+    [
+      "RiskPctSizing",
+      189
+    ],
+    [
+      "TP",
+      184
+    ],
+    [
+      "TrailingStop",
+      87
+    ],
+    [
+      "No explicit SL/risk guard detected in static scan",
+      87
+    ],
+    [
+      "SpreadFilter",
+      61
+    ],
+    [
+      "BreakEven",
+      44
+    ],
+    [
+      "DailyLoss/DDGuard",
+      22
+    ],
+    [
+      "ANTI-PATTERN:Martingale/LotMult",
+      14
+    ],
+    [
+      "ANTI-PATTERN:Grid/Averaging",
+      2
+    ]
+  ],
+  "execution_modes": {
+    "Market Order": 215,
+    "Limit / Pending Order": 20
+  },
+  "event_handlers": {
+    "OnInit": 319,
+    "OnTick": 323,
+    "OnChartEvent": 35,
+    "OnTimer": 92,
+    "OnTradeTransaction": 27
+  },
+  "indicator_repaint_flags": [
+    [
+      "Reads_Bar0_FormingBar",
+      21
+    ],
+    [
+      "Check_Series_Index_i_minus_1_Direction",
+      9
+    ],
+    [
+      "DRAW_ARROW_Missing_Explicit_EMPTY_VALUE",
+      8
+    ],
+    [
+      "Visual only.",
+      2
+    ],
+    [
+      "Display only.",
+      2
+    ],
+    [
+      "Closed-bar confirmation only.",
+      2
+    ],
+    [
+      "Closed-bar shift 1 only (non-repainting regime state).",
+      1
+    ],
+    [
+      "Ratchets only in trade direction; closed-bar flips reduce intrabar noise.",
+      1
+    ],
+    [
+      "Closed-bar BULL/BEAR/MIXED regime classification.",
+      1
+    ],
+    [
+      "Closed-bar signal option.",
+      1
+    ]
+  ],
+  "fts5_topic_counts": {
+    "SpreadFilter OR MaxSpread": 149,
+    "Drawdown OR DailyLoss": 56,
+    "Limit OR Pending": 17,
+    "MeanReversion OR ZScore OR Bollinger": 9,
+    "OnTradeTransaction": 27,
+    "OrderCalcProfit": 3
+  },
+  "top_github_repos": [
+    {
+      "repo": "EA31337/EA31337-Libre",
+      "stars": 272,
+      "forks": 114,
+      "license": "GPL-3.0",
+      "mql_file_count": 2,
+      "py_file_count": 0,
+      "url": "https://github.com/EA31337/EA31337-Libre"
+    },
+    {
+      "repo": "elrizwiraswara/nyao_scalper_mt5",
+      "stars": 258,
+      "forks": 108,
+      "license": "BSD-3-Clause",
+      "mql_file_count": 2,
+      "py_file_count": 1,
+      "url": "https://github.com/elrizwiraswara/nyao_scalper_mt5"
+    },
+    {
+      "repo": "Joaopeuko/Mql5-Python-Integration",
+      "stars": 217,
+      "forks": 55,
+      "license": "MIT",
+      "mql_file_count": 0,
+      "py_file_count": 35,
+      "url": "https://github.com/Joaopeuko/Mql5-Python-Integration"
+    },
+    {
+      "repo": "landim32/LadinoBot",
+      "stars": 206,
+      "forks": 139,
+      "license": "GPL-3.0",
+      "mql_file_count": 18,
+      "py_file_count": 0,
+      "url": "https://github.com/landim32/LadinoBot"
+    },
+    {
+      "repo": "EarnForex/MarketProfile",
+      "stars": 205,
+      "forks": 73,
+      "license": "Apache-2.0",
+      "mql_file_count": 2,
+      "py_file_count": 0,
+      "url": "https://github.com/EarnForex/MarketProfile"
+    },
+    {
+      "repo": "ejtraderLabs/Metatrader5-Docker",
+      "stars": 168,
+      "forks": 74,
+      "license": "Unspecified",
+      "mql_file_count": 458,
+      "py_file_count": 0,
+      "url": "https://github.com/ejtraderLabs/Metatrader5-Docker"
+    },
+    {
+      "repo": "jimtin/algorithmic_trading_bot",
+      "stars": 165,
+      "forks": 58,
+      "license": "Unspecified",
+      "mql_file_count": 0,
+      "py_file_count": 30,
+      "url": "https://github.com/jimtin/algorithmic_trading_bot"
+    },
+    {
+      "repo": "Ichinga-Samuel/aiomql",
+      "stars": 154,
+      "forks": 46,
+      "license": "MIT",
+      "mql_file_count": 0,
+      "py_file_count": 302,
+      "url": "https://github.com/Ichinga-Samuel/aiomql"
+    },
+    {
+      "repo": "tahsintasnuva/voice-notes-pipeline",
+      "stars": 153,
+      "forks": 0,
+      "license": "MIT",
+      "mql_file_count": 0,
+      "py_file_count": 0,
+      "url": "https://github.com/tahsintasnuva/voice-notes-pipeline"
+    },
+    {
+      "repo": "devcartel/pymt5",
+      "stars": 148,
+      "forks": 52,
+      "license": "MIT",
+      "mql_file_count": 0,
+      "py_file_count": 8,
+      "url": "https://github.com/devcartel/pymt5"
+    },
+    {
+      "repo": "kartikmadan11/MetaTraderForecast",
+      "stars": 146,
+      "forks": 71,
+      "license": "Unspecified",
+      "mql_file_count": 3,
+      "py_file_count": 3,
+      "url": "https://github.com/kartikmadan11/MetaTraderForecast"
+    },
+    {
+      "repo": "nkanven/MT4-MT5-Trading-EA-Collections",
+      "stars": 144,
+      "forks": 66,
+      "license": "Unspecified",
+      "mql_file_count": 213,
+      "py_file_count": 0,
+      "url": "https://github.com/nkanven/MT4-MT5-Trading-EA-Collections"
+    }
+  ],
+  "clean_guarded_examples": [
+    {
+      "ea_id": "EA-0003",
+      "name": "Imbalance.mq5",
+      "developer": "ForexFactory Contributor",
+      "categories": [
+        "Price Action / General / Unclassified"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/forexfactory/Imbalance.mq5"
+    },
+    {
+      "ea_id": "EA-0004",
+      "name": "MT5_EurUsd_v02x.mq5",
+      "developer": "ForexFactory Contributor",
+      "categories": [
+        "SMC/ICT"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/forexfactory/MT5_EurUsd_v02x.mq5"
+    },
+    {
+      "ea_id": "EA-0005",
+      "name": "OrderBlock_Schematic_1.mq5",
+      "developer": "ForexFactory Contributor",
+      "categories": [
+        "SMC/ICT"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/forexfactory/OrderBlock_Schematic_1.mq5"
+    },
+    {
+      "ea_id": "EA-0006",
+      "name": "OrderBlock_Schematic_2.mq5",
+      "developer": "ForexFactory Contributor",
+      "categories": [
+        "SMC/ICT"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/forexfactory/OrderBlock_Schematic_2.mq5"
+    },
+    {
+      "ea_id": "EA-0007",
+      "name": "OrderBlock_Schematic_3.mq5",
+      "developer": "ForexFactory Contributor",
+      "categories": [
+        "SMC/ICT"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/forexfactory/OrderBlock_Schematic_3.mq5"
+    },
+    {
+      "ea_id": "EA-0008",
+      "name": "Trade Manager.mq5",
+      "developer": "ForexFactory Contributor",
+      "categories": [
+        "Price Action / General / Unclassified"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/forexfactory/Trade_Manager.mq5"
+    },
+    {
+      "ea_id": "EA-0012",
+      "name": "EarnForex/PositionSizer :: MQL4/Experts/Position Sizer/Position Sizer.mq4",
+      "developer": "EarnForex",
+      "categories": [
+        "Price Action / General / Unclassified"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; BreakEven; RiskPctSizing; SpreadFilter",
+      "local_path": "data/ea_kb/sources/github/EarnForex__PositionSizer/MQL4__Experts__Position_Sizer__Position_Sizer.mq4"
+    },
+    {
+      "ea_id": "EA-0013",
+      "name": "EarnForex/PositionSizer :: MQL5/Experts/Position Sizer/Position Sizer.mq5",
+      "developer": "EarnForex",
+      "categories": [
+        "Price Action / General / Unclassified"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; BreakEven; RiskPctSizing; SpreadFilter",
+      "local_path": "data/ea_kb/sources/github/EarnForex__PositionSizer/MQL5__Experts__Position_Sizer__Position_Sizer.mq5"
+    },
+    {
+      "ea_id": "EA-0017",
+      "name": "KVignesh122/MT5-SMC-trading-bot :: EA_Script.mq5",
+      "developer": "KVignesh122",
+      "categories": [
+        "SMC/ICT",
+        "Trend/Breakout"
+      ],
+      "indicators": [
+        "iATR",
+        "iADX"
+      ],
+      "risk_management": "HardSL; TP; RiskPctSizing; SpreadFilter; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/KVignesh122__MT5-SMC-trading-bot/EA_Script.mq5"
+    },
+    {
+      "ea_id": "EA-0018",
+      "name": "Moenabiel/memo-smt-ea :: MQL5/Experts/MEMO/MEMO_XAU_XAG_SMT_EA.mq5",
+      "developer": "Moenabiel",
+      "categories": [
+        "SMC/ICT",
+        "News/Calendar"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; BreakEven; RiskPctSizing; DailyLoss/DDGuard; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/Moenabiel__memo-smt-ea/MQL5__Experts__MEMO__MEMO_XAU_XAG_SMT_EA.mq5"
+    },
+    {
+      "ea_id": "EA-0021",
+      "name": "SiyabongaDlamini/SmartMoney.MQ5 :: SmartMoney_MTF_EA_v2.mq5",
+      "developer": "SiyabongaDlamini",
+      "categories": [
+        "SMC/ICT",
+        "Trend/Breakout"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; TrailingStop; BreakEven; RiskPctSizing; SpreadFilter; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/SiyabongaDlamini__SmartMoney.MQ5/SmartMoney_MTF_EA_v2.mq5"
+    },
+    {
+      "ea_id": "EA-0022",
+      "name": "e49nana/Algorithmic-trading :: tradfi/ASQ_CommandDesk_v1.00.mq5",
+      "developer": "e49nana",
+      "categories": [
+        "Price Action / General / Unclassified"
+      ],
+      "indicators": [
+        "iATR"
+      ],
+      "risk_management": "HardSL; TP; BreakEven; SpreadFilter; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/e49nana__Algorithmic-trading/tradfi__ASQ_CommandDesk_v1.00.mq5"
+    },
+    {
+      "ea_id": "EA-0025",
+      "name": "eyealgo/eyealgo-trading-tools :: mt5/03_MACD_Crossover_EA.mq5",
+      "developer": "eyealgo",
+      "categories": [
+        "Trend/Breakout"
+      ],
+      "indicators": [
+        "iMA"
+      ],
+      "risk_management": "HardSL; TP; RiskPctSizing; SpreadFilter; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/eyealgo__eyealgo-trading-tools/mt5__03_MACD_Crossover_EA.mq5"
+    },
+    {
+      "ea_id": "EA-0026",
+      "name": "eyealgo/eyealgo-trading-tools :: mt5/04_Bollinger_Bands_EA.mq5",
+      "developer": "eyealgo",
+      "categories": [
+        "Trend/Breakout",
+        "Oscillator/Mean-Reversion"
+      ],
+      "indicators": [
+        "iBands"
+      ],
+      "risk_management": "HardSL; TP; RiskPctSizing; SpreadFilter; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/eyealgo__eyealgo-trading-tools/mt5__04_Bollinger_Bands_EA.mq5"
+    },
+    {
+      "ea_id": "EA-0027",
+      "name": "eyealgo/eyealgo-trading-tools :: mt5/05_Donchian_Breakout_EA.mq5",
+      "developer": "eyealgo",
+      "categories": [
+        "Trend/Breakout"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; RiskPctSizing; SpreadFilter; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/eyealgo__eyealgo-trading-tools/mt5__05_Donchian_Breakout_EA.mq5"
+    },
+    {
+      "ea_id": "EA-0028",
+      "name": "eyealgo/eyealgo-trading-tools :: mt5/07_Session_ORB_EA.mq5",
+      "developer": "eyealgo",
+      "categories": [
+        "Trend/Breakout"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; RiskPctSizing; SpreadFilter; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/eyealgo__eyealgo-trading-tools/mt5__07_Session_ORB_EA.mq5"
+    },
+    {
+      "ea_id": "EA-0029",
+      "name": "eyealgo/eyealgo-trading-tools :: mt5/08_Supertrend_TV_EA.mq5",
+      "developer": "eyealgo",
+      "categories": [
+        "Trend/Breakout"
+      ],
+      "indicators": [],
+      "risk_management": "HardSL; TP; RiskPctSizing; SpreadFilter; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/eyealgo__eyealgo-trading-tools/mt5__08_Supertrend_TV_EA.mq5"
+    },
+    {
+      "ea_id": "EA-0031",
+      "name": "geraked/metatrader5 :: Experts/3MACD.mq5",
+      "developer": "geraked",
+      "categories": [
+        "Price Action / General / Unclassified"
+      ],
+      "indicators": [
+        "iMACD"
+      ],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/geraked__metatrader5/Experts__3MACD.mq5"
+    },
+    {
+      "ea_id": "EA-0032",
+      "name": "geraked/metatrader5 :: Experts/3MAF.mq5",
+      "developer": "geraked",
+      "categories": [
+        "Trend/Breakout"
+      ],
+      "indicators": [
+        "iMA",
+        "iFractals"
+      ],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/geraked__metatrader5/Experts__3MAF.mq5"
+    },
+    {
+      "ea_id": "EA-0033",
+      "name": "geraked/metatrader5 :: Experts/BBRSI.mq5",
+      "developer": "geraked",
+      "categories": [
+        "Oscillator/Mean-Reversion"
+      ],
+      "indicators": [
+        "iRSI",
+        "iBands"
+      ],
+      "risk_management": "HardSL; TP; TrailingStop; RiskPctSizing; SessionFilter",
+      "local_path": "data/ea_kb/sources/github/geraked__metatrader5/Experts__BBRSI.mq5"
+    }
+  ],
+  "fpa_scam_patterns": [
+    {
+      "pattern_id": "FPA-SCAM-01",
+      "name": "Exponential Lot-Doubling Martingale Masked in Backtests",
+      "evidence": "12-year 99% modeling quality backtest showed deceptive 31.11% equity drawdown graph while true Relative Drawdown hit 93.02%, trading only 111 trades and escalating lot sizes to unfillable 200-1000 lots.",
+      "detection_rule": "Inspect Relative Drawdown % vs Max DD %, trade count, and sequential lot escalation (lot_k+1 > lot_k after loss)."
+    },
+    {
+      "pattern_id": "FPA-SCAM-02",
+      "name": "Holding Losing Trades Indefinitely (Equity vs Closed Balance Illusion)",
+      "evidence": "Observed losing positions held open 277 to 1,287 days (~3.5 years) to avoid booking realized losses, creating rising balance curves alongside severe floating equity drawdowns.",
+      "detection_rule": "Audit max trade duration, unrealized MAE, and floating equity-to-balance divergence."
+    },
+    {
+      "pattern_id": "FPA-SCAM-03",
+      "name": "Ultra-Fast 0-3 Second Latency/Delayed-Feed Scalpers",
+      "evidence": "Scammers showcase historical 0-3 second trades exploiting unmodeled demo feed delays or tight fixed backtest spreads that collapse under live broker spreads, slippage, and anti-arbitrage delays.",
+      "detection_rule": "Flag <5s median hold duration and test sensitivity to +0.5/+1.0/+2.0 pip spread and 100-500ms latency."
+    },
+    {
+      "pattern_id": "FPA-SCAM-04",
+      "name": "Missing Stop-Loss (No Hard SL Wipeout Trap)",
+      "evidence": "EAs operating with StopLoss = 0 harvest high win rates in mean-reverting regimes until a single sustained trend wipes out the entire account.",
+      "detection_rule": "Verify hard SL > 0 on every entry deal (OrderSend/CTrade) or enforce external equity-governor kill switch."
+    }
+  ],
+  "candidate_hypotheses_derived": [
+    {
+      "hyp_id": "H26",
+      "title": "EURGBP Multi-Day OU Z-Score Limit-Order Mean Reversion (ALINA_PLAN_v1 D02)",
+      "kb_grounding": "Only 5.2% (20/383) of KB EAs use limit/pending orders while 15.9% lack spread caps. Limit entry eliminates half-spread cost drag on entry.",
+      "target": "23-year Dukascopy EURGBP H1 bid/ask (147,297 bars) + EURUSD control (148,482 bars)"
+    },
+    {
+      "hyp_id": "H27",
+      "title": "EURGBP Session-Liquidity Compression & Spread-Gated Reversal (London/NY Fix vs Asian Drift)",
+      "kb_grounding": "KB SessionFilter (201 EAs) + SpreadFilter (61 EAs) + Rollover spike telemetry (Dukascopy hour 20-22 UTC spread jumps 2.6x on EURGBP).",
+      "target": "23-year Dukascopy EURGBP H1 bid/ask + EURUSD control"
+    },
+    {
+      "hyp_id": "H28",
+      "title": "Regime-Guarded Mean Reversion (Trailing Volatility / Trend-Compression Gate + Hard Risk Governor)",
+      "kb_grounding": "Clean non-martingale KB EAs (116/383) combine ATR regime sizing + hard SL + daily DD guard, blocking catastrophic 2022-style EURGBP regime breakouts.",
+      "target": "23-year Dukascopy EURGBP H1 bid/ask + multi-broker cost matrix (Dukascopy / IC Markets Raw / Exness Raw / Exness Standard)"
+    }
+  ]
+}
