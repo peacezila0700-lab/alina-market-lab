@@ -1,0 +1,346 @@
+{
+  "generated_utc": "2026-11-21T12:03:00.554967+00:00",
+  "batch": "batch6",
+  "totals": {
+    "source_files": 2174,
+    "batch6_source_files": 74,
+    "ea_master": 553,
+    "batch6_ea_master": 54,
+    "github_repos": 85,
+    "developers": 202,
+    "duplicates": 1332,
+    "kg_edges": 5503,
+    "kb_fts": 2477,
+    "sqlite_integrity_check": "ok"
+  },
+  "repositories": [
+    {
+      "repo": "stefan-jansen/machine-learning-for-trading",
+      "url": "https://github.com/stefan-jansen/machine-learning-for-trading",
+      "license": "MIT",
+      "branch": "main",
+      "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+      "commit_date": "2026-11-18T16:25:51Z",
+      "stars": 21929,
+      "forks": 5801,
+      "files_ingested": 18,
+      "cluster": "Risk Management, Position Sizing & Kalman/Regime Models"
+    },
+    {
+      "repo": "quantopian/zipline",
+      "url": "https://github.com/quantopian/zipline",
+      "license": "Apache-2.0",
+      "branch": "master",
+      "commit_sha": "014f1fc339dc8b7671d29be2d85ce57d3daec343",
+      "commit_date": "2020-10-14T16:36:49Z",
+      "stars": 20261,
+      "forks": 5065,
+      "files_ingested": 4,
+      "cluster": "Quantopian / Zipline Portfolio & Execution Architecture"
+    },
+    {
+      "repo": "quantopian/empyrical",
+      "url": "https://github.com/quantopian/empyrical",
+      "license": "Apache-2.0",
+      "branch": "master",
+      "commit_sha": "40f61b4f229df10898d46d08f7b1bdc543c0f99c",
+      "commit_date": "2020-10-14T13:22:39Z",
+      "stars": 1521,
+      "forks": 468,
+      "files_ingested": 2,
+      "cluster": "Quantopian Risk & Performance Metrics"
+    },
+    {
+      "repo": "quantopian/pyfolio",
+      "url": "https://github.com/quantopian/pyfolio",
+      "license": "Apache-2.0",
+      "branch": "master",
+      "commit_sha": "4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa",
+      "commit_date": "2020-07-15T13:46:58Z",
+      "stars": 6440,
+      "forks": 1897,
+      "files_ingested": 3,
+      "cluster": "Quantopian Portfolio Drawdown, Capacity & Round-Trip Risk"
+    },
+    {
+      "repo": "freqtrade/freqtrade",
+      "url": "https://github.com/freqtrade/freqtrade",
+      "license": "GPL-3.0",
+      "branch": "develop",
+      "commit_sha": "a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7",
+      "commit_date": "2026-11-19T20:14:53Z",
+      "stars": 57119,
+      "forks": 11790,
+      "files_ingested": 7,
+      "cluster": "Freqtrade Engine Risk Protections & Strategy Interface"
+    },
+    {
+      "repo": "freqtrade/freqtrade-strategies",
+      "url": "https://github.com/freqtrade/freqtrade-strategies",
+      "license": "GPL-3.0",
+      "branch": "main",
+      "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+      "commit_date": "2026-09-08T16:42:47Z",
+      "stars": 5672,
+      "forks": 1467,
+      "files_ingested": 8,
+      "cluster": "Freqtrade Risk-Managed & Execution Strategies"
+    },
+    {
+      "repo": "jesse-ai/example-strategies",
+      "url": "https://github.com/jesse-ai/example-strategies",
+      "license": "MIT",
+      "branch": "master",
+      "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+      "commit_date": "2024-03-21T10:22:48Z",
+      "stars": 181,
+      "forks": 60,
+      "files_ingested": 11,
+      "cluster": "Jesse Python Strategy Lifecycle & Risk Sizing"
+    },
+    {
+      "repo": "spotware/ctrader-algo-samples",
+      "url": "https://github.com/spotware/ctrader-algo-samples",
+      "license": "MIT",
+      "branch": "main",
+      "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+      "commit_date": "2026-09-29T08:36:39Z",
+      "stars": 144,
+      "forks": 93,
+      "files_ingested": 13,
+      "cluster": "cTrader C# cBot Risk, Execution & Order Control"
+    },
+    {
+      "repo": "EarnForex/AutoTrading-Scheduler",
+      "url": "https://github.com/EarnForex/AutoTrading-Scheduler",
+      "license": "Apache-2.0",
+      "branch": "master",
+      "commit_sha": "a7e6dd33303a4043b961092946a5b8e6b568b4f0",
+      "commit_date": "2026-03-02T14:41:54Z",
+      "stars": 57,
+      "forks": 24,
+      "files_ingested": 6,
+      "cluster": "EarnForex Session/Rollover/News Exposure Scheduler"
+    },
+    {
+      "repo": "EarnForex/Spread",
+      "url": "https://github.com/EarnForex/Spread",
+      "license": "Apache-2.0",
+      "branch": "main",
+      "commit_sha": "39135ed73ee647e98ddab6cccdc3e9905273f651",
+      "commit_date": "2025-08-08T21:50:10Z",
+      "stars": 6,
+      "forks": 1,
+      "files_ingested": 2,
+      "cluster": "EarnForex Real-Time Spread Cost Monitor"
+    }
+  ],
+  "excluded_unlicensed_audit": [
+    {
+      "repo": "quantopian/research_public",
+      "url": "https://github.com/quantopian/research_public",
+      "stars": 2906,
+      "license": "UNSPECIFIED",
+      "decision": "EXCLUDED_FROM_CONFIRMED",
+      "reason": "GitHub API reports license=None and repository tree lacks a LICENSE file; strictly excluded per provenance rule."
+    }
+  ],
+  "jesse_excluded_mirror_duplicates": [
+    {
+      "dup_id": "DUP_B6_1323",
+      "canonical": "Donchian/__init__.py",
+      "excluded_mirror": "example-strategies-master/Donchian/__init__.py",
+      "similarity": 0.8292
+    },
+    {
+      "dup_id": "DUP_B6_1324",
+      "canonical": "TurtleRules/__init__.py",
+      "excluded_mirror": "example-strategies-master/TurtleRules/__init__.py",
+      "similarity": 0.9921
+    },
+    {
+      "dup_id": "DUP_B6_1325",
+      "canonical": "IFR2/__init__.py",
+      "excluded_mirror": "example-strategies-master/IFR2/__init__.py",
+      "similarity": 0.9351
+    },
+    {
+      "dup_id": "DUP_B6_1326",
+      "canonical": "RSI2/__init__.py",
+      "excluded_mirror": "example-strategies-master/RSI2/__init__.py",
+      "similarity": 0.9926
+    },
+    {
+      "dup_id": "DUP_B6_1327",
+      "canonical": "SMACrossover/__init__.py",
+      "excluded_mirror": "example-strategies-master/SMACrossover/__init__.py",
+      "similarity": 0.8422
+    },
+    {
+      "dup_id": "DUP_B6_1328",
+      "canonical": "SimpleBollinger/__init__.py",
+      "excluded_mirror": "example-strategies-master/SimpleBollinger/__init__.py",
+      "similarity": 0.9107
+    },
+    {
+      "dup_id": "DUP_B6_1329",
+      "canonical": "TradingView_RSI/__init__.py",
+      "excluded_mirror": "example-strategies-master/TradingView_RSI/__init__.py",
+      "similarity": 0.9878
+    }
+  ],
+  "cross_platform_mt4_mt5_ports": [
+    {
+      "dup_id": "DUP_B6_1330",
+      "mt4": "MQL4/Experts/AutoTrading Scheduler/AutoTrading Scheduler.mq4",
+      "mt5": "MQL5/Experts/AutoTrading Scheduler/AutoTrading Scheduler.mq5",
+      "similarity": 0.9535
+    },
+    {
+      "dup_id": "DUP_B6_1331",
+      "mt4": "MQL4/Experts/AutoTrading Scheduler/AutoTrading Scheduler.mqh",
+      "mt5": "MQL5/Experts/AutoTrading Scheduler/AutoTrading Scheduler.mqh",
+      "similarity": 0.9019
+    },
+    {
+      "dup_id": "DUP_B6_1332",
+      "mt4": "Spread.mq4",
+      "mt5": "Spread.mq5",
+      "similarity": 0.8446
+    }
+  ],
+  "preexisting_url_encoding_duplicates_detected": 98,
+  "preexisting_url_encoding_samples": [
+    {
+      "normalized_url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/Boxline.mq5",
+      "records": [
+        [
+          "SRC-0099",
+          "data/ea_kb/sources/github/geraked__metatrader5/Indicators__Boxline.mq5"
+        ],
+        [
+          "SRC-1235",
+          "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__Boxline.mq5"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/ChandelierExit.mq5",
+      "records": [
+        [
+          "SRC-0100",
+          "data/ea_kb/sources/github/geraked__metatrader5/Indicators__ChandelierExit.mq5"
+        ],
+        [
+          "SRC-1236",
+          "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__ChandelierExit.mq5"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/Grid.mq5",
+      "records": [
+        [
+          "SRC-0101",
+          "data/ea_kb/sources/github/geraked__metatrader5/Indicators__Grid.mq5"
+        ],
+        [
+          "SRC-1240",
+          "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__Grid.mq5"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/OrderBlock.mq5",
+      "records": [
+        [
+          "SRC-0102",
+          "data/ea_kb/sources/github/geraked__metatrader5/Indicators__OrderBlock.mq5"
+        ],
+        [
+          "SRC-1244",
+          "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__OrderBlock.mq5"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/UTBot.mq5",
+      "records": [
+        [
+          "SRC-0103",
+          "data/ea_kb/sources/github/geraked__metatrader5/Indicators__UTBot.mq5"
+        ],
+        [
+          "SRC-1246",
+          "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__UTBot.mq5"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://raw.githubusercontent.com/geraked/metatrader5/master/Indicators/ZLSMA.mq5",
+      "records": [
+        [
+          "SRC-0104",
+          "data/ea_kb/sources/github/geraked__metatrader5/Indicators__ZLSMA.mq5"
+        ],
+        [
+          "SRC-1247",
+          "data/ea_kb/sources_batch2/github/geraked__metatrader5/Indicators__ZLSMA.mq5"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Common/HistoryPositionInfo.mqh",
+      "records": [
+        [
+          "SRC-0158",
+          "data/ea_kb/sources/gitlab/fxce__mt5-libs/Include__FxceLibs__Common__HistoryPositionInfo.mqh"
+        ],
+        [
+          "SRC-1702",
+          "data/ea_kb/sources_batch2/gitlab/fxce__mt5-libs/Include__FxceLibs__Common__HistoryPositionInfo.mqh"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Common/Indicator/PriceInfoIndicator.mqh",
+      "records": [
+        [
+          "SRC-0159",
+          "data/ea_kb/sources/gitlab/fxce__mt5-libs/Include__FxceLibs__Common__Indicator__PriceInfoIndicator.mqh"
+        ],
+        [
+          "SRC-1703",
+          "data/ea_kb/sources_batch2/gitlab/fxce__mt5-libs/Include__FxceLibs__Common__Indicator__PriceInfoIndicator.mqh"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Common/Price/PriceInfo.mqh",
+      "records": [
+        [
+          "SRC-0160",
+          "data/ea_kb/sources/gitlab/fxce__mt5-libs/Include__FxceLibs__Common__Price__PriceInfo.mqh"
+        ],
+        [
+          "SRC-1704",
+          "data/ea_kb/sources_batch2/gitlab/fxce__mt5-libs/Include__FxceLibs__Common__Price__PriceInfo.mqh"
+        ]
+      ]
+    },
+    {
+      "normalized_url": "https://gitlab.com/fxce/mt5-libs/-/raw/develop/Include/FxceLibs/Common/Time/TimeInfo.mqh",
+      "records": [
+        [
+          "SRC-0161",
+          "data/ea_kb/sources/gitlab/fxce__mt5-libs/Include__FxceLibs__Common__Time__TimeInfo.mqh"
+        ],
+        [
+          "SRC-1705",
+          "data/ea_kb/sources_batch2/gitlab/fxce__mt5-libs/Include__FxceLibs__Common__Time__TimeInfo.mqh"
+        ]
+      ]
+    }
+  ],
+  "batch6_exact_sha256_duplicates": []
+}

@@ -1,0 +1,2178 @@
+[
+  {
+    "src_id": "SRC_B6_Q-3596_001",
+    "ea_id": "EA-B6-0001",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "09_model_based_features/04_kalman_filter.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/09_model_based_features__04_kalman_filter.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "4f2961002851ce0bc551fe81bcac8832c76c81ccf464b60d6f60162eb3f5f592",
+    "bytes": 35498,
+    "lines": 831,
+    "dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "polars",
+      "IPython",
+      "scipy",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "VaR_CVaR_RiskMetrics",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "KALMAN",
+      "EMA",
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/09_model_based_features/04_kalman_filter.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/09_model_based_features/04_kalman_filter.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3597_002",
+    "ea_id": null,
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "09_model_based_features/08_garch_volatility.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/09_model_based_features__08_garch_volatility.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "600ece50063bf8feb9968f0de8f02517f9442def9d1747c810b14116ab779a0f",
+    "bytes": 32655,
+    "lines": 757,
+    "dependencies": [
+      "warnings",
+      "datetime",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "polars",
+      "arch",
+      "IPython",
+      "ml4t",
+      "scipy",
+      "statsmodels",
+      "case_studies",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "TrailingStop",
+      "PositionSizing",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "GARCH"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/09_model_based_features/08_garch_volatility.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/09_model_based_features/08_garch_volatility.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3598_003",
+    "ea_id": null,
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "09_model_based_features/09_har_rough_volatility.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/09_model_based_features__09_har_rough_volatility.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "6d6563b640f789a33c0fc6b779a976c9a5dde3210c83ee60b278465deefe1a5b",
+    "bytes": 60028,
+    "lines": 1357,
+    "dependencies": [
+      "warnings",
+      "exchange_calendars",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "polars",
+      "statsmodels",
+      "arch",
+      "IPython",
+      "ml4t",
+      "scipy",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "TrailingStop",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "GARCH"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/09_model_based_features/09_har_rough_volatility.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/09_model_based_features/09_har_rough_volatility.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3599_004",
+    "ea_id": null,
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "09_model_based_features/11_hmm_regimes.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/09_model_based_features__11_hmm_regimes.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "45d9bdb10822b5c43e6d8dfc09c01bd926b186c8b16fc17ca3511f795529d988",
+    "bytes": 37769,
+    "lines": 899,
+    "dependencies": [
+      "logging",
+      "warnings",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "polars",
+      "hmmlearn",
+      "IPython",
+      "ml4t",
+      "scipy",
+      "statsmodels",
+      "case_studies",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "HMM",
+      "ADX"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/09_model_based_features/11_hmm_regimes.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/09_model_based_features/11_hmm_regimes.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3600_005",
+    "ea_id": null,
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "02_financial_data_universe/12_fx_pairs_eda.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/02_financial_data_universe__12_fx_pairs_eda.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "958066606bcdb65b4322fa8ca3375f05e3d96b95903937a1ab8636b8d7f019be",
+    "bytes": 20472,
+    "lines": 512,
+    "dependencies": [
+      "plotly",
+      "polars",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "PositionSizing"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/02_financial_data_universe/12_fx_pairs_eda.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/02_financial_data_universe/12_fx_pairs_eda.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3601_006",
+    "ea_id": "EA-B6-0002",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "17_portfolio_construction/04_kelly_criterion.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/17_portfolio_construction__04_kelly_criterion.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "22319d92d7bdae8bda4643090de95a9b823f93085eef943175c65668b82bf9e8",
+    "bytes": 40422,
+    "lines": 1111,
+    "dependencies": [
+      "collections",
+      "numpy",
+      "plotly",
+      "polars",
+      "sympy",
+      "IPython",
+      "ml4t",
+      "scipy",
+      "sklearn",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "DrawdownGuard",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "KELLY"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/17_portfolio_construction/04_kelly_criterion.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/17_portfolio_construction/04_kelly_criterion.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3602_007",
+    "ea_id": "EA-B6-0003",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "17_portfolio_construction/06_hierarchical_risk_parity.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/17_portfolio_construction__06_hierarchical_risk_parity.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "2c504761fdd9c3793a3200adfdabb20e5f761d051f5ab9cefb0b267372184bd0",
+    "bytes": 52253,
+    "lines": 1421,
+    "dependencies": [
+      "hashlib",
+      "warnings",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "plotly",
+      "polars",
+      "IPython",
+      "ml4t",
+      "scipy",
+      "sklearn",
+      "case_studies",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "DrawdownGuard",
+      "SpreadOrSlippageCost",
+      "VaR_CVaR_RiskMetrics",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "HRP",
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/17_portfolio_construction/06_hierarchical_risk_parity.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/17_portfolio_construction/06_hierarchical_risk_parity.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3603_008",
+    "ea_id": "EA-B6-0004",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "19_risk_management/01_var_cvar.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/19_risk_management__01_var_cvar.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "5ce57367e06bdfe25ce7b0f505ec269a1d3e9a31de13188e8e0553a7b6955012",
+    "bytes": 51087,
+    "lines": 1356,
+    "dependencies": [
+      "logging",
+      "numpy",
+      "pandas",
+      "plotly",
+      "polars",
+      "arch",
+      "IPython",
+      "ml4t",
+      "scipy",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "DrawdownGuard",
+      "SpreadOrSlippageCost",
+      "VaR_CVaR_RiskMetrics",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "GARCH",
+      "VAR",
+      "CVAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/01_var_cvar.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/01_var_cvar.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3604_009",
+    "ea_id": "EA-B6-0005",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "19_risk_management/02_exit_strategies.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/19_risk_management__02_exit_strategies.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "17e4f92e99bc39997117f271d218b83b614eecdd8ed96081cdd082acca4dcdb4",
+    "bytes": 63616,
+    "lines": 1835,
+    "dependencies": [
+      "dataclasses",
+      "numpy",
+      "pandas",
+      "plotly",
+      "polars",
+      "IPython",
+      "ml4t",
+      "sklearn",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "DrawdownGuard",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "ATR",
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/02_exit_strategies.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/02_exit_strategies.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3605_010",
+    "ea_id": "EA-B6-0006",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "19_risk_management/03_position_sizing_mae_mfe.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/19_risk_management__03_position_sizing_mae_mfe.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "7dd2d1746a24bad4d18e026badc46c8adbe3588447968950a6020f7f26bf98a2",
+    "bytes": 43252,
+    "lines": 1203,
+    "dependencies": [
+      "dataclasses",
+      "numpy",
+      "pandas",
+      "plotly",
+      "polars",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "DrawdownGuard",
+      "VolatilityOrRegime",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "KELLY"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/03_position_sizing_mae_mfe.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/03_position_sizing_mae_mfe.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3606_011",
+    "ea_id": null,
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "19_risk_management/06_stress_testing.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/19_risk_management__06_stress_testing.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "b4bceadf313afdc17521285175ab05ae53bbe06c250d2bf749ec2d9c0c20d9cd",
+    "bytes": 44546,
+    "lines": 1227,
+    "dependencies": [
+      "dataclasses",
+      "datetime",
+      "numpy",
+      "plotly",
+      "polars",
+      "IPython",
+      "scipy",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "DrawdownGuard",
+      "VaR_CVaR_RiskMetrics",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "VAR",
+      "CVAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/06_stress_testing.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/06_stress_testing.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3607_012",
+    "ea_id": null,
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "19_risk_management/07_drift_detection.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/19_risk_management__07_drift_detection.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "b09e291050a0c2dcd06ebec45b4222002d73d0949711c1ed791a728b7b453df7",
+    "bytes": 65401,
+    "lines": 1774,
+    "dependencies": [
+      "time",
+      "dataclasses",
+      "lightgbm",
+      "numpy",
+      "pandas",
+      "plotly",
+      "polars",
+      "IPython",
+      "ml4t",
+      "sklearn",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/07_drift_detection.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/07_drift_detection.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3608_013",
+    "ea_id": null,
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "19_risk_management/08_ml_exit_signals.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/19_risk_management__08_ml_exit_signals.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "cf5fb42edec838070df20d59acf3480b0566567b6e7ea7e90a7eb4c5dea7d8fa",
+    "bytes": 45203,
+    "lines": 1206,
+    "dependencies": [
+      "datetime",
+      "lightgbm",
+      "numpy",
+      "plotly",
+      "polars",
+      "IPython",
+      "matplotlib",
+      "sklearn",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "TrailingStop",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/08_ml_exit_signals.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/19_risk_management/08_ml_exit_signals.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3609_014",
+    "ea_id": "EA-B6-0007",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "25_live_trading/10_safety_risk_demo.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/25_live_trading__10_safety_risk_demo.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "e8d150ed0c0279e785363851cf66e6718d879129ce92468efc0b1996071c664b",
+    "bytes": 28807,
+    "lines": 834,
+    "dependencies": [
+      "logging",
+      "sys",
+      "datetime",
+      "pathlib",
+      "typing",
+      "async_utils",
+      "ml4t",
+      "utils"
+    ],
+    "risk_controls": [
+      "PositionSizing",
+      "DrawdownGuard",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/25_live_trading/10_safety_risk_demo.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/25_live_trading/10_safety_risk_demo.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3610_015",
+    "ea_id": "EA-B6-0008",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "26_mlops_governance/04_circuit_breakers.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/26_mlops_governance__04_circuit_breakers.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "9c955e143bf03f86c82e6eaf3ad7bab3fd1c53c81d844ff41dc094f24b3f581a",
+    "bytes": 34918,
+    "lines": 968,
+    "dependencies": [
+      "warnings",
+      "abc",
+      "collections",
+      "dataclasses",
+      "datetime",
+      "enum",
+      "typing",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "polars",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "PositionSizing",
+      "DrawdownGuard",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/26_mlops_governance/04_circuit_breakers.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/26_mlops_governance/04_circuit_breakers.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3611_016",
+    "ea_id": null,
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "case_studies/fx_pairs/02_labels.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/case_studies__fx_pairs__02_labels.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "ed0307eb3fb27d144bc16f43bbe8697072fb38568ad06bb67dcea344077fcaa9",
+    "bytes": 41993,
+    "lines": 788,
+    "dependencies": [
+      "math",
+      "datetime",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "polars",
+      "yaml",
+      "ml4t",
+      "case_studies",
+      "data",
+      "utils"
+    ],
+    "risk_controls": [
+      "TrailingStop",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/case_studies/fx_pairs/02_labels.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/case_studies/fx_pairs/02_labels.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3612_017",
+    "ea_id": "EA-B6-0009",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "case_studies/fx_pairs/15_risk_management.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/case_studies__fx_pairs__15_risk_management.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "331fea6dd566672187339834bcce8ba31444c1f5d48c0a41a26378763bc5a29f",
+    "bytes": 33298,
+    "lines": 670,
+    "dependencies": [
+      "copy",
+      "typing",
+      "polars",
+      "yaml",
+      "case_studies",
+      "utils"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "DrawdownGuard",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/case_studies/fx_pairs/15_risk_management.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/case_studies/fx_pairs/15_risk_management.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3613_018",
+    "ea_id": "EA-B6-0010",
+    "repo": "stefan-jansen/machine-learning-for-trading",
+    "rel_path": "case_studies/fx_pairs/16_costs.py",
+    "local_path": "data/ea_kb/sources_batch6/stefan-jansen__machine-learning-for-trading/case_studies__fx_pairs__16_costs.py",
+    "license": "MIT",
+    "commit_sha": "fe08097f3e43fb3dd1511d68613a6a2dd6ff4461",
+    "author": "stefan-jansen",
+    "sha256": "3592081a62b07416ae4ee2a7ebd7d8c9b7b08c5b81390a241c068e3ab6216f63",
+    "bytes": 31113,
+    "lines": 639,
+    "dependencies": [
+      "copy",
+      "typing",
+      "polars",
+      "yaml",
+      "case_studies",
+      "utils"
+    ],
+    "risk_controls": [
+      "BreakEven",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/case_studies/fx_pairs/16_costs.py",
+    "blob_url": "https://github.com/stefan-jansen/machine-learning-for-trading/blob/fe08097f3e43fb3dd1511d68613a6a2dd6ff4461/case_studies/fx_pairs/16_costs.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3615_019",
+    "ea_id": "EA-B6-0011",
+    "repo": "quantopian/zipline",
+    "rel_path": "zipline/examples/olmar.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__zipline/zipline__examples__olmar.py",
+    "license": "Apache-2.0",
+    "commit_sha": "014f1fc339dc8b7671d29be2d85ce57d3daec343",
+    "author": "quantopian",
+    "sha256": "fb9a4cf4579b1e668b85c1e12a0ef2df6786fd173be12d9c11d0ba2974eeba6d",
+    "bytes": 4792,
+    "lines": 168,
+    "dependencies": [
+      "sys",
+      "logbook",
+      "numpy",
+      "zipline",
+      "matplotlib",
+      "pandas"
+    ],
+    "risk_controls": [
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/zipline/014f1fc339dc8b7671d29be2d85ce57d3daec343/zipline/examples/olmar.py",
+    "blob_url": "https://github.com/quantopian/zipline/blob/014f1fc339dc8b7671d29be2d85ce57d3daec343/zipline/examples/olmar.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3616_020",
+    "ea_id": "EA-B6-0012",
+    "repo": "quantopian/zipline",
+    "rel_path": "zipline/examples/dual_ema_talib.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__zipline/zipline__examples__dual_ema_talib.py",
+    "license": "Apache-2.0",
+    "commit_sha": "014f1fc339dc8b7671d29be2d85ce57d3daec343",
+    "author": "quantopian",
+    "sha256": "1d07a13ba9b6c754b02ef706cf23f9dbaad996229cdc4e0ea86d13bad1a1344b",
+    "bytes": 4242,
+    "lines": 133,
+    "dependencies": [
+      "zipline",
+      "talib",
+      "matplotlib",
+      "logbook",
+      "pandas"
+    ],
+    "risk_controls": [
+      "TrailingStop",
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [
+      "EMA"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/zipline/014f1fc339dc8b7671d29be2d85ce57d3daec343/zipline/examples/dual_ema_talib.py",
+    "blob_url": "https://github.com/quantopian/zipline/blob/014f1fc339dc8b7671d29be2d85ce57d3daec343/zipline/examples/dual_ema_talib.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3617_021",
+    "ea_id": "EA-B6-0013",
+    "repo": "quantopian/zipline",
+    "rel_path": "zipline/examples/momentum_pipeline.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__zipline/zipline__examples__momentum_pipeline.py",
+    "license": "Apache-2.0",
+    "commit_sha": "014f1fc339dc8b7671d29be2d85ce57d3daec343",
+    "author": "quantopian",
+    "sha256": "28823b635b55f0e0a2b21483d0c0f93577c65d0ae2350262b4e702e5833a09f7",
+    "bytes": 3085,
+    "lines": 100,
+    "dependencies": [
+      "six",
+      "zipline",
+      "pandas"
+    ],
+    "risk_controls": [
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/zipline/014f1fc339dc8b7671d29be2d85ce57d3daec343/zipline/examples/momentum_pipeline.py",
+    "blob_url": "https://github.com/quantopian/zipline/blob/014f1fc339dc8b7671d29be2d85ce57d3daec343/zipline/examples/momentum_pipeline.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3618_022",
+    "ea_id": "EA-B6-0014",
+    "repo": "quantopian/zipline",
+    "rel_path": "zipline/examples/dual_moving_average.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__zipline/zipline__examples__dual_moving_average.py",
+    "license": "Apache-2.0",
+    "commit_sha": "014f1fc339dc8b7671d29be2d85ce57d3daec343",
+    "author": "quantopian",
+    "sha256": "ad29023a42155aa4d5e3e188978a3ac45c86f81832eea812e11327c9875ae058",
+    "bytes": 3903,
+    "lines": 116,
+    "dependencies": [
+      "zipline",
+      "matplotlib",
+      "logbook",
+      "pandas"
+    ],
+    "risk_controls": [
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/zipline/014f1fc339dc8b7671d29be2d85ce57d3daec343/zipline/examples/dual_moving_average.py",
+    "blob_url": "https://github.com/quantopian/zipline/blob/014f1fc339dc8b7671d29be2d85ce57d3daec343/zipline/examples/dual_moving_average.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3620_023",
+    "ea_id": null,
+    "repo": "quantopian/empyrical",
+    "rel_path": "empyrical/stats.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__empyrical/empyrical__stats.py",
+    "license": "Apache-2.0",
+    "commit_sha": "40f61b4f229df10898d46d08f7b1bdc543c0f99c",
+    "author": "quantopian",
+    "sha256": "4afc1ef9c16a455b44e57f8eaf7fab934b458bb02d7f717afd8716edaf0fd5df",
+    "bytes": 66882,
+    "lines": 2171,
+    "dependencies": [
+      "__future__",
+      "math",
+      "pandas",
+      "numpy",
+      "scipy",
+      "six",
+      "sys",
+      "utils",
+      "periods"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "DrawdownGuard",
+      "VaR_CVaR_RiskMetrics",
+      "VolatilityOrRegime"
+    ],
+    "indicators": [
+      "VAR",
+      "CVAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/empyrical/40f61b4f229df10898d46d08f7b1bdc543c0f99c/empyrical/stats.py",
+    "blob_url": "https://github.com/quantopian/empyrical/blob/40f61b4f229df10898d46d08f7b1bdc543c0f99c/empyrical/stats.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3621_024",
+    "ea_id": null,
+    "repo": "quantopian/empyrical",
+    "rel_path": "empyrical/perf_attrib.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__empyrical/empyrical__perf_attrib.py",
+    "license": "Apache-2.0",
+    "commit_sha": "40f61b4f229df10898d46d08f7b1bdc543c0f99c",
+    "author": "quantopian",
+    "sha256": "13acb565e16f582e8335bda52aafed54fcda95f2baa64d7d31751e5a8ac92c3f",
+    "bytes": 5834,
+    "lines": 161,
+    "dependencies": [
+      "collections",
+      "pandas"
+    ],
+    "risk_controls": [],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/empyrical/40f61b4f229df10898d46d08f7b1bdc543c0f99c/empyrical/perf_attrib.py",
+    "blob_url": "https://github.com/quantopian/empyrical/blob/40f61b4f229df10898d46d08f7b1bdc543c0f99c/empyrical/perf_attrib.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3623_025",
+    "ea_id": null,
+    "repo": "quantopian/pyfolio",
+    "rel_path": "pyfolio/timeseries.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__pyfolio/pyfolio__timeseries.py",
+    "license": "Apache-2.0",
+    "commit_sha": "4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa",
+    "author": "quantopian",
+    "sha256": "c7e06cdf5c174cc9683800120f134d025b04903660ae3eef279b525c8b4149e3",
+    "bytes": 37350,
+    "lines": 1237,
+    "dependencies": [
+      "__future__",
+      "collections",
+      "functools",
+      "empyrical",
+      "numpy",
+      "pandas",
+      "scipy",
+      "sklearn",
+      "deprecate",
+      "interesting_periods",
+      "txn",
+      "utils"
+    ],
+    "risk_controls": [
+      "PositionSizing",
+      "DrawdownGuard",
+      "VaR_CVaR_RiskMetrics",
+      "VolatilityOrRegime",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/pyfolio/4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa/pyfolio/timeseries.py",
+    "blob_url": "https://github.com/quantopian/pyfolio/blob/4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa/pyfolio/timeseries.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3624_026",
+    "ea_id": null,
+    "repo": "quantopian/pyfolio",
+    "rel_path": "pyfolio/round_trips.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__pyfolio/pyfolio__round_trips.py",
+    "license": "Apache-2.0",
+    "commit_sha": "4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa",
+    "author": "quantopian",
+    "sha256": "a5b9b60eeb611840eccaf867ad1098a9187f5a76f48afa88c0f06f44c018cd9d",
+    "bytes": 15178,
+    "lines": 414,
+    "dependencies": [
+      "__future__",
+      "math",
+      "warnings",
+      "collections",
+      "pandas",
+      "numpy",
+      "utils"
+    ],
+    "risk_controls": [],
+    "indicators": [
+      "VWAP"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/pyfolio/4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa/pyfolio/round_trips.py",
+    "blob_url": "https://github.com/quantopian/pyfolio/blob/4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa/pyfolio/round_trips.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3625_027",
+    "ea_id": null,
+    "repo": "quantopian/pyfolio",
+    "rel_path": "pyfolio/capacity.py",
+    "local_path": "data/ea_kb/sources_batch6/quantopian__pyfolio/pyfolio__capacity.py",
+    "license": "Apache-2.0",
+    "commit_sha": "4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa",
+    "author": "quantopian",
+    "sha256": "a6c5f32f024193812b9080159ab694d003122662a4f19f3f46d32eb7b23c7bcb",
+    "bytes": 9616,
+    "lines": 246,
+    "dependencies": [
+      "__future__",
+      "empyrical",
+      "numpy",
+      "pandas"
+    ],
+    "risk_controls": [
+      "TrailingStop",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/quantopian/pyfolio/4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa/pyfolio/capacity.py",
+    "blob_url": "https://github.com/quantopian/pyfolio/blob/4b901f6d73aa02ceb6d04b7d83502e5c6f2e81aa/pyfolio/capacity.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3627_028",
+    "ea_id": "EA-B6-0015",
+    "repo": "freqtrade/freqtrade",
+    "rel_path": "freqtrade/plugins/protections/iprotection.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade/freqtrade__plugins__protections__iprotection.py",
+    "license": "GPL-3.0",
+    "commit_sha": "a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7",
+    "author": "freqtrade",
+    "sha256": "80d6beb7e50db63ed1d8e300193032335b7b2d75da9a6597d4001b923a66704d",
+    "bytes": 5139,
+    "lines": 143,
+    "dependencies": [
+      "logging",
+      "abc",
+      "dataclasses",
+      "datetime",
+      "typing",
+      "freqtrade"
+    ],
+    "risk_controls": [
+      "CooldownOrLock"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/iprotection.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade/blob/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/iprotection.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3628_029",
+    "ea_id": "EA-B6-0016",
+    "repo": "freqtrade/freqtrade",
+    "rel_path": "freqtrade/plugins/protections/max_drawdown_protection.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade/freqtrade__plugins__protections__max_drawdown_protection.py",
+    "license": "GPL-3.0",
+    "commit_sha": "a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7",
+    "author": "freqtrade",
+    "sha256": "614328466e2e90e3dc57dff909e18e7f87bc817cef5ac9b9d1d89ef94b1cccc7",
+    "bytes": 5095,
+    "lines": 133,
+    "dependencies": [
+      "logging",
+      "datetime",
+      "typing",
+      "pandas",
+      "freqtrade"
+    ],
+    "risk_controls": [
+      "DrawdownGuard",
+      "CooldownOrLock"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/max_drawdown_protection.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade/blob/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/max_drawdown_protection.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3629_030",
+    "ea_id": "EA-B6-0017",
+    "repo": "freqtrade/freqtrade",
+    "rel_path": "freqtrade/plugins/protections/stoploss_guard.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade/freqtrade__plugins__protections__stoploss_guard.py",
+    "license": "GPL-3.0",
+    "commit_sha": "a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7",
+    "author": "freqtrade",
+    "sha256": "db3adae62104271ad8a70773d45715718a547cb6447b4b82353b01a54af1ce66",
+    "bytes": 3943,
+    "lines": 111,
+    "dependencies": [
+      "logging",
+      "datetime",
+      "typing",
+      "freqtrade"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "CooldownOrLock"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/stoploss_guard.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade/blob/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/stoploss_guard.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3630_031",
+    "ea_id": "EA-B6-0018",
+    "repo": "freqtrade/freqtrade",
+    "rel_path": "freqtrade/plugins/protections/cooldown_period.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade/freqtrade__plugins__protections__cooldown_period.py",
+    "license": "GPL-3.0",
+    "commit_sha": "a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7",
+    "author": "freqtrade",
+    "sha256": "fe1e3db75ec829b9bf423685046a73f9d03bc5fa267a3037ebc7e6070cbd8a58",
+    "bytes": 2723,
+    "lines": 76,
+    "dependencies": [
+      "logging",
+      "datetime",
+      "freqtrade"
+    ],
+    "risk_controls": [
+      "CooldownOrLock"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/cooldown_period.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade/blob/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/cooldown_period.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3631_032",
+    "ea_id": "EA-B6-0019",
+    "repo": "freqtrade/freqtrade",
+    "rel_path": "freqtrade/plugins/protections/low_profit_pairs.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade/freqtrade__plugins__protections__low_profit_pairs.py",
+    "license": "GPL-3.0",
+    "commit_sha": "a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7",
+    "author": "freqtrade",
+    "sha256": "b5e913947de1ef50f93f4e2cb50d220ffb5f197fcfed3be7ea19ba8544e8e69d",
+    "bytes": 4018,
+    "lines": 107,
+    "dependencies": [
+      "logging",
+      "datetime",
+      "typing",
+      "freqtrade"
+    ],
+    "risk_controls": [
+      "CooldownOrLock"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/low_profit_pairs.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade/blob/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/plugins/protections/low_profit_pairs.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3632_033",
+    "ea_id": "EA-B6-0020",
+    "repo": "freqtrade/freqtrade",
+    "rel_path": "freqtrade/strategy/interface.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade/freqtrade__strategy__interface.py",
+    "license": "GPL-3.0",
+    "commit_sha": "a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7",
+    "author": "freqtrade",
+    "sha256": "be4c5d3eecc1e71ca279277de090dbf8a7236e7a5867a0f71834ccd5160a7513",
+    "bytes": 81631,
+    "lines": 1908,
+    "dependencies": [
+      "logging",
+      "abc",
+      "datetime",
+      "math",
+      "pandas",
+      "pydantic",
+      "freqtrade"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "CooldownOrLock",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "EMA"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/strategy/interface.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade/blob/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/strategy/interface.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3633_034",
+    "ea_id": null,
+    "repo": "freqtrade/freqtrade",
+    "rel_path": "freqtrade/wallets.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade/freqtrade__wallets.py",
+    "license": "GPL-3.0",
+    "commit_sha": "a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7",
+    "author": "freqtrade",
+    "sha256": "6a4809524fbb3ed44afba98ba8bdc7f4d8b79627c25210585ef86165ae263370",
+    "bytes": 21612,
+    "lines": 538,
+    "dependencies": [
+      "logging",
+      "datetime",
+      "typing",
+      "freqtrade"
+    ],
+    "risk_controls": [],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/wallets.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade/blob/a025e7fb3b3acf0e90fd86a9f597aea5b528e1b7/freqtrade/wallets.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3635_035",
+    "ea_id": "EA-B6-0021",
+    "repo": "freqtrade/freqtrade-strategies",
+    "rel_path": "user_data/strategies/BreakEven.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade-strategies/user_data__strategies__BreakEven.py",
+    "license": "GPL-3.0",
+    "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+    "author": "freqtrade",
+    "sha256": "af632fe3b12361c9dc52e7d61ebbcb305a22e78adb580532010d88187a3e4efd",
+    "bytes": 2249,
+    "lines": 69,
+    "dependencies": [
+      "freqtrade",
+      "pandas"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "BreakEven"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade-strategies/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/BreakEven.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade-strategies/blob/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/BreakEven.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3636_036",
+    "ea_id": "EA-B6-0022",
+    "repo": "freqtrade/freqtrade-strategies",
+    "rel_path": "user_data/strategies/FixedRiskRewardLoss.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade-strategies/user_data__strategies__FixedRiskRewardLoss.py",
+    "license": "GPL-3.0",
+    "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+    "author": "freqtrade",
+    "sha256": "338fc39a8f236d0ddb79c0f7e6a1f593be721bdb2a598815347e0883cc7696fc",
+    "bytes": 4925,
+    "lines": 121,
+    "dependencies": [
+      "numpy",
+      "pandas",
+      "freqtrade",
+      "talib",
+      "datetime",
+      "logging"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "BreakEven",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "ATR",
+      "RSI",
+      "SAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade-strategies/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/FixedRiskRewardLoss.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade-strategies/blob/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/FixedRiskRewardLoss.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3637_037",
+    "ea_id": "EA-B6-0023",
+    "repo": "freqtrade/freqtrade-strategies",
+    "rel_path": "user_data/strategies/CustomStoplossWithPSAR.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade-strategies/user_data__strategies__CustomStoplossWithPSAR.py",
+    "license": "GPL-3.0",
+    "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+    "author": "freqtrade",
+    "sha256": "9d20f081adf0c95886afc4b5135ecac00e37c2c6fec7e9ddc64671076d71cd60",
+    "bytes": 3800,
+    "lines": 94,
+    "dependencies": [
+      "numpy",
+      "pandas",
+      "freqtrade",
+      "talib",
+      "datetime"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop"
+    ],
+    "indicators": [
+      "RSI",
+      "PSAR",
+      "SAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade-strategies/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/CustomStoplossWithPSAR.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade-strategies/blob/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/CustomStoplossWithPSAR.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3638_038",
+    "ea_id": "EA-B6-0024",
+    "repo": "freqtrade/freqtrade-strategies",
+    "rel_path": "user_data/strategies/AlmgrenChrissStrategy.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade-strategies/user_data__strategies__AlmgrenChrissStrategy.py",
+    "license": "GPL-3.0",
+    "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+    "author": "freqtrade",
+    "sha256": "b336a714198174b8e652a4115423b37915ee8eacbd89cc412c090b61f4043522",
+    "bytes": 9013,
+    "lines": 234,
+    "dependencies": [
+      "datetime",
+      "math",
+      "pandas",
+      "numpy",
+      "freqtrade",
+      "logging",
+      "talib"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "VolatilityOrRegime",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade-strategies/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/AlmgrenChrissStrategy.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade-strategies/blob/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/AlmgrenChrissStrategy.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3639_039",
+    "ea_id": "EA-B6-0025",
+    "repo": "freqtrade/freqtrade-strategies",
+    "rel_path": "user_data/strategies/TWAPStrategy.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade-strategies/user_data__strategies__TWAPStrategy.py",
+    "license": "GPL-3.0",
+    "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+    "author": "freqtrade",
+    "sha256": "cb565aef94b39b2a716994868ce069cfa169023122f0f1e9fafdb524beb9365b",
+    "bytes": 5513,
+    "lines": 157,
+    "dependencies": [
+      "datetime",
+      "pandas",
+      "freqtrade",
+      "talib"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "SpreadOrSlippageCost",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade-strategies/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/TWAPStrategy.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade-strategies/blob/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/TWAPStrategy.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3640_040",
+    "ea_id": "EA-B6-0026",
+    "repo": "freqtrade/freqtrade-strategies",
+    "rel_path": "user_data/strategies/Strategy001_custom_exit.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade-strategies/user_data__strategies__Strategy001_custom_exit.py",
+    "license": "GPL-3.0",
+    "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+    "author": "freqtrade",
+    "sha256": "d53ac16d0e81b755a19ea83c535f50a6dd0629c76087b822ae399fabeaa5e841",
+    "bytes": 4931,
+    "lines": 143,
+    "dependencies": [
+      "freqtrade",
+      "typing",
+      "functools",
+      "pandas",
+      "talib"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "EMA",
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade-strategies/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/Strategy001_custom_exit.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade-strategies/blob/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/Strategy001_custom_exit.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3641_041",
+    "ea_id": "EA-B6-0027",
+    "repo": "freqtrade/freqtrade-strategies",
+    "rel_path": "user_data/strategies/InformativeSample.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade-strategies/user_data__strategies__InformativeSample.py",
+    "license": "GPL-3.0",
+    "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+    "author": "freqtrade",
+    "sha256": "1a96c6ecf7f6dd2afe086a31a80fd894811a81d88a7a2d814e69c8f3bebee564",
+    "bytes": 4773,
+    "lines": 132,
+    "dependencies": [
+      "freqtrade",
+      "typing",
+      "functools",
+      "pandas",
+      "talib"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop"
+    ],
+    "indicators": [
+      "EMA",
+      "SMA"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade-strategies/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/InformativeSample.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade-strategies/blob/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/InformativeSample.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3642_042",
+    "ea_id": "EA-B6-0028",
+    "repo": "freqtrade/freqtrade-strategies",
+    "rel_path": "user_data/strategies/Supertrend.py",
+    "local_path": "data/ea_kb/sources_batch6/freqtrade__freqtrade-strategies/user_data__strategies__Supertrend.py",
+    "license": "GPL-3.0",
+    "commit_sha": "f3340ce11f5bdf62f598522e64d1f5638eaa13f5",
+    "author": "@juankysoriano (Juan Carlos Soriano)",
+    "sha256": "c73d2dc221e2a52274b20846bed0879212eaca72916948e8c6103f4d4dd8aeea",
+    "bytes": 6448,
+    "lines": 156,
+    "dependencies": [
+      "logging",
+      "freqtrade",
+      "pandas",
+      "talib",
+      "numpy",
+      "technical"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop"
+    ],
+    "indicators": [
+      "SUPERTREND"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/freqtrade/freqtrade-strategies/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/Supertrend.py",
+    "blob_url": "https://github.com/freqtrade/freqtrade-strategies/blob/f3340ce11f5bdf62f598522e64d1f5638eaa13f5/user_data/strategies/Supertrend.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3644_043",
+    "ea_id": "EA-B6-0029",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "TurtleRules/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/TurtleRules____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "of bestselling book Way of the Turtle.",
+    "sha256": "35e4c3cd69010ca81402277693cb6f7deaf52a284153f20f25d4cf605701408a",
+    "bytes": 8142,
+    "lines": 180,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "ATR",
+      "DONCHIAN"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/TurtleRules/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/TurtleRules/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3645_044",
+    "ea_id": "EA-B6-0030",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "Donchian/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/Donchian____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "jesse-ai",
+    "sha256": "fc635b257ad1e12951dc140dae46a63bd37e9abfa5f2d681ef1e754d8ce393fe",
+    "bytes": 1478,
+    "lines": 52,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "PositionSizing"
+    ],
+    "indicators": [
+      "SMA",
+      "DONCHIAN"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/Donchian/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/Donchian/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3646_045",
+    "ea_id": "EA-B6-0031",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "DUAL_THRUST/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/DUAL_THRUST____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "jesse-ai",
+    "sha256": "8dd802e56782ad60e60f11926df1a4924c78c10af6264127168449e50118eef2",
+    "bytes": 3639,
+    "lines": 112,
+    "dependencies": [
+      "jesse",
+      "numpy"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing"
+    ],
+    "indicators": [
+      "ATR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/DUAL_THRUST/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/DUAL_THRUST/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3647_046",
+    "ea_id": "EA-B6-0032",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "IFR2/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/IFR2____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "jesse-ai",
+    "sha256": "082b2925b0f91ad451043518575ad886289b9735d9bd00c884587622579c36dd",
+    "bytes": 2330,
+    "lines": 74,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "PositionSizing"
+    ],
+    "indicators": [
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/IFR2/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/IFR2/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3648_047",
+    "ea_id": "EA-B6-0033",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "KDJstrategy/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/KDJstrategy____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "jesse-ai",
+    "sha256": "ba655717de751c9aab82bc2042f128b4c3a99203ec096f50d51f93f985fc8c8c",
+    "bytes": 1936,
+    "lines": 58,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing"
+    ],
+    "indicators": [
+      "ATR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/KDJstrategy/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/KDJstrategy/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3649_048",
+    "ea_id": "EA-B6-0034",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "MACD_EMA/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/MACD_EMA____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "= \"Connor McDonald",
+    "sha256": "5c0cae71e63a5a510220d60d6bba48ae39a542aa988154eaa13b91f8dd2209a8",
+    "bytes": 2508,
+    "lines": 68,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "PositionSizing"
+    ],
+    "indicators": [
+      "EMA",
+      "MACD"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/MACD_EMA/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/MACD_EMA/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3650_049",
+    "ea_id": "EA-B6-0035",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "MAGen/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/MAGen____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "jesse-ai",
+    "sha256": "4e54ad4d8051900bda92e477fc997d67a4fb7b930f8025fb6f087116488b0316",
+    "bytes": 5042,
+    "lines": 132,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "ATR",
+      "ADX"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/MAGen/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/MAGen/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3651_050",
+    "ea_id": "EA-B6-0036",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "RSI2/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/RSI2____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "jesse-ai",
+    "sha256": "fd463da53b6ac78138a0886268f654973daa569dd2094c6aa96796a8a5015f70",
+    "bytes": 2315,
+    "lines": 67,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "PositionSizing"
+    ],
+    "indicators": [
+      "SMA",
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/RSI2/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/RSI2/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3652_051",
+    "ea_id": "EA-B6-0037",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "SMACrossover/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/SMACrossover____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "FengkieJ (fengkiejunis@gmail.com)",
+    "sha256": "453440d7b934c494934a1c56b3826d94638594f79ad4e4c7faaff36b96d33fae",
+    "bytes": 1809,
+    "lines": 52,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "PositionSizing"
+    ],
+    "indicators": [
+      "SMA"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/SMACrossover/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/SMACrossover/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3653_052",
+    "ea_id": "EA-B6-0038",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "SimpleBollinger/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/SimpleBollinger____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "jesse-ai",
+    "sha256": "746cc0f8644a7fae12089f597448b573d4d482a3855c870d18b4a7bfeb0a5255",
+    "bytes": 1683,
+    "lines": 54,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "PositionSizing"
+    ],
+    "indicators": [
+      "BOLLINGER"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/SimpleBollinger/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/SimpleBollinger/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3654_053",
+    "ea_id": "EA-B6-0039",
+    "repo": "jesse-ai/example-strategies",
+    "rel_path": "TradingView_RSI/__init__.py",
+    "local_path": "data/ea_kb/sources_batch6/jesse-ai__example-strategies/TradingView_RSI____init__.py",
+    "license": "MIT",
+    "commit_sha": "7c91e0a37bf62165790120d730442e4f6eb00364",
+    "author": "jesse-ai",
+    "sha256": "86a0532e427cfe3b4f3ff9fa94c7d007ffb544c96db7fa20613b7ebf724d2769",
+    "bytes": 1764,
+    "lines": 54,
+    "dependencies": [
+      "jesse"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "RSI"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/jesse-ai/example-strategies/7c91e0a37bf62165790120d730442e4f6eb00364/TradingView_RSI/__init__.py",
+    "blob_url": "https://github.com/jesse-ai/example-strategies/blob/7c91e0a37bf62165790120d730442e4f6eb00364/TradingView_RSI/__init__.py"
+  },
+  {
+    "src_id": "SRC_B6_Q-3656_054",
+    "ea_id": "EA-B6-0040",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Sample Break Even/Sample Break Even/Sample Break Even.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Sample_Break_Even__Sample_Break_Even__Sample_Break_Even.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "14c3f99f6e851ce9581bf38a0b72151ff01986cd90d2a939480eff18642328b0",
+    "bytes": 4087,
+    "lines": 111,
+    "dependencies": [
+      "System",
+      "System.Linq",
+      "cAlgo.API"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "BreakEven",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Sample%20Break%20Even/Sample%20Break%20Even/Sample%20Break%20Even.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Sample%20Break%20Even/Sample%20Break%20Even/Sample%20Break%20Even.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3657_055",
+    "ea_id": "EA-B6-0041",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Sample SAR Trailing Stop/Sample SAR Trailing Stop/Sample SAR Trailing Stop.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Sample_SAR_Trailing_Stop__Sample_SAR_Trailing_Stop__Sample_SAR_Trailing_Stop.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "a97e7f2e7bb89f1853b45f60065ca4ef08c7ca2fea01ade3b5b4e7000a6c76a4",
+    "bytes": 3339,
+    "lines": 81,
+    "dependencies": [
+      "cAlgo.API",
+      "cAlgo.API.Indicators"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing"
+    ],
+    "indicators": [
+      "PSAR",
+      "SAR",
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Sample%20SAR%20Trailing%20Stop/Sample%20SAR%20Trailing%20Stop/Sample%20SAR%20Trailing%20Stop.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Sample%20SAR%20Trailing%20Stop/Sample%20SAR%20Trailing%20Stop/Sample%20SAR%20Trailing%20Stop.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3658_056",
+    "ea_id": "EA-B6-0042",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Sample Close Profitable Positions cBot/Sample Close Profitable Positions cBot/Sample Close Profitable Positions cBot.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Sample_Close_Profitable_Positions_cBot__Sample_Close_Profitable_Positions_cBot__Sample_Close_Profitable_Positions_cBot.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "4345b75fc84f3664125b08eeef01cd1d3b3e8c203b7a2031707672f460e719ff",
+    "bytes": 1009,
+    "lines": 29,
+    "dependencies": [
+      "cAlgo.API"
+    ],
+    "risk_controls": [
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Sample%20Close%20Profitable%20Positions%20cBot/Sample%20Close%20Profitable%20Positions%20cBot/Sample%20Close%20Profitable%20Positions%20cBot.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Sample%20Close%20Profitable%20Positions%20cBot/Sample%20Close%20Profitable%20Positions%20cBot/Sample%20Close%20Profitable%20Positions%20cBot.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3659_057",
+    "ea_id": "EA-B6-0043",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Close All On Market Close Sample/Close All On Market Close Sample/Close All On Market Close Sample.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Close_All_On_Market_Close_Sample__Close_All_On_Market_Close_Sample__Close_All_On_Market_Close_Sample.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "33df9875f0090e4b3b87ad6a982ef073f8a9d874db4df3394be68f4d00c9a87d",
+    "bytes": 1469,
+    "lines": 48,
+    "dependencies": [
+      "cAlgo.API",
+      "System",
+      "System.Globalization"
+    ],
+    "risk_controls": [
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Close%20All%20On%20Market%20Close%20Sample/Close%20All%20On%20Market%20Close%20Sample/Close%20All%20On%20Market%20Close%20Sample.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Close%20All%20On%20Market%20Close%20Sample/Close%20All%20On%20Market%20Close%20Sample/Close%20All%20On%20Market%20Close%20Sample.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3660_058",
+    "ea_id": "EA-B6-0044",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Partial Close Sample/Partial Close Sample/Partial Close Sample.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Partial_Close_Sample__Partial_Close_Sample__Partial_Close_Sample.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "a2e6bf9331d224863fc8f1c12a4e24c00a656293bdd05418d1b45dd8f0eba56b",
+    "bytes": 4724,
+    "lines": 117,
+    "dependencies": [
+      "System",
+      "System.Linq",
+      "cAlgo.API",
+      "System.Collections.Generic"
+    ],
+    "risk_controls": [
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Partial%20Close%20Sample/Partial%20Close%20Sample/Partial%20Close%20Sample.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Partial%20Close%20Sample/Partial%20Close%20Sample/Partial%20Close%20Sample.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3661_059",
+    "ea_id": "EA-B6-0045",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Position Execution Sample/Position Execution Sample/Position Execution Sample.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Position_Execution_Sample__Position_Execution_Sample__Position_Execution_Sample.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "3221e7ef3c65d39113161e7e95499551be0ab066f8504a8508fb0778b65cd04e",
+    "bytes": 2672,
+    "lines": 74,
+    "dependencies": [
+      "cAlgo.API",
+      "cAlgo.API.Internals"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Position%20Execution%20Sample/Position%20Execution%20Sample/Position%20Execution%20Sample.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Position%20Execution%20Sample/Position%20Execution%20Sample/Position%20Execution%20Sample.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3662_060",
+    "ea_id": "EA-B6-0046",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Position Modification Sample/Position Modification Sample/Position Modification Sample.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Position_Modification_Sample__Position_Modification_Sample__Position_Modification_Sample.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "fd4c50036833d9e99b1ce9faf7134951bfe26010db8185cde028de0f1c8c7545",
+    "bytes": 3524,
+    "lines": 94,
+    "dependencies": [
+      "cAlgo.API",
+      "System",
+      "System.Linq"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Position%20Modification%20Sample/Position%20Modification%20Sample/Position%20Modification%20Sample.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Position%20Modification%20Sample/Position%20Modification%20Sample/Position%20Modification%20Sample.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3663_061",
+    "ea_id": "EA-B6-0047",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Pending Order Modification Sample/Pending Order Modification Sample/Pending Order Modification Sample.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Pending_Order_Modification_Sample__Pending_Order_Modification_Sample__Pending_Order_Modification_Sample.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "d591c916c4abd62f1fb35f00135dad10de4cf7f4711aa13815bfe3011234ace7",
+    "bytes": 5064,
+    "lines": 124,
+    "dependencies": [
+      "cAlgo.API",
+      "System",
+      "System.Globalization",
+      "System.Linq"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Pending%20Order%20Modification%20Sample/Pending%20Order%20Modification%20Sample/Pending%20Order%20Modification%20Sample.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Pending%20Order%20Modification%20Sample/Pending%20Order%20Modification%20Sample/Pending%20Order%20Modification%20Sample.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3664_062",
+    "ea_id": "EA-B6-0048",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Pending Order Cancelation Sample/Pending Order Cancelation Sample/Pending Order Cancelation Sample.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Pending_Order_Cancelation_Sample__Pending_Order_Cancelation_Sample__Pending_Order_Cancelation_Sample.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "3cc2a79b71917c508093a34729d4d39f689b89700e16c6650fda052dfc76f2c1",
+    "bytes": 1927,
+    "lines": 52,
+    "dependencies": [
+      "cAlgo.API",
+      "System",
+      "System.Linq"
+    ],
+    "risk_controls": [],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Pending%20Order%20Cancelation%20Sample/Pending%20Order%20Cancelation%20Sample/Pending%20Order%20Cancelation%20Sample.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Pending%20Order%20Cancelation%20Sample/Pending%20Order%20Cancelation%20Sample/Pending%20Order%20Cancelation%20Sample.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3665_063",
+    "ea_id": "EA-B6-0049",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Pending Order Placing Sample/Pending Order Placing Sample/Pending Order Placing Sample.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Pending_Order_Placing_Sample__Pending_Order_Placing_Sample__Pending_Order_Placing_Sample.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "ffb6ad1c37df1f4874fb46d6c32da687a2c29d363c3ba207d7d96d5d0bc60b0c",
+    "bytes": 5481,
+    "lines": 131,
+    "dependencies": [
+      "cAlgo.API",
+      "System",
+      "System.Globalization"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Pending%20Order%20Placing%20Sample/Pending%20Order%20Placing%20Sample/Pending%20Order%20Placing%20Sample.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Pending%20Order%20Placing%20Sample/Pending%20Order%20Placing%20Sample/Pending%20Order%20Placing%20Sample.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3666_064",
+    "ea_id": "EA-B6-0050",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/Custom Fitness Functions/Custom Fitness Functions/Custom Fitness Functions.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__Custom_Fitness_Functions__Custom_Fitness_Functions__Custom_Fitness_Functions.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "417688f3a552c81d5b59f8da2cbc02d297d770d4ad596a2ec58ef51d8f9312db",
+    "bytes": 3816,
+    "lines": 95,
+    "dependencies": [
+      "cAlgo.API",
+      "cAlgo.API.Indicators",
+      "System",
+      "System.Linq"
+    ],
+    "risk_controls": [
+      "PositionSizing",
+      "DrawdownGuard",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Custom%20Fitness%20Functions/Custom%20Fitness%20Functions/Custom%20Fitness%20Functions.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/Custom%20Fitness%20Functions/Custom%20Fitness%20Functions/Custom%20Fitness%20Functions.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3667_065",
+    "ea_id": "EA-B6-0051",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/StopTriggerMethod Sample/StopTriggerMethod Sample/StopTriggerMethod Sample.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__StopTriggerMethod_Sample__StopTriggerMethod_Sample__StopTriggerMethod_Sample.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "16e6babc9568b20f8b4c1bd386b06eb7e325b34f73b1d168b726c180010fccc4",
+    "bytes": 2150,
+    "lines": 47,
+    "dependencies": [
+      "cAlgo.API"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/StopTriggerMethod%20Sample/StopTriggerMethod%20Sample/StopTriggerMethod%20Sample.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/StopTriggerMethod%20Sample/StopTriggerMethod%20Sample/StopTriggerMethod%20Sample.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3668_066",
+    "ea_id": "EA-B6-0052",
+    "repo": "spotware/ctrader-algo-samples",
+    "rel_path": "Robots/BarClosed Example/BarClosed Example/BarClosed Example.cs",
+    "local_path": "data/ea_kb/sources_batch6/spotware__ctrader-algo-samples/Robots__BarClosed_Example__BarClosed_Example__BarClosed_Example.cs",
+    "license": "MIT",
+    "commit_sha": "0bcec493f9756d9e7c1d49a50629df8e0be7b8dd",
+    "author": "spotware",
+    "sha256": "2eca10f9690e1a5c10d4c103e28794150476bcd591aac5c90c1f88f44d0a00a3",
+    "bytes": 772,
+    "lines": 28,
+    "dependencies": [
+      "System",
+      "System.Collections.Generic",
+      "System.Linq",
+      "System.Text",
+      "cAlgo.API",
+      "cAlgo.API.Collections",
+      "cAlgo.API.Indicators",
+      "cAlgo.API.Internals"
+    ],
+    "risk_controls": [
+      "ScheduleOrMarketClose"
+    ],
+    "indicators": [
+      "VAR"
+    ],
+    "raw_url": "https://raw.githubusercontent.com/spotware/ctrader-algo-samples/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/BarClosed%20Example/BarClosed%20Example/BarClosed%20Example.cs",
+    "blob_url": "https://github.com/spotware/ctrader-algo-samples/blob/0bcec493f9756d9e7c1d49a50629df8e0be7b8dd/Robots/BarClosed%20Example/BarClosed%20Example/BarClosed%20Example.cs"
+  },
+  {
+    "src_id": "SRC_B6_Q-3670_067",
+    "ea_id": "EA-B6-0053",
+    "repo": "EarnForex/AutoTrading-Scheduler",
+    "rel_path": "MQL4/Experts/AutoTrading Scheduler/AutoTrading Scheduler.mq4",
+    "local_path": "data/ea_kb/sources_batch6/EarnForex__AutoTrading-Scheduler/MQL4__Experts__AutoTrading_Scheduler__AutoTrading_Scheduler.mq4",
+    "license": "Apache-2.0",
+    "commit_sha": "a7e6dd33303a4043b961092946a5b8e6b568b4f0",
+    "author": "EarnForex.com",
+    "sha256": "8cfdbc7ece24c4046f7fb723db2b588ceba88325685b57decd9a7f3426ba8152",
+    "bytes": 13411,
+    "lines": 292,
+    "dependencies": [
+      "AutoTrading Scheduler.mqh"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "ScheduleOrMarketClose",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/EarnForex/AutoTrading-Scheduler/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL4/Experts/AutoTrading%20Scheduler/AutoTrading%20Scheduler.mq4",
+    "blob_url": "https://github.com/EarnForex/AutoTrading-Scheduler/blob/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL4/Experts/AutoTrading%20Scheduler/AutoTrading%20Scheduler.mq4"
+  },
+  {
+    "src_id": "SRC_B6_Q-3671_068",
+    "ea_id": null,
+    "repo": "EarnForex/AutoTrading-Scheduler",
+    "rel_path": "MQL4/Experts/AutoTrading Scheduler/AutoTrading Scheduler.mqh",
+    "local_path": "data/ea_kb/sources_batch6/EarnForex__AutoTrading-Scheduler/MQL4__Experts__AutoTrading_Scheduler__AutoTrading_Scheduler.mqh",
+    "license": "Apache-2.0",
+    "commit_sha": "a7e6dd33303a4043b961092946a5b8e6b568b4f0",
+    "author": "EarnForex",
+    "sha256": "2bc57977c578bd2872edd22c5fe5f25ad3cc89d7780ab0db6a19eb7c78782d3c",
+    "bytes": 83099,
+    "lines": 2063,
+    "dependencies": [
+      "WinUser32.mqh"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "ScheduleOrMarketClose",
+      "SpreadOrSlippageCost",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/EarnForex/AutoTrading-Scheduler/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL4/Experts/AutoTrading%20Scheduler/AutoTrading%20Scheduler.mqh",
+    "blob_url": "https://github.com/EarnForex/AutoTrading-Scheduler/blob/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL4/Experts/AutoTrading%20Scheduler/AutoTrading%20Scheduler.mqh"
+  },
+  {
+    "src_id": "SRC_B6_Q-3672_069",
+    "ea_id": null,
+    "repo": "EarnForex/AutoTrading-Scheduler",
+    "rel_path": "MQL4/Experts/AutoTrading Scheduler/Defines.mqh",
+    "local_path": "data/ea_kb/sources_batch6/EarnForex__AutoTrading-Scheduler/MQL4__Experts__AutoTrading_Scheduler__Defines.mqh",
+    "license": "Apache-2.0",
+    "commit_sha": "a7e6dd33303a4043b961092946a5b8e6b568b4f0",
+    "author": "EarnForex",
+    "sha256": "61be8caf5d829fd2af4c34036a95a406573f6a0ee2ba53a2505d726af3e7e2af",
+    "bytes": 3215,
+    "lines": 110,
+    "dependencies": [
+      "Controls\\Dialog.mqh",
+      "Controls\\CheckBox.mqh",
+      "Controls\\Label.mqh",
+      "Controls\\RadioGroup.mqh",
+      "Arrays\\List.mqh"
+    ],
+    "risk_controls": [],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/EarnForex/AutoTrading-Scheduler/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL4/Experts/AutoTrading%20Scheduler/Defines.mqh",
+    "blob_url": "https://github.com/EarnForex/AutoTrading-Scheduler/blob/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL4/Experts/AutoTrading%20Scheduler/Defines.mqh"
+  },
+  {
+    "src_id": "SRC_B6_Q-3673_070",
+    "ea_id": "EA-B6-0054",
+    "repo": "EarnForex/AutoTrading-Scheduler",
+    "rel_path": "MQL5/Experts/AutoTrading Scheduler/AutoTrading Scheduler.mq5",
+    "local_path": "data/ea_kb/sources_batch6/EarnForex__AutoTrading-Scheduler/MQL5__Experts__AutoTrading_Scheduler__AutoTrading_Scheduler.mq5",
+    "license": "Apache-2.0",
+    "commit_sha": "a7e6dd33303a4043b961092946a5b8e6b568b4f0",
+    "author": "EarnForex.com",
+    "sha256": "d7cb595be1a4b9016b72db8d73c4c7063857e4756524fc375490456d60efd7fd",
+    "bytes": 14129,
+    "lines": 313,
+    "dependencies": [
+      "AutoTrading Scheduler.mqh"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "ScheduleOrMarketClose",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/EarnForex/AutoTrading-Scheduler/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL5/Experts/AutoTrading%20Scheduler/AutoTrading%20Scheduler.mq5",
+    "blob_url": "https://github.com/EarnForex/AutoTrading-Scheduler/blob/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL5/Experts/AutoTrading%20Scheduler/AutoTrading%20Scheduler.mq5"
+  },
+  {
+    "src_id": "SRC_B6_Q-3674_071",
+    "ea_id": null,
+    "repo": "EarnForex/AutoTrading-Scheduler",
+    "rel_path": "MQL5/Experts/AutoTrading Scheduler/AutoTrading Scheduler.mqh",
+    "local_path": "data/ea_kb/sources_batch6/EarnForex__AutoTrading-Scheduler/MQL5__Experts__AutoTrading_Scheduler__AutoTrading_Scheduler.mqh",
+    "license": "Apache-2.0",
+    "commit_sha": "a7e6dd33303a4043b961092946a5b8e6b568b4f0",
+    "author": "EarnForex",
+    "sha256": "9763525f21162c10b88fca767e5793ec9822ce681feb537295b9036f64eacca6",
+    "bytes": 87622,
+    "lines": 2221,
+    "dependencies": [
+      "WinUser32.mqh"
+    ],
+    "risk_controls": [
+      "HardSL",
+      "TrailingStop",
+      "PositionSizing",
+      "ScheduleOrMarketClose",
+      "SpreadOrSlippageCost",
+      "PartialOrBasketExit"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/EarnForex/AutoTrading-Scheduler/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL5/Experts/AutoTrading%20Scheduler/AutoTrading%20Scheduler.mqh",
+    "blob_url": "https://github.com/EarnForex/AutoTrading-Scheduler/blob/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL5/Experts/AutoTrading%20Scheduler/AutoTrading%20Scheduler.mqh"
+  },
+  {
+    "src_id": "SRC_B6_Q-3675_072",
+    "ea_id": null,
+    "repo": "EarnForex/AutoTrading-Scheduler",
+    "rel_path": "MQL5/Experts/AutoTrading Scheduler/Defines.mqh",
+    "local_path": "data/ea_kb/sources_batch6/EarnForex__AutoTrading-Scheduler/MQL5__Experts__AutoTrading_Scheduler__Defines.mqh",
+    "license": "Apache-2.0",
+    "commit_sha": "a7e6dd33303a4043b961092946a5b8e6b568b4f0",
+    "author": "EarnForex",
+    "sha256": "18c16b859bffe02054170bfb8034881eb2c1f6c115406e1150ddd46fa70aae89",
+    "bytes": 3115,
+    "lines": 110,
+    "dependencies": [
+      "Controls\\Dialog.mqh",
+      "Controls\\CheckBox.mqh",
+      "Controls\\Label.mqh",
+      "Controls\\RadioGroup.mqh",
+      "Arrays\\List.mqh"
+    ],
+    "risk_controls": [],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/EarnForex/AutoTrading-Scheduler/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL5/Experts/AutoTrading%20Scheduler/Defines.mqh",
+    "blob_url": "https://github.com/EarnForex/AutoTrading-Scheduler/blob/a7e6dd33303a4043b961092946a5b8e6b568b4f0/MQL5/Experts/AutoTrading%20Scheduler/Defines.mqh"
+  },
+  {
+    "src_id": "SRC_B6_Q-3677_073",
+    "ea_id": null,
+    "repo": "EarnForex/Spread",
+    "rel_path": "Spread.mq4",
+    "local_path": "data/ea_kb/sources_batch6/EarnForex__Spread/Spread.mq4",
+    "license": "Apache-2.0",
+    "commit_sha": "39135ed73ee647e98ddab6cccdc3e9905273f651",
+    "author": "Copyright \u00a9 2009-2022, www.EarnForex.com",
+    "sha256": "152ac157f93572cd7e7ad62651fb7939574aa522f7df2079230e7c74a37cbcb4",
+    "bytes": 5923,
+    "lines": 142,
+    "dependencies": [],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/EarnForex/Spread/39135ed73ee647e98ddab6cccdc3e9905273f651/Spread.mq4",
+    "blob_url": "https://github.com/EarnForex/Spread/blob/39135ed73ee647e98ddab6cccdc3e9905273f651/Spread.mq4"
+  },
+  {
+    "src_id": "SRC_B6_Q-3678_074",
+    "ea_id": null,
+    "repo": "EarnForex/Spread",
+    "rel_path": "Spread.mq5",
+    "local_path": "data/ea_kb/sources_batch6/EarnForex__Spread/Spread.mq5",
+    "license": "Apache-2.0",
+    "commit_sha": "39135ed73ee647e98ddab6cccdc3e9905273f651",
+    "author": "Copyright \u00a9 2009-2022, www.EarnForex.com",
+    "sha256": "4dafd49c58e76443be0816a3b4148f71b01db9ad760f6d4833732517b5e47e39",
+    "bytes": 6909,
+    "lines": 152,
+    "dependencies": [],
+    "risk_controls": [
+      "HardSL",
+      "PositionSizing",
+      "SpreadOrSlippageCost"
+    ],
+    "indicators": [],
+    "raw_url": "https://raw.githubusercontent.com/EarnForex/Spread/39135ed73ee647e98ddab6cccdc3e9905273f651/Spread.mq5",
+    "blob_url": "https://github.com/EarnForex/Spread/blob/39135ed73ee647e98ddab6cccdc3e9905273f651/Spread.mq5"
+  }
+]
