@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.5.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.6.zip
 """
 from __future__ import annotations
 
@@ -433,6 +433,22 @@ DATASETS = [
                   "Form 4 rows are stored but NOT parsed into insider transactions yet (declared gap)."],
          use_for=["valuation ratios", "earnings-reaction studies", "screener joins", "insider-flow work"],
          leak_rule="A statement is known on `filed`, not on `period_end` (typically 30-60 days later)."),
+    dict(id="insider_transactions", src=["data/sec/insider_transactions.csv",
+                                          "data/sec/MANIFEST_INSIDER.json"],
+         kind="fundamental", grade="A",
+         title="Form 4 insider transactions, parsed from EDGAR XML (1,652 rows)",
+         card="Every non-derivative transaction inside the Form 4 filings we hold: insider name, role "
+              "(director/officer/10% owner), transaction date and FILING date, code (P purchase, S sale, "
+              "A grant, M exercise, F tax), shares, price, dollar value and shares owned after. The only "
+              "non-price information source in the pack that was collected before it was usable.",
+         caveats=["Only Form 4s inside the last-25-filings window per covered company, so the panel is "
+                  "short (35 purchases vs 969 sales — a real sample needs years of filings).",
+                  "Use `filed` as available_from: Form 4 is filed up to 2 business days after the trade.",
+                  "Grants (A) and option exercises (M) are NOT purchases; only P and S measure money flow.",
+                  "No split adjustment; 172 of 748 filings could not be parsed (recorded in the manifest)."],
+         use_for=["insider-cluster studies (needs more history first)", "narrative context on a name",
+                  "sanity check on management behaviour"],
+         leak_rule="Known on `filed`, never on `transaction_date`."),
     dict(id="stock_screener", src=["data/screener/nasdaq_all.csv", "data/screener/screener_latest.csv",
                                    "data/screener/MANIFEST_SCREENER.json"],
          kind="screener", grade="C",
@@ -569,7 +585,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.5",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.6",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -671,7 +687,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.5.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.6.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

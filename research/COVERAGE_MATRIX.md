@@ -15,7 +15,7 @@ source exists. "Gap" means the honest answer is *not available for free*; do not
 | 8 | **News API** | covered | 15 direct RSS feeds + Google News RSS aggregation by topic and by country edition; per-day numeric pressure series | `data/news/*` | intraday |
 | 9 | **Financial statements** | covered (top 60) | see #3; plus filing metadata (form type, filed date, period, accession, primary document) | `data/sec/filings.csv` | as filed |
 | 10 | **Economic calendar** | covered | FOMC dates 1990-2026, Treasury auctions (bid-to-cover), OPEX, month/quarter end, NFP rule, VIX-onset, shocks; ForexFactory XML for the current+next week; BLS/BEA/Fed release schedules | `data/events/`, `data/collect/econ_calendar.csv` | daily |
-| 11 | **SEC filings** | covered (top 60) | last 25 filings per company including 10-K/10-Q/8-K/**Form 4 (insider)** — the Form 4 rows are stored but **not parsed** into insider transactions yet (explicit gap) | `data/sec/filings.csv` | daily |
+| 11 | **SEC filings** | covered (top 60) | last 25 filings per company (10-K/10-Q/8-K) **plus Form 4 insider transactions now parsed**: 1,652 transactions, 347 insiders, 35 purchases / 969 sales, with filing dates | `data/sec/filings.csv`, `data/sec/insider_transactions.csv` | daily |
 | 12 | **Stock screener** | covered | 7,301 NYSE/Nasdaq symbols with market cap, sector, industry, country, last sale, **joined to technicals and to as-filed fundamentals with staleness columns** (`fund_age_days`, `filing_age_days`) | `data/screener/screener_latest.csv`, `data/screener/nasdaq_all.csv` | daily |
 | 13 | **Technical indicators** | covered | same as #2, with a column dictionary in `data/technicals/MANIFEST_TECH.json` (category per column: momentum / volatility / trend / volume) | `data/technicals/` | daily |
 
@@ -27,11 +27,11 @@ source exists. "Gap" means the honest answer is *not available for free*; do not
 | **Point-in-time fundamentals (vintages)** | as-filed XBRL is revision-free, so fundamental backtests carry restatement bias | `filed` dates are stored so a lagged version can be built later |
 | **Analyst estimates / guidance** | needed for "did it beat expectations" rather than "did EPS rise" | none free; the gap is stated in every fundamental caption |
 | **Real-time (sub-second) prices** | latency-sensitive strategies | one-bar execution model documented in `INTRADAY_REALITY.md` |
-| **Parsed insider transactions (Form 4)** | a genuinely interesting, free signal | filings are stored; parsing is a concrete next task (see below) |
+| **Long insider history** | Form 4 is parsed now, but only inside the current 25-filing window (35 purchases), so no cluster study is possible yet | daily collection accumulates it; revisit after ~6 months |
 
 ## The three next tasks this matrix exposes, in value order
-1. **Parse Form 4 filings into an insider-buying dataset.** It is free, it is genuinely non-price
-   information, and it is the only category in the list we hold raw but have not turned into numbers.
+1. **Accumulate the insider panel.** Form 4 parsing is done (`scripts/build_insider.py`), but 35 purchases
+   cannot support a study; the daily collector must keep adding filings until there are hundreds.
 2. **Build a lagged (point-in-time) fundamental panel** using `filed` dates, so a fundamental backtest is
    not silently restated.
 3. **Extend the stock panel past 120 names** and use it for the cross-section tests that the 68-ETF panel

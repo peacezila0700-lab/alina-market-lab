@@ -6,8 +6,8 @@ panel, 5-instrument execution book, 68-ETF cross-section, CBOE term structure, 3
 and now 23 years of hourly FX with BOTH bid and ask.
 
 ## Drive (live)
-- **v2.5 `1ZiC93GExcWMwpjfqsWkHisNZSNAMeIGc`** — 46 datasets / 518 files / 68.8 MB. Current.
-- v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.6 `1YVDQQpvQr1I_War2Ta78xJk75DUIqRkt`** — 47 datasets / 522 files / 68.9 MB. Current.
+- v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
 ## Shipped this session (chronological)
 1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
@@ -23,7 +23,10 @@ and now 23 years of hourly FX with BOTH bid and ask.
    (top 60: SEC XBRL as-filed + 10-K/10-Q/8-K/Form 4 filings), `build_screener.py` (7,301 symbols joined,
    staleness columns), `fetch_news_world.py` (1,294 headlines / 425 outlets / 16 country editions),
    `fetch_worldbank.py` (22 economies × 9 indicators 1990-2025), `research/COVERAGE_MATRIX.md`.
-7. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
+7. **`scripts/build_insider.py`** — Form 4 XML parsed from EDGAR: 1,652 transactions, 347 insiders,
+   35 purchases vs 969 sales. Sample too small for a study yet (only 4 purchases have price history);
+   the daily collector must accumulate filings. Field-level staleness (`filed`) is the leak rule.
+8. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
    levels, VIX-curve state + conditioned base rates, carry, headlines, 12 nearest historical states with
    realised next-5/21-day outcomes). This is the file to feed a local model for per-day/per-event work.
    Intraday CSVs gzipped (79 MB → 21 MB) after confirming they are in the pack on Drive.

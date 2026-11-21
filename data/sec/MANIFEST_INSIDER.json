@@ -1,0 +1,12 @@
+{
+  "built_utc": "2026-11-21T03:22:28+00:00",
+  "form4_filings_parsed": 748,
+  "failed": 172,
+  "rows": 1652,
+  "caveats": [
+    "Only Form 4s inside the last-25-filings window of the covered companies.",
+    "A backtest must use `filed`, not `transaction_date` (Form 4 is filed up to 2 business days after the trade).",
+    "Grants (A) and exercises (M) are not purchases; only P and S measure money flow.",
+    "No split adjustment."
+  ]
+}
