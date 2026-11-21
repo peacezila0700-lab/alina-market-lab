@@ -1,0 +1,124 @@
+{
+  "generated_utc": "2026-11-21T15:16:16.893953+00:00",
+  "experiment": "EXP-0032",
+  "active_only": {
+    "firms": 317,
+    "results": {
+      "F_NEG_ACCRUALS": {
+        "ls_5bp_all": 0.747,
+        "ls_10bp_is": 0.89,
+        "ls_10bp_oos": 0.572,
+        "ls_10bp_all": 0.729,
+        "ls_20bp_all": 0.693,
+        "ls_10bp_maxdd_pct": -8.34,
+        "lo_10bp_all": 1.222,
+        "perm_pct_is": 99.5,
+        "perm_pct_oos": 92.5
+      },
+      "F_CFO_ASSETS": {
+        "ls_5bp_all": -0.051,
+        "ls_10bp_is": 0.326,
+        "ls_10bp_oos": -0.623,
+        "ls_10bp_all": -0.061,
+        "ls_20bp_all": -0.081,
+        "ls_10bp_maxdd_pct": -21.38,
+        "lo_10bp_all": 1.117,
+        "perm_pct_is": 75.0,
+        "perm_pct_oos": 10.5
+      },
+      "F_REV_YOY": {
+        "ls_5bp_all": 0.361,
+        "ls_10bp_is": 0.206,
+        "ls_10bp_oos": 0.505,
+        "ls_10bp_all": 0.349,
+        "ls_20bp_all": 0.326,
+        "ls_10bp_maxdd_pct": -18.7,
+        "lo_10bp_all": 1.157,
+        "perm_pct_is": 76.0,
+        "perm_pct_oos": 90.0
+      },
+      "F_QUALITY_COMP": {
+        "ls_5bp_all": -0.271,
+        "ls_10bp_is": 0.03,
+        "ls_10bp_oos": -0.689,
+        "ls_10bp_all": -0.281,
+        "ls_20bp_all": -0.301,
+        "ls_10bp_maxdd_pct": -24.29,
+        "lo_10bp_all": 1.073,
+        "perm_pct_is": 60.0,
+        "perm_pct_oos": 6.5
+      },
+      "F_SECTOR_NEUT_ACCRUALS": {
+        "ls_5bp_all": 0.471,
+        "ls_10bp_is": 0.698,
+        "ls_10bp_oos": 0.227,
+        "ls_10bp_all": 0.442,
+        "ls_20bp_all": 0.382,
+        "ls_10bp_maxdd_pct": -10.68,
+        "lo_10bp_all": 1.268,
+        "perm_pct_is": 98.5,
+        "perm_pct_oos": 72.5
+      }
+    }
+  },
+  "survivorship_augmented": {
+    "firms": 344,
+    "results": {
+      "F_NEG_ACCRUALS": {
+        "ls_5bp_all": 0.596,
+        "ls_10bp_is": 0.742,
+        "ls_10bp_oos": 0.418,
+        "ls_10bp_all": 0.579,
+        "ls_20bp_all": 0.544,
+        "ls_10bp_maxdd_pct": -8.16,
+        "lo_10bp_all": 1.131,
+        "perm_pct_is": 97.0,
+        "perm_pct_oos": 75.0
+      },
+      "F_CFO_ASSETS": {
+        "ls_5bp_all": 0.095,
+        "ls_10bp_is": 0.292,
+        "ls_10bp_oos": -0.205,
+        "ls_10bp_all": 0.085,
+        "ls_20bp_all": 0.067,
+        "ls_10bp_maxdd_pct": -16.97,
+        "lo_10bp_all": 1.113,
+        "perm_pct_is": 76.0,
+        "perm_pct_oos": 41.0
+      },
+      "F_REV_YOY": {
+        "ls_5bp_all": 0.351,
+        "ls_10bp_is": 0.21,
+        "ls_10bp_oos": 0.482,
+        "ls_10bp_all": 0.34,
+        "ls_20bp_all": 0.316,
+        "ls_10bp_maxdd_pct": -18.24,
+        "lo_10bp_all": 1.103,
+        "perm_pct_is": 78.0,
+        "perm_pct_oos": 75.5
+      },
+      "F_QUALITY_COMP": {
+        "ls_5bp_all": -0.174,
+        "ls_10bp_is": 0.028,
+        "ls_10bp_oos": -0.462,
+        "ls_10bp_all": -0.184,
+        "ls_20bp_all": -0.204,
+        "ls_10bp_maxdd_pct": -18.99,
+        "lo_10bp_all": 1.078,
+        "perm_pct_is": 56.0,
+        "perm_pct_oos": 27.0
+      },
+      "F_SECTOR_NEUT_ACCRUALS": {
+        "ls_5bp_all": 0.393,
+        "ls_10bp_is": 0.823,
+        "ls_10bp_oos": 0.011,
+        "ls_10bp_all": 0.363,
+        "ls_20bp_all": 0.305,
+        "ls_10bp_maxdd_pct": -10.12,
+        "lo_10bp_all": 1.186,
+        "perm_pct_is": 100.0,
+        "perm_pct_oos": 61.0
+      }
+    }
+  }
+}

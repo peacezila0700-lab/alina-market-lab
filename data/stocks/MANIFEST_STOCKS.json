@@ -382,7 +382,8 @@
       "status": "ok",
       "rows": 1720,
       "first": "2020-01-21",
-      "last": "2026-11-20"
+      "last": "2026-11-20",
+      "asset_class_warning": "Comcast Holdings ZONES (convertible/exchangeable debt note, 64.4% zero-vol days; exclude from common equity panels)"
     },
     "IBM": {
       "status": "ok",

@@ -131,6 +131,55 @@ def test_registries_and_v218_meta_labeling_experiments() -> None:
     assert wf["5_VolTarget12_Meta_Cash"]["net"]["max_dd_pct"] > wf["6_VolTarget12_Meta_TLT_Rot"]["net"]["max_dd_pct"]
 
 
+def test_v219_cloud_data_upgrades_and_cleanups() -> None:
+    # Broad panel includes TLT & post-close 2026-11-20 SPY=689.81
+    tlt = pd.read_csv(ROOT / "data" / "broad" / "TLT.csv")
+    spy = pd.read_csv(ROOT / "data" / "broad" / "SPY.csv")
+    assert len(tlt) >= 6100 and "adjclose" in tlt.columns
+    assert str(spy["date"].iloc[-1]) == "2026-11-20" and abs(float(spy["close"].iloc[-1]) - 689.81) < 0.05
+
+    # Central bank EFFR 100% backfilled via FRED DFF
+    cb = pd.read_csv(ROOT / "data" / "macro" / "central_bank_rates_daily.csv")
+    assert int(cb["effr"].isna().sum()) == 0
+
+    # COT deduplicated (0 duplicates)
+    cot_f = pd.read_csv(ROOT / "data" / "cot" / "cot_features.csv")
+    assert int(cot_f.duplicated(["instrument", "report_date"]).sum()) == 0
+
+    # Event calendar extends through 2027 with official CB meetings
+    ev = pd.read_csv(ROOT / "data" / "events" / "event_calendar_full.csv")
+    assert str(ev["date"].max()) >= "2027-12-31"
+    assert {"FOMC", "ECB", "BOE", "BOJ"}.issubset(set(ev[ev["date"].astype(str).str.startswith("2027")]["event"]))
+
+    # Intraday H1 crossed spreads fixed & Deribit funding 0 gaps
+    for pair in ("EURUSD", "USDJPY"):
+        df_h = pd.read_csv(ROOT / "data" / "intraday" / f"{pair}_H1_bidask.csv.gz")
+        assert int((df_h["spread_close_pips"] < 0).sum()) == 0
+    for sym in ("BTC", "ETH"):
+        df_d = pd.read_csv(ROOT / "data" / "microstructure" / f"deribit_{sym}_funding_1h.csv.gz")
+        ts = pd.to_datetime(df_d["ts"], format="ISO8601", utc=True)
+        assert int((ts.diff() > pd.Timedelta(hours=1)).sum()) == 0
+
+    # Binance Vision 2020-2026 & SEC Delisted PIT zero-leak
+    bv = pd.read_csv(ROOT / "data" / "crypto_vision" / "binance_BTCUSDT_um_perp_1h.csv.gz")
+    assert len(bv) >= 59000 and str(bv["ts_utc"].iloc[0]).startswith("2020-01-01")
+    pdel = pd.read_csv(ROOT / "data" / "sec" / "pit_fundamentals_delisted.csv")
+    assert pdel["ticker"].nunique() >= 25
+    assert int((pd.to_datetime(pdel["available_from"]) < pd.to_datetime(pdel["latest_period_end"])).sum()) == 0
+
+
+def test_exp0032_0033_survivorship_and_total_return() -> None:
+    e32 = json.loads((ROOT / "research" / "artifacts" / "exp0032_survivorship_free_sec_pit.json").read_text())
+    assert e32["survivorship_augmented"]["firms"] >= e32["active_only"]["firms"] + 25
+    # Survivorship bias test confirms active-only overstated F_NEG_ACCRUALS Sharpe
+    assert e32["survivorship_augmented"]["results"]["F_NEG_ACCRUALS"]["ls_10bp_all"] < e32["active_only"]["results"]["F_NEG_ACCRUALS"]["ls_10bp_all"]
+
+    e33 = json.loads((ROOT / "research" / "artifacts" / "exp0033_total_return_tiingo_overlay.json").read_text())
+    tr = e33["total_return_results"]
+    assert tr["5_VolTarget12_Meta_Cash"]["cash_bil_etf"]["calmar_cagr"] > tr["1_SPY_Buy_And_Hold"]["cash_bil_etf"]["calmar_cagr"]
+    assert tr["5_VolTarget12_Meta_Cash"]["cash_bil_etf"]["max_dd_pct"] > tr["6_VolTarget12_Meta_TLT_Rot"]["cash_bil_etf"]["max_dd_pct"]
+
+
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_") and callable(v)]
     for fn in tests:

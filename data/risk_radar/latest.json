@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-21T12:37:08+00:00",
+  "generated_utc": "2026-11-21T15:18:53+00:00",
   "run_date": "2026-11-21",
   "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).",
   "overall_risk_classification": "HIGH",
@@ -142,7 +142,7 @@
         "upcoming_7d_count": 0,
         "events": []
       },
-      "missing_data_warning": "Note: ECB/BoE 2027 dates require annual calendar extension after Dec 2026."
+      "missing_data_warning": null
     },
     "macro_rates": {
       "data_source": "data/macro/central_bank_rates_daily.csv (ECB + BoE + NYFed EFFR)",
@@ -181,7 +181,7 @@
       "missing_data_warning": null
     },
     "crypto_funding_basis": {
-      "data_source": "data/microstructure/deribit_BTC_funding_1h.csv.gz + okx_BTCUSDT_funding_deep.csv",
+      "data_source": "data/microstructure/deribit_BTC_funding_1h.csv.gz + data/crypto_vision/ + okx_BTCUSDT_funding_deep.csv",
       "last_updated": "2026-11-21",
       "age_days": 0,
       "freshness_status": "FRESH",
@@ -194,7 +194,7 @@
         "deribit_btc_index": 58820.48,
         "okx_btc_24h_apr_pct": -0.46
       },
-      "missing_data_warning": "OKX public funding API limited to ~93d; Binance (HTTP 451) & Bybit (HTTP 403) blocked in sandbox."
+      "missing_data_warning": null
     }
   },
   "risk_meta_model": {

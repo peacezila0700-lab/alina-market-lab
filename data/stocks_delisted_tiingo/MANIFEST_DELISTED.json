@@ -1,0 +1,277 @@
+{
+  "source": "Tiingo Daily API (personal-research-only)",
+  "count_requested": 30,
+  "count_ok": 30,
+  "symbols": {
+    "SIVBQ": {
+      "status": "ok",
+      "rows": 3932,
+      "first": "2010-01-04",
+      "last": "2026-11-20",
+      "first_close": 42.98,
+      "last_close": 0.006,
+      "exchange": "PINK"
+    },
+    "FRCB": {
+      "status": "ok",
+      "rows": 4012,
+      "first": "2010-12-09",
+      "last": "2026-11-20",
+      "first_close": 27.92,
+      "last_close": 0.0003,
+      "exchange": "PINK"
+    },
+    "SBNY": {
+      "status": "ok",
+      "rows": 4248,
+      "first": "2010-01-04",
+      "last": "2026-11-20",
+      "first_close": 32.32,
+      "last_close": 0.2,
+      "exchange": "PINK"
+    },
+    "BBBYQ": {
+      "status": "ok",
+      "rows": 3459,
+      "first": "2010-01-04",
+      "last": "2023-09-29",
+      "first_close": 39.03,
+      "last_close": 0.0789,
+      "exchange": "PINK"
+    },
+    "RADCQ": {
+      "status": "ok",
+      "rows": 3887,
+      "first": "2010-01-04",
+      "last": "2026-11-20",
+      "first_close": 1.49,
+      "last_close": 0.01,
+      "exchange": "PINK"
+    },
+    "WEWKQ": {
+      "status": "ok",
+      "rows": 915,
+      "first": "2020-10-21",
+      "last": "2024-06-11",
+      "first_close": 9.8,
+      "last_close": 0.06,
+      "exchange": "EXPM"
+    },
+    "NKLA": {
+      "status": "ok",
+      "rows": 1681,
+      "first": "2018-06-11",
+      "last": "2025-02-25",
+      "first_close": 9.58,
+      "last_close": 0.183,
+      "exchange": "NASDAQ"
+    },
+    "SAVEQ": {
+      "status": "ok",
+      "rows": 270,
+      "first": "2024-11-19",
+      "last": "2026-11-20",
+      "first_close": 0.1501,
+      "last_close": 0.465,
+      "exchange": "PINK"
+    },
+    "TWTR": {
+      "status": "ok",
+      "rows": 2260,
+      "first": "2013-11-07",
+      "last": "2022-10-28",
+      "first_close": 44.9,
+      "last_close": 53.7,
+      "exchange": "NYSE"
+    },
+    "ATVI": {
+      "status": "ok",
+      "rows": 3469,
+      "first": "2010-01-04",
+      "last": "2023-10-13",
+      "first_close": 11.3,
+      "last_close": 94.42,
+      "exchange": "NASDAQ"
+    },
+    "WBA": {
+      "status": "ok",
+      "rows": 3938,
+      "first": "2010-01-04",
+      "last": "2025-08-28",
+      "first_close": 37.3,
+      "last_close": 11.98,
+      "exchange": "NASDAQ"
+    },
+    "DISH": {
+      "status": "ok",
+      "rows": 3524,
+      "first": "2010-01-04",
+      "last": "2024-01-09",
+      "first_close": 21.18,
+      "last_close": 5.77,
+      "exchange": "NASDAQ"
+    },
+    "MRO": {
+      "status": "ok",
+      "rows": 3749,
+      "first": "2010-01-04",
+      "last": "2024-11-22",
+      "first_close": 32.11,
+      "last_close": 28.55,
+      "exchange": "NYSE"
+    },
+    "HES": {
+      "status": "ok",
+      "rows": 3909,
+      "first": "2010-01-04",
+      "last": "2025-07-18",
+      "first_close": 63.16,
+      "last_close": 148.97,
+      "exchange": "NYSE"
+    },
+    "DFS": {
+      "status": "ok",
+      "rows": 3867,
+      "first": "2010-01-04",
+      "last": "2025-05-16",
+      "first_close": 14.61,
+      "last_close": 200.05,
+      "exchange": "NYSE"
+    },
+    "PXD": {
+      "status": "ok",
+      "rows": 3608,
+      "first": "2010-01-04",
+      "last": "2024-05-03",
+      "first_close": 50.98,
+      "last_close": 269.62,
+      "exchange": "NYSE"
+    },
+    "CTLT": {
+      "status": "ok",
+      "rows": 2615,
+      "first": "2014-07-31",
+      "last": "2024-12-18",
+      "first_close": 19.99,
+      "last_close": 63.48,
+      "exchange": "NYSE"
+    },
+    "WRK": {
+      "status": "ok",
+      "rows": 1,
+      "first": "2024-07-05",
+      "last": "2024-07-05",
+      "first_close": 51.51,
+      "last_close": 51.51,
+      "exchange": "NYSE"
+    },
+    "CERN": {
+      "status": "ok",
+      "rows": 3148,
+      "first": "2010-01-04",
+      "last": "2022-09-08",
+      "first_close": 84.27,
+      "last_close": 94.92,
+      "exchange": "NASDAQ"
+    },
+    "CTXS": {
+      "status": "ok",
+      "rows": 3215,
+      "first": "2010-01-04",
+      "last": "2022-11-02",
+      "first_close": 42.84,
+      "last_close": 103.9,
+      "exchange": "NASDAQ"
+    },
+    "NLSN": {
+      "status": "ok",
+      "rows": 2947,
+      "first": "2011-01-27",
+      "last": "2022-10-11",
+      "first_close": 25.4,
+      "last_close": 27.98,
+      "exchange": "NYSE"
+    },
+    "K": {
+      "status": "ok",
+      "rows": 4011,
+      "first": "2010-01-04",
+      "last": "2025-12-11",
+      "first_close": 52.83,
+      "last_close": 83.44,
+      "exchange": "NYSE"
+    },
+    "IPG": {
+      "status": "ok",
+      "rows": 4001,
+      "first": "2010-01-04",
+      "last": "2025-11-26",
+      "first_close": 7.53,
+      "last_close": 24.57,
+      "exchange": "NYSE"
+    },
+    "JNPR": {
+      "status": "ok",
+      "rows": 3898,
+      "first": "2010-01-04",
+      "last": "2025-07-02",
+      "first_close": 27.18,
+      "last_close": 39.95,
+      "exchange": "NYSE"
+    },
+    "ABMD": {
+      "status": "ok",
+      "rows": 3268,
+      "first": "2010-01-04",
+      "last": "2023-01-03",
+      "first_close": 8.74,
+      "last_close": 381.02,
+      "exchange": "NASDAQ"
+    },
+    "DRE": {
+      "status": "ok",
+      "rows": 3210,
+      "first": "2010-01-04",
+      "last": "2022-10-03",
+      "first_close": 12.11,
+      "last_close": 48.2,
+      "exchange": "NYSE"
+    },
+    "PBCT": {
+      "status": "ok",
+      "rows": 3085,
+      "first": "2010-01-04",
+      "last": "2022-04-04",
+      "first_close": 16.75,
+      "last_close": 19.41,
+      "exchange": "NASDAQ"
+    },
+    "TIF": {
+      "status": "ok",
+      "rows": 2774,
+      "first": "2010-01-04",
+      "last": "2021-01-08",
+      "first_close": 43.99,
+      "last_close": 131.46,
+      "exchange": "NYSE"
+    },
+    "XLNX": {
+      "status": "ok",
+      "rows": 3051,
+      "first": "2010-01-04",
+      "last": "2022-02-14",
+      "first_close": 25.38,
+      "last_close": 194.92,
+      "exchange": "NASDAQ"
+    },
+    "MXIM": {
+      "status": "ok",
+      "rows": 2937,
+      "first": "2010-01-04",
+      "last": "2021-09-01",
+      "first_close": 20.49,
+      "last_close": 103.14,
+      "exchange": "NASDAQ"
+    }
+  }
+}

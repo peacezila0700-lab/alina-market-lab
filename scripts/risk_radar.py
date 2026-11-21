@@ -432,7 +432,7 @@ def build_risk_radar() -> dict:
             "risk_classification": rc,
             "alert_thresholds": {"fomc_7d": True},
             "metrics": {"upcoming_7d_count": len(ev_list), "events": ev_list[:10]},
-            "missing_data_warning": "Note: ECB/BoE 2027 dates require annual calendar extension after Dec 2026.",
+            "missing_data_warning": None if ev["dt"].max() >= pd.Timestamp("2027-12-01") else "Note: ECB/BoE 2027 dates require annual calendar extension after Dec 2026.",
         }
     except Exception as e:
         panels["calendar_7d"] = {"data_source": "data/events/event_calendar_full.csv", "freshness_status": "MISSING_OR_ERROR", "risk_classification": "UNKNOWN", "missing_data_warning": str(e)}
@@ -498,7 +498,7 @@ def build_risk_radar() -> dict:
     # 8. Crypto Funding & Basis Monitor
     try:
         der = pd.read_csv(ROOT / "data" / "microstructure" / "deribit_BTC_funding_1h.csv.gz")
-        der["dt"] = pd.to_datetime(der["ts"], utc=True)
+        der["dt"] = pd.to_datetime(der["ts"], format="ISO8601", utc=True)
         der = der.sort_values("dt")
         ld = der["dt"].iloc[-1].strftime("%Y-%m-%d")
         fr, age = _freshness(der["dt"].iloc[-1].isoformat(), now, warn_days=2, crit_days=7)
@@ -506,8 +506,9 @@ def build_risk_radar() -> dict:
         okx_f = pd.read_csv(ROOT / "data" / "collect" / "okx_BTCUSDT_funding_deep.csv")
         okx_last_apr = float(okx_f["fundingRate"].tail(3).mean() * 3 * 365 * 100.0) if not okx_f.empty else None
         rc = "ELEVATED" if (abs(der_24h_apr) >= 25.0) else "LOW"
+        has_cv = (ROOT / "data" / "crypto_vision" / "binance_BTCUSDT_um_funding.csv.gz").exists()
         panels["crypto_funding_basis"] = {
-            "data_source": "data/microstructure/deribit_BTC_funding_1h.csv.gz + okx_BTCUSDT_funding_deep.csv",
+            "data_source": "data/microstructure/deribit_BTC_funding_1h.csv.gz + data/crypto_vision/ + okx_BTCUSDT_funding_deep.csv",
             "last_updated": ld,
             "age_days": age,
             "freshness_status": fr,
@@ -518,7 +519,9 @@ def build_risk_radar() -> dict:
                 "deribit_btc_index": round(float(der["index_price"].iloc[-1]), 2),
                 "okx_btc_24h_apr_pct": round(okx_last_apr, 2) if okx_last_apr is not None else None,
             },
-            "missing_data_warning": "OKX public funding API limited to ~93d; Binance (HTTP 451) & Bybit (HTTP 403) blocked in sandbox.",
+            "missing_data_warning": (
+                None if has_cv else "OKX public funding API limited to ~93d; Binance (HTTP 451) & Bybit (HTTP 403) blocked in sandbox."
+            ),
         }
     except Exception as e:
         panels["crypto_funding_basis"] = {"data_source": "data/microstructure/", "freshness_status": "MISSING_OR_ERROR", "risk_classification": "UNKNOWN", "missing_data_warning": str(e)}

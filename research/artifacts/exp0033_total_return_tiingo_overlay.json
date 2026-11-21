@@ -1,0 +1,181 @@
+{
+  "generated_utc": "2026-11-21T15:16:21.318770+00:00",
+  "experiment": "EXP-0033",
+  "window": "2015-01-02..2026-09-16 (n=2943)",
+  "total_return_results": {
+    "1_SPY_Buy_And_Hold": {
+      "cash_0pct": {
+        "sharpe": 0.816,
+        "cagr_pct": 13.63,
+        "ann_ret_pct": 14.32,
+        "ann_vol_pct": 17.55,
+        "max_dd_pct": -33.7,
+        "calmar_cagr": 0.404,
+        "cvar95_bp": -266.2
+      },
+      "cash_bil_etf": {
+        "sharpe": 0.816,
+        "cagr_pct": 13.63,
+        "ann_ret_pct": 14.32,
+        "ann_vol_pct": 17.55,
+        "max_dd_pct": -33.7,
+        "calmar_cagr": 0.404,
+        "cvar95_bp": -266.2
+      },
+      "cash_effr": {
+        "sharpe": 0.816,
+        "cagr_pct": 13.63,
+        "ann_ret_pct": 14.32,
+        "ann_vol_pct": 17.55,
+        "max_dd_pct": -33.7,
+        "calmar_cagr": 0.404,
+        "cvar95_bp": -266.2
+      }
+    },
+    "2_Static_60_40_SPY_TLT": {
+      "cash_0pct": {
+        "sharpe": 0.769,
+        "cagr_pct": 8.29,
+        "ann_ret_pct": 8.59,
+        "ann_vol_pct": 11.16,
+        "max_dd_pct": -27.24,
+        "calmar_cagr": 0.304,
+        "cvar95_bp": -166.4
+      },
+      "cash_bil_etf": {
+        "sharpe": 0.769,
+        "cagr_pct": 8.29,
+        "ann_ret_pct": 8.59,
+        "ann_vol_pct": 11.16,
+        "max_dd_pct": -27.24,
+        "calmar_cagr": 0.304,
+        "cvar95_bp": -166.4
+      },
+      "cash_effr": {
+        "sharpe": 0.769,
+        "cagr_pct": 8.29,
+        "ann_ret_pct": 8.59,
+        "ann_vol_pct": 11.16,
+        "max_dd_pct": -27.24,
+        "calmar_cagr": 0.304,
+        "cvar95_bp": -166.4
+      }
+    },
+    "4_VolTarget12_SPY_Cash": {
+      "cash_0pct": {
+        "sharpe": 0.828,
+        "cagr_pct": 10.32,
+        "ann_ret_pct": 10.66,
+        "ann_vol_pct": 12.88,
+        "max_dd_pct": -15.84,
+        "calmar_cagr": 0.652,
+        "cvar95_bp": -201.6
+      },
+      "cash_bil_etf": {
+        "sharpe": 0.849,
+        "cagr_pct": 10.63,
+        "ann_ret_pct": 10.94,
+        "ann_vol_pct": 12.88,
+        "max_dd_pct": -15.69,
+        "calmar_cagr": 0.678,
+        "cvar95_bp": -201.4
+      },
+      "cash_effr": {
+        "sharpe": 0.851,
+        "cagr_pct": 10.66,
+        "ann_ret_pct": 10.96,
+        "ann_vol_pct": 12.88,
+        "max_dd_pct": -15.69,
+        "calmar_cagr": 0.68,
+        "cvar95_bp": -201.5
+      }
+    },
+    "5_VolTarget12_Meta_Cash": {
+      "cash_0pct": {
+        "sharpe": 0.893,
+        "cagr_pct": 9.66,
+        "ann_ret_pct": 9.84,
+        "ann_vol_pct": 11.01,
+        "max_dd_pct": -14.74,
+        "calmar_cagr": 0.656,
+        "cvar95_bp": -169.7
+      },
+      "cash_bil_etf": {
+        "sharpe": 0.93,
+        "cagr_pct": 10.11,
+        "ann_ret_pct": 10.24,
+        "ann_vol_pct": 11.01,
+        "max_dd_pct": -14.47,
+        "calmar_cagr": 0.699,
+        "cvar95_bp": -169.6
+      },
+      "cash_effr": {
+        "sharpe": 0.933,
+        "cagr_pct": 10.14,
+        "ann_ret_pct": 10.27,
+        "ann_vol_pct": 11.01,
+        "max_dd_pct": -14.37,
+        "calmar_cagr": 0.706,
+        "cvar95_bp": -169.6
+      }
+    },
+    "6_VolTarget12_Meta_TLT_Rot": {
+      "cash_0pct": {
+        "sharpe": 0.788,
+        "cagr_pct": 8.9,
+        "ann_ret_pct": 9.21,
+        "ann_vol_pct": 11.69,
+        "max_dd_pct": -27.0,
+        "calmar_cagr": 0.33,
+        "cvar95_bp": -177.6
+      },
+      "cash_bil_etf": {
+        "sharpe": 0.798,
+        "cagr_pct": 9.03,
+        "ann_ret_pct": 9.33,
+        "ann_vol_pct": 11.69,
+        "max_dd_pct": -26.91,
+        "calmar_cagr": 0.336,
+        "cvar95_bp": -177.6
+      },
+      "cash_effr": {
+        "sharpe": 0.799,
+        "cagr_pct": 9.04,
+        "ann_ret_pct": 9.34,
+        "ann_vol_pct": 11.69,
+        "max_dd_pct": -26.87,
+        "calmar_cagr": 0.336,
+        "cvar95_bp": -177.6
+      }
+    },
+    "7_VolTarget12_Meta_Cash_IEF_GLD": {
+      "cash_0pct": {
+        "sharpe": 0.958,
+        "cagr_pct": 10.6,
+        "ann_ret_pct": 10.7,
+        "ann_vol_pct": 11.17,
+        "max_dd_pct": -17.45,
+        "calmar_cagr": 0.608,
+        "cvar95_bp": -171.1
+      },
+      "cash_bil_etf": {
+        "sharpe": 0.979,
+        "cagr_pct": 10.85,
+        "ann_ret_pct": 10.93,
+        "ann_vol_pct": 11.17,
+        "max_dd_pct": -17.28,
+        "calmar_cagr": 0.628,
+        "cvar95_bp": -171.0
+      },
+      "cash_effr": {
+        "sharpe": 0.98,
+        "cagr_pct": 10.87,
+        "ann_ret_pct": 10.94,
+        "ann_vol_pct": 11.17,
+        "max_dd_pct": -17.21,
+        "calmar_cagr": 0.632,
+        "cvar95_bp": -171.0
+      }
+    }
+  }
+}
