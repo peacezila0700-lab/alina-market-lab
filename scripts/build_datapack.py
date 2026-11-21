@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.11.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.12.zip
 """
 from __future__ import annotations
 
@@ -465,6 +465,29 @@ DATASETS = [
                   "Sloan accruals signal merits retesting ONLY after expanding PIT SEC coverage beyond 62 names."],
          use_for=["evidence on quarterly fundamental power limits", "1H crypto cost wall proof"],
          leak_rule="Strict available_from <= t for SEC; confirm==1 and 1-bar lag for 1H OKX crypto."),
+    dict(id="ea_intelligence_kb", src=["data/ea_kb/ea_master.csv", "data/ea_kb/source_code_index.csv",
+                                       "data/ea_kb/duplicates.csv", "data/ea_kb/alina_ea_kb.sqlite",
+                                       "data/ea_kb/ea_master.jsonl", "data/ea_kb/indicators.jsonl",
+                                       "data/ea_kb/visual_symbols.jsonl", "data/ea_kb/strategies.jsonl",
+                                       "data/ea_kb/trading_logic.jsonl", "data/ea_kb/developers.jsonl",
+                                       "data/ea_kb/unclassified.jsonl", "data/ea_kb/research_queue.jsonl",
+                                       "data/ea_kb/research_papers.jsonl", "data/ea_kb/risk_management_patterns.jsonl",
+                                       "data/ea_kb/market_behavior_links.jsonl", "data/ea_kb/knowledge_graph.jsonl",
+                                       "data/ea_kb/rag_corpus.jsonl", "data/ea_kb/KB_STATS.json",
+                                       "data/ea_kb/market_events_index.json", "data/ea_kb/financial_news_index.json",
+                                       "data/ea_kb/backtest_evidence.jsonl", "data/ea_kb/source_websites.json",
+                                       "data/ea_kb/DATA_DICTIONARY.md", "data/ea_kb/PROOF_OF_WORK_BATCH1.md"],
+         kind="knowledge_base", grade="B",
+         title="Global EA Intelligence Knowledge Base (Batch 1: 217 static source files, SQLite+FTS5, Graph, RAG)",
+         card="Persistent AI-ready KB built from 217 downloaded .mq5/.mq4/.mqh/.py/.pine files across MQL5, "
+              "GitHub, GitLab & ForexFactory plus MQL5 Market/Docs metadata & arXiv papers. Contains 96 EAs "
+              "(90 Level 1 source-verified), 63 indicators, 204 visual symbol/Wingdings records, 10 exact/fork "
+              "duplicate pairs (all retained), 725 KG triples, 230 FTS5 RAG chunks, and 1,924 pending queue tasks.",
+         caveats=["Commercial .ex5 listings are tagged strictly Level 5-6 Unverified (internal logic never guessed).",
+                  "MQL5 CodeBase rapid urllib hits rate-limited after ~46 items (403 logged); remainder queued.",
+                  "Static reverse engineering only: downloaded MQL files were NOT compiled or executed in MT5."],
+         use_for=["RAG/FTS5 retrieval over real MQL5 code", "EA/Indicator/VisualSymbol/Fork comparison", "Batch 2+ research queue"],
+         leak_rule="Every record carries evidence_level (1-7), verification_status, source_url, and SHA-256."),
     dict(id="mobile_cloud_ops", src=["scripts/ask.py", "scripts/notify_telegram.py",
                                      "scripts/telegram_bot.py",
                                      ".github/workflows/daily_pipeline.yml",
@@ -679,6 +702,8 @@ def profile(path) -> dict:
     total_rows, firsts, lasts, cols = 0, [], [], []
     sample = None
     for f in files:
+        if not f.lower().endswith((".csv", ".txt", ".csv.gz")):
+            continue
         # .gz members must be opened in binary and decompressed: opening them as text raises
         # UnicodeDecodeError (0x8b is the gzip magic) and killed a pack build once.
         opener = gzip.open if f.endswith(".gz") else open
@@ -711,7 +736,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.11",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.12",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -778,6 +803,9 @@ def main() -> None:
         if os.path.isdir(s):
             shutil.copytree(s, os.path.join(PACK, "code", sub),
                             ignore=shutil.ignore_patterns("__pycache__", "*.pyc", "raw"))
+    ea_src_dir = os.path.join(ROOT, "data", "ea_kb", "sources")
+    if os.path.isdir(ea_src_dir):
+        shutil.copytree(ea_src_dir, os.path.join(PACK, "code", "ea_sources"))
 
     # ---- knowledge docs written by hand elsewhere
     for doc in ("README_FOR_AI.md", "DATA_SOURCES.md", "PITFALLS.md", "WHAT_FAILED.md",
@@ -814,7 +842,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.11.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.12.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

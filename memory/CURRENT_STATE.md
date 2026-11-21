@@ -1,15 +1,17 @@
-# CURRENT STATE — 2026-11-21 (v2.11: EXP-0022/0023 + two-way Telegram bot + PWA dashboard)
+# CURRENT STATE — 2026-11-21 (v2.12: Global EA Intelligence KB Batch 1 + v2.11 features)
 
 ## Focus
-Data + code + experiments for a downstream AI. App frozen. User clarified: **mobile only (no PC)**,
-**budget ≤ 300 THB/month if clear benefit**, **goal = trade timing / price prediction**; next asked how
-to test with Telegram vs building his app.
+Global Research Agent + Persistent AI/RAG-ready **Private AI Trading Knowledge Base** under `alina_lab/data/ea_kb/` (Batch 1 complete: static reverse-engineering of **217 downloaded `.mq5/.mq4/.mqh/.py/.pine` files**, SQLite+FTS5 DB, Knowledge Graph, Duplicate/Fork matrix, Visual/Wingdings dictionary, Evidence Grading 1–7, 1,924-task Research Queue). App frozen.
 
 ## Drive (live)
-- **v2.11 `1biZ1JbdXYH5p3f8NFGIxQ_u2RuPVOVi3`** — 55 datasets / 645 files / 72.0 MB. Current.
-- v2.10, v2.9, v2.8, v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.12 `1iFzwkn17hDD6O8lJeXpqPkHyjxCJcTYG`** — 56 datasets / 890 files / 73.4 MB (`ea_intelligence_kb` + all 217 raw EA/indicator/library source files in `code/ea_sources/`). Current.
+- v2.11 (`1biZ1JbdXYH5p3f8NFGIxQ_u2RuPVOVi3`), v2.10, v2.9, v2.8, v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
 ## Shipped this session (chronological)
+14. **Global EA Intelligence Knowledge Base — Batch 1 (`scripts/ea_source_analyzer.py`, `ea_kb_crawler.py`, `ea_kb_build.py`, `ea_kb_report.py` → `data/ea_kb/`) → v2.12:**
+    - Downloaded & statically reverse-engineered **217 verbatim source files (`5.01 MB`)** across MQL5 CodeBase, GitHub, GitLab (`fxce/mt5-libs` `develop`, `RoffildLibrary`), ForexFactory attachments, and local `AlinaRiskGovernor.mq5`.
+    - Built **SQLite+FTS5 (`alina_ea_kb.sqlite`)** + JSONL/CSV layers: **96 EAs** (`90` Level 1 source-verified, `1` Level 2 doc-inspected `NewsBacktest`, `5` Level 5–6 commercial/unverified `.ex5` claims never guessed), **63 Indicators**, **204 Visual Symbol / Wingdings records**, **69 Developers**, **90 Decomposed Strategies**, **10 Exact/Fork/Shared-Code Duplicates** (all preserved), **28 Unclassified/Unknown records**, **725 Knowledge Graph edges**, **230 FTS5 RAG chunks**, and **1,924 persistent `research_queue.jsonl` tasks** for Batch 2+.
+    - Full Batch 1 audit & real HTTP/source counts documented in `data/ea_kb/DATA_DICTIONARY.md` and `data/ea_kb/PROOF_OF_WORK_BATCH1.md`.
 1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
 2. EXP-0010..0012 (events, auctions, cross-section) → all FAIL
 3. EXP-0013/0014 (breadth overlays, gamma vs vol targeting) → FAIL

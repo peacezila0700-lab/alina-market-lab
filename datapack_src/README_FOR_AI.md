@@ -1,10 +1,10 @@
-# ALINA DATAPACK v2.11 — read this first (≈900 tokens, saves you thousands)
+# ALINA DATAPACK v2.12 — read this first (≈900 tokens, saves you thousands)
 
 ## What this is
-A self-contained research base built by an agent over ~15 sessions, for an AI trading system to
+A self-contained research base built by an agent over ~16 sessions, for an AI trading system to
 consume **without re-searching the internet**. It contains market data, positioning data,
 volatility data, measured trading costs, calendars, an attention proxy, a catalogue of 332 free
-EAs, **55 datasets** including a 68-ETF cross-section, 115 US stocks, 64 Thai SET stocks,
+EAs, the **Global EA Intelligence Knowledge Base (Batch 1: 217 statically reverse-engineered `.mq5/.mq4/.mqh` source files, SQLite+FTS5 DB `alina_ea_kb.sqlite`, 725 KG edges, 230 RAG chunks, Wingdings/Visual Symbol library, Duplicate/Fork graph, and 1,924-task Research Queue)**, **56 datasets** including a 68-ETF cross-section, 115 US stocks, 64 Thai SET stocks,
 point-in-time SEC fundamentals (`pit_fundamentals.csv`), the CBOE volatility term structure with
 conditioned base rates, a 36-year Treasury curve, news headlines with entity tags, per-instrument
 support/resistance levels, and a **ready-made daily brief** (`briefs/latest.md`) — plus **every

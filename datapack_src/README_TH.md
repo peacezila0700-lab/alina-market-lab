@@ -29,7 +29,8 @@
 | **ฐานข้อมูลเหตุการณ์** | `data/event_reaction_db` | 2,028 เหตุการณ์ (FOMC/ประมูลพันธบัตร/OPEX/VIX แตะ 30/วันผันผวน >2.5σ) + สถิติการตอบสนองที่วัดจริง |
 | **ที่เก็บข้อมูลรายวัน** | `data/collector_store` | 16 แหล่งดึงทุกวันตั้งแต่ 2026-11-20 — ส่วนที่กูเกิลย้อนหลังไม่ได้ |
 | องค์ความรู้ | `knowledge/*.md` | แหล่งข้อมูลที่ยังใช้ได้/ตายแล้ว, กับดัก, สิ่งที่ล้มเหลว, ไอเดียที่ยังไม่ได้ทดสอบพร้อม "ความน่าจะเป็น" |
-| โค้ด | `code/` | สคริปต์ทั้งหมด + EA (AlinaRiskGovernor.mq5) |
+| **คลังความรู้ EA เชิงลึก (v2.12)** | `data/ea_knowledge_base` + `code/ea_sources/` | Reverse-engineer โค้ดจริง **217 ไฟล์** (MQL5/GitHub/GitLab/FF), SQLite+FTS5 (`alina_ea_kb.sqlite`), `96` EAs (`90` Source Verified), `63` Indicators, `204` Visual/Wingdings, `10` Duplicate/Fork, Knowledge Graph `725` edges, RAG `230` chunks, Queue `1,924` งาน |
+| โค้ด | `code/` | สคริปต์ทั้งหมด + EA (`AlinaRiskGovernor.mq5`, `ea_source_analyzer.py`, `ea_kb_crawler.py`, `ea_kb_build.py`) + 217 ไฟล์โค้ดต้นฉบับ |
 
 ## อ่านยังไงให้เร็วที่สุด (สำหรับ AI)
 1. `catalog.json` — schema, จำนวนแถว, ช่วงเวลา, sha256, ตัวอย่าง 2 แถว, ข้อควรระวัง, กติกา look-ahead

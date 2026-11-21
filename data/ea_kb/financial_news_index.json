@@ -1,0 +1,7 @@
+{
+  "datasets": [
+    "data/news/headlines.csv",
+    "data/news/headlines_world.csv"
+  ],
+  "headline_rows": 1588
+}

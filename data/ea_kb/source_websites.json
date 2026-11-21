@@ -1,0 +1,255 @@
+{
+  "search_engines_and_platforms_queried": [
+    "DuckDuckGo/Web Search (multi-query global web_search)",
+    "MQL5 CodeBase (en/ru/ja/zh)",
+    "MQL5 Market",
+    "MQL5 Official Reference Docs",
+    "GitHub REST API & Raw Content",
+    "GitLab REST API v4 & Raw Content",
+    "ForexFactory Forums & Attachments",
+    "Reddit (r/algotrading, r/Forex)",
+    "TradingView / Pine-to-MT5 GitHub ecosystem",
+    "YouTube (tutorials linked to MQL5 CodeBase)",
+    "arXiv / ResearchGate",
+    "ForexPeaceArmy",
+    "Myfxbook"
+  ],
+  "websites_read_200_count": 233,
+  "websites_blocked_or_failed": [
+    {
+      "url": "https://www.mql5.com/en/code/79843",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79827",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79819",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79816",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79278",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79806",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79801",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79797",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/78604",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79792",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79791",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79790",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79783",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79782",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79764",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79765",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79763",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79738",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79760",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79756",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79752",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79745",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79746",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/code/79743",
+      "category": "mql5_ind_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/ru/code/mt5/experts/page30",
+      "category": "mql5_multilingual_ru",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/ja/code/mt5/experts/page4",
+      "category": "mql5_multilingual_ja",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/zh/code/mt5/experts/page26",
+      "category": "mql5_multilingual_zh",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/market/mt5/expert",
+      "category": "mql5_market_listing",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/market/product/153540",
+      "category": "mql5_market_detail",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://gitlab.com/fxce/mt5-libs/-/raw/master/Include/FxceLibs/NetLib/Example.mq5",
+      "category": "gitlab_raw_source",
+      "status": 404,
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "url": "https://gitlab.com/fxce/mt5-libs/-/raw/master/Include/FxceLibs/Notification/Telegram/Examples/TelegramRecon.mq5",
+      "category": "gitlab_raw_source",
+      "status": 404,
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "url": "https://gitlab.com/fxce/mt5-libs/-/raw/master/Include/FxceLibs/Notification/Telegram/Examples/TelegramNotifier.mq5",
+      "category": "gitlab_raw_source",
+      "status": 404,
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "url": "https://gitlab.com/fxce/mt5-libs/-/raw/master/Include/FxceLibs/Notification/TelegramDLL/Examples/TelegramRecon.mq5",
+      "category": "gitlab_raw_source",
+      "status": 404,
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "url": "https://gitlab.com/fxce/mt5-libs/-/raw/master/Include/FxceLibs/Notification/TelegramDLL/Examples/TelegramNotifier.mq5",
+      "category": "gitlab_raw_source",
+      "status": 404,
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "url": "https://gitlab.com/fxce/mt5-libs/-/raw/master/Include/FxceLibs/Trade/Trade.mqh",
+      "category": "gitlab_raw_source",
+      "status": 404,
+      "error": "HTTP 404: Not Found"
+    },
+    {
+      "url": "https://www.mql5.com/en/docs/customind/indicators_examples/draw_arrow",
+      "category": "mql5_official_docs",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/docs/constants/objectconstants/wingdings",
+      "category": "mql5_official_docs",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.mql5.com/en/docs/indicators",
+      "category": "mql5_official_docs",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    },
+    {
+      "url": "https://www.forexpeacearmy.com/forex-books/204/mt4-expert-advisor-scams",
+      "category": "forexpeacearmy_review",
+      "status": 403,
+      "error": "HTTP 403: Forbidden"
+    }
+  ],
+  "summary_notes": "MQL5 CodeBase allowed 46+ item downloads before rate-limiting rapid urllib hits (HTTP 403 / connection reset); fetch_page separately succeeded on MQL5 Indicators, Market product pages, and Official Docs. GitHub API (with PAT), GitLab API v4 (fxce develop & Roffild master), and ForexFactory threads/attachments succeeded 200 OK. ForexPeaceArmy returned HTTP 403 Forbidden directly."
+}

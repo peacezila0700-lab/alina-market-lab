@@ -1,0 +1,2055 @@
+//+------------------------------------------------------------------+
+//|                                                        Numpy.mqh |
+//|                                    Copyright 2024, Omega Joctan. |
+//|                 https://www.mql5.com/en/users/omegajoctan/seller |
+//+------------------------------------------------------------------+
+#property copyright "Copyright 2024, Omega Joctan."
+#property link      "https://www.mql5.com/en/users/omegajoctan/seller"
+//+------------------------------------------------------------------+
+//| defines                                                          |
+//+------------------------------------------------------------------+
+
+#ifndef RAND_MAX
+#define RAND_MAX 32767.0
+#endif 
+
+//+------------------------------------------------------------------+
+//|                                                                  |      
+//| This submodule of NumPy provides various random number generation|
+//| functions based on the PCG64 random number generator             |
+//| (from NumPy 1.17+). Most of these methods are based on           |
+//| mathematical principles from probability theory and statistical  |
+//| distributions.                                                   |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+struct CRandom
+  {
+   protected:
+   
+      matrix vector2Matrix(const vector &v, uint rows, uint cols)
+         {
+            matrix res(rows, cols); // Initialize matrix with correct dimensions
+         
+            if (v.Size() != (cols * rows))
+             {
+               printf("%s: Invalid dimensions", __FUNCTION__);
+               return res;  // Return an empty matrix
+             }
+         
+            // Fill matrix from vector
+            for (uint i = 0; i < rows; i++)
+               for (uint j = 0; j < cols; j++)
+                  res[i][j] = v[i * cols + j];  // Assign values from vector
+         
+            return res;
+         }
+        
+      template<typename T>
+      vector push_back(const vector &v, T var)
+         {
+            vector res = v;
+            res.Resize(v.Size()+1);
+            res[res.Size()-1] = var;
+            
+            return res;
+         }
+      
+      // Function to generate a single Bernoulli(p) trial
+      int bernoulli(double p)
+        {
+          return (double)rand() / RAND_MAX < p ? 1 : 0;
+        }
+        
+      int poisson(double lambda)
+         {
+             double L = exp(-lambda);
+             double p = 1.0;
+             int k = 0;
+         
+             while (p > L)
+             {
+                 k++;
+                 p *= MathRand() / 32767.0; // Normalize MathRand() to (0,1)
+             }
+             
+             return k - 1; // Since we increment k before checking the condition
+         }
+        
+   public:
+     int null;
+     
+     void seed(int seed_=0)  
+      { 
+        if (seed_!=0) 
+           MathSrand(seed_);  //Set the random seed if the default value is modified by the user
+      }
+     
+       template <typename T>
+       const vector uniform(T low, T high, uint size=1) 
+        { 
+          vector res = vector::Zeros(size);
+          for (uint i=0; i<size; i++)
+             res[i] = low + (high - low) * (rand() / double(RAND_MAX));  // Normalize rand()
+          
+          return res;
+        }
+       
+       vector normal(uint size, double mean=0, double std=1)
+         {
+             vector results = {};  // Declare the results vector
+             
+             // We generate two random values in each iteration of the loop
+             uint n = size / 2 + size % 2;  // If the size is odd, we need one extra iteration
+         
+             // Loop to generate pairs of normal numbers
+             for (uint i = 0; i < n; i++)
+             {
+                 // Generate two random uniform variables
+                 double u1 = MathRand() / 32768.0;  // Uniform [0,1] -> (MathRand() generates values from 0 to 32767)
+                 double u2 = MathRand() / 32768.0;  // Uniform [0,1]
+         
+                 // Apply the Box-Muller transform to get two normal variables
+                 double z1 = MathSqrt(-2 * MathLog(u1)) * MathCos(2 * M_PI * u2);
+                 double z2 = MathSqrt(-2 * MathLog(u1)) * MathSin(2 * M_PI * u2);
+         
+                 // Scale to the desired mean and standard deviation, and add them to the results
+                 results = push_back(results, mean + std * z1);
+                 if ((uint)results.Size() < size)  // Only add z2 if the size is not reached yet
+                     results = push_back(results, mean + std * z2);
+             }
+             
+             // Return only the exact size of the results (if it's odd, we cut off one value)
+             
+             results.Resize(size);
+             return results;
+         }
+         
+       vector randn(uint size)
+         {
+             vector results = vector::Zeros(size);
+         
+             // Loop to generate pairs of normal numbers
+             for (uint i = 0; i < size; i++)
+             {
+                 // Generate two random uniform variables
+                 double u1 = MathRand() / 32768.0;  // Uniform [0,1] -> (MathRand() generates values from 0 to 32767)
+                 double u2 = MathRand() / 32768.0;  // Uniform [0,1]
+         
+                 // Apply the Box-Muller transform to get two normal variables
+                 double z = MathSqrt(-2 * MathLog(u1)) * MathCos(2 * M_PI * u2);
+         
+                 results[i] = z;
+             }
+             
+             return results;
+         }
+         
+       matrix randn(uint rows, uint cols)
+         {
+            matrix res = matrix::Zeros(rows, cols);
+         
+            for (uint i = 0; i < rows; i++)
+            {
+               for (uint j = 0; j < cols; j++)
+               {
+                  double u1 = MathRand() / 32768.0;   // Uniform(0,1)
+                  double u2 = MathRand() / 32768.0;   // Uniform(0,1)
+         
+                  // Prevent MathLog(0)
+                  if (u1 <= 0.0)
+                     u1 = 1e-10;
+         
+                  // Box-Muller transform
+                  double z = MathSqrt(-2.0 * MathLog(u1)) * MathCos(2.0 * M_PI * u2);
+         
+                  res[i][j] = z; // Normally distributed (mean=0, std=1)
+               }
+            }
+         
+            return res;
+         }
+         
+       vector  exponential(uint size, double lmbda=1.0)
+         {
+            vector res = vector::Zeros(size);
+            for (uint i=0; i<size; i++)
+               res[i] = -log((rand()/RAND_MAX)) / lmbda;
+                
+            return res;
+         }
+         
+         // Function to generate Binomial(n, p) samples
+         vector binomial(uint size, uint n, double p)
+           {
+             vector res = vector::Zeros(size);
+             
+             for (uint i = 0; i < size; i++)
+               {
+                 int count = 0;
+                 for (uint j = 0; j < n; j++)
+                   count += bernoulli(p); // Sum of Bernoulli trials
+
+                 res[i] = count;
+               }
+             
+             return res;
+         }
+         
+         /*
+         matrix binomial(uint rows, uint cols, uint n, double p)
+           {
+             vector binomial_vector = binomial(rows*cols, n, p);
+             return this.vector2Matrix(binomial_vector, rows, cols);
+           }
+          */ 
+         
+         // We generate a vector of Poisson-distributed values
+         vector poisson(double lambda, int size)
+         {
+             vector result = vector::Zeros(size);
+             for (int i = 0; i < size; i++)
+                 result[i] = poisson(lambda);
+             
+             return result;
+         }
+         
+         template<typename T>
+         // Fisher-Yates Shuffle Algorithm
+         void shuffle(vector<T>& v)
+          {
+             int n = (int)v.Size();
+             for (int i = n - 1; i > 0; i--)
+             {
+                 int j = MathRand() % (i + 1); // Generate a random index between 0 and i
+                 T temp = v[i];
+                 v[i] = v[j];
+                 v[j] = temp;
+             }
+          }
+          
+         template<typename T>
+         vector<T> choice(const vector<T> &v, uint size, bool replace=false)
+          {
+             vector<T> res = {};
+             if (v.Size() == 0 || size <= 0) 
+                 return res; // Handle empty input or invalid size
+         
+             uint swap_index;
+             T temp;
+         
+             uint SIZE = (uint)v.Size();
+             vector<T> temp_v = v; // Copy for with-replacement selection
+             
+             if (size > SIZE)
+                 size = SIZE;
+         
+             res.Resize(size);
+         
+             if (!replace) // Without replacement
+             {
+                 for (uint i = 0; i < size; i++) 
+                 {
+                     swap_index = MathRand() % (SIZE - i); // Select from remaining elements
+         
+                     res[i] = temp_v[swap_index];
+         
+                     // Swap selected element with the last element in the remaining pool
+                     temp = temp_v[swap_index];
+                     temp_v[swap_index] = temp_v[SIZE - i - 1];
+                     temp_v[SIZE - i - 1] = temp;
+                 }
+             }
+             else // With replacement
+                for (uint i = 0; i < size; i++)
+                   res[i] = temp_v[MathRand() % SIZE];
+         
+             return res;
+          }
+  };
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|  The numpy.linalg submodule provides a collection of functions   |
+//|  for performing linear algebra operations                        |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+struct eigen_results_struct
+  {
+   vector eigenvalues;
+   matrix eigenvectors;
+  };
+  
+struct svd_results_struct
+  {
+    matrix U; //Left singular vectors
+    matrix V; //Singular values
+    vector singular_vectors;  //Right singular vectors
+  };
+  
+struct CLinalg
+  {
+    protected:
+      
+    public:
+      
+      int dummy;
+      
+      
+      double det(const matrix &m)  {  return m.Det();  }
+      matrix inv(const matrix &m)  {  return m.Inv();  }
+      
+      matrix kron(const matrix &a, const matrix &b) { return a.Kron(b); }
+      matrix kron(const vector &a, const vector &b) { return a.Kron(b); }
+      matrix kron(const vector &a, const matrix &b) { return a.Kron(b); }
+      matrix kron(const matrix &a, const vector &b) { return a.Kron(b); }
+        
+      eigen_results_struct eig(const matrix &m) 
+       {
+         eigen_results_struct res;
+         if (!m.Eig(res.eigenvectors, res.eigenvalues))
+            printf("%s failed to calculate eigen vectors and values, error = %d",__FUNCTION__,GetLastError());
+         
+         return res;
+       }
+      
+      double norm(const matrix &m, ENUM_MATRIX_NORM norm) {  return m.Norm(norm); }
+      double norm(const vector &v, ENUM_VECTOR_NORM norm) {  return v.Norm(norm); }
+      
+      svd_results_struct svd(const matrix &m)
+        {
+          svd_results_struct res;
+          if (!m.SVD(res.U, res.V, res.singular_vectors))
+            printf("%s failed to calculate the SVD");
+          
+          return res;
+        }
+       
+       vector solve(const matrix &a, const vector &b) { return a.Solve(b); }
+       vector lstsq(const matrix &a, const vector &b) { return a.LstSq(b); }
+      
+       ulong matrix_rank(const matrix &m) { return m.Rank(); }
+         
+       matrix cholesky(const matrix &m)
+         {
+           vector values = eig(m).eigenvalues;
+           
+           for (ulong i=0; i<values.Size(); i++)
+            {
+             if (values[i]<=0)
+                {
+                   printf("%s Failed Matrix is not positive definite",__FUNCTION__);
+                   return matrix::Zeros(0,0);
+                }
+            }
+            
+            matrix L;   
+            if (!m.Cholesky(L))
+               printf("%s Failed, Error = %d",__FUNCTION__, GetLastError());
+               
+            return L;
+         }
+         
+      matrix matrix_power(const matrix &m, uint exponent) { return m.Power(exponent); }
+         
+  };
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|  The numpy.fft submodule provides functions for computing the    |
+//|  Fast Fourier Transform (FFT) and its inverse, which are         |
+//|  essential for signal processing, time series analysis, and many |
+//|  scientific applications.                                        |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+#include <Math\Alglib\fasttransforms.mqh>
+
+struct CFFT
+  {      
+    protected:
+    
+      template <typename T>
+      bool vector2Array(const vector<T> &v, T &array[])
+       {
+         uint n = uint(v.Size());
+         if (ArrayResize(array, n)<0)
+           return false;
+         
+         for (uint i=0; i<n; i++)
+            array[i] = v[i];
+         
+         return true;
+       }
+       
+      template <typename T>
+      vector array2Vector(T &array[])
+       {
+         uint n = uint(array.Size());
+         vector res = vector::Zeros(array.Size());
+         
+         for (uint i=0; i<n; i++)
+            res[i] = array[i];
+         
+         return res;
+       }
+       
+    public:  
+      int dummy;
+      
+      vector fft_freq(int n, double d)
+         {
+            vector freq = vector::Zeros(n);
+            
+            // Handle even n
+            if (n % 2 == 0)
+            {
+               // First half for positive frequencies
+               for (int i = 0; i < n / 2; i++)
+               {
+                  freq[i] = i / (n * d);
+               }
+               
+               // Second half for negative frequencies (mirror image)
+               for (int i = n / 2; i < n; i++)
+               {
+                  freq[i] = (i - n) / (n * d);
+               }
+            }
+            else
+            {
+               // First half for positive frequencies
+               for (int i = 0; i <= (n - 1) / 2; i++)
+               {
+                  freq[i] = i / (n * d);
+               }
+               
+               // Second half for negative frequencies (mirror image)
+               for (int i = (n + 1) / 2; i < n; i++)
+               {
+                  freq[i] = (i - n) / (n * d);
+               }
+            }
+            return freq;
+         }
+         
+         vector<complex> fft(const vector &x)
+             { 
+               int n = (int)x.Size(); // Must be a power of 2
+               
+               // Prepare output complex array for FFT
+               complex freq_domain[];
+               ArrayResize(freq_domain, n);
+               
+               //--- 
+               
+               double x_array[];
+               vector2Array(x, x_array);
+               
+               // Perform FFT
+               CFastFourierTransform::FFTR1D(x_array, n, freq_domain);
+               vector<complex> res;
+               res.Assign(freq_domain);
+               
+               return res;
+             }
+         
+         // Inverse FFT function
+         vector ifft(const vectorc &fft_values)
+            {
+               int n = (int)fft_values.Size();
+               complex freq_domain[];
+               ArrayResize(freq_domain, n);
+               
+               // Convert the complex vector to an array
+               for (int i = 0; i < n; i++)
+               {
+                  freq_domain[i] = fft_values[i];
+               }
+               
+               double res[];
+               // Perform inverse FFT
+               CFastFourierTransform::FFTR1DInv(freq_domain, n, res);
+               
+               return array2Vector(res);
+            }
+            
+            vector<complex> rfft(const vector &x)
+               {
+                  int n = (int)x.Size(); // Input length
+                  
+                  // Prepare output complex array for FFT (half + 1 frequencies)
+                  int rfft_size = n / 2 + 1;
+                  complex freq_domain[];
+                  ArrayResize(freq_domain, rfft_size);
+               
+                  // Convert input vector to array
+                  double x_array[];
+                  vector2Array(x, x_array);
+               
+                  // Perform Real FFT
+                  CFastFourierTransform::FFTR1D(x_array, rfft_size, freq_domain);
+               
+                  // Convert the array to vector<complex>
+                  vector<complex> res;
+                  if (!res.Assign(freq_domain))
+                    {
+                      printf("%s Failed to assign a vector error = %d",__FUNCTION__,GetLastError());
+                      return res;
+                    }
+               
+                  return res;
+               }
+
+  };
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+enum pad_mode
+ {
+   constant,
+   edge,
+   reflect,
+   symmetric
+ };
+
+//+------------------------------------------------------------------+
+
+struct unique_struct
+ {
+   vector unique, count;
+ };
+ 
+//+------------------------------------------------------------------+
+
+struct polydiv_struct
+  {
+     vector quotient, 
+            remainder;
+  };
+  
+//+------------------------------------------------------------------+
+
+class CNumpy
+  {
+protected:
+
+   template<typename T>
+   static vector Sort(vector<T> &v,ENUM_SORT_MODE sort_mode=SORT_ASCENDING)
+    {
+      T arr[];
+      vector temp = v;
+      temp.Swap(arr);
+      
+      if (!ArraySort(arr))
+        printf("%s Failed to sort this vector Err=%d",__FUNCTION__,GetLastError());
+      
+      switch(sort_mode)
+        {
+         case  SORT_ASCENDING:
+           temp = array2Vector(arr);  
+           break;
+         case SORT_DESCENDING:
+           temp = array2Vector(arr);  
+           reverse(temp);
+           break;
+         default:
+           printf("%s Unknown sort mode");
+           break;
+        }
+      return temp;   
+    }
+
+   template <typename T>
+   static vector array2Vector(T &array[])
+    {
+      uint n = uint(array.Size());
+      vector res = vector::Zeros(array.Size());
+      
+      for (uint i=0; i<n; i++)
+         res[i] = array[i];
+      
+      return res;
+    }
+   
+   template<typename T>
+   static void reverse(vector<T> &v)
+    {
+     vector<T> v_temp = v;
+     
+      for (ulong i=0, j=v.Size()-1; i<v.Size(); i++, j--)
+           v[i] = v_temp[j];
+           
+      ZeroMemory(v_temp);
+    }
+    
+   void CNumpy::VectorRemove(vector &v, int index)
+    {
+      // Check if the index is valid
+      if (index < 0 || index >= (int)v.Size())
+      {
+         Print("Error: Index out of bounds!");
+         return;
+      }
+   
+      // Shift elements to the left, overwriting the target index
+      for (int i = index; i < (int)v.Size() - 1; i++)
+         v[i] = v[i + 1];
+   
+      // Resize vector to remove the last element
+      v.Resize(v.Size() - 1);
+    }
+    
+public:
+                     CNumpy(void);
+                    ~CNumpy(void);
+                    
+                    CRandom random;
+                    CLinalg linalg;
+                    CFFT fft;
+                    
+                    //--- constants
+                    
+                    double pi;
+                    double e;
+                    double euler_gamma;
+                    double inf;
+                    double nan;
+                    
+                    //--- not originally from Numpy
+                    
+                    static vector reverse(const vector &v);
+                    vector slice(const vector &v, int start_index, int end_index);
+                    matrix slice(const matrix &m, int row_start, int row_end, int col_start, int col_end);
+                    matrix column_stack(const matrix &m1, const matrix &m2);
+                    
+                    //--- Intialization methods
+                    
+                    template <typename T>
+                    vector full(uint size, T fill_value) { return vector::Full(size, fill_value); }
+                    vector ones(uint size) const { return vector::Ones(size); }
+                    vector zeros(uint size) { return vector::Zeros(size); }
+                    
+                    template <typename T>
+                    matrix full(uint rows, uint cols, T fill_value) { return matrix::Full(rows, cols, fill_value); }
+                    matrix ones(uint rows, uint cols) { return matrix::Ones(rows, cols); }
+                    matrix zeros(uint rows, uint cols) { return matrix::Zeros(rows, cols); }
+                    matrix eye(const uint rows, const uint cols, const int ndiag=0) { return matrix::Eye(rows, cols, ndiag); }
+                    matrix identity(uint rows) { return matrix::Identity(rows, rows); }
+                    
+                    //--- Basic math operations
+                    
+                    vector add(const vector&a, const vector&b) { return a+b; };
+                    vector subtract(const vector&a, const vector&b) { return a-b; };
+                    vector multiply(const vector&a, const vector&b) { return a*b; };
+                    vector divide(const vector&a, const vector&b) { return a/b; };
+                    
+                    matrix add(const matrix&a, const matrix&b) { return a+b; };
+                    matrix subtract(const matrix&a, const matrix&b) { return a-b; };
+                    matrix multiply(const matrix&a, const matrix&b) { return a*b; };
+                    matrix divide(const matrix&a, const matrix&b) { return a/b; };
+                    
+                    vector power(const vector&a, double n) { return MathPow(a, n); };
+                    vector sqrt(const vector&a) { return MathSqrt(a); }; 
+                    vector exp(const vector&a) { return MathExp(a); };
+                    vector log(const vector&a) { return MathLog(a); };
+                    template <typename T>
+                    T log(const T a) { return MathLog(a); };
+                    
+                    vector log1p(const vector&a) { return MathLog1p(a); };
+                    
+                    matrix power(const matrix&a, double n) { return MathPow(a, n); };
+                    matrix sqrt(const matrix&a) { return MathSqrt(a); };
+                    matrix exp(const matrix&a) { return MathExp(a); };
+                    matrix log(const matrix&a) { return MathLog(a); };
+                    matrix log1p(const matrix&a) { return MathLog1p(a); };
+                    
+                    //--- Statistical methods
+                    
+                    double sum(const vector& v) { return v.Sum(); }
+                    double sum(const matrix& m) { return m.Sum(); };
+                    vector sum(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Sum(axis); };
+                    
+                    double mean(const vector& v) { return v.Mean(); }
+                    double mean(const matrix& m) { return m.Mean(); };
+                    vector mean(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Mean(axis); };
+                    
+                    double average(const vector &v, const vector &weights) { return v.Average(weights); }
+                    double average(const matrix &m, const matrix &weights) { return m.Average(weights); }
+                    vector average(const matrix &m, const matrix &weights, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Average(weights, axis); }
+                    
+                    double var(const vector& v) { return v.Var(); }
+                    double var(const matrix& m) { return m.Var(); };
+                    vector var(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Var(axis); };
+                    
+                    double std(const vector& v) { return v.Std(); }
+                    double std(const matrix& m) { return m.Std(); };
+                    vector std(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Std(axis); };
+                    
+                    double median(const vector& v) { return v.Median(); }
+                    double median(const matrix& m) { return m.Median(); };
+                    vector median(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Median(axis); };
+                    
+                    double percentile(const vector &v, int value) { return v.Percentile(value); }
+                    double percentile(const matrix &m, int value) { return m.Percentile(value); }
+                    vector percentile(const matrix &m, int value, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Percentile(value, axis); }
+                    
+                    double quantile(const vector &v, int quantile_) { return v.Quantile(quantile_); } 
+                    double quantile(const matrix &m, int quantile_) { return m.Quantile(quantile_); }
+                    vector quantile(const matrix &m, int quantile_, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Quantile(quantile_, axis); }
+                    
+                    ulong argmax(const vector& v) { return v.ArgMax(); }
+                    ulong argmax(const matrix& m) { return m.ArgMax(); }
+                    vector argmax(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.ArgMax(axis); };
+                    
+                    ulong argmin(const vector& v) { return v.ArgMin(); }
+                    ulong argmin(const matrix& m) { return m.ArgMin(); }
+                    vector argmin(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.ArgMin(axis); };
+                    
+                    double max(const vector& v) { return v.Max(); }
+                    double max(const matrix& m) { return m.Max(); }
+                    vector max(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Max(axis); };
+                    
+                    double min(const vector& v) { return v.Min(); }
+                    double min(const matrix& m) { return m.Min(); }
+                    vector min(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Min(axis); };
+                    
+                    vector cumsum(const vector& v) { return v.CumSum(); }
+                    vector cumsum(const matrix& m) { return m.CumSum(); };
+                    //matrix cumsum(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.CumSum(axis); };
+                    
+                    vector cumprod(const vector& v) { return v.CumProd(); }
+                    vector cumprod(const matrix& m) { return m.CumProd(); };
+                    //matrix cumprod(const matrix& m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.CumProd(axis); };
+                    
+                    double prod(const vector &v, double initial=1.0) { return v.Prod(initial); }
+                    double prod(const matrix &m, double initial) { return m.Prod(initial); }
+                    vector prod(const matrix &m, double initial, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Prod(axis, initial); }
+                    
+                    double ptp(const vector &v) { return v.Ptp(); }
+                    double ptp(const matrix &m) { return m.Ptp(); }
+                    vector ptp(const matrix &m, ENUM_MATRIX_AXIS axis=AXIS_VERT) { return m.Ptp(axis); }
+                    
+                    //--- Array creation and manipulations 
+                    
+                    vector pad(const vector &v, int &pad_width[], pad_mode mode=constant, int constant_values=0);
+                    vector tile(const vector &v, uint reps);
+                    
+                    vector concat(const vector &v, const double var);
+                    vector concat(const vector &v1, const vector &v2);
+                    vector concat(const vector &v1, const vector &v2, const vector &v3);
+                    matrix concat(const matrix &m1, const matrix &m2, ENUM_MATRIX_AXIS axis=AXIS_VERT);
+                    matrix concat(const matrix &m, const vector &v, ENUM_MATRIX_AXIS axis=AXIS_VERT);
+                    matrix concat(const vector &v, const matrix &m, ENUM_MATRIX_AXIS axis = AXIS_VERT);
+                    
+                    vector arange(uint stop);
+                    vector arange(int start, int stop, int step);
+                    
+                    vector flatten(const matrix &m);
+                    vector ravel(const matrix &m) { return flatten(m); };
+                    matrix vander(const vector &x, uint N, bool increasing=false);
+                    
+                    matrix reshape(const vector &v, uint rows, uint cols);
+                    matrix reshape(const matrix &m, uint rows, uint cols);
+                    
+                    matrix expand_dims(const vector &v, uint axis);
+                    vector clip(const vector &v, double min, double max);
+                    
+                    matrix vstack(const vector &a, const vector &b);
+                    matrix vstack(const matrix &a, const matrix &b);
+                    matrix vstack(const matrix &a, const vector &b);
+                    vector hstack(const vector &a, const vector &b);
+                    matrix hstack(const matrix &a, const matrix &b);
+                    matrix hstack(const matrix &a, const vector &b);
+                    
+                    //--- Sorting
+                    
+                    template<typename T>
+                    vector argsort(const vector<T> &v);
+                    template<typename T>
+                    vector sort(const vector<T> &v);
+                    
+                    //--- Others
+                    
+                    matrix dot(const matrix& a, const matrix& b);
+                    double dot(const vector& a, const vector& b);
+                    matrix dot(const matrix& a, const vector& b);
+                    vector linspace(int start, int stop, uint num, bool endpoint=true);
+                    static unique_struct unique(const vector &v);
+                    
+                    template<typename T>
+                    int sign(T var);
+                    vector sign(vector &x);
+                    matrix sign(matrix &x);
+                    
+                    template <typename T>
+                    bool isnan(T var)
+                     {
+                        return var != var; //Because in IEEE math (used by MQL5), only NaN != NaN.
+                     }
+                     
+                    bool isclose(const double a, const double b, const double rtol=1e-5, const double atol=1e-8, bool equal_nan=false);
+                    
+                    //--- Polynomials
+                    
+                    //---  p and q are vectors of coefficients.
+                    
+                    vector polyadd(const vector &p, const vector &q);
+                    vector polysub(const vector &p, const vector &q);
+                    vector polymul(const vector &p, const vector &q);
+                    vector polyder(const vector &p, int m=1);
+                    vector polyint(const vector &p, int m=1, double k=0.0);
+                    double polyval(const vector &p, double x);
+                    //vector polyroots(const vector &p);
+                    polydiv_struct polydiv(const vector &p, const vector &q);
+  };   
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+CNumpy::CNumpy(void):
+   pi(M_PI),
+   e(M_E),
+   euler_gamma(0.5772156649015328606065120900824024310421),
+   inf(double("inf")),
+   nan(double("nan"))
+ {
+ 
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+CNumpy::~CNumpy(void)
+ {
+ 
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::arange(uint stop)
+ {
+    vector res = vector::Zeros(stop);
+    for (uint i=0; i<stop; i++)
+      res[i] = (uint)i;
+    
+    return res;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::arange(int start, int stop, int step)
+ {
+   if (step == 0)
+   {
+      Print("Step cannot be zero!");
+      return vector::Zeros(0);  // Return an empty vector
+   }
+
+   int size = (stop - start) / step;  
+   if ((stop - start) % step != 0) size++;  // Handle non-divisible steps
+
+   vector res(size);
+   int value = start;
+   for (int i = 0; i < size; i++)
+   {
+      res[i] = value;
+      value += step;
+   }
+   return res;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::dot(const matrix &a,const matrix &b)
+ {
+   return a.MatMul(b);
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+double CNumpy::dot(const vector &a, const vector &b)
+ {
+   return a.MatMul(b);
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::dot(const matrix &a,const vector &b)
+ {
+   vector b_temp = b;
+   matrix b_mat = {};
+   
+   if (!b_temp.Swap(b_mat))
+      {
+         printf("%s Dimensions mismatch", __FUNCTION__);
+         DebugBreak();
+         return matrix::Zeros(0,0);
+      }
+      
+   return a.MatMul(b_mat.Transpose());
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::concat(const vector &v, const double var)
+{
+   vector result = vector::Zeros(v.Size()+1); // Allocate space for the merged vector
+   result[result.Size()-1] = var;
+   
+   return result; // Return the concatenated vector
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::concat(const vector &v1, const vector &v2)
+{
+   vector result = vector::Zeros(v1.Size() + v2.Size()); // Allocate space for the merged vector
+
+   int index = 0;
+   
+   // Copy first vector
+   for (ulong i = 0; i < v1.Size(); i++, index++)
+      result[index] = v1[i];
+
+   // Copy second vector
+   for (ulong i = 0; i < v2.Size(); i++, index++)
+      result[index] = v2[i];
+
+   return result; // Return the concatenated vector
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::concat(const vector &v1, const vector &v2, const vector &v3)
+{
+   vector result = vector::Zeros(v1.Size() + v2.Size() + v3.Size()); // Allocate space for the merged vector
+
+   int index = 0;
+   
+   // Copy first vector
+   for (ulong i = 0; i < v1.Size(); i++, index++)
+      result[index] = v1[i];
+
+   // Copy second vector
+   for (ulong i = 0; i < v2.Size(); i++, index++)
+      result[index] = v2[i];
+
+   // Copy third vector
+   for (ulong i = 0; i < v3.Size(); i++, index++)
+      result[index] = v3[i];
+
+   return result; // Return the concatenated vector
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::concat(const matrix &m1, const matrix &m2, ENUM_MATRIX_AXIS axis = AXIS_VERT)
+{
+   matrix result = {};
+
+   // --- Handle empty matrices
+   if(m1.Rows() == 0 || m1.Cols() == 0)
+      return m2; // m1 is empty, return m2
+
+   if(m2.Rows() == 0 || m2.Cols() == 0)
+      return m1; // m2 is empty, return m1
+
+   // --- Both matrices are non-empty
+   switch(axis)
+   {
+      case AXIS_HORZ: // Vertical stacking (append rows)
+         if(m1.Cols() != m2.Cols())
+         {
+            printf("%s failed, there is a mismatch in the number of columns", __FUNCTION__);
+            return zeros(0, 0);
+         }
+
+         result.Resize(m1.Rows() + m2.Rows(), m1.Cols());
+
+         // Copy first matrix
+         for(uint i=0; i<m1.Rows(); i++)
+            for(uint j=0; j<m1.Cols(); j++)
+               result[i][j] = m1[i][j];
+
+         // Copy second matrix
+         for(uint i=0; i<m2.Rows(); i++)
+            for(uint j=0; j<m2.Cols(); j++)
+               result[m1.Rows() + i][j] = m2[i][j];
+         break;
+
+      case AXIS_VERT: // Horizontal stacking (append columns)
+         if(m1.Rows() != m2.Rows())
+         {
+            printf("%s failed, there is a mismatch in the number of rows", __FUNCTION__);
+            return zeros(0, 0);
+         }
+
+         result.Resize(m1.Rows(), m1.Cols() + m2.Cols());
+
+         // Copy first matrix
+         for(uint i=0; i<m1.Rows(); i++)
+            for(uint j=0; j<m1.Cols(); j++)
+               result[i][j] = m1[i][j];
+
+         // Copy second matrix
+         for(uint i=0; i<m2.Rows(); i++)
+            for(uint j=0; j<m2.Cols(); j++)
+               result[i][m1.Cols() + j] = m2[i][j];
+         break;
+
+      case AXIS_NONE:
+         printf("%s failed, no axis selected", __FUNCTION__);
+         return zeros(0, 0);
+   }
+
+   return result;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::concat(const matrix &m, const vector &v, ENUM_MATRIX_AXIS axis = AXIS_VERT)
+ {
+   matrix result = {};
+
+   // --- If matrix is empty, return vector as matrix
+   if(m.Rows() == 0 || m.Cols() == 0)
+   {
+      switch(axis)
+      {
+         case AXIS_HORZ: // vector becomes a row
+            result.Resize(1, v.Size());
+            for(uint j=0; j<v.Size(); j++)
+               result[0][j] = v[j];
+            break;
+
+         case AXIS_VERT: // vector becomes a column
+            result.Resize(v.Size(), 1);
+            for(uint i=0; i<v.Size(); i++)
+               result[i][0] = v[i];
+            break;
+
+         case AXIS_NONE:
+            printf("%s failed, no axis selected", __FUNCTION__);
+            return zeros(0,0);
+      }
+      return result;
+   }
+
+   // --- If vector is empty, just return the matrix
+   if(v.Size() == 0)
+      return m;
+
+   // --- Both matrix and vector are non-empty
+   switch(axis)
+   {
+      case AXIS_HORZ: // Append as a new row
+         if(m.Cols() != v.Size())
+         {
+            printf("%s failed, the vector size does not match the number of columns", __FUNCTION__);
+            return zeros(0,0);
+         }
+
+         result.Resize(m.Rows()+1, m.Cols());
+
+         // Copy existing matrix
+         for(uint i=0; i<m.Rows(); i++)
+            for(uint j=0; j<m.Cols(); j++)
+               result[i][j] = m[i][j];
+
+         // Append vector as new row
+         for(uint j=0; j<v.Size(); j++)
+            result[m.Rows()][j] = v[j];
+         break;
+
+      case AXIS_VERT: // Append as a new column
+         if(m.Rows() != v.Size())
+         {
+            printf("%s failed, the vector size does not match the number of rows", __FUNCTION__);
+            return zeros(0,0);
+         }
+
+         result.Resize(m.Rows(), m.Cols()+1);
+
+         // Copy existing matrix
+         for(uint i=0; i<m.Rows(); i++)
+            for(uint j=0; j<m.Cols(); j++)
+               result[i][j] = m[i][j];
+
+         // Append vector as new column
+         for(uint i=0; i<v.Size(); i++)
+            result[i][m.Cols()] = v[i];
+         break;
+
+      case AXIS_NONE:
+         printf("%s failed, no axis selected", __FUNCTION__);
+         return zeros(0,0);
+   }
+
+   return result;
+}
+//+------------------------------------------------------------------+
+//| Concatenate a vector and a matrix                                |
+//| AXIS_HORZ → append vector as a new row above matrix              |
+//| AXIS_VERT → append vector as a new column on the left of matrix  |
+//+------------------------------------------------------------------+
+matrix CNumpy::concat(const vector &v, const matrix &m, ENUM_MATRIX_AXIS axis = AXIS_VERT)
+{
+   matrix result = {};
+
+   // --- Handle empty cases
+   if(v.Size() == 0)
+      return m;  // vector empty, return matrix
+
+   if(m.Rows() == 0 || m.Cols() == 0)
+   {
+      // matrix empty, return vector as matrix
+      switch(axis)
+      {
+         case AXIS_HORZ: // vector becomes first row
+            result.Resize(1, v.Size());
+            for(uint j=0; j<v.Size(); j++)
+               result[0][j] = v[j];
+            break;
+
+         case AXIS_VERT: // vector becomes first column
+            result.Resize(v.Size(), 1);
+            for(uint i=0; i<v.Size(); i++)
+               result[i][0] = v[i];
+            break;
+
+         case AXIS_NONE:
+            printf("%s failed, no axis selected", __FUNCTION__);
+            return zeros(0,0);
+      }
+      return result;
+   }
+
+   // --- Both non-empty
+   switch(axis)
+   {
+      case AXIS_HORZ: // Prepend vector as new row
+         if(m.Cols() != v.Size())
+         {
+            printf("%s failed, vector size does not match matrix columns", __FUNCTION__);
+            return zeros(0,0);
+         }
+
+         result.Resize(m.Rows()+1, m.Cols());
+
+         // Place vector first
+         for(uint j=0; j<v.Size(); j++)
+            result[0][j] = v[j];
+
+         // Copy matrix after vector
+         for(uint i=0; i<m.Rows(); i++)
+            for(uint j=0; j<m.Cols(); j++)
+               result[i+1][j] = m[i][j];
+         break;
+
+      case AXIS_VERT: // Prepend vector as new column
+         if(m.Rows() != v.Size())
+         {
+            printf("%s failed, vector size does not match matrix rows", __FUNCTION__);
+            return zeros(0,0);
+         }
+
+         result.Resize(m.Rows(), m.Cols()+1);
+
+         // Place vector as first column
+         for(uint i=0; i<v.Size(); i++)
+            result[i][0] = v[i];
+
+         // Copy matrix to the right
+         for(uint i=0; i<m.Rows(); i++)
+            for(uint j=0; j<m.Cols(); j++)
+               result[i][j+1] = m[i][j];
+         break;
+
+      case AXIS_NONE:
+         printf("%s failed, no axis selected", __FUNCTION__);
+         return zeros(0,0);
+   }
+
+   return result;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::flatten(const matrix &m)
+ {
+   vector res = vector::Zeros(m.Rows()*m.Cols());
+   for (ulong r=0, n=0; r<m.Rows(); r++)
+      for (ulong c=0; c<m.Cols(); c++, n++)
+         res[n] = m[r][c];
+         
+   return res;       
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+template<typename T>
+vector CNumpy::argsort(const vector<T> &v)
+ {   
+//---
+
+    ulong size = v.Size();
+    vector args(size);
+    
+    // Initialize args array with sequential values
+    for (ulong i = 0; i < size; i++)
+        args[i] = (uint)i;
+
+    // Perform selection sort on args based on array values
+    for (ulong i = 0; i < size - 1; i++)
+    {
+        ulong minIndex = i;
+        for (ulong j = i + 1; j < size; j++)
+        {
+            if (v[(uint)args[j]] < v[(uint)args[minIndex]])
+                minIndex = j;
+        }
+
+        // Swap args
+        uint temp = (uint)args[i];
+        args[i] = args[minIndex];
+        args[minIndex] = temp;
+    }
+   
+  return args;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+template<typename T>
+vector CNumpy::sort(const vector<T> &v)
+ {
+   T arr[];
+   vector temp = v;
+   temp.Swap(arr);
+   
+   if (!ArraySort(arr))
+     printf("%s Failed to sort this vector Err=%d",__FUNCTION__,GetLastError());
+        
+   temp = array2Vector(arr);   
+   return temp;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::reverse(const vector &v)
+{
+   vector v_reversed;
+   v_reversed.Resize(v.Size()); // Allocate space for the reversed vector
+
+   for (ulong i = 0, j = v.Size() - 1; i < v.Size(); i++, j--)
+      v_reversed[i] = v[j];  // Copy elements in reverse order
+
+   return v_reversed; // Return the new reversed vector
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::pad(const vector &v, int &pad_width[], pad_mode mode=constant, int constant_values=0)
+ {
+   if (pad_width.Size()!=2)
+      {   
+         printf("pad_width array must have exactly two elements");
+         return vector::Zeros(0);
+      }    
+      
+   int left_pad = pad_width[0], right_pad = pad_width[1];
+   vector left_values = {}, right_values = {};
+   
+   switch(mode)
+     {
+      case  constant:
+        
+        left_values = full(left_pad, constant_values);
+        right_values = full(right_pad, constant_values);
+        
+        break;
+      case  edge:
+        
+        left_values = full(left_pad, v[0]);
+        right_values = full(right_pad, v[v.Size()-1]);
+        
+        break;
+      case  reflect:
+        
+        if (left_pad==0)
+          left_values = vector::Zeros(0);
+        else
+          {
+           vector sliced = slice(v, 1, left_pad+1);
+           left_values = reverse(sliced);
+          }
+          
+        if (right_pad==0)
+          right_values = vector::Zeros(0);
+        else
+          {
+           vector sliced = slice(v,  -right_pad-1, -1);
+           right_values = reverse(sliced);
+          }  
+          
+        break;
+      case  symmetric:
+        
+        if (left_pad==0)
+          left_values = vector::Zeros(0);
+        else
+          {
+           vector sliced = slice(v, 0, left_pad);
+           left_values = reverse(sliced);
+          }
+        if (right_pad==0)
+          right_values = vector::Zeros(0);
+        else
+          {
+           vector sliced = slice(v, -right_pad, -1);
+           right_values = reverse(sliced);
+          }
+          
+        break;
+      default:
+        printf("Unkown/Unsupported padding mode");
+        break;
+     }
+   
+   return concat(left_values, v, right_values);
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::slice(const vector &v, int start_index, int end_index)
+{
+   int n = (int)v.Size();
+
+   // Handle negative indexing (Python-style)
+   if (start_index < 0) 
+      start_index += n;
+   
+   if (end_index < 0)
+      end_index += n;
+   
+   // Ensure valid indices
+   if (start_index < 0 || start_index >= n || end_index < 0 || end_index > n)
+   {
+      printf("%s Failed: Index out of range", __FUNCTION__);
+      return vector::Zeros(0);
+   }
+
+   if (start_index >= end_index)
+   {
+      printf("%s Failed: Start index >= End index, returning empty vector", __FUNCTION__);
+      return vector::Zeros(0);
+   }
+
+   // Ensure correct sizing
+   int size = end_index - start_index;
+   vector res;
+   res.Resize(size);
+
+   for (int i = start_index, count = 0; i < end_index; i++, count++)
+      res[count] = v[i];
+
+   return res;
+}
+//+------------------------------------------------------------------+
+//| Slice a matrix similarly to NumPy's slicing                     |
+//| Parameters:                                                      |
+//|   m - input matrix                                              |
+//|   row_start - starting row index (inclusive)                    |
+//|   row_end - ending row index (exclusive)                        |
+//|   col_start - starting column index (inclusive)                 |
+//|   col_end - ending column index (exclusive)                     |
+//+------------------------------------------------------------------+
+matrix CNumpy::slice(const matrix &m, int row_start, int row_end, int col_start, int col_end)
+{
+    int n_rows = (int)m.Rows();
+    int n_cols = (int)m.Cols();
+    
+    // Handle negative indexing (Python-style)
+    if(row_start < 0) row_start += n_rows;
+    if(row_end < 0) row_end += n_rows;
+    if(col_start < 0) col_start += n_cols;
+    if(col_end < 0) col_end += n_cols;
+    
+    // Validate indices
+    if(row_start < 0 || row_start >= n_rows || 
+       row_end < 0 || row_end > n_rows ||
+       col_start < 0 || col_start >= n_cols || 
+       col_end < 0 || col_end > n_cols)
+    {
+        PrintFormat("%s: Index out of range (rows:%d-%d/%d, cols:%d-%d/%d)",
+                   __FUNCTION__, 
+                   row_start, row_end, n_rows,
+                   col_start, col_end, n_cols);
+        return matrix::Zeros(0,0);
+    }
+    
+    if(row_start >= row_end || col_start >= col_end)
+    {
+        PrintFormat("%s: Invalid range (row_start >= row_end or col_start >= col_end)",
+                   __FUNCTION__);
+        return matrix::Zeros(0,0);
+    }
+    
+    // Create result matrix
+    matrix result;
+    result.Resize(row_end - row_start, col_end - col_start);
+    
+    // Copy data
+    for(int i = row_start, r = 0; i < row_end; i++, r++)
+    {
+        for(int j = col_start, c = 0; j < col_end; j++, c++)
+        {
+            result[r][c] = m[i][j];
+        }
+    }
+    
+    return result;
+}
+//+------------------------------------------------------------------+
+//| Helper function to stack matrices column-wise                    |
+//+------------------------------------------------------------------+
+matrix CNumpy::column_stack(const matrix &m1, const matrix &m2)
+{
+    if(m1.Rows() != m2.Rows())
+    {
+        PrintFormat("%s: Row count mismatch (%d vs %d)", 
+                   __FUNCTION__, m1.Rows(), m2.Rows());
+        return matrix::Zeros(0,0);
+    }
+    
+    matrix result;
+    result.Resize(m1.Rows(), m1.Cols() + m2.Cols());
+    
+    // Copy first matrix
+    for(uint i=0; i<m1.Rows(); i++)
+        for(uint j=0; j<m1.Cols(); j++)
+            result[i][j] = m1[i][j];
+    
+    // Copy second matrix
+    for(uint i=0; i<m2.Rows(); i++)
+        for(uint j=0; j<m2.Cols(); j++)
+            result[i][m1.Cols() + j] = m2[i][j];
+    
+    return result;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::tile(const vector &v, uint reps)
+{
+   if (reps <= 0)
+    {
+      printf("Error: tile reps must be > 0. Returning empty vector.");
+      return vector::Zeros(0);
+    }
+//---
+
+   uint v_size = (uint)v.Size();
+   uint res_size = v_size * reps;
+   vector res = vector::Zeros(res_size);
+   
+   for (uint i = 0; i < reps; i++)
+      for (uint j = 0; j < v_size; j++)
+         res[i * v_size + j] = v[j];
+   
+   return res; 
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::vander(const vector &x, uint N, bool increasing = false)
+ {
+   if (N == 0)
+       N = (uint)x.Size();  // Default to length of x if N is not provided
+   
+   vector exp_;
+   if (increasing)
+       exp_ = this.arange(0, N, 1);  // Powers in increasing order (0 to N-1)
+   else
+       exp_ = this.arange(N-1, -1, -1);  // Powers in decreasing order (N-1 to 0)
+
+   // Create the Vandermonde matrix
+   matrix results(x.Size(), N);  // Matrix of size (len(x) x N)
+
+   for (ulong i = 0; i < x.Size(); i++)
+       for (uint j = 0; j < N; j++)
+           results[i][j] = MathPow(x[i], exp_[j]);  // Compute x_i ^ exp_j
+
+   return results;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::reshape(const vector &v,uint rows,uint cols)
+ {
+   matrix res(rows, cols); // Initialize matrix with correct dimensions
+
+   if (v.Size() != (cols * rows))
+    {
+      printf("%s: Invalid dimensions", __FUNCTION__);
+      return res;  // Return an empty matrix
+    }
+
+   // Fill matrix from vector
+   for (uint i = 0; i < rows; i++)
+      for (uint j = 0; j < cols; j++)
+         res[i][j] = v[i * cols + j];  // Assign values from vector
+
+   return res;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::reshape(const matrix &m,uint rows,uint cols)
+ {
+   matrix res = m;
+   if (!res.Reshape(rows, cols))
+     printf("%s failed",__FUNCTION__);
+     
+   return res;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::expand_dims(const vector &v, uint axis)
+{
+   uint rows = (uint)v.Size();
+   uint cols = 1;  // Default to column vector
+
+   if (axis == 0)  // Add new axis at the beginning = row vector
+      return reshape(v, 1, rows);  // Shape: (1, n)
+   else if (axis == 1)  // Add new axis at the end = column vector
+      return reshape(v, rows, 1);  // Shape: (n, 1)
+   else
+   {
+      printf("%s: Invalid axis %d", __FUNCTION__, axis);
+      return matrix::Zeros(0,0);  // Return an empty matrix on failure
+   }
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::clip(const vector &v,double min,double max)
+ {
+   vector res = zeros((uint)v.Size());
+   for (ulong i=0;i<v.Size(); i++)
+      res[i] = MathMax(MathMin(v[i], max), min);
+   
+   return res;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::linspace(int start,int stop,uint num,bool endpoint=true)
+ {
+   if (num<=0)
+     return vector::Zeros(0);
+   if (num==1)
+    {
+      vector res = {start};
+      return res;  
+    }
+    
+   double step = 0;
+   if (endpoint)
+      step = double(stop - start) / (double(num) - 1);
+   else
+      step = (stop - start) / (double)num;
+
+//---
+   
+   vector res = vector::Zeros(num);
+   for (uint i=0; i<num; i++)
+      res[i] =  start + (i * step);
+      
+   return res;  
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+unique_struct CNumpy::unique(const vector &v) 
+{
+   unique_struct res;
+   vector v_classes={};
+   vector counts = {};
+
+   for (ulong i = 0; i < v.Size(); i++) 
+   {
+      bool found = false;
+      
+      for (ulong j = 0; j < v_classes.Size(); j++) 
+      {
+         if (v[i] == v_classes[j]) 
+         {
+            counts[j] += 1;  // Increase count for the existing unique value
+            found = true;
+            break;
+         }
+      }
+
+      if (!found) 
+      {
+         // Resize vectors to add new unique element
+         v_classes.Resize(v_classes.Size() + 1);
+         counts.Resize(counts.Size() + 1);
+         
+         // Add new unique value and initialize its count
+         v_classes[v_classes.Size() - 1] = v[i];
+         counts[counts.Size() - 1] = 1;
+      }
+   }
+
+   // Assign results
+   res.unique = v_classes;
+   res.count  = counts;
+
+   // Sort unique values and apply the same order to counts
+   
+   Sort(res.unique);
+   Sort(res.count);
+
+   return res;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+template<typename T>
+int CNumpy::sign(T var)
+ {
+   if (var<0)
+     return -1;
+   else if (var==0)
+     return 0;
+   else
+     return 1;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::sign(matrix &x)
+ {
+   matrix ret_matrix = x;
+   
+    for (ulong i=0; i<x.Cols(); i++)
+     ret_matrix.Col(sign(x.Col(i)) ,i);
+   
+   return ret_matrix;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::sign(vector &x)
+ {
+   vector v(x.Size());
+   for (ulong i=0; i<x.Size(); i++)
+     v[i] = sign(x[i]);
+     
+  return v;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+bool CNumpy::isclose(const double a,const double b,const double rtol=1e-5,const double atol=1e-8,bool equal_nan=false)
+ {
+    if (this.isnan(a) || this.isnan(b))
+      return equal_nan && this.isnan(a) && this.isnan(b);
+    
+    return fabs(a-b) <= atol + rtol * fabs(b);
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::polyadd(const vector &p,const vector &q)
+ {
+//--- Temporary vectors to avoid changing args
+    
+    vector temp_p = p;
+    vector temp_q = q;
+
+    int len_diff = int(p.Size() - q.Size());
+    if (len_diff > 0)
+     {
+       int width[] = {0, len_diff};
+       temp_q = pad(temp_q, width, constant);   
+     }
+    else if (len_diff < 0)
+     {
+       int width[] = {0, -len_diff};
+       temp_p = pad(temp_p, width, constant);   
+     } 
+     
+   return temp_p + temp_q;
+ }
+//+------------------------------------------------------------------+
+//|    Subtracts polynomial q from polynomial p.                     |
+//+------------------------------------------------------------------+
+vector CNumpy::polysub(const vector &p,const vector &q)
+ {
+//--- Temporary vectors to avoid changing args
+    
+    vector temp_p = p;
+    vector temp_q = q;
+
+    int len_diff = int(p.Size() - q.Size());
+    if (len_diff > 0)
+     {
+       int width[] = {0, len_diff};
+       temp_q = pad(temp_q, width, constant);   
+     }
+    else if (len_diff < 0)
+     {
+       int width[] = {0, -len_diff};
+       temp_p = pad(temp_p, width, constant);   
+     } 
+     
+   return temp_p - temp_q;
+ }
+//+------------------------------------------------------------------+
+//|    Multiplies two polynomials p and q.                           |
+//+------------------------------------------------------------------+
+vector CNumpy::polymul(const vector &p,const vector &q)
+ {
+   vector result = vector::Zeros(p.Size() + q.Size() - 1);
+   
+   // Multiply each term from p by each term from q
+   
+   for (ulong i=0; i<p.Size(); i++)
+      for (ulong j=0; j<q.Size(); j++)
+         result[i+j] += p[i] * q[j];
+   
+   return result;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::polyder(const vector &p, int m=1)
+{
+   vector result = p;
+
+   for (int k = 0; k < m; k++)
+   {
+      if (result.Size() <= 1)
+         return vector::Zeros(1);  // Derivative of a constant is zero
+
+      vector temp_result(result.Size() - 1);
+
+      for (ulong i = 0; i < temp_result.Size(); i++)
+         temp_result[i] = result[i + 1] * (i + 1);
+
+      result = temp_result;
+   }
+
+   return result;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CNumpy::polyint(const vector &p, int m=1, double k=0.0)
+{
+   vector result = p;
+
+   for (int k_count = 0; k_count < m; k_count++)
+   {
+      vector temp_result(result.Size() + 1);
+
+      temp_result[0] = k; // Integration constant
+
+      for (ulong i = 0; i < result.Size(); i++)
+         temp_result[i + 1] = result[i] / double(i + 1);
+
+      result = temp_result;
+      k = 0.0;  // Only the first integral includes the constant
+   }
+
+   return result;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+double CNumpy::polyval(const vector &p, double x)
+{
+   double result = 0.0;
+
+   for (long i = (long)p.Size() - 1; i >= 0; i--) // Iterate from highest degree down
+      result = result * x + p[i];
+
+   return result;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+/*
+vector CNumpy::polyroots(const vector &p)
+{
+   int degree = (int)p.Size() - 1;
+
+   if (degree <= 0)
+      return vector::Zeros(0); // No roots for constant polynomial
+
+   matrix A(degree, degree);
+
+   // Construct Companion Matrix
+   for (int i = 0; i < degree - 1; i++)
+      A[i + 1, i] = 1.0;
+
+   for (int i = 0; i < degree; i++)
+      A[0, i] = -p[i + 1] / p[0];
+
+   // Find Eigenvalues (roots)
+   return linalg.eig(A).eigenvalues;
+}
+*/
+//+------------------------------------------------------------------+
+//|  Polynomial Division: Returns quotient and remainder             |
+//+------------------------------------------------------------------+
+polydiv_struct CNumpy::polydiv(const vector &p, const vector &q)
+{
+   polydiv_struct res;
+   
+   // Degree of polynomials
+   int deg_p = int(p.Size()) - 1;
+   int deg_q = int(q.Size()) - 1;
+
+   // Check if division is possible
+   if (deg_q < 0)
+   {
+      Print("Error: Division by zero polynomial!");
+      return res;
+   }
+
+   // Initialize quotient as zeros of appropriate size
+   res.quotient = vector::Zeros(deg_p - deg_q + 1);
+   
+   // Copy dividend to remainder
+   res.remainder = p;
+
+   // Perform polynomial long division
+   for (int i = 0; i <= deg_p - deg_q; i++)
+   {
+      // Compute leading coefficient of quotient
+      res.quotient[i] = res.remainder[i] / q[0];
+
+      // Subtract q * quotient[i] from remainder
+      for (int j = 0; j <= deg_q; j++)
+         res.remainder[i + j] -= res.quotient[i] * q[j];
+   }
+
+   // Remove leading zeros from remainder
+   while (res.remainder.Size() > 0 && fabs(res.remainder[0]) < 1e-10)
+      VectorRemove(res.remainder, 0);
+  
+  return res;
+}
+//+------------------------------------------------------------------+
+//| Vertically stack vectors or matrices                             |
+//+------------------------------------------------------------------+
+matrix CNumpy::vstack(const vector &a, const vector &b)
+{
+    if(a.Size() != b.Size())
+    {
+        printf("Error in vstack: vectors must have same length");
+        return matrix::Zeros(0, 0);
+    }
+    
+    matrix result(2, a.Size());
+    result.Row(a, 0);
+    result.Row(b, 1);
+    
+    return result;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::vstack(const matrix &a, const matrix &b)
+ {
+    if(a.Cols() != b.Cols())
+    {
+        printf("Error in vstack: matrices must have same number of columns");
+        return matrix::Zeros(0, 0);
+    }
+    
+    matrix result(a.Rows() + b.Rows(), a.Cols());
+    
+    // Copy first matrix
+    for(ulong i = 0; i < a.Rows(); i++)
+        for(ulong j = 0; j < a.Cols(); j++)
+            result[i][j] = a[i][j];
+    
+    // Copy second matrix
+    for(ulong i = 0; i < b.Rows(); i++)
+        for(ulong j = 0; j < b.Cols(); j++)
+            result[i + a.Rows()][j] = b[i][j];
+    
+    return result;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::vstack(const matrix &a, const vector &b)
+ {
+    if(a.Cols() != b.Size())
+    {
+        printf("Error in vstack: matrix cols must match vector length");
+        return matrix::Zeros(0, 0);
+    }
+    
+    matrix result(a.Rows() + 1, a.Cols());
+    
+    // Copy matrix
+    for(ulong i = 0; i < a.Rows(); i++)
+        for(ulong j = 0; j < a.Cols(); j++)
+            result[i][j] = a[i][j];
+    
+    // Copy vector as last row
+    for(ulong j = 0; j < b.Size(); j++)
+        result[a.Rows()][j] = b[j];
+    
+    return result;
+ }
+//+------------------------------------------------------------------+
+//| Horizontally stack two vectors                                   |
+//+------------------------------------------------------------------+
+vector CNumpy::hstack(const vector &a, const vector &b)
+{
+    vector result(a.Size() + b.Size());
+    
+    for(ulong i = 0; i < a.Size(); i++)
+        result[i] = a[i];
+    
+    for(ulong i = 0; i < b.Size(); i++)
+        result[i + a.Size()] = b[i];
+    
+    return result;
+}
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::hstack(const matrix &a, const matrix &b)
+ {
+    if(a.Rows() != b.Rows())
+    {
+        printf("Error in hstack: matrices must have same number of rows");
+        return matrix::Zeros(0, 0);
+    }
+    
+    matrix result(a.Rows(), a.Cols() + b.Cols());
+    
+    // Copy first matrix
+    for(ulong i = 0; i < a.Rows(); i++)
+        for(ulong j = 0; j < a.Cols(); j++)
+            result[i][j] = a[i][j];
+    
+    // Copy second matrix
+    for(ulong i = 0; i < b.Rows(); i++)
+        for(ulong j = 0; j < b.Cols(); j++)
+            result[i][j + a.Cols()] = b[i][j];
+    
+    return result;
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+matrix CNumpy::hstack(const matrix &a, const vector &b)
+ {
+    if(a.Rows() != b.Size())
+    {
+        printf("Error in hstack: matrix rows must match vector length");
+        return matrix::Zeros(0, 0);
+    }
+    
+    matrix result(a.Rows(), a.Cols() + 1);
+    
+    // Copy matrix
+    for(ulong i = 0; i < a.Rows(); i++)
+        for(ulong j = 0; j < a.Cols(); j++)
+            result[i][j] = a[i][j];
+    
+    // Copy vector as last column
+    for(ulong i = 0; i < b.Size(); i++)
+        result[i][a.Cols()] = b[i];
+    
+    return result;
+ }
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+class CPolynomial: protected CNumpy
+  {
+protected:
+   vector m_coeff;
+      
+   matrix vector21DMatrix(const vector &v)
+    {
+      matrix res = matrix::Zeros(v.Size(), 1);
+      for (ulong r=0; r<v.Size(); r++)
+         res[r][0] = v[r];
+         
+      return res;
+    }
+    
+public:
+                     CPolynomial(void);
+                     CPolynomial(vector &coefficients); //for loading pre-trained model
+                    ~CPolynomial(void);
+                    
+                     vector fit(const vector &x, const vector &y, int degree);
+  };
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+CPolynomial::CPolynomial(void)
+ {
+ 
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+CPolynomial::~CPolynomial(void)
+ {
+ 
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+CPolynomial::CPolynomial(vector &coefficients):
+m_coeff(coefficients)
+ {
+   
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
+vector CPolynomial::fit(const vector &x, const vector &y, int degree)
+ {
+   //Constructing the vandermonde matrix
+   matrix X = vander(x, degree+1, true);
+   
+   matrix temp1 =  X.Transpose().MatMul(X);
+   matrix temp2 = X.Transpose().MatMul(vector21DMatrix(y));
+   
+   matrix coef_m = linalg.inv(temp1).MatMul(temp2);
+   
+   return (this.m_coeff = flatten(coef_m));
+ }
+//+------------------------------------------------------------------+
+//|                                                                  |
+//+------------------------------------------------------------------+
