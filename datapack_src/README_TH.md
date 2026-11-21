@@ -29,8 +29,8 @@
 | **ฐานข้อมูลเหตุการณ์** | `data/event_reaction_db` | 2,028 เหตุการณ์ (FOMC/ประมูลพันธบัตร/OPEX/VIX แตะ 30/วันผันผวน >2.5σ) + สถิติการตอบสนองที่วัดจริง |
 | **ที่เก็บข้อมูลรายวัน** | `data/collector_store` | 16 แหล่งดึงทุกวันตั้งแต่ 2026-11-20 — ส่วนที่กูเกิลย้อนหลังไม่ได้ |
 | องค์ความรู้ | `knowledge/*.md` | แหล่งข้อมูลที่ยังใช้ได้/ตายแล้ว, กับดัก, สิ่งที่ล้มเหลว, ไอเดียที่ยังไม่ได้ทดสอบพร้อม "ความน่าจะเป็น" |
-| **คลังความรู้ EA เชิงลึก (v2.13 / Batch 2)** | `data/ea_intelligence_kb` + `code/ea_sources/` + `code/ea_sources_batch2/` | Reverse-engineer โค้ดจริง **1,718 ไฟล์** (`35.16 MB`), SQLite+FTS5 (`alina_ea_kb.sqlite`), `493` EAs, `223` Indicators, `325` Visual/Wingdings, `1,289` Duplicate/Fork, Knowledge Graph `4,726` edges, RAG `2,021` chunks, Queue Batch 2 ปิดครบ `1,924/1,924` (`0` ค้าง) + เตรียม Batch 3 (`951` งาน) |
-| โค้ด | `code/` | สคริปต์ทั้งหมด + EA (`AlinaRiskGovernor.mq5`, `ea_source_analyzer.py`, `ea_kb_batch2_*.py`) + 1,718 ไฟล์โค้ดต้นฉบับ |
+| **คลังความรู้ EA เชิงลึก (v2.14 / Batch 3)** | `data/ea_intelligence_kb` + `code/ea_sources{,_batch2,_batch3}/` | Reverse-engineer โค้ดจริง **1,940 ไฟล์** (`38.96 MB`), SQLite+FTS5 (`alina_ea_kb.sqlite` `6.46 MB`), `499` EAs, `226` Indicators, `326` Visual/Wingdings, `1,311` Duplicate/Fork, Knowledge Graph `4,986` edges, RAG `2,243` chunks, ปิดคิว Batch 2 (`1,924/1,924`) + Batch 3 (`951/951`, `GitLab 14/14` + `#include 701/719`) ครบ `0` ค้าง + เตรียม Batch 4 (`375` งาน) |
+| โค้ด | `code/` | สคริปต์ทั้งหมด + EA (`AlinaRiskGovernor.mq5`, `ea_source_analyzer.py`, `ea_kb_batch3_*.py`) + 1,940 ไฟล์โค้ดต้นฉบับ |
 
 ## อ่านยังไงให้เร็วที่สุด (สำหรับ AI)
 1. `catalog.json` — schema, จำนวนแถว, ช่วงเวลา, sha256, ตัวอย่าง 2 แถว, ข้อควรระวัง, กติกา look-ahead

@@ -1,0 +1,87 @@
+{
+  "generated_utc": "2026-11-21T09:35:18Z",
+  "version": "Batch 3 (v2.14)",
+  "total_source_files_analyzed": 1940,
+  "batch1_source_files": 217,
+  "batch2_source_files": 1501,
+  "batch3_source_files": 222,
+  "total_source_bytes": 38956066,
+  "source_extensions": {
+    ".mq5": 491,
+    ".h": 131,
+    ".mq4": 24,
+    ".mqh": 1292,
+    ".pine": 1,
+    ".py": 1
+  },
+  "source_roles": {
+    "Expert Advisor (Trading)": 227,
+    "Indicator": 112,
+    "Library / Header (.h)": 131,
+    "Expert Advisor (Modular / Class-based)": 75,
+    "Unclassified Source": 22,
+    "Library / Header (.mqh)": 1292,
+    "Script": 49,
+    "Utility / Diagnostic EA": 31,
+    "Trade / Risk Manager EA": 1
+  },
+  "ea_master_total": 499,
+  "ea_source_verified_local": 383,
+  "ea_mql5_codebase_inspected": 99,
+  "ea_closed_source_or_ex5": 17,
+  "indicators_master_total": 226,
+  "visual_symbol_records_total": 326,
+  "developers_total": 197,
+  "github_repos_audited": 75,
+  "strategies_decomposed": 383,
+  "duplicates_total": 1311,
+  "duplicates_by_type": {
+    "exact_sha256": 400,
+    "fork_or_modified": 238,
+    "shared_code_pattern": 386,
+    "near_duplicate": 287
+  },
+  "unclassified_or_unknown_records": 52,
+  "knowledge_graph_edges": 4986,
+  "rag_documents_indexed": 2243,
+  "batch2_queue_total": 1924,
+  "batch2_queue_pending": 0,
+  "batch2_queue_by_status": {
+    "completed": 1635,
+    "blocked": 15,
+    "deferred": 262,
+    "completed_metadata_only": 12
+  },
+  "batch3_queue_total": 951,
+  "batch3_queue_pending": 0,
+  "batch3_queue_by_status": {
+    "blocked": 201,
+    "completed": 716,
+    "deferred": 24,
+    "completed_stdlib_builtin": 10
+  },
+  "batch3_queue_by_kind_status": {
+    "mql5_source_archive::blocked": 201,
+    "mql5_source_archive::completed": 2,
+    "gitlab_source_retry::completed": 14,
+    "p1_dep_retry::deferred": 2,
+    "batch2_new_include_dependency::completed": 694,
+    "batch2_new_include_dependency::deferred": 18,
+    "batch2_new_include_dependency::completed_stdlib_builtin": 7,
+    "batch2_new_icustom_target::completed": 6,
+    "batch2_new_icustom_target::deferred": 4,
+    "batch2_new_icustom_target::completed_stdlib_builtin": 3
+  },
+  "batch4_queue_total": 375,
+  "batch4_queue_by_kind": {
+    "mql5_source_archive_followup": 201,
+    "p1_dep_retry_followup": 2,
+    "batch2_new_include_dependency_followup": 18,
+    "batch2_new_icustom_target_followup": 4,
+    "batch3_new_include_dependency": 150
+  },
+  "schema_15_fields_verified_pct": 100.0,
+  "lab_experiments_linked": 23,
+  "events_rows_linked": 2028,
+  "news_rows_linked": 1588
+}

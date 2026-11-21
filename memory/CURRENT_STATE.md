@@ -1,14 +1,19 @@
-# CURRENT STATE — 2026-11-21 (v2.13: Global EA Intelligence KB Batch 2 Complete + v2.12 baseline)
+# CURRENT STATE — 2026-11-21 (v2.14: Global EA Intelligence KB Batch 3 Complete + v2.13 baseline)
 
 ## Focus
-Global Research Agent + Persistent AI/RAG-ready **Private AI Trading Knowledge Base** under `alina_lab/data/ea_kb/` (**Batch 2 complete**: static reverse-engineering of **1,718 downloaded `.mq5/.mq4/.mqh/.h/.pine` files (`35.16 MB`)**, 100% of 205 unique queued MQL5 CodeBase pages + 27 developer profiles + ForexPeaceArmy `Q-1761` + 75 GitHub repo audits + ForexFactory `.ex5` metadata, SQLite+FTS5 DB, 4,726 KG edges, 1,289 duplicate/fork pairs retained, 100% 15-field schema completeness, and `1,924/1,924` Batch 2 queue reconciled with `0` pending). App frozen.
+Global Research Agent + Persistent AI/RAG-ready **Private AI Trading Knowledge Base** under `alina_lab/data/ea_kb/` (**Batch 3 complete**: static reverse-engineering of **1,940 downloaded `.mq5/.mq4/.mqh/.h/.pine/.py` files (`38.96 MB`)**, `14/14` GitLab Archive API retries resolved 100%, `701/719` Batch 2 `#include` dependencies + `9/13` `iCustom()` targets resolved across `19` GitHub trees + `2` GitLab archives, SQLite+FTS5 DB `6.46 MB`, 4,986 KG edges, 1,311 duplicate/fork pairs retained, 100% 15-field schema completeness, and `1,924/1,924` Batch 2 + `951/951` Batch 3 queue reconciled with `0` pending). App frozen.
 
 ## Drive (live)
-- **v2.13 `1sXRKNIXvL5Pxuts2y8-qVG0q0XXjYCGw`** — 56 datasets / 2,410 files / 81.05 MB (`81,050,728` B, MD5 `a36fe8427c3c3cfa04c61daa67c42e26`). **Current.**
-- **v2.12 `1iFzwkn17hDD6O8lJeXpqPkHyjxCJcTYG`** — 56 datasets / 890 files / 73.4 MB (`73,418,168` B, preserved untouched alongside v2.13).
-- v2.11 (`1biZ1JbdXYH5p3f8NFGIxQ_u2RuPVOVi3`) and older trashed prior to v2.12. Local temp build dirs cleaned after upload.
+- **v2.14 `1deX9sj1eKS5kOYxZfk85iGr4KxNXn2tQ`** — 50 datasets / 2,639 files / 81.94 MB (`81,943,674` B, MD5 `ad9740af91ddd25eda2f9de13d71640f`). **Current.**
+- **v2.12 `1iFzwkn17hDD6O8lJeXpqPkHyjxCJcTYG`** — 50 datasets / 890 files / 73.4 MB (`73,418,168` B, preserved untouched alongside v2.14).
+- v2.13 (`1sXRKNIXvL5Pxuts2y8-qVG0q0XXjYCGw`) and older trashed after verifying v2.14 parity. Workspace intentionally kept cleared (`< 1 MB`) using `/home/user/CLOUD_SYNC_POINTER.md` on-demand shallow pull/upload/clear workflow.
 
 ## Shipped this session (chronological)
+16. **Global EA Intelligence Knowledge Base — Batch 3 (`scripts/ea_kb_batch3_fetch.py`, `ea_kb_batch3_build.py`, `ea_kb_batch3_docs.py` → `data/ea_kb/`) → v2.14:**
+    - Resolved `951/951` Batch 3 tasks (`Q-1925..Q-2875`, `0` pending_batch3: `716` completed, `10` stdlib/built-ins, `24` deferred external SDK/non-repo, `201` blocked IP-only MQL5 raw archives) and staged `375` Batch 4 follow-ups (`research_queue_batch4.jsonl`).
+    - Resolved `14/14` GitLab retries cleanly via GitLab Archive API v4 (`fxce/mt5-libs` 30 files + `Roffild/RoffildLibrary` 43 files, HTTP 200) and saved `+222` verbatim Batch 3 files (`3,795,666` B) under `sources_batch3/`.
+    - Rebuilt `alina_ea_kb.sqlite` (`6.46 MB`): **1,940** local source files analyzed, **499 EAs** (`383` Level 1 local source-verified), **226 Indicators**, **326 Visual Symbols**, **1,311 Duplicate/Fork pairs**, **4,986 KG edges**, **2,243 FTS5 RAG chunks**, **100.0%** 15-field completeness, and repaired `backtest_evidence.jsonl` column mapping (`EXP-0001..0023`).
+    - Documented full verified audit in `data/ea_kb/DATA_DICTIONARY.md` (`v3.0`) and `data/ea_kb/PROOF_OF_WORK_BATCH3.md`.
 15. **Global EA Intelligence Knowledge Base — Batch 2 (`scripts/ea_kb_batch2_*.py`, updated `ea_source_analyzer.py` + `.h` support → `data/ea_kb/`) → v2.13:**
     - Resolved `1,924/1,924` Batch 2 research queue tasks (`0` pending: `1,635` completed, `12` completed metadata-only `.ex5`, `262` deferred, `15` blocked HTTP-429/withdrawn) and staged `951` Batch 3 follow-up tasks (`research_queue_batch3.jsonl`).
     - Staged `1,501` new Batch 2 files (`30.15 MB`) under `sources_batch2/` (`1,368` GitHub, `112` P1 deps, `21` GitLab) + persisted `212` MQL5 CodeBase pages (`100%` of 205 queued IDs, `89` refreshed verbatim), `27` MQL5 developer profiles, and `Q-1761` ForexPeaceArmy scams guide.
