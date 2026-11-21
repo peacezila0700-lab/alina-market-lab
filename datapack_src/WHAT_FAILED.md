@@ -96,3 +96,20 @@ The two halves disagree completely, so the bar is not met and no edge is claimed
 **The lesson is about study design:** a report that showed only the out-of-sample window would have
 announced a 99.5th-percentile congressional edge. It is also not a proof of "no effect" — a 16-month
 sample in one selloff cannot settle it, so H21 stays open instead of being closed.
+
+### Purged walk-forward ML on US & Thai stocks — FAIL (EXP-0020, EXP-0021, 2026-11-21)
+Directly tested whether training real tabular ML models (`Ridge`, `HistGradientBoosting`) to rank stocks
+and find entry timing works better than hand-coded rules, with zero target overlap and 1-bar execution
+lag:
+- **EXP-0020 (112 US large caps + macro/vol/DIX-GEX + PIT SEC fundamentals, 5 bp/side):** All 5 ML arms
+  failed the 99th-percentile turnover-matched null (L/S OOS Sharpe −0.115 to +0.360, 76th–89th pct).
+  On long-only top quintile, every ML model (+0.63 to +0.96 OOS Sharpe) lost to plain equal-weight
+  buy-and-hold (+1.39). Adding causal point-in-time fundamentals (`pit_fundamentals.csv`) did not lift OOS.
+- **EXP-0021 (64 Thai SET stocks, 27 bp/side retail cost = 16.8 bp Cash Balance fee+VAT + ~10 bp spread):**
+  Classic 5-day reversal loses −2.37 / −1.70 Sharpe (breakeven +4.9 bp/side vs 16.8 bp fee floor).
+  Walk-forward ML (`Ridge`, `HGB`) looked great in-sample (100.0th / 99.5th pct, Sharpe +0.64 / +0.21)
+  and **flipped negative out-of-sample** (−0.37 / −0.29 Sharpe, 57.5th / 68th pct).
+
+**Why this matters:** Throwing ML at daily price/technical features — even with lagged macro and SEC
+fundamentals — does not create an alpha signal when the underlying features lack net edge after costs.
+

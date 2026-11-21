@@ -1,0 +1,20 @@
+{
+  "built_utc": "2026-11-21T07:26:47+00:00",
+  "source": "data/sec/fundamentals.csv (SEC EDGAR XBRL companyfacts)",
+  "rows": 3794,
+  "tickers": 63,
+  "date_min": "2009-05-07",
+  "date_max": "2026-11-20",
+  "filtered_bad_filed_before_end": 1,
+  "comparative_restatement_series_detected": 4618,
+  "ttm_revenue_non_null_pct": 93.9,
+  "ttm_cfo_non_null_pct": 96.7,
+  "accruals_non_null_pct": 96.7,
+  "median_report_lag_days": 33.0,
+  "leak_rule": "Join with available_from <= decision_date (using merge_asof or strict inequality), then execute on decision_date + 1. Never backdate restatements.",
+  "caveats": [
+    "Covers top US-GAAP filers only (~63 of top 80 market cap; foreign ADRs / non-GAAP filers omitted).",
+    "Does not contain analyst consensus estimates (no surprise vs consensus).",
+    "Survivorship caveat: universe selected from current top market-cap firms (PITFALLS #7) \u2014 any backtest using this panel must note large-cap current-constituent selection bias."
+  ]
+}

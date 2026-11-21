@@ -142,3 +142,19 @@
 - **โควต้าฟรีจริง ณ พ.ย. 2026:** Kaggle ~30 GPU ชม./สัปดาห์ (T4×2, ไม่ใช้บัตร) · Modal $30/เดือน · Lightning 50 ชม.
   ครั้งเดียว · HF ZeroGPU 5 นาที/วัน (โชว์เท่านั้น) → Qwen3-8B QLoRA พอดี 16 GB, 14B ไม่ควรลอง
 - สคริปต์ฝึก **ยังไม่ได้ทดสอบ** (sandbox ไม่มี GPU) — รอบแรกคือการทดสอบสคริปต์เอง
+
+### รอบที่ 10 (v2.10) — งบ SEC แบบ Point-In-Time + ทดสอบเทรน ML หาจังหวะจริง + ระบบสำหรับมือถืออย่างเดียว
+- **แก้บั๊ก SEC XBRL + สร้าง Point-In-Time Fundamentals (`pit_fundamentals.csv`)** — แก้ปัญหา 17 บริษัท (เช่น
+  AAPL, AMD, AVGO) ที่ revenue หยุดในปี 2018 เพราะเปลี่ยน tag และ CAT ที่ net income หยุดปี 2011; กัน
+  restatement ย้อนหลังได้ 4,618 ชุด, 3,794 แถว 63 บริษัทถึง 2026-11-20
+- **EXP-0020 (ML บน 112 หุ้น US + macro + PIT SEC) — FAIL:** โมเดล Ridge & HistGradientBoosting (5d/21d)
+  L/S OOS Sharpe −0.115 ถึง +0.360 (ไม่ผ่านเกณฑ์ 99% null) และฝั่ง Long 20% บน (+0.63 ถึง +0.96) แพ้
+  equal-weight buy&hold (+1.39)
+- **EXP-0021 (การทดลองแรกบน 64 หุ้นไทย SET + ML, ต้นทุนจริง 27 bp/ข้าง) — FAIL:** กับดัก overfitting ชัดเจน —
+  ML ได้กำไรสวยมากในอดีต (+0.64 / +0.21, เปอร์เซ็นไทล์ 100% / 99.5%) แล้วพลิกขาดทุนนอกตัวอย่าง (−0.37 / −0.29)
+  ส่วนสวนกลับ 5 วันแพ้ค่าคอม+VAT ไทย (16.8 bp/ข้าง) ขาดทุน −1.70 ถึง −2.37 Sharpe
+- **ชุดระบบสำหรับมือถืออย่างเดียว (`research/MOBILE_SIGNAL_ARCHITECTURE_2026.md`):** `scripts/ask.py` (CLI ยิง
+  Gemini/Groq/OpenRouter ฟรี) + `scripts/notify_telegram.py` + `.github/workflows/daily_pipeline.yml`
+  รันเก็บข้อมูล + สร้าง `alina_today.html` ฟรี 0 บาท (แบบเสีย ≤300 บ./ด. คือ Linux VPS ~$5–€6 สำหรับ API บอทเท่านั้น;
+  ทั้ง live LLM API และ Telegram push **ยังไม่ได้ทดสอบ** เพราะไม่มี key ในเครื่องนี้)
+

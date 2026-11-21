@@ -56,15 +56,34 @@ SEC = ROOT / "data" / "sec"
 SCR = ROOT / "data" / "screener"
 UA = "ALINA-Market-Lab research contact: alina.lab.contact@gmail.com"
 TAGS = {
-    "revenue": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "SalesRevenueNet"],
-    "net_income": ["NetIncomeLoss"],
-    "eps_diluted": ["EarningsPerShareDiluted"],
+    "revenue": [
+        "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "Revenues",
+        "SalesRevenueNet",
+        "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "SalesRevenueGoodsNet",
+    ],
+    "net_income": [
+        "NetIncomeLoss",
+        "NetIncomeLossAvailableToCommonStockholdersBasic",
+        "ProfitLoss",
+    ],
+    "eps_diluted": ["EarningsPerShareDiluted", "EarningsPerShareBasic"],
     "assets": ["Assets"],
     "liabilities": ["Liabilities"],
-    "equity": ["StockholdersEquity"],
-    "cash": ["CashAndCashEquivalentsAtCarryingValue"],
-    "cfo": ["NetCashProvidedByUsedInOperatingActivities"],
-    "lt_debt": ["LongTermDebtNoncurrent", "LongTermDebt"],
+    "equity": [
+        "StockholdersEquity",
+        "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+    ],
+    "cash": [
+        "CashAndCashEquivalentsAtCarryingValue",
+        "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+    ],
+    "cfo": [
+        "NetCashProvidedByUsedInOperatingActivities",
+        "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+    ],
+    "lt_debt": ["LongTermDebtNoncurrent", "LongTermDebt", "LongTermDebtAndCapitalLeaseObligations"],
 }
 PAUSE = 0.25          # ~4 req/s, under SEC's 10 req/s fair-access limit
 
@@ -172,17 +191,21 @@ def main():
             continue
         facts = (json.loads(cf).get("facts") or {}).get("us-gaap") or {}
         for name, tag_list in TAGS.items():
-            tag = next((t for t in tag_list if t in facts), None)
-            if tag is None:
-                continue
-            for unit, arr in (facts[tag].get("units") or {}).items():
-                for f in arr:
-                    if f.get("form") not in ("10-K", "10-Q"):
-                        continue
-                    fund_rows.append({"cik": cik, "ticker": ticker, "field": name, "tag": tag,
-                                      "period_end": f.get("end"), "fy": f.get("fy"), "fp": f.get("fp"),
-                                      "form": f.get("form"), "filed": f.get("filed"),
-                                      "value": f.get("val"), "unit": unit})
+            # Collect ALL matching tags across accounting standard transitions (e.g. ASC 606 tag switch
+            # around 2018); deduplicate per (period_start, period_end, form, filed) by tag priority.
+            for rank, tag in enumerate(tag_list):
+                if tag not in facts:
+                    continue
+                for unit, arr in (facts[tag].get("units") or {}).items():
+                    for f in arr:
+                        if f.get("form") not in ("10-K", "10-Q"):
+                            continue
+                        fund_rows.append({"cik": cik, "ticker": ticker, "field": name, "tag": tag,
+                                          "tag_rank": rank,
+                                          "period_start": f.get("start", ""),
+                                          "period_end": f.get("end"), "fy": f.get("fy"), "fp": f.get("fp"),
+                                          "form": f.get("form"), "filed": f.get("filed"),
+                                          "value": f.get("val"), "unit": unit})
         time.sleep(PAUSE)
         if i % 10 == 0:
             print(f"    {i}/{len(universe)} companies …")
@@ -190,11 +213,15 @@ def main():
     fdf = pd.DataFrame(filings).drop_duplicates(subset=["cik", "accession"]) if filings else pd.DataFrame()
     if len(fdf):
         fdf.to_csv(SEC / "filings.csv", index=False)
-    gdf = pd.DataFrame(fund_rows).drop_duplicates(subset=["cik", "field", "period_end", "form", "filed"]) \
-        if fund_rows else pd.DataFrame()
-    if len(gdf):
-        gdf = gdf.sort_values(["ticker", "field", "period_end"])
+    if fund_rows:
+        gdf = (pd.DataFrame(fund_rows)
+               .sort_values(["ticker", "field", "period_end", "filed", "tag_rank"])
+               .drop_duplicates(subset=["cik", "field", "period_start", "period_end", "form", "filed"],
+                                keep="first")
+               .drop(columns=["tag_rank"]))
         gdf.to_csv(SEC / "fundamentals.csv", index=False)
+    else:
+        gdf = pd.DataFrame()
 
     (SEC / "MANIFEST_SEC.json").write_text(json.dumps({
         "built_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),

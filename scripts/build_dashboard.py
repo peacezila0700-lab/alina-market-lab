@@ -161,6 +161,43 @@ def main():
             h.append(kv(e.get("date", ""), e.get("event", "")))
         h.append("</div>")
 
+    # ---- thai SET summary (derived from data/thai/ if present)
+    thai_dir = ROOT / "data" / "thai"
+    ew_path = thai_dir / "SET_EW.csv"
+    if ew_path.exists():
+        ew = pd.read_csv(ew_path)
+        if len(ew) >= 64:
+            col_ew = "SET_EW" if "SET_EW" in ew.columns else "close"
+            c_now = float(ew[col_ew].iloc[-1])
+            r21 = (c_now / float(ew[col_ew].iloc[-22]) - 1.0) * 100.0
+            r63 = (c_now / float(ew[col_ew].iloc[-64]) - 1.0) * 100.0
+            h.append("<h2>ตลาดไทย (SET64 Equal-Weight · price-only)</h2><div class='card'>"
+                     + kv("SET_EW ล่าสุด", f"{c_now:.2f} (ณ {ew['date'].iloc[-1]})")
+                     + kv("SET_EW 21d / 63d", f"{r21:+.2f}% / {r63:+.2f}%")
+                     + "<div class='sub'>หมายเหตุ: ไม่ใช่ SET50 และไม่รวมปันผล (~3%/ปี); "
+                       "EXP-0021 ไม่พบ edge ที่รอดค่าธรรมเนียมไทย</div>")
+            th_rows = []
+            for fp in sorted(thai_dir.glob("*.csv")):
+                if fp.stem == "SET_EW":
+                    continue
+                try:
+                    df_th = pd.read_csv(fp)
+                    if len(df_th) >= 22:
+                        cn = float(df_th["close"].iloc[-1])
+                        c21 = float(df_th["close"].iloc[-22])
+                        th_rows.append((fp.stem, cn, (cn / c21 - 1.0) * 100.0))
+                except Exception:                                # noqa: BLE001
+                    continue
+            if th_rows:
+                tdf = pd.DataFrame(th_rows, columns=["sym", "close", "ret21"])
+                picks = pd.concat([tdf.nlargest(4, "ret21"), tdf.nsmallest(4, "ret21")]).drop_duplicates("sym")
+                h.append("<table><tr><th>SET</th><th>close</th><th>21d %</th></tr>")
+                for _, r in picks.sort_values("ret21", ascending=False).iterrows():
+                    h.append(f"<tr><td>{esc(r['sym'])}</td><td>{r['close']:.2f}</td>"
+                             f"<td class='{pct_class(r['ret21'])}'>{r['ret21']:+.1f}</td></tr>")
+                h.append("</table>")
+            h.append("</div>")
+
     # ---- news
     news = brief.get("news", [])
     if news:
@@ -169,8 +206,16 @@ def main():
             h.append(f"<div class='card'><div class='sub'>{esc(n.get('source', ''))}</div>"
                      f"{esc(n.get('title', ''))}</div>")
 
+    exp_n, exp_pass = 0, 0
+    exp_csv = ROOT / "research" / "EXPERIMENT_LOG.csv"
+    if exp_csv.exists():
+        import csv
+        rows_exp = list(csv.DictReader(exp_csv.open()))
+        exp_n = len(rows_exp)
+        exp_pass = sum(1 for r in rows_exp if "PASS" in (r.get("result_status") or "").upper())
+
     h.append("<details><summary>สิ่งที่ไฟล์นี้ไม่บอก (อ่านก่อนใช้)</summary>"
-             "<div class='sub'>1) ไม่มีคำแนะนำซื้อขาย — 19 การทดลองในโปรเจกต์นี้ไม่มี edge ใดผ่านเกณฑ์ "
+             f"<div class='sub'>1) ไม่มีคำแนะนำซื้อขาย — {exp_n} การทดลองในโปรเจกต์นี้พบ {exp_pass} edge ที่ผ่านเกณฑ์ "
              "2) ตัวเลข base rate เป็นค่ากลางของการกระจายที่กว้าง อ่าน n_eff ก่อนเชื่อ "
              "3) ข้อมูลหน่วงตามแหล่ง (VIX ปิดวัน, GEX รายวัน, ข่าว real-time) "
              "4) ทั้งหมดมาจาก briefs/latest.json + packs/<date>.json ถ้าตัวเลขไม่ตรง ให้ยึดไฟล์ต้นทาง"

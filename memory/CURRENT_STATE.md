@@ -1,13 +1,13 @@
-# CURRENT STATE — 2026-11-21 (v2.5: all 13 content categories covered)
+# CURRENT STATE — 2026-11-21 (v2.10: PIT SEC + US/Thai ML experiments + mobile cloud ops)
 
 ## Focus
-Data + code + experiments for a downstream AI. App frozen. Stacked universes: 24-instrument research
-panel, 5-instrument execution book, 68-ETF cross-section, CBOE term structure, 36-year Treasury curve,
-and now 23 years of hourly FX with BOTH bid and ask.
+Data + code + experiments for a downstream AI. App frozen. User clarified: **mobile only (no PC)**,
+**budget ≤ 300 THB/month if clear benefit**, **goal = trade timing / price prediction**.
+Empirical tests EXP-0020 (US ML) & EXP-0021 (Thai SET64 + ML) just ran to directly answer that goal.
 
 ## Drive (live)
-- **v2.9 `10HRJkA7PRsSxJ6sVNI2p8w1C2UdWMq__`** — 51 datasets / 608 files / 71.1 MB. Current.
-- v2.8, v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
+- **v2.10 `1lqMTfGpVI6riQqbtyofj4szK545CUnnB`** — 54 datasets / 633 files / 72.0 MB. Current.
+- v2.9, v2.8, v2.7, v2.6, v2.5, v2.4, v2.3, v2.2, v2.1, v2.0 and older all trashed. Local `pack/` deleted after each upload.
 
 ## Shipped this session (chronological)
 1. News (294/15 feeds), levels (28 instr), 68-ETF panel, daily brief → v2.0/2.1
@@ -32,23 +32,21 @@ and now 23 years of hourly FX with BOTH bid and ask.
    Ported the House Clerk route: `scripts/fetch_congress_trades.py` → 6,365 parsed PTR transactions +
    3,207-filing index 2019-2026. EXP-0019 failed with a textbook sign flip (IS 0.0th pct, OOS 99.5th).
 9. **Zero-budget build path (v2.8)** — `fetch_thai_panel.py` (64 SET names, 10y, SET_EW index because
-   ^SET has no free history), `build_dashboard.py` (9 KB self-contained phone page), and
-   `research/BUILD_PLAN_ZERO_BUDGET.md` (corrects the popular Dify+Colab+Unsloth plan: Gemini Plus is not
-   an API key, Dify free 50 MB cannot index 400 GB, fine-tuning changes style not alpha; the real blocker is
-   still 0 validated rules, so the EA may own risk management but not signal generation).
-10. **Training kit (v2.9)** — `training/build_dataset.py` → 213 instruction pairs from EXPERIMENT_LOG,
-   HYPOTHESIS_REGISTER, PITFALLS, WHAT_FAILED, the registry and manifests (train/valid split BY CATEGORY).
-   `training/finetune_qwen3_kaggle.py` = QLoRA Qwen3-8B (UNTESTED, no GPU here). 4 acceptance tests
-   pre-declared in `research/TRAINING_ROUTES_2026.md`; free quotas verified 2026-11 (Kaggle 30 GPU-h/week,
-   Modal $30/mo, Lightning ~50 h one-time, HF ZeroGPU 5 min/day = demos only).
-11. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day (calendar, 17 instruments,
-   levels, VIX-curve state + conditioned base rates, carry, headlines, 12 nearest historical states with
-   realised next-5/21-day outcomes). This is the file to feed a local model for per-day/per-event work.
-   Intraday CSVs gzipped (79 MB → 21 MB) after confirming they are in the pack on Drive.
+   ^SET has no free history), `build_dashboard.py` (10 KB self-contained phone page), and
+   `research/BUILD_PLAN_ZERO_BUDGET.md` (corrects the popular Dify+Colab+Unsloth plan).
+10. **Training kit (v2.9)** — `training/build_dataset.py` → 213 instruction pairs; `training/finetune_qwen3_kaggle.py`
+    (UNTESTED, no GPU here). Local Ollama path superseded by user's mobile-only constraint (see v2.10).
+11. **PIT SEC + ML Signal Tests + Mobile Ops (v2.10):**
+    - Fixed `fetch_sec_fundamentals.py` (ASC 606 tag-switch cutoff on 17 tickers + CAT NI tag; `--top 80` → 102,170 rows, 63 US-GAAP filers, 0 stale NI).
+    - `scripts/build_pit_fundamentals.py` → `data/sec/pit_fundamentals.csv` (3,794 rows, 63 tickers, 4,618 comparative restatement series blocked from backdating).
+    - **EXP-0020 (`scripts/test_ml_us_stocks.py`, H22):** Purged walk-forward Ridge/HGB on 112 US stocks + macro/DIX-GEX + PIT SEC → **FAIL** (L/S OOS −0.115..+0.360, 76–89th pct vs 99th bar; LO OOS +0.63..+0.96 < EW +1.39).
+    - **EXP-0021 (`scripts/test_thai_set.py`, H23):** First experiment on 64 Thai SET stocks (27 bp/side retail cost = 16.8 bp Cash Balance fee+VAT + ~10 bp spread) → **FAIL** (ML Ridge/HGB hit 100th/99.5th pct IS then flipped −0.37/−0.29 OOS; 5d reversal −2.37/−1.70 Sharpe).
+    - `scripts/ask.py` (Gemini/Groq/OpenRouter/Ollama, dry-run tested ~9k tokens), `scripts/notify_telegram.py` (dry-run tested), `.github/workflows/daily_pipeline.yml`, `build_dashboard.py` +SET64 summary, `research/MOBILE_SIGNAL_ARCHITECTURE_2026.md`.
+12. **`scripts/event_pack.py`** — one self-describing ~35 KB JSON per day.
 
 ## Tally
-19 experiments, 168 screen, 144 family, 59 COT, 0 validated edges. Every failure is in
-`WHAT_FAILED.md` with the reason; every trap is in `PITFALLS.md` (#1-#17).
+21 experiments, 168 screen, 144 family, 59 COT, 0 validated edges. Every failure is in
+`WHAT_FAILED.md` with the reason; every trap is in `PITFALLS.md` (#1-#19).
 
 ## The three sentences that carry the whole project
 **Variance is forecastable, direction is not.** State variables cut drawdown (gamma −27% vs −51%, bond

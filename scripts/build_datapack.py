@@ -13,7 +13,7 @@ internet, and must NOT burn tokens re-deriving what is already known. So every d
 Grades:  A = official primary source, measured or published   B = computed in this repo, method
 documented   C = third-party, shape only, never for absolute levels or returns.
 
-Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.9.zip
+Outputs: dist/ALINA_DATAPACK/…  and  dist/ALINA_DATAPACK_v2.10.zip
 """
 from __future__ import annotations
 
@@ -422,6 +422,47 @@ DATASETS = [
          use_for=["Thai market context", "cross-market breadth", "a phone-first dashboard that speaks THB"],
          leak_rule="Daily close in Bangkok time; a US-close decision cannot see the Thai close of the same "
                    "calendar date that has not happened yet."),
+    dict(id="pit_sec_fundamentals", src=["data/sec/pit_fundamentals.csv", "data/sec/MANIFEST_PIT_SEC.json",
+                                          "scripts/build_pit_fundamentals.py"],
+         kind="fundamentals", grade="B",
+         title="Point-in-time lagged SEC fundamentals keyed on `filed` (63 US-GAAP firms, 2009-2026)",
+         card="Built from repaired SEC XBRL companyfacts (fixing the 2018 ASC 606 tag-switch cutoff on 17 "
+              "tickers and CAT's 2011 net-income tag). Iterates chronologically over every filing date D, "
+              "blocks 4,618 comparative restatements from leaking backwards, separates standalone quarters "
+              "from YTD cumulative flows, and outputs causal TTM revenue, net income, CFO, accruals, ROE, "
+              "margins, debt/cash ratios keyed on available_from = filed.",
+         caveats=["Covers 63 US-GAAP top market-cap firms (foreign 20-F ADRs excluded).",
+                  "Universe reflects today's top market-cap selection (survivorship bias caveat).",
+                  "No analyst consensus estimates; join strictly with available_from <= decision_date."],
+         use_for=["leak-free fundamental/accruals backtests", "quality/cashflow feature engineering"],
+         leak_rule="Join strictly with available_from <= decision_date, execute at t+1."),
+    dict(id="ml_us_thai_experiments", src=["scripts/test_ml_us_stocks.py", "scripts/test_thai_set.py",
+                                           "research/artifacts/ml_us_stocks.json",
+                                           "research/artifacts/thai_set.json"],
+         kind="evidence", grade="B",
+         title="EXP-0020 (US 112 stocks ML) & EXP-0021 (Thai 64 SET stocks + ML) — both FAIL",
+         card="First purged expanding walk-forward ML tests (Ridge & HistGradientBoosting) across 112 US "
+              "large caps (with macro/vol/DIX-GEX + PIT SEC fundamentals) and 64 Thai SET stocks. US L/S "
+              "OOS Sharpe -0.115..+0.360 (76-89th pct vs 99th bar) and all LO top-Q (+0.63..+0.96) lose to "
+              "EW buy&hold (+1.39). Thai ML hits 99.5-100th pct IS (+0.21/+0.64) then flips negative OOS "
+              "(-0.29/-0.37) under 27 bp/side Thai retail costs.",
+         caveats=["US panel survivorship bias; Thai panel price-only (~3%/yr div omitted) & retail shorting restricted.",
+                  "Both verdicts are FAIL — proves tabular ML on daily technicals+macro+PIT does not clear costs."],
+         use_for=["preventing wasted GPU/server spend on daily price-ML timing", "Thai retail cost benchmark (16.8-27 bp/side)"],
+         leak_rule="Purged s+H+2 <= t, 1-bar execution lag (t+1 close), turnover-matched fixed permutation null."),
+    dict(id="mobile_cloud_ops", src=["scripts/ask.py", "scripts/notify_telegram.py",
+                                     ".github/workflows/daily_pipeline.yml",
+                                     "research/MOBILE_SIGNAL_ARCHITECTURE_2026.md"],
+         kind="ops", grade="B",
+         title="Phone-only cloud ops: ask.py CLI, Telegram push, GitHub Actions daily cron, <=300 THB plan",
+         card="Zero-PC operational stack built for mobile-only users: GitHub Actions free daily collector "
+              "+ dashboard rebuild + optional Telegram HTML push; ask.py composes ~9k-token context from "
+              "briefs/latest.md + packs/<date>.json + tally for Gemini/Groq/OpenRouter free APIs (dry-run "
+              "tested; live API/Telegram untested here without user tokens).",
+         caveats=["Live Gemini/Groq/Telegram network calls UNTESTED (no user API keys in sandbox).",
+                  "Colab Pro ($9.99 ~338 THB) and MT5 Windows VPS (~$12-20+) exceed 300 THB/month."],
+         use_for=["zero-cost daily automation from a phone", "on-demand rule-enforced LLM analysis"],
+         leak_rule="Reads derived daily outputs only; live API keys live strictly in env/GitHub Secrets."),
     dict(id="training_kit", src=["training/build_dataset.py", "training/finetune_qwen3_kaggle.py",
                                    "training/data/train.jsonl", "training/data/valid.jsonl",
                                    "training/data/STATS.json", "research/TRAINING_ROUTES_2026.md"],
@@ -654,7 +695,7 @@ def main() -> None:
     for sub in ("data", "cards", "knowledge", "code", "results"):
         os.makedirs(os.path.join(PACK, sub), exist_ok=True)
 
-    catalog = {"pack": "ALINA_DATAPACK", "version": "2.9",
+    catalog = {"pack": "ALINA_DATAPACK", "version": "2.10",
                "built_utc": RECORDED,
                "purpose": "A self-contained, machine-readable research base for an AI trading system: "
                           "market data, positioning, volatility, costs, calendars, attention, the "
@@ -700,7 +741,7 @@ def main() -> None:
 
     # ---- results json (all artifacts an AI may want to read quickly)
     for rel in ["research/artifacts/cot_panel.json", "research/artifacts/event_conditional.json",
-                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "research/artifacts/congress_trades.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
+                "research/artifacts/auction_demand.json", "research/artifacts/cross_section.json", "research/artifacts/breadth_overlay.json", "research/artifacts/gex_vs_voltarget.json", "research/artifacts/vol_onset.json", "research/artifacts/bond_carry.json", "research/artifacts/fx_hourly.json", "research/artifacts/fx_hourly_sparse.json", "research/artifacts/congress_trades.json", "research/artifacts/ml_us_stocks.json", "research/artifacts/thai_set.json", "data/sec/MANIFEST_PIT_SEC.json", "data/events/EVENT_STATS.md", "configs/universes.json", "data/facts/base_rates.csv", "data/facts/BASE_RATES.md",
                 "data/alt/MANIFEST_ALT.json", "research/artifacts/universe_screen.json", "reports/strategy_comparison.json",
                 "research/artifacts/portfolio_donchian.json", "research/artifacts/event_study.json",
                 "research/artifacts/attention_signal.json", "research/artifacts/h09_assumed.json",
@@ -725,7 +766,8 @@ def main() -> None:
     # ---- knowledge docs written by hand elsewhere
     for doc in ("README_FOR_AI.md", "DATA_SOURCES.md", "PITFALLS.md", "WHAT_FAILED.md",
                 "IDEAS_TO_TEST.md", "GLOSSARY.md", "HOW_TO_BACKTEST.md",
-                "DECISION_INPUTS_ATLAS.md", "WHAT_THE_BOT_NEEDS.md", "OPERATING_MANUAL.md"):
+                "DECISION_INPUTS_ATLAS.md", "WHAT_THE_BOT_NEEDS.md", "OPERATING_MANUAL.md",
+                "BUILD_PLAN_ZERO_BUDGET.md", "TRAINING_ROUTES_2026.md", "MOBILE_SIGNAL_ARCHITECTURE_2026.md"):
         s = os.path.join(ROOT, "datapack_src", doc)
         if not os.path.exists(s):
             s = os.path.join(ROOT, "research", doc)          # atlas + plan live in research/
@@ -756,7 +798,7 @@ def main() -> None:
                 w.writerow([os.path.relpath(fp, PACK), os.path.getsize(fp), sha256(fp)])
 
     # ---- zip
-    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.9.zip")
+    zpath = os.path.join(DIST, "ALINA_DATAPACK_v2.10.zip")
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for base, _, files in os.walk(PACK):
             for fn in files:

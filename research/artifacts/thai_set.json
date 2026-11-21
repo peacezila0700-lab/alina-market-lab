@@ -1,0 +1,336 @@
+{
+  "exp_id": "EXP-0021",
+  "hyp_id": "H23",
+  "run_utc": "2026-11-21T07:29:36+00:00",
+  "universe": "64 Thai SET stocks (data/thai)",
+  "walk_forward_range": "2018-12-17..2026-11-20",
+  "is_oos_split": "2024-07-05",
+  "cost_feeonly_bp_side": 16.8,
+  "cost_retail_bp_side": 27.0,
+  "set64_ew_benchmark": {
+    "IS": {
+      "sharpe_net": 0.199,
+      "sharpe_gross": 0.199,
+      "cagr_net_pct": 1.97,
+      "maxdd_pct": -40.92,
+      "ann_turn": 0.06,
+      "breakeven_bp_side": 6541.3
+    },
+    "OOS": {
+      "sharpe_net": 0.28,
+      "sharpe_gross": 0.28,
+      "cagr_net_pct": 3.57,
+      "maxdd_pct": -36.38,
+      "ann_turn": 0.03,
+      "breakeven_bp_side": 19317.8
+    }
+  },
+  "arms": {
+    "TH_REV_5D": {
+      "ls_retail_27bp": {
+        "IS": {
+          "sharpe_net": -2.368,
+          "sharpe_gross": -0.155,
+          "cagr_net_pct": -37.57,
+          "maxdd_pct": -91.79,
+          "ann_turn": 157.17,
+          "breakeven_bp_side": -1.8
+        },
+        "OOS": {
+          "sharpe_net": -1.7,
+          "sharpe_gross": 0.392,
+          "cagr_net_pct": -30.86,
+          "maxdd_pct": -62.58,
+          "ann_turn": 157.52,
+          "breakeven_bp_side": 4.9
+        },
+        "null_pct_IS": 97.5,
+        "null_pct_OOS": 98.5
+      },
+      "ls_feeonly_16_8bp": {
+        "IS": {
+          "sharpe_net": -1.575,
+          "sharpe_gross": -0.155,
+          "cagr_net_pct": -26.62,
+          "maxdd_pct": -80.56,
+          "ann_turn": 157.17,
+          "breakeven_bp_side": -1.8
+        },
+        "OOS": {
+          "sharpe_net": -0.935,
+          "sharpe_gross": 0.392,
+          "cagr_net_pct": -18.72,
+          "maxdd_pct": -48.04,
+          "ann_turn": 157.52,
+          "breakeven_bp_side": 4.9
+        }
+      },
+      "lo_topq_27bp": {
+        "IS": {
+          "sharpe_net": -0.648,
+          "sharpe_gross": 0.239,
+          "cagr_net_pct": -16.98,
+          "maxdd_pct": -65.16,
+          "ann_turn": 79.18,
+          "breakeven_bp_side": 7.2
+        },
+        "OOS": {
+          "sharpe_net": -0.62,
+          "sharpe_gross": 0.197,
+          "cagr_net_pct": -17.75,
+          "maxdd_pct": -51.39,
+          "ann_turn": 78.69,
+          "breakeven_bp_side": 6.5
+        },
+        "null_pct_IS": 96.5,
+        "null_pct_OOS": 73.0
+      },
+      "pass_bar": false
+    },
+    "TH_REV_21D": {
+      "ls_retail_27bp": {
+        "IS": {
+          "sharpe_net": -0.56,
+          "sharpe_gross": -0.058,
+          "cagr_net_pct": -12.38,
+          "maxdd_pct": -61.85,
+          "ann_turn": 37.31,
+          "breakeven_bp_side": -3.1
+        },
+        "OOS": {
+          "sharpe_net": -0.039,
+          "sharpe_gross": 0.38,
+          "cagr_net_pct": -3.5,
+          "maxdd_pct": -31.93,
+          "ann_turn": 35.74,
+          "breakeven_bp_side": 24.5
+        },
+        "null_pct_IS": 74.5,
+        "null_pct_OOS": 88.5
+      },
+      "ls_feeonly_16_8bp": {
+        "IS": {
+          "sharpe_net": -0.372,
+          "sharpe_gross": -0.058,
+          "cagr_net_pct": -8.96,
+          "maxdd_pct": -55.55,
+          "ann_turn": 37.31,
+          "breakeven_bp_side": -3.1
+        },
+        "OOS": {
+          "sharpe_net": 0.119,
+          "sharpe_gross": 0.38,
+          "cagr_net_pct": 0.1,
+          "maxdd_pct": -31.14,
+          "ann_turn": 35.74,
+          "breakeven_bp_side": 24.5
+        }
+      },
+      "lo_topq_27bp": {
+        "IS": {
+          "sharpe_net": 0.082,
+          "sharpe_gross": 0.296,
+          "cagr_net_pct": -0.89,
+          "maxdd_pct": -40.33,
+          "ann_turn": 18.82,
+          "breakeven_bp_side": 37.4
+        },
+        "OOS": {
+          "sharpe_net": 0.266,
+          "sharpe_gross": 0.446,
+          "cagr_net_pct": 3.62,
+          "maxdd_pct": -46.4,
+          "ann_turn": 17.91,
+          "breakeven_bp_side": 67.1
+        },
+        "null_pct_IS": 87.0,
+        "null_pct_OOS": 80.5
+      },
+      "pass_bar": false
+    },
+    "TH_MOM_12_1_21D": {
+      "ls_retail_27bp": {
+        "IS": {
+          "sharpe_net": 0.925,
+          "sharpe_gross": 1.061,
+          "cagr_net_pct": 19.77,
+          "maxdd_pct": -31.43,
+          "ann_turn": 11.12,
+          "breakeven_bp_side": 212.0
+        },
+        "OOS": {
+          "sharpe_net": 0.311,
+          "sharpe_gross": 0.433,
+          "cagr_net_pct": 4.74,
+          "maxdd_pct": -25.49,
+          "ann_turn": 11.28,
+          "breakeven_bp_side": 95.8
+        },
+        "null_pct_IS": 99.0,
+        "null_pct_OOS": 84.0
+      },
+      "ls_feeonly_16_8bp": {
+        "IS": {
+          "sharpe_net": 0.976,
+          "sharpe_gross": 1.061,
+          "cagr_net_pct": 21.14,
+          "maxdd_pct": -31.35,
+          "ann_turn": 11.12,
+          "breakeven_bp_side": 212.0
+        },
+        "OOS": {
+          "sharpe_net": 0.357,
+          "sharpe_gross": 0.433,
+          "cagr_net_pct": 5.95,
+          "maxdd_pct": -25.44,
+          "ann_turn": 11.28,
+          "breakeven_bp_side": 95.8
+        }
+      },
+      "lo_topq_27bp": {
+        "IS": {
+          "sharpe_net": 0.793,
+          "sharpe_gross": 0.855,
+          "cagr_net_pct": 16.34,
+          "maxdd_pct": -38.74,
+          "ann_turn": 5.06,
+          "breakeven_bp_side": 375.7
+        },
+        "OOS": {
+          "sharpe_net": 0.632,
+          "sharpe_gross": 0.725,
+          "cagr_net_pct": 10.35,
+          "maxdd_pct": -25.65,
+          "ann_turn": 6.26,
+          "breakeven_bp_side": 211.0
+        },
+        "null_pct_IS": 100.0,
+        "null_pct_OOS": 95.5
+      },
+      "pass_bar": false
+    },
+    "TH_ML_RIDGE_21D": {
+      "ls_retail_27bp": {
+        "IS": {
+          "sharpe_net": 0.641,
+          "sharpe_gross": 1.01,
+          "cagr_net_pct": 10.76,
+          "maxdd_pct": -24.93,
+          "ann_turn": 24.98,
+          "breakeven_bp_side": 75.0
+        },
+        "OOS": {
+          "sharpe_net": -0.368,
+          "sharpe_gross": -0.031,
+          "cagr_net_pct": -9.14,
+          "maxdd_pct": -47.08,
+          "ann_turn": 25.48,
+          "breakeven_bp_side": -2.4
+        },
+        "null_pct_IS": 100.0,
+        "null_pct_OOS": 57.5
+      },
+      "ls_feeonly_16_8bp": {
+        "IS": {
+          "sharpe_net": 0.781,
+          "sharpe_gross": 1.01,
+          "cagr_net_pct": 13.63,
+          "maxdd_pct": -23.45,
+          "ann_turn": 24.98,
+          "breakeven_bp_side": 75.0
+        },
+        "OOS": {
+          "sharpe_net": -0.241,
+          "sharpe_gross": -0.031,
+          "cagr_net_pct": -6.73,
+          "maxdd_pct": -45.1,
+          "ann_turn": 25.48,
+          "breakeven_bp_side": -2.4
+        }
+      },
+      "lo_topq_27bp": {
+        "IS": {
+          "sharpe_net": 0.491,
+          "sharpe_gross": 0.629,
+          "cagr_net_pct": 9.07,
+          "maxdd_pct": -42.65,
+          "ann_turn": 11.83,
+          "breakeven_bp_side": 123.3
+        },
+        "OOS": {
+          "sharpe_net": 0.154,
+          "sharpe_gross": 0.287,
+          "cagr_net_pct": 0.69,
+          "maxdd_pct": -43.75,
+          "ann_turn": 12.52,
+          "breakeven_bp_side": 58.4
+        },
+        "null_pct_IS": 100.0,
+        "null_pct_OOS": 64.0
+      },
+      "pass_bar": false
+    },
+    "TH_ML_HGB_21D": {
+      "ls_retail_27bp": {
+        "IS": {
+          "sharpe_net": 0.208,
+          "sharpe_gross": 0.684,
+          "cagr_net_pct": 2.11,
+          "maxdd_pct": -26.92,
+          "ann_turn": 29.64,
+          "breakeven_bp_side": 38.9
+        },
+        "OOS": {
+          "sharpe_net": -0.287,
+          "sharpe_gross": 0.116,
+          "cagr_net_pct": -7.12,
+          "maxdd_pct": -38.44,
+          "ann_turn": 28.68,
+          "breakeven_bp_side": 7.7
+        },
+        "null_pct_IS": 99.5,
+        "null_pct_OOS": 68.0
+      },
+      "ls_feeonly_16_8bp": {
+        "IS": {
+          "sharpe_net": 0.388,
+          "sharpe_gross": 0.684,
+          "cagr_net_pct": 5.26,
+          "maxdd_pct": -22.8,
+          "ann_turn": 29.64,
+          "breakeven_bp_side": 38.9
+        },
+        "OOS": {
+          "sharpe_net": -0.136,
+          "sharpe_gross": 0.116,
+          "cagr_net_pct": -4.35,
+          "maxdd_pct": -35.76,
+          "ann_turn": 28.68,
+          "breakeven_bp_side": 7.7
+        }
+      },
+      "lo_topq_27bp": {
+        "IS": {
+          "sharpe_net": 0.308,
+          "sharpe_gross": 0.465,
+          "cagr_net_pct": 4.48,
+          "maxdd_pct": -41.94,
+          "ann_turn": 13.23,
+          "breakeven_bp_side": 79.9
+        },
+        "OOS": {
+          "sharpe_net": 0.123,
+          "sharpe_gross": 0.26,
+          "cagr_net_pct": -0.15,
+          "maxdd_pct": -42.42,
+          "ann_turn": 13.03,
+          "breakeven_bp_side": 51.2
+        },
+        "null_pct_IS": 98.0,
+        "null_pct_OOS": 54.0
+      },
+      "pass_bar": false
+    }
+  },
+  "verdict": "FAIL"
+}

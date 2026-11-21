@@ -1,0 +1,46 @@
+name: ALINA Daily Pipeline (Phone & Cloud)
+
+on:
+  schedule:
+    # 22:30 UTC daily (05:30 Bangkok time, after US close settles)
+    - cron: "30 22 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-and-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install --no-cache-dir pandas numpy scipy scikit-learn requests xlrd openpyxl pypdf
+
+      - name: Run daily collector + derived layers + dashboard
+        run: |
+          python3 scripts/collect_daily.py
+          python3 scripts/build_dashboard.py
+
+      - name: Push optional Telegram alert + offline dashboard to phone
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 scripts/notify_telegram.py
+
+      - name: Commit updated briefs, packs and mobile dashboard
+        run: |
+          git config user.name "ALINA Bot"
+          git config user.email "alina.lab.contact@gmail.com"
+          git add briefs/ packs/ dashboard/ data/collect/ data/events/ data/news/ data/levels/ data/technicals/
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: daily collect + dashboard [skip ci]"
+            git push
+          fi
