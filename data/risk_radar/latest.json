@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-21T18:19:55+00:00",
-  "run_date": "2026-11-21",
-  "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).",
+  "generated_utc": "2026-11-22T03:41:56+00:00",
+  "run_date": "2026-11-22",
+  "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 54 experiments).",
   "overall_risk_classification": "HIGH",
   "fresh_panels": 9,
   "total_panels": 9,
@@ -33,7 +33,7 @@
     "vol_term_structure": {
       "data_source": "data/collect/vol_stress_features.csv (CBOE VIX/VIX3M/VIX9D/VVIX)",
       "last_updated": "2026-11-20",
-      "age_days": 1,
+      "age_days": 2,
       "freshness_status": "FRESH",
       "risk_classification": "HIGH",
       "alert_thresholds": {
@@ -53,7 +53,7 @@
     "ofr_fsi": {
       "data_source": "data/collect/ofr_fsi.csv (US Treasury OFR)",
       "last_updated": "2026-11-18",
-      "age_days": 3,
+      "age_days": 4,
       "freshness_status": "FRESH",
       "risk_classification": "LOW",
       "alert_thresholds": {
@@ -70,7 +70,7 @@
     "equity_vol_dd": {
       "data_source": "data/universe/SPY.csv (Yahoo Finance Daily)",
       "last_updated": "2026-11-20",
-      "age_days": 1,
+      "age_days": 2,
       "freshness_status": "FRESH",
       "risk_classification": "ELEVATED",
       "alert_thresholds": {
@@ -90,7 +90,7 @@
     "support_resistance": {
       "data_source": "data/levels/levels_latest.csv",
       "last_updated": "2026-11-21",
-      "age_days": 0,
+      "age_days": 1,
       "freshness_status": "FRESH",
       "risk_classification": "MODERATE",
       "alert_thresholds": {
@@ -136,7 +136,7 @@
     },
     "calendar_7d": {
       "data_source": "data/events/event_calendar_full.csv",
-      "last_updated": "2026-11-21",
+      "last_updated": "2026-11-22",
       "age_days": 0,
       "freshness_status": "FRESH",
       "risk_classification": "LOW",
@@ -152,7 +152,7 @@
     "macro_rates": {
       "data_source": "data/macro/central_bank_rates_daily.csv (ECB + BoE + NYFed EFFR)",
       "last_updated": "2026-11-20",
-      "age_days": 1,
+      "age_days": 2,
       "freshness_status": "FRESH",
       "risk_classification": "LOW",
       "alert_thresholds": {
@@ -188,7 +188,7 @@
     "crypto_funding_basis": {
       "data_source": "data/microstructure/deribit_BTC_funding_1h.csv.gz + data/crypto_vision/ + okx_BTCUSDT_funding_deep.csv",
       "last_updated": "2026-11-21",
-      "age_days": 0,
+      "age_days": 1,
       "freshness_status": "FRESH",
       "risk_classification": "LOW",
       "alert_thresholds": {
@@ -204,7 +204,7 @@
     "equity_short_insider_breadth": {
       "data_source": "data/equities/finra_regsho_market_daily.csv (FINRA RegSHO CNMS, monitoring context only; EXP-0035)",
       "last_updated": "2026-11-20",
-      "age_days": 1,
+      "age_days": 2,
       "freshness_status": "FRESH",
       "risk_classification": "MODERATE",
       "alert_thresholds": {
@@ -259,13 +259,13 @@
     "exp0030_gate_benchmark": "70pct VALID MetaGate cuts 6h shock 34.9% -> 16.1% & drag 2.21p -> 1.85p (net stays -2.10p < 0; Phase C locked)."
   },
   "crypto_trend_overlay": {
-    "as_of_date": "2026-11-21",
-    "btc_close": 59958.45,
-    "btc_sma50": 77133.24,
+    "as_of_date": "2026-11-22",
+    "btc_close": 59084.1,
+    "btc_sma50": 77115.76,
     "above_sma50": false,
     "trend_ens_vote_20_40_60_90_120": 0.0,
-    "rv21_ann_pct": 51.06,
-    "vt25_scalar": 0.49,
+    "rv21_ann_pct": 49.75,
+    "vt25_scalar": 0.503,
     "suggested_btc_ens_vt25_pct": 0.0,
     "suggested_btc_sma50_vt25_pct": 0.0,
     "suggested_cash_pct": 100.0,

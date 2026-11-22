@@ -1,0 +1,779 @@
+{
+  "coinmetrics_btc": {
+    "BuyHold": {
+      "all": {
+        "n": 4891,
+        "sharpe": 1.234,
+        "cagr": 90.78,
+        "max_dd": -84.52,
+        "calmar": 1.074
+      },
+      "is": {
+        "n": 3652,
+        "sharpe": 1.276,
+        "cagr": 103.76,
+        "max_dd": -84.52,
+        "calmar": 1.228
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.197,
+        "cagr": 57.13,
+        "max_dd": -49.13,
+        "calmar": 1.163
+      },
+      "shift300": null,
+      "avg_w": 1.0
+    },
+    "SMA50_VT25_Base": {
+      "all": {
+        "n": 4891,
+        "sharpe": 1.713,
+        "cagr": 42.57,
+        "max_dd": -31.38,
+        "calmar": 1.356
+      },
+      "is": {
+        "n": 3652,
+        "sharpe": 1.77,
+        "cagr": 45.41,
+        "max_dd": -31.38,
+        "calmar": 1.447
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.534,
+        "cagr": 34.5,
+        "max_dd": -16.11,
+        "calmar": 2.141
+      },
+      "shift300": 100.0,
+      "avg_w": 0.274
+    },
+    "MVRV_Value_LT2p5": {
+      "all": {
+        "n": 4891,
+        "sharpe": 0.878,
+        "cagr": 42.51,
+        "max_dd": -77.66,
+        "calmar": 0.547
+      },
+      "is": {
+        "n": 3652,
+        "sharpe": 0.8,
+        "cagr": 36.64,
+        "max_dd": -77.66,
+        "calmar": 0.472
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.284,
+        "cagr": 61.3,
+        "max_dd": -49.13,
+        "calmar": 1.248
+      },
+      "shift300": 5.0,
+      "avg_w": 0.856
+    },
+    "MVRV_Z_Contrarian_VT25": {
+      "all": {
+        "n": 4891,
+        "sharpe": 0.514,
+        "cagr": 10.41,
+        "max_dd": -49.87,
+        "calmar": 0.209
+      },
+      "is": {
+        "n": 3652,
+        "sharpe": 0.384,
+        "cagr": 6.83,
+        "max_dd": -49.87,
+        "calmar": 0.137
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 0.919,
+        "cagr": 21.69,
+        "max_dd": -31.77,
+        "calmar": 0.683
+      },
+      "shift300": 0.67,
+      "avg_w": 0.395
+    },
+    "ExchOutflow_Pos_VT25": {
+      "all": {
+        "n": 4891,
+        "sharpe": 0.795,
+        "cagr": 15.56,
+        "max_dd": -51.36,
+        "calmar": 0.303
+      },
+      "is": {
+        "n": 3652,
+        "sharpe": 0.613,
+        "cagr": 11.48,
+        "max_dd": -51.36,
+        "calmar": 0.223
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.399,
+        "cagr": 28.51,
+        "max_dd": -19.55,
+        "calmar": 1.459
+      },
+      "shift300": 48.33,
+      "avg_w": 0.266
+    },
+    "ActiveAddr_Mom_VT25": {
+      "all": {
+        "n": 4891,
+        "sharpe": 1.061,
+        "cagr": 24.87,
+        "max_dd": -52.91,
+        "calmar": 0.47
+      },
+      "is": {
+        "n": 3652,
+        "sharpe": 1.049,
+        "cagr": 26.16,
+        "max_dd": -52.91,
+        "calmar": 0.494
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.164,
+        "cagr": 21.13,
+        "max_dd": -17.16,
+        "calmar": 1.231
+      },
+      "shift300": 76.0,
+      "avg_w": 0.28
+    },
+    "Overlay_SMA50_VT25_MVRVCap2p5": {
+      "all": {
+        "n": 4891,
+        "sharpe": 1.595,
+        "cagr": 35.06,
+        "max_dd": -29.68,
+        "calmar": 1.181
+      },
+      "is": {
+        "n": 3652,
+        "sharpe": 1.595,
+        "cagr": 35.03,
+        "max_dd": -29.68,
+        "calmar": 1.18
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.594,
+        "cagr": 35.13,
+        "max_dd": -16.11,
+        "calmar": 2.18
+      },
+      "shift300": 100.0,
+      "avg_w": 0.254
+    },
+    "Overlay_SMA50_VT25_AdrPos": {
+      "all": {
+        "n": 4891,
+        "sharpe": 1.55,
+        "cagr": 35.76,
+        "max_dd": -31.7,
+        "calmar": 1.128
+      },
+      "is": {
+        "n": 3652,
+        "sharpe": 1.599,
+        "cagr": 38.66,
+        "max_dd": -31.7,
+        "calmar": 1.22
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.397,
+        "cagr": 27.55,
+        "max_dd": -16.89,
+        "calmar": 1.631
+      },
+      "shift300": 100.0,
+      "avg_w": 0.247
+    }
+  },
+  "coinmetrics_eth": {
+    "BuyHold": {
+      "all": {
+        "n": 3796,
+        "sharpe": 1.247,
+        "cagr": 110.47,
+        "max_dd": -94.0,
+        "calmar": 1.175
+      },
+      "is": {
+        "n": 2557,
+        "sharpe": 1.477,
+        "cagr": 178.22,
+        "max_dd": -94.0,
+        "calmar": 1.896
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 0.58,
+        "cagr": 18.33,
+        "max_dd": -63.88,
+        "calmar": 0.287
+      },
+      "shift300": null,
+      "avg_w": 1.0
+    },
+    "SMA50_VT25_Base": {
+      "all": {
+        "n": 3796,
+        "sharpe": 1.48,
+        "cagr": 32.53,
+        "max_dd": -21.12,
+        "calmar": 1.54
+      },
+      "is": {
+        "n": 2557,
+        "sharpe": 1.614,
+        "cagr": 36.35,
+        "max_dd": -20.03,
+        "calmar": 1.815
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.202,
+        "cagr": 24.99,
+        "max_dd": -21.12,
+        "calmar": 1.183
+      },
+      "shift300": 100.0,
+      "avg_w": 0.179
+    },
+    "MVRV_Value_LT2p5": {
+      "all": {
+        "n": 3796,
+        "sharpe": 0.986,
+        "cagr": 62.09,
+        "max_dd": -93.55,
+        "calmar": 0.664
+      },
+      "is": {
+        "n": 2557,
+        "sharpe": 1.135,
+        "cagr": 88.79,
+        "max_dd": -93.55,
+        "calmar": 0.949
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 0.58,
+        "cagr": 18.33,
+        "max_dd": -63.88,
+        "calmar": 0.287
+      },
+      "shift300": 0.0,
+      "avg_w": 0.968
+    },
+    "MVRV_Z_Contrarian_VT25": {
+      "all": {
+        "n": 3796,
+        "sharpe": 0.799,
+        "cagr": 18.82,
+        "max_dd": -54.21,
+        "calmar": 0.347
+      },
+      "is": {
+        "n": 2557,
+        "sharpe": 0.747,
+        "cagr": 17.17,
+        "max_dd": -54.21,
+        "calmar": 0.317
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 0.904,
+        "cagr": 22.31,
+        "max_dd": -27.03,
+        "calmar": 0.825
+      },
+      "shift300": 6.0,
+      "avg_w": 0.301
+    },
+    "ExchOutflow_Pos_VT25": {
+      "all": {
+        "n": 3796,
+        "sharpe": 0.894,
+        "cagr": 16.48,
+        "max_dd": -40.48,
+        "calmar": 0.407
+      },
+      "is": {
+        "n": 2557,
+        "sharpe": 0.743,
+        "cagr": 13.73,
+        "max_dd": -40.48,
+        "calmar": 0.339
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.266,
+        "cagr": 22.36,
+        "max_dd": -15.77,
+        "calmar": 1.418
+      },
+      "shift300": 58.0,
+      "avg_w": 0.163
+    },
+    "ActiveAddr_Mom_VT25": {
+      "all": {
+        "n": 3796,
+        "sharpe": 0.975,
+        "cagr": 19.57,
+        "max_dd": -37.45,
+        "calmar": 0.523
+      },
+      "is": {
+        "n": 2557,
+        "sharpe": 1.343,
+        "cagr": 29.68,
+        "max_dd": -37.45,
+        "calmar": 0.792
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 0.155,
+        "cagr": 1.14,
+        "max_dd": -34.82,
+        "calmar": 0.033
+      },
+      "shift300": 68.0,
+      "avg_w": 0.176
+    },
+    "Overlay_SMA50_VT25_MVRVCap2p5": {
+      "all": {
+        "n": 3796,
+        "sharpe": 1.445,
+        "cagr": 31.15,
+        "max_dd": -21.12,
+        "calmar": 1.475
+      },
+      "is": {
+        "n": 2557,
+        "sharpe": 1.563,
+        "cagr": 34.24,
+        "max_dd": -20.03,
+        "calmar": 1.71
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.202,
+        "cagr": 24.99,
+        "max_dd": -21.12,
+        "calmar": 1.183
+      },
+      "shift300": 100.0,
+      "avg_w": 0.177
+    },
+    "Overlay_SMA50_VT25_AdrPos": {
+      "all": {
+        "n": 3796,
+        "sharpe": 1.358,
+        "cagr": 25.92,
+        "max_dd": -20.8,
+        "calmar": 1.246
+      },
+      "is": {
+        "n": 2557,
+        "sharpe": 1.359,
+        "cagr": 26.56,
+        "max_dd": -20.8,
+        "calmar": 1.277
+      },
+      "oos": {
+        "n": 1239,
+        "sharpe": 1.358,
+        "cagr": 24.62,
+        "max_dd": -15.23,
+        "calmar": 1.617
+      },
+      "shift300": 98.67,
+      "avg_w": 0.135
+    }
+  },
+  "modern_btc_2018_2026": {
+    "BTC_BuyHold": {
+      "all": {
+        "n": 3075,
+        "sharpe": 0.763,
+        "cagr": 31.9,
+        "max_dd": -76.63,
+        "calmar": 0.416
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 0.606,
+        "cagr": 18.72,
+        "max_dd": -76.63,
+        "calmar": 0.244
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.103,
+        "cagr": 49.62,
+        "max_dd": -52.97,
+        "calmar": 0.937
+      },
+      "shift300": null,
+      "avg_w": 1.0
+    },
+    "BTC_SMA50_VT25_Base": {
+      "all": {
+        "n": 3075,
+        "sharpe": 1.357,
+        "cagr": 30.11,
+        "max_dd": -31.44,
+        "calmar": 0.958
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.234,
+        "cagr": 26.99,
+        "max_dd": -31.44,
+        "calmar": 0.858
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.506,
+        "cagr": 33.93,
+        "max_dd": -16.75,
+        "calmar": 2.026
+      },
+      "shift300": 99.33,
+      "avg_w": 0.283
+    },
+    "Stable30d_Pos_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 0.847,
+        "cagr": 19.54,
+        "max_dd": -33.86,
+        "calmar": 0.577
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 0.779,
+        "cagr": 18.91,
+        "max_dd": -33.86,
+        "calmar": 0.558
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 0.958,
+        "cagr": 20.31,
+        "max_dd": -24.13,
+        "calmar": 0.842
+      },
+      "shift300": 78.33,
+      "avg_w": 0.361
+    },
+    "Stable30d_GT1pct_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 1.018,
+        "cagr": 22.84,
+        "max_dd": -28.8,
+        "calmar": 0.793
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.131,
+        "cagr": 28.93,
+        "max_dd": -28.8,
+        "calmar": 1.005
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 0.863,
+        "cagr": 15.92,
+        "max_dd": -16.16,
+        "calmar": 0.985
+      },
+      "shift300": 91.33,
+      "avg_w": 0.314
+    },
+    "DeFi_TVL30d_Pos_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 0.72,
+        "cagr": 14.2,
+        "max_dd": -39.36,
+        "calmar": 0.361
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 0.418,
+        "cagr": 7.3,
+        "max_dd": -39.36,
+        "calmar": 0.185
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.156,
+        "cagr": 23.04,
+        "max_dd": -20.91,
+        "calmar": 1.102
+      },
+      "shift300": 75.33,
+      "avg_w": 0.296
+    },
+    "FearGreed_Contrarian_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 0.592,
+        "cagr": 10.14,
+        "max_dd": -31.43,
+        "calmar": 0.323
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 0.306,
+        "cagr": 4.32,
+        "max_dd": -31.43,
+        "calmar": 0.137
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.014,
+        "cagr": 17.53,
+        "max_dd": -28.89,
+        "calmar": 0.607
+      },
+      "shift300": 26.67,
+      "avg_w": 0.314
+    },
+    "FearGreed_Mom_GT50_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 0.888,
+        "cagr": 16.45,
+        "max_dd": -32.76,
+        "calmar": 0.502
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.256,
+        "cagr": 24.82,
+        "max_dd": -18.26,
+        "calmar": 1.359
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 0.455,
+        "cagr": 7.18,
+        "max_dd": -26.91,
+        "calmar": 0.267
+      },
+      "shift300": 90.67,
+      "avg_w": 0.222
+    },
+    "CME_COT_AssetMgr_ZPos_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 0.516,
+        "cagr": 9.07,
+        "max_dd": -50.06,
+        "calmar": 0.181
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 0.518,
+        "cagr": 9.45,
+        "max_dd": -48.39,
+        "calmar": 0.195
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 0.515,
+        "cagr": 8.63,
+        "max_dd": -26.11,
+        "calmar": 0.33
+      },
+      "shift300": 45.33,
+      "avg_w": 0.271
+    },
+    "CME_COT_LevShort_Contra_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 0.77,
+        "cagr": 16.05,
+        "max_dd": -43.36,
+        "calmar": 0.37
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 0.809,
+        "cagr": 18.02,
+        "max_dd": -39.47,
+        "calmar": 0.457
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 0.721,
+        "cagr": 13.74,
+        "max_dd": -28.91,
+        "calmar": 0.475
+      },
+      "shift300": 74.0,
+      "avg_w": 0.284
+    },
+    "Overlay_SMA50_StablePos_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 1.219,
+        "cagr": 24.48,
+        "max_dd": -31.71,
+        "calmar": 0.772
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.37,
+        "cagr": 29.45,
+        "max_dd": -27.8,
+        "calmar": 1.059
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.024,
+        "cagr": 18.8,
+        "max_dd": -21.09,
+        "calmar": 0.891
+      },
+      "shift300": 98.0,
+      "avg_w": 0.235
+    },
+    "Overlay_SMA50_FGCap80_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 1.285,
+        "cagr": 26.97,
+        "max_dd": -31.01,
+        "calmar": 0.869
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.095,
+        "cagr": 21.85,
+        "max_dd": -31.01,
+        "calmar": 0.704
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.504,
+        "cagr": 33.37,
+        "max_dd": -16.75,
+        "calmar": 1.992
+      },
+      "shift300": 99.0,
+      "avg_w": 0.274
+    },
+    "Overlay_SMA50_AssetMgr_VT25": {
+      "all": {
+        "n": 3075,
+        "sharpe": 1.351,
+        "cagr": 28.38,
+        "max_dd": -31.44,
+        "calmar": 0.903
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.194,
+        "cagr": 25.28,
+        "max_dd": -31.44,
+        "calmar": 0.804
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.557,
+        "cagr": 32.2,
+        "max_dd": -15.05,
+        "calmar": 2.14
+      },
+      "shift300": 100.0,
+      "avg_w": 0.259
+    }
+  },
+  "portfolio_19coins": {
+    "19Coin_SMA50_VT25_Base": {
+      "all": {
+        "n": 3075,
+        "sharpe": 1.315,
+        "cagr": 18.16,
+        "max_dd": -19.17,
+        "calmar": 0.947
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.33,
+        "cagr": 18.77,
+        "max_dd": -19.17,
+        "calmar": 0.98
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.297,
+        "cagr": 17.43,
+        "max_dd": -13.6,
+        "calmar": 1.282
+      }
+    },
+    "19Coin_Overlay_StablePos": {
+      "all": {
+        "n": 3075,
+        "sharpe": 1.294,
+        "cagr": 16.67,
+        "max_dd": -19.43,
+        "calmar": 0.858
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.366,
+        "cagr": 18.54,
+        "max_dd": -16.12,
+        "calmar": 1.15
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.203,
+        "cagr": 14.46,
+        "max_dd": -14.61,
+        "calmar": 0.99
+      }
+    },
+    "19Coin_Overlay_FGCap80": {
+      "all": {
+        "n": 3075,
+        "sharpe": 1.263,
+        "cagr": 16.49,
+        "max_dd": -18.32,
+        "calmar": 0.9
+      },
+      "is": {
+        "n": 1675,
+        "sharpe": 1.258,
+        "cagr": 16.39,
+        "max_dd": -18.32,
+        "calmar": 0.895
+      },
+      "oos": {
+        "n": 1400,
+        "sharpe": 1.268,
+        "cagr": 16.62,
+        "max_dd": -13.6,
+        "calmar": 1.222
+      }
+    }
+  }
+}

@@ -293,6 +293,70 @@ def test_exp0043_to_0048_v222_open_data_validation() -> None:
     assert e48["sp500_addition_removal_drift"]["additions"]["5d"]["mean_ex_spy_pct"] < 0.0
 
 
+def test_exp0049_to_0054_v223_catalog_validation() -> None:
+    df_exp = pd.read_csv(ROOT / "research" / "EXPERIMENT_LOG.csv")
+    df_hyp = pd.read_csv(ROOT / "research" / "HYPOTHESIS_REGISTER.csv")
+    assert len(df_exp) >= 54
+    assert len(df_hyp) >= 56
+    for eid in ("EXP-0049", "EXP-0050", "EXP-0051", "EXP-0052", "EXP-0053", "EXP-0054"):
+        assert eid in set(df_exp["exp_id"])
+
+    # Verify v2.23 datasets & completeness
+    assert (ROOT / "data" / "crypto_onchain" / "coinmetrics_btc.csv.gz").exists()
+    assert (ROOT / "data" / "crypto_onchain" / "defillama_macro.csv.gz").exists()
+    assert (ROOT / "data" / "cot" / "cme_crypto_fin_cot.csv.gz").exists()
+    assert (ROOT / "data" / "events" / "forex_factory_2007_2025.csv.gz").exists()
+    assert (ROOT / "data" / "macro" / "philly_spf_median.csv.gz").exists()
+    assert (ROOT / "data" / "macro" / "fred_freight_monthly.csv").exists()
+    assert (ROOT / "data" / "thai" / "set50_index_2006_2023.csv").exists()
+    assert (ROOT / "data" / "thai" / "tfex_s50_15m_2016_2025.csv.gz").exists()
+
+    tr = pd.read_csv(ROOT / "data" / "sec" / "sp500_earnings_transcript_features_2013_2025.csv.gz")
+    assert len(tr) >= 20000 and tr["ticker"].nunique() >= 490
+    cik_m = pd.read_csv(ROOT / "data" / "sec" / "sp500_2012_2026_cik_map.csv")
+    assert (cik_m["cik"] > 0).sum() >= 790
+    bb_f = pd.read_csv(ROOT / "data" / "sec" / "sec_buybacks_sp500_full_pit.csv.gz", usecols=["cik"])
+    assert bb_f["cik"].nunique() >= 780
+    e8_f = pd.read_csv(ROOT / "data" / "sec" / "sec_8k_sp500_full_pit.csv.gz", usecols=["cik", "filing_date"])
+    assert len(e8_f) >= 130000 and e8_f["cik"].nunique() >= 750
+
+    # Verify EXP-0049..0054 & adversarial audit EXP-0054b/c/d artifacts
+    e49 = json.loads((ROOT / "research" / "artifacts" / "exp0049_crypto_onchain_defi_cot.json").read_text())
+    assert e49["coinmetrics_btc"]["Overlay_SMA50_VT25_MVRVCap2p5"]["all"]["sharpe"] < e49["coinmetrics_btc"]["SMA50_VT25_Base"]["all"]["sharpe"]
+    assert e49["portfolio_19coins"]["19Coin_Overlay_StablePos"]["all"]["sharpe"] < e49["portfolio_19coins"]["19Coin_SMA50_VT25_Base"]["all"]["sharpe"]
+
+    e50 = json.loads((ROOT / "research" / "artifacts" / "exp0050_macro_surprise_ff_spf.json").read_text())
+    assert e50["h1_fx_post_surprise"]["EURUSD"]["horizons"]["H1_z0.75"]["all"]["t_stat"] < 2.0
+    assert e50["daily_macro_surprise"]["SPY"]["MacroSurp21_LongPos"]["oos"]["sharpe"] < e50["daily_macro_surprise"]["SPY"]["BuyHold"]["oos"]["sharpe"]
+
+    e51 = json.loads((ROOT / "research" / "artifacts" / "exp0051_sp500_56y_pit.json").read_text())
+    assert e51["median_eligible_per_month"] >= 450
+    assert e51["55y_1972_2026"]["Mom_12_1_LS"]["oos"]["sharpe"] < 0.20
+    assert e51["55y_1972_2026"]["LowVol_60d_LS"]["oos"]["sharpe"] < 0.0
+
+    e52 = json.loads((ROOT / "research" / "artifacts" / "exp0052_equity_options_iv_surface.json").read_text())
+    assert e52["monthly_21d"]["vrp_20_LS"]["all"]["sharpe"] < 0.0
+    assert e52["weekly_5d"]["vrp_20_LO"]["oos"]["sharpe"] < 0.1
+
+    e53 = json.loads((ROOT / "research" / "artifacts" / "exp0053_thai_set50_and_tfex_s50_intraday.json").read_text())
+    assert e53["part_a_daily_set50"]["SET50_TrendEns_VT12"]["oos"]["sharpe"] < 0.0
+    assert all(v["all"]["sharpe"] < 0.0 for k, v in e53["part_b_intraday_2bp"].items() if k not in ("S50_Intraday_BH", "S50_Overnight_BH"))
+
+    e54b = json.loads((ROOT / "research" / "artifacts" / "exp0054b_adversarial_audit.json").read_text())
+    assert e54b["transcripts_calendar_audit"]["net_tone_21d"]["oos"]["sharpe"] < 0.0
+    assert e54b["transcripts_calendar_audit"]["yoy_tone_21d"]["is"]["sharpe"] < 0.0
+
+    e54c = json.loads((ROOT / "research" / "artifacts" / "exp0054c_full_sp500_audit.json").read_text())
+    assert e54c["buybacks_full_sp500"]["ZERO_FILL_SecNeut_10bp"]["all"]["sharpe"] <= 0.05
+    assert e54c["buybacks_full_sp500"]["ZERO_FILL_EW_20bp"]["all"]["sharpe"] < 0.0
+    assert abs(e54c["sec_8k_events"]["Item_5.02_All"]["21d"]["t"]) < 2.0
+    assert e54c["sec_8k_calendar"]["Item_5.02_All_42d"]["is"] < 0.0
+
+    e54d = json.loads((ROOT / "research" / "artifacts" / "exp0054d_bb_assets_and_net_issuance.json").read_text())
+    assert e54d["bb_to_assets"]["all"] < 0.1
+    assert e54d["net_share_red_yoy"]["all"] < 0.1
+
+
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_") and callable(v)]
     for fn in tests:

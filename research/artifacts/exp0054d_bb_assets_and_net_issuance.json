@@ -1,0 +1,26 @@
+{
+  "bb_to_assets": {
+    "all": 0.01,
+    "dd": -12.83,
+    "is_pre2020": -0.219,
+    "oos_2020p": 0.193
+  },
+  "bb_to_assets_secneut": {
+    "all": -0.04,
+    "dd": -16.29,
+    "is_pre2020": -0.586,
+    "oos_2020p": 0.352
+  },
+  "net_share_red_yoy": {
+    "all": 0.034,
+    "dd": -18.27,
+    "is_pre2020": -0.251,
+    "oos_2020p": 0.222
+  },
+  "net_share_red_secneut": {
+    "all": 0.041,
+    "dd": -18.5,
+    "is_pre2020": -0.359,
+    "oos_2020p": 0.298
+  }
+}

@@ -45,7 +45,7 @@ OUT_MD = ROOT / "reports" / "RISK_RADAR_SPEC_AND_LATEST.md"
 
 DISCLAIMER = (
     "RISK MONITORING TOOL ONLY — Not a buy/sell signal generator or proof of trading edge. "
-    "Phase C Kill Point remains active (0 validated directional edges across 31 experiments)."
+    "Phase C Kill Point remains active (0 validated directional edges across 54 experiments)."
 )
 
 STRESS_KEYWORDS = ("crisis", "default", "emergency", "tariff", "war", "crash", "halt", "recession", "shock", "panic")

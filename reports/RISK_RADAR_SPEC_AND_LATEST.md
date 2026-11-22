@@ -1,21 +1,21 @@
 # Daily Risk Radar — Specification & Latest Reading
 
-> **RISK MONITORING TOOL ONLY — Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 31 experiments).**
+> **RISK MONITORING TOOL ONLY — Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 54 experiments).**
 
-Generated UTC: `2026-11-21T18:19:55+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `9/9`
+Generated UTC: `2026-11-22T03:41:56+00:00` | Overall Risk Classification: **`HIGH`** | Fresh Panels: `9/9`
 
 ## 1. Panel Status, Data Sources, Freshness & Thresholds
 | Panel | Last Updated | Age (d) | Freshness | Risk Class | Key Metrics | Warning |
 |---|---|---:|---|---|---|---|
-| `vol_term_structure` | `2026-11-20` | 1 | `FRESH` | **HIGH** | `{"vix": 35.89, "slope_3m": 1.16, "slope_9d": 1.135, "vvix_pct": 0.996}` | none |
-| `ofr_fsi` | `2026-11-18` | 3 | `FRESH` | **LOW** | `{"ofr_fsi": -1.387, "credit": -0.853, "volatility_sub": 0.24}` | none |
-| `equity_vol_dd` | `2026-11-20` | 1 | `FRESH` | **ELEVATED** | `{"spy_close": 689.81, "rv20_pct": 26.26, "rv63_pct": 17.05, "dd_52w_pct": -11.46}` | none |
-| `support_resistance` | `2026-11-21` | 0 | `FRESH` | **MODERATE** | `{"instruments": [{"instrument": "BTC", "close": 57808.3906, "s1": 55932.7956, "r1": 59382.7643,` | none |
-| `calendar_7d` | `2026-11-21` | 0 | `FRESH` | **LOW** | `{"upcoming_7d_count": 0, "events": []}` | none |
-| `macro_rates` | `2026-11-20` | 1 | `FRESH` | **LOW** | `{"ecb_dfr": 2.5, "boe_rate": 4.0, "fed_rate_proxy": 3.88, "diff_boe_ecb_dfr": 1.5, "diff_fed_ec` | none |
+| `vol_term_structure` | `2026-11-20` | 2 | `FRESH` | **HIGH** | `{"vix": 35.89, "slope_3m": 1.16, "slope_9d": 1.135, "vvix_pct": 0.996}` | none |
+| `ofr_fsi` | `2026-11-18` | 4 | `FRESH` | **LOW** | `{"ofr_fsi": -1.387, "credit": -0.853, "volatility_sub": 0.24}` | none |
+| `equity_vol_dd` | `2026-11-20` | 2 | `FRESH` | **ELEVATED** | `{"spy_close": 689.81, "rv20_pct": 26.26, "rv63_pct": 17.05, "dd_52w_pct": -11.46}` | none |
+| `support_resistance` | `2026-11-21` | 1 | `FRESH` | **MODERATE** | `{"instruments": [{"instrument": "BTC", "close": 57808.3906, "s1": 55932.7956, "r1": 59382.7643,` | none |
+| `calendar_7d` | `2026-11-22` | 0 | `FRESH` | **LOW** | `{"upcoming_7d_count": 0, "events": []}` | none |
+| `macro_rates` | `2026-11-20` | 2 | `FRESH` | **LOW** | `{"ecb_dfr": 2.5, "boe_rate": 4.0, "fed_rate_proxy": 3.88, "diff_boe_ecb_dfr": 1.5, "diff_fed_ec` | none |
 | `news_stress` | `2026-11-21T11:37:27` | 0 | `FRESH` | **ELEVATED** | `{"feeds_ok": 16, "feeds_total": 16, "unique_headlines": 418, "stress_keyword_hits": 31}` | none |
-| `crypto_funding_basis` | `2026-11-21` | 0 | `FRESH` | **LOW** | `{"deribit_btc_24h_apr_pct": -2.88, "deribit_btc_index": 58820.48, "okx_btc_24h_apr_pct": -0.46}` | none |
-| `equity_short_insider_breadth` | `2026-11-20` | 1 | `FRESH` | **MODERATE** | `{"regsho_mkt_short_ratio": 0.4612, "regsho_ma5": 0.4745, "regsho_surge_5v60": -0.0242, "regsho_` | none |
+| `crypto_funding_basis` | `2026-11-21` | 1 | `FRESH` | **LOW** | `{"deribit_btc_24h_apr_pct": -2.88, "deribit_btc_index": 58820.48, "okx_btc_24h_apr_pct": -0.46}` | none |
+| `equity_short_insider_breadth` | `2026-11-20` | 2 | `FRESH` | **MODERATE** | `{"regsho_mkt_short_ratio": 0.4612, "regsho_ma5": 0.4745, "regsho_surge_5v60": -0.0242, "regsho_` | none |
 
 ## 2. Calibrated Risk Meta-Labeling (`Task 3 + EXP-0030/0031`, Offline Sizing & Monitor Only)
 - **As-Of Date:** `2026-11-20` | **Causal Train Cutoff (`-31d` Purge+Embargo):** `2026-09-09`
@@ -27,7 +27,7 @@ Generated UTC: `2026-11-21T18:19:55+00:00` | Overall Risk Classification: **`HIG
 - **`EURGBP H1` Last Bar:** `2026-11-20T18:00:00+00:00` | Spread `0.8 pips` (`z72=-0.16`) | In 6h Rollover Hazard (`16–23 UTC`): `True`
 
 ## 4. Crypto Daily Trend Regime & VolTarget25% Monitor (`EXP-0041 + EXP-0043`, Monitoring Reference)
-- **`BTC-USD` As-Of `2026-11-21`:** Close `$59,958.45` | `SMA(50)=$77,133.24` (`Above=False`) | `TrendEns(20..120)=0.00` | `RV21=51.06%` | `19-Coin Breadth >SMA50`: `1/19 (5.3%)`
+- **`BTC-USD` As-Of `2026-11-22`:** Close `$59,084.10` | `SMA(50)=$77,115.76` (`Above=False`) | `TrendEns(20..120)=0.00` | `RV21=49.75%` | `19-Coin Breadth >SMA50`: `1/19 (5.3%)`
 - **Vol-Targeted Reference (`VT25%`):** `TrendEns x VT25 = 0.0%` (`SMA50 x VT25 = 0.0%`) | Cash/EFFR `100.0%`
 
 ## 5. Active Risk Alerts

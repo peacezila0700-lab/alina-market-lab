@@ -1,0 +1,132 @@
+{
+  "vt12_comparison": {
+    "55y_1972_2026": {
+      "EW_SP500": {
+        "sharpe": 0.756,
+        "cagr": 12.03,
+        "max_dd": -60.61,
+        "calmar": 0.198,
+        "vol": 16.92
+      },
+      "EW_SP500_VT12": {
+        "sharpe": 0.85,
+        "cagr": 9.52,
+        "max_dd": -37.25,
+        "calmar": 0.256,
+        "vol": 11.48
+      },
+      "LowVol60_LO": {
+        "sharpe": 0.946,
+        "cagr": 10.95,
+        "max_dd": -40.63,
+        "calmar": 0.269,
+        "vol": 11.71
+      },
+      "LowVol60_LO_VT12": {
+        "sharpe": 1.039,
+        "cagr": 10.07,
+        "max_dd": -39.36,
+        "calmar": 0.256,
+        "vol": 9.69
+      }
+    },
+    "31y_1996_2026": {
+      "EW_SP500": {
+        "sharpe": 0.618,
+        "cagr": 10.46,
+        "max_dd": -60.61,
+        "calmar": 0.173,
+        "vol": 19.04
+      },
+      "EW_SP500_VT12": {
+        "sharpe": 0.671,
+        "cagr": 7.44,
+        "max_dd": -30.4,
+        "calmar": 0.245,
+        "vol": 11.72
+      },
+      "LowVol60_LO": {
+        "sharpe": 0.74,
+        "cagr": 9.14,
+        "max_dd": -37.44,
+        "calmar": 0.244,
+        "vol": 12.96
+      },
+      "LowVol60_LO_VT12": {
+        "sharpe": 0.803,
+        "cagr": 8.01,
+        "max_dd": -25.95,
+        "calmar": 0.309,
+        "vol": 10.27
+      }
+    },
+    "OOS_2014_2026": {
+      "EW_SP500": {
+        "sharpe": 0.689,
+        "cagr": 10.85,
+        "max_dd": -36.86,
+        "calmar": 0.294,
+        "vol": 17.1
+      },
+      "EW_SP500_VT12": {
+        "sharpe": 0.661,
+        "cagr": 7.09,
+        "max_dd": -16.0,
+        "calmar": 0.443,
+        "vol": 11.34
+      },
+      "LowVol60_LO": {
+        "sharpe": 0.818,
+        "cagr": 10.25,
+        "max_dd": -30.38,
+        "calmar": 0.337,
+        "vol": 12.96
+      },
+      "LowVol60_LO_VT12": {
+        "sharpe": 0.876,
+        "cagr": 8.76,
+        "max_dd": -12.68,
+        "calmar": 0.691,
+        "vol": 10.18
+      }
+    }
+  },
+  "additions_by_era": {
+    "1972_1995": {
+      "5d": {
+        "n": 504,
+        "excess_pct": -0.521,
+        "t_stat": -2.78
+      },
+      "21d": {
+        "n": 504,
+        "excess_pct": -0.871,
+        "t_stat": -2.46
+      }
+    },
+    "1996_2013": {
+      "5d": {
+        "n": 491,
+        "excess_pct": -1.356,
+        "t_stat": -5.05
+      },
+      "21d": {
+        "n": 491,
+        "excess_pct": -2.519,
+        "t_stat": -5.28
+      }
+    },
+    "2014_2026": {
+      "5d": {
+        "n": 262,
+        "excess_pct": -0.776,
+        "t_stat": -2.23
+      },
+      "21d": {
+        "n": 262,
+        "excess_pct": -0.374,
+        "t_stat": -0.68
+      }
+    }
+  }
+}
