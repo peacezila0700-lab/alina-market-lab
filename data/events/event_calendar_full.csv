@@ -50,9 +50,10 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2000-02-02,FOMC,decision,high,True,,
 2000-03-16,SHOCK_2.5SIG,ret=+4.671%,high,False,,
 2000-03-21,FOMC,decision,high,True,,
-2000-04-14,SHOCK_2.5SIG,ret=-5.719%,high,False,,
 2000-04-14,VIX_ONSET30,vix=33.5,high,False,,
+2000-04-14,SHOCK_2.5SIG,ret=-5.719%,high,False,,
 2000-05-03,VIX_ONSET30,vix=31.6,high,False,,
+2000-05-04,VIX_ONSET30,vix=30.8,high,False,,
 2000-05-16,FOMC,decision,high,True,,
 2000-06-28,FOMC,decision,high,True,,
 2000-08-22,FOMC,decision,high,True,,
@@ -67,20 +68,60 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2000-12-20,VIX_ONSET30,vix=31.7,high,False,,
 2001-01-03,SHOCK_2.5SIG,ret=+4.803%,high,False,,
 2001-01-31,FOMC,decision,high,True,,
-2001-03-12,SHOCK_2.5SIG,ret=-4.280%,high,False,,
 2001-03-12,VIX_ONSET30,vix=30.3,high,False,,
-2001-03-20,FOMC,decision,high,True,,
+2001-03-12,SHOCK_2.5SIG,ret=-4.280%,high,False,,
 2001-03-20,VIX_ONSET30,vix=31.0,high,False,,
+2001-03-20,FOMC,decision,high,True,,
+2001-03-21,VIX_ONSET30,vix=31.9,high,False,,
+2001-03-22,VIX_ONSET30,vix=32.8,high,False,,
+2001-03-23,VIX_ONSET30,vix=30.4,high,False,,
 2001-04-02,VIX_ONSET30,vix=31.2,high,False,,
+2001-04-03,VIX_ONSET30,vix=34.7,high,False,,
+2001-04-04,VIX_ONSET30,vix=34.1,high,False,,
 2001-04-06,VIX_ONSET30,vix=31.7,high,False,,
+2001-04-09,VIX_ONSET30,vix=31.9,high,False,,
 2001-05-15,FOMC,decision,high,True,,
 2001-06-27,FOMC,decision,high,True,,
 2001-08-21,FOMC,decision,high,True,,
 2001-09-07,VIX_ONSET30,vix=31.0,high,False,,
+2001-09-10,VIX_ONSET30,vix=31.8,high,False,,
 2001-09-17,SHOCK_2.5SIG,ret=-5.225%,high,False,,
+2001-09-17,VIX_ONSET30,vix=41.8,high,False,,
+2001-09-18,VIX_ONSET30,vix=38.9,high,False,,
+2001-09-19,VIX_ONSET30,vix=40.6,high,False,,
+2001-09-20,VIX_ONSET30,vix=43.7,high,False,,
+2001-09-21,VIX_ONSET30,vix=42.7,high,False,,
+2001-09-24,VIX_ONSET30,vix=37.8,high,False,,
 2001-09-24,SHOCK_2.5SIG,ret=+3.516%,high,False,,
+2001-09-25,VIX_ONSET30,vix=35.8,high,False,,
+2001-09-26,VIX_ONSET30,vix=35.3,high,False,,
+2001-09-27,VIX_ONSET30,vix=34.0,high,False,,
+2001-09-28,VIX_ONSET30,vix=31.9,high,False,,
+2001-10-01,VIX_ONSET30,vix=32.3,high,False,,
 2001-10-02,FOMC,decision,high,True,,
+2001-10-02,VIX_ONSET30,vix=31.2,high,False,,
+2001-10-03,VIX_ONSET30,vix=31.3,high,False,,
+2001-10-04,VIX_ONSET30,vix=32.0,high,False,,
+2001-10-05,VIX_ONSET30,vix=33.4,high,False,,
+2001-10-08,VIX_ONSET30,vix=35.1,high,False,,
+2001-10-09,VIX_ONSET30,vix=34.8,high,False,,
+2001-10-10,VIX_ONSET30,vix=31.6,high,False,,
+2001-10-11,VIX_ONSET30,vix=31.5,high,False,,
+2001-10-12,VIX_ONSET30,vix=35.3,high,False,,
+2001-10-15,VIX_ONSET30,vix=35.3,high,False,,
+2001-10-16,VIX_ONSET30,vix=32.9,high,False,,
+2001-10-17,VIX_ONSET30,vix=35.1,high,False,,
+2001-10-18,VIX_ONSET30,vix=35.0,high,False,,
+2001-10-19,VIX_ONSET30,vix=34.1,high,False,,
+2001-10-22,VIX_ONSET30,vix=32.2,high,False,,
+2001-10-23,VIX_ONSET30,vix=32.0,high,False,,
+2001-10-24,VIX_ONSET30,vix=30.9,high,False,,
 2001-10-29,VIX_ONSET30,vix=31.6,high,False,,
+2001-10-30,VIX_ONSET30,vix=33.5,high,False,,
+2001-10-31,VIX_ONSET30,vix=33.6,high,False,,
+2001-11-01,VIX_ONSET30,vix=32.3,high,False,,
+2001-11-02,VIX_ONSET30,vix=30.7,high,False,,
+2001-11-05,VIX_ONSET30,vix=30.5,high,False,,
 2001-11-06,FOMC,decision,high,True,,
 2001-12-11,FOMC,decision,high,True,,
 2002-01-29,SHOCK_2.5SIG,ret=-3.144%,high,False,,
@@ -91,20 +132,133 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2002-06-26,FOMC,decision,high,True,,
 2002-07-05,SHOCK_2.5SIG,ret=+3.979%,high,False,,
 2002-07-09,VIX_ONSET30,vix=30.2,high,False,,
+2002-07-10,VIX_ONSET30,vix=34.1,high,False,,
+2002-07-11,VIX_ONSET30,vix=33.9,high,False,,
+2002-07-12,VIX_ONSET30,vix=32.9,high,False,,
+2002-07-15,VIX_ONSET30,vix=35.0,high,False,,
+2002-07-16,VIX_ONSET30,vix=36.6,high,False,,
+2002-07-17,VIX_ONSET30,vix=35.5,high,False,,
+2002-07-18,VIX_ONSET30,vix=35.1,high,False,,
+2002-07-19,VIX_ONSET30,vix=38.2,high,False,,
+2002-07-22,VIX_ONSET30,vix=41.9,high,False,,
+2002-07-23,VIX_ONSET30,vix=44.9,high,False,,
+2002-07-24,VIX_ONSET30,vix=39.9,high,False,,
 2002-07-24,SHOCK_2.5SIG,ret=+5.966%,high,False,,
+2002-07-25,VIX_ONSET30,vix=39.3,high,False,,
+2002-07-26,VIX_ONSET30,vix=35.5,high,False,,
+2002-07-29,VIX_ONSET30,vix=31.3,high,False,,
+2002-07-30,VIX_ONSET30,vix=31.9,high,False,,
+2002-07-31,VIX_ONSET30,vix=32.0,high,False,,
+2002-08-01,VIX_ONSET30,vix=37.0,high,False,,
+2002-08-02,VIX_ONSET30,vix=41.3,high,False,,
+2002-08-05,VIX_ONSET30,vix=45.1,high,False,,
+2002-08-06,VIX_ONSET30,vix=42.0,high,False,,
+2002-08-07,VIX_ONSET30,vix=38.7,high,False,,
+2002-08-08,VIX_ONSET30,vix=36.3,high,False,,
+2002-08-09,VIX_ONSET30,vix=35.3,high,False,,
+2002-08-12,VIX_ONSET30,vix=37.0,high,False,,
+2002-08-13,VIX_ONSET30,vix=35.8,high,False,,
 2002-08-13,FOMC,decision,high,True,,
+2002-08-14,VIX_ONSET30,vix=32.4,high,False,,
 2002-08-27,VIX_ONSET30,vix=30.1,high,False,,
+2002-08-28,VIX_ONSET30,vix=33.3,high,False,,
+2002-08-29,VIX_ONSET30,vix=33.7,high,False,,
+2002-08-30,VIX_ONSET30,vix=32.6,high,False,,
+2002-09-03,VIX_ONSET30,vix=40.0,high,False,,
+2002-09-04,VIX_ONSET30,vix=37.4,high,False,,
+2002-09-05,VIX_ONSET30,vix=38.9,high,False,,
+2002-09-06,VIX_ONSET30,vix=36.3,high,False,,
+2002-09-09,VIX_ONSET30,vix=36.5,high,False,,
+2002-09-10,VIX_ONSET30,vix=35.1,high,False,,
+2002-09-11,VIX_ONSET30,vix=34.8,high,False,,
+2002-09-12,VIX_ONSET30,vix=37.5,high,False,,
+2002-09-13,VIX_ONSET30,vix=35.8,high,False,,
+2002-09-16,VIX_ONSET30,vix=36.7,high,False,,
+2002-09-17,VIX_ONSET30,vix=38.0,high,False,,
+2002-09-18,VIX_ONSET30,vix=37.5,high,False,,
+2002-09-19,VIX_ONSET30,vix=40.6,high,False,,
+2002-09-20,VIX_ONSET30,vix=39.0,high,False,,
+2002-09-23,VIX_ONSET30,vix=39.7,high,False,,
+2002-09-24,VIX_ONSET30,vix=40.5,high,False,,
 2002-09-24,FOMC,decision,high,True,,
+2002-09-25,VIX_ONSET30,vix=37.3,high,False,,
+2002-09-26,VIX_ONSET30,vix=34.6,high,False,,
+2002-09-27,VIX_ONSET30,vix=37.0,high,False,,
+2002-09-30,VIX_ONSET30,vix=39.7,high,False,,
+2002-10-01,VIX_ONSET30,vix=34.1,high,False,,
+2002-10-02,VIX_ONSET30,vix=36.8,high,False,,
+2002-10-03,VIX_ONSET30,vix=37.3,high,False,,
+2002-10-04,VIX_ONSET30,vix=39.5,high,False,,
+2002-10-07,VIX_ONSET30,vix=42.6,high,False,,
+2002-10-08,VIX_ONSET30,vix=41.0,high,False,,
+2002-10-09,VIX_ONSET30,vix=42.1,high,False,,
+2002-10-10,VIX_ONSET30,vix=37.5,high,False,,
+2002-10-11,VIX_ONSET30,vix=35.7,high,False,,
+2002-10-14,VIX_ONSET30,vix=36.0,high,False,,
+2002-10-15,VIX_ONSET30,vix=34.0,high,False,,
+2002-10-16,VIX_ONSET30,vix=36.0,high,False,,
+2002-10-17,VIX_ONSET30,vix=34.1,high,False,,
+2002-10-18,VIX_ONSET30,vix=33.5,high,False,,
+2002-10-21,VIX_ONSET30,vix=33.1,high,False,,
+2002-10-22,VIX_ONSET30,vix=34.1,high,False,,
+2002-10-23,VIX_ONSET30,vix=33.2,high,False,,
+2002-10-24,VIX_ONSET30,vix=34.0,high,False,,
+2002-10-25,VIX_ONSET30,vix=30.0,high,False,,
+2002-10-28,VIX_ONSET30,vix=31.1,high,False,,
+2002-10-29,VIX_ONSET30,vix=32.3,high,False,,
+2002-10-30,VIX_ONSET30,vix=31.2,high,False,,
+2002-10-31,VIX_ONSET30,vix=31.1,high,False,,
 2002-11-04,VIX_ONSET30,vix=30.8,high,False,,
+2002-11-05,VIX_ONSET30,vix=31.2,high,False,,
+2002-11-06,VIX_ONSET30,vix=30.7,high,False,,
 2002-11-06,FOMC,decision,high,True,,
+2002-11-07,VIX_ONSET30,vix=31.4,high,False,,
 2002-11-11,VIX_ONSET30,vix=31.3,high,False,,
+2002-11-12,VIX_ONSET30,vix=30.6,high,False,,
+2002-11-13,VIX_ONSET30,vix=31.2,high,False,,
 2002-12-05,VIX_ONSET30,vix=30.1,high,False,,
 2002-12-09,VIX_ONSET30,vix=30.8,high,False,,
 2002-12-10,FOMC,decision,high,True,,
 2002-12-19,VIX_ONSET30,vix=30.2,high,False,,
 2003-01-24,VIX_ONSET30,vix=31.5,high,False,,
+2003-01-27,VIX_ONSET30,vix=34.7,high,False,,
+2003-01-28,VIX_ONSET30,vix=31.9,high,False,,
+2003-01-29,VIX_ONSET30,vix=31.3,high,False,,
+2003-01-30,VIX_ONSET30,vix=31.3,high,False,,
+2003-01-31,VIX_ONSET30,vix=31.2,high,False,,
+2003-02-03,VIX_ONSET30,vix=31.0,high,False,,
+2003-02-04,VIX_ONSET30,vix=32.8,high,False,,
+2003-02-05,VIX_ONSET30,vix=33.0,high,False,,
+2003-02-06,VIX_ONSET30,vix=33.4,high,False,,
+2003-02-07,VIX_ONSET30,vix=34.0,high,False,,
+2003-02-10,VIX_ONSET30,vix=34.0,high,False,,
+2003-02-11,VIX_ONSET30,vix=33.7,high,False,,
+2003-02-12,VIX_ONSET30,vix=34.3,high,False,,
+2003-02-13,VIX_ONSET30,vix=33.7,high,False,,
+2003-02-14,VIX_ONSET30,vix=32.6,high,False,,
+2003-02-18,VIX_ONSET30,vix=31.1,high,False,,
+2003-02-19,VIX_ONSET30,vix=31.3,high,False,,
+2003-02-20,VIX_ONSET30,vix=31.2,high,False,,
+2003-02-21,VIX_ONSET30,vix=30.2,high,False,,
+2003-02-24,VIX_ONSET30,vix=32.0,high,False,,
+2003-02-25,VIX_ONSET30,vix=31.7,high,False,,
+2003-02-26,VIX_ONSET30,vix=31.9,high,False,,
+2003-02-27,VIX_ONSET30,vix=30.5,high,False,,
 2003-03-03,VIX_ONSET30,vix=30.4,high,False,,
+2003-03-04,VIX_ONSET30,vix=31.8,high,False,,
+2003-03-05,VIX_ONSET30,vix=30.4,high,False,,
+2003-03-06,VIX_ONSET30,vix=31.4,high,False,,
+2003-03-07,VIX_ONSET30,vix=31.1,high,False,,
+2003-03-10,VIX_ONSET30,vix=33.3,high,False,,
+2003-03-11,VIX_ONSET30,vix=33.6,high,False,,
+2003-03-12,VIX_ONSET30,vix=33.5,high,False,,
+2003-03-13,VIX_ONSET30,vix=31.8,high,False,,
 2003-03-13,SHOCK_2.5SIG,ret=+3.454%,high,False,,
+2003-03-14,VIX_ONSET30,vix=31.0,high,False,,
+2003-03-17,VIX_ONSET30,vix=31.8,high,False,,
+2003-03-18,VIX_ONSET30,vix=30.4,high,False,,
+2003-03-19,VIX_ONSET30,vix=31.5,high,False,,
+2003-03-20,VIX_ONSET30,vix=30.4,high,False,,
 2003-03-24,VIX_ONSET30,vix=30.4,high,False,,
 2004-03-10,SHOCK_2.5SIG,ret=-1.677%,high,False,,
 2005-01-07,NFP_approx,first Friday (rule),med,True,,
@@ -137,8 +291,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2005-08-31,MONTH_END,last business day,high,True,,
 2005-09-02,NFP_approx,first Friday (rule),med,True,,
 2005-09-16,OPEX,3rd Friday,high,True,,
-2005-09-30,MONTH_END,last business day,high,True,,
 2005-09-30,QUARTER_END,last business day of quarter,high,True,,
+2005-09-30,MONTH_END,last business day,high,True,,
 2005-10-07,NFP_approx,first Friday (rule),med,True,,
 2005-10-19,SHOCK_2.5SIG,ret=+1.664%,high,False,,
 2005-10-20,SHOCK_2.5SIG,ret=-1.762%,high,False,,
@@ -149,8 +303,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2005-11-30,MONTH_END,last business day,high,True,,
 2005-12-02,NFP_approx,first Friday (rule),med,True,,
 2005-12-16,OPEX,3rd Friday,high,True,,
-2005-12-30,MONTH_END,last business day,high,True,,
 2005-12-30,QUARTER_END,last business day of quarter,high,True,,
+2005-12-30,MONTH_END,last business day,high,True,,
 2006-01-06,NFP_approx,first Friday (rule),med,True,,
 2006-01-20,OPEX,3rd Friday,high,True,,
 2006-01-20,SHOCK_2.5SIG,ret=-1.824%,high,False,,
@@ -196,8 +350,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2006-11-30,MONTH_END,last business day,high,True,,
 2006-12-01,NFP_approx,first Friday (rule),med,True,,
 2006-12-15,OPEX,3rd Friday,high,True,,
-2006-12-29,MONTH_END,last business day,high,True,,
 2006-12-29,QUARTER_END,last business day of quarter,high,True,,
+2006-12-29,MONTH_END,last business day,high,True,,
 2007-01-05,NFP_approx,first Friday (rule),med,True,,
 2007-01-19,OPEX,3rd Friday,high,True,,
 2007-01-31,MONTH_END,last business day,high,True,,
@@ -219,16 +373,17 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2007-06-01,NFP_approx,first Friday (rule),med,True,,
 2007-06-07,SHOCK_2.5SIG,ret=-1.805%,high,False,,
 2007-06-15,OPEX,3rd Friday,high,True,,
-2007-06-29,MONTH_END,last business day,high,True,,
 2007-06-29,QUARTER_END,last business day of quarter,high,True,,
+2007-06-29,MONTH_END,last business day,high,True,,
 2007-07-06,NFP_approx,first Friday (rule),med,True,,
 2007-07-20,OPEX,3rd Friday,high,True,,
 2007-07-26,SHOCK_2.5SIG,ret=-2.368%,high,False,,
 2007-07-31,MONTH_END,last business day,high,True,,
-2007-08-03,NFP_approx,first Friday (rule),med,True,,
 2007-08-03,SHOCK_2.5SIG,ret=-2.575%,high,False,,
+2007-08-03,NFP_approx,first Friday (rule),med,True,,
 2007-08-09,SHOCK_2.5SIG,ret=-2.963%,high,False,,
 2007-08-15,VIX_ONSET30,vix=30.7,high,False,,
+2007-08-16,VIX_ONSET30,vix=30.8,high,False,,
 2007-08-17,OPEX,3rd Friday,high,True,,
 2007-08-31,MONTH_END,last business day,high,True,,
 2007-09-07,NFP_approx,first Friday (rule),med,True,,
@@ -247,8 +402,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2007-11-30,MONTH_END,last business day,high,True,,
 2007-12-07,NFP_approx,first Friday (rule),med,True,,
 2007-12-21,OPEX,3rd Friday,high,True,,
-2007-12-31,MONTH_END,last business day,high,True,,
 2007-12-31,QUARTER_END,last business day of quarter,high,True,,
+2007-12-31,MONTH_END,last business day,high,True,,
 2008-01-04,NFP_approx,first Friday (rule),med,True,,
 2008-01-18,OPEX,3rd Friday,high,True,,
 2008-01-22,VIX_ONSET30,vix=31.0,high,False,,
@@ -259,6 +414,7 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2008-03-07,NFP_approx,first Friday (rule),med,True,,
 2008-03-11,SHOCK_2.5SIG,ret=+3.594%,high,False,,
 2008-03-14,VIX_ONSET30,vix=31.2,high,False,,
+2008-03-17,VIX_ONSET30,vix=32.2,high,False,,
 2008-03-18,SHOCK_2.5SIG,ret=+4.154%,high,False,,
 2008-03-21,OPEX,3rd Friday,high,True,,
 2008-03-31,MONTH_END,last business day,high,True,,
@@ -280,56 +436,235 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2008-08-15,OPEX,3rd Friday,high,True,,
 2008-08-29,MONTH_END,last business day,high,True,,
 2008-09-05,NFP_approx,first Friday (rule),med,True,,
-2008-09-15,SHOCK_2.5SIG,ret=-4.759%,high,False,,
 2008-09-15,VIX_ONSET30,vix=31.7,high,False,,
+2008-09-15,SHOCK_2.5SIG,ret=-4.759%,high,False,,
+2008-09-16,VIX_ONSET30,vix=30.3,high,False,,
+2008-09-17,VIX_ONSET30,vix=36.2,high,False,,
 2008-09-17,SHOCK_2.5SIG,ret=-4.496%,high,False,,
+2008-09-18,VIX_ONSET30,vix=33.1,high,False,,
 2008-09-19,OPEX,3rd Friday,high,True,,
+2008-09-19,VIX_ONSET30,vix=32.1,high,False,,
+2008-09-22,VIX_ONSET30,vix=33.9,high,False,,
+2008-09-23,VIX_ONSET30,vix=35.7,high,False,,
+2008-09-24,VIX_ONSET30,vix=35.2,high,False,,
+2008-09-25,VIX_ONSET30,vix=32.8,high,False,,
+2008-09-26,VIX_ONSET30,vix=34.7,high,False,,
+2008-09-29,VIX_ONSET30,vix=46.7,high,False,,
 2008-09-29,SHOCK_2.5SIG,ret=-7.836%,high,False,,
+2008-09-30,VIX_ONSET30,vix=39.4,high,False,,
 2008-09-30,MONTH_END,last business day,high,True,,
 2008-09-30,QUARTER_END,last business day of quarter,high,True,,
+2008-10-01,VIX_ONSET30,vix=39.8,high,False,,
+2008-10-02,VIX_ONSET30,vix=45.3,high,False,,
 2008-10-03,NFP_approx,first Friday (rule),med,True,,
+2008-10-03,VIX_ONSET30,vix=45.1,high,False,,
+2008-10-06,VIX_ONSET30,vix=52.0,high,False,,
+2008-10-07,VIX_ONSET30,vix=53.7,high,False,,
+2008-10-08,VIX_ONSET30,vix=57.5,high,False,,
+2008-10-09,VIX_ONSET30,vix=63.9,high,False,,
 2008-10-09,SHOCK_2.5SIG,ret=-6.984%,high,False,,
+2008-10-10,VIX_ONSET30,vix=70.0,high,False,,
+2008-10-13,VIX_ONSET30,vix=55.0,high,False,,
 2008-10-13,SHOCK_2.5SIG,ret=+14.520%,high,False,,
+2008-10-14,VIX_ONSET30,vix=55.1,high,False,,
+2008-10-15,VIX_ONSET30,vix=69.2,high,False,,
 2008-10-15,SHOCK_2.5SIG,ret=-9.845%,high,False,,
+2008-10-16,VIX_ONSET30,vix=67.6,high,False,,
 2008-10-17,OPEX,3rd Friday,high,True,,
+2008-10-17,VIX_ONSET30,vix=70.3,high,False,,
+2008-10-20,VIX_ONSET30,vix=53.0,high,False,,
+2008-10-21,VIX_ONSET30,vix=53.1,high,False,,
+2008-10-22,VIX_ONSET30,vix=69.7,high,False,,
+2008-10-23,VIX_ONSET30,vix=67.8,high,False,,
+2008-10-24,VIX_ONSET30,vix=79.1,high,False,,
+2008-10-27,VIX_ONSET30,vix=80.1,high,False,,
+2008-10-28,VIX_ONSET30,vix=67.0,high,False,,
 2008-10-28,SHOCK_2.5SIG,ret=+11.686%,high,False,,
+2008-10-29,VIX_ONSET30,vix=70.0,high,False,,
+2008-10-30,VIX_ONSET30,vix=62.9,high,False,,
+2008-10-31,VIX_ONSET30,vix=59.9,high,False,,
 2008-10-31,MONTH_END,last business day,high,True,,
+2008-11-03,VIX_ONSET30,vix=53.7,high,False,,
+2008-11-04,VIX_ONSET30,vix=47.7,high,False,,
+2008-11-05,VIX_ONSET30,vix=54.6,high,False,,
+2008-11-06,VIX_ONSET30,vix=63.7,high,False,,
 2008-11-07,NFP_approx,first Friday (rule),med,True,,
+2008-11-07,VIX_ONSET30,vix=56.1,high,False,,
+2008-11-10,VIX_ONSET30,vix=60.0,high,False,,
+2008-11-11,VIX_ONSET30,vix=61.4,high,False,,
+2008-11-12,VIX_ONSET30,vix=66.5,high,False,,
+2008-11-13,VIX_ONSET30,vix=59.8,high,False,,
+2008-11-14,VIX_ONSET30,vix=66.3,high,False,,
+2008-11-17,VIX_ONSET30,vix=69.2,high,False,,
+2008-11-18,VIX_ONSET30,vix=67.6,high,False,,
+2008-11-19,VIX_ONSET30,vix=74.3,high,False,,
+2008-11-20,VIX_ONSET30,vix=80.9,high,False,,
+2008-11-21,VIX_ONSET30,vix=72.7,high,False,,
 2008-11-21,OPEX,3rd Friday,high,True,,
+2008-11-24,VIX_ONSET30,vix=64.7,high,False,,
+2008-11-25,VIX_ONSET30,vix=60.9,high,False,,
+2008-11-26,VIX_ONSET30,vix=54.9,high,False,,
+2008-11-28,VIX_ONSET30,vix=55.8,high,False,,
 2008-11-28,MONTH_END,last business day,high,True,,
+2008-12-01,VIX_ONSET30,vix=68.5,high,False,,
+2008-12-02,VIX_ONSET30,vix=63.0,high,False,,
+2008-12-03,VIX_ONSET30,vix=60.7,high,False,,
+2008-12-04,VIX_ONSET30,vix=63.6,high,False,,
 2008-12-05,NFP_approx,first Friday (rule),med,True,,
+2008-12-05,VIX_ONSET30,vix=59.9,high,False,,
+2008-12-08,VIX_ONSET30,vix=58.5,high,False,,
+2008-12-09,VIX_ONSET30,vix=58.9,high,False,,
+2008-12-10,VIX_ONSET30,vix=55.7,high,False,,
+2008-12-11,VIX_ONSET30,vix=55.8,high,False,,
+2008-12-12,VIX_ONSET30,vix=54.3,high,False,,
+2008-12-15,VIX_ONSET30,vix=56.8,high,False,,
+2008-12-16,VIX_ONSET30,vix=52.4,high,False,,
+2008-12-17,VIX_ONSET30,vix=49.8,high,False,,
+2008-12-18,VIX_ONSET30,vix=47.3,high,False,,
+2008-12-19,VIX_ONSET30,vix=44.9,high,False,,
 2008-12-19,OPEX,3rd Friday,high,True,,
-2008-12-31,MONTH_END,last business day,high,True,,
+2008-12-22,VIX_ONSET30,vix=44.6,high,False,,
+2008-12-23,VIX_ONSET30,vix=45.0,high,False,,
+2008-12-24,VIX_ONSET30,vix=44.2,high,False,,
+2008-12-26,VIX_ONSET30,vix=43.4,high,False,,
+2008-12-29,VIX_ONSET30,vix=43.9,high,False,,
+2008-12-30,VIX_ONSET30,vix=41.6,high,False,,
+2008-12-31,VIX_ONSET30,vix=40.0,high,False,,
 2008-12-31,QUARTER_END,last business day of quarter,high,True,,
+2008-12-31,MONTH_END,last business day,high,True,,
 2009-01-02,NFP_approx,first Friday (rule),med,True,,
+2009-01-02,VIX_ONSET30,vix=39.2,high,False,,
+2009-01-05,VIX_ONSET30,vix=39.1,high,False,,
+2009-01-06,VIX_ONSET30,vix=38.6,high,False,,
+2009-01-07,VIX_ONSET30,vix=43.4,high,False,,
+2009-01-08,VIX_ONSET30,vix=42.6,high,False,,
+2009-01-09,VIX_ONSET30,vix=42.8,high,False,,
+2009-01-12,VIX_ONSET30,vix=45.8,high,False,,
+2009-01-13,VIX_ONSET30,vix=43.3,high,False,,
+2009-01-14,VIX_ONSET30,vix=49.1,high,False,,
+2009-01-15,VIX_ONSET30,vix=51.0,high,False,,
 2009-01-16,OPEX,3rd Friday,high,True,,
+2009-01-16,VIX_ONSET30,vix=46.1,high,False,,
+2009-01-20,VIX_ONSET30,vix=56.6,high,False,,
+2009-01-21,VIX_ONSET30,vix=46.4,high,False,,
+2009-01-22,VIX_ONSET30,vix=47.3,high,False,,
+2009-01-23,VIX_ONSET30,vix=47.3,high,False,,
+2009-01-26,VIX_ONSET30,vix=45.7,high,False,,
+2009-01-27,VIX_ONSET30,vix=42.2,high,False,,
+2009-01-28,VIX_ONSET30,vix=39.7,high,False,,
+2009-01-29,VIX_ONSET30,vix=42.6,high,False,,
+2009-01-30,VIX_ONSET30,vix=44.8,high,False,,
 2009-01-30,MONTH_END,last business day,high,True,,
+2009-02-02,VIX_ONSET30,vix=45.5,high,False,,
+2009-02-03,VIX_ONSET30,vix=43.1,high,False,,
+2009-02-04,VIX_ONSET30,vix=43.9,high,False,,
+2009-02-05,VIX_ONSET30,vix=43.7,high,False,,
+2009-02-06,VIX_ONSET30,vix=43.4,high,False,,
 2009-02-06,NFP_approx,first Friday (rule),med,True,,
+2009-02-09,VIX_ONSET30,vix=43.6,high,False,,
+2009-02-10,VIX_ONSET30,vix=46.7,high,False,,
+2009-02-11,VIX_ONSET30,vix=44.5,high,False,,
+2009-02-12,VIX_ONSET30,vix=41.2,high,False,,
+2009-02-13,VIX_ONSET30,vix=42.9,high,False,,
+2009-02-17,VIX_ONSET30,vix=48.7,high,False,,
+2009-02-18,VIX_ONSET30,vix=48.5,high,False,,
+2009-02-19,VIX_ONSET30,vix=47.1,high,False,,
 2009-02-20,OPEX,3rd Friday,high,True,,
+2009-02-20,VIX_ONSET30,vix=49.3,high,False,,
+2009-02-23,VIX_ONSET30,vix=52.6,high,False,,
+2009-02-24,VIX_ONSET30,vix=45.5,high,False,,
+2009-02-25,VIX_ONSET30,vix=44.7,high,False,,
+2009-02-26,VIX_ONSET30,vix=44.7,high,False,,
 2009-02-27,MONTH_END,last business day,high,True,,
+2009-02-27,VIX_ONSET30,vix=46.4,high,False,,
+2009-03-02,VIX_ONSET30,vix=52.6,high,False,,
+2009-03-03,VIX_ONSET30,vix=50.9,high,False,,
+2009-03-04,VIX_ONSET30,vix=47.6,high,False,,
+2009-03-05,VIX_ONSET30,vix=50.2,high,False,,
 2009-03-06,NFP_approx,first Friday (rule),med,True,,
+2009-03-06,VIX_ONSET30,vix=49.3,high,False,,
+2009-03-09,VIX_ONSET30,vix=49.7,high,False,,
 2009-03-10,SHOCK_2.5SIG,ret=+5.961%,high,False,,
+2009-03-10,VIX_ONSET30,vix=44.4,high,False,,
+2009-03-11,VIX_ONSET30,vix=43.6,high,False,,
+2009-03-12,VIX_ONSET30,vix=41.2,high,False,,
+2009-03-13,VIX_ONSET30,vix=42.4,high,False,,
+2009-03-16,VIX_ONSET30,vix=43.7,high,False,,
+2009-03-17,VIX_ONSET30,vix=40.8,high,False,,
+2009-03-18,VIX_ONSET30,vix=40.1,high,False,,
+2009-03-19,VIX_ONSET30,vix=43.7,high,False,,
+2009-03-20,VIX_ONSET30,vix=45.9,high,False,,
 2009-03-20,OPEX,3rd Friday,high,True,,
+2009-03-23,VIX_ONSET30,vix=43.2,high,False,,
 2009-03-23,SHOCK_2.5SIG,ret=+7.183%,high,False,,
-2009-03-31,MONTH_END,last business day,high,True,,
+2009-03-24,VIX_ONSET30,vix=42.9,high,False,,
+2009-03-25,VIX_ONSET30,vix=42.2,high,False,,
+2009-03-26,VIX_ONSET30,vix=40.4,high,False,,
+2009-03-27,VIX_ONSET30,vix=41.0,high,False,,
+2009-03-30,VIX_ONSET30,vix=45.5,high,False,,
+2009-03-31,VIX_ONSET30,vix=44.1,high,False,,
 2009-03-31,QUARTER_END,last business day of quarter,high,True,,
+2009-03-31,MONTH_END,last business day,high,True,,
+2009-04-01,VIX_ONSET30,vix=42.3,high,False,,
+2009-04-02,VIX_ONSET30,vix=42.0,high,False,,
 2009-04-03,NFP_approx,first Friday (rule),med,True,,
+2009-04-03,VIX_ONSET30,vix=39.7,high,False,,
+2009-04-06,VIX_ONSET30,vix=40.9,high,False,,
+2009-04-07,VIX_ONSET30,vix=40.4,high,False,,
+2009-04-08,VIX_ONSET30,vix=38.9,high,False,,
+2009-04-09,VIX_ONSET30,vix=36.5,high,False,,
+2009-04-13,VIX_ONSET30,vix=37.8,high,False,,
+2009-04-14,VIX_ONSET30,vix=37.7,high,False,,
+2009-04-15,VIX_ONSET30,vix=36.2,high,False,,
+2009-04-16,VIX_ONSET30,vix=35.8,high,False,,
+2009-04-17,VIX_ONSET30,vix=33.9,high,False,,
 2009-04-17,OPEX,3rd Friday,high,True,,
+2009-04-20,VIX_ONSET30,vix=39.2,high,False,,
+2009-04-21,VIX_ONSET30,vix=37.1,high,False,,
+2009-04-22,VIX_ONSET30,vix=38.1,high,False,,
+2009-04-23,VIX_ONSET30,vix=37.1,high,False,,
+2009-04-24,VIX_ONSET30,vix=36.8,high,False,,
+2009-04-27,VIX_ONSET30,vix=38.3,high,False,,
+2009-04-28,VIX_ONSET30,vix=38.0,high,False,,
+2009-04-29,VIX_ONSET30,vix=36.1,high,False,,
+2009-04-30,VIX_ONSET30,vix=36.5,high,False,,
 2009-04-30,MONTH_END,last business day,high,True,,
+2009-05-01,VIX_ONSET30,vix=35.3,high,False,,
 2009-05-01,NFP_approx,first Friday (rule),med,True,,
+2009-05-04,VIX_ONSET30,vix=34.5,high,False,,
+2009-05-05,VIX_ONSET30,vix=33.4,high,False,,
+2009-05-06,VIX_ONSET30,vix=32.5,high,False,,
+2009-05-07,VIX_ONSET30,vix=33.4,high,False,,
+2009-05-08,VIX_ONSET30,vix=32.0,high,False,,
+2009-05-11,VIX_ONSET30,vix=32.9,high,False,,
+2009-05-12,VIX_ONSET30,vix=31.8,high,False,,
+2009-05-13,VIX_ONSET30,vix=33.6,high,False,,
+2009-05-14,VIX_ONSET30,vix=31.4,high,False,,
 2009-05-15,OPEX,3rd Friday,high,True,,
+2009-05-15,VIX_ONSET30,vix=33.1,high,False,,
+2009-05-18,VIX_ONSET30,vix=30.2,high,False,,
 2009-05-21,VIX_ONSET30,vix=31.4,high,False,,
+2009-05-22,VIX_ONSET30,vix=32.6,high,False,,
+2009-05-26,VIX_ONSET30,vix=30.6,high,False,,
+2009-05-27,VIX_ONSET30,vix=32.4,high,False,,
+2009-05-28,VIX_ONSET30,vix=31.7,high,False,,
 2009-05-29,MONTH_END,last business day,high,True,,
 2009-06-01,VIX_ONSET30,vix=30.0,high,False,,
 2009-06-03,VIX_ONSET30,vix=31.0,high,False,,
+2009-06-04,VIX_ONSET30,vix=30.2,high,False,,
 2009-06-05,NFP_approx,first Friday (rule),med,True,,
 2009-06-15,VIX_ONSET30,vix=30.8,high,False,,
+2009-06-16,VIX_ONSET30,vix=32.7,high,False,,
+2009-06-17,VIX_ONSET30,vix=31.5,high,False,,
+2009-06-18,VIX_ONSET30,vix=30.0,high,False,,
 2009-06-19,OPEX,3rd Friday,high,True,,
 2009-06-22,VIX_ONSET30,vix=31.2,high,False,,
-2009-06-30,MONTH_END,last business day,high,True,,
+2009-06-23,VIX_ONSET30,vix=30.6,high,False,,
 2009-06-30,QUARTER_END,last business day of quarter,high,True,,
+2009-06-30,MONTH_END,last business day,high,True,,
 2009-07-03,NFP_approx,first Friday (rule),med,True,,
 2009-07-07,VIX_ONSET30,vix=30.9,high,False,,
+2009-07-08,VIX_ONSET30,vix=31.3,high,False,,
 2009-07-17,OPEX,3rd Friday,high,True,,
 2009-07-31,MONTH_END,last business day,high,True,,
 2009-08-07,NFP_approx,first Friday (rule),med,True,,
@@ -337,20 +672,20 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2009-08-31,MONTH_END,last business day,high,True,,
 2009-09-04,NFP_approx,first Friday (rule),med,True,,
 2009-09-18,OPEX,3rd Friday,high,True,,
-2009-09-30,MONTH_END,last business day,high,True,,
 2009-09-30,QUARTER_END,last business day of quarter,high,True,,
+2009-09-30,MONTH_END,last business day,high,True,,
 2009-10-02,NFP_approx,first Friday (rule),med,True,,
 2009-10-16,OPEX,3rd Friday,high,True,,
 2009-10-30,MONTH_END,last business day,high,True,,
-2009-10-30,SHOCK_2.5SIG,ret=-2.897%,high,False,,
 2009-10-30,VIX_ONSET30,vix=30.7,high,False,,
+2009-10-30,SHOCK_2.5SIG,ret=-2.897%,high,False,,
 2009-11-06,NFP_approx,first Friday (rule),med,True,,
 2009-11-20,OPEX,3rd Friday,high,True,,
 2009-11-30,MONTH_END,last business day,high,True,,
 2009-12-04,NFP_approx,first Friday (rule),med,True,,
 2009-12-18,OPEX,3rd Friday,high,True,,
-2009-12-31,MONTH_END,last business day,high,True,,
 2009-12-31,QUARTER_END,last business day of quarter,high,True,,
+2009-12-31,MONTH_END,last business day,high,True,,
 2010-01-01,NFP_approx,first Friday (rule),med,True,,
 2010-01-11,AUCTION,10-Year btc=2.65,high,True,2.65,1.43
 2010-01-15,OPEX,3rd Friday,high,True,,
@@ -384,23 +719,38 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2010-04-29,AUCTION,7-Year btc=2.82,high,True,2.82,3.21
 2010-04-30,MONTH_END,last business day,high,True,,
 2010-05-04,SHOCK_2.5SIG,ret=-2.351%,high,False,,
-2010-05-06,SHOCK_2.5SIG,ret=-3.321%,high,False,,
 2010-05-06,VIX_ONSET30,vix=32.8,high,False,,
+2010-05-06,SHOCK_2.5SIG,ret=-3.321%,high,False,,
 2010-05-07,NFP_approx,first Friday (rule),med,True,,
+2010-05-07,VIX_ONSET30,vix=41.0,high,False,,
 2010-05-10,SHOCK_2.5SIG,ret=+4.404%,high,False,,
 2010-05-12,AUCTION,10-Year btc=2.96,high,True,2.96,3.548
 2010-05-13,AUCTION,30-Year btc=2.6,high,True,2.6,4.49
 2010-05-14,VIX_ONSET30,vix=31.2,high,False,,
+2010-05-17,VIX_ONSET30,vix=30.8,high,False,,
+2010-05-18,VIX_ONSET30,vix=33.5,high,False,,
+2010-05-19,VIX_ONSET30,vix=35.3,high,False,,
+2010-05-20,VIX_ONSET30,vix=45.8,high,False,,
 2010-05-20,SHOCK_2.5SIG,ret=-3.776%,high,False,,
 2010-05-21,OPEX,3rd Friday,high,True,,
+2010-05-21,VIX_ONSET30,vix=40.1,high,False,,
+2010-05-24,VIX_ONSET30,vix=38.3,high,False,,
+2010-05-25,VIX_ONSET30,vix=34.6,high,False,,
 2010-05-25,AUCTION,2-Year btc=2.93,high,True,2.93,0.769
 2010-05-26,AUCTION,5-Year btc=2.71,high,True,2.71,2.13
+2010-05-26,VIX_ONSET30,vix=35.0,high,False,,
 2010-05-27,AUCTION,7-Year btc=2.88,high,True,2.88,2.815
 2010-05-27,SHOCK_2.5SIG,ret=+3.350%,high,False,,
 2010-05-28,VIX_ONSET30,vix=32.1,high,False,,
 2010-05-31,MONTH_END,last business day,high,True,,
-2010-06-04,NFP_approx,first Friday (rule),med,True,,
+2010-06-01,VIX_ONSET30,vix=35.5,high,False,,
+2010-06-02,VIX_ONSET30,vix=30.2,high,False,,
 2010-06-04,VIX_ONSET30,vix=35.5,high,False,,
+2010-06-04,NFP_approx,first Friday (rule),med,True,,
+2010-06-07,VIX_ONSET30,vix=36.6,high,False,,
+2010-06-08,VIX_ONSET30,vix=33.7,high,False,,
+2010-06-09,VIX_ONSET30,vix=33.7,high,False,,
+2010-06-10,VIX_ONSET30,vix=30.6,high,False,,
 2010-06-18,OPEX,3rd Friday,high,True,,
 2010-06-22,AUCTION,2-Year btc=3.45,high,True,3.45,0.738
 2010-06-23,AUCTION,5-Year btc=2.58,high,True,2.58,1.995
@@ -408,6 +758,9 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2010-06-29,VIX_ONSET30,vix=34.1,high,False,,
 2010-06-30,MONTH_END,last business day,high,True,,
 2010-06-30,QUARTER_END,last business day of quarter,high,True,,
+2010-06-30,VIX_ONSET30,vix=34.5,high,False,,
+2010-07-01,VIX_ONSET30,vix=32.9,high,False,,
+2010-07-02,VIX_ONSET30,vix=30.1,high,False,,
 2010-07-02,NFP_approx,first Friday (rule),med,True,,
 2010-07-08,AUCTION,10-Year btc=2.88,high,True,2.88,1.295
 2010-07-16,OPEX,3rd Friday,high,True,,
@@ -450,14 +803,14 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2010-12-27,AUCTION,2-Year btc=3.71,high,True,3.71,0.74
 2010-12-28,AUCTION,5-Year btc=2.61,high,True,2.61,2.149
 2010-12-29,AUCTION,7-Year btc=2.86,high,True,2.86,2.83
-2010-12-31,MONTH_END,last business day,high,True,,
 2010-12-31,QUARTER_END,last business day of quarter,high,True,,
+2010-12-31,MONTH_END,last business day,high,True,,
 2011-01-07,NFP_approx,first Friday (rule),med,True,,
 2011-01-20,AUCTION,10-Year btc=2.37,high,True,2.37,1.17
 2011-01-21,OPEX,3rd Friday,high,True,,
 2011-01-25,AUCTION,2-Year btc=3.47,high,True,3.47,0.65
-2011-01-26,AUCTION,5-Year btc=2.97,high,True,2.97,2.041
 2011-01-26,FOMC,decision,high,True,,
+2011-01-26,AUCTION,5-Year btc=2.97,high,True,2.97,2.041
 2011-01-27,AUCTION,7-Year btc=2.85,high,True,2.85,2.744
 2011-01-31,MONTH_END,last business day,high,True,,
 2011-02-04,NFP_approx,first Friday (rule),med,True,,
@@ -478,8 +831,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2011-03-28,AUCTION,2-Year btc=3.16,high,True,3.16,0.789
 2011-03-29,AUCTION,5-Year btc=2.79,high,True,2.79,2.26
 2011-03-30,AUCTION,7-Year btc=2.79,high,True,2.79,2.895
-2011-03-31,MONTH_END,last business day,high,True,,
 2011-03-31,QUARTER_END,last business day of quarter,high,True,,
+2011-03-31,MONTH_END,last business day,high,True,,
 2011-04-01,NFP_approx,first Friday (rule),med,True,,
 2011-04-15,OPEX,3rd Friday,high,True,,
 2011-04-21,AUCTION,5-Year btc=2.57,high,True,2.57,-0.18
@@ -515,29 +868,82 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2011-08-02,SHOCK_2.5SIG,ret=-2.555%,high,False,,
 2011-08-04,SHOCK_2.5SIG,ret=-4.684%,high,False,,
 2011-08-04,VIX_ONSET30,vix=31.7,high,False,,
+2011-08-05,VIX_ONSET30,vix=32.0,high,False,,
 2011-08-05,NFP_approx,first Friday (rule),med,True,,
+2011-08-08,VIX_ONSET30,vix=48.0,high,False,,
 2011-08-08,SHOCK_2.5SIG,ret=-6.512%,high,False,,
 2011-08-09,FOMC,decision,high,True,,
 2011-08-09,SHOCK_2.5SIG,ret=+4.650%,high,False,,
-2011-08-10,AUCTION,10-Year btc=3.22,high,True,3.22,2.14
+2011-08-09,VIX_ONSET30,vix=35.1,high,False,,
+2011-08-10,VIX_ONSET30,vix=43.0,high,False,,
 2011-08-10,SHOCK_2.5SIG,ret=-4.418%,high,False,,
+2011-08-10,AUCTION,10-Year btc=3.22,high,True,3.22,2.14
 2011-08-11,AUCTION,30-Year btc=2.08,high,True,2.08,3.75
 2011-08-11,SHOCK_2.5SIG,ret=+4.488%,high,False,,
+2011-08-11,VIX_ONSET30,vix=39.0,high,False,,
+2011-08-12,VIX_ONSET30,vix=36.4,high,False,,
+2011-08-15,VIX_ONSET30,vix=31.9,high,False,,
+2011-08-16,VIX_ONSET30,vix=32.9,high,False,,
+2011-08-17,VIX_ONSET30,vix=31.6,high,False,,
+2011-08-18,VIX_ONSET30,vix=42.7,high,False,,
+2011-08-19,VIX_ONSET30,vix=43.0,high,False,,
 2011-08-19,OPEX,3rd Friday,high,True,,
+2011-08-22,VIX_ONSET30,vix=42.4,high,False,,
 2011-08-23,AUCTION,2-Year btc=3.44,high,True,3.44,0.222
+2011-08-23,VIX_ONSET30,vix=36.3,high,False,,
 2011-08-24,AUCTION,5-Year btc=2.71,high,True,2.71,1.029
+2011-08-24,VIX_ONSET30,vix=35.9,high,False,,
+2011-08-25,VIX_ONSET30,vix=39.8,high,False,,
 2011-08-25,AUCTION,7-Year btc=2.76,high,True,2.76,1.58
+2011-08-26,VIX_ONSET30,vix=35.6,high,False,,
+2011-08-29,VIX_ONSET30,vix=32.3,high,False,,
+2011-08-30,VIX_ONSET30,vix=32.9,high,False,,
+2011-08-31,VIX_ONSET30,vix=31.6,high,False,,
 2011-08-31,MONTH_END,last business day,high,True,,
+2011-09-01,VIX_ONSET30,vix=31.8,high,False,,
+2011-09-02,VIX_ONSET30,vix=33.9,high,False,,
 2011-09-02,NFP_approx,first Friday (rule),med,True,,
+2011-09-06,VIX_ONSET30,vix=37.0,high,False,,
+2011-09-07,VIX_ONSET30,vix=33.4,high,False,,
+2011-09-08,VIX_ONSET30,vix=34.3,high,False,,
+2011-09-09,VIX_ONSET30,vix=38.5,high,False,,
+2011-09-12,VIX_ONSET30,vix=38.6,high,False,,
+2011-09-13,VIX_ONSET30,vix=36.9,high,False,,
+2011-09-14,VIX_ONSET30,vix=34.6,high,False,,
+2011-09-15,VIX_ONSET30,vix=32.0,high,False,,
+2011-09-16,VIX_ONSET30,vix=31.0,high,False,,
 2011-09-16,OPEX,3rd Friday,high,True,,
+2011-09-19,VIX_ONSET30,vix=32.7,high,False,,
+2011-09-20,VIX_ONSET30,vix=32.9,high,False,,
 2011-09-21,FOMC,decision,high,True,,
+2011-09-21,VIX_ONSET30,vix=37.3,high,False,,
+2011-09-22,VIX_ONSET30,vix=41.4,high,False,,
+2011-09-23,VIX_ONSET30,vix=41.2,high,False,,
+2011-09-26,VIX_ONSET30,vix=39.0,high,False,,
+2011-09-27,VIX_ONSET30,vix=37.7,high,False,,
 2011-09-27,AUCTION,2-Year btc=3.76,high,True,3.76,0.249
+2011-09-28,VIX_ONSET30,vix=41.1,high,False,,
 2011-09-28,AUCTION,5-Year btc=3.04,high,True,3.04,1.015
+2011-09-29,VIX_ONSET30,vix=38.8,high,False,,
 2011-09-29,AUCTION,7-Year btc=3.02,high,True,3.02,1.496
 2011-09-30,MONTH_END,last business day,high,True,,
 2011-09-30,QUARTER_END,last business day of quarter,high,True,,
+2011-09-30,VIX_ONSET30,vix=43.0,high,False,,
+2011-10-03,VIX_ONSET30,vix=45.5,high,False,,
+2011-10-04,VIX_ONSET30,vix=40.8,high,False,,
+2011-10-05,VIX_ONSET30,vix=37.8,high,False,,
+2011-10-06,VIX_ONSET30,vix=36.3,high,False,,
+2011-10-07,VIX_ONSET30,vix=36.2,high,False,,
 2011-10-07,NFP_approx,first Friday (rule),med,True,,
+2011-10-10,VIX_ONSET30,vix=33.0,high,False,,
+2011-10-11,VIX_ONSET30,vix=32.9,high,False,,
+2011-10-12,VIX_ONSET30,vix=31.3,high,False,,
+2011-10-13,VIX_ONSET30,vix=30.7,high,False,,
 2011-10-17,VIX_ONSET30,vix=33.4,high,False,,
+2011-10-18,VIX_ONSET30,vix=31.6,high,False,,
+2011-10-19,VIX_ONSET30,vix=34.4,high,False,,
+2011-10-20,VIX_ONSET30,vix=34.8,high,False,,
+2011-10-21,VIX_ONSET30,vix=31.3,high,False,,
 2011-10-21,OPEX,3rd Friday,high,True,,
 2011-10-25,AUCTION,2-Year btc=3.64,high,True,3.64,0.281
 2011-10-25,VIX_ONSET30,vix=32.2,high,False,,
@@ -545,15 +951,31 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2011-10-27,AUCTION,7-Year btc=2.59,high,True,2.59,1.791
 2011-10-31,MONTH_END,last business day,high,True,,
 2011-11-01,VIX_ONSET30,vix=34.8,high,False,,
+2011-11-02,VIX_ONSET30,vix=32.7,high,False,,
 2011-11-02,FOMC,decision,high,True,,
+2011-11-03,VIX_ONSET30,vix=30.5,high,False,,
+2011-11-04,VIX_ONSET30,vix=30.2,high,False,,
 2011-11-04,NFP_approx,first Friday (rule),med,True,,
-2011-11-09,AUCTION,10-Year btc=2.64,high,True,2.64,2.03
 2011-11-09,VIX_ONSET30,vix=36.2,high,False,,
+2011-11-09,AUCTION,10-Year btc=2.64,high,True,2.64,2.03
+2011-11-10,VIX_ONSET30,vix=32.8,high,False,,
 2011-11-10,AUCTION,30-Year btc=2.4,high,True,2.4,3.199
+2011-11-11,VIX_ONSET30,vix=30.0,high,False,,
+2011-11-14,VIX_ONSET30,vix=31.1,high,False,,
+2011-11-15,VIX_ONSET30,vix=31.2,high,False,,
+2011-11-16,VIX_ONSET30,vix=33.5,high,False,,
+2011-11-17,VIX_ONSET30,vix=34.5,high,False,,
 2011-11-18,OPEX,3rd Friday,high,True,,
+2011-11-18,VIX_ONSET30,vix=32.0,high,False,,
 2011-11-21,AUCTION,2-Year btc=4.07,high,True,4.07,0.28
+2011-11-21,VIX_ONSET30,vix=32.9,high,False,,
 2011-11-22,AUCTION,5-Year btc=3.15,high,True,3.15,0.937
+2011-11-22,VIX_ONSET30,vix=32.0,high,False,,
+2011-11-23,VIX_ONSET30,vix=34.0,high,False,,
 2011-11-23,AUCTION,7-Year btc=3.2,high,True,3.2,1.415
+2011-11-25,VIX_ONSET30,vix=34.5,high,False,,
+2011-11-28,VIX_ONSET30,vix=32.1,high,False,,
+2011-11-29,VIX_ONSET30,vix=30.6,high,False,,
 2011-11-30,MONTH_END,last business day,high,True,,
 2011-12-02,NFP_approx,first Friday (rule),med,True,,
 2011-12-08,VIX_ONSET30,vix=30.6,high,False,,
@@ -587,15 +1009,15 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2012-03-27,AUCTION,2-Year btc=3.69,high,True,3.69,0.34
 2012-03-28,AUCTION,5-Year btc=2.85,high,True,2.85,1.04
 2012-03-29,AUCTION,7-Year btc=2.72,high,True,2.72,1.59
-2012-03-30,MONTH_END,last business day,high,True,,
 2012-03-30,QUARTER_END,last business day of quarter,high,True,,
+2012-03-30,MONTH_END,last business day,high,True,,
 2012-04-06,NFP_approx,first Friday (rule),med,True,,
 2012-04-10,SHOCK_2.5SIG,ret=-1.678%,high,False,,
 2012-04-19,AUCTION,5-Year btc=2.58,high,True,2.58,-1.08
 2012-04-20,OPEX,3rd Friday,high,True,,
 2012-04-24,AUCTION,2-Year btc=3.76,high,True,3.76,0.27
-2012-04-25,AUCTION,5-Year btc=3.09,high,True,3.09,0.887
 2012-04-25,FOMC,decision,high,True,,
+2012-04-25,AUCTION,5-Year btc=3.09,high,True,3.09,0.887
 2012-04-26,AUCTION,7-Year btc=2.83,high,True,2.83,1.347
 2012-04-30,MONTH_END,last business day,high,True,,
 2012-05-04,NFP_approx,first Friday (rule),med,True,,
@@ -606,15 +1028,15 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2012-05-23,AUCTION,5-Year btc=2.99,high,True,2.99,0.748
 2012-05-24,AUCTION,7-Year btc=2.8,high,True,2.8,1.203
 2012-05-31,MONTH_END,last business day,high,True,,
-2012-06-01,NFP_approx,first Friday (rule),med,True,,
 2012-06-01,SHOCK_2.5SIG,ret=-2.518%,high,False,,
+2012-06-01,NFP_approx,first Friday (rule),med,True,,
 2012-06-15,OPEX,3rd Friday,high,True,,
 2012-06-20,FOMC,decision,high,True,,
 2012-06-26,AUCTION,2-Year btc=3.62,high,True,3.62,0.313
 2012-06-27,AUCTION,5-Year btc=2.61,high,True,2.61,0.752
 2012-06-28,AUCTION,7-Year btc=2.64,high,True,2.64,1.075
-2012-06-29,MONTH_END,last business day,high,True,,
 2012-06-29,QUARTER_END,last business day of quarter,high,True,,
+2012-06-29,MONTH_END,last business day,high,True,,
 2012-07-06,NFP_approx,first Friday (rule),med,True,,
 2012-07-19,AUCTION,10-Year btc=2.62,high,True,2.62,-0.637
 2012-07-20,OPEX,3rd Friday,high,True,,
@@ -637,8 +1059,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2012-09-25,AUCTION,2-Year btc=3.6,high,True,3.6,0.273
 2012-09-26,AUCTION,5-Year btc=3.06,high,True,3.06,0.647
 2012-09-27,AUCTION,7-Year btc=2.61,high,True,2.61,1.055
-2012-09-28,MONTH_END,last business day,high,True,,
 2012-09-28,QUARTER_END,last business day of quarter,high,True,,
+2012-09-28,MONTH_END,last business day,high,True,,
 2012-10-05,NFP_approx,first Friday (rule),med,True,,
 2012-10-19,OPEX,3rd Friday,high,True,,
 2012-10-23,AUCTION,2-Year btc=4.02,high,True,4.02,0.295
@@ -647,8 +1069,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2012-10-25,AUCTION,7-Year btc=2.56,high,True,2.56,1.267
 2012-10-31,MONTH_END,last business day,high,True,,
 2012-11-02,NFP_approx,first Friday (rule),med,True,,
-2012-11-07,AUCTION,10-Year btc=2.59,high,True,2.59,1.675
 2012-11-07,SHOCK_2.5SIG,ret=-2.266%,high,False,,
+2012-11-07,AUCTION,10-Year btc=2.59,high,True,2.59,1.675
 2012-11-08,AUCTION,30-Year btc=2.77,high,True,2.77,2.82
 2012-11-16,OPEX,3rd Friday,high,True,,
 2012-11-19,SHOCK_2.5SIG,ret=+2.024%,high,False,,
@@ -662,16 +1084,16 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2012-12-18,AUCTION,5-Year btc=2.72,high,True,2.72,0.769
 2012-12-19,AUCTION,7-Year btc=2.72,high,True,2.72,1.233
 2012-12-21,OPEX,3rd Friday,high,True,,
-2012-12-31,MONTH_END,last business day,high,True,,
 2012-12-31,QUARTER_END,last business day of quarter,high,True,,
+2012-12-31,MONTH_END,last business day,high,True,,
 2013-01-02,SHOCK_2.5SIG,ret=+2.563%,high,False,,
 2013-01-04,NFP_approx,first Friday (rule),med,True,,
 2013-01-18,OPEX,3rd Friday,high,True,,
 2013-01-24,AUCTION,10-Year btc=2.71,high,True,2.71,-0.63
 2013-01-28,AUCTION,2-Year btc=3.77,high,True,3.77,0.288
 2013-01-29,AUCTION,5-Year btc=2.88,high,True,2.88,0.889
-2013-01-30,AUCTION,7-Year btc=2.6,high,True,2.6,1.416
 2013-01-30,FOMC,decision,high,True,,
+2013-01-30,AUCTION,7-Year btc=2.6,high,True,2.6,1.416
 2013-01-31,MONTH_END,last business day,high,True,,
 2013-02-01,NFP_approx,first Friday (rule),med,True,,
 2013-02-13,AUCTION,10-Year btc=2.68,high,True,2.68,2.046
@@ -759,12 +1181,12 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2013-11-29,MONTH_END,last business day,high,True,,
 2013-12-06,NFP_approx,first Friday (rule),med,True,,
 2013-12-17,AUCTION,2-Year btc=3.77,high,True,3.77,0.345
-2013-12-18,AUCTION,5-Year btc=2.42,high,True,2.42,1.6
 2013-12-18,FOMC,decision,high,True,,
+2013-12-18,AUCTION,5-Year btc=2.42,high,True,2.42,1.6
 2013-12-19,AUCTION,7-Year btc=2.45,high,True,2.45,2.385
 2013-12-20,OPEX,3rd Friday,high,True,,
-2013-12-31,MONTH_END,last business day,high,True,,
 2013-12-31,QUARTER_END,last business day of quarter,high,True,,
+2013-12-31,MONTH_END,last business day,high,True,,
 2014-01-03,NFP_approx,first Friday (rule),med,True,,
 2014-01-17,OPEX,3rd Friday,high,True,,
 2014-01-23,AUCTION,10-Year btc=2.31,high,True,2.31,0.661
@@ -800,8 +1222,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2014-04-23,AUCTION,5-Year btc=2.79,high,True,2.79,1.732
 2014-04-24,AUCTION,7-Year btc=2.6,high,True,2.6,2.317
 2014-04-29,AUCTION,2-Year btc=4.64,high,True,4.64,
-2014-04-30,FOMC,decision,high,True,,
 2014-04-30,MONTH_END,last business day,high,True,,
+2014-04-30,FOMC,decision,high,True,,
 2014-05-02,NFP_approx,first Friday (rule),med,True,,
 2014-05-07,AUCTION,10-Year btc=2.63,high,True,2.63,2.612
 2014-05-08,AUCTION,30-Year btc=2.09,high,True,2.09,3.44
@@ -816,8 +1238,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2014-06-24,AUCTION,2-Year btc=3.23,high,True,3.23,0.511
 2014-06-25,AUCTION,5-Year btc=2.74,high,True,2.74,1.67
 2014-06-26,AUCTION,7-Year btc=2.44,high,True,2.44,2.152
-2014-06-30,MONTH_END,last business day,high,True,,
 2014-06-30,QUARTER_END,last business day of quarter,high,True,,
+2014-06-30,MONTH_END,last business day,high,True,,
 2014-07-04,NFP_approx,first Friday (rule),med,True,,
 2014-07-17,SHOCK_2.5SIG,ret=-1.137%,high,False,,
 2014-07-18,OPEX,3rd Friday,high,True,,
@@ -841,10 +1263,10 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2014-09-19,OPEX,3rd Friday,high,True,,
 2014-09-23,AUCTION,2-Year btc=3.56,high,True,3.56,0.589
 2014-09-24,AUCTION,5-Year btc=2.56,high,True,2.56,1.8
-2014-09-25,AUCTION,7-Year btc=2.48,high,True,2.48,2.235
 2014-09-25,SHOCK_2.5SIG,ret=-1.614%,high,False,,
-2014-09-30,MONTH_END,last business day,high,True,,
+2014-09-25,AUCTION,7-Year btc=2.48,high,True,2.48,2.235
 2014-09-30,QUARTER_END,last business day of quarter,high,True,,
+2014-09-30,MONTH_END,last business day,high,True,,
 2014-10-03,NFP_approx,first Friday (rule),med,True,,
 2014-10-08,SHOCK_2.5SIG,ret=+1.749%,high,False,,
 2014-10-09,SHOCK_2.5SIG,ret=-1.983%,high,False,,
@@ -893,8 +1315,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2015-03-24,AUCTION,2-Year btc=3.46,high,True,3.46,0.598
 2015-03-25,AUCTION,5-Year btc=2.35,high,True,2.35,1.387
 2015-03-26,AUCTION,7-Year btc=2.32,high,True,2.32,1.792
-2015-03-31,MONTH_END,last business day,high,True,,
 2015-03-31,QUARTER_END,last business day of quarter,high,True,,
+2015-03-31,MONTH_END,last business day,high,True,,
 2015-04-03,NFP_approx,first Friday (rule),med,True,,
 2015-04-17,OPEX,3rd Friday,high,True,,
 2015-04-23,AUCTION,5-Year btc=2.27,high,True,2.27,-0.335
@@ -918,8 +1340,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2015-06-24,AUCTION,5-Year btc=2.39,high,True,2.39,1.71
 2015-06-25,AUCTION,7-Year btc=2.38,high,True,2.38,2.153
 2015-06-29,SHOCK_2.5SIG,ret=-2.097%,high,False,,
-2015-06-30,MONTH_END,last business day,high,True,,
 2015-06-30,QUARTER_END,last business day of quarter,high,True,,
+2015-06-30,MONTH_END,last business day,high,True,,
 2015-07-03,NFP_approx,first Friday (rule),med,True,,
 2015-07-17,OPEX,3rd Friday,high,True,,
 2015-07-23,AUCTION,10-Year btc=2.31,high,True,2.31,0.491
@@ -932,12 +1354,14 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2015-08-12,AUCTION,10-Year btc=2.4,high,True,2.4,2.115
 2015-08-13,AUCTION,30-Year btc=2.26,high,True,2.26,2.88
 2015-08-20,SHOCK_2.5SIG,ret=-2.088%,high,False,,
-2015-08-21,OPEX,3rd Friday,high,True,,
 2015-08-21,SHOCK_2.5SIG,ret=-3.010%,high,False,,
-2015-08-24,SHOCK_2.5SIG,ret=-4.211%,high,False,,
+2015-08-21,OPEX,3rd Friday,high,True,,
 2015-08-24,VIX_ONSET30,vix=40.7,high,False,,
+2015-08-24,SHOCK_2.5SIG,ret=-4.211%,high,False,,
+2015-08-25,VIX_ONSET30,vix=36.0,high,False,,
 2015-08-25,AUCTION,2-Year btc=3.16,high,True,3.16,0.663
 2015-08-26,AUCTION,5-Year btc=2.34,high,True,2.34,1.463
+2015-08-26,VIX_ONSET30,vix=30.3,high,False,,
 2015-08-26,SHOCK_2.5SIG,ret=+3.839%,high,False,,
 2015-08-27,AUCTION,7-Year btc=2.53,high,True,2.53,1.93
 2015-08-31,MONTH_END,last business day,high,True,,
@@ -948,8 +1372,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2015-09-22,AUCTION,2-Year btc=3.27,high,True,3.27,0.699
 2015-09-23,AUCTION,5-Year btc=2.57,high,True,2.57,1.467
 2015-09-24,AUCTION,7-Year btc=2.51,high,True,2.51,1.813
-2015-09-30,MONTH_END,last business day,high,True,,
 2015-09-30,QUARTER_END,last business day of quarter,high,True,,
+2015-09-30,MONTH_END,last business day,high,True,,
 2015-10-02,NFP_approx,first Friday (rule),med,True,,
 2015-10-16,OPEX,3rd Friday,high,True,,
 2015-10-28,AUCTION,2-Year btc=3.1,high,True,3.1,
@@ -996,8 +1420,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2016-03-28,AUCTION,2-Year btc=2.58,high,True,2.58,0.877
 2016-03-29,AUCTION,5-Year btc=2.38,high,True,2.38,1.335
 2016-03-30,AUCTION,7-Year btc=2.51,high,True,2.51,1.606
-2016-03-31,MONTH_END,last business day,high,True,,
 2016-03-31,QUARTER_END,last business day of quarter,high,True,,
+2016-03-31,MONTH_END,last business day,high,True,,
 2016-04-01,NFP_approx,first Friday (rule),med,True,,
 2016-04-15,OPEX,3rd Friday,high,True,,
 2016-04-21,AUCTION,5-Year btc=2.42,high,True,2.42,-0.195
@@ -1021,8 +1445,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2016-06-21,AUCTION,5-Year btc=2.29,high,True,2.29,1.218
 2016-06-22,AUCTION,7-Year btc=2.56,high,True,2.56,1.497
 2016-06-24,SHOCK_2.5SIG,ret=-3.591%,high,False,,
-2016-06-30,MONTH_END,last business day,high,True,,
 2016-06-30,QUARTER_END,last business day of quarter,high,True,,
+2016-06-30,MONTH_END,last business day,high,True,,
 2016-07-01,NFP_approx,first Friday (rule),med,True,,
 2016-07-15,OPEX,3rd Friday,high,True,,
 2016-07-21,AUCTION,10-Year btc=2.39,high,True,2.39,0.045
@@ -1129,14 +1553,14 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2017-07-20,AUCTION,10-Year btc=1.98,high,True,1.98,0.489
 2017-07-21,OPEX,3rd Friday,high,True,,
 2017-07-25,AUCTION,2-Year btc=3.06,high,True,3.06,1.395
-2017-07-26,AUCTION,2-Year btc=3.32,high,True,3.32,
 2017-07-26,FOMC,decision,high,True,,
+2017-07-26,AUCTION,2-Year btc=3.32,high,True,3.32,
 2017-07-27,AUCTION,7-Year btc=2.54,high,True,2.54,2.126
 2017-07-31,MONTH_END,last business day,high,True,,
 2017-08-04,NFP_approx,first Friday (rule),med,True,,
 2017-08-09,AUCTION,10-Year btc=2.23,high,True,2.23,2.25
-2017-08-10,AUCTION,30-Year btc=2.32,high,True,2.32,2.818
 2017-08-10,SHOCK_2.5SIG,ret=-1.412%,high,False,,
+2017-08-10,AUCTION,30-Year btc=2.32,high,True,2.32,2.818
 2017-08-17,SHOCK_2.5SIG,ret=-1.559%,high,False,,
 2017-08-18,OPEX,3rd Friday,high,True,,
 2017-08-28,AUCTION,2-Year btc=2.86,high,True,2.86,1.345
@@ -1148,8 +1572,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2017-09-26,AUCTION,2-Year btc=2.88,high,True,2.88,1.462
 2017-09-27,AUCTION,5-Year btc=2.52,high,True,2.52,1.911
 2017-09-28,AUCTION,7-Year btc=2.7,high,True,2.7,2.13
-2017-09-29,MONTH_END,last business day,high,True,,
 2017-09-29,QUARTER_END,last business day of quarter,high,True,,
+2017-09-29,MONTH_END,last business day,high,True,,
 2017-10-06,NFP_approx,first Friday (rule),med,True,,
 2017-10-20,OPEX,3rd Friday,high,True,,
 2017-10-24,AUCTION,2-Year btc=2.74,high,True,2.74,1.596
@@ -1162,8 +1586,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2017-11-09,AUCTION,30-Year btc=2.23,high,True,2.23,2.801
 2017-11-17,OPEX,3rd Friday,high,True,,
 2017-11-27,AUCTION,2-Year btc=2.73,high,True,2.73,1.765
-2017-11-28,AUCTION,7-Year btc=2.36,high,True,2.36,2.23
 2017-11-28,SHOCK_2.5SIG,ret=+1.014%,high,False,,
+2017-11-28,AUCTION,7-Year btc=2.36,high,True,2.36,2.23
 2017-11-30,MONTH_END,last business day,high,True,,
 2017-12-01,NFP_approx,first Friday (rule),med,True,,
 2017-12-13,FOMC,decision,high,True,,
@@ -1171,8 +1595,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2017-12-26,AUCTION,2-Year btc=2.52,high,True,2.52,1.922
 2017-12-27,AUCTION,5-Year btc=2.36,high,True,2.36,2.245
 2017-12-28,AUCTION,7-Year btc=2.55,high,True,2.55,2.37
-2017-12-29,MONTH_END,last business day,high,True,,
 2017-12-29,QUARTER_END,last business day of quarter,high,True,,
+2017-12-29,MONTH_END,last business day,high,True,,
 2018-01-05,NFP_approx,first Friday (rule),med,True,,
 2018-01-18,AUCTION,10-Year btc=2.69,high,True,2.69,0.548
 2018-01-19,OPEX,3rd Friday,high,True,,
@@ -1180,16 +1604,16 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2018-01-24,AUCTION,5-Year btc=2.48,high,True,2.48,2.434
 2018-01-25,AUCTION,7-Year btc=2.73,high,True,2.73,2.565
 2018-01-26,SHOCK_2.5SIG,ret=+1.158%,high,False,,
-2018-01-31,FOMC,decision,high,True,,
 2018-01-31,MONTH_END,last business day,high,True,,
+2018-01-31,FOMC,decision,high,True,,
 2018-02-02,NFP_approx,first Friday (rule),med,True,,
 2018-02-02,SHOCK_2.5SIG,ret=-2.177%,high,False,,
 2018-02-05,SHOCK_2.5SIG,ret=-4.182%,high,False,,
 2018-02-05,VIX_ONSET30,vix=37.3,high,False,,
 2018-02-07,AUCTION,10-Year btc=2.34,high,True,2.34,2.811
-2018-02-08,AUCTION,30-Year btc=2.26,high,True,2.26,3.121
 2018-02-08,SHOCK_2.5SIG,ret=-3.751%,high,False,,
 2018-02-08,VIX_ONSET30,vix=33.5,high,False,,
+2018-02-08,AUCTION,30-Year btc=2.26,high,True,2.26,3.121
 2018-02-15,AUCTION,30-Year btc=2.31,high,True,2.31,1.003
 2018-02-16,OPEX,3rd Friday,high,True,,
 2018-02-20,AUCTION,2-Year btc=2.72,high,True,2.72,2.255
@@ -1202,8 +1626,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2018-03-26,AUCTION,2-Year btc=2.91,high,True,2.91,2.31
 2018-03-27,AUCTION,5-Year btc=2.5,high,True,2.5,2.612
 2018-03-28,AUCTION,7-Year btc=2.34,high,True,2.34,2.72
-2018-03-30,MONTH_END,last business day,high,True,,
 2018-03-30,QUARTER_END,last business day of quarter,high,True,,
+2018-03-30,MONTH_END,last business day,high,True,,
 2018-04-06,NFP_approx,first Friday (rule),med,True,,
 2018-04-19,AUCTION,5-Year btc=2.55,high,True,2.55,0.631
 2018-04-20,OPEX,3rd Friday,high,True,,
@@ -1226,8 +1650,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2018-06-26,AUCTION,2-Year btc=2.73,high,True,2.73,2.538
 2018-06-27,AUCTION,5-Year btc=2.55,high,True,2.55,2.719
 2018-06-28,AUCTION,7-Year btc=2.53,high,True,2.53,2.809
-2018-06-29,MONTH_END,last business day,high,True,,
 2018-06-29,QUARTER_END,last business day of quarter,high,True,,
+2018-06-29,MONTH_END,last business day,high,True,,
 2018-07-06,NFP_approx,first Friday (rule),med,True,,
 2018-07-19,AUCTION,10-Year btc=2.22,high,True,2.22,0.762
 2018-07-20,OPEX,3rd Friday,high,True,,
@@ -1277,8 +1701,10 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2018-12-21,OPEX,3rd Friday,high,True,,
 2018-12-21,VIX_ONSET30,vix=30.1,high,False,,
 2018-12-24,AUCTION,2-Year btc=2.31,high,True,2.31,2.619
+2018-12-24,VIX_ONSET30,vix=36.1,high,False,,
 2018-12-26,AUCTION,5-Year btc=2.09,high,True,2.09,2.652
 2018-12-26,SHOCK_2.5SIG,ret=+5.052%,high,False,,
+2018-12-26,VIX_ONSET30,vix=30.4,high,False,,
 2018-12-27,AUCTION,7-Year btc=2.46,high,True,2.46,2.68
 2018-12-31,MONTH_END,last business day,high,True,,
 2018-12-31,QUARTER_END,last business day of quarter,high,True,,
@@ -1337,8 +1763,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2019-07-23,AUCTION,2-Year btc=2.5,high,True,2.5,1.825
 2019-07-24,AUCTION,2-Year btc=2.73,high,True,2.73,
 2019-07-25,AUCTION,7-Year btc=2.27,high,True,2.27,1.967
-2019-07-31,FOMC,decision,high,True,,
 2019-07-31,MONTH_END,last business day,high,True,,
+2019-07-31,FOMC,decision,high,True,,
 2019-08-02,NFP_approx,first Friday (rule),med,True,,
 2019-08-05,SHOCK_2.5SIG,ret=-3.007%,high,False,,
 2019-08-07,AUCTION,10-Year btc=2.2,high,True,2.2,1.67
@@ -1386,8 +1812,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2020-01-03,NFP_approx,first Friday (rule),med,True,,
 2020-01-17,OPEX,3rd Friday,high,True,,
 2020-01-23,AUCTION,10-Year btc=2.33,high,True,2.33,0.036
-2020-01-27,AUCTION,2-Year btc=2.65,high,True,2.65,1.44
 2020-01-27,SHOCK_2.5SIG,ret=-1.603%,high,False,,
+2020-01-27,AUCTION,2-Year btc=2.65,high,True,2.65,1.44
 2020-01-28,AUCTION,2-Year btc=3.23,high,True,3.23,
 2020-01-29,FOMC,decision,high,True,,
 2020-01-31,MONTH_END,last business day,high,True,,
@@ -1402,42 +1828,94 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2020-02-25,AUCTION,2-Year btc=2.45,high,True,2.45,1.188
 2020-02-25,SHOCK_2.5SIG,ret=-3.030%,high,False,,
 2020-02-26,AUCTION,5-Year btc=2.46,high,True,2.46,1.15
-2020-02-27,AUCTION,7-Year btc=2.49,high,True,2.49,1.247
 2020-02-27,SHOCK_2.5SIG,ret=-4.491%,high,False,,
 2020-02-27,VIX_ONSET30,vix=39.2,high,False,,
+2020-02-27,AUCTION,7-Year btc=2.49,high,True,2.49,1.247
+2020-02-28,VIX_ONSET30,vix=40.1,high,False,,
 2020-02-28,MONTH_END,last business day,high,True,,
+2020-03-02,VIX_ONSET30,vix=33.4,high,False,,
 2020-03-02,SHOCK_2.5SIG,ret=+4.331%,high,False,,
+2020-03-03,VIX_ONSET30,vix=36.8,high,False,,
 2020-03-03,FOMC,decision,high,True,,
+2020-03-04,VIX_ONSET30,vix=32.0,high,False,,
 2020-03-04,SHOCK_2.5SIG,ret=+4.203%,high,False,,
+2020-03-05,VIX_ONSET30,vix=39.6,high,False,,
 2020-03-06,NFP_approx,first Friday (rule),med,True,,
+2020-03-06,VIX_ONSET30,vix=41.9,high,False,,
+2020-03-09,VIX_ONSET30,vix=54.5,high,False,,
 2020-03-09,SHOCK_2.5SIG,ret=-7.809%,high,False,,
 2020-03-10,SHOCK_2.5SIG,ret=+5.174%,high,False,,
+2020-03-10,VIX_ONSET30,vix=47.3,high,False,,
 2020-03-11,SHOCK_2.5SIG,ret=-4.875%,high,False,,
+2020-03-11,VIX_ONSET30,vix=53.9,high,False,,
 2020-03-12,SHOCK_2.5SIG,ret=-9.568%,high,False,,
+2020-03-12,VIX_ONSET30,vix=75.5,high,False,,
 2020-03-13,SHOCK_2.5SIG,ret=+8.549%,high,False,,
+2020-03-13,VIX_ONSET30,vix=57.8,high,False,,
 2020-03-15,FOMC,decision,high,True,,
+2020-03-16,VIX_ONSET30,vix=82.7,high,False,,
 2020-03-16,SHOCK_2.5SIG,ret=-10.942%,high,False,,
+2020-03-17,VIX_ONSET30,vix=75.9,high,False,,
+2020-03-18,VIX_ONSET30,vix=76.5,high,False,,
+2020-03-19,VIX_ONSET30,vix=72.0,high,False,,
 2020-03-20,OPEX,3rd Friday,high,True,,
+2020-03-20,VIX_ONSET30,vix=66.0,high,False,,
 2020-03-23,FOMC,decision,high,True,,
-2020-03-24,AUCTION,2-Year btc=2.36,high,True,2.36,0.398
+2020-03-23,VIX_ONSET30,vix=61.6,high,False,,
 2020-03-24,SHOCK_2.5SIG,ret=+9.060%,high,False,,
+2020-03-24,VIX_ONSET30,vix=61.7,high,False,,
+2020-03-24,AUCTION,2-Year btc=2.36,high,True,2.36,0.398
 2020-03-25,AUCTION,5-Year btc=2.53,high,True,2.53,0.535
+2020-03-25,VIX_ONSET30,vix=64.0,high,False,,
+2020-03-26,VIX_ONSET30,vix=61.0,high,False,,
 2020-03-26,AUCTION,7-Year btc=2.76,high,True,2.76,0.68
+2020-03-27,VIX_ONSET30,vix=65.5,high,False,,
+2020-03-30,VIX_ONSET30,vix=57.1,high,False,,
+2020-03-31,QUARTER_END,last business day of quarter,high,True,,
 2020-03-31,FOMC,decision,high,True,,
 2020-03-31,MONTH_END,last business day,high,True,,
-2020-03-31,QUARTER_END,last business day of quarter,high,True,,
+2020-03-31,VIX_ONSET30,vix=53.5,high,False,,
+2020-04-01,VIX_ONSET30,vix=57.1,high,False,,
+2020-04-02,VIX_ONSET30,vix=50.9,high,False,,
+2020-04-03,VIX_ONSET30,vix=46.8,high,False,,
 2020-04-03,NFP_approx,first Friday (rule),med,True,,
+2020-04-06,VIX_ONSET30,vix=45.2,high,False,,
+2020-04-07,VIX_ONSET30,vix=46.7,high,False,,
+2020-04-08,VIX_ONSET30,vix=43.4,high,False,,
+2020-04-09,VIX_ONSET30,vix=41.7,high,False,,
+2020-04-13,VIX_ONSET30,vix=41.2,high,False,,
+2020-04-14,VIX_ONSET30,vix=37.8,high,False,,
+2020-04-15,VIX_ONSET30,vix=40.8,high,False,,
+2020-04-16,VIX_ONSET30,vix=40.1,high,False,,
+2020-04-17,VIX_ONSET30,vix=38.1,high,False,,
 2020-04-17,OPEX,3rd Friday,high,True,,
+2020-04-20,VIX_ONSET30,vix=43.8,high,False,,
+2020-04-21,VIX_ONSET30,vix=45.4,high,False,,
+2020-04-22,VIX_ONSET30,vix=42.0,high,False,,
 2020-04-23,AUCTION,5-Year btc=2.74,high,True,2.74,-0.32
+2020-04-23,VIX_ONSET30,vix=41.4,high,False,,
+2020-04-24,VIX_ONSET30,vix=35.9,high,False,,
 2020-04-27,AUCTION,2-Year btc=3.1,high,True,3.1,0.229
+2020-04-27,VIX_ONSET30,vix=33.3,high,False,,
 2020-04-28,AUCTION,2-Year btc=3.02,high,True,3.02,
+2020-04-28,VIX_ONSET30,vix=33.6,high,False,,
+2020-04-29,VIX_ONSET30,vix=31.2,high,False,,
 2020-04-29,FOMC,decision,high,True,,
+2020-04-30,VIX_ONSET30,vix=34.1,high,False,,
 2020-04-30,MONTH_END,last business day,high,True,,
+2020-05-01,VIX_ONSET30,vix=37.2,high,False,,
 2020-05-01,NFP_approx,first Friday (rule),med,True,,
+2020-05-04,VIX_ONSET30,vix=36.0,high,False,,
+2020-05-05,VIX_ONSET30,vix=33.6,high,False,,
+2020-05-06,VIX_ONSET30,vix=34.1,high,False,,
+2020-05-07,VIX_ONSET30,vix=31.4,high,False,,
 2020-05-12,AUCTION,10-Year btc=2.69,high,True,2.69,0.7
 2020-05-12,VIX_ONSET30,vix=33.0,high,False,,
 2020-05-13,AUCTION,30-Year btc=2.3,high,True,2.3,1.342
+2020-05-13,VIX_ONSET30,vix=35.3,high,False,,
+2020-05-14,VIX_ONSET30,vix=32.6,high,False,,
 2020-05-15,OPEX,3rd Friday,high,True,,
+2020-05-15,VIX_ONSET30,vix=31.9,high,False,,
 2020-05-19,VIX_ONSET30,vix=30.5,high,False,,
 2020-05-26,AUCTION,2-Year btc=2.68,high,True,2.68,0.178
 2020-05-27,AUCTION,5-Year btc=2.28,high,True,2.28,0.334
@@ -1446,12 +1924,25 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2020-06-05,NFP_approx,first Friday (rule),med,True,,
 2020-06-10,FOMC,decision,high,True,,
 2020-06-11,VIX_ONSET30,vix=40.8,high,False,,
+2020-06-12,VIX_ONSET30,vix=36.1,high,False,,
+2020-06-15,VIX_ONSET30,vix=34.4,high,False,,
+2020-06-16,VIX_ONSET30,vix=33.7,high,False,,
+2020-06-17,VIX_ONSET30,vix=33.5,high,False,,
+2020-06-18,VIX_ONSET30,vix=32.9,high,False,,
+2020-06-19,VIX_ONSET30,vix=35.1,high,False,,
 2020-06-19,OPEX,3rd Friday,high,True,,
+2020-06-22,VIX_ONSET30,vix=31.8,high,False,,
+2020-06-23,VIX_ONSET30,vix=31.4,high,False,,
 2020-06-23,AUCTION,2-Year btc=2.46,high,True,2.46,0.193
+2020-06-24,VIX_ONSET30,vix=33.8,high,False,,
 2020-06-24,AUCTION,5-Year btc=2.58,high,True,2.58,0.33
+2020-06-25,VIX_ONSET30,vix=32.2,high,False,,
 2020-06-25,AUCTION,7-Year btc=2.49,high,True,2.49,0.511
-2020-06-30,MONTH_END,last business day,high,True,,
+2020-06-26,VIX_ONSET30,vix=34.7,high,False,,
+2020-06-29,VIX_ONSET30,vix=31.8,high,False,,
 2020-06-30,QUARTER_END,last business day of quarter,high,True,,
+2020-06-30,MONTH_END,last business day,high,True,,
+2020-06-30,VIX_ONSET30,vix=30.4,high,False,,
 2020-07-03,NFP_approx,first Friday (rule),med,True,,
 2020-07-13,VIX_ONSET30,vix=32.2,high,False,,
 2020-07-17,OPEX,3rd Friday,high,True,,
@@ -1472,22 +1963,30 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2020-09-03,SHOCK_2.5SIG,ret=-3.441%,high,False,,
 2020-09-03,VIX_ONSET30,vix=33.6,high,False,,
 2020-09-04,NFP_approx,first Friday (rule),med,True,,
+2020-09-04,VIX_ONSET30,vix=30.8,high,False,,
+2020-09-08,VIX_ONSET30,vix=31.5,high,False,,
 2020-09-16,FOMC,decision,high,True,,
 2020-09-18,OPEX,3rd Friday,high,True,,
 2020-09-22,AUCTION,2-Year btc=2.42,high,True,2.42,0.136
 2020-09-23,AUCTION,5-Year btc=2.52,high,True,2.52,0.275
 2020-09-24,AUCTION,7-Year btc=2.42,high,True,2.42,0.462
-2020-09-30,MONTH_END,last business day,high,True,,
 2020-09-30,QUARTER_END,last business day of quarter,high,True,,
+2020-09-30,MONTH_END,last business day,high,True,,
 2020-10-02,NFP_approx,first Friday (rule),med,True,,
 2020-10-16,OPEX,3rd Friday,high,True,,
 2020-10-22,AUCTION,5-Year btc=2.66,high,True,2.66,-1.32
 2020-10-26,VIX_ONSET30,vix=32.5,high,False,,
 2020-10-27,AUCTION,2-Year btc=2.41,high,True,2.41,0.151
+2020-10-27,VIX_ONSET30,vix=33.4,high,False,,
 2020-10-28,AUCTION,2-Year btc=3.22,high,True,3.22,
+2020-10-28,VIX_ONSET30,vix=40.3,high,False,,
 2020-10-28,SHOCK_2.5SIG,ret=-3.418%,high,False,,
+2020-10-29,VIX_ONSET30,vix=37.6,high,False,,
 2020-10-29,AUCTION,7-Year btc=2.24,high,True,2.24,0.6
+2020-10-30,VIX_ONSET30,vix=38.0,high,False,,
 2020-10-30,MONTH_END,last business day,high,True,,
+2020-11-02,VIX_ONSET30,vix=37.1,high,False,,
+2020-11-03,VIX_ONSET30,vix=35.5,high,False,,
 2020-11-05,FOMC,decision,high,True,,
 2020-11-06,NFP_approx,first Friday (rule),med,True,,
 2020-11-10,AUCTION,10-Year btc=2.32,high,True,2.32,0.96
@@ -1501,18 +2000,21 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2020-12-18,OPEX,3rd Friday,high,True,,
 2020-12-28,AUCTION,2-Year btc=2.45,high,True,2.45,0.137
 2020-12-29,AUCTION,7-Year btc=2.31,high,True,2.31,0.662
-2020-12-31,MONTH_END,last business day,high,True,,
 2020-12-31,QUARTER_END,last business day of quarter,high,True,,
+2020-12-31,MONTH_END,last business day,high,True,,
 2021-01-01,NFP_approx,first Friday (rule),med,True,,
 2021-01-15,OPEX,3rd Friday,high,True,,
 2021-01-21,AUCTION,10-Year btc=2.68,high,True,2.68,-0.987
 2021-01-25,AUCTION,2-Year btc=2.67,high,True,2.67,0.125
 2021-01-26,AUCTION,5-Year btc=2.34,high,True,2.34,0.424
-2021-01-27,AUCTION,2-Year btc=2.82,high,True,2.82,
 2021-01-27,FOMC,decision,high,True,,
+2021-01-27,AUCTION,2-Year btc=2.82,high,True,2.82,
 2021-01-27,VIX_ONSET30,vix=37.2,high,False,,
 2021-01-28,AUCTION,7-Year btc=2.3,high,True,2.3,0.754
+2021-01-28,VIX_ONSET30,vix=30.2,high,False,,
+2021-01-29,VIX_ONSET30,vix=33.1,high,False,,
 2021-01-29,MONTH_END,last business day,high,True,,
+2021-02-01,VIX_ONSET30,vix=30.2,high,False,,
 2021-02-05,NFP_approx,first Friday (rule),med,True,,
 2021-02-10,AUCTION,10-Year btc=2.37,high,True,2.37,1.155
 2021-02-11,AUCTION,30-Year btc=2.18,high,True,2.18,1.933
@@ -1560,8 +2062,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2021-07-22,AUCTION,10-Year btc=2.5,high,True,2.5,-1.016
 2021-07-26,AUCTION,2-Year btc=2.47,high,True,2.47,0.213
 2021-07-27,AUCTION,5-Year btc=2.36,high,True,2.36,0.71
-2021-07-28,AUCTION,2-Year btc=3.04,high,True,3.04,
 2021-07-28,FOMC,decision,high,True,,
+2021-07-28,AUCTION,2-Year btc=3.04,high,True,3.04,
 2021-07-29,AUCTION,7-Year btc=2.23,high,True,2.23,1.05
 2021-07-30,MONTH_END,last business day,high,True,,
 2021-08-06,NFP_approx,first Friday (rule),med,True,,
@@ -1579,8 +2081,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2021-09-27,AUCTION,2-Year btc=2.28,high,True,2.28,0.31
 2021-09-28,AUCTION,7-Year btc=2.24,high,True,2.24,1.332
 2021-09-28,SHOCK_2.5SIG,ret=-2.015%,high,False,,
-2021-09-30,MONTH_END,last business day,high,True,,
 2021-09-30,QUARTER_END,last business day of quarter,high,True,,
+2021-09-30,MONTH_END,last business day,high,True,,
 2021-10-01,NFP_approx,first Friday (rule),med,True,,
 2021-10-15,OPEX,3rd Friday,high,True,,
 2021-10-21,AUCTION,5-Year btc=2.45,high,True,2.45,-1.685
@@ -1598,15 +2100,15 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2021-11-26,SHOCK_2.5SIG,ret=-2.230%,high,False,,
 2021-11-30,MONTH_END,last business day,high,True,,
 2021-12-01,VIX_ONSET30,vix=31.1,high,False,,
-2021-12-03,NFP_approx,first Friday (rule),med,True,,
 2021-12-03,VIX_ONSET30,vix=30.7,high,False,,
+2021-12-03,NFP_approx,first Friday (rule),med,True,,
 2021-12-15,FOMC,decision,high,True,,
 2021-12-17,OPEX,3rd Friday,high,True,,
 2021-12-27,AUCTION,2-Year btc=2.55,high,True,2.55,0.769
 2021-12-28,AUCTION,5-Year btc=2.41,high,True,2.41,1.263
 2021-12-29,AUCTION,7-Year btc=2.21,high,True,2.21,1.48
-2021-12-31,MONTH_END,last business day,high,True,,
 2021-12-31,QUARTER_END,last business day of quarter,high,True,,
+2021-12-31,MONTH_END,last business day,high,True,,
 2022-01-07,NFP_approx,first Friday (rule),med,True,,
 2022-01-20,AUCTION,10-Year btc=2.3,high,True,2.3,-0.54
 2022-01-21,OPEX,3rd Friday,high,True,,
@@ -1615,7 +2117,9 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2022-01-25,VIX_ONSET30,vix=31.2,high,False,,
 2022-01-26,AUCTION,2-Year btc=3.34,high,True,3.34,
 2022-01-26,FOMC,decision,high,True,,
+2022-01-26,VIX_ONSET30,vix=32.0,high,False,,
 2022-01-27,AUCTION,7-Year btc=2.36,high,True,2.36,1.769
+2022-01-27,VIX_ONSET30,vix=30.5,high,False,,
 2022-01-31,MONTH_END,last business day,high,True,,
 2022-02-04,NFP_approx,first Friday (rule),med,True,,
 2022-02-09,AUCTION,10-Year btc=2.68,high,True,2.68,1.904
@@ -1626,9 +2130,20 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2022-02-23,AUCTION,5-Year btc=2.49,high,True,2.49,1.88
 2022-02-23,VIX_ONSET30,vix=31.0,high,False,,
 2022-02-24,AUCTION,7-Year btc=2.36,high,True,2.36,1.905
+2022-02-24,VIX_ONSET30,vix=30.3,high,False,,
 2022-02-28,MONTH_END,last business day,high,True,,
 2022-02-28,VIX_ONSET30,vix=30.1,high,False,,
+2022-03-01,VIX_ONSET30,vix=33.3,high,False,,
+2022-03-02,VIX_ONSET30,vix=30.7,high,False,,
+2022-03-03,VIX_ONSET30,vix=30.5,high,False,,
 2022-03-04,NFP_approx,first Friday (rule),med,True,,
+2022-03-04,VIX_ONSET30,vix=32.0,high,False,,
+2022-03-07,VIX_ONSET30,vix=36.5,high,False,,
+2022-03-08,VIX_ONSET30,vix=35.1,high,False,,
+2022-03-09,VIX_ONSET30,vix=32.5,high,False,,
+2022-03-10,VIX_ONSET30,vix=30.2,high,False,,
+2022-03-11,VIX_ONSET30,vix=30.8,high,False,,
+2022-03-14,VIX_ONSET30,vix=31.8,high,False,,
 2022-03-16,FOMC,decision,high,True,,
 2022-03-18,OPEX,3rd Friday,high,True,,
 2022-03-28,AUCTION,2-Year btc=2.46,high,True,2.46,2.365
@@ -1638,16 +2153,23 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2022-04-01,NFP_approx,first Friday (rule),med,True,,
 2022-04-15,OPEX,3rd Friday,high,True,,
 2022-04-21,AUCTION,5-Year btc=2.73,high,True,2.73,-0.34
-2022-04-26,AUCTION,2-Year btc=2.74,high,True,2.74,2.585
 2022-04-26,VIX_ONSET30,vix=33.5,high,False,,
+2022-04-26,AUCTION,2-Year btc=2.74,high,True,2.74,2.585
 2022-04-27,AUCTION,2-Year btc=2.51,high,True,2.51,
+2022-04-27,VIX_ONSET30,vix=31.6,high,False,,
 2022-04-28,AUCTION,7-Year btc=2.41,high,True,2.41,2.908
 2022-04-29,MONTH_END,last business day,high,True,,
 2022-04-29,VIX_ONSET30,vix=33.4,high,False,,
+2022-05-02,VIX_ONSET30,vix=32.3,high,False,,
 2022-05-04,FOMC,decision,high,True,,
 2022-05-05,VIX_ONSET30,vix=31.2,high,False,,
 2022-05-06,NFP_approx,first Friday (rule),med,True,,
+2022-05-06,VIX_ONSET30,vix=30.2,high,False,,
+2022-05-09,VIX_ONSET30,vix=34.8,high,False,,
+2022-05-10,VIX_ONSET30,vix=33.0,high,False,,
+2022-05-11,VIX_ONSET30,vix=32.6,high,False,,
 2022-05-11,AUCTION,10-Year btc=2.49,high,True,2.49,2.943
+2022-05-12,VIX_ONSET30,vix=31.8,high,False,,
 2022-05-12,AUCTION,30-Year btc=2.38,high,True,2.38,2.997
 2022-05-18,VIX_ONSET30,vix=31.0,high,False,,
 2022-05-20,OPEX,3rd Friday,high,True,,
@@ -1657,9 +2179,12 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2022-05-31,MONTH_END,last business day,high,True,,
 2022-06-03,NFP_approx,first Friday (rule),med,True,,
 2022-06-13,VIX_ONSET30,vix=34.0,high,False,,
+2022-06-14,VIX_ONSET30,vix=32.7,high,False,,
 2022-06-15,FOMC,decision,high,True,,
 2022-06-16,VIX_ONSET30,vix=33.0,high,False,,
 2022-06-17,OPEX,3rd Friday,high,True,,
+2022-06-17,VIX_ONSET30,vix=31.1,high,False,,
+2022-06-21,VIX_ONSET30,vix=30.2,high,False,,
 2022-06-27,AUCTION,2-Year btc=2.51,high,True,2.51,3.084
 2022-06-28,AUCTION,7-Year btc=2.48,high,True,2.48,3.28
 2022-06-30,MONTH_END,last business day,high,True,,
@@ -1688,11 +2213,25 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2022-09-26,AUCTION,2-Year btc=2.51,high,True,2.51,4.29
 2022-09-26,VIX_ONSET30,vix=32.3,high,False,,
 2022-09-27,AUCTION,5-Year btc=2.27,high,True,2.27,4.228
+2022-09-27,VIX_ONSET30,vix=32.6,high,False,,
+2022-09-28,VIX_ONSET30,vix=30.2,high,False,,
 2022-09-28,AUCTION,7-Year btc=2.57,high,True,2.57,3.898
-2022-09-30,MONTH_END,last business day,high,True,,
+2022-09-29,VIX_ONSET30,vix=31.8,high,False,,
 2022-09-30,QUARTER_END,last business day of quarter,high,True,,
+2022-09-30,MONTH_END,last business day,high,True,,
+2022-09-30,VIX_ONSET30,vix=31.6,high,False,,
+2022-10-03,VIX_ONSET30,vix=30.1,high,False,,
 2022-10-06,VIX_ONSET30,vix=30.5,high,False,,
 2022-10-07,NFP_approx,first Friday (rule),med,True,,
+2022-10-07,VIX_ONSET30,vix=31.4,high,False,,
+2022-10-10,VIX_ONSET30,vix=32.5,high,False,,
+2022-10-11,VIX_ONSET30,vix=33.6,high,False,,
+2022-10-12,VIX_ONSET30,vix=33.6,high,False,,
+2022-10-13,VIX_ONSET30,vix=31.9,high,False,,
+2022-10-14,VIX_ONSET30,vix=32.0,high,False,,
+2022-10-17,VIX_ONSET30,vix=31.4,high,False,,
+2022-10-18,VIX_ONSET30,vix=30.5,high,False,,
+2022-10-19,VIX_ONSET30,vix=30.8,high,False,,
 2022-10-20,AUCTION,5-Year btc=2.38,high,True,2.38,1.732
 2022-10-21,OPEX,3rd Friday,high,True,,
 2022-10-25,AUCTION,2-Year btc=2.59,high,True,2.59,4.46
@@ -1702,8 +2241,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2022-11-02,FOMC,decision,high,True,,
 2022-11-04,NFP_approx,first Friday (rule),med,True,,
 2022-11-09,AUCTION,10-Year btc=2.23,high,True,2.23,4.14
-2022-11-10,AUCTION,30-Year btc=2.42,high,True,2.42,4.08
 2022-11-10,SHOCK_2.5SIG,ret=+5.495%,high,False,,
+2022-11-10,AUCTION,30-Year btc=2.42,high,True,2.42,4.08
 2022-11-18,OPEX,3rd Friday,high,True,,
 2022-11-21,AUCTION,2-Year btc=2.64,high,True,2.64,4.505
 2022-11-22,AUCTION,7-Year btc=2.33,high,True,2.33,3.89
@@ -1763,15 +2302,15 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2023-06-26,AUCTION,2-Year btc=2.86,high,True,2.86,4.67
 2023-06-27,AUCTION,5-Year btc=2.52,high,True,2.52,4.019
 2023-06-28,AUCTION,7-Year btc=2.65,high,True,2.65,3.839
-2023-06-30,MONTH_END,last business day,high,True,,
 2023-06-30,QUARTER_END,last business day of quarter,high,True,,
+2023-06-30,MONTH_END,last business day,high,True,,
 2023-07-07,NFP_approx,first Friday (rule),med,True,,
 2023-07-20,AUCTION,10-Year btc=2.51,high,True,2.51,1.495
 2023-07-21,OPEX,3rd Friday,high,True,,
 2023-07-24,AUCTION,2-Year btc=2.78,high,True,2.78,4.823
 2023-07-25,AUCTION,5-Year btc=2.6,high,True,2.6,4.17
-2023-07-26,AUCTION,2-Year btc=2.58,high,True,2.58,
 2023-07-26,FOMC,decision,high,True,,
+2023-07-26,AUCTION,2-Year btc=2.58,high,True,2.58,
 2023-07-27,AUCTION,7-Year btc=2.48,high,True,2.48,4.087
 2023-07-31,MONTH_END,last business day,high,True,,
 2023-08-04,NFP_approx,first Friday (rule),med,True,,
@@ -1818,14 +2357,14 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2024-01-23,AUCTION,2-Year btc=2.57,high,True,2.57,4.365
 2024-01-24,AUCTION,5-Year btc=2.31,high,True,2.31,4.055
 2024-01-25,AUCTION,7-Year btc=2.57,high,True,2.57,4.109
-2024-01-31,FOMC,decision,high,True,,
 2024-01-31,MONTH_END,last business day,high,True,,
+2024-01-31,FOMC,decision,high,True,,
 2024-02-02,NFP_approx,first Friday (rule),med,True,,
 2024-02-07,AUCTION,10-Year btc=2.56,high,True,2.56,4.093
 2024-02-08,AUCTION,30-Year btc=2.4,high,True,2.4,4.36
 2024-02-16,OPEX,3rd Friday,high,True,,
-2024-02-22,AUCTION,30-Year btc=2.43,high,True,2.43,2.2
 2024-02-22,SHOCK_2.5SIG,ret=+2.070%,high,False,,
+2024-02-22,AUCTION,30-Year btc=2.43,high,True,2.43,2.2
 2024-02-26,AUCTION,2-Year btc=2.49,high,True,2.49,4.691
 2024-02-27,AUCTION,7-Year btc=2.58,high,True,2.58,4.327
 2024-02-29,MONTH_END,last business day,high,True,,
@@ -1867,15 +2406,15 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2024-07-24,AUCTION,2-Year btc=3.25,high,True,3.25,
 2024-07-24,SHOCK_2.5SIG,ret=-2.266%,high,False,,
 2024-07-25,AUCTION,7-Year btc=2.64,high,True,2.64,4.162
-2024-07-31,FOMC,decision,high,True,,
 2024-07-31,MONTH_END,last business day,high,True,,
+2024-07-31,FOMC,decision,high,True,,
 2024-08-02,NFP_approx,first Friday (rule),med,True,,
 2024-08-02,SHOCK_2.5SIG,ret=-1.862%,high,False,,
 2024-08-05,SHOCK_2.5SIG,ret=-2.912%,high,False,,
 2024-08-05,VIX_ONSET30,vix=38.6,high,False,,
 2024-08-07,AUCTION,10-Year btc=2.32,high,True,2.32,3.96
-2024-08-08,AUCTION,30-Year btc=2.31,high,True,2.31,4.314
 2024-08-08,SHOCK_2.5SIG,ret=+2.312%,high,False,,
+2024-08-08,AUCTION,30-Year btc=2.31,high,True,2.31,4.314
 2024-08-16,OPEX,3rd Friday,high,True,,
 2024-08-27,AUCTION,2-Year btc=2.68,high,True,2.68,3.874
 2024-08-28,AUCTION,5-Year btc=2.41,high,True,2.41,3.645
@@ -1897,8 +2436,8 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2024-10-31,MONTH_END,last business day,high,True,,
 2024-11-01,NFP_approx,first Friday (rule),med,True,,
 2024-11-05,AUCTION,10-Year btc=2.58,high,True,2.58,4.347
-2024-11-06,AUCTION,30-Year btc=2.64,high,True,2.64,4.608
 2024-11-06,SHOCK_2.5SIG,ret=+2.487%,high,False,,
+2024-11-06,AUCTION,30-Year btc=2.64,high,True,2.64,4.608
 2024-11-07,FOMC,decision,high,True,,
 2024-11-15,OPEX,3rd Friday,high,True,,
 2024-11-25,AUCTION,2-Year btc=2.77,high,True,2.77,4.274
@@ -1915,296 +2454,115 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2024-12-31,MONTH_END,last business day,high,True,,
 2024-12-31,QUARTER_END,last business day of quarter,high,True,,
 2025-01-03,NFP_approx,first Friday (rule),med,True,,
-2025-01-15,AUCTION,29-Year 10-Month btc=2.52,high,True,2.52,4.913
-2025-01-15,AUCTION,9-Year 10-Month btc=2.53,high,True,2.53,4.68
-2025-01-15,AUCTION,3-Year btc=2.62,high,True,2.62,4.332
 2025-01-17,OPEX,3rd Friday,high,True,,
 2025-01-29,FOMC,decision,high,True,,
-2025-01-31,AUCTION,2-Year btc=3.01,high,True,3.01,
-2025-01-31,AUCTION,7-Year btc=2.64,high,True,2.64,4.457
-2025-01-31,AUCTION,2-Year btc=2.66,high,True,2.66,4.211
-2025-01-31,AUCTION,5-Year btc=2.40,high,True,2.4,4.33
-2025-01-31,AUCTION,10-Year btc=2.48,high,True,2.48,2.243
-2025-01-31,AUCTION,19-Year 10-Month btc=2.75,high,True,2.75,4.9
 2025-01-31,MONTH_END,last business day,high,True,,
 2025-02-07,NFP_approx,first Friday (rule),med,True,,
-2025-02-18,AUCTION,30-Year btc=2.33,high,True,2.33,4.748
-2025-02-18,AUCTION,10-Year btc=2.48,high,True,2.48,4.632
-2025-02-18,AUCTION,3-Year btc=2.79,high,True,2.79,4.3
 2025-02-21,OPEX,3rd Friday,high,True,,
-2025-02-28,AUCTION,1-Year 11-Month btc=2.72,high,True,2.72,
-2025-02-28,AUCTION,7-Year btc=2.64,high,True,2.64,4.194
-2025-02-28,AUCTION,5-Year btc=2.42,high,True,2.42,4.123
-2025-02-28,AUCTION,2-Year btc=2.56,high,True,2.56,4.169
-2025-02-28,AUCTION,30-Year btc=2.48,high,True,2.48,2.403
-2025-02-28,AUCTION,20-Year btc=2.43,high,True,2.43,4.83
 2025-02-28,MONTH_END,last business day,high,True,,
 2025-03-07,NFP_approx,first Friday (rule),med,True,,
 2025-03-10,SHOCK_2.5SIG,ret=-2.664%,high,False,,
-2025-03-17,AUCTION,3-Year btc=2.70,high,True,2.7,3.908
-2025-03-17,AUCTION,29-Year 11-Month btc=2.37,high,True,2.37,4.623
-2025-03-17,AUCTION,9-Year 11-Month btc=2.59,high,True,2.59,4.31
 2025-03-19,FOMC,decision,high,True,,
 2025-03-21,OPEX,3rd Friday,high,True,,
-2025-03-28,AUCTION,1-Year 10-Month btc=2.87,high,True,2.87,
-2025-03-31,AUCTION,2-Year btc=2.66,high,True,2.66,3.984
-2025-03-31,AUCTION,7-Year btc=2.53,high,True,2.53,4.233
-2025-03-31,AUCTION,5-Year btc=2.33,high,True,2.33,4.1
-2025-03-31,AUCTION,9-Year 10-Month btc=2.35,high,True,2.35,1.935
-2025-03-31,AUCTION,19-Year 11-Month btc=2.78,high,True,2.78,4.632
-2025-03-31,MONTH_END,last business day,high,True,,
 2025-03-31,QUARTER_END,last business day of quarter,high,True,,
+2025-03-31,MONTH_END,last business day,high,True,,
 2025-04-03,SHOCK_2.5SIG,ret=-4.928%,high,False,,
 2025-04-03,VIX_ONSET30,vix=30.0,high,False,,
 2025-04-04,NFP_approx,first Friday (rule),med,True,,
+2025-04-04,VIX_ONSET30,vix=45.3,high,False,,
 2025-04-04,SHOCK_2.5SIG,ret=-5.854%,high,False,,
+2025-04-07,VIX_ONSET30,vix=47.0,high,False,,
+2025-04-08,VIX_ONSET30,vix=52.3,high,False,,
+2025-04-09,VIX_ONSET30,vix=33.6,high,False,,
 2025-04-09,SHOCK_2.5SIG,ret=+10.502%,high,False,,
-2025-04-15,AUCTION,3-Year btc=2.47,high,True,2.47,3.784
-2025-04-15,AUCTION,29-Year 10-Month btc=2.43,high,True,2.43,4.813
-2025-04-15,AUCTION,9-Year 10-Month btc=2.67,high,True,2.67,4.435
+2025-04-10,VIX_ONSET30,vix=40.7,high,False,,
+2025-04-11,VIX_ONSET30,vix=37.6,high,False,,
+2025-04-14,VIX_ONSET30,vix=30.9,high,False,,
+2025-04-15,VIX_ONSET30,vix=30.1,high,False,,
+2025-04-16,VIX_ONSET30,vix=32.6,high,False,,
 2025-04-18,OPEX,3rd Friday,high,True,,
 2025-04-21,VIX_ONSET30,vix=33.8,high,False,,
-2025-04-30,AUCTION,5-Year btc=2.41,high,True,2.41,3.995
-2025-04-30,AUCTION,7-Year btc=2.55,high,True,2.55,4.123
-2025-04-30,AUCTION,2-Year btc=2.52,high,True,2.52,3.795
-2025-04-30,AUCTION,2-Year btc=2.69,high,True,2.69,
-2025-04-30,AUCTION,5-Year btc=2.28,high,True,2.28,1.702
-2025-04-30,AUCTION,19-Year 10-Month btc=2.63,high,True,2.63,4.81
+2025-04-22,VIX_ONSET30,vix=30.6,high,False,,
 2025-04-30,MONTH_END,last business day,high,True,,
 2025-05-02,NFP_approx,first Friday (rule),med,True,,
 2025-05-07,FOMC,decision,high,True,,
-2025-05-15,AUCTION,30-Year btc=2.31,high,True,2.31,4.819
-2025-05-15,AUCTION,10-Year btc=2.60,high,True,2.6,4.342
-2025-05-15,AUCTION,3-Year btc=2.56,high,True,2.56,3.824
 2025-05-16,OPEX,3rd Friday,high,True,,
-2025-05-30,AUCTION,1-Year 11-Month btc=2.95,high,True,2.95,
-2025-05-30,AUCTION,9-Year 8-Month btc=2.36,high,True,2.36,2.22
 2025-05-30,MONTH_END,last business day,high,True,,
-2025-06-02,AUCTION,7-Year btc=2.69,high,True,2.69,4.194
-2025-06-02,AUCTION,20-Year btc=2.46,high,True,2.46,5.047
-2025-06-02,AUCTION,5-Year btc=2.39,high,True,2.39,4.071
-2025-06-02,AUCTION,2-Year btc=2.57,high,True,2.57,3.955
 2025-06-06,NFP_approx,first Friday (rule),med,True,,
-2025-06-16,AUCTION,29-Year 11-Month btc=2.43,high,True,2.43,4.844
-2025-06-16,AUCTION,9-Year 11-Month btc=2.52,high,True,2.52,4.421
-2025-06-16,AUCTION,3-Year btc=2.52,high,True,2.52,3.972
 2025-06-18,FOMC,decision,high,True,,
 2025-06-20,OPEX,3rd Friday,high,True,,
-2025-06-27,AUCTION,1-Year 10-Month btc=2.79,high,True,2.79,
-2025-06-30,AUCTION,2-Year btc=2.58,high,True,2.58,3.786
-2025-06-30,AUCTION,19-Year 11-Month btc=2.68,high,True,2.68,4.942
-2025-06-30,AUCTION,7-Year btc=2.53,high,True,2.53,4.022
-2025-06-30,AUCTION,5-Year btc=2.36,high,True,2.36,3.879
-2025-06-30,AUCTION,4-Year 10-Month btc=2.53,high,True,2.53,1.65
-2025-06-30,MONTH_END,last business day,high,True,,
 2025-06-30,QUARTER_END,last business day of quarter,high,True,,
+2025-06-30,MONTH_END,last business day,high,True,,
 2025-07-04,NFP_approx,first Friday (rule),med,True,,
-2025-07-15,AUCTION,3-Year btc=2.51,high,True,2.51,3.891
-2025-07-15,AUCTION,9-Year 10-Month btc=2.61,high,True,2.61,4.362
-2025-07-15,AUCTION,29-Year 10-Month btc=2.38,high,True,2.38,4.889
 2025-07-18,OPEX,3rd Friday,high,True,,
 2025-07-30,FOMC,decision,high,True,,
-2025-07-31,AUCTION,2-Year btc=2.81,high,True,2.81,
-2025-07-31,AUCTION,7-Year btc=2.79,high,True,2.79,4.092
-2025-07-31,AUCTION,10-Year btc=2.41,high,True,2.41,1.985
-2025-07-31,AUCTION,2-Year btc=2.62,high,True,2.62,3.92
-2025-07-31,AUCTION,5-Year btc=2.31,high,True,2.31,3.983
-2025-07-31,AUCTION,19-Year 10-Month btc=2.79,high,True,2.79,4.935
 2025-07-31,MONTH_END,last business day,high,True,,
 2025-08-01,NFP_approx,first Friday (rule),med,True,,
-2025-08-15,AUCTION,3-Year btc=2.53,high,True,2.53,3.669
-2025-08-15,AUCTION,30-Year btc=2.27,high,True,2.27,4.813
-2025-08-15,AUCTION,10-Year btc=2.35,high,True,2.35,4.255
 2025-08-15,OPEX,3rd Friday,high,True,,
 2025-08-22,FOMC,decision,high,True,,
-2025-08-29,AUCTION,1-Year 11-Month btc=3.22,high,True,3.22,
-2025-08-29,AUCTION,29-Year 6-Month btc=2.78,high,True,2.78,2.65
 2025-08-29,MONTH_END,last business day,high,True,,
-2025-09-02,AUCTION,5-Year btc=2.36,high,True,2.36,3.724
-2025-09-02,AUCTION,7-Year btc=2.49,high,True,2.49,3.925
-2025-09-02,AUCTION,2-Year btc=2.69,high,True,2.69,3.641
-2025-09-02,AUCTION,20-Year btc=2.54,high,True,2.54,4.876
 2025-09-05,NFP_approx,first Friday (rule),med,True,,
-2025-09-15,AUCTION,29-Year 11-Month btc=2.38,high,True,2.38,4.651
-2025-09-15,AUCTION,9-Year 11-Month btc=2.65,high,True,2.65,4.033
-2025-09-15,AUCTION,3-Year btc=2.73,high,True,2.73,3.485
 2025-09-17,FOMC,decision,high,True,,
 2025-09-19,OPEX,3rd Friday,high,True,,
-2025-09-26,AUCTION,1-Year 10-Month btc=3.15,high,True,3.15,
-2025-09-30,AUCTION,7-Year btc=2.40,high,True,2.4,3.953
-2025-09-30,AUCTION,5-Year btc=2.34,high,True,2.34,3.71
-2025-09-30,AUCTION,2-Year btc=2.51,high,True,2.51,3.571
-2025-09-30,AUCTION,19-Year 11-Month btc=2.74,high,True,2.74,4.613
-2025-09-30,AUCTION,9-Year 10-Month btc=2.20,high,True,2.2,1.734
 2025-09-30,MONTH_END,last business day,high,True,,
 2025-09-30,QUARTER_END,last business day of quarter,high,True,,
 2025-10-03,NFP_approx,first Friday (rule),med,True,,
 2025-10-10,SHOCK_2.5SIG,ret=-2.703%,high,False,,
-2025-10-15,AUCTION,29-Year 10-Month btc=2.38,high,True,2.38,4.734
-2025-10-15,AUCTION,9-Year 10-Month btc=2.48,high,True,2.48,4.117
-2025-10-15,AUCTION,3-Year btc=2.66,high,True,2.66,3.576
 2025-10-17,OPEX,3rd Friday,high,True,,
 2025-10-29,FOMC,decision,high,True,,
-2025-10-31,AUCTION,2-Year btc=2.59,high,True,2.59,3.504
-2025-10-31,AUCTION,2-Year btc=3.63,high,True,3.63,
-2025-10-31,AUCTION,5-Year btc=2.38,high,True,2.38,3.625
-2025-10-31,AUCTION,7-Year btc=2.46,high,True,2.46,3.79
-2025-10-31,AUCTION,5-Year btc=2.51,high,True,2.51,1.182
-2025-10-31,AUCTION,19-Year 10-Month btc=2.73,high,True,2.73,4.506
 2025-10-31,MONTH_END,last business day,high,True,,
 2025-11-07,NFP_approx,first Friday (rule),med,True,,
-2025-11-17,AUCTION,30-Year btc=2.29,high,True,2.29,4.694
-2025-11-17,AUCTION,3-Year btc=2.85,high,True,2.85,3.579
-2025-11-17,AUCTION,10-Year btc=2.43,high,True,2.43,4.074
 2025-11-21,OPEX,3rd Friday,high,True,,
-2025-11-28,AUCTION,9-Year 8-Month btc=2.41,high,True,2.41,1.843
-2025-11-28,AUCTION,1-Year 11-Month btc=3.03,high,True,3.03,
 2025-11-28,MONTH_END,last business day,high,True,,
-2025-12-01,AUCTION,20-Year btc=2.41,high,True,2.41,4.706
-2025-12-01,AUCTION,7-Year btc=2.46,high,True,2.46,3.781
-2025-12-01,AUCTION,5-Year btc=2.41,high,True,2.41,3.562
-2025-12-01,AUCTION,2-Year btc=2.68,high,True,2.68,3.489
 2025-12-05,NFP_approx,first Friday (rule),med,True,,
 2025-12-10,FOMC,decision,high,True,,
-2025-12-15,AUCTION,29-Year 11-Month btc=2.36,high,True,2.36,4.773
-2025-12-15,AUCTION,9-Year 11-Month btc=2.55,high,True,2.55,4.175
-2025-12-15,AUCTION,3-Year btc=2.64,high,True,2.64,3.614
 2025-12-19,OPEX,3rd Friday,high,True,,
-2025-12-26,AUCTION,1-Year 10-Month btc=3.75,high,True,3.75,
-2025-12-31,AUCTION,4-Year 10-Month btc=2.62,high,True,2.62,1.433
-2025-12-31,AUCTION,2-Year btc=2.54,high,True,2.54,3.499
-2025-12-31,AUCTION,19-Year 11-Month btc=2.67,high,True,2.67,4.798
-2025-12-31,AUCTION,7-Year btc=2.51,high,True,2.51,3.93
-2025-12-31,AUCTION,5-Year btc=2.35,high,True,2.35,3.747
-2025-12-31,MONTH_END,last business day,high,True,,
 2025-12-31,QUARTER_END,last business day of quarter,high,True,,
+2025-12-31,MONTH_END,last business day,high,True,,
 2026-01-02,NFP_approx,first Friday (rule),med,True,,
-2026-01-15,AUCTION,3-Year btc=2.65,high,True,2.65,3.609
-2026-01-15,AUCTION,29-Year 10-Month btc=2.42,high,True,2.42,4.825
-2026-01-15,AUCTION,9-Year 10-Month btc=2.55,high,True,2.55,4.173
 2026-01-16,OPEX,3rd Friday,high,True,,
 2026-01-20,SHOCK_2.5SIG,ret=-2.036%,high,False,,
 2026-01-28,FOMC,decision,high,True,,
-2026-01-30,AUCTION,10-Year btc=2.38,high,True,2.38,1.94
 2026-01-30,MONTH_END,last business day,high,True,,
-2026-02-02,AUCTION,19-Year 10-Month btc=2.86,high,True,2.86,4.846
-2026-02-02,AUCTION,7-Year btc=2.45,high,True,2.45,4.018
-2026-02-02,AUCTION,5-Year btc=2.34,high,True,2.34,3.823
-2026-02-02,AUCTION,2-Year btc=3.16,high,True,3.16,
-2026-02-02,AUCTION,2-Year btc=2.75,high,True,2.75,3.58
 2026-02-06,NFP_approx,first Friday (rule),med,True,,
 2026-02-06,SHOCK_2.5SIG,ret=+1.918%,high,False,,
-2026-02-17,AUCTION,3-Year btc=2.62,high,True,2.62,3.518
-2026-02-17,AUCTION,30-Year btc=2.66,high,True,2.66,4.75
-2026-02-17,AUCTION,10-Year btc=2.39,high,True,2.39,4.177
 2026-02-20,OPEX,3rd Friday,high,True,,
-2026-02-27,AUCTION,1-Year 11-Month btc=3.01,high,True,3.01,
-2026-02-27,AUCTION,30-Year btc=2.75,high,True,2.75,2.473
 2026-02-27,MONTH_END,last business day,high,True,,
-2026-03-02,AUCTION,2-Year btc=2.63,high,True,2.63,3.455
-2026-03-02,AUCTION,5-Year btc=2.32,high,True,2.32,3.615
-2026-03-02,AUCTION,7-Year btc=2.50,high,True,2.5,3.79
-2026-03-02,AUCTION,20-Year btc=2.36,high,True,2.36,4.664
 2026-03-06,NFP_approx,first Friday (rule),med,True,,
-2026-03-16,AUCTION,29-Year 11-Month btc=2.45,high,True,2.45,4.871
-2026-03-16,AUCTION,3-Year btc=2.55,high,True,2.55,3.579
-2026-03-16,AUCTION,9-Year 11-Month btc=2.45,high,True,2.45,4.217
 2026-03-18,FOMC,decision,high,True,,
 2026-03-20,OPEX,3rd Friday,high,True,,
-2026-03-27,AUCTION,1-Year 10-Month btc=2.78,high,True,2.78,
 2026-03-27,VIX_ONSET30,vix=31.1,high,False,,
-2026-03-31,AUCTION,9-Year 10-Month btc=2.47,high,True,2.47,1.896
-2026-03-31,AUCTION,19-Year 11-Month btc=2.76,high,True,2.76,4.817
-2026-03-31,AUCTION,2-Year btc=2.44,high,True,2.44,3.936
-2026-03-31,AUCTION,5-Year btc=2.29,high,True,2.29,3.98
-2026-03-31,AUCTION,7-Year btc=2.43,high,True,2.43,4.255
+2026-03-30,VIX_ONSET30,vix=30.6,high,False,,
+2026-03-31,SHOCK_2.5SIG,ret=+2.907%,high,False,,
 2026-03-31,MONTH_END,last business day,high,True,,
 2026-03-31,QUARTER_END,last business day of quarter,high,True,,
-2026-03-31,SHOCK_2.5SIG,ret=+2.907%,high,False,,
 2026-04-03,NFP_approx,first Friday (rule),med,True,,
 2026-04-08,SHOCK_2.5SIG,ret=+2.547%,high,False,,
-2026-04-15,AUCTION,9-Year 10-Month btc=2.43,high,True,2.43,4.282
-2026-04-15,AUCTION,29-Year 10-Month btc=2.39,high,True,2.39,4.876
-2026-04-15,AUCTION,3-Year btc=2.68,high,True,2.68,3.897
 2026-04-17,OPEX,3rd Friday,high,True,,
 2026-04-29,FOMC,decision,high,True,,
-2026-04-30,AUCTION,5-Year btc=2.57,high,True,2.57,1.367
-2026-04-30,AUCTION,19-Year 10-Month btc=2.68,high,True,2.68,4.883
-2026-04-30,AUCTION,2-Year btc=2.65,high,True,2.65,3.812
-2026-04-30,AUCTION,2-Year btc=3.52,high,True,3.52,
-2026-04-30,AUCTION,5-Year btc=2.33,high,True,2.33,3.955
-2026-04-30,AUCTION,7-Year btc=2.51,high,True,2.51,4.175
 2026-04-30,MONTH_END,last business day,high,True,,
 2026-05-01,NFP_approx,first Friday (rule),med,True,,
-2026-05-15,AUCTION,10-Year btc=2.40,high,True,2.4,4.468
-2026-05-15,AUCTION,3-Year btc=2.54,high,True,2.54,3.965
-2026-05-15,AUCTION,30-Year btc=2.30,high,True,2.3,5.046
 2026-05-15,OPEX,3rd Friday,high,True,,
-2026-05-29,AUCTION,9-Year 8-Month btc=2.52,high,True,2.52,2.169
-2026-05-29,AUCTION,1-Year 11-Month btc=3.49,high,True,3.49,
 2026-05-29,MONTH_END,last business day,high,True,,
-2026-06-01,AUCTION,20-Year btc=2.55,high,True,2.55,5.122
-2026-06-01,AUCTION,5-Year btc=2.34,high,True,2.34,4.182
-2026-06-01,AUCTION,7-Year btc=2.52,high,True,2.52,4.29
-2026-06-01,AUCTION,2-Year btc=2.64,high,True,2.64,4.071
 2026-06-05,NFP_approx,first Friday (rule),med,True,,
 2026-06-05,SHOCK_2.5SIG,ret=-2.581%,high,False,,
-2026-06-15,AUCTION,3-Year btc=2.64,high,True,2.64,4.192
-2026-06-15,AUCTION,29-Year 11-Month btc=2.33,high,True,2.33,5.02
-2026-06-15,AUCTION,9-Year 11-Month btc=2.57,high,True,2.57,4.538
 2026-06-17,FOMC,decision,high,True,,
 2026-06-19,OPEX,3rd Friday,high,True,,
-2026-06-22,AUCTION,19-Year 11-Month btc=2.75,high,True,2.75,4.927
-2026-06-26,AUCTION,1-Year 10-Month btc=2.99,high,True,2.99,
-2026-06-30,AUCTION,4-Year 10-Month btc=2.61,high,True,2.61,1.955
-2026-06-30,AUCTION,5-Year btc=2.35,high,True,2.35,4.2
-2026-06-30,AUCTION,2-Year btc=2.64,high,True,2.64,4.189
-2026-06-30,AUCTION,7-Year btc=2.50,high,True,2.5,4.26
 2026-06-30,MONTH_END,last business day,high,True,,
 2026-06-30,QUARTER_END,last business day of quarter,high,True,,
 2026-07-03,NFP_approx,first Friday (rule),med,True,,
-2026-07-15,AUCTION,3-Year btc=2.60,high,True,2.6,4.179
-2026-07-15,AUCTION,9-Year 10-Month btc=2.59,high,True,2.59,4.58
-2026-07-15,AUCTION,29-Year 10-Month btc=2.44,high,True,2.44,5.058
 2026-07-17,OPEX,3rd Friday,high,True,,
-2026-07-24,AUCTION,19-Year 10-Month btc=2.64,high,True,2.64,5.163
 2026-07-29,FOMC,decision,high,True,,
-2026-07-31,AUCTION,10-Year btc=2.30,high,True,2.3,2.438
-2026-07-31,AUCTION,2-Year btc=3.37,high,True,3.37,
-2026-07-31,AUCTION,2-Year btc=2.66,high,True,2.66,4.315
-2026-07-31,AUCTION,7-Year btc=2.49,high,True,2.49,4.473
-2026-07-31,AUCTION,5-Year btc=2.28,high,True,2.28,4.408
 2026-07-31,MONTH_END,last business day,high,True,,
 2026-08-07,NFP_approx,first Friday (rule),med,True,,
-2026-08-17,AUCTION,30-Year btc=2.39,high,True,2.39,5.216
-2026-08-17,AUCTION,10-Year btc=2.53,high,True,2.53,4.683
-2026-08-17,AUCTION,3-Year btc=2.71,high,True,2.71,4.291
 2026-08-21,OPEX,3rd Friday,high,True,,
-2026-08-28,AUCTION,1-Year 11-Month btc=3.14,high,True,3.14,
-2026-08-31,AUCTION,20-Year btc=2.53,high,True,2.53,5.204
-2026-08-31,AUCTION,29-Year 6-Month btc=2.82,high,True,2.82,2.973
-2026-08-31,AUCTION,5-Year btc=2.37,high,True,2.37,4.393
-2026-08-31,AUCTION,7-Year btc=2.50,high,True,2.5,4.512
-2026-08-31,AUCTION,2-Year btc=2.60,high,True,2.6,4.204
 2026-08-31,MONTH_END,last business day,high,True,,
 2026-09-04,NFP_approx,first Friday (rule),med,True,,
-2026-09-15,AUCTION,3-Year btc=2.72,high,True,2.72,4.474
-2026-09-15,AUCTION,9-Year 11-Month btc=2.71,high,True,2.71,4.834
-2026-09-15,AUCTION,29-Year 11-Month btc=2.61,high,True,2.61,5.308
 2026-09-16,FOMC,decision,high,True,,
-2026-09-18,AUCTION,19-Year 11-Month btc=2.57,high,True,2.57,5.42
 2026-09-18,OPEX,3rd Friday,high,True,,
-2026-09-25,AUCTION,1-Year 10-Month btc=2.63,high,True,2.63,
-2026-09-30,AUCTION,9-Year 10-Month btc=2.24,high,True,2.24,2.653
-2026-09-30,AUCTION,7-Year btc=2.42,high,True,2.42,5.085
-2026-09-30,AUCTION,5-Year btc=2.21,high,True,2.21,5.033
-2026-09-30,AUCTION,2-Year btc=2.63,high,True,2.63,4.787
-2026-09-30,MONTH_END,last business day,high,True,,
 2026-09-30,QUARTER_END,last business day of quarter,high,True,,
+2026-09-30,MONTH_END,last business day,high,True,,
 2026-10-02,NFP_approx,first Friday (rule),med,True,,
-2026-10-15,AUCTION,3-Year btc=2.62,high,True,2.62,4.932
-2026-10-15,AUCTION,9-Year 10-Month btc=2.77,high,True,2.77,5.3
-2026-10-15,AUCTION,29-Year 10-Month btc=2.54,high,True,2.54,5.618
 2026-10-16,OPEX,3rd Friday,high,True,,
 2026-10-28,FOMC,decision,high,True,,
 2026-10-30,MONTH_END,last business day,high,True,,
@@ -2213,82 +2571,11 @@ date,event,detail,date_confidence,known_in_advance,bid_to_cover,high_yield
 2026-11-05,SHOCK_2.5SIG,ret=-4.409%,high,False,,
 2026-11-06,NFP_approx,first Friday (rule),med,True,,
 2026-11-09,SHOCK_2.5SIG,ret=+2.366%,high,False,,
-2026-11-20,OPEX,3rd Friday,high,True,,
 2026-11-20,SHOCK_2.5SIG,ret=-3.640%,high,False,,
+2026-11-20,OPEX,3rd Friday,high,True,,
+2026-11-23,SHOCK_2.5SIG,ret=+4.709%,high,False,,
 2026-11-30,MONTH_END,last business day,high,True,,
 2026-12-04,NFP_approx,first Friday (rule),med,True,,
 2026-12-18,OPEX,3rd Friday,high,True,,
 2026-12-31,MONTH_END,last business day,high,True,,
 2026-12-31,QUARTER_END,last business day of quarter,high,True,,
-2027-01-01,NFP_approx,first Friday (rule),med,True,,
-2027-01-15,OPEX,3rd Friday,high,True,,
-2027-01-22,BOJ,MPM Day 2 (official 2027),high,True,,
-2027-01-27,FOMC,decision (official 2027 schedule),high,True,,
-2027-01-29,MONTH_END,last business day,high,True,,
-2027-02-04,BOE,MPC confirmed 2027,high,True,,
-2027-02-04,ECB,Governing Council MP Day 2 (official 2027),high,True,,
-2027-02-05,NFP_approx,first Friday (rule),med,True,,
-2027-02-19,OPEX,3rd Friday,high,True,,
-2027-02-26,MONTH_END,last business day,high,True,,
-2027-03-05,NFP_approx,first Friday (rule),med,True,,
-2027-03-17,FOMC,decision (official 2027 schedule),high,True,,
-2027-03-18,BOE,MPC confirmed 2027,high,True,,
-2027-03-18,BOJ,MPM Day 2 (official 2027),high,True,,
-2027-03-18,ECB,Governing Council MP Day 2 (official 2027),high,True,,
-2027-03-19,OPEX,3rd Friday,high,True,,
-2027-03-31,MONTH_END,last business day,high,True,,
-2027-03-31,QUARTER_END,last business day of quarter,high,True,,
-2027-04-02,NFP_approx,first Friday (rule),med,True,,
-2027-04-16,OPEX,3rd Friday,high,True,,
-2027-04-28,BOJ,MPM Day 2 (official 2027),high,True,,
-2027-04-28,FOMC,decision (official 2027 schedule),high,True,,
-2027-04-29,BOE,MPC confirmed 2027,high,True,,
-2027-04-29,ECB,Governing Council MP Day 2 (official 2027),high,True,,
-2027-04-30,MONTH_END,last business day,high,True,,
-2027-05-07,NFP_approx,first Friday (rule),med,True,,
-2027-05-21,OPEX,3rd Friday,high,True,,
-2027-05-31,MONTH_END,last business day,high,True,,
-2027-06-04,NFP_approx,first Friday (rule),med,True,,
-2027-06-09,FOMC,decision (official 2027 schedule),high,True,,
-2027-06-10,ECB,Governing Council MP Day 2 (official 2027),high,True,,
-2027-06-11,BOJ,MPM Day 2 (official 2027),high,True,,
-2027-06-17,BOE,MPC confirmed 2027,high,True,,
-2027-06-18,OPEX,3rd Friday,high,True,,
-2027-06-30,MONTH_END,last business day,high,True,,
-2027-06-30,QUARTER_END,last business day of quarter,high,True,,
-2027-07-02,NFP_approx,first Friday (rule),med,True,,
-2027-07-16,OPEX,3rd Friday,high,True,,
-2027-07-22,BOJ,MPM Day 2 (official 2027),high,True,,
-2027-07-22,ECB,Governing Council MP Day 2 (official 2027),high,True,,
-2027-07-28,FOMC,decision (official 2027 schedule),high,True,,
-2027-07-29,BOE,MPC confirmed 2027,high,True,,
-2027-07-30,MONTH_END,last business day,high,True,,
-2027-08-06,NFP_approx,first Friday (rule),med,True,,
-2027-08-20,OPEX,3rd Friday,high,True,,
-2027-08-31,MONTH_END,last business day,high,True,,
-2027-09-03,NFP_approx,first Friday (rule),med,True,,
-2027-09-09,ECB,Governing Council MP Day 2 (official 2027),high,True,,
-2027-09-15,FOMC,decision (official 2027 schedule),high,True,,
-2027-09-16,BOE,MPC confirmed 2027,high,True,,
-2027-09-17,OPEX,3rd Friday,high,True,,
-2027-09-22,BOJ,MPM Day 2 (official 2027),high,True,,
-2027-09-30,MONTH_END,last business day,high,True,,
-2027-09-30,QUARTER_END,last business day of quarter,high,True,,
-2027-10-01,NFP_approx,first Friday (rule),med,True,,
-2027-10-15,OPEX,3rd Friday,high,True,,
-2027-10-27,FOMC,decision (official 2027 schedule),high,True,,
-2027-10-28,ECB,Governing Council MP Day 2 (official 2027),high,True,,
-2027-10-29,BOJ,MPM Day 2 (official 2027),high,True,,
-2027-10-29,MONTH_END,last business day,high,True,,
-2027-11-04,BOE,MPC confirmed 2027,high,True,,
-2027-11-05,NFP_approx,first Friday (rule),med,True,,
-2027-11-17,FOMC,decision (official 2027 schedule),high,True,,
-2027-11-19,OPEX,3rd Friday,high,True,,
-2027-11-30,MONTH_END,last business day,high,True,,
-2027-12-03,NFP_approx,first Friday (rule),med,True,,
-2027-12-16,BOE,MPC confirmed 2027,high,True,,
-2027-12-16,ECB,Governing Council MP Day 2 (official 2027),high,True,,
-2027-12-17,BOJ,MPM Day 2 (official 2027),high,True,,
-2027-12-17,OPEX,3rd Friday,high,True,,
-2027-12-31,MONTH_END,last business day,high,True,,
-2027-12-31,QUARTER_END,last business day of quarter,high,True,,

@@ -1,15 +1,15 @@
 {
-  "built_utc": "2026-11-21T11:38:06Z",
-  "events": 2029,
+  "built_utc": "2026-11-23T23:22:14Z",
+  "events": 2580,
   "types": {
     "AUCTION": 711,
+    "VIX_ONSET30": 623,
     "NFP_approx": 264,
     "OPEX": 264,
     "MONTH_END": 264,
     "FOMC": 205,
-    "SHOCK_2.5SIG": 160,
-    "QUARTER_END": 88,
-    "VIX_ONSET30": 73
+    "SHOCK_2.5SIG": 161,
+    "QUARTER_END": 88
   },
   "assets": [
     "SPY",

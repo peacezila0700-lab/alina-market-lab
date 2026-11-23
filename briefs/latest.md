@@ -1,4 +1,4 @@
-# Brief 2026-11-21 (generated 2026-11-21T11:38:24Z)
+# Brief 2026-11-23 (generated 2026-11-23T23:22:33Z)
 
 ## State
 | key | value |
@@ -7,29 +7,54 @@
 | vix_percentile_all_history | 96.5 |
 | skew | 138.84 |
 | skew_note | >145 = tail protection expensive; <115 = complacent |
-| dix | 0.3885 |
-| dix_percentile | 7.2 |
-| gex_usd_bn | -2.2 |
-| gex_regime | negative (dealers amplify moves) |
-| vix_slope_3m | 1.16 |
+| dix | 0.3906 |
+| dix_percentile | 8.5 |
+| gex_usd_bn | 1.6 |
+| gex_regime | positive (dealers dampen moves) |
+| vix_slope_3m | None |
 | vix_slope_3m_note | >1 = inverted term structure = stress is NOW, not later |
-| vix_slope_9d | 1.1346 |
+| vix_slope_9d | None |
 | vix_slope_9d_note | >1 = front-end panic (VIX9D above VIX) |
-| vvix_percentile | 0.9959 |
+| vvix_percentile | 0.9146 |
 | vvix_note | vol-of-vol >0.9 means even the hedging market is unstable |
-| term_inversions_last_252d | 9 |
-| ofr_fsi | -1.39 |
-| ofr_fsi_4w_chg | 0.59 |
-| btc_funding_8h_pct | 0.00584 |
-| btc_funding_annualised_pct | 6.71 |
-| btc_long_short_ratio | 1.08 |
+| term_inversions_last_252d | 8 |
+| ofr_fsi | -1.26 |
+| ofr_fsi_4w_chg | 0.22 |
+| btc_funding_8h_pct | 0.00344 |
+| btc_funding_annualised_pct | 7.89 |
+| btc_long_short_ratio | 1.94 |
 | cot_as_of | 2026-11-13 |
 | cot_extremes | [{"instrument": "EURUSD", "noncomm_net_pct_oi_pct156": 0.01, "side": "crowded_short"}, {"instrument": "NATGAS", "noncomm_net_pct_oi_pct156": 0.0, "side": "crowded_short"}, {"instrument": "PLATINUM", "noncomm_net_pct_oi_p |
-| news_volume_today | 124 |
+| news_volume_today | 179 |
 
 ## Next 7 days (scheduled)
 | date | event | detail | confidence |
 |---|---|---|---|
+| 2026-11-23 | SHOCK_2.5SIG | ret=+4.709% | high |
+| 2026-11-30 | MONTH_END | last business day | high |
+| 11-23-2026 | Bank Holiday |  | Holiday |
+| 11-23-2026 | French Flash Manufacturing PMI |  | Medium |
+| 11-23-2026 | French Flash Services PMI |  | Medium |
+| 11-23-2026 | German Flash Manufacturing PMI |  | Medium |
+| 11-23-2026 | German Flash Services PMI |  | Medium |
+| 11-23-2026 | Flash Manufacturing PMI |  | Low |
+| 11-23-2026 | Flash Services PMI |  | Low |
+| 11-23-2026 | Flash Manufacturing PMI |  | Medium |
+| 11-23-2026 | Flash Services PMI |  | Medium |
+| 11-23-2026 | MPC Member Pill Speaks |  | Low |
+| 11-23-2026 | Corporate Profits q/q |  | Low |
+| 11-23-2026 | Flash Manufacturing PMI |  | Medium |
+| 11-23-2026 | Flash Services PMI |  | Medium |
+| 11-23-2026 | FOMC Member Williams Speaks |  | Low |
+| 11-24-2026 | Flash Manufacturing PMI |  | Low |
+| 11-24-2026 | German ifo Business Climate |  | Low |
+| 11-24-2026 | CBI Realized Sales |  | Low |
+| 11-24-2026 | MPC Member Greene Speaks |  | Low |
+| 11-24-2026 | ADP Weekly Employment Change |  | Low |
+| 11-24-2026 | CB Leading Index m/m |  | Low |
+| 11-24-2026 | Belgian NBB Business Climate |  | Low |
+| 11-24-2026 | HPI m/m |  | Low |
+| 11-24-2026 | S&P/CS Composite-20 HPI y/y |  | Low |
 
 ## Base rates for the current state (measured, not forecast)
 
@@ -37,8 +62,8 @@
 |---|---|---|---|---|---|---|
 | VIX | 35.89 | 30-40 | 21d | +3.25 | 73 | 20 |
 | VIX | 35.89 | 30-40 | 252d | +19.16 | 80 | 1 |
-| OFR_FSI | -1.387 | <-0.5 | 21d | +1.20 | 66 | 185 |
-| OFR_FSI | -1.387 | <-0.5 | 252d | +11.44 | 84 | 14 |
+| OFR_FSI | -1.259 | <-0.5 | 21d | +1.20 | 66 | 185 |
+| OFR_FSI | -1.259 | <-0.5 | 252d | +11.44 | 84 | 14 |
 
 ## Levels (support/resistance, measured rules)
 
@@ -56,30 +81,28 @@
 
 ## Headlines (last 48h, entity-tagged)
 
-- [CNBC_Top] Why Anthropic's blockbuster IPO couldn't escape the market correction  `EQUITY`
-- [AlJazeera] Usman Khawaja and David Warner taken off air over Australia’s Sandpapergate  `nan`
-- [AlJazeera] Deadly fire engulfs power station in southern Iraq  `nan`
-- [AlJazeera] Russian missiles hit Poland: What happened, and could NATO respond?  `nan`
-- [AlJazeera] Migrants caravan in Mexico walks towards US border  `nan`
-- [CNBC_Top] S&P 500 correction: Five forces behind the market sell-off  `EQUITY`
-- [AlJazeera] Three US citizens among 4 convicted in Honduras over sex-trafficking case  `nan`
-- [AlJazeera] Funeral held for New York teen shot while walking to school  `nan`
-- [AlJazeera] Can Israel’s opposition bloc stay united against Netanyahu?  `nan`
-- [AlJazeera] Netanyahu is playing with the fire that killed Rabin  `nan`
-- [AlJazeera] Sudan’s war will end, but will it be too late?  `WAR`
-- [AlJazeera] Train collides with minibus in Indonesia  `nan`
-- [AlJazeera] Can mediation succeed in a war-torn world? | Episode 1  `WAR`
-- [AlJazeera] Emergency crews in Ukraine hit by a double-tap strike  `WAR`
-- [AlJazeera] At least four killed, 35 injured in fire at power station in Iraq’s Basra  `nan`
-- [FT_Home] US tech stocks plunge into bear market in worst week since Covid-19 crisis  `EQUITY`
-- [AlJazeera] Spain court grants bail to pro-Palestinian activist James ‘Fergie’ Chambers  `nan`
-- [AlJazeera] Three French police officers sentenced over racist assault on Black man  `nan`
+- [CNBC_Top] Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port  `WAR`
+- [BBC_World] Three killed and dozens missing after fire at Indonesian factory  `nan`
+- [BBC_Business] Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns  `EQUITY`
+- [BBC_Business] San Francisco is enjoying an AI boom, but worries about a crash are growing  `nan`
+- [BBC_Business] Capita shares plunge 70% as boss quits after civil service pensions failure  `EQUITY`
+- [BBC_Business] Next data accessed in cyber breach  `nan`
+- [BBC_Business] Catering giant to switch main share listing to US in further blow to UK  `EQUITY`
+- [BBC_Business] Energy bills will soar - here's how you can ease the pain  `nan`
+- [BBC_Business] Poundland is facing collapse - what's gone wrong?  `nan`
+- [BBC_Business] Pip assessments need 'fundamental overhaul', report to say  `nan`
+- [BBC_Business] South East Water reports loss after supply issues  `nan`
+- [BBC_Business] Hundreds of applications, no replies: Inside the job ghosting problem‌  `nan`
+- [BBC_Business] Centrica boss says he is 'hugely concerned' over impact of soaring energy bills  `nan`
+- [BBC_Business] Can AI really help spot Black Friday deals? We put it to the test  `nan`
+- [BBC_Business] Italian jeweller and businessman Paolo Bulgari dies aged 89  `nan`
+- [BBC_Business] MP criticises Guernsey and Jersey company ownership register plans  `nan`
+- [BBC_Business] Welfare cuts: What's been happening with Pip and universal credit?  `BANK`
+- [BBC_Business] Flights cancelled in Belgium due to cost-of-living strike  `WAR`
 
 ## Flags
 
-- term structure INVERTED (VIX > VIX3M): measured forward 21d SPY median +3.41%, 71% positive, n_eff 15 — historically a recovery rally follows panic, not a short signal; use it to expect gap risk and to size down, not to pick direction.
 - VIХ>=30: volatility elevated — halve size, widen stops, expect gap risk
-- dealer gamma is NEGATIVE: moves get amplified both ways; trend signals are less reliable and stop-hunts are more common
 
 ## Scenario branches (pick one, do not invent)
 
@@ -89,9 +112,9 @@
 
 ## Data age (days)
 
-- vix: 1.49
-- dix_gex: 1.49
-- vol_term_structure: 1.49
-- ofr_fsi: 3.49
-- cot: 8.49
-- news: 0.49
+- vix: 3.97
+- dix_gex: 0.97
+- vol_term_structure: 0.97
+- ofr_fsi: 4.97
+- cot: 10.97
+- news: 0.97
