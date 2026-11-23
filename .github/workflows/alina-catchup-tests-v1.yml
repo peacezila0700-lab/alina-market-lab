@@ -1,0 +1,14 @@
+name: ALINA catchup tests
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Synthetic tests
+        working-directory: alina_catchup_v1
+        run: python3 -m unittest -v
