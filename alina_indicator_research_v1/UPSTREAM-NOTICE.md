@@ -1,0 +1,1 @@
+CCI Arrows by EarnForex.com; https://github.com/EarnForex/CCI-Arrows, commit 843dd190263906958b7ccff4df1661604dee8c9b; Apache License 2.0; see LICENSE-EARNFOREX-APACHE-2.0. The Python adapter is a modified independent offline approximation, not the original MQL source, and is not validated for MT5 equivalence.
