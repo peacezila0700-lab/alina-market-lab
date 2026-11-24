@@ -1,11 +1,11 @@
 {
-  "fetched_utc": "2026-11-23T23:22:11+00:00",
+  "fetched_utc": "2026-11-24T23:22:01+00:00",
   "jobs": [
     {
       "kind": "topic",
       "label": "stock market",
       "status": "OK",
-      "items": 102
+      "items": 92
     },
     {
       "kind": "topic",
@@ -29,25 +29,25 @@
       "kind": "topic",
       "label": "bond yields",
       "status": "OK",
-      "items": 100
+      "items": 102
     },
     {
       "kind": "topic",
       "label": "trade war",
       "status": "OK",
-      "items": 87
+      "items": 90
     },
     {
       "kind": "topic",
       "label": "currency crisis",
       "status": "OK",
-      "items": 38
+      "items": 100
     },
     {
       "kind": "topic",
       "label": "earnings surprise",
       "status": "OK",
-      "items": 100
+      "items": 37
     },
     {
       "kind": "topic",
@@ -59,31 +59,31 @@
       "kind": "topic",
       "label": "recession risk",
       "status": "OK",
-      "items": 80
+      "items": 85
     },
     {
       "kind": "country",
       "label": "US",
       "status": "OK",
-      "items": 71
+      "items": 100
     },
     {
       "kind": "country",
       "label": "UK",
       "status": "OK",
-      "items": 82
+      "items": 80
     },
     {
       "kind": "country",
       "label": "DE",
       "status": "OK",
-      "items": 62
+      "items": 61
     },
     {
       "kind": "country",
       "label": "FR",
       "status": "OK",
-      "items": 32
+      "items": 76
     },
     {
       "kind": "country",
@@ -95,7 +95,7 @@
       "kind": "country",
       "label": "CN",
       "status": "OK",
-      "items": 15
+      "items": 24
     },
     {
       "kind": "country",
@@ -107,19 +107,19 @@
       "kind": "country",
       "label": "BR",
       "status": "OK",
-      "items": 78
+      "items": 32
     },
     {
       "kind": "country",
       "label": "RU",
       "status": "OK",
-      "items": 74
+      "items": 25
     },
     {
       "kind": "country",
       "label": "TH",
       "status": "OK",
-      "items": 77
+      "items": 30
     },
     {
       "kind": "country",
@@ -131,13 +131,13 @@
       "kind": "country",
       "label": "ID",
       "status": "OK",
-      "items": 91
+      "items": 85
     },
     {
       "kind": "country",
       "label": "TR",
       "status": "OK",
-      "items": 79
+      "items": 17
     },
     {
       "kind": "country",
@@ -158,6 +158,6 @@
       "items": 100
     }
   ],
-  "unique_headlines": 1902,
+  "unique_headlines": 1750,
   "note": "Google News RSS is unofficial; every query status is recorded so failures stay visible."
 }

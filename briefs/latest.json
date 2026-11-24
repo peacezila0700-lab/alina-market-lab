@@ -1,27 +1,27 @@
 {
- "generated_utc": "2026-11-23T23:22:33Z",
- "as_of": "2026-11-23",
+ "generated_utc": "2026-11-24T23:22:23Z",
+ "as_of": "2026-11-24",
  "state": {
-  "vix": 35.89,
-  "vix_percentile_all_history": 96.5,
-  "skew": 138.84,
+  "vix": 26.62,
+  "vix_percentile_all_history": 86.7,
+  "skew": 140.37,
   "skew_note": ">145 = tail protection expensive; <115 = complacent",
-  "dix": 0.3906,
-  "dix_percentile": 8.5,
-  "gex_usd_bn": 1.6,
+  "dix": 0.434,
+  "dix_percentile": 49.8,
+  "gex_usd_bn": 1.1,
   "gex_regime": "positive (dealers dampen moves)",
   "vix_slope_3m": null,
   "vix_slope_3m_note": ">1 = inverted term structure = stress is NOW, not later",
   "vix_slope_9d": null,
   "vix_slope_9d_note": ">1 = front-end panic (VIX9D above VIX)",
-  "vvix_percentile": 0.9146,
+  "vvix_percentile": 0.8618,
   "vvix_note": "vol-of-vol >0.9 means even the hedging market is unstable",
   "term_inversions_last_252d": 8,
-  "ofr_fsi": -1.26,
-  "ofr_fsi_4w_chg": 0.22,
-  "btc_funding_8h_pct": 0.00344,
-  "btc_funding_annualised_pct": 7.89,
-  "btc_long_short_ratio": 1.94,
+  "ofr_fsi": -0.45,
+  "ofr_fsi_4w_chg": 0.87,
+  "btc_funding_8h_pct": 0.00782,
+  "btc_funding_annualised_pct": 8.47,
+  "btc_long_short_ratio": 1.67,
   "cot_as_of": "2026-11-13",
   "cot_extremes": [
    {
@@ -55,15 +55,9 @@
     "side": "crowded_short"
    }
   ],
-  "news_volume_today": 179
+  "news_volume_today": 149
  },
  "scheduled_events": [
-  {
-   "date": "2026-11-23",
-   "event": "SHOCK_2.5SIG",
-   "detail": "ret=+4.709%",
-   "date_confidence": "high"
-  },
   {
    "date": "2026-11-30",
    "event": "MONTH_END",
@@ -71,130 +65,13 @@
    "date_confidence": "high"
   },
   {
-   "date": "11-23-2026",
-   "time": "12:00am",
-   "country": "JPY",
-   "title": "Bank Holiday",
-   "impact": "Holiday",
-   "forecast": NaN,
-   "previous": NaN
-  },
-  {
-   "date": "11-23-2026",
-   "time": "8:15am",
-   "country": "EUR",
-   "title": "French Flash Manufacturing PMI",
-   "impact": "Medium",
-   "forecast": "49.8",
-   "previous": "49.3"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "8:15am",
-   "country": "EUR",
-   "title": "French Flash Services PMI",
-   "impact": "Medium",
-   "forecast": "47.4",
-   "previous": "48.4"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "8:30am",
-   "country": "EUR",
-   "title": "German Flash Manufacturing PMI",
-   "impact": "Medium",
-   "forecast": "54.1",
-   "previous": "54.2"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "8:30am",
-   "country": "EUR",
-   "title": "German Flash Services PMI",
-   "impact": "Medium",
-   "forecast": "52.4",
-   "previous": "51.7"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "9:00am",
-   "country": "EUR",
-   "title": "Flash Manufacturing PMI",
-   "impact": "Low",
-   "forecast": "52.7",
-   "previous": "52.4"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "9:00am",
-   "country": "EUR",
-   "title": "Flash Services PMI",
-   "impact": "Low",
-   "forecast": "51.8",
-   "previous": "51.7"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "9:30am",
-   "country": "GBP",
-   "title": "Flash Manufacturing PMI",
-   "impact": "Medium",
-   "forecast": "53.0",
-   "previous": "52.8"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "9:30am",
-   "country": "GBP",
-   "title": "Flash Services PMI",
-   "impact": "Medium",
-   "forecast": "53.0",
-   "previous": "53.1"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "1:00pm",
-   "country": "GBP",
-   "title": "MPC Member Pill Speaks",
+   "date": "11-24-2026",
+   "time": "2:00pm",
+   "country": "CNY",
+   "title": "CB Leading Index m/m",
    "impact": "Low",
    "forecast": NaN,
-   "previous": NaN
-  },
-  {
-   "date": "11-23-2026",
-   "time": "1:32pm",
-   "country": "CAD",
-   "title": "Corporate Profits q/q",
-   "impact": "Low",
-   "forecast": NaN,
-   "previous": "8.7%"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "2:45pm",
-   "country": "USD",
-   "title": "Flash Manufacturing PMI",
-   "impact": "Medium",
-   "forecast": "54.5",
-   "previous": "56.0"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "2:45pm",
-   "country": "USD",
-   "title": "Flash Services PMI",
-   "impact": "Medium",
-   "forecast": "55.6",
-   "previous": "57.9"
-  },
-  {
-   "date": "11-23-2026",
-   "time": "9:00pm",
-   "country": "USD",
-   "title": "FOMC Member Williams Speaks",
-   "impact": "Low",
-   "forecast": NaN,
-   "previous": NaN
+   "previous": "-0.1%"
   },
   {
    "date": "11-24-2026",
@@ -243,7 +120,7 @@
   },
   {
    "date": "11-24-2026",
-   "time": "2:00pm",
+   "time": "1:51pm",
    "country": "CNY",
    "title": "CB Leading Index m/m",
    "impact": "Low",
@@ -429,52 +306,147 @@
    "impact": "Low",
    "forecast": "0.5%",
    "previous": "0.5%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Durable Goods Orders m/m",
+   "impact": "Low",
+   "forecast": "0.7%",
+   "previous": "1.8%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Personal Income m/m",
+   "impact": "Low",
+   "forecast": "0.4%",
+   "previous": "0.2%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Personal Spending m/m",
+   "impact": "Low",
+   "forecast": "0.4%",
+   "previous": "0.5%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Unemployment Claims",
+   "impact": "Low",
+   "forecast": "201K",
+   "previous": "203K"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "3:00pm",
+   "country": "USD",
+   "title": "New Home Sales",
+   "impact": "Low",
+   "forecast": "650K",
+   "previous": "676K"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "3:30pm",
+   "country": "USD",
+   "title": "Crude Oil Inventories",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "3.4M"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "5:00pm",
+   "country": "USD",
+   "title": "Natural Gas Storage",
+   "impact": "Low",
+   "forecast": "-19B",
+   "previous": "20B"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "7:00pm",
+   "country": "USD",
+   "title": "Beige Book",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-26-2026",
+   "time": "12:30am",
+   "country": "AUD",
+   "title": "Private Capital Expenditure q/q",
+   "impact": "Low",
+   "forecast": "4.5%",
+   "previous": "-3.6%"
+  },
+  {
+   "date": "11-26-2026",
+   "time": "12:30am",
+   "country": "AUD",
+   "title": "RBA Bulletin",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-26-2026",
+   "time": "7:00am",
+   "country": "EUR",
+   "title": "German GfK Consumer Climate",
+   "impact": "Low",
+   "forecast": "-29.4",
+   "previous": "-30.8"
+  },
+  {
+   "date": "11-26-2026",
+   "time": "9:00am",
+   "country": "EUR",
+   "title": "M3 Money Supply y/y",
+   "impact": "Low",
+   "forecast": "3.5%",
+   "previous": "3.5%"
+  },
+  {
+   "date": "11-26-2026",
+   "time": "9:00am",
+   "country": "EUR",
+   "title": "Private Loans y/y",
+   "impact": "Low",
+   "forecast": "3.2%",
+   "previous": "3.1%"
   }
  ],
  "base_rates": [
   {
    "factor": "VIX",
-   "value": 35.89,
-   "bucket": "30-40",
+   "value": 26.62,
+   "bucket": "25-30",
    "horizon_days": 21,
-   "n_obs": 430,
-   "n_effective": 20,
-   "median_ret_pct": 3.25,
-   "pct_positive": 73.0,
-   "worst_pct": -30.53
+   "n_obs": 648,
+   "n_effective": 30,
+   "median_ret_pct": 2.28,
+   "pct_positive": 64.2,
+   "worst_pct": -24.59
   },
   {
    "factor": "VIX",
-   "value": 35.89,
-   "bucket": "30-40",
+   "value": 26.62,
+   "bucket": "25-30",
    "horizon_days": 252,
-   "n_obs": 428,
-   "n_effective": 1,
-   "median_ret_pct": 19.16,
-   "pct_positive": 80.4,
-   "worst_pct": -41.47
-  },
-  {
-   "factor": "OFR_FSI",
-   "value": -1.259,
-   "bucket": "<-0.5",
-   "horizon_days": 21,
-   "n_obs": 3903,
-   "n_effective": 185,
-   "median_ret_pct": 1.2,
-   "pct_positive": 65.7,
-   "worst_pct": -33.14
-  },
-  {
-   "factor": "OFR_FSI",
-   "value": -1.259,
-   "bucket": "<-0.5",
-   "horizon_days": 252,
-   "n_obs": 3679,
-   "n_effective": 14,
-   "median_ret_pct": 11.44,
-   "pct_positive": 83.5,
-   "worst_pct": -35.17
+   "n_obs": 635,
+   "n_effective": 2,
+   "median_ret_pct": 9.97,
+   "pct_positive": 61.1,
+   "worst_pct": -47.51
   }
  ],
  "levels": [
@@ -652,261 +624,259 @@
  ],
  "news": [
   {
-   "source": "CNBC_Top",
-   "title": "Zelenskyy praises \u2018exemplary\u2019 drone operation that sank Russian warship in a Libyan port",
-   "entities": "WAR",
-   "link": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Three killed and dozens missing after fire at Indonesian factory",
+   "source": "BangkokPost_World",
+   "title": "Diary of Pope Francis reveals sightings of the devil",
    "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss"
+   "link": "https://www.bangkokpost.com/world/3360450/diary-of-pope-francis-reveals-sightings-of-the-devil"
   },
   {
-   "source": "BBC_Business",
-   "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
-   "entities": "EQUITY",
-   "link": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Capita shares plunge 70% as boss quits after civil service pensions failure",
-   "entities": "EQUITY",
-   "link": "https://www.bbc.co.uk/news/articles/c65y1qqw3kjxo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Next data accessed in cyber breach",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cqj3kjr7ez3vo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Catering giant to switch main share listing to US in further blow to UK",
-   "entities": "EQUITY",
-   "link": "https://www.bbc.co.uk/news/articles/ckz74098jq5po?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Energy bills will soar - here's how you can ease the pain",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Poundland is facing collapse - what's gone wrong?",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cm4g10p2r0g9o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Pip assessments need 'fundamental overhaul', report to say",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cvlyj3rn201xo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "South East Water reports loss after supply issues",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/c6n90j1qxel8o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Hundreds of applications, no replies: Inside the job ghosting problem\u200c",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cm2d94le23xyo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/c6jre7gpdw13o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Can AI really help spot Black Friday deals? We put it to the test",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Italian jeweller and businessman Paolo Bulgari dies aged 89",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/c8e39qk5vrpdo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "MP criticises Guernsey and Jersey company ownership register plans",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cqkgmy2nxy4lo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Welfare cuts: What's been happening with Pip and universal credit?",
+   "source": "BangkokPost_Biz",
+   "title": "BoT eager to shrink informal economy",
    "entities": "BANK",
-   "link": "https://www.bbc.co.uk/news/articles/cj924xvzrr2o?at_medium=RSS&at_campaign=rss"
+   "link": "https://www.bangkokpost.com/business/general/3360754/bot-eager-to-shrink-informal-economy"
   },
   {
-   "source": "BBC_Business",
-   "title": "Flights cancelled in Belgium due to cost-of-living strike",
-   "entities": "WAR",
-   "link": "https://www.bbc.co.uk/news/articles/cwdr155e2d05o?at_medium=RSS&at_campaign=rss"
+   "source": "BangkokPost_Biz",
+   "title": "AI bubble fears fuel hopes of gold revival",
+   "entities": "GOLD|EQUITY",
+   "link": "https://www.bangkokpost.com/business/investment/3360644/ai-bubble-fears-fuel-hopes-of-gold-revival"
   },
   {
-   "source": "BBC_Business",
-   "title": "Who is taking part in France's recent street protests?",
+   "source": "CNBC_Top",
+   "title": "How Meta is using Instagram to get an ad boost from its Muse personal AI agent",
    "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/videos/cw5y188vzxn8o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Democrats win largest House majority since 1992 after flipping North Carolina seat",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/c6vg29g7dlyno?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Russia-bound ship towed away after it was attacked in Gulf of Finland",
-   "entities": "WAR",
-   "link": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Faisal Islam: Why Jensen Huang proved too big to fire",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo?at_medium=RSS&at_campaign=rss"
+   "link": "https://www.cnbc.com/2026/11/24/meta-instagram-muse-ad-revenue.html"
   },
   {
    "source": "BangkokPost_World",
-   "title": "Democrats win largest US House majority since 1992: media",
+   "title": "Pakistani is first foreigner on Chinese space mission",
    "entities": NaN,
-   "link": "https://www.bangkokpost.com/world/3359805/democrats-win-largest-us-house-majority-since-1992-media"
+   "link": "https://www.bangkokpost.com/world/3360465/pakistani-is-first-foreigner-on-chinese-space-mission"
   },
   {
-   "source": "BBC_Business",
-   "title": "Househunter swaps Australia for Wales' most affordable town - where locals are struggling to buy",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cjkgkdppk1nwo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Prominent Zimbabwean preacher arrested on sexual assault allegations",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cxyvdmjr893zo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal",
+   "source": "BangkokPost_World",
+   "title": "Solomon Islands scrapping China security pact",
    "entities": "CNY",
-   "link": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss"
+   "link": "https://www.bangkokpost.com/world/3360481/solomon-islands-scrapping-china-security-pact"
   },
   {
-   "source": "BBC_World",
-   "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
+   "source": "BangkokPost_World",
+   "title": "Norway tries Cameroon separatist for war crimes",
    "entities": "WAR",
-   "link": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss"
+   "link": "https://www.bangkokpost.com/world/3360486/norway-tries-cameroon-separatist-for-war-crimes"
   },
   {
-   "source": "BBC_World",
-   "title": "Iranian authorities flog singer who performed without hijab, lawyers say",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "What failure of COP31 reveals about a divided world",
-   "entities": "OIL",
-   "link": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "Nvidia reinstates CEO after affair with alleged spy",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/videos/cqze7lwdglngo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "India pledges $1.6bn to Nepal in reset of ties",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cwx2ervemj4ko?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Comedian impersonates Trump's dance moves, mocks trade talks at Canada press dinner",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cr930y92dyx4o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_Business",
-   "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Mexican soldiers attacked in wake of drug lord's arrest",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Miley Cyrus marries Maxx Morando in California ceremony",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cq8e0p87l89lo?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Kenya and DR Congo agree to restore ties after tensions over conflict",
+   "source": "BangkokPost_World",
+   "title": "Sheikh Hasina plans Dec 16 return to Bangladesh",
    "entities": "WAR",
-   "link": "https://www.bbc.co.uk/news/articles/cmvg2qnn95vro?at_medium=RSS&at_campaign=rss"
+   "link": "https://www.bangkokpost.com/world/3360491/sheikh-hasina-plans-dec-16-return-to-bangladesh"
   },
   {
-   "source": "BBC_World",
-   "title": "Nigeria's president says he is also hit by water and power cuts plaguing country",
+   "source": "BangkokPost_World",
+   "title": "Two men arrested after break-in at UK royals\u2019 home",
    "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cv1j65xjjk65o?at_medium=RSS&at_campaign=rss"
+   "link": "https://www.bangkokpost.com/world/3360501/two-men-arrested-after-breakin-at-uk-royals-home"
   },
   {
-   "source": "BBC_World",
-   "title": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
-   "entities": "WAR",
-   "link": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss"
+   "source": "BangkokPost_World",
+   "title": "Congress targets Nvidia as Republican China hawks challenge Trump",
+   "entities": "CNY",
+   "link": "https://www.bangkokpost.com/world/3360515/congress-targets-nvidia-as-republican-china-hawks-challenge-trump"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Russian oligarch gives evidence in blockbuster UK divorce trial",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3360529/russian-oligarch-gives-evidence-in-blockbuster-uk-divorce-trial"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Twenty-five hostages taken in botched robbery in Colombia's Cartagena",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3360924/twentyfive-hostages-taken-in-botched-robbery-in-colombias-cartagena"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Thai auto output falls 35% in October due to flood impact",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360419/thai-auto-output-falls-35-in-october-due-to-flood-impact"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Sanofi to buy US biopharma group Insmed for $41bn",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360474/sanofi-to-buy-us-biopharma-group-insmed-for-41bn"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "CP All to exit 7-Eleven business in Cambodia",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360475/cp-all-to-exit-7eleven-business-in-cambodia"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Huang given rapturous reception by Nvidia staff",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360479/huang-given-rapturous-reception-by-nvidia-staff"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Dividend stocks gain appeal given market volatility",
+   "entities": "EQUITY",
+   "link": "https://www.bangkokpost.com/business/investment/3360829/dividend-stocks-gain-appeal-given-market-volatility"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Trading Day: Nvidia bounce fades",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/trading-day-nvidia-bounce-fades-5049227"
+  },
+  {
+   "source": "ECB_Press",
+   "title": "Boris Vuj\u010di\u0107: Resilience in an age of shocks: lessons from central and eastern Europe",
+   "entities": NaN,
+   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261124~17928e5456.en.html"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Nasdaq, S&P 500 slip following Monday\u2019s Nvidia-fueled rally",
+   "entities": "EQUITY",
+   "link": "https://www.investing.com/news/economy-news/wall-st-futures-dip-as-chip-stocks-cool-after-nvidiafueled-rally-5047567"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "China\u2019s Huawei convicted in sprawling US criminal trial over Iran business",
+   "entities": "CNY",
+   "link": "https://www.investing.com/news/economy-news/chinas-huawei-convicted-at-us-criminal-trial-stemming-from-iran-business-5048943"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "Retail turnarounds are taking hold just in time for the holiday season",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/24/retail-turnarounds-holiday-season.html"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "AI cyber-attacks raise security concerns",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360654/ai-cyberattacks-raise-security-concerns"
+  },
+  {
+   "source": "Fed_Press",
+   "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+   "entities": NaN,
+   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "The Western Investment GAAP EPS of -C$0.007, revenue of C$11.1M",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676412-the-western-investment-gaap-eps-of-c0007-revenue-of-c111m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Kutcho Copper announces C$1M private placement",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676410-kutcho-copper-announces-c-1m-private-placement?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Mayfair Gold launches overnight marketed offering",
+   "entities": "GOLD",
+   "link": "https://seekingalpha.com/news/4676415-mayfair-gold-launches-overnight-marketed-offering?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Centuri Holdings to join S&P SmallCap 600, replacing DoubleVerify",
+   "entities": "EQUITY",
+   "link": "https://seekingalpha.com/news/4676416-centuri-holdings-to-join-s-and-p-smallcap-600-replacing-doubleverify?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Here are the major earnings before the open Wednesday",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676162-here-are-the-major-earnings-before-the-open-wednesday?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Vornado Realty Trust to sell 49% stake in 90 Park Avenue for $722.5M",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676417-vornado-realty-trust-to-sell-49-stake-in-90-park-avenue-for-7225m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Trump awards Presidential Medal of Freedom to Rudy Giuliani",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/trump-awards-presidential-medal-of-freedom-to-rudy-giuliani-5048876"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Democrats aim to reverse Trump\u2019s slashes to US food aid, but path unclear",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/democrats-aim-to-reverse-trumps-slashes-to-us-food-aid-but-path-unclear-5048908"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "US arrears leave chemical weapons watchdog facing budget crisis",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/us-arrears-leave-chemical-weapons-watchdog-facing-budget-crisis-5048914"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "CIBC flags December rate hike as Macklem doubles down on inflation concerns",
+   "entities": "RATES",
+   "link": "https://www.investing.com/news/economy-news/cibc-flags-december-rate-hike-as-macklem-doubles-down-on-inflation-concerns-5048927"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value",
+   "entities": "EQUITY",
+   "link": "https://www.investing.com/news/economy-news/anthropic-breaks-below-83-ipo-price-as-debut-rally-unravels-5047654"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Venezuela reports $237.5 billion in public debt in step toward massive restructuring",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/venezuela-unveils-longawaited-economic-framework-puts-debt-at-2375-billion-5048560"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Thai parts makers eye Japan's satellites",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360689/thai-parts-makers-eye-japans-satellites"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "High aviation costs limit expansion during peak season",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360774/high-aviation-costs-limit-expansion-during-peak-season"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "Commercial real estate activity falls 14% in October, as interest rates rise",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html"
   }
  ],
- "flags": [
-  "VI\u0425>=30: volatility elevated \u2014 halve size, widen stops, expect gap risk"
- ],
+ "flags": [],
  "data_age_days": {
-  "vix": 3.97,
+  "vix": 1.97,
   "dix_gex": 0.97,
   "vol_term_structure": 0.97,
   "ofr_fsi": 4.97,
-  "cot": 10.97,
+  "cot": 11.97,
   "news": 0.97
  },
  "scenarios": [
   {
-   "branch": "VIX stays in 30-40",
-   "measured": "median 21d SPY +3.25%, 73% positive, worst -30.5%, n_eff 20",
+   "branch": "VIX stays in 25-30",
+   "measured": "median 21d SPY +2.28%, 64% positive, worst -24.6%, n_eff 30",
    "action": "size normally"
   },
   {

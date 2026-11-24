@@ -1,0 +1,893 @@
+{
+ "generated_utc": "2026-11-24T23:22:23Z",
+ "as_of": "2026-11-24",
+ "state": {
+  "vix": 26.62,
+  "vix_percentile_all_history": 86.7,
+  "skew": 140.37,
+  "skew_note": ">145 = tail protection expensive; <115 = complacent",
+  "dix": 0.434,
+  "dix_percentile": 49.8,
+  "gex_usd_bn": 1.1,
+  "gex_regime": "positive (dealers dampen moves)",
+  "vix_slope_3m": null,
+  "vix_slope_3m_note": ">1 = inverted term structure = stress is NOW, not later",
+  "vix_slope_9d": null,
+  "vix_slope_9d_note": ">1 = front-end panic (VIX9D above VIX)",
+  "vvix_percentile": 0.8618,
+  "vvix_note": "vol-of-vol >0.9 means even the hedging market is unstable",
+  "term_inversions_last_252d": 8,
+  "ofr_fsi": -0.45,
+  "ofr_fsi_4w_chg": 0.87,
+  "btc_funding_8h_pct": 0.00782,
+  "btc_funding_annualised_pct": 8.47,
+  "btc_long_short_ratio": 1.67,
+  "cot_as_of": "2026-11-13",
+  "cot_extremes": [
+   {
+    "instrument": "EURUSD",
+    "noncomm_net_pct_oi_pct156": 0.01,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "NATGAS",
+    "noncomm_net_pct_oi_pct156": 0.0,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "PLATINUM",
+    "noncomm_net_pct_oi_pct156": 0.07,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "SILVER",
+    "noncomm_net_pct_oi_pct156": 0.05,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "USDCHF",
+    "noncomm_net_pct_oi_pct156": 1.0,
+    "side": "crowded_long"
+   },
+   {
+    "instrument": "USDMXN",
+    "noncomm_net_pct_oi_pct156": 0.08,
+    "side": "crowded_short"
+   }
+  ],
+  "news_volume_today": 149
+ },
+ "scheduled_events": [
+  {
+   "date": "2026-11-30",
+   "event": "MONTH_END",
+   "detail": "last business day",
+   "date_confidence": "high"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "2:00pm",
+   "country": "CNY",
+   "title": "CB Leading Index m/m",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "-0.1%"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "12:30am",
+   "country": "JPY",
+   "title": "Flash Manufacturing PMI",
+   "impact": "Low",
+   "forecast": "53.5",
+   "previous": "53.3"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "9:00am",
+   "country": "EUR",
+   "title": "German ifo Business Climate",
+   "impact": "Low",
+   "forecast": "90.5",
+   "previous": "90.2"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "11:00am",
+   "country": "GBP",
+   "title": "CBI Realized Sales",
+   "impact": "Low",
+   "forecast": "-27",
+   "previous": "-10"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "12:30pm",
+   "country": "GBP",
+   "title": "MPC Member Greene Speaks",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-24-2026",
+   "time": "1:15pm",
+   "country": "USD",
+   "title": "ADP Weekly Employment Change",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "23.8K"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "1:51pm",
+   "country": "CNY",
+   "title": "CB Leading Index m/m",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "-0.1%"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "2:00pm",
+   "country": "EUR",
+   "title": "Belgian NBB Business Climate",
+   "impact": "Low",
+   "forecast": "-9.4",
+   "previous": "-9.8"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "2:00pm",
+   "country": "USD",
+   "title": "HPI m/m",
+   "impact": "Low",
+   "forecast": "0.2%",
+   "previous": "0.3%"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "2:00pm",
+   "country": "USD",
+   "title": "S&P/CS Composite-20 HPI y/y",
+   "impact": "Low",
+   "forecast": "2.7%",
+   "previous": "2.7%"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "3:00pm",
+   "country": "USD",
+   "title": "CB Consumer Confidence",
+   "impact": "Medium",
+   "forecast": "92.4",
+   "previous": "91.7"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "3:00pm",
+   "country": "USD",
+   "title": "Richmond Manufacturing Index",
+   "impact": "Low",
+   "forecast": "-2",
+   "previous": "-2"
+  },
+  {
+   "date": "11-24-2026",
+   "time": "5:25pm",
+   "country": "CAD",
+   "title": "BOC Gov Macklem Speaks",
+   "impact": "Medium",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-24-2026",
+   "time": "9:30pm",
+   "country": "USD",
+   "title": "API Weekly Statistical Bulletin",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-24-2026",
+   "time": "11:50pm",
+   "country": "JPY",
+   "title": "SPPI y/y",
+   "impact": "Low",
+   "forecast": "3.6%",
+   "previous": "3.7%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "12:30am",
+   "country": "AUD",
+   "title": "CPI m/m",
+   "impact": "High",
+   "forecast": "0.4%",
+   "previous": "0.8%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "12:30am",
+   "country": "AUD",
+   "title": "CPI y/y",
+   "impact": "High",
+   "forecast": "4.7%",
+   "previous": "4.3%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "12:30am",
+   "country": "AUD",
+   "title": "Trimmed Mean CPI m/m",
+   "impact": "High",
+   "forecast": "0.3%",
+   "previous": "0.3%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "12:30am",
+   "country": "AUD",
+   "title": "Construction Work Done q/q",
+   "impact": "Low",
+   "forecast": "0.8%",
+   "previous": "-2.1%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "5:00am",
+   "country": "JPY",
+   "title": "BOJ Core CPI y/y",
+   "impact": "Low",
+   "forecast": "2.5%",
+   "previous": "2.4%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "7:00am",
+   "country": "EUR",
+   "title": "German Final GDP q/q",
+   "impact": "Low",
+   "forecast": "0.2%",
+   "previous": "0.2%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "9:00am",
+   "country": "CHF",
+   "title": "UBS Economic Expectations",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "-15.3"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "10:42am",
+   "country": "EUR",
+   "title": "German 10-y Bond Auction",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "3.37|1.1"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Core PCE Price Index m/m",
+   "impact": "High",
+   "forecast": "0.3%",
+   "previous": "0.3%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Prelim GDP q/q",
+   "impact": "High",
+   "forecast": "3.5%",
+   "previous": "3.4%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Prelim GDP Price Index q/q",
+   "impact": "Medium",
+   "forecast": "2.3%",
+   "previous": "2.3%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Core Durable Goods Orders m/m",
+   "impact": "Low",
+   "forecast": "0.5%",
+   "previous": "0.5%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Durable Goods Orders m/m",
+   "impact": "Low",
+   "forecast": "0.7%",
+   "previous": "1.8%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Personal Income m/m",
+   "impact": "Low",
+   "forecast": "0.4%",
+   "previous": "0.2%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Personal Spending m/m",
+   "impact": "Low",
+   "forecast": "0.4%",
+   "previous": "0.5%"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Unemployment Claims",
+   "impact": "Low",
+   "forecast": "201K",
+   "previous": "203K"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "3:00pm",
+   "country": "USD",
+   "title": "New Home Sales",
+   "impact": "Low",
+   "forecast": "650K",
+   "previous": "676K"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "3:30pm",
+   "country": "USD",
+   "title": "Crude Oil Inventories",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "3.4M"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "5:00pm",
+   "country": "USD",
+   "title": "Natural Gas Storage",
+   "impact": "Low",
+   "forecast": "-19B",
+   "previous": "20B"
+  },
+  {
+   "date": "11-25-2026",
+   "time": "7:00pm",
+   "country": "USD",
+   "title": "Beige Book",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-26-2026",
+   "time": "12:30am",
+   "country": "AUD",
+   "title": "Private Capital Expenditure q/q",
+   "impact": "Low",
+   "forecast": "4.5%",
+   "previous": "-3.6%"
+  },
+  {
+   "date": "11-26-2026",
+   "time": "12:30am",
+   "country": "AUD",
+   "title": "RBA Bulletin",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-26-2026",
+   "time": "7:00am",
+   "country": "EUR",
+   "title": "German GfK Consumer Climate",
+   "impact": "Low",
+   "forecast": "-29.4",
+   "previous": "-30.8"
+  },
+  {
+   "date": "11-26-2026",
+   "time": "9:00am",
+   "country": "EUR",
+   "title": "M3 Money Supply y/y",
+   "impact": "Low",
+   "forecast": "3.5%",
+   "previous": "3.5%"
+  },
+  {
+   "date": "11-26-2026",
+   "time": "9:00am",
+   "country": "EUR",
+   "title": "Private Loans y/y",
+   "impact": "Low",
+   "forecast": "3.2%",
+   "previous": "3.1%"
+  }
+ ],
+ "base_rates": [
+  {
+   "factor": "VIX",
+   "value": 26.62,
+   "bucket": "25-30",
+   "horizon_days": 21,
+   "n_obs": 648,
+   "n_effective": 30,
+   "median_ret_pct": 2.28,
+   "pct_positive": 64.2,
+   "worst_pct": -24.59
+  },
+  {
+   "factor": "VIX",
+   "value": 26.62,
+   "bucket": "25-30",
+   "horizon_days": 252,
+   "n_obs": 635,
+   "n_effective": 2,
+   "median_ret_pct": 9.97,
+   "pct_positive": 61.1,
+   "worst_pct": -47.51
+  }
+ ],
+ "levels": [
+  {
+   "instrument": "AUDUSD",
+   "close": 0.661901,
+   "atr14": 0.004981,
+   "pdh": 0.668119,
+   "pdl": 0.66358,
+   "pmh": 0.69302,
+   "pml": 0.67728,
+   "pivot": 0.661901,
+   "pivot_r1": 0.661901,
+   "pivot_s1": 0.661901,
+   "swing_hi": 0.70678,
+   "swing_lo": 0.68954,
+   "vp_poc": 0.701684,
+   "vp_hi": 0.72235,
+   "vp_lo": 0.693417,
+   "y52_hi": 0.727738,
+   "y52_lo": 0.65555
+  },
+  {
+   "instrument": "BTC",
+   "close": 57808.390625,
+   "atr14": 3000.786272,
+   "pdh": 62540.210938,
+   "pdl": 57708.699219,
+   "pmh": 75505.335938,
+   "pml": 62017.882812,
+   "pivot": 57507.169271,
+   "pivot_r1": 59382.764323,
+   "pivot_s1": 55932.795573,
+   "swing_hi": 81079.789062,
+   "swing_lo": 79735.859375,
+   "vp_poc": 84365.716374,
+   "vp_hi": 85420.180306,
+   "vp_lo": 74875.540983,
+   "y52_hi": 87363.757812,
+   "y52_lo": 55631.574219
+  },
+  {
+   "instrument": "DXY",
+   "close": 103.809998,
+   "atr14": 0.512143,
+   "pdh": 103.970001,
+   "pdl": 103.589996,
+   "pmh": 103.440002,
+   "pml": 101.489998,
+   "pivot": 103.779999,
+   "pivot_r1": 103.979996,
+   "pivot_s1": 103.610001,
+   "swing_hi": 102.489998,
+   "swing_lo": 101.099998,
+   "vp_poc": 101.86675,
+   "vp_hi": 103.656751,
+   "vp_lo": 99.360748,
+   "y52_hi": 103.970001,
+   "y52_lo": 95.550003
+  },
+  {
+   "instrument": "EURUSD",
+   "close": 1.096972,
+   "atr14": 0.005981,
+   "pdh": 1.1012,
+   "pdl": 1.095638,
+   "pmh": 1.125062,
+   "pml": 1.102657,
+   "pivot": 1.097581,
+   "pivot_r1": 1.099307,
+   "pivot_s1": 1.095245,
+   "swing_hi": 1.127523,
+   "swing_lo": 1.110951,
+   "vp_poc": 1.1205,
+   "vp_hi": 1.163617,
+   "vp_lo": 1.097194,
+   "y52_hi": 1.202357,
+   "y52_lo": 1.095446
+  },
+  {
+   "instrument": "GBPUSD",
+   "close": 1.308644,
+   "atr14": 0.006869,
+   "pdh": 1.317349,
+   "pdl": 1.310599,
+   "pmh": 1.345859,
+   "pml": 1.320934,
+   "pivot": 1.309819,
+   "pivot_r1": 1.311678,
+   "pivot_s1": 1.306784,
+   "swing_hi": 1.350238,
+   "swing_lo": 1.327316,
+   "vp_poc": 1.322273,
+   "vp_hi": 1.354991,
+   "vp_lo": 1.319819,
+   "y52_hi": 1.384677,
+   "y52_lo": 1.307959
+  },
+  {
+   "instrument": "GOLD",
+   "close": 3515.399902,
+   "atr14": 104.071428,
+   "pdh": 3759.5,
+   "pdl": 3620.600098,
+   "pmh": 4157.700195,
+   "pml": 3856.699951,
+   "pivot": 3552.133301,
+   "pivot_r1": 3601.366699,
+   "pivot_s1": 3466.166503,
+   "swing_hi": 4157.700195,
+   "swing_lo": 3879.300049,
+   "vp_poc": 4164.58079,
+   "vp_hi": 4441.104146,
+   "vp_lo": 3986.815775,
+   "y52_hi": 5586.200195,
+   "y52_lo": 3502.899902
+  },
+  {
+   "instrument": "SPY",
+   "close": 689.809998,
+   "atr14": 14.144278,
+   "pdh": 739.900024,
+   "pdl": 715.650024,
+   "pmh": 763.039978,
+   "pml": 741.030029,
+   "pivot": 698.283325,
+   "pivot_r1": 709.816651,
+   "pivot_s1": 678.276673,
+   "swing_hi": 775.640015,
+   "swing_lo": 732.710022,
+   "vp_poc": 766.598912,
+   "vp_hi": 777.667079,
+   "vp_lo": 758.69308,
+   "y52_hi": 781.619995,
+   "y52_lo": 629.280029
+  },
+  {
+   "instrument": "TLT",
+   "close": 81.449997,
+   "atr14": 0.649999,
+   "pdh": 80.449997,
+   "pdl": 79.809998,
+   "pmh": 82.279999,
+   "pml": 79.110001,
+   "pivot": 81.283333,
+   "pivot_r1": 81.876663,
+   "pivot_s1": 80.856666,
+   "swing_hi": 82.419998,
+   "swing_lo": 79.110001,
+   "vp_poc": 81.508749,
+   "vp_hi": 82.464748,
+   "vp_lo": 77.80425,
+   "y52_hi": 90.860001,
+   "y52_lo": 76.43
+  },
+  {
+   "instrument": "USDJPY",
+   "close": 159.707001,
+   "atr14": 0.811856,
+   "pdh": 159.966003,
+   "pdl": 159.279007,
+   "pmh": 160.175995,
+   "pml": 157.845001,
+   "pivot": 159.358668,
+   "pivot_r1": 160.172338,
+   "pivot_s1": 158.893331,
+   "swing_hi": 160.175995,
+   "swing_lo": 156.095993,
+   "vp_poc": 157.825282,
+   "vp_hi": 159.946313,
+   "vp_lo": 156.951916,
+   "y52_hi": 163.979004,
+   "y52_lo": 152.278
+  }
+ ],
+ "news": [
+  {
+   "source": "BangkokPost_World",
+   "title": "Diary of Pope Francis reveals sightings of the devil",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3360450/diary-of-pope-francis-reveals-sightings-of-the-devil"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "BoT eager to shrink informal economy",
+   "entities": "BANK",
+   "link": "https://www.bangkokpost.com/business/general/3360754/bot-eager-to-shrink-informal-economy"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "AI bubble fears fuel hopes of gold revival",
+   "entities": "GOLD|EQUITY",
+   "link": "https://www.bangkokpost.com/business/investment/3360644/ai-bubble-fears-fuel-hopes-of-gold-revival"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "How Meta is using Instagram to get an ad boost from its Muse personal AI agent",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/24/meta-instagram-muse-ad-revenue.html"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Pakistani is first foreigner on Chinese space mission",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3360465/pakistani-is-first-foreigner-on-chinese-space-mission"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Solomon Islands scrapping China security pact",
+   "entities": "CNY",
+   "link": "https://www.bangkokpost.com/world/3360481/solomon-islands-scrapping-china-security-pact"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Norway tries Cameroon separatist for war crimes",
+   "entities": "WAR",
+   "link": "https://www.bangkokpost.com/world/3360486/norway-tries-cameroon-separatist-for-war-crimes"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Sheikh Hasina plans Dec 16 return to Bangladesh",
+   "entities": "WAR",
+   "link": "https://www.bangkokpost.com/world/3360491/sheikh-hasina-plans-dec-16-return-to-bangladesh"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Two men arrested after break-in at UK royals\u2019 home",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3360501/two-men-arrested-after-breakin-at-uk-royals-home"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Congress targets Nvidia as Republican China hawks challenge Trump",
+   "entities": "CNY",
+   "link": "https://www.bangkokpost.com/world/3360515/congress-targets-nvidia-as-republican-china-hawks-challenge-trump"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Russian oligarch gives evidence in blockbuster UK divorce trial",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3360529/russian-oligarch-gives-evidence-in-blockbuster-uk-divorce-trial"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Twenty-five hostages taken in botched robbery in Colombia's Cartagena",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3360924/twentyfive-hostages-taken-in-botched-robbery-in-colombias-cartagena"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Thai auto output falls 35% in October due to flood impact",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360419/thai-auto-output-falls-35-in-october-due-to-flood-impact"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Sanofi to buy US biopharma group Insmed for $41bn",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360474/sanofi-to-buy-us-biopharma-group-insmed-for-41bn"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "CP All to exit 7-Eleven business in Cambodia",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360475/cp-all-to-exit-7eleven-business-in-cambodia"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Huang given rapturous reception by Nvidia staff",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360479/huang-given-rapturous-reception-by-nvidia-staff"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Dividend stocks gain appeal given market volatility",
+   "entities": "EQUITY",
+   "link": "https://www.bangkokpost.com/business/investment/3360829/dividend-stocks-gain-appeal-given-market-volatility"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Trading Day: Nvidia bounce fades",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/trading-day-nvidia-bounce-fades-5049227"
+  },
+  {
+   "source": "ECB_Press",
+   "title": "Boris Vuj\u010di\u0107: Resilience in an age of shocks: lessons from central and eastern Europe",
+   "entities": NaN,
+   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261124~17928e5456.en.html"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Nasdaq, S&P 500 slip following Monday\u2019s Nvidia-fueled rally",
+   "entities": "EQUITY",
+   "link": "https://www.investing.com/news/economy-news/wall-st-futures-dip-as-chip-stocks-cool-after-nvidiafueled-rally-5047567"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "China\u2019s Huawei convicted in sprawling US criminal trial over Iran business",
+   "entities": "CNY",
+   "link": "https://www.investing.com/news/economy-news/chinas-huawei-convicted-at-us-criminal-trial-stemming-from-iran-business-5048943"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "Retail turnarounds are taking hold just in time for the holiday season",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/24/retail-turnarounds-holiday-season.html"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "AI cyber-attacks raise security concerns",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360654/ai-cyberattacks-raise-security-concerns"
+  },
+  {
+   "source": "Fed_Press",
+   "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+   "entities": NaN,
+   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "The Western Investment GAAP EPS of -C$0.007, revenue of C$11.1M",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676412-the-western-investment-gaap-eps-of-c0007-revenue-of-c111m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Kutcho Copper announces C$1M private placement",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676410-kutcho-copper-announces-c-1m-private-placement?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Mayfair Gold launches overnight marketed offering",
+   "entities": "GOLD",
+   "link": "https://seekingalpha.com/news/4676415-mayfair-gold-launches-overnight-marketed-offering?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Centuri Holdings to join S&P SmallCap 600, replacing DoubleVerify",
+   "entities": "EQUITY",
+   "link": "https://seekingalpha.com/news/4676416-centuri-holdings-to-join-s-and-p-smallcap-600-replacing-doubleverify?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Here are the major earnings before the open Wednesday",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676162-here-are-the-major-earnings-before-the-open-wednesday?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Vornado Realty Trust to sell 49% stake in 90 Park Avenue for $722.5M",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676417-vornado-realty-trust-to-sell-49-stake-in-90-park-avenue-for-7225m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Trump awards Presidential Medal of Freedom to Rudy Giuliani",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/trump-awards-presidential-medal-of-freedom-to-rudy-giuliani-5048876"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Democrats aim to reverse Trump\u2019s slashes to US food aid, but path unclear",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/democrats-aim-to-reverse-trumps-slashes-to-us-food-aid-but-path-unclear-5048908"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "US arrears leave chemical weapons watchdog facing budget crisis",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/us-arrears-leave-chemical-weapons-watchdog-facing-budget-crisis-5048914"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "CIBC flags December rate hike as Macklem doubles down on inflation concerns",
+   "entities": "RATES",
+   "link": "https://www.investing.com/news/economy-news/cibc-flags-december-rate-hike-as-macklem-doubles-down-on-inflation-concerns-5048927"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value",
+   "entities": "EQUITY",
+   "link": "https://www.investing.com/news/economy-news/anthropic-breaks-below-83-ipo-price-as-debut-rally-unravels-5047654"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Venezuela reports $237.5 billion in public debt in step toward massive restructuring",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/venezuela-unveils-longawaited-economic-framework-puts-debt-at-2375-billion-5048560"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Thai parts makers eye Japan's satellites",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360689/thai-parts-makers-eye-japans-satellites"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "High aviation costs limit expansion during peak season",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3360774/high-aviation-costs-limit-expansion-during-peak-season"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "Commercial real estate activity falls 14% in October, as interest rates rise",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html"
+  }
+ ],
+ "flags": [],
+ "data_age_days": {
+  "vix": 1.97,
+  "dix_gex": 0.97,
+  "vol_term_structure": 0.97,
+  "ofr_fsi": 4.97,
+  "cot": 11.97,
+  "news": 0.97
+ },
+ "scenarios": [
+  {
+   "branch": "VIX stays in 25-30",
+   "measured": "median 21d SPY +2.28%, 64% positive, worst -24.6%, n_eff 30",
+   "action": "size normally"
+  },
+  {
+   "branch": "event surprise larger than expected",
+   "measured": "FOMC day |SPY move| = 1.09x a random day; NFP = 1.33x on TLT",
+   "action": "trade the SECOND move (post-event drift), not the first print \u2014 the first print is where spreads are widest and the edge is thinnest"
+  },
+  {
+   "branch": "nothing scheduled and vol low",
+   "measured": "VIX 12-15 bucket: median 12m SPY +11.9%, 86.7% positive (n_eff small)",
+   "action": "this is a carry/momentum environment, not a mean-reversion one"
+  }
+ ]
+}
