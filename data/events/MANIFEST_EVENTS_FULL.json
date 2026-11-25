@@ -1,8 +1,7 @@
 {
-  "built_utc": "2026-11-24T23:22:04Z",
-  "events": 2580,
+  "built_utc": "2026-11-25T23:23:27Z",
+  "events": 1869,
   "types": {
-    "AUCTION": 711,
     "VIX_ONSET30": 623,
     "NFP_approx": 264,
     "OPEX": 264,
