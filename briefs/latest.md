@@ -1,69 +1,68 @@
-# Brief 2026-11-25 (generated 2026-11-25T23:23:46Z)
+# Brief 2026-11-26 (generated 2026-11-26T23:27:04Z)
 
 ## State
 | key | value |
 |---|---|
-| vix | 26.36 |
-| vix_percentile_all_history | 86.2 |
-| skew | 139.16 |
+| vix | 28.29 |
+| vix_percentile_all_history | 89.7 |
+| skew | 142.06 |
 | skew_note | >145 = tail protection expensive; <115 = complacent |
 | dix | 0.4299 |
 | dix_percentile | 45.3 |
 | gex_usd_bn | 0.9 |
 | gex_regime | positive (dealers dampen moves) |
-| vix_slope_3m | None |
+| vix_slope_3m | 1.0761 |
 | vix_slope_3m_note | >1 = inverted term structure = stress is NOW, not later |
-| vix_slope_9d | None |
+| vix_slope_9d | 1.0467 |
 | vix_slope_9d_note | >1 = front-end panic (VIX9D above VIX) |
 | vvix_percentile | 0.874 |
 | vvix_note | vol-of-vol >0.9 means even the hedging market is unstable |
 | term_inversions_last_252d | 8 |
-| ofr_fsi | -1.08 |
-| ofr_fsi_4w_chg | 0.49 |
-| btc_funding_8h_pct | 0.00686 |
-| btc_funding_annualised_pct | 8.63 |
-| btc_long_short_ratio | 1.62 |
+| ofr_fsi | -1.14 |
+| ofr_fsi_4w_chg | 0.77 |
+| btc_funding_8h_pct | 0.00479 |
+| btc_funding_annualised_pct | 9.06 |
+| btc_long_short_ratio | 1.59 |
 | cot_as_of | 2026-11-13 |
 | cot_extremes | [{"instrument": "EURUSD", "noncomm_net_pct_oi_pct156": 0.01, "side": "crowded_short"}, {"instrument": "NATGAS", "noncomm_net_pct_oi_pct156": 0.0, "side": "crowded_short"}, {"instrument": "PLATINUM", "noncomm_net_pct_oi_p |
-| news_volume_today | 163 |
+| news_volume_today | 151 |
 
 ## Next 7 days (scheduled)
 | date | event | detail | confidence |
 |---|---|---|---|
 | 2026-11-30 | MONTH_END | last business day | high |
-| 11-25-2026 | German 10-y Bond Auction |  | Low |
-| 11-25-2026 | CPI m/m |  | High |
-| 11-25-2026 | CPI y/y |  | High |
-| 11-25-2026 | Trimmed Mean CPI m/m |  | High |
-| 11-25-2026 | Construction Work Done q/q |  | Low |
-| 11-25-2026 | BOJ Core CPI y/y |  | Low |
-| 11-25-2026 | German Final GDP q/q |  | Low |
-| 11-25-2026 | UBS Economic Expectations |  | Low |
-| 11-25-2026 | German 10-y Bond Auction |  | Low |
-| 11-25-2026 | FOMC Member Bowman Speaks |  | Low |
-| 11-25-2026 | Core PCE Price Index m/m |  | High |
-| 11-25-2026 | Prelim GDP q/q |  | High |
-| 11-25-2026 | Prelim GDP Price Index q/q |  | Medium |
-| 11-25-2026 | Core Durable Goods Orders m/m |  | Low |
-| 11-25-2026 | Durable Goods Orders m/m |  | Low |
-| 11-25-2026 | Personal Income m/m |  | Low |
-| 11-25-2026 | Personal Spending m/m |  | Low |
-| 11-25-2026 | Unemployment Claims |  | Low |
-| 11-25-2026 | Monetary Policy Report Hearings |  | Medium |
-| 11-25-2026 | New Home Sales |  | Low |
-| 11-25-2026 | Crude Oil Inventories |  | Low |
-| 11-25-2026 | Natural Gas Storage |  | Low |
-| 11-25-2026 | Beige Book |  | Low |
 | 11-26-2026 | Private Capital Expenditure q/q |  | Low |
+| 11-26-2026 | RBA Bulletin |  | Low |
+| 11-26-2026 | German GfK Consumer Climate |  | Low |
+| 11-26-2026 | M3 Money Supply y/y |  | Low |
+| 11-26-2026 | Private Loans y/y |  | Low |
+| 11-26-2026 | Euro Summit |  | Low |
+| 11-26-2026 | BOE Financial Stability Report |  | Low |
+| 11-26-2026 | FPC Meeting Minutes |  | Low |
+| 11-26-2026 | FPC Statement |  | Low |
+| 11-26-2026 | ECB Monetary Policy Meeting Accounts |  | Low |
+| 11-26-2026 | Bank Holiday |  | Holiday |
+| 11-26-2026 | Tokyo Core CPI y/y |  | Medium |
+| 11-27-2026 | French Consumer Spending m/m |  | Low |
+| 11-27-2026 | French Final Private Payrolls q/q |  | Low |
+| 11-27-2026 | French Prelim CPI m/m |  | Low |
+| 11-27-2026 | French Prelim GDP q/q |  | Low |
+| 11-27-2026 | Spanish Flash CPI y/y |  | Low |
+| 11-27-2026 | German Unemployment Change |  | Low |
+| 11-27-2026 | Italian 10-y Bond Auction |  | Low |
+| 11-27-2026 | German Buba President Nagel Speaks |  | Low |
+| 11-27-2026 | Current Account |  | Low |
+| 11-27-2026 | Goods Trade Balance |  | Low |
+| 11-27-2026 | Prelim Wholesale Inventories m/m |  | Low |
 
 ## Base rates for the current state (measured, not forecast)
 
 | factor | value | bucket | horizon | median % | % positive | n_eff |
 |---|---|---|---|---|---|---|
-| VIX | 26.36 | 25-30 | 21d | +2.28 | 64 | 30 |
-| VIX | 26.36 | 25-30 | 252d | +9.97 | 61 | 2 |
-| OFR_FSI | -1.082 | <-0.5 | 21d | +1.20 | 66 | 185 |
-| OFR_FSI | -1.082 | <-0.5 | 252d | +11.44 | 84 | 14 |
+| VIX | 28.29 | 25-30 | 21d | +2.28 | 64 | 30 |
+| VIX | 28.29 | 25-30 | 252d | +9.97 | 61 | 2 |
+| OFR_FSI | -1.141 | <-0.5 | 21d | +1.20 | 66 | 185 |
+| OFR_FSI | -1.141 | <-0.5 | 252d | +11.44 | 84 | 14 |
 
 ## Levels (support/resistance, measured rules)
 
@@ -81,27 +80,28 @@
 
 ## Headlines (last 48h, entity-tagged)
 
-- [MarketWatch] Nvidia is heading for its first ‘death cross’ since March 2025 as stock continues to struggle  `EQUITY`
-- [BangkokPost_Biz] Phuket to host B1bn Muay Thai stadium  `nan`
-- [Investing_Economy] Exclusive-US famine monitor to halt reporting as funding shortfall hits staff, sources say  `nan`
-- [Investing_Economy] How the Trump administration determined Jensen Huang is not a national security threat  `nan`
-- [Investing_Economy] US economy roars ahead in third quarter, inflation remains high in October  `RATES`
-- [Investing_Economy] Nasdaq, S&P 500 end down, but well off lows as investors buy bargains  `EQUITY`
-- [Fed_Press] Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans  `USD`
-- [ECB_Press] Card payments edge past cash in shops; euro area consumers want both  `EUR`
-- [Investing_Markets] Why is Targa Resources stock sliding today?  `EQUITY`
-- [BangkokPost_World] China, Cambodia stage joint military drills  `CNY`
-- [BangkokPost_Biz] Agreement offers backing for real estate developers  `BANK`
-- [BangkokPost_World] Exiled Catalan separatist leader returning to Spain on Dec 12  `nan`
-- [BangkokPost_World] Cost-of-living strike in Greece hits trains and planes  `WAR`
-- [CNBC_Top] Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank  `EQUITY|RATES|BANK`
-- [BangkokPost_World] Israeli lawmakers approve Oct 7 probe opposed by Netanyahu  `WAR`
-- [BangkokPost_World] Egypt says 30 dead in Cairo fire after fuel truck overturns  `nan`
-- [BangkokPost_World] Houthis say hit two Saudi ports in response to coalition strikes  `WAR`
-- [BangkokPost_World] Colombia police reveal 76 hostages were caught in supermarket siege  `nan`
+- [BangkokPost_World] US aid cuts push starving Nigerians into jihadist embrace  `nan`
+- [BangkokPost_World] Hundreds mark Hong Kong fire anniversary  `nan`
+- [BangkokPost_Biz] WHA puts focus on distribution centres  `nan`
+- [CNBC_Top] Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs  `EQUITY`
+- [BangkokPost_World] Victims’ families await justice ahead of Duterte’s ICC trial  `nan`
+- [BangkokPost_World] US clears SpaceX to launch up to 1 million data-centre satellites  `nan`
+- [BangkokPost_World] Family of Japanese journalist held in Russia ‘trapped in grief’  `nan`
+- [BangkokPost_World] Man arrested after deadly truck disaster in Egypt  `nan`
+- [BangkokPost_World] Rescued hostage recounts 17-hour Colombia supermarket siege  `nan`
+- [BangkokPost_World] Alleged Russian spy goes on trial in Berlin  `nan`
+- [FT_Home] Two Italians killed in drone strike on Kuwait  `WAR`
+- [BangkokPost_World] Hungarians confront secrets and lies as Communist files unsealed  `nan`
+- [BangkokPost_Biz] Nvidia halts server shipments to Southeast Asia  `nan`
+- [BangkokPost_Biz] SEC data breach affects 155 users  `nan`
+- [BangkokPost_Biz] Status update: Asian nations’ trade talks with US  `CNY|TARIFF`
+- [BangkokPost_Biz] Thailand leads as travel preferences evolve  `nan`
+- [BangkokPost_Biz] Egat targets grid stability in new plan  `nan`
+- [BangkokPost_Biz] Call for AI benefits to be better shared across society  `BANK`
 
 ## Flags
 
+- term structure INVERTED (VIX > VIX3M): measured forward 21d SPY median +3.41%, 71% positive, n_eff 15 — historically a recovery rally follows panic, not a short signal; use it to expect gap risk and to size down, not to pick direction.
 
 ## Scenario branches (pick one, do not invent)
 
@@ -111,9 +111,9 @@
 
 ## Data age (days)
 
-- vix: 1.97
-- dix_gex: 0.97
-- vol_term_structure: 0.97
-- ofr_fsi: 2.97
-- cot: 12.97
-- news: 0.97
+- vix: 1.98
+- dix_gex: 1.98
+- vol_term_structure: 1.98
+- ofr_fsi: 2.98
+- cot: 13.98
+- news: 0.98

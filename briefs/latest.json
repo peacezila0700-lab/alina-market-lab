@@ -1,27 +1,27 @@
 {
- "generated_utc": "2026-11-25T23:23:46Z",
- "as_of": "2026-11-25",
+ "generated_utc": "2026-11-26T23:27:04Z",
+ "as_of": "2026-11-26",
  "state": {
-  "vix": 26.36,
-  "vix_percentile_all_history": 86.2,
-  "skew": 139.16,
+  "vix": 28.29,
+  "vix_percentile_all_history": 89.7,
+  "skew": 142.06,
   "skew_note": ">145 = tail protection expensive; <115 = complacent",
   "dix": 0.4299,
   "dix_percentile": 45.3,
   "gex_usd_bn": 0.9,
   "gex_regime": "positive (dealers dampen moves)",
-  "vix_slope_3m": null,
+  "vix_slope_3m": 1.0761,
   "vix_slope_3m_note": ">1 = inverted term structure = stress is NOW, not later",
-  "vix_slope_9d": null,
+  "vix_slope_9d": 1.0467,
   "vix_slope_9d_note": ">1 = front-end panic (VIX9D above VIX)",
   "vvix_percentile": 0.874,
   "vvix_note": "vol-of-vol >0.9 means even the hedging market is unstable",
   "term_inversions_last_252d": 8,
-  "ofr_fsi": -1.08,
-  "ofr_fsi_4w_chg": 0.49,
-  "btc_funding_8h_pct": 0.00686,
-  "btc_funding_annualised_pct": 8.63,
-  "btc_long_short_ratio": 1.62,
+  "ofr_fsi": -1.14,
+  "ofr_fsi_4w_chg": 0.77,
+  "btc_funding_8h_pct": 0.00479,
+  "btc_funding_annualised_pct": 9.06,
+  "btc_long_short_ratio": 1.59,
   "cot_as_of": "2026-11-13",
   "cot_extremes": [
    {
@@ -55,7 +55,7 @@
     "side": "crowded_short"
    }
   ],
-  "news_volume_today": 163
+  "news_volume_today": 151
  },
  "scheduled_events": [
   {
@@ -63,213 +63,6 @@
    "event": "MONTH_END",
    "detail": "last business day",
    "date_confidence": "high"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "10:42am",
-   "country": "EUR",
-   "title": "German 10-y Bond Auction",
-   "impact": "Low",
-   "forecast": NaN,
-   "previous": "3.37|1.1"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "12:30am",
-   "country": "AUD",
-   "title": "CPI m/m",
-   "impact": "High",
-   "forecast": "0.4%",
-   "previous": "0.8%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "12:30am",
-   "country": "AUD",
-   "title": "CPI y/y",
-   "impact": "High",
-   "forecast": "4.7%",
-   "previous": "4.3%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "12:30am",
-   "country": "AUD",
-   "title": "Trimmed Mean CPI m/m",
-   "impact": "High",
-   "forecast": "0.3%",
-   "previous": "0.3%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "12:30am",
-   "country": "AUD",
-   "title": "Construction Work Done q/q",
-   "impact": "Low",
-   "forecast": "0.8%",
-   "previous": "-2.1%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "5:00am",
-   "country": "JPY",
-   "title": "BOJ Core CPI y/y",
-   "impact": "Low",
-   "forecast": "2.5%",
-   "previous": "2.4%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "7:00am",
-   "country": "EUR",
-   "title": "German Final GDP q/q",
-   "impact": "Low",
-   "forecast": "0.2%",
-   "previous": "0.2%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "9:00am",
-   "country": "CHF",
-   "title": "UBS Economic Expectations",
-   "impact": "Low",
-   "forecast": NaN,
-   "previous": "-15.3"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "10:32am",
-   "country": "EUR",
-   "title": "German 10-y Bond Auction",
-   "impact": "Low",
-   "forecast": NaN,
-   "previous": "3.37|1.1"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "12:25pm",
-   "country": "USD",
-   "title": "FOMC Member Bowman Speaks",
-   "impact": "Low",
-   "forecast": NaN,
-   "previous": NaN
-  },
-  {
-   "date": "11-25-2026",
-   "time": "1:30pm",
-   "country": "USD",
-   "title": "Core PCE Price Index m/m",
-   "impact": "High",
-   "forecast": "0.3%",
-   "previous": "0.3%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "1:30pm",
-   "country": "USD",
-   "title": "Prelim GDP q/q",
-   "impact": "High",
-   "forecast": "3.5%",
-   "previous": "3.4%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "1:30pm",
-   "country": "USD",
-   "title": "Prelim GDP Price Index q/q",
-   "impact": "Medium",
-   "forecast": "2.3%",
-   "previous": "2.3%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "1:30pm",
-   "country": "USD",
-   "title": "Core Durable Goods Orders m/m",
-   "impact": "Low",
-   "forecast": "0.5%",
-   "previous": "0.5%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "1:30pm",
-   "country": "USD",
-   "title": "Durable Goods Orders m/m",
-   "impact": "Low",
-   "forecast": "0.7%",
-   "previous": "1.8%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "1:30pm",
-   "country": "USD",
-   "title": "Personal Income m/m",
-   "impact": "Low",
-   "forecast": "0.4%",
-   "previous": "0.2%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "1:30pm",
-   "country": "USD",
-   "title": "Personal Spending m/m",
-   "impact": "Low",
-   "forecast": "0.4%",
-   "previous": "0.5%"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "1:30pm",
-   "country": "USD",
-   "title": "Unemployment Claims",
-   "impact": "Low",
-   "forecast": "201K",
-   "previous": "203K"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "2:15pm",
-   "country": "GBP",
-   "title": "Monetary Policy Report Hearings",
-   "impact": "Medium",
-   "forecast": NaN,
-   "previous": NaN
-  },
-  {
-   "date": "11-25-2026",
-   "time": "3:00pm",
-   "country": "USD",
-   "title": "New Home Sales",
-   "impact": "Low",
-   "forecast": "650K",
-   "previous": "676K"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "3:30pm",
-   "country": "USD",
-   "title": "Crude Oil Inventories",
-   "impact": "Low",
-   "forecast": "2.0M",
-   "previous": "3.4M"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "5:00pm",
-   "country": "USD",
-   "title": "Natural Gas Storage",
-   "impact": "Low",
-   "forecast": "-19B",
-   "previous": "20B"
-  },
-  {
-   "date": "11-25-2026",
-   "time": "7:00pm",
-   "country": "USD",
-   "title": "Beige Book",
-   "impact": "Low",
-   "forecast": NaN,
-   "previous": NaN
   },
   {
    "date": "11-26-2026",
@@ -315,6 +108,15 @@
    "impact": "Low",
    "forecast": "3.2%",
    "previous": "3.1%"
+  },
+  {
+   "date": "11-26-2026",
+   "time": "9:15am",
+   "country": "EUR",
+   "title": "Euro Summit",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
   },
   {
    "date": "11-26-2026",
@@ -423,12 +225,57 @@
    "impact": "Low",
    "forecast": "5K",
    "previous": "4K"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "10:33am",
+   "country": "EUR",
+   "title": "Italian 10-y Bond Auction",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "4.49|1.6"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "12:40pm",
+   "country": "EUR",
+   "title": "German Buba President Nagel Speaks",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-27-2026",
+   "time": "1:30pm",
+   "country": "CAD",
+   "title": "Current Account",
+   "impact": "Low",
+   "forecast": "9.5B",
+   "previous": "8.8B"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Goods Trade Balance",
+   "impact": "Low",
+   "forecast": "-135.9B",
+   "previous": "-134.9B"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Prelim Wholesale Inventories m/m",
+   "impact": "Low",
+   "forecast": "0.5%",
+   "previous": "0.6%"
   }
  ],
  "base_rates": [
   {
    "factor": "VIX",
-   "value": 26.36,
+   "value": 28.29,
    "bucket": "25-30",
    "horizon_days": 21,
    "n_obs": 648,
@@ -439,7 +286,7 @@
   },
   {
    "factor": "VIX",
-   "value": 26.36,
+   "value": 28.29,
    "bucket": "25-30",
    "horizon_days": 252,
    "n_obs": 635,
@@ -450,7 +297,7 @@
   },
   {
    "factor": "OFR_FSI",
-   "value": -1.082,
+   "value": -1.141,
    "bucket": "<-0.5",
    "horizon_days": 21,
    "n_obs": 3903,
@@ -461,7 +308,7 @@
   },
   {
    "factor": "OFR_FSI",
-   "value": -1.082,
+   "value": -1.141,
    "bucket": "<-0.5",
    "horizon_days": 252,
    "n_obs": 3679,
@@ -646,254 +493,256 @@
  ],
  "news": [
   {
-   "source": "MarketWatch",
-   "title": "Nvidia is heading for its first \u2018death cross\u2019 since March 2025 as stock continues to struggle",
-   "entities": "EQUITY",
-   "link": "https://www.marketwatch.com/story/nvidia-is-heading-for-its-first-death-cross-since-march-2025-as-stock-continues-to-struggle-a611b99c?mod=mw_rss_topstories"
+   "source": "BangkokPost_World",
+   "title": "US aid cuts push starving Nigerians into jihadist embrace",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361649/us-aid-cuts-push-starving-nigerians-into-jihadist-embrace"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Hundreds mark Hong Kong fire anniversary",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361720/hundreds-mark-hong-kong-fire-anniversary"
   },
   {
    "source": "BangkokPost_Biz",
-   "title": "Phuket to host B1bn Muay Thai stadium",
+   "title": "WHA puts focus on distribution centres",
    "entities": NaN,
-   "link": "https://www.bangkokpost.com/business/general/3361239/phuket-to-host-b1bn-muay-thai-stadium"
+   "link": "https://www.bangkokpost.com/business/general/3361894/wha-puts-focus-on-distribution-centres"
   },
   {
-   "source": "Investing_Economy",
-   "title": "Exclusive-US famine monitor to halt reporting as funding shortfall hits staff, sources say",
-   "entities": NaN,
-   "link": "https://www.investing.com/news/economy-news/exclusiveus-famine-monitor-to-halt-reporting-as-funding-shortfall-hits-staff-sources-say-5051409"
-  },
-  {
-   "source": "Investing_Economy",
-   "title": "How the Trump administration determined Jensen Huang is not a national security threat",
-   "entities": NaN,
-   "link": "https://www.investing.com/news/economy-news/us-justice-department-did-not-open-probe-into-jensen-huang-before-reinstatement-sources-say-5051296"
-  },
-  {
-   "source": "Investing_Economy",
-   "title": "US economy roars ahead in third quarter, inflation remains high in October",
-   "entities": "RATES",
-   "link": "https://www.investing.com/news/economy-news/us-inflation-rises-further-in-october-5050840"
-  },
-  {
-   "source": "Investing_Economy",
-   "title": "Nasdaq, S&P 500 end down, but well off lows as investors buy bargains",
+   "source": "CNBC_Top",
+   "title": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
    "entities": "EQUITY",
-   "link": "https://www.investing.com/news/economy-news/nasdaq-futures-slide-over-2-on-fresh-us-tariff-concerns-inflation-data-in-focus-5050138"
+   "link": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html"
   },
   {
-   "source": "Fed_Press",
-   "title": "Agencies announce dollar thresholds for smaller loan exemption from appraisal requirements for higher-priced mortgage loans",
-   "entities": "USD",
-   "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125a.htm"
+   "source": "BangkokPost_World",
+   "title": "Victims\u2019 families await justice ahead of Duterte\u2019s ICC trial",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361659/victims-families-await-justice-ahead-of-dutertes-icc-trial"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "US clears SpaceX to launch up to 1 million data-centre satellites",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361674/us-clears-spacex-to-launch-up-to-1-million-datacentre-satellites"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Family of Japanese journalist held in Russia \u2018trapped in grief\u2019",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361684/family-of-japanese-journalist-held-in-russia-trapped-in-grief"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Man arrested after deadly truck disaster in Egypt",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361709/man-arrested-after-deadly-truck-disaster-in-egypt"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Rescued hostage recounts 17-hour Colombia supermarket siege",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361715/rescued-hostage-recounts-17hour-colombia-supermarket-siege"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Alleged Russian spy goes on trial in Berlin",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361725/alleged-russian-spy-goes-on-trial-in-berlin"
+  },
+  {
+   "source": "FT_Home",
+   "title": "Two Italians killed in drone strike on Kuwait",
+   "entities": "WAR",
+   "link": "https://www.ft.com/content/e5f3128d-5f8b-416c-90d1-2549175cb091?syn-25a6b1a6=1"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Hungarians confront secrets and lies as Communist files unsealed",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3361730/hungarians-confront-secrets-and-lies-as-communist-files-unsealed"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Nvidia halts server shipments to Southeast Asia",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3361629/nvidia-halts-server-shipments-to-southeast-asia"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "SEC data breach affects 155 users",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3361696/sec-data-breach-affects-155-users"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Status update: Asian nations\u2019 trade talks with US",
+   "entities": "CNY|TARIFF",
+   "link": "https://www.bangkokpost.com/business/general/3361701/status-update-asian-nations-trade-talks-with-us"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Thailand leads as travel preferences evolve",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3361899/thailand-leads-as-travel-preferences-evolve"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Egat targets grid stability in new plan",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3361939/egat-targets-grid-stability-in-new-plan"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Call for AI benefits to be better shared across society",
+   "entities": "BANK",
+   "link": "https://www.bangkokpost.com/business/general/3361969/call-for-ai-benefits-to-be-better-shared-across-society"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "U.S. retailers offer Thanksgiving deals even as meal costs, turkey prices rise",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/us-retailers-offer-thanksgiving-deals-even-as-meal-costs-turkey-prices-rise-5052672"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Calls grow for stronger laws to tackle AI cyberthreats",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3362099/calls-grow-for-stronger-laws-to-tackle-ai-cyberthreats"
   },
   {
    "source": "ECB_Press",
-   "title": "Card payments edge past cash in shops; euro area consumers want both",
+   "title": "Meeting of 28-29 October 2026",
+   "entities": NaN,
+   "link": "https://www.ecb.europa.eu//press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Euro countries pick Spain\u2019s De Cos as ECB chief, Costa says",
    "entities": "EUR",
-   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125~26d1ade228.en.html"
+   "link": "https://www.investing.com/news/economy-news/euro-countries-pick-spains-de-cos-as-ecb-chief-costa-says-5052656"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Thailand shifts focus to investment-led growth",
+   "entities": "TARIFF",
+   "link": "https://www.bangkokpost.com/business/general/3361974/thailand-shifts-focus-to-investmentled-growth"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Innovator Premium Income 15 Buffer ETF - April declares $0.1412 dividend",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676903-innovator-premium-income-15-buffer-etf-april-declares-0_1412-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Innovator S&P Investment Grade Preferred ETF declares $0.085 dividend",
+   "entities": "EQUITY",
+   "link": "https://seekingalpha.com/news/4676904-innovator-s-and-p-investment-grade-preferred-etf-declares-0_085-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Innovator Premium Income 15 Buffer ETF - January declares $0.10 dividend",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676905-innovator-premium-income-15-buffer-etf-january-declares-0_10-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Midday Need to Know: Altria eyes Imperial Brands, Enbridge pipeline deal and more",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676906-midday-need-to-know-altria-eyes-imperial-brands-enbridge-pipeline-deal-and-more?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "S&P 500 Sector Rotation Tracker: Consumer Staples lead as investors get defensive",
+   "entities": "EQUITY",
+   "link": "https://seekingalpha.com/news/4676907-sp-500-sector-rotation-tracker-consumer-staples-lead-as-investors-get-defensive?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Sierra Madre targets 1,200 to 1,500 tonnes per day by Q3 next year while advancing 30,000-meter East District drilling",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676908-sierra-madre-targets-1200-to-1500-tonnes-per-day-by-q3-next-year-while-advancing-30000-meter?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Here are the major earnings before the open Friday",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4676738-here-are-the-major-earnings-before-the-open-friday?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Bank of England sees growing financial risks as AI borrowing surges",
+   "entities": "BANK",
+   "link": "https://www.investing.com/news/economy-news/bank-of-england-sees-growing-financial-risks-as-ai-borrowing-surges-5052592"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Dollar rally pauses for Thanksgiving",
+   "entities": "USD",
+   "link": "https://www.investing.com/news/economy-news/dollar-steady-as-sliding-yields-temper-safehaven-bid-5051883"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "North Korean launderers turn to little-known crypto services to move Binance haul, say researchers",
+   "entities": "CRYPTO",
+   "link": "https://www.investing.com/news/economy-news/north-korean-launderers-turn-to-littleknown-crypto-services-to-move-binance-haul-say-researchers-5052603"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Brazil not ready yet for household debt-service cap, central bank official says",
+   "entities": "BANK",
+   "link": "https://www.investing.com/news/economy-news/brazil-not-ready-yet-for-household-debtservice-cap-central-bank-official-says-5052606"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Analysis-Spain\u2019s economic gains miss voters\u2019 wallets as Sanchez seeks reelection",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/analysisspains-economic-gains-miss-voters-wallets-as-sanchez-seeks-reelection-5052022"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Trump demands probe of GDP data released before midterms",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/trump-demands-probe-of-gdp-data-released-before-midterms-5052586"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Germany must prepare for two more difficult years with Trump, DIW\u2019s Fratzscher says",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/germany-must-prepare-for-two-more-difficult-years-with-trump-diws-fratzscher-says-5052627"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "European stocks end higher on easing tariff fears, ECB leadership continuity",
+   "entities": "EUR|EQUITY|TARIFF",
+   "link": "https://www.investing.com/news/economy-news/european-stocks-rally-as-tech-and-banks-rebound-tariff-fears-ease-5052228"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Executives wary of tariff effect on exports",
+   "entities": "TARIFF",
+   "link": "https://www.bangkokpost.com/business/general/3362039/executives-wary-of-tariff-effect-on-exports"
   },
   {
    "source": "Investing_Markets",
-   "title": "Why is Targa Resources stock sliding today?",
+   "title": "U.S. stock futures rise on Thanksgiving a day after wild swings on Wall Street",
    "entities": "EQUITY",
-   "link": "https://www.investing.com/news/stock-market-news/why-is-targa-resources-stock-sliding-today-93CH-5051574"
-  },
-  {
-   "source": "BangkokPost_World",
-   "title": "China, Cambodia stage joint military drills",
-   "entities": "CNY",
-   "link": "https://www.bangkokpost.com/world/3361061/china-cambodia-stage-joint-military-drills"
-  },
-  {
-   "source": "BangkokPost_Biz",
-   "title": "Agreement offers backing for real estate developers",
-   "entities": "BANK",
-   "link": "https://www.bangkokpost.com/business/general/3360909/agreement-offers-backing-for-real-estate-developers"
-  },
-  {
-   "source": "BangkokPost_World",
-   "title": "Exiled Catalan separatist leader returning to Spain on Dec 12",
-   "entities": NaN,
-   "link": "https://www.bangkokpost.com/world/3361114/exiled-catalan-separatist-leader-returning-to-spain-on-dec-12"
-  },
-  {
-   "source": "BangkokPost_World",
-   "title": "Cost-of-living strike in Greece hits trains and planes",
-   "entities": "WAR",
-   "link": "https://www.bangkokpost.com/world/3361115/costofliving-strike-in-greece-hits-trains-and-planes"
-  },
-  {
-   "source": "CNBC_Top",
-   "title": "Fed\u2019s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
-   "entities": "EQUITY|RATES|BANK",
-   "link": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
-  },
-  {
-   "source": "BangkokPost_World",
-   "title": "Israeli lawmakers approve Oct 7 probe opposed by Netanyahu",
-   "entities": "WAR",
-   "link": "https://www.bangkokpost.com/world/3361131/israeli-lawmakers-approve-oct-7-probe-opposed-by-netanyahu"
-  },
-  {
-   "source": "BangkokPost_World",
-   "title": "Egypt says 30 dead in Cairo fire after fuel truck overturns",
-   "entities": NaN,
-   "link": "https://www.bangkokpost.com/world/3361525/egypt-says-30-dead-in-cairo-fire-after-fuel-truck-overturns"
-  },
-  {
-   "source": "BangkokPost_World",
-   "title": "Houthis say hit two Saudi ports in response to coalition strikes",
-   "entities": "WAR",
-   "link": "https://www.bangkokpost.com/world/3361526/houthis-say-hit-two-saudi-ports-in-response-to-coalition-strikes"
-  },
-  {
-   "source": "BangkokPost_World",
-   "title": "Colombia police reveal 76 hostages were caught in supermarket siege",
-   "entities": NaN,
-   "link": "https://www.bangkokpost.com/world/3361531/colombia-police-reveal-76-hostages-were-caught-in-supermarket-siege"
-  },
-  {
-   "source": "Investing_Economy",
-   "title": "Macy\u2019s postpones 100th Thanksgiving Day Parade to Saturday due to storm, NBC says",
-   "entities": NaN,
-   "link": "https://www.investing.com/news/economy-news/macys-postpones-100th-thanksgiving-day-parade-to-saturday-due-to-storm-nbc-says-5051531"
-  },
-  {
-   "source": "Investing_Economy",
-   "title": "Analysis-Volatility-weary investors side swiped as tariff mayhem adds to tech pain",
-   "entities": "TARIFF",
-   "link": "https://www.investing.com/news/economy-news/analysisvolatilityweary-investors-hammered-as-tariff-mayhem-adds-to-tech-pain-5051297"
-  },
-  {
-   "source": "Investing_Economy",
-   "title": "Fed survey shows continued economic growth, sticky inflation in recent weeks",
-   "entities": "RATES",
-   "link": "https://www.investing.com/news/economy-news/fed-survey-shows-continued-growth-and-sticky-inflation-in-recent-weeks-5051371"
-  },
-  {
-   "source": "Investing_Economy",
-   "title": "Fed Beige Book shows slight growth, sticky inflation ahead of Dec meeting",
-   "entities": "RATES",
-   "link": "https://www.investing.com/news/economy-news/fed-beige-book-shows-slight-growth-sticky-inflation-ahead-of-dec-meeting-5051430"
-  },
-  {
-   "source": "BBC_World",
-   "title": "US Army says controlled blast of explosives in Iowa was 'huge success'",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cwg7l5ve251ko?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "BBC_World",
-   "title": "Israeli judges recommend dropping most serious charges against Netanyahu",
-   "entities": NaN,
-   "link": "https://www.bbc.co.uk/news/articles/cxj05mv723r2o?at_medium=RSS&at_campaign=rss"
-  },
-  {
-   "source": "CNBC_Top",
-   "title": "Liesman: Why Greenspan could bet on productivity \u2014 and Warsh needs to hike",
-   "entities": NaN,
-   "link": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html"
-  },
-  {
-   "source": "AlJazeera",
-   "title": "Man United denied at Sporting as referee overshadows Fernandes double",
-   "entities": NaN,
-   "link": "https://www.aljazeera.com/sports/2026/11/25/man-united-denied-at-sporting-as-referee-overshadows-fernandes-double?traffic_source=rss"
-  },
-  {
-   "source": "CNBC_Top",
-   "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-   "entities": "CNY|TARIFF",
-   "link": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html"
-  },
-  {
-   "source": "ECB_Press",
-   "title": "ECB and Sveriges Riksbank conclude agreement for Sweden to join T2",
-   "entities": "EUR",
-   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261125_1~6333a90f3a.en.html"
-  },
-  {
-   "source": "Fed_Press",
-   "title": "Agencies announce dollar thresholds for applicability of truth in lending and consumer leasing rules for consumer credit and lease transactions",
-   "entities": "USD|BANK",
-   "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261125b.htm"
-  },
-  {
-   "source": "SeekingAlpha",
-   "title": "Grupo Galicia outlines 5%-10% loan and deposit growth next year while targeting 15% ROE in 2028",
-   "entities": NaN,
-   "link": "https://seekingalpha.com/news/4676724-grupo-galicia-outlines-5-percentminus-10-percent-loan-and-deposit-growth-next-year-while?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
-  },
-  {
-   "source": "SeekingAlpha",
-   "title": "Nanalysis Scientific reports Q3 results",
-   "entities": NaN,
-   "link": "https://seekingalpha.com/news/4676725-nanalysis-scientific-reports-q3-results?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
-  },
-  {
-   "source": "SeekingAlpha",
-   "title": "Scilex receives Nasdaq delisting notice over delayed Q3 filing",
-   "entities": "EQUITY",
-   "link": "https://seekingalpha.com/news/4676723-scilex-receives-nasdaq-delisting-notice-over-delayed-q3-filing?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
-  },
-  {
-   "source": "SeekingAlpha",
-   "title": "RTX wins $2.53B contract for F-35 engine sustainment",
-   "entities": NaN,
-   "link": "https://seekingalpha.com/news/4676726-rtx-wins-2_53b-contract-for-fminus-35-engine-sustainment?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
-  },
-  {
-   "source": "SeekingAlpha",
-   "title": "Northrop Grumman wins $1.13B contract modification for Navy E-130J program",
-   "entities": NaN,
-   "link": "https://seekingalpha.com/news/4676727-northrop-grumman-wins-1_13b-contract-modification-for-navy-eminus-130j-program?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
-  },
-  {
-   "source": "SeekingAlpha",
-   "title": "FirstEnergy announces up to $1B at-the-market stock offering",
-   "entities": "EQUITY",
-   "link": "https://seekingalpha.com/news/4676721-firstenergy-announces-up-to-1b-at-the-market-stock-offering?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
-  },
-  {
-   "source": "SeekingAlpha",
-   "title": "Pentagon considered invoking wartime law to reinstate Nvidia's Huang: WaPo",
-   "entities": NaN,
-   "link": "https://seekingalpha.com/news/4676728-pentagon-considered-invoking-wartime-law-reinstate-nvidia-huang?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
-  },
-  {
-   "source": "Investing_Economy",
-   "title": "Yen, Swiss franc gain as dollar slips in volatile AI-driven session",
-   "entities": "USD|JPY",
-   "link": "https://www.investing.com/news/economy-news/dollar-takes-breather-ahead-of-us-data-on-fed-path-aussie-jumps-on-cpi-5049486"
-  },
-  {
-   "source": "BangkokPost_Biz",
-   "title": "AI investments set to drive growth",
-   "entities": NaN,
-   "link": "https://www.bangkokpost.com/business/general/3360834/ai-investments-set-to-drive-growth"
-  },
-  {
-   "source": "BangkokPost_Biz",
-   "title": "IRPC talking with investors on data centre infrastructure",
-   "entities": NaN,
-   "link": "https://www.bangkokpost.com/business/general/3360854/irpc-talking-with-investors-on-data-centre-infrastructure"
-  },
-  {
-   "source": "BBC_World",
-   "title": "My family were killed in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
-   "entities": "WAR",
-   "link": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o?at_medium=RSS&at_campaign=rss"
+   "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-whipsaw-session-on-wall-st-5051753"
   }
  ],
- "flags": [],
+ "flags": [
+  "term structure INVERTED (VIX > VIX3M): measured forward 21d SPY median +3.41%, 71% positive, n_eff 15 \u2014 historically a recovery rally follows panic, not a short signal; use it to expect gap risk and to size down, not to pick direction."
+ ],
  "data_age_days": {
-  "vix": 1.97,
-  "dix_gex": 0.97,
-  "vol_term_structure": 0.97,
-  "ofr_fsi": 2.97,
-  "cot": 12.97,
-  "news": 0.97
+  "vix": 1.98,
+  "dix_gex": 1.98,
+  "vol_term_structure": 1.98,
+  "ofr_fsi": 2.98,
+  "cot": 13.98,
+  "news": 0.98
  },
  "scenarios": [
   {
