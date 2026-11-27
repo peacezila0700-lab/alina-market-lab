@@ -1,25 +1,21 @@
 {
-  "generated_utc": "2026-11-26T23:27:10+00:00",
-  "run_date": "2026-11-26",
+  "generated_utc": "2026-11-27T23:24:50+00:00",
+  "run_date": "2026-11-27",
   "disclaimer": "RISK MONITORING TOOL ONLY \u2014 Not a buy/sell signal generator or proof of trading edge. Phase C Kill Point remains active (0 validated directional edges across 54 experiments).",
   "overall_risk_classification": "HIGH",
-  "fresh_panels": 6,
+  "fresh_panels": 5,
   "total_panels": 9,
   "stale_or_missing_panels": [
+    "support_resistance",
     "macro_rates",
     "crypto_funding_basis",
     "equity_short_insider_breadth"
   ],
   "active_alerts": [
     {
-      "panel": "vol_term_structure",
-      "severity": "HIGH",
-      "msg": "VIX/VIX3M inverted at 1.076 (>1.00)"
-    },
-    {
       "panel": "equity_vol_dd",
       "severity": "HIGH",
-      "msg": "SPY RV20=31.6%, 52w DD=-8.0%"
+      "msg": "SPY RV20=32.4%, 52w DD=-6.5%"
     },
     {
       "panel": "equity_short_insider_breadth",
@@ -28,17 +24,18 @@
     }
   ],
   "missing_data_warnings": [
-    "macro_rates: freshness=STALE_WARNING (age=6d)",
-    "crypto_funding_basis: freshness=STALE_WARNING (age=5d)",
-    "equity_short_insider_breadth: freshness=STALE_WARNING (age=6d)"
+    "support_resistance: freshness=STALE_WARNING (age=6d)",
+    "macro_rates: freshness=STALE_WARNING (age=7d)",
+    "crypto_funding_basis: freshness=STALE_WARNING (age=6d)",
+    "equity_short_insider_breadth: freshness=STALE_WARNING (age=7d)"
   ],
   "panels": {
     "vol_term_structure": {
       "data_source": "data/collect/vol_stress_features.csv (CBOE VIX/VIX3M/VIX9D/VVIX)",
-      "last_updated": "2026-11-25",
-      "age_days": 1,
+      "last_updated": "2026-11-27",
+      "age_days": 0,
       "freshness_status": "FRESH",
-      "risk_classification": "HIGH",
+      "risk_classification": "LOW",
       "alert_thresholds": {
         "vix_elev": 22.0,
         "vix_high": 30.0,
@@ -46,16 +43,16 @@
         "vvix_pct_elev": 0.9
       },
       "metrics": {
-        "vix": 28.29,
-        "slope_3m": 1.076,
-        "slope_9d": 1.047,
-        "vvix_pct": 0.874
+        "vix": NaN,
+        "slope_3m": NaN,
+        "slope_9d": NaN,
+        "vvix_pct": 0.784
       },
       "missing_data_warning": null
     },
     "ofr_fsi": {
       "data_source": "data/collect/ofr_fsi.csv (US Treasury OFR)",
-      "last_updated": "2026-11-24",
+      "last_updated": "2026-11-25",
       "age_days": 2,
       "freshness_status": "FRESH",
       "risk_classification": "LOW",
@@ -64,16 +61,16 @@
         "fsi_high": 2.0
       },
       "metrics": {
-        "ofr_fsi": -1.141,
-        "credit": -0.785,
-        "volatility_sub": 0.331
+        "ofr_fsi": -0.796,
+        "credit": -0.755,
+        "volatility_sub": 0.606
       },
       "missing_data_warning": null
     },
     "equity_vol_dd": {
       "data_source": "data/universe/SPY.csv (Yahoo Finance Daily)",
-      "last_updated": "2026-11-25",
-      "age_days": 1,
+      "last_updated": "2026-11-27",
+      "age_days": 0,
       "freshness_status": "FRESH",
       "risk_classification": "HIGH",
       "alert_thresholds": {
@@ -83,18 +80,18 @@
         "dd52_high": -15.0
       },
       "metrics": {
-        "spy_close": 716.7,
-        "rv20_pct": 31.64,
-        "rv63_pct": 19.57,
-        "dd_52w_pct": -8.01
+        "spy_close": 728.32,
+        "rv20_pct": 32.4,
+        "rv63_pct": 19.87,
+        "dd_52w_pct": -6.52
       },
       "missing_data_warning": null
     },
     "support_resistance": {
       "data_source": "data/levels/levels_latest.csv",
       "last_updated": "2026-11-21",
-      "age_days": 5,
-      "freshness_status": "FRESH",
+      "age_days": 6,
+      "freshness_status": "STALE_WARNING",
       "risk_classification": "MODERATE",
       "alert_thresholds": {
         "near_pivot_atr": 0.35
@@ -135,11 +132,11 @@
           }
         ]
       },
-      "missing_data_warning": null
+      "missing_data_warning": "Levels snapshot is 6d old (regenerate build_levels)"
     },
     "calendar_7d": {
       "data_source": "data/events/event_calendar_full.csv",
-      "last_updated": "2026-11-26",
+      "last_updated": "2026-11-27",
       "age_days": 0,
       "freshness_status": "FRESH",
       "risk_classification": "MODERATE",
@@ -147,12 +144,17 @@
         "fomc_7d": true
       },
       "metrics": {
-        "upcoming_7d_count": 1,
+        "upcoming_7d_count": 2,
         "events": [
           {
             "date": "2026-11-30",
             "event": "MONTH_END",
             "detail": "last business day"
+          },
+          {
+            "date": "2026-12-04",
+            "event": "NFP_approx",
+            "detail": "first Friday (rule)"
           }
         ]
       },
@@ -161,7 +163,7 @@
     "macro_rates": {
       "data_source": "data/macro/central_bank_rates_daily.csv (ECB + BoE + NYFed EFFR)",
       "last_updated": "2026-11-20",
-      "age_days": 6,
+      "age_days": 7,
       "freshness_status": "STALE_WARNING",
       "risk_classification": "LOW",
       "alert_thresholds": {
@@ -174,11 +176,11 @@
         "diff_boe_ecb_dfr": 1.5,
         "diff_fed_ecb_dfr": 1.38
       },
-      "missing_data_warning": "CB rates stale (6d)"
+      "missing_data_warning": "CB rates stale (7d)"
     },
     "news_stress": {
       "data_source": "data/news/feed_status.json + headlines.csv (16 RSS feeds)",
-      "last_updated": "2026-11-26T23:26:03",
+      "last_updated": "2026-11-27T23:23:46",
       "age_days": 0,
       "freshness_status": "FRESH",
       "risk_classification": "ELEVATED",
@@ -189,15 +191,15 @@
       "metrics": {
         "feeds_ok": 16,
         "feeds_total": 16,
-        "unique_headlines": 1060,
-        "stress_keyword_hits": 98
+        "unique_headlines": 1195,
+        "stress_keyword_hits": 105
       },
       "missing_data_warning": null
     },
     "crypto_funding_basis": {
       "data_source": "data/microstructure/deribit_BTC_funding_1h.csv.gz + data/crypto_vision/ + okx_BTCUSDT_funding_deep.csv",
       "last_updated": "2026-11-21",
-      "age_days": 5,
+      "age_days": 6,
       "freshness_status": "STALE_WARNING",
       "risk_classification": "LOW",
       "alert_thresholds": {
@@ -213,7 +215,7 @@
     "equity_short_insider_breadth": {
       "data_source": "data/equities/finra_regsho_market_daily.csv (FINRA RegSHO CNMS, monitoring context only; EXP-0035)",
       "last_updated": "2026-11-20",
-      "age_days": 6,
+      "age_days": 7,
       "freshness_status": "STALE_WARNING",
       "risk_classification": "MODERATE",
       "alert_thresholds": {
@@ -228,32 +230,32 @@
         "n_nms_symbols": 12414,
         "sec_form4_archive_range": "2018q1..2026q1 (quarterly DERA; context only)"
       },
-      "missing_data_warning": "FINRA RegSHO stale (6d old)"
+      "missing_data_warning": "FINRA RegSHO stale (7d old)"
     }
   },
   "risk_meta_model": {
     "scope": "MONITORING_AND_OFFLINE_SIZING_ONLY_NOT_DIRECTIONAL_SIGNAL",
-    "as_of_date": "2026-11-25",
-    "train_cutoff_date": "2026-09-14",
+    "as_of_date": "2026-11-27",
+    "train_cutoff_date": "2026-09-15",
     "purge_plus_embargo_days": 31,
     "calibrated_probabilities": {
-      "p_vol_onset_21d": 0.0316,
-      "p_tail_stress_21d": 0.3472,
-      "p_tb_nondir_stress_21d": 0.3472
+      "p_vol_onset_21d": 0.0291,
+      "p_tail_stress_21d": 0.3502,
+      "p_tb_nondir_stress_21d": 0.3502
     },
     "stationary_drivers": {
-      "ofr_fsi_z252": 1.633,
-      "gpr_z252": -0.385,
+      "ofr_fsi_z252": 2.153,
+      "gpr_z252": -0.384,
       "d_fed_63": 0.25,
       "vix": 28.29,
       "slope_3m": 1.076,
-      "rv21_past_pct": 30.93
+      "rv21_past_pct": 31.59
     },
     "defensive_sizing_reference": {
-      "vol_target_12pct_exposure_pct": 38.8,
-      "meta_throttle_scalar": 0.948,
-      "meta_cash_equity_exposure_pct": 36.8,
-      "cash_buffer_pct": 63.2,
+      "vol_target_12pct_exposure_pct": 38.0,
+      "meta_throttle_scalar": 0.945,
+      "meta_cash_equity_exposure_pct": 35.9,
+      "cash_buffer_pct": 64.1,
       "exp0031_note": "Park throttled equity weight in Cash/Short-Bills (NOT blind TLT rotation when d_fed_63 > 0)."
     }
   },
@@ -268,13 +270,13 @@
     "exp0030_gate_benchmark": "70pct VALID MetaGate cuts 6h shock 34.9% -> 16.1% & drag 2.21p -> 1.85p (net stays -2.10p < 0; Phase C locked)."
   },
   "crypto_trend_overlay": {
-    "as_of_date": "2026-11-26",
-    "btc_close": 60412.81,
-    "btc_sma50": 74676.91,
+    "as_of_date": "2026-11-27",
+    "btc_close": 59754.67,
+    "btc_sma50": 74240.11,
     "above_sma50": false,
     "trend_ens_vote_20_40_60_90_120": 0.0,
-    "rv21_ann_pct": 44.19,
-    "vt25_scalar": 0.566,
+    "rv21_ann_pct": 44.13,
+    "vt25_scalar": 0.567,
     "suggested_btc_ens_vt25_pct": 0.0,
     "suggested_btc_sma50_vt25_pct": 0.0,
     "suggested_cash_pct": 100.0,

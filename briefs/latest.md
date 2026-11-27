@@ -1,48 +1,38 @@
-# Brief 2026-11-26 (generated 2026-11-26T23:27:04Z)
+# Brief 2026-11-27 (generated 2026-11-27T23:24:46Z)
 
 ## State
 | key | value |
 |---|---|
-| vix | 28.29 |
-| vix_percentile_all_history | 89.7 |
+| vix | 26.8 |
+| vix_percentile_all_history | 87.0 |
 | skew | 142.06 |
 | skew_note | >145 = tail protection expensive; <115 = complacent |
-| dix | 0.4299 |
-| dix_percentile | 45.3 |
-| gex_usd_bn | 0.9 |
+| dix | 0.4254 |
+| dix_percentile | 40.5 |
+| gex_usd_bn | 3.4 |
 | gex_regime | positive (dealers dampen moves) |
-| vix_slope_3m | 1.0761 |
+| vix_slope_3m | None |
 | vix_slope_3m_note | >1 = inverted term structure = stress is NOW, not later |
-| vix_slope_9d | 1.0467 |
+| vix_slope_9d | None |
 | vix_slope_9d_note | >1 = front-end panic (VIX9D above VIX) |
-| vvix_percentile | 0.874 |
+| vvix_percentile | 0.7837 |
 | vvix_note | vol-of-vol >0.9 means even the hedging market is unstable |
 | term_inversions_last_252d | 8 |
-| ofr_fsi | -1.14 |
-| ofr_fsi_4w_chg | 0.77 |
-| btc_funding_8h_pct | 0.00479 |
-| btc_funding_annualised_pct | 9.06 |
-| btc_long_short_ratio | 1.59 |
+| ofr_fsi | -0.8 |
+| ofr_fsi_4w_chg | 1.03 |
+| btc_funding_8h_pct | 0.00556 |
+| btc_funding_annualised_pct | 9.6 |
+| btc_long_short_ratio | 1.91 |
 | cot_as_of | 2026-11-13 |
 | cot_extremes | [{"instrument": "EURUSD", "noncomm_net_pct_oi_pct156": 0.01, "side": "crowded_short"}, {"instrument": "NATGAS", "noncomm_net_pct_oi_pct156": 0.0, "side": "crowded_short"}, {"instrument": "PLATINUM", "noncomm_net_pct_oi_p |
-| news_volume_today | 151 |
+| news_volume_today | 135 |
 
 ## Next 7 days (scheduled)
 | date | event | detail | confidence |
 |---|---|---|---|
 | 2026-11-30 | MONTH_END | last business day | high |
-| 11-26-2026 | Private Capital Expenditure q/q |  | Low |
-| 11-26-2026 | RBA Bulletin |  | Low |
-| 11-26-2026 | German GfK Consumer Climate |  | Low |
-| 11-26-2026 | M3 Money Supply y/y |  | Low |
-| 11-26-2026 | Private Loans y/y |  | Low |
-| 11-26-2026 | Euro Summit |  | Low |
-| 11-26-2026 | BOE Financial Stability Report |  | Low |
-| 11-26-2026 | FPC Meeting Minutes |  | Low |
-| 11-26-2026 | FPC Statement |  | Low |
-| 11-26-2026 | ECB Monetary Policy Meeting Accounts |  | Low |
-| 11-26-2026 | Bank Holiday |  | Holiday |
-| 11-26-2026 | Tokyo Core CPI y/y |  | Medium |
+| 2026-12-04 | NFP_approx | first Friday (rule) | med |
+| 11-27-2026 | Italian 10-y Bond Auction |  | Low |
 | 11-27-2026 | French Consumer Spending m/m |  | Low |
 | 11-27-2026 | French Final Private Payrolls q/q |  | Low |
 | 11-27-2026 | French Prelim CPI m/m |  | Low |
@@ -59,10 +49,10 @@
 
 | factor | value | bucket | horizon | median % | % positive | n_eff |
 |---|---|---|---|---|---|---|
-| VIX | 28.29 | 25-30 | 21d | +2.28 | 64 | 30 |
-| VIX | 28.29 | 25-30 | 252d | +9.97 | 61 | 2 |
-| OFR_FSI | -1.141 | <-0.5 | 21d | +1.20 | 66 | 185 |
-| OFR_FSI | -1.141 | <-0.5 | 252d | +11.44 | 84 | 14 |
+| VIX | 26.8 | 25-30 | 21d | +2.28 | 64 | 30 |
+| VIX | 26.8 | 25-30 | 252d | +9.97 | 61 | 2 |
+| OFR_FSI | -0.796 | <-0.5 | 21d | +1.20 | 66 | 185 |
+| OFR_FSI | -0.796 | <-0.5 | 252d | +11.44 | 84 | 14 |
 
 ## Levels (support/resistance, measured rules)
 
@@ -80,28 +70,28 @@
 
 ## Headlines (last 48h, entity-tagged)
 
-- [BangkokPost_World] US aid cuts push starving Nigerians into jihadist embrace  `nan`
-- [BangkokPost_World] Hundreds mark Hong Kong fire anniversary  `nan`
-- [BangkokPost_Biz] WHA puts focus on distribution centres  `nan`
-- [CNBC_Top] Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs  `EQUITY`
-- [BangkokPost_World] Victims’ families await justice ahead of Duterte’s ICC trial  `nan`
-- [BangkokPost_World] US clears SpaceX to launch up to 1 million data-centre satellites  `nan`
-- [BangkokPost_World] Family of Japanese journalist held in Russia ‘trapped in grief’  `nan`
-- [BangkokPost_World] Man arrested after deadly truck disaster in Egypt  `nan`
-- [BangkokPost_World] Rescued hostage recounts 17-hour Colombia supermarket siege  `nan`
-- [BangkokPost_World] Alleged Russian spy goes on trial in Berlin  `nan`
-- [FT_Home] Two Italians killed in drone strike on Kuwait  `WAR`
-- [BangkokPost_World] Hungarians confront secrets and lies as Communist files unsealed  `nan`
-- [BangkokPost_Biz] Nvidia halts server shipments to Southeast Asia  `nan`
-- [BangkokPost_Biz] SEC data breach affects 155 users  `nan`
-- [BangkokPost_Biz] Status update: Asian nations’ trade talks with US  `CNY|TARIFF`
-- [BangkokPost_Biz] Thailand leads as travel preferences evolve  `nan`
-- [BangkokPost_Biz] Egat targets grid stability in new plan  `nan`
-- [BangkokPost_Biz] Call for AI benefits to be better shared across society  `BANK`
+- [BangkokPost_World] The key players as New Zealand heads for weeks of political wrangling  `nan`
+- [BangkokPost_World] Canada's top court largely upholds Quebec secularism law  `nan`
+- [BangkokPost_Biz] Bid to suspend embattled NBTC chairman rejected  `nan`
+- [BangkokPost_Biz] The 718 Boxster goes electric  `nan`
+- [BangkokPost_Biz] Asian stocks mostly rise as markets calm after tech rout  `EQUITY`
+- [BangkokPost_Biz] AIS, Singtel back 2,500km subsea cable linking Thailand, Vietnam and Singapore  `nan`
+- [BangkokPost_Biz] Generali devises plan to achieve top 3 status in Thailand  `nan`
+- [BangkokPost_World] Prosecutors seek 25-year sentence for Canada suicide poison seller  `nan`
+- [BangkokPost_World] Brazil's Lula thanks students for movement that fueled victory  `nan`
+- [CNBC_Top] SpaceX shares jump over 4% amid tech rally and after Musk says he will expand on Trump Account share donations  `EQUITY`
+- [BangkokPost_World] UN refugee agency seeks $7.1 billion in 2027  `nan`
+- [BangkokPost_World] Spanish PM faces long odds in Sunday polls  `nan`
+- [BangkokPost_World] 'Mushroom killer' appeals case to Australia's top court  `nan`
+- [BangkokPost_World] Russian mercenaries muscle in on daily life in central Africa  `nan`
+- [BangkokPost_World] Hong Kong couple arrested for allegedly tampering with passport  `nan`
+- [CNBC_Top] The Tech Download: Will Jensen Huang’s return be the spark the shaky AI market needs?  `EQUITY`
+- [Investing_Economy] Dollar set for weekly gain as risk appetite returns  `USD`
+- [BangkokPost_Biz] Distributors shrug off Nvidia chip ban  `nan`
 
 ## Flags
 
-- term structure INVERTED (VIX > VIX3M): measured forward 21d SPY median +3.41%, 71% positive, n_eff 15 — historically a recovery rally follows panic, not a short signal; use it to expect gap risk and to size down, not to pick direction.
+- 1 rule-derived event dates (~90-95% exact) — verify before relying on them
 
 ## Scenario branches (pick one, do not invent)
 
@@ -112,8 +102,8 @@
 ## Data age (days)
 
 - vix: 1.98
-- dix_gex: 1.98
-- vol_term_structure: 1.98
+- dix_gex: 0.98
+- vol_term_structure: 0.98
 - ofr_fsi: 2.98
-- cot: 13.98
+- cot: 14.98
 - news: 0.98

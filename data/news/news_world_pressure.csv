@@ -1,888 +1,801 @@
 day,kind,query,headlines
+1997-09-01,topic,currency crisis,1
+2006-02-19,topic,currency crisis,1
 2006-04-09,country,SA,1
 2006-07-11,country,VN,1
 2006-11-06,country,MX,1
-2008-10-28,country,SA,1
-2009-07-01,country,BR,1
+2008-04-20,topic,earnings surprise,1
+2008-12-09,topic,currency crisis,1
+2009-03-27,topic,currency crisis,1
 2009-08-30,country,SA,1
-2011-10-27,country,JP,1
-2012-12-18,country,JP,1
+2009-12-29,country,RU,1
+2011-02-04,topic,currency crisis,1
+2011-06-06,country,BR,1
+2011-09-29,country,FR,1
+2012-06-13,country,BR,1
+2012-07-04,country,TH,1
+2012-07-27,country,RU,1
 2013-07-03,country,SA,1
-2014-03-07,country,RU,1
-2014-04-14,country,RU,1
-2014-05-11,topic,central bank,1
-2015-07-09,country,JP,1
-2015-08-27,country,SA,1
+2013-08-26,topic,earnings surprise,1
+2014-06-09,country,RU,1
+2015-07-07,topic,currency crisis,1
+2015-10-15,topic,currency crisis,1
 2015-10-28,topic,currency crisis,1
+2015-12-01,topic,earnings surprise,1
+2016-01-17,country,RU,1
+2016-01-25,country,RU,1
 2016-03-25,country,JP,1
-2016-08-26,topic,central bank,1
-2017-01-04,country,ID,1
-2017-02-25,country,JP,1
-2017-03-18,country,TH,1
-2017-03-25,country,IN,1
-2017-03-26,topic,central bank,1
-2017-04-14,country,JP,1
+2016-04-08,topic,recession risk,1
+2016-05-17,country,RU,1
+2016-06-24,country,MX,1
+2016-09-19,country,JP,1
+2016-11-13,country,SA,1
+2016-12-19,country,RU,1
+2017-01-10,country,BR,1
+2017-01-11,country,BR,1
+2017-03-25,topic,currency crisis,1
+2017-04-02,country,SA,1
 2017-05-19,country,ID,1
 2017-05-20,country,TR,1
+2017-06-06,country,BR,1
 2017-06-08,country,FR,1
-2017-06-15,country,UK,1
 2017-07-21,country,TR,1
 2017-08-16,country,RU,1
-2017-08-17,topic,central bank,1
 2017-09-01,country,FR,1
-2017-09-17,topic,central bank,1
 2017-10-09,country,VN,1
-2017-10-20,country,ID,1
-2017-11-28,topic,banking stress,1
+2017-10-24,topic,currency crisis,1
+2017-11-07,topic,recession risk,1
 2017-12-07,country,BR,1
 2018-01-02,country,VN,1
 2018-01-04,country,VN,1
-2018-01-12,country,VN,1
-2018-02-19,country,ID,1
+2018-02-21,country,DE,1
 2018-02-25,country,MX,1
-2018-03-01,country,ID,1
 2018-03-15,country,TR,1
 2018-05-24,country,VN,1
 2018-06-15,country,VN,1
 2018-06-21,country,VN,2
-2018-08-26,country,TH,1
-2018-09-08,country,TH,1
+2018-09-12,topic,currency crisis,1
+2018-09-15,topic,currency crisis,1
 2018-09-27,country,MX,1
-2018-09-28,country,ID,1
-2018-10-11,country,JP,1
+2019-01-22,country,BR,1
+2019-02-01,topic,earnings surprise,1
 2019-03-04,country,VN,1
-2019-06-01,country,TH,1
+2019-03-13,country,SA,1
 2019-07-06,country,TR,1
 2019-07-07,country,FR,1
-2019-07-10,country,VN,1
 2019-08-21,country,MX,1
-2019-08-31,country,TH,1
-2019-09-27,country,ID,2
-2019-10-05,topic,currency crisis,1
+2019-09-25,country,BR,1
 2019-10-16,country,UK,1
-2020-03-02,country,JP,2
-2020-03-11,country,ID,1
+2019-11-07,country,RU,1
+2019-11-07,topic,currency crisis,1
+2019-12-12,country,RU,1
+2020-03-02,country,JP,1
+2020-03-16,topic,recession risk,1
+2020-03-18,country,VN,1
 2020-03-22,country,JP,1
-2020-03-23,country,JP,1
+2020-03-24,country,RU,1
+2020-04-10,country,FR,1
+2020-05-11,topic,earnings surprise,1
 2020-05-18,country,DE,1
 2020-05-19,country,FR,1
-2020-05-30,country,RU,1
-2020-07-28,country,DE,1
+2020-06-01,country,RU,1
 2020-08-18,country,DE,1
 2020-09-07,country,MX,1
-2020-11-05,country,ID,1
+2020-10-15,country,RU,1
 2020-11-05,country,UK,1
 2020-11-05,topic,currency crisis,1
-2020-11-06,country,IN,1
-2020-11-12,country,IN,1
+2020-11-12,topic,currency crisis,1
 2020-12-20,country,ID,1
 2021-02-26,country,JP,1
-2021-03-17,country,BR,1
+2021-04-06,country,DE,1
 2021-04-07,country,VN,1
 2021-04-12,country,TH,1
+2021-05-06,country,RU,1
 2021-05-17,country,TH,1
-2021-07-22,country,TH,1
-2021-07-30,country,ID,1
+2021-06-03,country,RU,1
 2021-08-06,country,VN,1
-2021-08-25,country,VN,1
-2021-09-13,country,RU,1
-2021-09-23,country,ID,1
-2021-10-13,country,ID,2
-2021-11-19,country,ID,1
-2021-12-02,country,BR,1
-2021-12-03,topic,currency crisis,1
-2021-12-11,country,ID,1
-2021-12-31,topic,currency crisis,1
+2021-08-26,topic,earnings surprise,1
+2021-10-25,country,RU,1
+2021-12-22,country,ID,1
 2022-01-27,country,VN,1
+2022-01-28,country,RU,1
+2022-02-07,country,SA,1
 2022-02-17,country,UK,1
 2022-04-01,country,MX,1
-2022-04-25,country,TH,1
+2022-04-10,topic,recession risk,1
+2022-05-09,topic,recession risk,1
 2022-05-10,country,TH,1
 2022-05-16,topic,currency crisis,1
-2022-07-08,country,RU,1
-2022-07-20,topic,currency crisis,1
+2022-05-23,topic,recession risk,1
+2022-06-10,country,RU,1
+2022-06-19,country,ID,1
+2022-07-13,topic,currency crisis,1
+2022-07-19,country,TH,1
+2022-07-26,topic,recession risk,1
+2022-09-15,topic,recession risk,1
+2022-09-20,topic,earnings surprise,1
 2022-09-23,country,CN,1
-2022-10-11,country,TH,1
+2022-09-26,country,UK,1
+2022-09-29,topic,recession risk,1
+2022-10-04,topic,recession risk,1
 2022-10-15,country,VN,1
-2022-10-17,topic,central bank,1
-2022-11-10,country,TH,1
-2022-12-20,country,FR,1
+2022-10-17,country,ZA,1
+2022-11-10,topic,currency crisis,1
+2022-12-08,country,SA,1
 2022-12-21,country,VN,1
-2023-02-20,topic,currency crisis,1
-2023-03-03,country,BR,1
-2023-03-14,country,TH,1
-2023-03-21,country,TH,1
-2023-03-30,country,JP,1
-2023-04-05,topic,banking stress,1
+2022-12-29,country,RU,1
+2023-01-16,topic,currency crisis,1
+2023-02-04,topic,recession risk,1
+2023-02-09,country,DE,1
+2023-02-10,country,DE,1
+2023-02-14,country,DE,1
+2023-03-11,country,SA,1
+2023-03-20,topic,recession risk,1
+2023-03-22,topic,earnings surprise,1
+2023-03-30,country,RU,1
+2023-04-04,topic,banking stress,1
+2023-04-10,country,MX,1
+2023-04-13,country,VN,1
+2023-04-17,topic,banking stress,1
 2023-04-19,country,VN,1
-2023-04-20,topic,banking stress,1
-2023-05-13,country,TH,1
-2023-05-23,country,UK,1
-2023-06-06,country,JP,1
-2023-06-06,topic,currency crisis,1
-2023-07-12,topic,banking stress,1
-2023-07-17,topic,banking stress,1
-2023-07-26,country,JP,1
-2023-07-31,country,MX,1
-2023-08-15,country,TH,1
-2023-08-17,country,TH,1
+2023-05-09,country,JP,1
+2023-05-16,topic,banking stress,1
+2023-05-23,country,ZA,1
+2023-06-23,country,RU,1
+2023-07-06,topic,banking stress,1
+2023-07-26,topic,banking stress,1
+2023-08-10,topic,banking stress,1
 2023-08-17,topic,banking stress,1
-2023-08-28,country,TH,1
+2023-08-20,country,SA,1
+2023-09-06,topic,recession risk,1
 2023-09-12,country,MX,1
-2023-09-22,country,TH,1
 2023-09-29,country,FR,2
 2023-10-06,topic,currency crisis,1
-2023-10-30,country,JP,1
-2023-11-01,country,TH,1
+2023-10-17,country,VN,1
+2023-10-29,country,SA,1
+2023-10-30,country,RU,1
 2023-11-05,country,MX,1
 2023-11-07,country,MX,1
 2023-11-17,country,UK,1
 2023-11-27,country,FR,1
 2023-12-06,country,UK,1
-2023-12-13,country,UK,1
-2024-01-04,country,TH,2
+2023-12-12,country,TH,1
+2023-12-14,country,BR,1
+2023-12-22,country,ZA,1
 2024-01-24,country,TR,1
 2024-01-25,country,MX,1
 2024-01-31,country,JP,1
-2024-02-05,country,TH,1
-2024-02-05,topic,currency crisis,1
-2024-02-08,country,SA,1
-2024-02-09,country,DE,1
-2024-02-15,country,SA,1
+2024-02-08,country,DE,1
 2024-02-22,country,JP,1
 2024-02-29,country,TR,1
-2024-03-08,country,VN,1
-2024-03-12,topic,currency crisis,1
 2024-03-25,country,FR,1
 2024-03-30,country,FR,1
-2024-05-08,topic,central bank,1
-2024-05-14,country,TH,1
-2024-05-15,country,JP,1
-2024-05-30,country,BR,1
-2024-05-30,topic,banking stress,1
-2024-06-17,country,TH,1
-2024-06-20,country,TH,1
+2024-04-03,country,ID,1
+2024-04-08,topic,recession risk,1
+2024-04-25,country,RU,1
+2024-05-09,country,RU,1
+2024-05-11,country,VN,1
+2024-06-01,country,MX,1
+2024-06-04,country,RU,1
+2024-06-27,topic,banking stress,1
 2024-07-04,country,UK,1
+2024-07-10,topic,banking stress,1
+2024-07-11,country,RU,1
+2024-07-22,country,BR,1
 2024-07-30,country,UK,1
-2024-08-09,country,DE,1
 2024-08-15,country,VN,1
-2024-08-22,country,BR,1
-2024-08-26,country,TH,1
-2024-09-09,topic,currency crisis,1
+2024-08-15,topic,recession risk,1
+2024-09-02,country,BR,1
+2024-09-16,country,RU,1
 2024-09-20,country,UK,1
 2024-09-24,country,CN,1
 2024-09-25,country,JP,1
-2024-10-03,country,ID,1
+2024-10-10,country,CN,1
 2024-10-22,country,CN,1
-2024-10-24,topic,currency crisis,1
+2024-10-30,topic,banking stress,1
 2024-11-12,country,UK,1
-2024-11-22,country,UK,1
 2024-11-29,country,UK,1
-2024-12-04,country,ID,1
-2024-12-05,country,DE,1
+2024-12-05,country,BR,1
+2024-12-11,country,JP,1
 2024-12-11,country,UK,1
 2024-12-13,country,TR,1
-2024-12-19,topic,central bank,2
-2024-12-20,country,ID,1
-2024-12-28,country,ID,1
-2025-01-17,country,IN,1
-2025-02-06,country,TH,1
-2025-02-13,topic,banking stress,1
+2024-12-23,country,RU,1
+2024-12-24,topic,banking stress,1
+2025-01-02,topic,banking stress,1
+2025-01-09,country,RU,1
+2025-01-28,topic,recession risk,1
+2025-02-06,country,RU,1
+2025-02-13,country,BR,1
 2025-02-17,country,JP,1
 2025-02-24,country,VN,1
-2025-02-25,topic,trade war,1
-2025-03-03,country,VN,1
+2025-02-26,topic,banking stress,1
 2025-03-04,topic,banking stress,1
 2025-03-08,country,VN,1
 2025-03-14,country,FR,1
+2025-03-14,country,VN,1
 2025-03-17,country,VN,1
-2025-03-24,topic,banking stress,1
-2025-03-25,country,DE,1
+2025-03-17,topic,earnings surprise,1
 2025-03-25,country,TR,1
 2025-04-03,country,FR,1
-2025-04-04,topic,banking stress,1
-2025-04-08,topic,banking stress,1
-2025-04-11,country,ID,1
+2025-04-03,country,SA,1
+2025-04-04,topic,recession risk,1
+2025-04-07,topic,recession risk,1
+2025-04-09,country,RU,1
+2025-04-17,country,SA,1
+2025-04-17,topic,recession risk,1
+2025-04-18,country,SA,1
 2025-04-22,country,FR,1
-2025-05-08,country,UK,1
+2025-04-22,topic,earnings surprise,1
 2025-05-13,country,UK,1
 2025-05-21,country,CN,1
-2025-05-25,country,JP,1
+2025-05-21,topic,recession risk,1
+2025-05-23,topic,banking stress,1
 2025-05-28,country,UK,1
-2025-05-30,country,VN,1
-2025-06-02,country,JP,1
+2025-05-29,country,SA,1
 2025-06-03,country,JP,1
 2025-06-05,topic,central bank,1
 2025-06-18,country,BR,1
+2025-06-19,topic,recession risk,1
+2025-06-25,country,RU,1
 2025-06-27,country,MX,1
 2025-06-30,country,JP,1
 2025-06-30,topic,banking stress,1
-2025-07-04,topic,banking stress,1
+2025-07-01,topic,banking stress,1
 2025-07-09,country,UK,1
-2025-07-14,country,ID,1
-2025-07-24,country,JP,1
-2025-07-24,topic,currency crisis,1
+2025-07-12,topic,recession risk,1
+2025-07-14,topic,currency crisis,1
 2025-08-01,country,RU,1
 2025-08-01,topic,banking stress,2
-2025-08-04,country,TH,1
 2025-08-06,country,VN,1
 2025-08-12,country,VN,1
-2025-08-15,country,JP,1
-2025-08-18,country,JP,1
-2025-08-20,country,JP,1
+2025-08-20,country,BR,1
 2025-08-20,country,VN,1
-2025-08-25,country,ID,1
-2025-09-08,country,ID,1
-2025-09-09,country,ID,2
-2025-09-10,country,ID,1
+2025-08-22,country,JP,1
+2025-09-01,country,RU,1
+2025-09-09,country,ID,1
+2025-09-10,country,FR,1
 2025-09-15,country,MX,1
-2025-09-18,country,ID,1
-2025-09-18,country,VN,1
-2025-09-23,country,DE,1
+2025-09-17,country,BR,1
+2025-09-18,topic,recession risk,1
+2025-09-19,country,RU,1
 2025-09-23,country,TR,1
 2025-09-23,topic,central bank,1
 2025-09-24,country,FR,1
 2025-09-24,country,SA,1
-2025-09-26,country,DE,1
 2025-09-26,country,VN,1
-2025-09-28,country,ID,1
-2025-09-29,country,BR,1
+2025-09-26,topic,banking stress,2
+2025-09-29,country,BR,2
 2025-10-03,country,VN,2
 2025-10-06,country,VN,1
 2025-10-08,country,JP,1
-2025-10-13,topic,trade war,1
-2025-10-15,country,DE,1
+2025-10-15,country,BR,1
+2025-10-16,country,RU,1
 2025-10-17,country,TR,1
-2025-10-20,country,FR,1
 2025-10-20,country,TH,1
-2025-10-23,country,ID,1
-2025-10-24,country,ID,1
+2025-10-20,country,VN,1
+2025-10-25,topic,banking stress,1
 2025-10-28,country,JP,1
+2025-11-02,country,SA,1
 2025-11-04,country,VN,1
-2025-11-10,country,JP,1
-2025-11-11,country,ID,1
+2025-11-09,country,DE,1
+2025-11-10,country,UK,1
 2025-11-11,topic,central bank,1
-2025-11-12,country,TH,1
 2025-11-14,country,MX,1
 2025-11-17,country,UK,1
-2025-11-17,country,VN,1
+2025-11-17,topic,banking stress,1
 2025-11-18,country,BR,1
-2025-11-18,country,ID,1
 2025-11-19,country,UK,1
-2025-11-21,country,DE,1
-2025-12-02,country,FR,1
-2025-12-02,country,UK,1
+2025-11-23,topic,recession risk,1
+2025-11-25,country,RU,1
+2025-12-01,topic,banking stress,1
+2025-12-04,topic,banking stress,1
 2025-12-09,country,BR,1
 2025-12-10,country,UK,1
 2025-12-11,topic,banking stress,1
-2025-12-15,country,ID,1
-2025-12-18,country,VN,1
-2025-12-19,country,ID,1
-2025-12-23,country,JP,1
-2025-12-24,country,ID,1
-2025-12-28,country,VN,1
-2025-12-30,country,ID,1
-2026-01-01,country,TH,1
-2026-01-02,topic,currency crisis,1
-2026-01-04,topic,currency crisis,1
+2025-12-12,country,RU,1
+2025-12-15,country,SA,1
+2025-12-15,topic,recession risk,2
+2025-12-26,country,TH,1
+2025-12-28,country,BR,1
+2026-01-06,country,VN,1
 2026-01-08,country,MX,1
 2026-01-13,topic,central bank,1
 2026-01-14,country,MX,1
-2026-01-18,country,TH,1
+2026-01-19,country,SA,1
+2026-01-21,country,BR,7
 2026-01-21,country,FR,1
-2026-01-21,country,TH,1
-2026-01-22,country,TH,1
-2026-01-26,topic,currency crisis,1
-2026-01-27,topic,currency crisis,1
-2026-01-28,country,ID,1
-2026-02-02,topic,trade war,1
+2026-01-22,topic,currency crisis,1
+2026-01-29,country,SA,1
+2026-02-01,country,RU,1
+2026-02-02,country,ID,1
+2026-02-03,country,BR,1
 2026-02-03,country,DE,1
+2026-02-03,country,VN,1
 2026-02-04,country,SA,1
+2026-02-04,topic,banking stress,1
 2026-02-05,country,MX,1
+2026-02-05,topic,banking stress,1
+2026-02-06,country,SA,1
+2026-02-10,country,SA,1
+2026-02-11,country,SA,1
 2026-02-11,country,VN,1
 2026-02-13,country,BR,1
 2026-02-17,country,ID,1
+2026-02-17,country,SA,1
+2026-02-19,country,BR,1
+2026-02-19,country,SA,1
 2026-02-19,country,VN,1
+2026-02-20,topic,banking stress,1
 2026-02-21,country,ID,1
-2026-02-23,country,SA,1
-2026-02-23,topic,trade war,1
 2026-02-24,country,CN,1
-2026-03-04,topic,currency crisis,1
+2026-02-27,topic,banking stress,1
+2026-03-03,topic,earnings surprise,1
+2026-03-04,topic,banking stress,1
+2026-03-10,country,RU,1
 2026-03-12,country,FR,1
-2026-03-13,topic,recession risk,1
-2026-03-16,country,VN,1
-2026-03-16,topic,trade war,1
-2026-03-17,country,TH,1
-2026-03-17,topic,currency crisis,1
+2026-03-13,country,RU,1
 2026-03-17,topic,recession risk,1
-2026-03-18,topic,currency crisis,1
-2026-03-20,topic,currency crisis,1
-2026-03-21,country,ID,1
 2026-03-23,country,UK,1
-2026-03-24,topic,recession risk,1
 2026-03-25,topic,recession risk,2
-2026-03-27,topic,currency crisis,1
-2026-03-27,topic,recession risk,1
+2026-03-26,country,BR,1
+2026-03-27,country,TH,1
 2026-03-30,country,FR,1
-2026-03-30,topic,recession risk,3
 2026-03-31,country,RU,1
-2026-03-31,topic,recession risk,1
 2026-04-02,country,VN,1
-2026-04-02,topic,currency crisis,1
-2026-04-03,topic,currency crisis,1
 2026-04-06,country,MX,1
-2026-04-06,topic,currency crisis,2
+2026-04-07,topic,recession risk,1
+2026-04-09,topic,recession risk,1
 2026-04-10,country,VN,1
-2026-04-10,topic,recession risk,1
-2026-04-13,country,JP,1
-2026-04-13,country,ZA,1
 2026-04-13,topic,recession risk,1
-2026-04-14,country,JP,2
+2026-04-14,country,RU,1
+2026-04-15,country,BR,1
+2026-04-15,topic,recession risk,1
+2026-04-16,topic,banking stress,1
 2026-04-17,country,MX,1
+2026-04-17,topic,banking stress,2
 2026-04-17,topic,recession risk,1
-2026-04-19,country,ID,1
-2026-04-20,country,JP,1
-2026-04-21,topic,recession risk,4
-2026-04-22,country,US,2
-2026-04-23,topic,recession risk,2
-2026-04-24,country,US,1
-2026-04-24,country,ZA,1
-2026-04-24,topic,earnings surprise,1
-2026-04-24,topic,recession risk,1
-2026-04-27,topic,recession risk,2
-2026-04-28,country,TH,1
-2026-04-28,topic,recession risk,2
-2026-04-29,country,ID,1
-2026-05-01,topic,currency crisis,1
+2026-04-22,country,IN,1
+2026-04-22,country,US,1
+2026-04-23,country,JP,1
+2026-04-24,country,TR,1
+2026-04-24,country,UK,1
+2026-04-27,country,RU,1
+2026-04-29,country,VN,1
+2026-04-29,topic,banking stress,1
+2026-05-01,country,RU,1
 2026-05-01,topic,earnings surprise,1
 2026-05-02,country,RU,1
+2026-05-03,country,SA,1
+2026-05-04,topic,banking stress,1
 2026-05-04,topic,recession risk,1
-2026-05-05,country,ZA,1
-2026-05-05,topic,currency crisis,1
-2026-05-06,country,ID,1
-2026-05-07,country,ID,1
-2026-05-07,country,US,1
-2026-05-07,country,ZA,1
+2026-05-05,country,RU,1
+2026-05-06,topic,banking stress,1
 2026-05-08,country,UK,1
-2026-05-08,topic,recession risk,1
-2026-05-11,country,JP,1
+2026-05-08,topic,banking stress,1
+2026-05-08,topic,earnings surprise,1
 2026-05-12,country,VN,1
-2026-05-13,country,ID,1
-2026-05-14,topic,currency crisis,1
-2026-05-15,topic,trade war,1
-2026-05-18,country,ID,2
-2026-05-18,topic,currency crisis,1
+2026-05-18,country,RU,1
 2026-05-19,country,UK,1
 2026-05-20,topic,recession risk,1
-2026-05-21,topic,earnings surprise,1
-2026-05-21,topic,recession risk,1
-2026-05-22,country,DE,1
+2026-05-21,topic,banking stress,1
 2026-05-22,country,SA,1
-2026-05-23,country,VN,1
-2026-05-26,country,TH,1
-2026-05-26,country,ZA,1
-2026-05-26,topic,recession risk,1
-2026-05-27,country,JP,1
+2026-05-22,topic,banking stress,1
 2026-05-28,country,BR,1
-2026-05-28,topic,recession risk,1
-2026-06-02,country,SA,1
+2026-05-29,country,BR,1
+2026-06-01,country,SA,1
+2026-06-02,country,SA,2
+2026-06-02,topic,banking stress,1
 2026-06-02,topic,central bank,1
-2026-06-03,topic,currency crisis,1
+2026-06-03,topic,banking stress,1
 2026-06-04,country,VN,1
-2026-06-04,topic,currency crisis,1
 2026-06-04,topic,recession risk,1
-2026-06-05,topic,currency crisis,1
+2026-06-05,country,DE,1
+2026-06-06,country,IN,1
 2026-06-07,country,ID,1
-2026-06-07,country,TH,1
-2026-06-08,topic,currency crisis,1
-2026-06-09,country,JP,1
+2026-06-08,country,BR,1
 2026-06-09,country,TH,1
-2026-06-09,country,US,2
-2026-06-09,topic,currency crisis,2
-2026-06-10,country,DE,1
-2026-06-10,country,ID,1
-2026-06-10,country,TH,1
-2026-06-10,topic,recession risk,1
-2026-06-11,country,JP,1
+2026-06-09,country,US,1
+2026-06-09,topic,banking stress,1
 2026-06-11,country,VN,1
-2026-06-11,topic,currency crisis,1
-2026-06-15,topic,currency crisis,1
+2026-06-11,topic,banking stress,1
 2026-06-16,country,SA,1
 2026-06-16,topic,banking stress,1
 2026-06-16,topic,recession risk,1
 2026-06-17,country,BR,1
 2026-06-17,topic,central bank,1
-2026-06-18,country,ID,1
-2026-06-18,country,SA,1
-2026-06-18,topic,currency crisis,1
+2026-06-18,country,VN,1
+2026-06-20,country,RU,1
+2026-06-21,topic,banking stress,1
+2026-06-23,country,BR,1
+2026-06-23,country,SA,1
+2026-06-23,topic,banking stress,1
 2026-06-24,country,BR,1
-2026-06-24,country,JP,1
+2026-06-24,country,RU,1
+2026-06-24,topic,banking stress,12
 2026-06-25,country,UK,1
-2026-06-25,topic,banking stress,2
-2026-06-26,country,ZA,1
-2026-06-27,topic,currency crisis,1
-2026-06-28,country,JP,1
+2026-06-25,topic,banking stress,7
 2026-06-29,country,CN,1
-2026-06-29,country,ID,1
 2026-06-29,country,SA,1
-2026-06-30,country,MX,1
-2026-06-30,topic,currency crisis,1
+2026-06-29,topic,banking stress,1
+2026-06-30,country,SA,1
+2026-06-30,topic,banking stress,2
 2026-07-01,country,JP,1
 2026-07-01,country,RU,1
-2026-07-01,topic,earnings surprise,1
+2026-07-01,topic,banking stress,4
 2026-07-02,country,VN,1
+2026-07-02,topic,banking stress,1
 2026-07-02,topic,central bank,1
-2026-07-02,topic,currency crisis,3
-2026-07-02,topic,recession risk,1
 2026-07-03,country,SA,1
-2026-07-06,country,JP,1
-2026-07-06,topic,recession risk,1
-2026-07-07,topic,recession risk,2
-2026-07-08,topic,currency crisis,1
-2026-07-08,topic,earnings surprise,1
-2026-07-10,country,DE,1
-2026-07-11,topic,currency crisis,1
-2026-07-11,topic,earnings surprise,1
-2026-07-12,country,ID,1
-2026-07-13,country,TH,1
-2026-07-13,country,US,1
-2026-07-13,topic,earnings surprise,1
-2026-07-14,country,JP,3
+2026-07-03,topic,earnings surprise,1
+2026-07-06,country,RU,1
+2026-07-07,topic,recession risk,1
+2026-07-08,country,VN,1
+2026-07-08,topic,banking stress,1
+2026-07-12,country,SA,2
 2026-07-14,country,VN,1
 2026-07-14,topic,central bank,1
-2026-07-14,topic,currency crisis,1
-2026-07-15,country,TH,1
-2026-07-15,topic,central bank,1
-2026-07-16,country,JP,1
-2026-07-16,country,TH,1
-2026-07-16,topic,currency crisis,1
-2026-07-17,country,JP,1
+2026-07-14,topic,recession risk,1
+2026-07-15,country,BR,1
 2026-07-17,topic,earnings surprise,1
-2026-07-19,country,ID,1
-2026-07-20,topic,recession risk,1
-2026-07-21,country,DE,1
-2026-07-22,topic,currency crisis,1
-2026-07-22,topic,earnings surprise,2
+2026-07-19,country,SA,1
+2026-07-20,country,RU,1
+2026-07-20,topic,earnings surprise,1
+2026-07-21,country,RU,1
 2026-07-23,topic,central bank,1
-2026-07-23,topic,currency crisis,1
-2026-07-24,topic,earnings surprise,4
-2026-07-25,topic,currency crisis,1
-2026-07-27,country,ID,1
-2026-07-27,topic,currency crisis,1
+2026-07-24,topic,earnings surprise,1
+2026-07-27,country,RU,1
 2026-07-27,topic,recession risk,1
-2026-07-28,country,JP,1
-2026-07-28,topic,earnings surprise,1
 2026-07-29,country,TR,1
 2026-07-29,country,VN,1
+2026-07-30,country,BR,1
+2026-07-31,topic,banking stress,1
 2026-07-31,topic,earnings surprise,1
-2026-08-03,country,VN,1
-2026-08-03,topic,earnings surprise,1
-2026-08-03,topic,recession risk,1
+2026-08-03,topic,banking stress,1
+2026-08-04,country,RU,1
 2026-08-04,country,VN,1
-2026-08-05,country,BR,1
-2026-08-05,country,ID,1
-2026-08-05,topic,currency crisis,1
-2026-08-05,topic,earnings surprise,1
+2026-08-05,country,BR,2
 2026-08-05,topic,recession risk,1
 2026-08-06,country,DE,1
-2026-08-07,country,SA,2
-2026-08-10,country,DE,2
-2026-08-10,country,TH,2
+2026-08-07,country,SA,1
+2026-08-07,topic,earnings surprise,1
+2026-08-08,topic,earnings surprise,1
+2026-08-10,country,TH,1
 2026-08-10,country,US,1
 2026-08-10,topic,recession risk,1
-2026-08-11,topic,currency crisis,1
-2026-08-12,topic,currency crisis,1
-2026-08-14,topic,earnings surprise,1
-2026-08-15,country,ZA,1
-2026-08-16,country,SA,1
-2026-08-17,country,ID,1
 2026-08-17,country,SA,1
-2026-08-17,country,ZA,1
-2026-08-17,topic,currency crisis,1
-2026-08-18,country,JP,2
+2026-08-17,topic,banking stress,1
 2026-08-18,country,US,1
-2026-08-18,topic,earnings surprise,3
+2026-08-19,country,SA,1
 2026-08-19,country,US,2
-2026-08-19,topic,currency crisis,1
 2026-08-19,topic,recession risk,1
-2026-08-20,country,JP,1
-2026-08-20,topic,earnings surprise,1
+2026-08-20,country,RU,1
 2026-08-20,topic,trade war,1
 2026-08-21,country,DE,1
 2026-08-21,country,TR,1
-2026-08-22,topic,trade war,1
-2026-08-23,topic,currency crisis,1
-2026-08-23,topic,trade war,3
-2026-08-24,topic,currency crisis,3
-2026-08-24,topic,earnings surprise,1
-2026-08-24,topic,trade war,3
-2026-08-25,country,JP,1
+2026-08-25,country,RU,1
 2026-08-25,country,SA,1
-2026-08-25,topic,currency crisis,2
-2026-08-25,topic,trade war,1
-2026-08-26,country,JP,1
-2026-08-26,country,TH,1
-2026-08-26,topic,trade war,5
-2026-08-27,country,CN,1
+2026-08-26,topic,trade war,1
+2026-08-27,country,BR,1
 2026-08-27,country,US,1
-2026-08-27,topic,currency crisis,1
-2026-08-28,country,US,2
+2026-08-28,country,RU,1
+2026-08-28,country,US,1
 2026-08-28,topic,central bank,1
-2026-08-28,topic,earnings surprise,1
-2026-08-28,topic,trade war,1
-2026-08-29,country,JP,1
 2026-08-29,topic,central bank,1
-2026-08-31,country,ZA,1
-2026-08-31,topic,earnings surprise,1
+2026-08-31,topic,banking stress,1
 2026-08-31,topic,trade war,1
-2026-09-01,country,ID,1
 2026-09-01,topic,bond yields,1
 2026-09-01,topic,currency crisis,1
-2026-09-01,topic,trade war,2
-2026-09-02,country,JP,1
-2026-09-02,country,US,2
-2026-09-03,country,ID,4
-2026-09-03,country,JP,2
+2026-09-01,topic,trade war,1
+2026-09-02,country,IN,1
+2026-09-02,country,US,1
+2026-09-02,topic,trade war,1
 2026-09-03,country,RU,1
 2026-09-03,topic,central bank,1
+2026-09-03,topic,trade war,1
+2026-09-04,country,BR,1
 2026-09-04,country,DE,1
-2026-09-04,country,JP,1
-2026-09-06,topic,currency crisis,1
+2026-09-04,country,SA,1
+2026-09-06,country,SA,1
 2026-09-07,country,FR,1
-2026-09-08,country,BR,1
-2026-09-08,topic,trade war,3
-2026-09-09,country,ID,1
-2026-09-09,country,JP,1
+2026-09-08,country,BR,2
+2026-09-08,country,SA,1
+2026-09-08,topic,trade war,4
 2026-09-09,topic,bond yields,1
-2026-09-10,country,DE,2
-2026-09-10,country,TH,1
+2026-09-09,topic,trade war,2
+2026-09-10,country,BR,1
+2026-09-10,country,DE,1
+2026-09-10,topic,bond yields,1
 2026-09-10,topic,central bank,1
-2026-09-10,topic,recession risk,1
 2026-09-10,topic,trade war,1
-2026-09-11,country,BR,1
+2026-09-11,country,BR,2
 2026-09-11,country,CN,1
-2026-09-11,topic,earnings surprise,1
-2026-09-14,country,ID,1
-2026-09-15,country,JP,4
-2026-09-15,country,TH,1
+2026-09-11,country,RU,1
+2026-09-13,topic,banking stress,1
+2026-09-14,country,BR,1
 2026-09-15,topic,bond yields,1
-2026-09-16,country,BR,1
+2026-09-16,country,BR,2
 2026-09-16,country,US,1
-2026-09-17,country,TH,1
-2026-09-17,country,TR,1
-2026-09-17,country,ZA,1
-2026-09-17,topic,currency crisis,1
-2026-09-18,country,ID,1
+2026-09-16,topic,trade war,1
+2026-09-17,country,TR,2
+2026-09-17,topic,banking stress,1
+2026-09-18,country,BR,1
 2026-09-18,country,JP,1
+2026-09-18,country,SA,1
+2026-09-18,country,TH,1
 2026-09-18,country,US,1
+2026-09-18,topic,banking stress,4
 2026-09-18,topic,earnings surprise,1
 2026-09-19,country,US,1
 2026-09-19,country,VN,2
-2026-09-19,topic,recession risk,1
+2026-09-19,topic,banking stress,1
 2026-09-20,topic,recession risk,1
+2026-09-20,topic,trade war,1
+2026-09-21,country,BR,1
+2026-09-21,country,SA,1
 2026-09-21,country,TH,1
+2026-09-21,country,UK,1
 2026-09-21,country,VN,1
-2026-09-21,country,ZA,1
-2026-09-21,topic,currency crisis,1
+2026-09-21,topic,trade war,1
+2026-09-22,country,SA,1
+2026-09-22,topic,trade war,2
 2026-09-23,country,VN,1
-2026-09-23,topic,recession risk,1
-2026-09-24,country,ZA,1
-2026-09-24,topic,earnings surprise,1
+2026-09-23,topic,trade war,1
+2026-09-24,country,RU,1
 2026-09-24,topic,recession risk,1
+2026-09-25,country,BR,1
+2026-09-25,country,IN,1
 2026-09-25,country,MX,1
-2026-09-25,topic,currency crisis,1
+2026-09-25,country,TH,1
 2026-09-27,topic,trade war,1
-2026-09-28,country,CN,1
+2026-09-28,country,BR,1
 2026-09-28,country,JP,1
 2026-09-28,topic,bond yields,2
-2026-09-29,country,TH,7
+2026-09-28,topic,trade war,1
+2026-09-29,country,BR,1
 2026-09-29,country,US,1
-2026-09-29,topic,trade war,1
-2026-09-30,country,ID,1
-2026-09-30,country,US,1
 2026-09-30,country,VN,1
+2026-09-30,topic,banking stress,5
 2026-09-30,topic,bond yields,1
-2026-10-01,country,BR,1
-2026-10-01,country,UK,1
+2026-09-30,topic,trade war,1
 2026-10-01,country,US,2
+2026-10-01,country,ZA,1
+2026-10-01,topic,banking stress,1
 2026-10-01,topic,bond yields,3
-2026-10-01,topic,recession risk,1
 2026-10-02,country,US,1
 2026-10-02,topic,bond yields,1
-2026-10-02,topic,currency crisis,1
-2026-10-03,country,TH,1
-2026-10-03,topic,currency crisis,1
 2026-10-04,topic,trade war,1
-2026-10-05,topic,currency crisis,1
-2026-10-05,topic,earnings surprise,1
+2026-10-05,country,SA,1
+2026-10-05,topic,banking stress,1
 2026-10-05,topic,recession risk,1
+2026-10-06,country,RU,1
+2026-10-06,country,SA,1
 2026-10-06,topic,bond yields,1
-2026-10-07,country,IN,1
-2026-10-07,country,TH,1
+2026-10-06,topic,recession risk,1
+2026-10-07,country,BR,1
+2026-10-07,country,UK,1
 2026-10-07,country,VN,1
+2026-10-07,topic,trade war,1
 2026-10-08,country,BR,1
-2026-10-08,country,DE,1
+2026-10-08,country,RU,1
 2026-10-08,country,SA,1
-2026-10-08,country,TH,1
-2026-10-08,topic,currency crisis,1
-2026-10-08,topic,earnings surprise,2
 2026-10-08,topic,recession risk,1
-2026-10-09,country,DE,1
-2026-10-09,country,ID,1
 2026-10-09,country,US,1
 2026-10-09,country,VN,1
-2026-10-09,topic,currency crisis,1
-2026-10-10,country,JP,1
-2026-10-11,country,TH,2
-2026-10-11,country,ZA,1
-2026-10-12,country,DE,1
-2026-10-12,country,US,1
-2026-10-12,topic,bond yields,1
-2026-10-12,topic,currency crisis,1
-2026-10-12,topic,earnings surprise,1
-2026-10-12,topic,recession risk,1
+2026-10-09,topic,earnings surprise,1
+2026-10-09,topic,trade war,1
+2026-10-12,country,RU,1
+2026-10-12,topic,banking stress,1
+2026-10-12,topic,bond yields,2
 2026-10-13,country,CN,1
-2026-10-13,country,DE,1
-2026-10-13,country,US,3
-2026-10-13,topic,currency crisis,1
-2026-10-13,topic,earnings surprise,2
+2026-10-13,country,US,1
+2026-10-13,topic,earnings surprise,1
 2026-10-13,topic,trade war,2
+2026-10-14,country,BR,1
 2026-10-14,country,DE,1
-2026-10-14,country,JP,1
-2026-10-14,country,US,2
 2026-10-14,country,VN,1
 2026-10-14,topic,bond yields,1
-2026-10-15,topic,currency crisis,1
+2026-10-15,topic,banking stress,1
 2026-10-16,country,DE,1
-2026-10-16,country,ID,1
 2026-10-16,country,MX,1
-2026-10-16,topic,earnings surprise,1
 2026-10-17,country,SA,1
-2026-10-17,topic,currency crisis,1
+2026-10-19,country,BR,1
 2026-10-19,country,CN,1
-2026-10-19,country,ID,2
+2026-10-19,country,IN,1
 2026-10-19,country,JP,1
-2026-10-19,country,TH,1
-2026-10-19,country,US,1
-2026-10-19,country,ZA,1
+2026-10-19,country,SA,1
 2026-10-19,topic,bond yields,2
-2026-10-21,country,DE,1
-2026-10-21,country,JP,1
-2026-10-21,country,MX,2
-2026-10-21,topic,currency crisis,1
-2026-10-21,topic,recession risk,1
-2026-10-22,country,DE,4
-2026-10-22,country,ID,2
-2026-10-22,country,TH,1
+2026-10-21,country,MX,1
+2026-10-21,topic,banking stress,1
+2026-10-22,country,ID,1
 2026-10-22,topic,bond yields,1
-2026-10-22,topic,earnings surprise,1
-2026-10-23,country,DE,3
-2026-10-23,topic,earnings surprise,2
-2026-10-25,country,DE,1
-2026-10-26,country,ID,1
-2026-10-26,country,TH,1
+2026-10-23,country,RU,1
+2026-10-23,topic,bond yields,1
+2026-10-23,topic,earnings surprise,1
+2026-10-25,topic,trade war,1
+2026-10-26,country,BR,1
+2026-10-26,country,CN,1
+2026-10-26,country,SA,1
 2026-10-26,country,VN,1
-2026-10-26,country,ZA,1
 2026-10-26,topic,central bank,1
-2026-10-26,topic,earnings surprise,2
-2026-10-27,country,DE,1
-2026-10-27,country,US,1
-2026-10-27,topic,earnings surprise,1
-2026-10-28,topic,bond yields,1
-2026-10-28,topic,earnings surprise,1
+2026-10-27,topic,banking stress,1
+2026-10-28,country,SA,1
+2026-10-28,topic,banking stress,1
 2026-10-28,topic,trade war,1
-2026-10-29,country,DE,1
-2026-10-29,country,ID,1
-2026-10-29,country,SA,1
-2026-10-29,country,US,1
-2026-10-29,topic,bond yields,1
-2026-10-29,topic,central bank,1
-2026-10-29,topic,earnings surprise,4
-2026-10-30,country,DE,4
-2026-10-30,country,ID,1
+2026-10-29,country,SA,3
+2026-10-29,topic,central bank,2
+2026-10-29,topic,earnings surprise,2
+2026-10-30,country,DE,1
+2026-10-30,country,TH,1
 2026-10-30,country,US,2
-2026-10-30,country,ZA,1
 2026-10-30,topic,bond yields,1
-2026-10-30,topic,earnings surprise,1
-2026-10-31,country,TH,1
+2026-10-31,country,SA,1
 2026-10-31,country,US,2
-2026-10-31,topic,currency crisis,1
-2026-11-01,country,VN,1
-2026-11-01,topic,earnings surprise,1
-2026-11-01,topic,trade war,1
+2026-11-01,country,SA,1
+2026-11-01,topic,trade war,3
 2026-11-02,country,CN,1
-2026-11-02,country,US,2
-2026-11-02,topic,currency crisis,3
-2026-11-02,topic,earnings surprise,3
-2026-11-03,topic,bond yields,3
-2026-11-03,topic,earnings surprise,3
-2026-11-03,topic,recession risk,1
+2026-11-02,country,SA,1
+2026-11-02,country,US,1
+2026-11-02,topic,banking stress,1
+2026-11-02,topic,earnings surprise,1
+2026-11-03,country,VN,1
+2026-11-03,topic,bond yields,2
+2026-11-03,topic,trade war,1
 2026-11-04,country,CN,1
-2026-11-04,topic,bond yields,3
-2026-11-04,topic,earnings surprise,1
-2026-11-04,topic,oil price,1
-2026-11-05,country,DE,2
+2026-11-04,topic,bond yields,2
+2026-11-04,topic,trade war,1
+2026-11-05,country,DE,1
+2026-11-05,country,IN,1
+2026-11-05,country,RU,1
+2026-11-05,country,SA,1
 2026-11-05,country,UK,1
-2026-11-05,country,ZA,1
-2026-11-05,topic,bond yields,1
-2026-11-05,topic,earnings surprise,1
-2026-11-06,country,DE,1
-2026-11-06,country,TH,1
-2026-11-06,topic,bond yields,1
-2026-11-06,topic,currency crisis,1
-2026-11-06,topic,earnings surprise,2
-2026-11-06,topic,oil price,1
-2026-11-06,topic,recession risk,1
+2026-11-05,topic,bond yields,2
+2026-11-06,country,BR,1
+2026-11-06,country,IN,1
+2026-11-06,country,SA,1
+2026-11-06,topic,inflation data,2
+2026-11-06,topic,trade war,1
 2026-11-07,country,VN,1
-2026-11-07,topic,earnings surprise,1
+2026-11-08,topic,inflation data,1
 2026-11-09,country,BR,1
-2026-11-09,topic,bond yields,1
-2026-11-09,topic,earnings surprise,2
-2026-11-09,topic,recession risk,2
+2026-11-09,country,US,1
+2026-11-09,topic,bond yields,2
+2026-11-09,topic,earnings surprise,1
+2026-11-09,topic,trade war,3
+2026-11-10,country,IN,1
 2026-11-10,country,US,1
-2026-11-10,country,ZA,1
-2026-11-10,topic,bond yields,3
-2026-11-10,topic,currency crisis,1
-2026-11-10,topic,earnings surprise,1
-2026-11-10,topic,inflation data,7
-2026-11-10,topic,recession risk,1
+2026-11-10,topic,bond yields,2
+2026-11-10,topic,inflation data,11
+2026-11-11,country,SA,1
 2026-11-11,country,TR,1
-2026-11-11,country,US,3
-2026-11-11,topic,earnings surprise,2
-2026-11-12,country,JP,1
-2026-11-12,country,US,1
-2026-11-12,topic,oil price,1
-2026-11-12,topic,recession risk,1
-2026-11-13,country,TH,1
-2026-11-13,country,US,1
-2026-11-13,topic,bond yields,4
-2026-11-13,topic,earnings surprise,1
+2026-11-11,country,US,4
+2026-11-11,topic,banking stress,1
+2026-11-11,topic,bond yields,1
+2026-11-11,topic,inflation data,2
+2026-11-12,country,BR,1
+2026-11-12,country,SA,2
+2026-11-12,topic,bond yields,2
+2026-11-13,country,RU,1
+2026-11-13,country,VN,1
+2026-11-13,topic,bond yields,3
+2026-11-13,topic,inflation data,1
 2026-11-13,topic,oil price,1
-2026-11-13,topic,recession risk,1
-2026-11-14,topic,currency crisis,2
+2026-11-13,topic,trade war,1
+2026-11-14,topic,oil price,1
 2026-11-15,country,US,1
-2026-11-16,country,DE,1
-2026-11-16,country,ID,1
-2026-11-16,country,US,1
-2026-11-16,country,VN,1
-2026-11-16,topic,earnings surprise,8
-2026-11-16,topic,recession risk,1
-2026-11-16,topic,stock market,1
-2026-11-17,country,ID,1
+2026-11-16,country,US,2
+2026-11-16,topic,bond yields,1
+2026-11-16,topic,trade war,1
+2026-11-17,country,SA,2
 2026-11-17,country,US,2
-2026-11-17,topic,bond yields,3
-2026-11-17,topic,earnings surprise,6
-2026-11-17,topic,recession risk,1
-2026-11-18,country,JP,1
-2026-11-18,country,VN,1
+2026-11-17,topic,bond yields,4
+2026-11-17,topic,earnings surprise,1
+2026-11-18,country,BR,1
 2026-11-18,topic,bond yields,1
 2026-11-18,topic,central bank,2
-2026-11-18,topic,earnings surprise,6
-2026-11-18,topic,recession risk,1
-2026-11-19,country,DE,1
+2026-11-18,topic,earnings surprise,2
+2026-11-18,topic,trade war,2
+2026-11-19,country,BR,1
 2026-11-19,country,FR,1
-2026-11-19,country,TH,2
-2026-11-19,country,VN,1
 2026-11-19,topic,bond yields,2
-2026-11-19,topic,earnings surprise,3
-2026-11-19,topic,recession risk,1
-2026-11-20,country,DE,3
-2026-11-20,country,TH,1
-2026-11-20,country,US,2
+2026-11-19,topic,earnings surprise,2
+2026-11-19,topic,trade war,1
+2026-11-20,country,BR,1
+2026-11-20,country,RU,2
+2026-11-20,country,TH,2
+2026-11-20,country,US,1
 2026-11-20,country,VN,2
-2026-11-20,topic,bond yields,2
-2026-11-20,topic,currency crisis,3
-2026-11-20,topic,earnings surprise,1
-2026-11-20,topic,recession risk,3
+2026-11-20,topic,bond yields,1
+2026-11-20,topic,currency crisis,1
 2026-11-21,country,CN,1
-2026-11-21,country,DE,2
-2026-11-21,topic,currency crisis,1
-2026-11-21,topic,stock market,4
 2026-11-22,country,VN,1
-2026-11-22,topic,currency crisis,1
+2026-11-22,topic,inflation data,1
 2026-11-22,topic,oil price,1
-2026-11-22,topic,recession risk,4
-2026-11-22,topic,stock market,2
-2026-11-23,country,BR,1
-2026-11-23,country,CN,2
-2026-11-23,country,DE,3
-2026-11-23,country,FR,1
-2026-11-23,country,ID,1
+2026-11-22,topic,recession risk,3
+2026-11-22,topic,stock market,1
+2026-11-23,country,BR,4
+2026-11-23,country,JP,1
 2026-11-23,country,MX,1
-2026-11-23,country,TR,1
-2026-11-23,country,VN,2
-2026-11-23,topic,banking stress,1
-2026-11-23,topic,bond yields,5
-2026-11-23,topic,central bank,1
-2026-11-23,topic,inflation data,2
-2026-11-23,topic,oil price,11
-2026-11-23,topic,recession risk,11
-2026-11-23,topic,stock market,6
-2026-11-23,topic,trade war,2
+2026-11-23,country,SA,2
+2026-11-23,country,TH,1
+2026-11-23,country,VN,1
+2026-11-23,topic,bond yields,4
+2026-11-23,topic,inflation data,1
+2026-11-23,topic,oil price,6
+2026-11-23,topic,recession risk,8
+2026-11-23,topic,stock market,4
+2026-11-23,topic,trade war,1
 2026-11-24,country,BR,1
 2026-11-24,country,CN,1
-2026-11-24,country,DE,1
-2026-11-24,country,FR,1
-2026-11-24,country,ID,2
-2026-11-24,country,MX,1
-2026-11-24,country,RU,1
 2026-11-24,country,SA,1
-2026-11-24,country,TH,1
-2026-11-24,country,US,1
+2026-11-24,country,TH,2
 2026-11-24,country,VN,1
-2026-11-24,topic,banking stress,3
-2026-11-24,topic,bond yields,5
+2026-11-24,topic,bond yields,1
 2026-11-24,topic,currency crisis,3
-2026-11-24,topic,earnings surprise,4
-2026-11-24,topic,inflation data,12
-2026-11-24,topic,oil price,21
+2026-11-24,topic,earnings surprise,2
+2026-11-24,topic,inflation data,11
+2026-11-24,topic,oil price,13
 2026-11-24,topic,recession risk,9
-2026-11-24,topic,stock market,5
-2026-11-24,topic,trade war,4
+2026-11-24,topic,stock market,3
+2026-11-24,topic,trade war,2
 2026-11-25,country,BR,1
 2026-11-25,country,CN,4
-2026-11-25,country,DE,1
-2026-11-25,country,FR,5
-2026-11-25,country,IN,5
-2026-11-25,country,JP,1
-2026-11-25,country,RU,3
+2026-11-25,country,FR,1
+2026-11-25,country,IN,1
+2026-11-25,country,JP,3
+2026-11-25,country,MX,1
 2026-11-25,country,SA,1
-2026-11-25,country,TH,1
-2026-11-25,country,TR,2
-2026-11-25,country,UK,4
-2026-11-25,country,US,4
+2026-11-25,country,TH,3
+2026-11-25,country,TR,1
 2026-11-25,country,VN,1
-2026-11-25,country,ZA,2
 2026-11-25,topic,bond yields,10
-2026-11-25,topic,central bank,5
-2026-11-25,topic,currency crisis,2
+2026-11-25,topic,central bank,3
+2026-11-25,topic,currency crisis,1
 2026-11-25,topic,earnings surprise,4
-2026-11-25,topic,inflation data,57
-2026-11-25,topic,oil price,26
-2026-11-25,topic,recession risk,6
-2026-11-25,topic,stock market,19
-2026-11-25,topic,trade war,28
-2026-11-26,country,BR,4
-2026-11-26,country,CN,5
-2026-11-26,country,DE,2
-2026-11-26,country,FR,3
-2026-11-26,country,ID,1
-2026-11-26,country,IN,7
-2026-11-26,country,JP,3
-2026-11-26,country,MX,1
-2026-11-26,country,RU,6
-2026-11-26,country,SA,8
-2026-11-26,country,TR,3
-2026-11-26,country,UK,19
-2026-11-26,country,US,27
-2026-11-26,country,VN,5
-2026-11-26,country,ZA,1
-2026-11-26,topic,banking stress,7
-2026-11-26,topic,bond yields,35
-2026-11-26,topic,central bank,48
+2026-11-25,topic,inflation data,53
+2026-11-25,topic,oil price,21
+2026-11-25,topic,recession risk,5
+2026-11-25,topic,stock market,4
+2026-11-25,topic,trade war,20
+2026-11-26,country,BR,1
+2026-11-26,country,CN,4
+2026-11-26,country,DE,4
+2026-11-26,country,FR,4
+2026-11-26,country,ID,2
+2026-11-26,country,IN,5
+2026-11-26,country,MX,3
+2026-11-26,country,SA,1
+2026-11-26,country,TH,1
+2026-11-26,country,TR,1
+2026-11-26,country,UK,5
+2026-11-26,country,US,15
+2026-11-26,country,VN,8
+2026-11-26,country,ZA,2
+2026-11-26,topic,bond yields,8
+2026-11-26,topic,central bank,30
+2026-11-26,topic,currency crisis,1
 2026-11-26,topic,earnings surprise,2
-2026-11-26,topic,inflation data,20
-2026-11-26,topic,oil price,37
-2026-11-26,topic,recession risk,2
-2026-11-26,topic,stock market,67
-2026-11-26,topic,trade war,30
+2026-11-26,topic,inflation data,6
+2026-11-26,topic,oil price,20
+2026-11-26,topic,recession risk,3
+2026-11-26,topic,stock market,8
+2026-11-26,topic,trade war,22
+2026-11-27,country,BR,1
+2026-11-27,country,CN,4
+2026-11-27,country,DE,5
+2026-11-27,country,FR,4
+2026-11-27,country,ID,11
+2026-11-27,country,IN,5
+2026-11-27,country,RU,1
+2026-11-27,country,SA,2
+2026-11-27,country,TH,3
+2026-11-27,country,UK,13
+2026-11-27,country,US,34
+2026-11-27,country,VN,2
+2026-11-27,topic,bond yields,29
+2026-11-27,topic,central bank,47
+2026-11-27,topic,currency crisis,5
+2026-11-27,topic,earnings surprise,5
+2026-11-27,topic,inflation data,12
+2026-11-27,topic,oil price,37
+2026-11-27,topic,stock market,80
+2026-11-27,topic,trade war,12

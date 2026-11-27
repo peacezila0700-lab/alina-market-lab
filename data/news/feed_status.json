@@ -1,12 +1,12 @@
 {
-  "stamp": "2026-11-26T23:26:03Z",
+  "stamp": "2026-11-27T23:23:46Z",
   "feeds": {
-    "BBC_Business": "OK 49",
-    "BBC_World": "OK 29",
+    "BBC_Business": "OK 53",
+    "BBC_World": "OK 22",
     "AlJazeera": "OK 25",
     "WSJ_Markets": "OK 20",
     "WSJ_Economy": "OK 20",
-    "FT_Home": "OK 8",
+    "FT_Home": "OK 10",
     "CNBC_Top": "OK 30",
     "CNBC_Economy": "OK 30",
     "MarketWatch": "OK 10",
@@ -18,5 +18,5 @@
     "BangkokPost_Biz": "OK 10",
     "BangkokPost_World": "OK 10"
   },
-  "total_rows": 1060
+  "total_rows": 1195
 }

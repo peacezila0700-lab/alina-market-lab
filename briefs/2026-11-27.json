@@ -1,0 +1,671 @@
+{
+ "generated_utc": "2026-11-27T23:24:46Z",
+ "as_of": "2026-11-27",
+ "state": {
+  "vix": 26.8,
+  "vix_percentile_all_history": 87.0,
+  "skew": 142.06,
+  "skew_note": ">145 = tail protection expensive; <115 = complacent",
+  "dix": 0.4254,
+  "dix_percentile": 40.5,
+  "gex_usd_bn": 3.4,
+  "gex_regime": "positive (dealers dampen moves)",
+  "vix_slope_3m": null,
+  "vix_slope_3m_note": ">1 = inverted term structure = stress is NOW, not later",
+  "vix_slope_9d": null,
+  "vix_slope_9d_note": ">1 = front-end panic (VIX9D above VIX)",
+  "vvix_percentile": 0.7837,
+  "vvix_note": "vol-of-vol >0.9 means even the hedging market is unstable",
+  "term_inversions_last_252d": 8,
+  "ofr_fsi": -0.8,
+  "ofr_fsi_4w_chg": 1.03,
+  "btc_funding_8h_pct": 0.00556,
+  "btc_funding_annualised_pct": 9.6,
+  "btc_long_short_ratio": 1.91,
+  "cot_as_of": "2026-11-13",
+  "cot_extremes": [
+   {
+    "instrument": "EURUSD",
+    "noncomm_net_pct_oi_pct156": 0.01,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "NATGAS",
+    "noncomm_net_pct_oi_pct156": 0.0,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "PLATINUM",
+    "noncomm_net_pct_oi_pct156": 0.07,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "SILVER",
+    "noncomm_net_pct_oi_pct156": 0.05,
+    "side": "crowded_short"
+   },
+   {
+    "instrument": "USDCHF",
+    "noncomm_net_pct_oi_pct156": 1.0,
+    "side": "crowded_long"
+   },
+   {
+    "instrument": "USDMXN",
+    "noncomm_net_pct_oi_pct156": 0.08,
+    "side": "crowded_short"
+   }
+  ],
+  "news_volume_today": 135
+ },
+ "scheduled_events": [
+  {
+   "date": "2026-11-30",
+   "event": "MONTH_END",
+   "detail": "last business day",
+   "date_confidence": "high"
+  },
+  {
+   "date": "2026-12-04",
+   "event": "NFP_approx",
+   "detail": "first Friday (rule)",
+   "date_confidence": "med"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "10:33am",
+   "country": "EUR",
+   "title": "Italian 10-y Bond Auction",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "4.49|1.6"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "7:45am",
+   "country": "EUR",
+   "title": "French Consumer Spending m/m",
+   "impact": "Low",
+   "forecast": "0.1%",
+   "previous": "-0.5%"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "7:45am",
+   "country": "EUR",
+   "title": "French Final Private Payrolls q/q",
+   "impact": "Low",
+   "forecast": "-0.1%",
+   "previous": "-0.1%"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "7:45am",
+   "country": "EUR",
+   "title": "French Prelim CPI m/m",
+   "impact": "Low",
+   "forecast": "-0.2%",
+   "previous": "0.4%"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "7:45am",
+   "country": "EUR",
+   "title": "French Prelim GDP q/q",
+   "impact": "Low",
+   "forecast": "-0.1%",
+   "previous": "-0.1%"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "8:00am",
+   "country": "EUR",
+   "title": "Spanish Flash CPI y/y",
+   "impact": "Low",
+   "forecast": "4.7%",
+   "previous": "4.9%"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "8:55am",
+   "country": "EUR",
+   "title": "German Unemployment Change",
+   "impact": "Low",
+   "forecast": "5K",
+   "previous": "4K"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "10:05am",
+   "country": "EUR",
+   "title": "Italian 10-y Bond Auction",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": "4.49|1.6"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "12:40pm",
+   "country": "EUR",
+   "title": "German Buba President Nagel Speaks",
+   "impact": "Low",
+   "forecast": NaN,
+   "previous": NaN
+  },
+  {
+   "date": "11-27-2026",
+   "time": "1:30pm",
+   "country": "CAD",
+   "title": "Current Account",
+   "impact": "Low",
+   "forecast": "9.5B",
+   "previous": "8.8B"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Goods Trade Balance",
+   "impact": "Low",
+   "forecast": "-135.9B",
+   "previous": "-134.9B"
+  },
+  {
+   "date": "11-27-2026",
+   "time": "1:30pm",
+   "country": "USD",
+   "title": "Prelim Wholesale Inventories m/m",
+   "impact": "Low",
+   "forecast": "0.5%",
+   "previous": "0.6%"
+  }
+ ],
+ "base_rates": [
+  {
+   "factor": "VIX",
+   "value": 26.8,
+   "bucket": "25-30",
+   "horizon_days": 21,
+   "n_obs": 648,
+   "n_effective": 30,
+   "median_ret_pct": 2.28,
+   "pct_positive": 64.2,
+   "worst_pct": -24.59
+  },
+  {
+   "factor": "VIX",
+   "value": 26.8,
+   "bucket": "25-30",
+   "horizon_days": 252,
+   "n_obs": 635,
+   "n_effective": 2,
+   "median_ret_pct": 9.97,
+   "pct_positive": 61.1,
+   "worst_pct": -47.51
+  },
+  {
+   "factor": "OFR_FSI",
+   "value": -0.796,
+   "bucket": "<-0.5",
+   "horizon_days": 21,
+   "n_obs": 3903,
+   "n_effective": 185,
+   "median_ret_pct": 1.2,
+   "pct_positive": 65.7,
+   "worst_pct": -33.14
+  },
+  {
+   "factor": "OFR_FSI",
+   "value": -0.796,
+   "bucket": "<-0.5",
+   "horizon_days": 252,
+   "n_obs": 3679,
+   "n_effective": 14,
+   "median_ret_pct": 11.44,
+   "pct_positive": 83.5,
+   "worst_pct": -35.17
+  }
+ ],
+ "levels": [
+  {
+   "instrument": "AUDUSD",
+   "close": 0.661901,
+   "atr14": 0.004981,
+   "pdh": 0.668119,
+   "pdl": 0.66358,
+   "pmh": 0.69302,
+   "pml": 0.67728,
+   "pivot": 0.661901,
+   "pivot_r1": 0.661901,
+   "pivot_s1": 0.661901,
+   "swing_hi": 0.70678,
+   "swing_lo": 0.68954,
+   "vp_poc": 0.701684,
+   "vp_hi": 0.72235,
+   "vp_lo": 0.693417,
+   "y52_hi": 0.727738,
+   "y52_lo": 0.65555
+  },
+  {
+   "instrument": "BTC",
+   "close": 57808.390625,
+   "atr14": 3000.786272,
+   "pdh": 62540.210938,
+   "pdl": 57708.699219,
+   "pmh": 75505.335938,
+   "pml": 62017.882812,
+   "pivot": 57507.169271,
+   "pivot_r1": 59382.764323,
+   "pivot_s1": 55932.795573,
+   "swing_hi": 81079.789062,
+   "swing_lo": 79735.859375,
+   "vp_poc": 84365.716374,
+   "vp_hi": 85420.180306,
+   "vp_lo": 74875.540983,
+   "y52_hi": 87363.757812,
+   "y52_lo": 55631.574219
+  },
+  {
+   "instrument": "DXY",
+   "close": 103.809998,
+   "atr14": 0.512143,
+   "pdh": 103.970001,
+   "pdl": 103.589996,
+   "pmh": 103.440002,
+   "pml": 101.489998,
+   "pivot": 103.779999,
+   "pivot_r1": 103.979996,
+   "pivot_s1": 103.610001,
+   "swing_hi": 102.489998,
+   "swing_lo": 101.099998,
+   "vp_poc": 101.86675,
+   "vp_hi": 103.656751,
+   "vp_lo": 99.360748,
+   "y52_hi": 103.970001,
+   "y52_lo": 95.550003
+  },
+  {
+   "instrument": "EURUSD",
+   "close": 1.096972,
+   "atr14": 0.005981,
+   "pdh": 1.1012,
+   "pdl": 1.095638,
+   "pmh": 1.125062,
+   "pml": 1.102657,
+   "pivot": 1.097581,
+   "pivot_r1": 1.099307,
+   "pivot_s1": 1.095245,
+   "swing_hi": 1.127523,
+   "swing_lo": 1.110951,
+   "vp_poc": 1.1205,
+   "vp_hi": 1.163617,
+   "vp_lo": 1.097194,
+   "y52_hi": 1.202357,
+   "y52_lo": 1.095446
+  },
+  {
+   "instrument": "GBPUSD",
+   "close": 1.308644,
+   "atr14": 0.006869,
+   "pdh": 1.317349,
+   "pdl": 1.310599,
+   "pmh": 1.345859,
+   "pml": 1.320934,
+   "pivot": 1.309819,
+   "pivot_r1": 1.311678,
+   "pivot_s1": 1.306784,
+   "swing_hi": 1.350238,
+   "swing_lo": 1.327316,
+   "vp_poc": 1.322273,
+   "vp_hi": 1.354991,
+   "vp_lo": 1.319819,
+   "y52_hi": 1.384677,
+   "y52_lo": 1.307959
+  },
+  {
+   "instrument": "GOLD",
+   "close": 3515.399902,
+   "atr14": 104.071428,
+   "pdh": 3759.5,
+   "pdl": 3620.600098,
+   "pmh": 4157.700195,
+   "pml": 3856.699951,
+   "pivot": 3552.133301,
+   "pivot_r1": 3601.366699,
+   "pivot_s1": 3466.166503,
+   "swing_hi": 4157.700195,
+   "swing_lo": 3879.300049,
+   "vp_poc": 4164.58079,
+   "vp_hi": 4441.104146,
+   "vp_lo": 3986.815775,
+   "y52_hi": 5586.200195,
+   "y52_lo": 3502.899902
+  },
+  {
+   "instrument": "SPY",
+   "close": 689.809998,
+   "atr14": 14.144278,
+   "pdh": 739.900024,
+   "pdl": 715.650024,
+   "pmh": 763.039978,
+   "pml": 741.030029,
+   "pivot": 698.283325,
+   "pivot_r1": 709.816651,
+   "pivot_s1": 678.276673,
+   "swing_hi": 775.640015,
+   "swing_lo": 732.710022,
+   "vp_poc": 766.598912,
+   "vp_hi": 777.667079,
+   "vp_lo": 758.69308,
+   "y52_hi": 781.619995,
+   "y52_lo": 629.280029
+  },
+  {
+   "instrument": "TLT",
+   "close": 81.449997,
+   "atr14": 0.649999,
+   "pdh": 80.449997,
+   "pdl": 79.809998,
+   "pmh": 82.279999,
+   "pml": 79.110001,
+   "pivot": 81.283333,
+   "pivot_r1": 81.876663,
+   "pivot_s1": 80.856666,
+   "swing_hi": 82.419998,
+   "swing_lo": 79.110001,
+   "vp_poc": 81.508749,
+   "vp_hi": 82.464748,
+   "vp_lo": 77.80425,
+   "y52_hi": 90.860001,
+   "y52_lo": 76.43
+  },
+  {
+   "instrument": "USDJPY",
+   "close": 159.707001,
+   "atr14": 0.811856,
+   "pdh": 159.966003,
+   "pdl": 159.279007,
+   "pmh": 160.175995,
+   "pml": 157.845001,
+   "pivot": 159.358668,
+   "pivot_r1": 160.172338,
+   "pivot_s1": 158.893331,
+   "swing_hi": 160.175995,
+   "swing_lo": 156.095993,
+   "vp_poc": 157.825282,
+   "vp_hi": 159.946313,
+   "vp_lo": 156.951916,
+   "y52_hi": 163.979004,
+   "y52_lo": 152.278
+  }
+ ],
+ "news": [
+  {
+   "source": "BangkokPost_World",
+   "title": "The key players as New Zealand heads for weeks of political wrangling",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362199/the-key-players-as-new-zealand-heads-for-weeks-of-political-wrangling"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Canada's top court largely upholds Quebec secularism law",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362724/canadas-top-court-largely-upholds-quebec-secularism-law"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Bid to suspend embattled NBTC chairman rejected",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3362309/bid-to-suspend-embattled-nbtc-chairman-rejected"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "The 718 Boxster goes electric",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/motoring/3362204/the-718-boxster-goes-electric"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Asian stocks mostly rise as markets calm after tech rout",
+   "entities": "EQUITY",
+   "link": "https://www.bangkokpost.com/business/general/3362244/asian-stocks-mostly-rise-as-markets-calm-after-tech-rout"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "AIS, Singtel back 2,500km subsea cable linking Thailand, Vietnam and Singapore",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3362174/ais-singtel-back-2500km-subsea-cable-linking-thailand-vietnam-and-singapore"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Generali devises plan to achieve top 3 status in Thailand",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3361949/generali-devises-plan-to-achieve-top-3-status-in-thailand"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Prosecutors seek 25-year sentence for Canada suicide poison seller",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362725/prosecutors-seek-25year-sentence-for-canada-suicide-poison-seller"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Brazil's Lula thanks students for movement that fueled victory",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362356/brazils-lula-thanks-students-for-movement-that-fueled-victory"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "SpaceX shares jump over 4% amid tech rally and after Musk says he will expand on Trump Account share donations",
+   "entities": "EQUITY",
+   "link": "https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "UN refugee agency seeks $7.1 billion in 2027",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362315/un-refugee-agency-seeks-71-billion-in-2027"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Spanish PM faces long odds in Sunday polls",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362296/spanish-pm-faces-long-odds-in-sunday-polls"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "'Mushroom killer' appeals case to Australia's top court",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362234/mushroom-killer-appeals-case-to-australias-top-court"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Russian mercenaries muscle in on daily life in central Africa",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362229/russian-mercenaries-muscle-in-on-daily-life-in-central-africa"
+  },
+  {
+   "source": "BangkokPost_World",
+   "title": "Hong Kong couple arrested for allegedly tampering with passport",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/world/3362215/hong-kong-couple-arrested-for-allegedly-tampering-with-passport"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "The Tech Download: Will Jensen Huang\u2019s return be the spark the shaky AI market needs?",
+   "entities": "EQUITY",
+   "link": "https://www.cnbc.com/2026/11/27/tech-download-jensen-huang-ai-market.html"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Dollar set for weekly gain as risk appetite returns",
+   "entities": "USD",
+   "link": "https://www.investing.com/news/economy-news/dollar-lingers-near-22month-peak-as-ai-worries-simmer-5052803"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Distributors shrug off Nvidia chip ban",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3362529/distributors-shrug-off-nvidia-chip-ban"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Norse suspension raises broader airline concerns",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3362644/norse-suspension-raises-broader-airline-concerns"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "Thailand's exports increase at fastest rate in 5 years",
+   "entities": NaN,
+   "link": "https://www.bangkokpost.com/business/general/3362514/thailands-exports-increase-at-fastest-rate-in-5-years"
+  },
+  {
+   "source": "ECB_Press",
+   "title": "ECB Consumer Expectations Survey results \u2013 October 2026",
+   "entities": "EUR",
+   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html"
+  },
+  {
+   "source": "ECB_Press",
+   "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+   "entities": "EUR",
+   "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261127~13ecadc0f2.en.html"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "FuelCell Energy climbs 8% alongside broad market rally",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4677101-fuelcell-energy-climbs-8-percent-alongside-broad-market-rally?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Energy Fuels gains 11% as peers and the broader market rise",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4677102-energy-fuels-gains-11-percent-as-peers-and-the-broader-market-rise?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "SA Asks: What's the best gold play right now for investors?",
+   "entities": "GOLD",
+   "link": "https://seekingalpha.com/news/4677104-sa-asks-whats-the-best-gold-play-right-now-for-investors?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "Apple faces countersuit from OpenAI for stealing trade secrets - FT",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4677105-apple-faces-countersuit-from-openai-for-stealing-trade-secrets---ft?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "SA Asks: What's the best-positioned chip stock right now?",
+   "entities": "EQUITY",
+   "link": "https://seekingalpha.com/news/4677107-sa-asks-whats-the-best-positioned-chip-stock-right-now?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "BNY Mellon strategic Municipal bond fund declares $0.03 dividend",
+   "entities": "BONDS",
+   "link": "https://seekingalpha.com/news/4677110-bny-mellon-strategic-municipal-bond-fund-declares-0_03-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "SeekingAlpha",
+   "title": "BNY Mellon Strategic Municipals declares $0.03 dividend",
+   "entities": NaN,
+   "link": "https://seekingalpha.com/news/4677111-bny-mellon-strategic-municipals-declares-0_03-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "U.S. goods trade deficit widens as AI boom drives imports to record high",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/us-goods-trade-deficit-widens-as-ai-boom-drives-imports-to-record-high-5053710"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "China cabinet calls for greater role by \u2019national team\u2019 investors to steady sinking markets",
+   "entities": "CNY",
+   "link": "https://www.investing.com/news/economy-news/china-to-strengthen-defense-against-imported-risks-in-capital-markets-5053016"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Take Five: A December to remember",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/take-five-a-december-to-remember-5053153"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "Spain\u2019s election could pull Madrid closer to Trump\u2019s Washington",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/27/spain-election-trump-sanchez.html"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "India-US trade deal is nearing completion, minister says",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/indiaus-trade-deal-is-nearing-completion-minister-says-5052924"
+  },
+  {
+   "source": "BangkokPost_Biz",
+   "title": "A closer look at US-Thai trade relations",
+   "entities": "TARIFF",
+   "link": "https://www.bangkokpost.com/business/general/3362649/a-closer-look-at-usthai-trade-relations"
+  },
+  {
+   "source": "Investing_Economy",
+   "title": "Brazilian markets rally after Lula taps Bradesco chairman for finance chief",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/economy-news/brazilian-markets-rally-after-lula-taps-bradesco-chairman-for-finance-chief-5053727"
+  },
+  {
+   "source": "CNBC_Top",
+   "title": "Fast cars, big money: Why sportswear races into Formula 1 as sponsorship spending soars 75%",
+   "entities": NaN,
+   "link": "https://www.cnbc.com/2026/11/27/nike-formula-1-sportswear-brands-sponsorship-adidas-puma.html"
+  },
+  {
+   "source": "Investing_Markets",
+   "title": "Glass Lewis backs Vail Resorts board in proxy fight with activist Oasis",
+   "entities": NaN,
+   "link": "https://www.investing.com/news/stock-market-news/glass-lewis-backs-vail-resorts-board-in-proxy-fight-with-activist-oasis-5053937"
+  },
+  {
+   "source": "Investing_Markets",
+   "title": "Wall Street ends higher as battered AI stocks gain in volatile week",
+   "entities": "EQUITY",
+   "link": "https://www.investing.com/news/stock-market-news/wall-st-futures-surge-as-investors-return-from-holiday-5053052"
+  },
+  {
+   "source": "Investing_Markets",
+   "title": "Why is Strategy stock gaining today?",
+   "entities": "EQUITY",
+   "link": "https://www.investing.com/news/stock-market-news/why-is-strategy-stock-gaining-today-93CH-5053886"
+  }
+ ],
+ "flags": [
+  "1 rule-derived event dates (~90-95% exact) \u2014 verify before relying on them"
+ ],
+ "data_age_days": {
+  "vix": 1.98,
+  "dix_gex": 0.98,
+  "vol_term_structure": 0.98,
+  "ofr_fsi": 2.98,
+  "cot": 14.98,
+  "news": 0.98
+ },
+ "scenarios": [
+  {
+   "branch": "VIX stays in 25-30",
+   "measured": "median 21d SPY +2.28%, 64% positive, worst -24.6%, n_eff 30",
+   "action": "size normally"
+  },
+  {
+   "branch": "event surprise larger than expected",
+   "measured": "FOMC day |SPY move| = 1.09x a random day; NFP = 1.33x on TLT",
+   "action": "trade the SECOND move (post-event drift), not the first print \u2014 the first print is where spreads are widest and the edge is thinnest"
+  },
+  {
+   "branch": "nothing scheduled and vol low",
+   "measured": "VIX 12-15 bucket: median 12m SPY +11.9%, 86.7% positive (n_eff small)",
+   "action": "this is a carry/momentum environment, not a mean-reversion one"
+  }
+ ]
+}
